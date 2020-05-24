@@ -38,6 +38,8 @@ class AdminController extends Controller
         return view('admin.password');
     }
 
+
+    //Ajax method to confirm inputted current password
     public function confirmPassword(Request $request){
         $current_password = $request->current_pwd;
         $chk_password = Auth::guard('admin')->user()->password;
@@ -50,6 +52,8 @@ class AdminController extends Controller
         }
     }
 
+
+    //Post method to effect change to admin password
     public function changePassword(Request $request) {
         $data = $request->all();
         $current_password = $data['current_password'];
@@ -69,6 +73,15 @@ class AdminController extends Controller
 
     }
 
+
+    /*Doctor's Methods
+    ** all doctor's methods described here ---
+    **
+    **
+    **
+    **
+    **
+    */
     public function showDoctors() {
         $doctors = Doctor::orderBy('id','desc')->get();
         return view('admin.doctors.index')->with(compact('doctors'));
@@ -277,7 +290,7 @@ class AdminController extends Controller
 
 
     /*Appointments Methods
-    ** all patients methods described here ---
+    ** all appointments methods described here ---
     **
     **
     **
