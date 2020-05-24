@@ -136,7 +136,7 @@
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, deny!'
+            confirmButtonText: 'Yes, delete!'
             }).then((result) => {
             if (result.value) {
                 var url = "{{ route('admin.delete.doctor',':id')}}";

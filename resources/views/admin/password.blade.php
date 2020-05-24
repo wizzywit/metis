@@ -10,13 +10,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Add Doctors</h1>
+            <h1>Password Setting</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{ route('admin.dashboard')}}">Home</a></li>
-              <li class="breadcrumb-item"><a href="{{ route('admin.patients')}}">Patients</a></li>
-              <li class="breadcrumb-item active">Create</li>
+              <li class="breadcrumb-item active">Change Password</li>
             </ol>
           </div>
         </div>
@@ -28,11 +27,11 @@
       <div class="container-fluid">
         <div class="row">
           <!-- left column -->
-          <div class="col-md-12">
+          <div class="col-md-6">
             <!-- jquery validation -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Add a Patient</h3>
+                <h3 class="card-title">Change Password</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
@@ -59,50 +58,32 @@
                         <strong>{!! session('flash_message_success') !!}</strong>
                     </div>
                 @endif
-              <form role="form" id="quickForm" action="{{ route('admin.patient.save') }}" method="post">
+              <form class="form-horizontal" role="form" id="quickForm" action="{{ route('admin.password.change') }}" method="post">
               @csrf
               <div class="card-body">
-                  <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" name="name" class="form-control" placeholder="Patient Full name">
+                <div class="form-group row">
+                  <label for="exampleInputPassword1" class="col-sm-3 col-form-label">Old Password</label>
+                  <div class="col-sm-9">
+                    <input type="password" name="current_password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                    <span id="chkpwd"></span>
                   </div>
-                  <div class="form-group">
-                      <label>Gender</label>
-                      <select name="sex" class="form-control select2" style="width: 100%;">
-                        <option value="M" selected="selected">Male</option>
-                        <option value="F">Female</option>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                    <label>Date of Birth</label>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                      </div>
-                      <input id="datemask" name="dob" type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="yyyy-mm-dd" data-mask>
+                </div>
+                  <div class="form-group row">
+                    <label for="exampleInputPassword1" class="col-sm-3 col-form-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
-                    <!-- /.input group -->
                   </div>
-                  <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="text" name="phone" class="form-control" placeholder="Enter Phone number">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword2">Confirm Password</label>
-                    <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                  <div class="form-group row">
+                    <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Confirm Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                    </div>
                   </div>
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Add Patient</button>
+                  <button type="submit" class="btn btn-primary">Change Password</button>
                 </div>
               </form>
             </div>
@@ -110,9 +91,6 @@
             </div>
           <!--/.col (left) -->
           <!-- right column -->
-          <div class="col-md-6">
-
-          </div>
           <!--/.col (right) -->
         </div>
         <!-- /.row -->
@@ -134,11 +112,36 @@
 
 <script type="text/javascript">
 $(document).ready(function () {
-    $('#datemask').inputmask('yyyy-mm-dd', { 'placeholder': 'yyyy-mm-dd' });
-    bsCustomFileInput.init();
-    jQuery.validator.addMethod("phonenu", function (value, element) {
-        return this.optional(element) || /^[0]\d{10}$/.test(value);
-    }, "Invalid Phone Number");
+
+    var typingTimer;
+	var doneTypingInterval = 1000;
+	$('#exampleInputPassword1').on('keyup', function () {
+		clearTimeout(typingTimer);
+			if ($('#exampleInputPassword').val()) {
+				typingTimer = setTimeout(doneTyping, doneTypingInterval);
+			}
+	});
+	  function doneTyping () {
+		//do something
+		var current_pwd = $('#exampleInputPassword').val();
+		// alert(current_pwd);
+		$.ajax({
+			type:'get',
+			url:'{{route('admin.password.confirm')}}',
+			data:{current_pwd:current_pwd},
+			success:function(res){
+				// alert(res);
+				if(res == 'true'){
+					$('#chkpwd').html("<font color='green'>Current Password is Correct</font>");
+				} else {
+					$('#chkpwd').html("<font color='red'>Current Password is Incorrect</font>");
+				}
+			},
+			error: function() {
+				alert("Error");
+			}
+		})
+	  }
 
   $('#quickForm').validate({
       submitHandler: function(form) {
@@ -146,20 +149,6 @@ $(document).ready(function () {
     form.submit();
   },
     rules: {
-      email: {
-        required: true,
-        email: true,
-      },
-      name: {
-          required: true,
-      },
-      phone: {
-          required: true,
-          phonenu: true
-      },
-      dob: {
-          required: true,
-      },
       password: {
         required: true,
         minlength: 8
@@ -171,10 +160,6 @@ $(document).ready(function () {
       },
     },
     messages: {
-      email: {
-        required: "Please enter a email address",
-        email: "Please enter a vaild email address"
-      },
       password: {
         required: "Please provide a password",
         minlength: "Your password must be at least 8 characters long"
@@ -183,15 +168,6 @@ $(document).ready(function () {
         required: "Please confirm password",
         minlength: "Your password must be at least 8 characters long",
         equalTo: "Password Mismatch"
-      },
-      phone: {
-          required: "Please enter a phone number",
-      },
-      name: {
-          required: "Please enter your name",
-      },
-      dob: {
-          required: "Please enter your Date of Birth",
       },
     },
     errorElement: 'span',

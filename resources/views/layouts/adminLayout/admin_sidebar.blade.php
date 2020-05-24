@@ -90,7 +90,7 @@
           </li>
           <li class="nav-header">Accout Settings</li>
           <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
+            <a href="{{ route('admin.password.form') }}" class="nav-link {{ request()->is('admin/setting/password*') ? 'active' : ''}}">
               <i class="nav-icon fas fa-key"></i>
               <p>
                 Change Password

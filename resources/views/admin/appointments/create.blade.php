@@ -170,10 +170,6 @@ $(document).ready(function () {
     $( "#datepicker" ).datepicker({
         format: 'yyyy-mm-dd'
     });
-    bsCustomFileInput.init();
-    jQuery.validator.addMethod("phonenu", function (value, element) {
-        return this.optional(element) || /^[0]\d{10}$/.test(value);
-    }, "Invalid Phone Number");
 
     //Timepicker
     $('#start_time').datetimepicker({
@@ -201,6 +197,9 @@ $(document).ready(function () {
         et = minFromMidnight(endTime);
         if(st>et){
             $('#e_time').append('<span class="text-danger">End time must be greater than start time</span>');
+            return false;
+        } else if(startTime == "" || endTime == ""){
+            $('#e_time').append('<span class="text-danger">Enter Schedule Start Time or End Time</span>');
             return false;
         }
         else if(et>st) {

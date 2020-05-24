@@ -92,9 +92,9 @@
                   @endif
                 <td>
                     @if($appointment->scheduled == 1)
-                    <a title="Unschedule Appointment" href="{{url('admin/appointment/'.$appointment->id.'/refute')}}" class="btn btn-warning btn-xs"><i class="fas fa-user-lock"></i></a>
+                    <a title="Unschedule Appointment" href="{{url('admin/appointment/'.$appointment->id.'/schedule/0')}}" class="btn btn-warning btn-xs"><i class="fa fa-minus"></i></a>
                     @else
-                    <a title="Schedule Appointment" href="{{url('admin/appointment/'.$appointment->id.'/verify')}}" class="btn btn-success btn-xs"><i class="fa fa-unlock-alt"></i></a>
+                    <a title="Schedule Appointment" href="{{url('admin/appointment/'.$appointment->id.'/schedule/1')}}" class="btn btn-success btn-xs"><i class="fa fa-clock"></i></a>
                     @endif
                     <a title="View" href="{{url('admin/appointment/'.$appointment->id.'/view')}}"   class="btn btn-info btn-xs"><i class="fas fa-eye"></i></a>
                     <button title="Delete Appointment" onclick="deleteAppointment({{$appointment->id}});" type="button" class="btn btn-danger btn-xs"><i class="fas fa-user-times"></i></button>
@@ -138,15 +138,15 @@
     function deleteAppointment(id) {
         Swal.fire({
             title: 'Are you sure?',
-            text: "You want to Delete this Doctor and all of its Information!",
+            text: "You want to Delete this Appointment and all of its Information!",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, deny!'
+            confirmButtonText: 'Yes, Delete!'
             }).then((result) => {
             if (result.value) {
-                var url = "{{ route('admin.delete.doctor',':id')}}";
+                var url = "{{ route('admin.delete.appointment',':id')}}";
                 url = url.replace(':id',id);
                 window.location.href = (url);
              }

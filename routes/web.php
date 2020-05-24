@@ -30,6 +30,12 @@ Route::prefix('admin')->group(function() {
     Route::get('/login','Admin\LoginController@showLoginForm')->name('admin.login');
     Route::post('/login', 'Admin\LoginController@login')->name('admin.login.submit');
     Route::get('logout/', 'Admin\LoginController@logout')->name('admin.logout');
+    
+
+    //change password
+    Route::post('/setting/password/change','Admin\AdminController@changePassword')->name('admin.password.change');
+    Route::get('/setting/password','Admin\AdminController@showPasswordForm')->name('admin.password.form');
+    Route::get('/setting/password/confirm','Admin\AdminController@confirmPassword')->name('admin.password.confirm');
 
     //Admin Protected doctors routes
     Route::get('/doctors', 'Admin\AdminController@showDoctors')->name('admin.doctors');
@@ -62,6 +68,7 @@ Route::prefix('admin')->group(function() {
     Route::get('/appointment/{id}/delete','Admin\AdminController@deleteAppointment')->name('admin.delete.appointment');
     Route::get('/appointments/events','Admin\AdminController@showAppointmentsCalender')->name('admin.appointment.calender');
     Route::get('/appointment/{id}/view','Admin\AdminController@viewAppointment')->name('admin.appointment.view');
+    Route::get('/appointment/{id}/schedule/{flag}','Admin\AdminController@scheduleAppointment');
    }) ;
 
 Route::get('/home', 'HomeController@index')->name('home');

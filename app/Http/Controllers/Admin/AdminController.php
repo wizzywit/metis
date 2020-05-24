@@ -9,6 +9,8 @@ use Image;
 use App\Doctor;
 use App\Patient;
 use App\Appointment;
+use Auth;
+use App\Admin;
 use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
@@ -30,6 +32,41 @@ class AdminController extends Controller
     public function index()
     {
         return view('admin.home');
+    }
+
+    public function showPasswordForm() {
+        return view('admin.password');
+    }
+
+    public function confirmPassword(Request $request){
+        $current_password = $request->current_pwd;
+        $chk_password = Auth::guard('admin')->user()->password;
+        // echo "<pre>"; print_r($chk_password); die;
+        
+        if(Hash::check($current_password,$chk_password)){
+            return "true";
+        }else {
+            return "false";
+        }
+    }
+
+    public function changePassword(Request $request) {
+        $data = $request->all();
+        $current_password = $data['current_password'];
+        $chk_password = Auth::guard('admin')->user()->password;
+        // echo "<pre>"; print_r($chk_password); die;
+        
+        if(Hash::check($current_password,$chk_password)){
+            $id = Auth::guard('admin')->id();
+            $admin = Admin::findOrFail($id);
+            $admin->update([
+                'password'=> Hash::make($data['password']),
+            ]);
+            return redirect()->back()->with('flash_message_success','Successfully Changed Password');
+        }else {
+            return redirect()->back()->with('flash_message_error','Incorrect Old Password');
+        }
+
     }
 
     public function showDoctors() {
@@ -276,37 +313,33 @@ class AdminController extends Controller
     }
 
     public function showEditAppointmentForm($id = null){
+        $doctors = Doctor::get();
+        $patients = Patient::get();
         $appointment = Appointment::where('id',$id)->first();
-        return view('admin.appointments.edit')->with(compact('appointment'));
+        $appointment['start_time'] = date("h:i A",strtotime($appointment['start_time']));
+        $appointment['end_time'] = date("h:i A",strtotime($appointment['end_time']));
+        return view('admin.appointments.edit')->with(compact('appointment','doctors','patients'));
     }
 
     public function editAppointment(Request $request, $id = null){
         $data = $request->all();
-        echo "<pre>"; print_r($data); die;
-        $patients = Patient::where('email',$data['email'])->count();
-        $patient = Patient::where('id',$id)->first();
-        if($patient->email == $data['email']){
-            $patient->name =$data['name'];
-            $patient->sex =$data['sex'];
-            $patient->dob =$data['dob'];
-            $patient->phone =$data['phone'];
-            $save = $patient->save();
+        // echo "<pre>"; print_r($data); die;
+            $appointment = Appointment::where('id',$id)->first();
+            $data['start_time'] = date("H:i:s",strtotime($data['start_time']));
+            $data['end_time'] = date("H:i:s",strtotime($data['end_time']));
+
+            $appointment->patient_id =$data['patient_id'];
+            $appointment->doctor_id =$data['doctor_id'];
+            $appointment->symptoms =$data['symptoms'];
+            $appointment->price =$data['price'];
+            $appointment->urgency_level =$data['urgency_level'];
+            $appointment->date =$data['date'];
+            $appointment->start_time =$data['start_time'];
+            $appointment->end_time =$data['end_time'];
+            $save = $appointment->save();
             if($save){
-                return redirect(route('admin.appointments'))->with('flash_message_success','Patient Successfully Edited');
-            } else return redirect(route('admin.appointments'))->with('flash_message_error','Patient Unable to be updated');
-        } else if($patients < 1){
-            $patient->name =$data['name'];
-            $patient->sex =$data['sex'];
-            $patient->dob =$data['dob'];
-            $patient->phone =$data['phone'];
-            $patient->email =$data['email'];
-            $save = $patient->save();
-            if($save){
-                return redirect(route('admin.appointments'))->with('flash_message_success','Patient Successfully Edited');
-            } else return redirect(route('admin.appointments'))->with('flash_message_error','Patient Unable to be updated');
-        } else {
-             return redirect()->back()->with('flash_message_error','Email Already exist');
-        }
+                return redirect(route('admin.appointments'))->with('flash_message_success','Appointment Successfully Edited');
+            } else return redirect(route('admin.appointments'))->with('flash_message_error','Appointment Unable to be updated');
     }
 
     public function deleteAppointment($id = null) {
@@ -318,6 +351,19 @@ class AdminController extends Controller
             return redirect()->back()->with('flash_message_error','Failed to Delete Appointment');
         }
 
+    }
+
+    public function scheduleAppointment($id = null, $flag = null){
+        $appointment = Appointment::where('id',$id)->first();
+        if($flag == '1'){
+            $appointment->scheduled = true;
+        } else if($flag =='0'){
+            $appointment->scheduled = false;
+        }
+        $save = $appointment->save();
+        if($save){
+            return redirect(route('admin.appointments'))->with('flash_message_success','Appointment Scheduled Successfully');
+        } else return redirect(route('admin.appointments'))->with('flash_message_error','Appointment Unable to be Scheduled');
     }
 
     public function createAppointment()
