@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Auth::routes();
@@ -30,7 +30,7 @@ Route::prefix('admin')->group(function() {
     Route::get('/login','Admin\LoginController@showLoginForm')->name('admin.login');
     Route::post('/login', 'Admin\LoginController@login')->name('admin.login.submit');
     Route::get('logout/', 'Admin\LoginController@logout')->name('admin.logout');
-    
+
 
     //change password
     Route::post('/setting/password/change','Admin\AdminController@changePassword')->name('admin.password.change');
@@ -71,4 +71,27 @@ Route::prefix('admin')->group(function() {
     Route::get('/appointment/{id}/schedule/{flag}','Admin\AdminController@scheduleAppointment');
    }) ;
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('auth')->prefix('patient')->group(function() {
+    Route::get('/','PatientController@index');
+    Route::get('/booking','PatientController@booking')->name('booking');
+    Route::get('/doctor/get','PatientController@getDoctor')->name('doctor.get');
+    Route::post('/booking/book','PatientController@bookNow')->name('book.now');
+    Route::post('/booking/book/{id}','PatientController@bookNowInstance')->name('book.now.instance');
+    Route::post('/booking/payment','PatientController@stripePost')->name('stripe.post');
+    Route::get('/appointments','PatientController@appointments')->name('appointments');
+
+
+    //change password
+    Route::post('/setting/password/change','PatientController@changePassword')->name('patient.password.change');
+    Route::get('/setting/password','PatientController@showPasswordForm')->name('patient.password.form');
+    Route::get('/setting/password/confirm','PatientController@confirmPassword')->name('patient.password.confirm');
+
+    //view profile
+    Route::get('/setting/profile','PatientController@showProfile')->name('patient.view');
+
+    //edit profile
+    Route::get('/setting/profile/edit','PatientController@showEdit')->name('patient.edit');
+    Route::post('/setting/profile/edit','PatientController@editProfile')->name('patient.edit.profile');
+
+});

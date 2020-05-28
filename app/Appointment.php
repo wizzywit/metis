@@ -8,7 +8,7 @@ class Appointment extends Model
 {
 
     protected $fillable = [
-        'name', 'patient_id', 'doctor_id', 'price', 'date', 'start_time', 'end_time', 'symptoms','urgency_level'
+         'patient_id', 'doctor_id', 'price', 'date', 'start_time', 'end_time', 'symptoms','urgency_level','payed'
     ];
 
     public function doctor() {

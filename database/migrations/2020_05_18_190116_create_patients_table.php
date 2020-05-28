@@ -23,7 +23,6 @@ class CreatePatientsTable extends Migration
             $table->date('dob');
             $table->longText('symptoms')->nullable();
             $table->string('urgency_level',1);
-            $table->boolean('payed');
             $table->string('password');
             $table->rememberToken();
             $table->timestamp('email_verified_at')->nullable();

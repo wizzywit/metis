@@ -17,7 +17,7 @@ class Patient extends Authenticatable
     protected $guard = 'patient';
 
     protected $fillable = [
-        'name', 'email', 'doctor_id', 'dob', 'phone', 'payed','password','sex'
+        'name', 'email', 'doctor_id', 'dob', 'phone','password','sex'
     ];
 
 
