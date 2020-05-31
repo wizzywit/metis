@@ -33,7 +33,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-lg-2">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="{{url('/')}}">
                                 <img src="{{ asset('images/admin/logo1.png') }}" alt="" style="width:45px; "><strong> Metis Technologies</strong>
                             </a>
                         </div>
@@ -42,10 +42,10 @@
                         <div class="main-menu  d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a class="active" href="index.html">home</a></li>
+                                    <li><a class="active" href="{{url('/')}}">home</a></li>
                                     <li><a href="#">Pages<i class="ti-angle-down"></i></a>
                                         <ul class="submenu">
-                                            <li><a href="about.html">Department</a></li>
+                                            <li><a href="departments.html">Department</a></li>
                                             <li><a href="Doctors.html">Doctors</a></li>
                                             <li><a href="about.html">about</a></li>
                                         </ul>
@@ -81,7 +81,7 @@
                     <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                         <div class="Appointment">
                             <div class="book_btn d-none d-lg-block">
-                                <a class="popup-with-form" href="#test-form">Make an Appointment</a>
+                                <a class="" href="{{url('/patient')}}">Make an Appointment</a>
                             </div>
                         </div>
                     </div>
