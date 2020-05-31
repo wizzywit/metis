@@ -67,13 +67,13 @@
                                     @enderror
                             </div>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Date of Birth</label>
-                                        <input type="text" id="datepicker" name="dob" class="form-control" placeholder="">
+                                        <input onkeydown="return false" type="text" id="datepicker" name="dob" class="form-control" placeholder="">
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Gender</label>
                                         <select name="sex" class="form-control select2" style="width: 100%;">
@@ -100,7 +100,11 @@
                             </div>
 
                             <div class="row">
+<<<<<<< HEAD
                                 <div class="col-6">
+=======
+                                <div class="col-lg-6">
+>>>>>>> c663bc0e0a78043e605f0b0216cfbd9a13564f62
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Password</label>
                                         <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
@@ -111,7 +115,11 @@
                                         @enderror
                                     </div>
                                 </div>
+<<<<<<< HEAD
                                 <div class="col-6">
+=======
+                                <div class="col-lg-6">
+>>>>>>> c663bc0e0a78043e605f0b0216cfbd9a13564f62
                                     <div class="form-group">
                                         <label for="exampleInputPassword2">Confirm Password</label>
                                         <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword2" placeholder="Password">
