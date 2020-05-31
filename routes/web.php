@@ -82,7 +82,7 @@ Route::prefix('doctor')->group(function() {
      //Doctor login logic
      Route::get('/login','Doctor\LoginController@showLoginForm')->name('doctor.login');
      Route::post('/login', 'Doctor\LoginController@login')->name('doctor.login.submit');
-     Route::get('logout/', 'Doctor\LoginController@logout')->name('doctor.logout');
+     Route::post('logout/', 'Doctor\LoginController@logout')->name('doctor.logout');
      Route::get('registered',function() {
          return view('doctor.registered');
      });
