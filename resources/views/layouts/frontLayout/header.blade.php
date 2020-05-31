@@ -34,7 +34,7 @@
                     <div class="col-xl-3 col-lg-2">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="{{ asset('images/admin/logo1.png') }}" alt="" style="width:45px; "><strong> Metis Technologies</strong> 
+                                <img src="{{ asset('images/admin/logo1.png') }}" alt="" style="width:45px; "><strong> Metis Technologies</strong>
                             </a>
                         </div>
                     </div>
@@ -55,8 +55,8 @@
                                     @else
                                     <li><a href="#">For Doctors <i class="ti-angle-down"></i></a>
                                         <ul class="submenu">
-                                            <li><a href="contact.html">Register</a></li>
-                                            <li><a href="about.html">Login</a></li>
+                                            <li><a href="{{route('doctor.register')}}">Register</a></li>
+                                            <li><a href="{{route('doctor.login')}}">Login</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">For Patients <i class="ti-angle-down"></i></a>

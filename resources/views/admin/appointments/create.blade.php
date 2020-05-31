@@ -171,10 +171,10 @@ $(document).ready(function () {
         format: 'yyyy-mm-dd'
     });
 
-    //Timepicker
-    $('#start_time').datetimepicker({
-      format: 'LT'
-    })
+        //Timepicker
+        $('#start_time').datetimepicker({
+        format: 'LT'
+        })
 
     $('#end_time').datetimepicker({
       format: 'LT'

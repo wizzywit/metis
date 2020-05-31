@@ -38,7 +38,7 @@
               <!-- form start -->
               @if (count($errors) > 0)
               <div class="alert alert-danger alert-block alert-dismissible fade show " role="alert">
-                        <button type="button" class="close" data-dismiss="alert">×</button>	
+                        <button type="button" class="close" data-dismiss="alert">×</button>
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -49,72 +49,72 @@
 
               @if(Session::has('flash_message_error'))
                     <div class="alert alert-danger alert-block alert-dismissible fade show " role="alert">
-                        <button type="button" class="close" data-dismiss="alert">×</button>	
+                        <button type="button" class="close" data-dismiss="alert">×</button>
                         <strong>{!! session('flash_message_error') !!}</strong>
                     </div>
                 @endif
                 @if(Session::has('flash_message_success'))
                     <div class="alert alert-success alert-block alert-dismissible fade show " role="alert">
-                        <button type="button" class="close" data-dismiss="alert">×</button>	
+                        <button type="button" class="close" data-dismiss="alert">×</button>
                         <strong>{!! session('flash_message_success') !!}</strong>
                     </div>
                 @endif
               <form role="form" id="quickForm" action="{{ route('admin.doctor.save') }}" method="post" enctype="multipart/form-data">
-              @csrf  
-              <div class="card-body">
-                  <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" name="name" class="form-control" placeholder="Doctor Full name">
-                  </div>
-                  <div class="form-group">
-                      <label>Gender</label>
-                      <select name="sex" class="form-control select2" style="width: 100%;">
-                        <option value="M" selected="selected">Male</option>
-                        <option value="F">Female</option>
-                      </select>
-                </div>
-                  <div class="form-group">
-                        <label>Speciality</label>
-                        <input type="text" name="speciality" class="form-control" placeholder="Enter ...">
-                  </div>
-                  <div class="form-group">
-                        <label>Qualification</label>
-                        <input type="text" name="qualification" class="form-control" placeholder="Enter ...">
-                  </div>
-                  <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="text" name="phone" class="form-control" placeholder="Enter Phone number">
-                  </div>
-                  <div class="form-group">
-                        <label>Hospital/Clinic name</label>
-                        <input type="text" name="hospital" class="form-control" placeholder="Enter ...">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword2">Confirm Password</label>
-                    <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword2" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <label for="customFile">Passport Upload</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" name="passport" class="custom-file-input" id="customFile">
-                        <label class="custom-file-label" for="customFile">Choose file</label>
-                      </div>
+                @csrf
+                <div class="card-body">
+                    <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Doctor Full name">
                     </div>
-                  </div>
-                </div>
-                <!-- /.card-body -->
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Add</button>
-                </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select name="sex" class="form-control select2" style="width: 100%;">
+                            <option value="M" selected="selected">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                            <label>Speciality</label>
+                            <input type="text" name="speciality" class="form-control" placeholder="Enter ...">
+                    </div>
+                    <div class="form-group">
+                            <label>Qualification</label>
+                            <input type="text" name="qualification" class="form-control" placeholder="Enter ...">
+                    </div>
+                    <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" class="form-control" placeholder="Enter Phone number">
+                    </div>
+                    <div class="form-group">
+                            <label>Hospital/Clinic name</label>
+                            <input type="text" name="hospital" class="form-control" placeholder="Enter ...">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Confirm Password</label>
+                        <input type="password" name="password_confirmation" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="customFile">Passport Upload</label>
+                        <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" name="passport" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
               </form>
             </div>
             <!-- /.card -->
@@ -146,7 +146,7 @@ $(document).ready(function () {
     jQuery.validator.addMethod("phonenu", function (value, element) {
         return this.optional(element) || /^[0]\d{10}$/.test(value);
     }, "Invalid Phone Number");
-  
+
   $('#quickForm').validate({
       submitHandler: function(form) {
     // do other things for a valid form

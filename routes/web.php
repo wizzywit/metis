@@ -71,6 +71,40 @@ Route::prefix('admin')->group(function() {
     Route::get('/appointment/{id}/schedule/{flag}','Admin\AdminController@scheduleAppointment');
    }) ;
 
+
+Route::prefix('doctor')->group(function() {
+     //reset admin password logic
+     Route::get('/password/reset/{token}','Doctor\ResetPasswordController@showResetForm')->name('doctor.password.reset');
+     Route::get('/pasword/reset','Doctor\ForgotPasswordController@showLinkRequestForm')->name('doctor.password.update');
+     Route::post('/password/reset','Doctor\ResetPasswordController@reset')->name('doctor.password.request');
+
+     Route::post('/password/email','Doctor\ForgotPasswordController@sendResetLinkEmail')->name('doctor.password.email');
+     //Doctor login logic
+     Route::get('/login','Doctor\LoginController@showLoginForm')->name('doctor.login');
+     Route::post('/login', 'Doctor\LoginController@login')->name('doctor.login.submit');
+     Route::get('logout/', 'Doctor\LoginController@logout')->name('doctor.logout');
+     Route::get('registered',function() {
+         return view('doctor.registered');
+     });
+
+
+     //change password
+     Route::post('/setting/password/change','DoctorController@changePassword')->name('doctor.password.change');
+     Route::get('/setting/password','DoctorController@showPasswordForm')->name('doctor.password.form');
+     Route::get('/setting/password/confirm','DoctorController@confirmPassword')->name('doctor.password.confirm');
+     Route::get('/register','Doctor\RegisterController@showRegistrationForm')->name('doctor.register');
+     Route::post('/register','Doctor\RegisterController@register')->name('doctor.register.now');
+
+     Route::get('/', 'DoctorController@index')->name('doctor.dashboard');
+
+     //scheduling appointment routes
+     Route::get('/schedule/{id}','DoctorController@showScheduleForm')->name('doctor.schedule.request');
+     Route::post('/schedule/{id}','DoctorController@schedule')->name('doctor.schedule');
+
+});
+
+
+
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('auth')->prefix('patient')->group(function() {
     Route::get('/','PatientController@index');

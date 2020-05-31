@@ -11,7 +11,7 @@
                             </a>
                         </div>
                         <p>
-                                A Unit of Mavine Regulatory 
+                                A Unit of Mavine Regulatory
                                 solution.
                         </p>
                         <div class="socail_links">
@@ -87,7 +87,7 @@
                 <div class="col-xl-12">
                     <p class="copy_right text-center">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy; 2019 Metis Technologies. All rights reserved. | Powered By <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="https://wizzywit.github.io/" target="_blank">Wizzywit</a>
+Copyright &copy; 2019 Metis Technologies. All rights reserved.
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Doctor;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -12,14 +12,14 @@ class LoginController extends Controller
 
     public function __construct()
     {
+      $this->middleware('guest:doctor', ['except' => ['logout']]);
       $this->middleware('guest:admin', ['except' => ['logout']]);
       $this->middleware('guest')->except('logout');
-      $this->middleware('guest:doctor')->except('logout');
     }
 
     public function showLoginForm()
     {
-      return view('admin.admin_login');
+      return view('doctor.doctor_login');
     }
 
     public function login(Request $request)
@@ -31,9 +31,14 @@ class LoginController extends Controller
       ]);
 
       // Attempt to log the user in
-      if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password], $request->remember)) {
+      if (Auth::guard('doctor')->attempt(['email' => $request->email, 'password' => $request->password], $request->remember)) {
         // if successful, then redirect to their intended location
-        return redirect()->intended(route('admin.dashboard'));
+        if(Auth::guard('doctor')->user()->verified){
+            return redirect()->intended(route('doctor.dashboard'));
+        } else {
+            Auth::guard('doctor')->logout();
+            return redirect('/doctor/login')->with('flash_message_success', 'Account Have not been Verified, Contact Admin');
+        }
       }
       // if unsuccessful, then redirect back to the login with the form data
       return redirect()->back()->withInput($request->only('email', 'remember'))->with('flash_message_error','Invalid Email or Password');
@@ -41,7 +46,7 @@ class LoginController extends Controller
 
     public function logout()
     {
-        Auth::guard('admin')->logout();
-        return redirect('/admin');
+        Auth::guard('doctor')->logout();
+        return redirect('/doctor');
     }
 }

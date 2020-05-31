@@ -27,10 +27,10 @@ class RedirectIfAuthenticated
             if (Auth::guard($guard)->check()) {
                 return redirect()->route('doctor.dashboard');
             }
-             
+
             default:
               if (Auth::guard($guard)->check()) {
-                  return redirect('/');
+                  return redirect('/patient');
               }
               break;
           }

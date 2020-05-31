@@ -6,7 +6,7 @@
         </li>
         <li><a class="{{ request()->is('patient/appointments') ? 'active' : ''}}" href="{{route('appointments')}}"><i class="menu-icon icon-calendar"></i>Appointments <b class="label green pull-right">
             {{App\Appointment::where('patient_id',Auth::guard('web')->id())->count()}}</b> </a></li>
-        <li><a class="{{ request()->is('patient/scheduled') ? 'active' : ''}}" href="task.html"><i class="menu-icon icon-tasks"></i>Scheduled <b class="label orange pull-right">
+        <li><a class="{{ request()->is('patient/scheduled') ? 'active' : ''}}" href="#"><i class="menu-icon icon-tasks"></i>Scheduled <b class="label orange pull-right">
             {{App\Appointment::where(['patient_id'=>Auth::guard('web')->id(),'scheduled'=>true])->count()}}</b> </a></li>
             <li><a class="{{ request()->is('patient/video') ? 'active' : ''}}" href="task.html"><i class="menu-icon icon-suitcase"></i>Conference Room</a></li>
     </ul>
@@ -20,8 +20,8 @@
             </ul>
         </li>
         <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();"><i class="menu-icon icon-signout"></i>Logout </a></li>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            document.getElementById('logout-form1').submit();"><i class="menu-icon icon-signout"></i>Logout </a></li>
+            <form id="logout-form1" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>
     </ul>
