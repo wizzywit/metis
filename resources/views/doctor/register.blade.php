@@ -41,7 +41,7 @@
         <div class="col-md-8">
             <div>
                 <br/>
-                <h4 style="margin-top: 50px; position: relative; left:30%"><img src="{{ asset('images/admin/logo1.png') }}" alt="" style="width:45px; "> Metis Technologies</h4>
+                <h4 style="text-align: center; margin-top: 50px;"><img src="{{ asset('images/admin/logo1.png') }}" alt="" style="width:45px; "> Metis Technologies</h4>
             <br/>
             <br/>
             </div>
