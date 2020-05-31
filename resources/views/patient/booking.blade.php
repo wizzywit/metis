@@ -82,7 +82,7 @@
                                 <div class="control-group">
                                     <label class="control-label" for="basicinput">Appointment Date</label>
                                     <div class="controls">
-                                        <input name="date" type="text" id="datepicker" placeholder="Appointment Date.." class="span8" required>
+                                        <input onkeydown="return false" name="date" type="text" id="datepicker" placeholder="Appointment Date.." class="span8" required>
                                     </div>
                                 </div>
 
