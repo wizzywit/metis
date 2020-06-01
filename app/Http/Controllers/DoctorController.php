@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Image;
 use App\Doctor;
-use App\Patient;
+use File;
 use App\Appointment;
 use App\Mail\ScheduleMail;
 use Auth;
@@ -108,6 +108,66 @@ class DoctorController extends Controller
         }
 
 
+
+    }
+
+    public function showProfile() {
+        return view('doctor.profile');
+    }
+
+    public function showEdit() {
+        return view('doctor.edit');
+    }
+
+    public function editProfile(Request $request) {
+        $data = $request->all();
+        // echo "<pre>"; print_r($data); die;
+        $update = null;
+        $request->validate([
+            'passport' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048|dimensions:min_width=480,min_height=768',
+        ]);
+        if($file = $request->hasFile('passport')){
+            // echo "has file upload"; die;
+            $this->deleteImage(Auth::guard('doctor')->user()->passport);
+            $file = $request->file('passport');
+            $ext = $file->getClientOriginalExtension();
+            $destinationPath = 'images/doctors/';
+            $dbFileName = date('YmdHis').".".$ext;
+            $filePath = $destinationPath.$dbFileName;
+            Image::make($file)->save($filePath);
+            $data = $request->all();
+            $data['passport'] =  $dbFileName;
+
+            $update = Auth::guard('doctor')->user()->update([
+                'name'=>$data['name'],
+                'phone'=>$data['phone'],
+                'speciality' => $data['speciality'],
+                'qualification' => $data['qualification'],
+                'hospital' => $data['hospital'],
+                'sex'=> $data['sex'],
+                'passport' => $data['passport'],
+            ]);
+        } else {
+            // echo "no file upload"; die;
+            $update = Auth::guard('doctor')->user()->update([
+                'name'=>$data['name'],
+                'phone'=>$data['phone'],
+                'speciality' => $data['speciality'],
+                'qualification' => $data['qualification'],
+                'hospital' => $data['hospital'],
+                'sex'=> $data['sex']
+            ]);
+        }
+
+
+        if($update){
+            return redirect(route('doctor.view'))->with('flash_message_success','Profile Updated');
+        } else return redirect()->back()->with('flash_message_error','Unable to Update profile: Check Input details');
+    }
+
+    public function deleteImage($image) {
+        $url = 'images/doctors/'.$image;
+        return File::delete($url);
 
     }
 }

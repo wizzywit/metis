@@ -9,12 +9,12 @@
                 <ul class="nav pull-right">
                     <li><a href="#">Hello Doc. </a></li>
                     <li class="nav-user dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{ asset('images/front_img/patient/user.png') }}" class="nav-avatar" />
+                        <img src="{{ asset('images/doctors/'.Auth::guard('doctor')->user()->passport) }}" class="nav-avatar" />
                         <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Your Profile</a></li>
-                            <li><a href="#">Edit Profile</a></li>
-                            <li><a href="#">Password Setting</a></li>
+                            <li><a href="{{route('doctor.view')}}">Your Profile</a></li>
+                            <li><a href="{{route('doctor.edit')}}">Edit Profile</a></li>
+                            <li><a href="{{route('doctor.password.form')}}">Password Setting</a></li>
                             <li class="divider"></li>
                             <li><a href="{{ route('doctor.logout') }}"  onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">Logout</a></li>

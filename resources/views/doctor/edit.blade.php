@@ -1,11 +1,10 @@
-@extends('layouts.frontLayout.patientLayout.design')
+@extends('layouts.frontLayout.doctorLayout.design')
 @section('styles')
 <style>
     .text-danger {
         color: red;
     }
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
 @endsection
 
 @section('content')
@@ -15,7 +14,7 @@
    <div class="container">
        <div class="row">
            <div class="span3">
-               @include('layouts.frontLayout.patientLayout.sidebar')
+               @include('layouts.frontLayout.doctorLayout.sidebar')
            </div>
            <!--/.span3-->
            <div class="span9">
@@ -26,6 +25,19 @@
                         <h3>Edit Profile</h3>
                     </div>
                     <div class="module-body">
+
+                            @if($errors->any())
+                                <div class="alert alert-error">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <strong>
+                                        <ul>
+                                            @foreach($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </strong>
+                                </div>
+                            @endif
                             @if(Session::has('flash_message_success'))
                             <div class="alert alert-success">
                                 <button type="button" class="close" data-dismiss="alert">×</button>
@@ -47,28 +59,14 @@
 
                             <br />
 
-                        <form id="formValid" class="form-horizontal row-fluid" action="{{route('patient.edit.profile')}}" method="post">
+                        <form id="formValid" class="form-horizontal row-fluid" action="{{route('doctor.edit.profile')}}" method="post" enctype="multipart/form-data">
                                 @csrf
 
 
                                 <div class="control-group">
                                     <label class="control-label" for="basicinput">Name</label>
                                     <div class="controls">
-                                        <input value="{{Auth::guard('web')->user()->name}}" name="name" type="text"  class="span8" required>
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <label class="control-label" for="basicinput">Phone</label>
-                                    <div class="controls">
-                                        <input value="{{Auth::guard('web')->user()->phone}}" name="phone" type="text"  class="span8" required>
-                                    </div>
-                                </div>
-
-                                <div class="control-group">
-                                    <label class="control-label" for="basicinput">Date of Birth</label>
-                                    <div class="controls">
-                                        <input onkeydown="return false" value="{{Auth::guard('web')->user()->dob}}" name="dob" type="text" id="datepicker" class="span8" required>
+                                        <input value="{{Auth::guard('doctor')->user()->name}}" name="name" type="text"  class="span8" required>
                                     </div>
                                 </div>
 
@@ -76,9 +74,44 @@
                                     <label class="control-label" for="basicinput">Gender</label>
                                     <div class="controls">
                                         <select name="sex" id="sex" tabindex="1" class="span8" required>
-                                            <option value="M" @if(Auth::guard('web')->user()->sex == 'M') selected @endif>Male</option>
-                                            <option value="F" @if(Auth::guard('web')->user()->sex == 'F') selected @endif>Female</option>
+                                            <option value="M" @if(Auth::guard('doctor')->user()->sex == 'M') selected @endif>Male</option>
+                                            <option value="F" @if(Auth::guard('doctor')->user()->sex == 'F') selected @endif>Female</option>
                                         </select>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label" for="basicinput">Phone Number</label>
+                                    <div class="controls">
+                                        <input value="{{Auth::guard('doctor')->user()->phone}}" name="phone" type="text"  class="span8" required>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label" for="basicinput">Speciality</label>
+                                    <div class="controls">
+                                        <input value="{{Auth::guard('doctor')->user()->speciality}}" name="speciality" type="text" class="span8" required>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label" for="basicinput">Qualification</label>
+                                    <div class="controls">
+                                        <input value="{{Auth::guard('doctor')->user()->qualification}}" name="qualification" type="text" class="span8" required>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label" for="basicinput">Hospital/Clinic name</label>
+                                    <div class="controls">
+                                        <input value="{{Auth::guard('doctor')->user()->hospital}}" name="hospital" type="text" class="span8" required>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <label class="control-label" for="basicinput">Change Passport</label>
+                                    <div class="controls">
+                                        <input name="passport" type="file" class="span8" placeholder="Choose File">
                                     </div>
                                 </div>
 
@@ -107,7 +140,6 @@
 <!-- jquery-validation -->
 <script src="{{ asset('js/admin_js/plugins/jquery-validation/jquery.validate.min.js') }}"></script>
 <script src="{{ asset('js/admin_js/plugins/jquery-validation/additional-methods.min.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
 <script>
     $(function(){
         $('#formValid').submit(function() {
@@ -122,19 +154,22 @@
             form.submit();
         },
         rules: {
-        name: {
-            required: true,
-        },
-        phone: {
-            required: true,
-            phonenu: true
-        },
-        dob: {
-            required: true,
-        },
-        sex: {
-            required: true,
-        },
+            name: {
+                required: true,
+            },
+            speciality: {
+                required: true,
+            },
+            hospital: {
+                required: true
+            },
+            qualification: {
+                required: true
+            },
+            phone: {
+                required: true,
+                phonenu: true
+            },
         },
         messages: {
         phone: {
@@ -143,11 +178,14 @@
         name: {
             required: "Please enter your name",
         },
-        dob: {
-            required: "Please enter your Date of Birth",
+        speciality: {
+            required: "Please enter doctor speciality",
         },
-        sex: {
-            required: "Please select your gender",
+        hospital: {
+            required: "Please Enter a hospital/clinic"
+        },
+        qualification: {
+            required: "Please enter a qualification"
         },
         },
         errorElement: 'span',
@@ -163,14 +201,6 @@
         }
         });
 
-    });
-
-    $('#datepicker').datepicker({
-        format: 'yyyy-mm-dd',
-        iconsLibrary: 'fontawesome',
-        icons: {
-            rightIcon: '<span class="icon icon-home"></span>'
-        }
     });
     });
 

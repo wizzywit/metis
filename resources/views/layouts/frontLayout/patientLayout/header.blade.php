@@ -13,7 +13,7 @@
                         <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{route('patient.view')}}">Your Profile</a></li>
-                            <li><a href="#">Edit Profile</a></li>
+                            <li><a href="{{route('patient.edit')}}">Edit Profile</a></li>
                             <li><a href="{{route('patient.password.form')}}">Password Setting</a></li>
                             <li class="divider"></li>
                             <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();

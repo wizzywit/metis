@@ -101,6 +101,18 @@ Route::prefix('doctor')->group(function() {
      Route::get('/schedule/{id}','DoctorController@showScheduleForm')->name('doctor.schedule.request');
      Route::post('/schedule/{id}','DoctorController@schedule')->name('doctor.schedule');
 
+     //change password
+    Route::post('/setting/password/change','DoctorController@changePassword')->name('doctor.password.change');
+    Route::get('/setting/password','DoctorController@showPasswordForm')->name('doctor.password.form');
+    Route::get('/setting/password/confirm','DoctorController@confirmPassword')->name('doctor.password.confirm');
+
+    //view profile
+    Route::get('/setting/profile','DoctorController@showProfile')->name('doctor.view');
+
+    //edit profile
+    Route::get('/setting/profile/edit','DoctorController@showEdit')->name('doctor.edit');
+    Route::post('/setting/profile/edit','DoctorController@editProfile')->name('doctor.edit.profile');
+
 });
 
 

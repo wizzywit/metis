@@ -43,14 +43,13 @@ $id = 1;
                                     <td>{{$appointment->date}}</td>
                                     <td class="center">
                                         @if($appointment->scheduled == true)
-                                        {{$appointment->scheduled}}
+                                        <i class="fa fa-check fa-lg text-success" ></i>
                                         @else
                                         <i class="fa fa-times-circle fa-lg text-warning" ></i>
                                         @endif
                                     </td>
                                     <td class="center">
                                         @if($appointment->scheduled == true)
-                                        <button class="btn btn-primary" disabled>Scheduled</button>
                                         <a href="#" class="btn btn-success">View Schedule</a>
                                         @else
                                         <a href="{{route('doctor.schedule.request',$appointment->id)}}" class="btn btn-success">Schedule</a>
