@@ -82649,9 +82649,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 /* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(pusher_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var simple_peer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! simple-peer */ "./node_modules/simple-peer/index.js");
-/* harmony import */ var simple_peer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(simple_peer__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _MediaHandler__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../MediaHandler */ "./resources/js/MediaHandler.js");
+/* harmony import */ var _MediaHandler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MediaHandler */ "./resources/js/MediaHandler.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -82677,7 +82675,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-
 var APP_KEY = '52b6df945610aa082478';
 
 var Doctor = /*#__PURE__*/function (_Component) {
@@ -82696,15 +82693,14 @@ var Doctor = /*#__PURE__*/function (_Component) {
       otherUserId: null
     };
     _this.user = window.user;
-    _this.peers = {};
     _this.user.stream = null;
-    _this.mediaHandler = new _MediaHandler__WEBPACK_IMPORTED_MODULE_3__["default"]();
+    _this.usersOnline;
+    _this.users = [];
+    _this.mediaHandler = new _MediaHandler__WEBPACK_IMPORTED_MODULE_2__["default"]();
 
     _this.setupPusher();
 
-    _this.callTo = _this.callTo.bind(_assertThisInitialized(_this));
     _this.setupPusher = _this.setupPusher.bind(_assertThisInitialized(_this));
-    _this.startPeer = _this.startPeer.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -82746,67 +82742,24 @@ var Doctor = /*#__PURE__*/function (_Component) {
         }
       });
       this.channel = this.pusher.subscribe('presence-' + this.user.channel);
-      this.channel.bind("client-signal-".concat(this.user.id), function (signal) {
-        var peer = _this3.peers[signal.userId]; //if peer is not already exists, we got an incoming call
-
-        if (peer === undefined) {
-          _this3.setState({
-            otherUserId: signal.userId
-          });
-
-          peer = _this3.startPeer(signal.userId, false);
-        }
-
-        peer.signal(signal.data);
-      });
-    }
-  }, {
-    key: "startPeer",
-    value: function startPeer(userId) {
-      var _this4 = this;
-
-      var initiator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-      var peer = new simple_peer__WEBPACK_IMPORTED_MODULE_2___default.a({
-        initiator: initiator,
-        stream: this.user.stream,
-        trickle: false
-      });
-      peer.on('signal', function (data) {
-        _this4.channel.trigger("client-signal-".concat(userId), {
-          type: 'signal',
-          userId: _this4.user.id,
-          data: data
+      this.channel.bind("pusher:subscription_succeeded", function (members) {
+        //set the member count
+        _this3.usersOnline = members.count;
+        members.each(function (member) {
+          if (member.id != _this3.user.id) {
+            _this3.users.push(member.id);
+          }
         });
       });
-      peer.on('stream', function (stream) {
-        try {
-          _this4.userVideo.src = URL.createObjectURL(stream);
-        } catch (e) {
-          _this4.userVideo.srcObject = stream;
-        }
-
-        _this4.userVideo.play();
+      this.channel.bind("pusher:member_added", function (member) {
+        users.push(member.id);
       });
-      peer.on('close', function () {
-        var peer = _this4.peers[userId];
-
-        if (peer !== undefined) {
-          peer.destroy();
-        }
-
-        _this4.peers[userId] = undefined;
-      });
-      return peer;
-    }
-  }, {
-    key: "callTo",
-    value: function callTo(userId) {
-      this.peers[userId] = this.startPeer(userId);
+      this.channel.bind("client-signal-".concat(this.user.id), function (signal) {});
     }
   }, {
     key: "render",
     value: function render() {
-      var _this5 = this;
+      var _this4 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Doctor"
@@ -82817,24 +82770,33 @@ var Doctor = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn btn-success justify-content-center",
         onClick: function onClick() {
-          return _this5.callTo(_this5.user.patient_id);
+          return _this4.callTo(_this4.user.patient_id);
         }
       }, "Call ", this.user.patient_name))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "video-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
         className: "my-video",
         ref: function ref(_ref) {
-          _this5.myVideo = _ref;
+          _this4.myVideo = _ref;
         },
         autoPlay: true,
         muted: true
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
         className: "user-video",
         ref: function ref(_ref2) {
-          _this5.userVideo = _ref2;
+          _this4.userVideo = _ref2;
         },
         autoPlay: true
-      })));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row-fluid"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "span4 offset-3"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn-success justify-content-center",
+        onClick: function onClick() {
+          return _this4.callTo(_this4.user.patient_id);
+        }
+      }, "Call ", this.user.patient_name))));
     }
   }]);
 

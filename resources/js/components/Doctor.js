@@ -19,7 +19,7 @@ class Doctor extends Component {
         this.peers = {};
         this.user.stream = null;
 
-        
+
         this.mediaHandler = new MediaHandler();
         this.setupPusher();
 
@@ -90,7 +90,6 @@ class Doctor extends Component {
             } catch (e) {
                 this.userVideo.srcObject = stream;
             }
-            this.userVideo.play();
         });
         peer.on('close', () => {
             let peer = this.peers[userId];
