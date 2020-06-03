@@ -19,6 +19,7 @@ class CreateAppointmentsTable extends Migration
             $table->foreign('patient_id')->references('id')->on('patients');
             $table->unsignedBigInteger('doctor_id')->nullable();
             $table->foreign('doctor_id')->references('id')->on('doctors');
+            $table->string('room_name')->nullable();
             $table->string('price');
             $table->boolean('payed')->default('0');
             $table->date('date');

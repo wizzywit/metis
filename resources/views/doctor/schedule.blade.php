@@ -89,6 +89,13 @@
                                 </div>
 
                                 <div class="control-group">
+                                    <label class="control-label" for="start_time">Room Name:</label>
+                                    <div class="controls">
+                                        <input  name="room_name" type="text" id="room_name" class="span8" required>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
                                     <label class="control-label" for="basicinput">Appoitnment Date</label>
                                     <div class="controls">
                                         <input value="{{$appointment->date}}" name="date" type="text" id="datepicker" class="span8" required>
@@ -191,6 +198,9 @@
                 start_time: {
                     required: true,
                 },
+                room_name: {
+                    required: true,
+                }
                 },
                 messages: {
                 start_time: {

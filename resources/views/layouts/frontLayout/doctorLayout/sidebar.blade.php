@@ -1,11 +1,11 @@
 <div class="sidebar">
     <ul class="widget widget-menu unstyled">
-    <li ><a class="{{ request()->is('doctor') ? 'active' : ''}}" href="{{url('doctor/')}}"><i class="menu-icon icon-home"></i>Home
+    <li ><a class="{{ request()->is('doctor') || request()->is('doctor/schedule*') ? 'active' : ''}}" href="{{url('doctor/')}}"><i class="menu-icon icon-home"></i>Home
         </a></li>
         <li><a class="" href="#"><i class="menu-icon icon-bullhorn"></i>Today Appointments</a>
         </li>
             <li><a class="" href="#"><i class="menu-icon icon-calendar"></i>Calender</a></li>
-            <li><a class="" href="#"><i class="menu-icon icon-suitcase"></i>Conference Room</a></li>
+            <li><a class="{{ request()->is('doctor/video*') ? 'active' : ''}}" href="{{route('doctor.video.rooms')}}"><i class="menu-icon icon-suitcase"></i>Conference Room</a></li>
 
     </ul>
     <ul class="widget widget-menu unstyled">

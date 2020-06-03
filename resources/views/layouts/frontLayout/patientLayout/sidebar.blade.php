@@ -8,7 +8,7 @@
             {{App\Appointment::where('patient_id',Auth::guard('web')->id())->count()}}</b> </a></li>
         <li><a class="{{ request()->is('patient/scheduled') ? 'active' : ''}}" href="#"><i class="menu-icon icon-tasks"></i>Scheduled <b class="label orange pull-right">
             {{App\Appointment::where(['patient_id'=>Auth::guard('web')->id(),'scheduled'=>true])->count()}}</b> </a></li>
-            <li><a class="{{ request()->is('patient/video') ? 'active' : ''}}" href="task.html"><i class="menu-icon icon-suitcase"></i>Conference Room</a></li>
+            <li><a class="{{ request()->is('patient/video*') ? 'active' : ''}}" href="{{route('patient.video.rooms')}}"><i class="menu-icon icon-suitcase"></i>Conference Room</a></li>
     </ul>
     <ul class="widget widget-menu unstyled">
         <li><a class="collapsed {{ request()->is('patient/setting*') ? 'active' : ''}}" data-toggle="collapse" href="#togglePages"><i class="menu-icon icon-cog">

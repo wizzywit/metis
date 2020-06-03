@@ -113,6 +113,10 @@ Route::prefix('doctor')->group(function() {
     Route::get('/setting/profile/edit','DoctorController@showEdit')->name('doctor.edit');
     Route::post('/setting/profile/edit','DoctorController@editProfile')->name('doctor.edit.profile');
 
+    //videoconferencing route
+    Route::post('/video/home','DoctorController@videoHome')->name('doctor.video.conference');
+    Route::get('/video/start','DoctorController@showRooms')->name('doctor.video.rooms');
+
 });
 
 
@@ -140,4 +144,10 @@ Route::middleware('auth')->prefix('patient')->group(function() {
     Route::get('/setting/profile/edit','PatientController@showEdit')->name('patient.edit');
     Route::post('/setting/profile/edit','PatientController@editProfile')->name('patient.edit.profile');
 
+     //videoconferencing route
+     Route::post('/video/home','PatientController@videoHome')->name('patient.video.conference');
+     Route::get('/video/start','PatientController@showRooms')->name('patient.video.rooms');
+
 });
+
+Route::post('/pusher/auth','PusherController@authenticate');

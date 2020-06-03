@@ -13,6 +13,7 @@ use Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 
+
 class DoctorController extends Controller
 {
     //
@@ -90,6 +91,7 @@ class DoctorController extends Controller
             'end_time' => $request->end_time,
             'date' => $request->date,
             'doctor' => Auth::guard('doctor')->user()->name,
+            'room_name'=> $request->room_name,
         );
 
         Mail::to($request->email)->send(new ScheduleMail($data));
@@ -100,7 +102,8 @@ class DoctorController extends Controller
                 'date' => $request->date,
                 'start_time' => $request->start_time,
                 'end_time' => $request->end_time,
-                'scheduled' => true
+                'scheduled' => true,
+                'room_name' => $request->room_name
             ]);
 
             return redirect(route('doctor.dashboard'))->with('flash_message_success', $request->name.'Appointment Successfully Booked');
@@ -170,4 +173,26 @@ class DoctorController extends Controller
         return File::delete($url);
 
     }
+
+    public function showRooms() {
+        $appointments = Appointment::with('patient')->where(['doctor_id'=>Auth::guard('doctor')->id(),'payed'=>true, 'scheduled'=>true])->get();
+        return view('doctor.room')->with(compact('appointments'));
+    }
+
+    public function videoHome(Request $request)
+    {
+        $data = $request->all();
+        $appointment = Appointment::with('patient')->where(['id'=> $data['room']])->first();
+        $meeting = $appointment['room_name'];
+        $string = preg_replace('/\s+/', '-', $appointment['room_name']);
+        $channel = strtolower($string);
+        $appointment = [
+            "meeting" => $channel,
+            "patient_id" => $appointment->patient->id,
+            "patient_name" => $appointment->patient->name
+        ];
+        return view('doctor.video')->with(compact('appointment'));
+    }
+
+
 }

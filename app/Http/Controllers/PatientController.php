@@ -135,4 +135,27 @@ class PatientController extends Controller
             return redirect(route('patient.view'))->with('flash_message_success','Profile Updated');
         } else return redirect()->back()->with('flash_message_error','Unable to Update profile: Check Input details');
     }
+
+    public function showRooms() {
+        $appointments = Appointment::with('doctor')->where(['patient_id'=>Auth::guard('web')->id(),'payed'=>true, 'scheduled'=>true])->get();
+        return view('patient.room')->with(compact('appointments'));
+    }
+
+    public function videoHome(Request $request)
+    {
+        $data = $request->all();
+        //
+        $appointment = Appointment::with('doctor')->where(['id'=> $data['room']])->first();
+        $meeting = $appointment['room_name'];
+        $string = preg_replace('/\s+/', '-', $appointment['room_name']);
+        $channel = strtolower($string);
+        $appointment = [
+            "meeting" => $channel,
+            "doctor_id" => $appointment->doctor->id,
+            "doctor_name" => $appointment->doctor->name
+        ];
+
+        // echo "<pre>"; print_r($appointment); die;
+        return view('patient.video')->with(compact('appointment'));
+    }
 }
