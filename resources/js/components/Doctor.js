@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import Pusher from 'pusher-js';
-import Peer from 'simple-peer';
 import MediaHandler from '../MediaHandler';
 
 const APP_KEY = '52b6df945610aa082478';
@@ -9,39 +8,34 @@ class Doctor extends Component {
     constructor() {
         super();
 
-
         this.state = {
-            hasMedia: false,
-            otherUserId: null
-        }
-
+            users: [],
+            button: "none",
+        };
         this.user = window.user;
-        this.peers = {};
-        this.user.stream = null;
+        this.usersOnline;
+        this.caller;
+        this.localUserMedia = null;
+        this.sessionDesc;
+        this.room;
 
 
         this.mediaHandler = new MediaHandler();
+
+        //To iron over browser implementation anomalies like prefixes
+        this.GetRTCPeerConnection();
+        this.GetRTCSessionDescription();
+        this.GetRTCIceCandidate();
+        //prepare the caller to use peerconnection
+        this.prepareCaller();
         this.setupPusher();
 
-        this.callTo = this.callTo.bind(this);
         this.setupPusher = this.setupPusher.bind(this);
-        this.startPeer = this.startPeer.bind(this);
+        this.GetRTCPeerConnection = this.GetRTCPeerConnection.bind(this);
+        this.GetRTCSessionDescription = this.GetRTCSessionDescription.bind(this);
+        this.GetRTCIceCandidate = this.GetRTCIceCandidate.bind(this);
+        this.prepareCaller = this.prepareCaller.bind(this);
 
-    }
-
-    componentWillMount() {
-        this.mediaHandler.getPermissions()
-        .then((stream) => {
-            this.setState({hasMedia: true});
-            this.user.stream = stream;
-            try {
-                this.myVideo.srcObject = stream;
-            } catch (e) {
-                this.myVideo.src = URL.createObjectURL(stream);
-            }
-
-            this.myVideo.play();
-        })
     }
 
     setupPusher() {
@@ -58,59 +52,226 @@ class Doctor extends Component {
         });
 
         this.channel = this.pusher.subscribe('presence-'+this.user.channel);
-        this.channel.bind(`client-signal-${this.user.id}`, (signal)=> {
-            let peer =this.peers[signal.userId];
-
-            //if peer is not already exists, we got an incoming call
-            if(peer === undefined){
-                this.setState({otherUserId: signal.userId});
-                peer = this.startPeer(signal.userId, false);
-            }
-            peer.signal(signal.data);
-        })
-    }
-
-    startPeer(userId, initiator = true) {
-        const peer = new Peer({
-            initiator,
-            stream: this.user.stream,
-            trickle: false
-        });
-        peer.on('signal',(data) => {
-            this.channel.trigger(`client-signal-${userId}`,{
-                type: 'signal',
-                userId: this.user.id,
-                data: data
+        this.channel.bind("pusher:subscription_succeeded", members => {
+            //set the member count
+            this.usersOnline = members.count;
+            members.each(member => {
+              if (member.id != this.user.id) {
+                var joined = this.state.users.concat(member.id);
+                this.setState({ users: joined });
+              }
             });
+          });
+
+        this.channel.bind("pusher:member_added", member => {
+            var joined = this.state.users.concat(member.id);
+            this.setState({ users: joined });
         });
 
-        peer.on('stream', (stream)=> {
+        this.channel.bind("pusher:member_removed", member => {
+        // for remove member from list:
+            let index = this.state.users.indexOf(member.id);
+            this.setState(state => {
+                const users = state.users.filter((user, j) => index !== j);
+                return {
+                  users,
+                };
+              });
+            if (member.id == this.room) {
+                this.endCall();
+            }
+        });
+
+        this.channel.bind("client-candidate", (msg) => {
+            if(msg.room == this.room ){
+                console.log("candidate received");
+                this.caller.addIceCandidate(new RTCIceCandidate(msg.candidate));
+            }
+        });
+
+        this.channel.bind(`client-signal-${this.user.id}`, (msg)=> {
+            if(msg.room == this.user.id){
+                let answer = confirm("You have a call from: "+ msg.from + "Would you like to answer?");
+                if(!answer){
+                    return channel.trigger("client-reject", {"room": msg.room, "rejected":this.user.id});
+                }
+                this.room = msg.room;
+                this.mediaHandler.getPermissions()
+                .then(stream => {
+                    this.localUserMedia = stream;
+                    this.toggleEndCallButton();
+                    try {
+                        this.myVideo.srcObject = stream;
+                    } catch (e) {
+                        this.myVideo.src = URL.createObjectURL(stream);
+                    }
+                    this.caller.addStream(stream);
+                    let sessionDesc = new RTCSessionDescription(msg.sdp);
+                    this.caller.setRemoteDescription(sessionDesc);
+                    this.caller.createAnswer().then((sdp) => {
+                        this.caller.setLocalDescription(new RTCSessionDescription(sdp));
+                        this.channel.trigger("client-answer", {
+                            "sdp": sdp,
+                            "room": this.room
+                        });
+                    });
+
+                })
+                .catch(error => {
+                    console.log('an error occured', error);
+                })
+            }
+        });
+
+        this.channel.bind("client-answer", (answer) => {
+            if (answer.room == this.room) {
+              console.log("answer received");
+              this.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
+            }
+          });
+
+          this.channel.bind("client-reject", (answer) => {
+            if (answer.room == this.room) {
+              console.log("Call declined");
+              alert("call to " + answer.rejected + "was politely declined");
+              this.endCall();
+            }
+          });
+
+          this.channel.bind("client-endcall", (answer) => {
+            if (answer.room == this.room) {
+              console.log("Call Ended");
+              this.endCall();
+            }
+          });
+
+
+    }
+
+
+     GetRTCIceCandidate() {
+      window.RTCIceCandidate = window.RTCIceCandidate || window.webkitRTCIceCandidate || window.mozRTCIceCandidate || window.msRTCIceCandidate;
+      return window.RTCIceCandidate;
+    }
+
+     GetRTCPeerConnection() {
+      window.RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection || window.msRTCPeerConnection;
+      return window.RTCPeerConnection;
+    }
+
+    GetRTCSessionDescription() {
+      window.RTCSessionDescription = window.RTCSessionDescription || window.webkitRTCSessionDescription ||  window.mozRTCSessionDescription || window.msRTCSessionDescription;
+      return window.RTCSessionDescription;
+    }
+
+    prepareCaller() {
+      //Initializing a peer connection
+
+      this.caller = new window.RTCPeerConnection();
+      console.log(this.caller);
+      //Listen for ICE Candidates and send them to remote peers
+      this.caller.onicecandidate = (evt) => {
+        if (!evt.candidate) return;
+        console.log("onicecandidate called");
+        this.onIceCandidate(this.caller, evt);
+      };
+      //onaddstream handler to receive remote feed and show in remoteview video element
+      this.caller.onaddstream = (evt) => {
+        console.log("onaddstream called");
+        try {
+            this.userVideo.src = URL.createObjectURL(evt.stream);
+        } catch (e) {
+            this.userVideo.srcObject = evt.stream;
+        }
+      };
+    }
+
+
+     //Send the ICE Candidate to the remote peer
+     onIceCandidate(peer, evt) {
+        if (evt.candidate) {
+            this.channel.trigger("client-candidate", {
+                "candidate": evt.candidate,
+                "room": this.room
+            });
+        }
+    }
+
+
+
+     //Create and send offer to remote peer on button click
+     callUser(user_id) {
+        this.mediaHandler.getPermissions()
+        .then(stream => {
+            this.localUserMedia = stream;
+            this.toggleEndCallButton();
             try {
-                this.userVideo.src = URL.createObjectURL(stream);
+                this.myVideo.srcObject = stream;
             } catch (e) {
-                this.userVideo.srcObject = stream;
+                this.myVideo.src = URL.createObjectURL(stream);
             }
-        });
-        peer.on('close', () => {
-            let peer = this.peers[userId];
-            if(peer !== undefined){
-                peer.destroy();
-            }
-            this.peers[userId] = undefined;
-        });
-        return peer;
+            this.toggleEndCallButton();
+            this.prepareCaller();
+            stream.getTracks().forEach(track => {
+                this.caller.addTrack(track, stream);
+            });
+            this.caller.createOffer().then((desc) => {
+                console.log(desc);
+                return this.caller.setLocalDescription(desc);
+            })
+            .then(() => {
+                this.channel.trigger(`client-signal-${user_id}`, {
+                    sdp: this.caller.localDescription,
+                    room: user_id,
+                    from: this.user.id,
+                  });
+                  this.room = user_id;
+            })
+            .catch((error) => {
+                console.log("an error occured", error);
+              });
+
+          })
+          .catch(error => {
+            console.log("an error occured", error);
+          });
+      }
+      toggleEndCallButton() {
+        if (this.state.button == "none") {
+          this.setState({button: "block"});
+        } else {
+            this.setState({button: "none"});
+        }
+      }
+
+
+    endCall() {
+    this.room = undefined;
+    this.caller.close();
+    for (let track of this.localUserMedia.getTracks()) {
+        track.stop();
+    }
+    this.prepareCaller();
+    this.toggleEndCallButton();
     }
 
-    callTo(userId) {
-        this.peers[userId] = this.startPeer(userId);
+    endCurrentCall() {
+    channel.trigger("client-endcall", {
+        room: this.room
+    });
+
+    this.endCall();
     }
+
 
     render() {
         return (
             <div className="Doctor">
                 <div className="row-fluid">
                     <div className="span4 offset-3">
-                        <button className="btn btn-success justify-content-center" onClick={() => this.callTo(this.user.patient_id)}>Call {this.user.patient_name}</button>
+                        {this.state.users.map((user_id) => {
+                            return <button key={user_id} className="btn btn-success justify-content-center" onClick={() => this.callUser(user_id)}>Call Patient {user_id}</button>
+                        })}
                     </div>
                 </div>
                 <br/>
@@ -119,10 +280,14 @@ class Doctor extends Component {
                     <video className="my-video" ref={(ref)=> {this.myVideo = ref;}} autoPlay muted></video>
                     <video className="user-video" ref={(ref)=> {this.userVideo = ref;}} autoPlay></video>
                 </div>
+                <div className="row-fluid">
+                    <div className="span4 offset-3">
+                        <button className="btn btn-success justify-content-center" style={{display: this.state.button}} onClick={() => this.endCurrentCall()}>End Call</button>
+                    </div>
+                </div>
             </div>
         );
     }
 }
 
 export default Doctor;
-
