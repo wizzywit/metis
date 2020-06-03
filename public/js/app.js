@@ -82979,6 +82979,13 @@ var Patient = /*#__PURE__*/function (_Component) {
         stream: this.user.stream,
         trickle: false
       });
+      peer.on('signal', function (data) {
+        _this4.channel.trigger("client-signal-".concat(userId), {
+          type: 'signal',
+          userId: _this4.user.id,
+          data: data
+        });
+      });
       peer.on('stream', function (stream) {
         try {
           _this4.userVideo.src = URL.createObjectURL(stream);

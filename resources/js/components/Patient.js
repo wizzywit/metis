@@ -74,6 +74,15 @@ class Patient extends Component {
             stream: this.user.stream,
             trickle: false
         });
+
+        peer.on('signal',(data) => {
+            this.channel.trigger(`client-signal-${userId}`,{
+                type: 'signal',
+                userId: this.user.id,
+                data: data
+            });
+        });
+        
         peer.on('stream', (stream)=> {
             try {
                 this.userVideo.src = URL.createObjectURL(stream);

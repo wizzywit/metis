@@ -70,7 +70,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>Date of Birth</label>
-                                        <input onkeydown="return false" type="text" id="datepicker" name="dob" class="form-control" placeholder="">
+                                        <input onkeydown="return false" type="text" id="datepicker" name="dob" class="form-control" placeholder="2020-06-23">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
