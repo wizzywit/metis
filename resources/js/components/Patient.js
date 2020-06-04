@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import Pusher from 'pusher-js';
-import MediaHandler from '../MediaHandler';
 import Swal from 'sweetalert2'
 
 const APP_KEY = '52b6df945610aa082478';
@@ -104,8 +103,7 @@ class Patient extends Component {
                  }).then((result) => {
                     if(result.value){
                         this.state.room = msg.room;
-                        this.mediaHandler = new MediaHandler();
-                        this.mediaHandler.getPermissions()
+                        this.getCam()
                         .then(stream => {
                             this.localUserMedia = stream;
                             this.toggleEndCallButton();
@@ -151,6 +149,14 @@ class Patient extends Component {
             }
           });
     }
+
+    getCam() {
+        //Get local audio/video feed and show it in selfview video element
+        return navigator.mediaDevices.getUserMedia({
+          video: true,
+          audio: true
+        });
+      }
 
 
      GetRTCIceCandidate() {

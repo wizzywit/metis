@@ -78468,52 +78468,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/MediaHandler.js":
-/*!**************************************!*\
-  !*** ./resources/js/MediaHandler.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MediaHandler; });
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var MediaHandler = /*#__PURE__*/function () {
-  function MediaHandler() {
-    _classCallCheck(this, MediaHandler);
-  }
-
-  _createClass(MediaHandler, [{
-    key: "getPermissions",
-    value: function getPermissions() {
-      var _this = this;
-
-      return new Promise(function (res, rej) {
-        _this.navigator.mediaDevices.getUserMedia({
-          video: true,
-          audio: true
-        }).then(function (stream) {
-          res(stream);
-        })["catch"](function (err) {
-          throw new Error("Unable to fetch Stream ".concat(err));
-        });
-      });
-    }
-  }]);
-
-  return MediaHandler;
-}();
-
-
-
-/***/ }),
-
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -78677,12 +78631,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 /* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(pusher_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _MediaHandler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MediaHandler */ "./resources/js/MediaHandler.js");
-/* harmony import */ var react_block_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-block-ui */ "./node_modules/react-block-ui/dist/reactblockui.es.js");
-/* harmony import */ var react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-block-ui/style.css */ "./node_modules/react-block-ui/style.css");
-/* harmony import */ var react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_block_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-block-ui */ "./node_modules/react-block-ui/dist/reactblockui.es.js");
+/* harmony import */ var react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-block-ui/style.css */ "./node_modules/react-block-ui/style.css");
+/* harmony import */ var react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_4__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
@@ -78718,7 +78671,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 
 
 
@@ -78847,7 +78799,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
       this.channel.bind("client-reject", function (answer) {
         if (answer.room == _this2.state.room) {
           console.log("Call declined");
-          sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire({
+          sweetalert2__WEBPACK_IMPORTED_MODULE_4___default.a.fire({
             title: 'Feedback!',
             text: "Call to " + answer.rejected + " was politely declined",
             icon: 'info',
@@ -78913,6 +78865,15 @@ var Doctor = /*#__PURE__*/function (_Component) {
           _this3.userVideo.srcObject = evt.stream;
         }
       };
+    }
+  }, {
+    key: "getCam",
+    value: function getCam() {
+      //Get local audio/video feed and show it in selfview video element
+      return navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: true
+      });
     } //Send the ICE Candidate to the remote peer
 
   }, {
@@ -78934,8 +78895,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
       this.setState({
         blocking: true
       });
-      this.mediaHandler = new _MediaHandler__WEBPACK_IMPORTED_MODULE_2__["default"]();
-      this.mediaHandler.getPermissions().then(function (stream) {
+      this.getCam().then(function (stream) {
         _this4.localUserMedia = stream;
 
         _this4.toggleEndCallButton();
@@ -79023,7 +78983,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "Doctor"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_block_ui__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_block_ui__WEBPACK_IMPORTED_MODULE_2__["default"], {
         tag: "div",
         blocking: this.state.blocking
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -79091,9 +79051,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 /* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(pusher_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _MediaHandler__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MediaHandler */ "./resources/js/MediaHandler.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
+/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
@@ -79129,7 +79088,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 
 
 
@@ -79243,7 +79201,7 @@ var Patient = /*#__PURE__*/function (_Component) {
       });
       this.channel.bind("client-signal-".concat(this.user.id), function (msg) {
         if (msg.room == _this2.user.id) {
-          sweetalert2__WEBPACK_IMPORTED_MODULE_3___default.a.fire({
+          sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire({
             title: 'Hello',
             text: 'You have a call from: Dr. ' + msg.from + ' Would you like to answer?"',
             icon: 'info',
@@ -79255,9 +79213,8 @@ var Patient = /*#__PURE__*/function (_Component) {
           }).then(function (result) {
             if (result.value) {
               _this2.state.room = msg.room;
-              _this2.mediaHandler = new _MediaHandler__WEBPACK_IMPORTED_MODULE_2__["default"]();
 
-              _this2.mediaHandler.getPermissions().then(function (stream) {
+              _this2.getCam().then(function (stream) {
                 _this2.localUserMedia = stream;
 
                 _this2.toggleEndCallButton();
@@ -79309,6 +79266,15 @@ var Patient = /*#__PURE__*/function (_Component) {
 
           _this2.endCall();
         }
+      });
+    }
+  }, {
+    key: "getCam",
+    value: function getCam() {
+      //Get local audio/video feed and show it in selfview video element
+      return navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: true
       });
     }
   }, {

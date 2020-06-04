@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import Pusher from 'pusher-js';
-import MediaHandler from '../MediaHandler';
 import BlockUi from 'react-block-ui';
 import 'react-block-ui/style.css';
 import Swal from 'sweetalert2';
@@ -163,6 +162,14 @@ class Doctor extends Component {
       };
     }
 
+    getCam() {
+        //Get local audio/video feed and show it in selfview video element
+        return navigator.mediaDevices.getUserMedia({
+          video: true,
+          audio: true
+        });
+      }
+
 
      //Send the ICE Candidate to the remote peer
      onIceCandidate(peer, evt) {
@@ -179,8 +186,7 @@ class Doctor extends Component {
      //Create and send offer to remote peer on button click
      callUser(user_id) {
         this.setState({blocking: true});
-        this.mediaHandler = new MediaHandler();
-        this.mediaHandler.getPermissions()
+        this.getCam()
         .then(stream => {
             this.localUserMedia = stream;
             this.toggleEndCallButton();
