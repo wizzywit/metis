@@ -78702,8 +78702,12 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.localUserMedia = null;
     _this.sessionDesc;
     _this.config = {
-      iceServers: [{
-        urls: 'stun1.l.google.com:19302'
+      'iceServers': [{
+        'url': 'stun:stun.l.google.com:19302'
+      }, {
+        'url': 'turn:numb.viagenie.ca',
+        'credential': 'Jesuschrist01',
+        'username': 'wisdompraise968@gmail.com'
       }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
@@ -79121,8 +79125,12 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.localUserMedia = null;
     _this.sessionDesc;
     _this.config = {
-      iceServers: [{
-        urls: 'stun1.l.google.com:19302'
+      'iceServers': [{
+        'url': 'stun:stun.l.google.com:19302'
+      }, {
+        'url': 'turn:numb.viagenie.ca',
+        'credential': 'Jesuschrist01',
+        'username': 'wisdompraise968@gmail.com'
       }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
