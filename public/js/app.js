@@ -78701,6 +78701,9 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.caller;
     _this.localUserMedia = null;
     _this.sessionDesc;
+    _this.config = {
+      url: 'stun1.l.google.com:19302'
+    };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
     _this.GetRTCPeerConnection();
@@ -78845,7 +78848,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection();
+      this.caller = new window.RTCPeerConnection(this.config);
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
@@ -79115,6 +79118,9 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.caller;
     _this.localUserMedia = null;
     _this.sessionDesc;
+    _this.config = {
+      url: 'stun1.l.google.com:19302'
+    };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
     _this.GetRTCPeerConnection();
@@ -79301,7 +79307,7 @@ var Patient = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection();
+      this.caller = new window.RTCPeerConnection(this.config);
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
