@@ -78858,8 +78858,8 @@ var Doctor = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection(this.config);
-      console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
+      this.caller = new window.RTCPeerConnection(this.config); //   console.log(this.caller);
+      //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
         if (!evt.candidate) return;
