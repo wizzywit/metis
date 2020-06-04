@@ -78753,11 +78753,15 @@ var Doctor = /*#__PURE__*/function (_Component) {
         _this2.usersOnline = members.count;
         members.each(function (member) {
           if (member.id != _this2.user.id) {
-            var joined = _this2.state.users.concat(member.id);
+            var index = _this2.state.users.indexOf(member.id);
 
-            _this2.setState({
-              users: joined
-            });
+            if (index == -1) {
+              var joined = _this2.state.users.concat(member.id);
+
+              _this2.setState({
+                users: joined
+              });
+            }
           }
         });
       });
@@ -79100,6 +79104,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+ //APP_Key for pusher configuration
 
 var APP_KEY = '52b6df945610aa082478';
 
@@ -79139,12 +79144,14 @@ var Patient = /*#__PURE__*/function (_Component) {
 
     _this.GetRTCSessionDescription();
 
-    _this.GetRTCIceCandidate(); //prepare the caller to use peerconnection
+    _this.GetRTCIceCandidate(); //prepare the caller to use peerconnection to anable live conferencing
 
 
-    _this.prepareCaller();
+    _this.prepareCaller(); //setup pusher for webRTC signaling
 
-    _this.setupPusher();
+
+    _this.setupPusher(); //bind all methods to this instace of class
+
 
     _this.setupPusher = _this.setupPusher.bind(_assertThisInitialized(_this));
     _this.GetRTCPeerConnection = _this.GetRTCPeerConnection.bind(_assertThisInitialized(_this));
@@ -79152,14 +79159,16 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.GetRTCIceCandidate = _this.GetRTCIceCandidate.bind(_assertThisInitialized(_this));
     _this.prepareCaller = _this.prepareCaller.bind(_assertThisInitialized(_this));
     return _this;
-  }
+  } //pusher setup method
+
 
   _createClass(Patient, [{
     key: "setupPusher",
     value: function setupPusher() {
       var _this2 = this;
 
-      pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a.logToConsole = true;
+      // Pusher.logToConsole=true;
+      //Instantiate Pusher Object
       this.pusher = new pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a(APP_KEY, {
         authEndpoint: '/pusher/auth',
         cluster: 'ap2',
@@ -79169,8 +79178,10 @@ var Patient = /*#__PURE__*/function (_Component) {
             'X-CSRF-Token': window.csrfToken
           }
         }
-      });
-      this.channel = this.pusher.subscribe('presence-' + this.user.channel);
+      }); //Subscribe the user to a channel making sure the 'presence-' is used to anable signaling
+
+      this.channel = this.pusher.subscribe('presence-' + this.user.channel); //binding channel to various pusher events emitted
+
       this.channel.bind("pusher:subscription_succeeded", function (members) {
         //set the member count
         _this2.usersOnline = members.count;
@@ -79183,14 +79194,16 @@ var Patient = /*#__PURE__*/function (_Component) {
             });
           }
         });
-      });
+      }); //callback function to fire when member is removed from the channel
+
       this.channel.bind("pusher:member_added", function (member) {
         var joined = _this2.state.users.concat(member.id);
 
         _this2.setState({
           users: joined
         });
-      });
+      }); //callback fired when member is removed from the channel
+
       this.channel.bind("pusher:member_removed", function (member) {
         // for remove member from list:
         var array = _toConsumableArray(_this2.state.users); // make a separate copy of the array
@@ -79209,14 +79222,19 @@ var Patient = /*#__PURE__*/function (_Component) {
         if (member.id == _this2.state.room) {
           _this2.endCall();
         }
-      });
+      }); //callback fired when candidate is recieved and added to ICE candidate for peer communication
+
       this.channel.bind("client-candidate", function (msg) {
         if (msg.room == _this2.state.room) {
           console.log("candidate received");
 
           _this2.caller.addIceCandidate(new RTCIceCandidate(msg.candidate));
         }
-      });
+      }); //callback fired when communication signal is received for video call
+      //get cam permissions, then add stream to localUsermedia and toggle end call button,
+      //after which the present user stream is added to his video element and to the peer stream, then
+      //an answer is sent to the remote peer, and trigering the signal.
+
       this.channel.bind("client-signal-".concat(this.user.id), function (msg) {
         if (msg.room == _this2.user.id) {
           sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire({
@@ -79270,14 +79288,16 @@ var Patient = /*#__PURE__*/function (_Component) {
             }
           });
         }
-      });
+      }); //callback for when remote user answers call signal, Remote Descrption is set
+
       this.channel.bind("client-answer", function (answer) {
         if (answer.room == _this2.state.room) {
           console.log("answer received");
 
           _this2.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
         }
-      });
+      }); //callback to fire when remote endcall is fired
+
       this.channel.bind("client-endcall", function (answer) {
         if (answer.room == _this2.state.room) {
           console.log("Call Ended");
@@ -79285,7 +79305,8 @@ var Patient = /*#__PURE__*/function (_Component) {
           _this2.endCall();
         }
       });
-    }
+    } //method for camera permission
+
   }, {
     key: "getCam",
     value: function getCam() {
@@ -79295,6 +79316,10 @@ var Patient = /*#__PURE__*/function (_Component) {
         audio: true
       });
     }
+    /*
+     Different required Methods for peer connections
+    */
+
   }, {
     key: "GetRTCIceCandidate",
     value: function GetRTCIceCandidate() {
@@ -79313,6 +79338,10 @@ var Patient = /*#__PURE__*/function (_Component) {
       window.RTCSessionDescription = window.RTCSessionDescription || window.webkitRTCSessionDescription || window.mozRTCSessionDescription || window.msRTCSessionDescription;
       return window.RTCSessionDescription;
     }
+    /* End of required methods
+    */
+    //method to prepare peer caller(both clients)
+
   }, {
     key: "prepareCaller",
     value: function prepareCaller() {
@@ -79350,7 +79379,8 @@ var Patient = /*#__PURE__*/function (_Component) {
           "room": this.state.room
         });
       }
-    }
+    } //toggle endcall button method
+
   }, {
     key: "toggleEndCallButton",
     value: function toggleEndCallButton() {
@@ -79363,7 +79393,8 @@ var Patient = /*#__PURE__*/function (_Component) {
           button: "none"
         });
       }
-    }
+    } //method for end call definition
+
   }, {
     key: "endCall",
     value: function endCall() {
@@ -79388,7 +79419,8 @@ var Patient = /*#__PURE__*/function (_Component) {
 
       this.prepareCaller();
       this.toggleEndCallButton();
-    }
+    } //method for end current call
+
   }, {
     key: "endCurrentCall",
     value: function endCurrentCall() {

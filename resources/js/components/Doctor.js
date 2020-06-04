@@ -74,8 +74,11 @@ class Doctor extends Component {
             this.usersOnline = members.count;
             members.each(member => {
               if (member.id != this.user.id) {
-                var joined = this.state.users.concat(member.id);
-                this.setState({ users: joined });
+                let index = this.state.users.indexOf(member.id);
+                if(index == -1){
+                    var joined = this.state.users.concat(member.id);
+                    this.setState({ users: joined });
+                }
               }
             });
           });

@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import Pusher from 'pusher-js';
 import Swal from 'sweetalert2'
 
+//APP_Key for pusher configuration
 const APP_KEY = '52b6df945610aa082478';
 
 class Patient extends Component {
@@ -40,10 +41,15 @@ class Patient extends Component {
         this.GetRTCPeerConnection();
         this.GetRTCSessionDescription();
         this.GetRTCIceCandidate();
-        //prepare the caller to use peerconnection
+
+        //prepare the caller to use peerconnection to anable live conferencing
         this.prepareCaller();
+
+        //setup pusher for webRTC signaling
         this.setupPusher();
 
+
+        //bind all methods to this instace of class
         this.setupPusher = this.setupPusher.bind(this);
         this.GetRTCPeerConnection = this.GetRTCPeerConnection.bind(this);
         this.GetRTCSessionDescription = this.GetRTCSessionDescription.bind(this);
@@ -52,8 +58,11 @@ class Patient extends Component {
 
     }
 
+    //pusher setup method
     setupPusher() {
-        Pusher.logToConsole=true;
+        // Pusher.logToConsole=true;
+
+        //Instantiate Pusher Object
         this.pusher = new Pusher(APP_KEY, {
             authEndpoint: '/pusher/auth',
             cluster: 'ap2',
@@ -65,7 +74,11 @@ class Patient extends Component {
             }
         });
 
+
+        //Subscribe the user to a channel making sure the 'presence-' is used to anable signaling
         this.channel = this.pusher.subscribe('presence-'+this.user.channel);
+
+        //binding channel to various pusher events emitted
         this.channel.bind("pusher:subscription_succeeded", members => {
             //set the member count
             this.usersOnline = members.count;
@@ -77,11 +90,15 @@ class Patient extends Component {
             });
           });
 
+
+        //callback function to fire when member is removed from the channel
         this.channel.bind("pusher:member_added", member => {
             var joined = this.state.users.concat(member.id);
             this.setState({ users: joined });
         });
 
+
+        //callback fired when member is removed from the channel
         this.channel.bind("pusher:member_removed", member => {
         // for remove member from list:
             let array = [...this.state.users]; // make a separate copy of the array
@@ -95,6 +112,7 @@ class Patient extends Component {
             }
         });
 
+        //callback fired when candidate is recieved and added to ICE candidate for peer communication
         this.channel.bind("client-candidate", (msg) => {
             if(msg.room == this.state.room ){
                 console.log("candidate received");
@@ -102,9 +120,12 @@ class Patient extends Component {
             }
         });
 
+        //callback fired when communication signal is received for video call
+        //get cam permissions, then add stream to localUsermedia and toggle end call button,
+        //after which the present user stream is added to his video element and to the peer stream, then
+        //an answer is sent to the remote peer, and trigering the signal.
         this.channel.bind(`client-signal-${this.user.id}`, (msg)=> {
             if(msg.room == this.user.id){
-
                 Swal.fire({
                     title: 'Hello',
                     text: 'You have a call from: Dr. '+ msg.from + ' Would you like to answer?"',
@@ -149,6 +170,7 @@ class Patient extends Component {
             }
         });
 
+        //callback for when remote user answers call signal, Remote Descrption is set
         this.channel.bind("client-answer", (answer) => {
             if (answer.room == this.state.room) {
               console.log("answer received");
@@ -156,6 +178,7 @@ class Patient extends Component {
             }
           });
 
+          //callback to fire when remote endcall is fired
           this.channel.bind("client-endcall", (answer) => {
             if (answer.room == this.state.room) {
               console.log("Call Ended");
@@ -164,6 +187,7 @@ class Patient extends Component {
           });
     }
 
+    //method for camera permission
     getCam() {
         //Get local audio/video feed and show it in selfview video element
         return navigator.mediaDevices.getUserMedia({
@@ -173,6 +197,9 @@ class Patient extends Component {
       }
 
 
+     /*
+      Different required Methods for peer connections
+     */
      GetRTCIceCandidate() {
       window.RTCIceCandidate = window.RTCIceCandidate || window.webkitRTCIceCandidate || window.mozRTCIceCandidate || window.msRTCIceCandidate;
       return window.RTCIceCandidate;
@@ -188,6 +215,11 @@ class Patient extends Component {
       return window.RTCSessionDescription;
     }
 
+    /* End of required methods
+    */
+
+
+    //method to prepare peer caller(both clients)
     prepareCaller() {
       //Initializing a peer connection
 
@@ -221,6 +253,8 @@ class Patient extends Component {
         }
     }
 
+
+    //toggle endcall button method
     toggleEndCallButton() {
         if (this.state.button == "none") {
           this.setState({button: "block"});
@@ -230,6 +264,7 @@ class Patient extends Component {
       }
 
 
+    //method for end call definition
     endCall() {
     this.setState({room: undefined});
     this.caller.close();
@@ -240,6 +275,8 @@ class Patient extends Component {
     this.toggleEndCallButton();
     }
 
+
+    //method for end current call
     endCurrentCall() {
     this.channel.trigger("client-endcall", {
         room: this.state.room
