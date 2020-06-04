@@ -1,6 +1,10 @@
 import React, { Component} from 'react';
 import Pusher from 'pusher-js';
 import MediaHandler from '../MediaHandler';
+import BlockUi from 'react-block-ui';
+import 'react-block-ui/style.css';
+import Swal from 'sweetalert2';
+
 
 const APP_KEY = '52b6df945610aa082478';
 
@@ -11,13 +15,14 @@ class Doctor extends Component {
         this.state = {
             users: [],
             button: "none",
+            blocking: false,
+            room: undefined
         };
         this.user = window.user;
         this.usersOnline;
         this.caller;
         this.localUserMedia = null;
         this.sessionDesc;
-        this.room;
 
 
         this.mediaHandler = new MediaHandler();
@@ -70,76 +75,48 @@ class Doctor extends Component {
 
         this.channel.bind("pusher:member_removed", member => {
         // for remove member from list:
-            let index = this.state.users.indexOf(member.id);
-            this.setState(state => {
-                const users = state.users.filter((user, j) => index !== j);
-                return {
-                  users,
-                };
-              });
-            if (member.id == this.room) {
+            let array = [...this.state.users]; // make a separate copy of the array
+            let index = array.indexOf(member.id);
+            if (index !== -1) {
+                array.splice(index, 1);
+                this.setState({users: array});
+            }
+            if (member.id == this.state.room) {
                 this.endCall();
             }
         });
 
         this.channel.bind("client-candidate", (msg) => {
-            if(msg.room == this.room ){
+            if(msg.room == this.state.room ){
                 console.log("candidate received");
                 this.caller.addIceCandidate(new RTCIceCandidate(msg.candidate));
             }
         });
 
-        this.channel.bind(`client-signal-${this.user.id}`, (msg)=> {
-            if(msg.room == this.user.id){
-                let answer = confirm("You have a call from: "+ msg.from + "Would you like to answer?");
-                if(!answer){
-                    return channel.trigger("client-reject", {"room": msg.room, "rejected":this.user.id});
-                }
-                this.room = msg.room;
-                this.mediaHandler.getPermissions()
-                .then(stream => {
-                    this.localUserMedia = stream;
-                    this.toggleEndCallButton();
-                    try {
-                        this.myVideo.srcObject = stream;
-                    } catch (e) {
-                        this.myVideo.src = URL.createObjectURL(stream);
-                    }
-                    this.caller.addStream(stream);
-                    let sessionDesc = new RTCSessionDescription(msg.sdp);
-                    this.caller.setRemoteDescription(sessionDesc);
-                    this.caller.createAnswer().then((sdp) => {
-                        this.caller.setLocalDescription(new RTCSessionDescription(sdp));
-                        this.channel.trigger("client-answer", {
-                            "sdp": sdp,
-                            "room": this.room
-                        });
-                    });
-
-                })
-                .catch(error => {
-                    console.log('an error occured', error);
-                })
-            }
-        });
-
         this.channel.bind("client-answer", (answer) => {
-            if (answer.room == this.room) {
+            if (answer.room == this.state.room) {
               console.log("answer received");
+              this.setState({blocking: false});
               this.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
             }
           });
 
           this.channel.bind("client-reject", (answer) => {
-            if (answer.room == this.room) {
+            if (answer.room == this.state.room) {
               console.log("Call declined");
-              alert("call to " + answer.rejected + "was politely declined");
+              Swal.fire({
+                title: 'Feedback!',
+                text: "Call to " + answer.rejected + " was politely declined",
+                icon: 'info',
+                confirmButtonText: 'Ok'
+              });
+              this.setState({blocking: false});
               this.endCall();
             }
           });
 
           this.channel.bind("client-endcall", (answer) => {
-            if (answer.room == this.room) {
+            if (answer.room == this.state.room) {
               console.log("Call Ended");
               this.endCall();
             }
@@ -192,7 +169,7 @@ class Doctor extends Component {
         if (evt.candidate) {
             this.channel.trigger("client-candidate", {
                 "candidate": evt.candidate,
-                "room": this.room
+                "room": this.state.room
             });
         }
     }
@@ -201,6 +178,7 @@ class Doctor extends Component {
 
      //Create and send offer to remote peer on button click
      callUser(user_id) {
+        this.setState({blocking: true});
         this.mediaHandler.getPermissions()
         .then(stream => {
             this.localUserMedia = stream;
@@ -210,8 +188,6 @@ class Doctor extends Component {
             } catch (e) {
                 this.myVideo.src = URL.createObjectURL(stream);
             }
-            this.toggleEndCallButton();
-            this.prepareCaller();
             stream.getTracks().forEach(track => {
                 this.caller.addTrack(track, stream);
             });
@@ -223,9 +199,9 @@ class Doctor extends Component {
                 this.channel.trigger(`client-signal-${user_id}`, {
                     sdp: this.caller.localDescription,
                     room: user_id,
-                    from: this.user.id,
+                    from: this.user.name,
                   });
-                  this.room = user_id;
+                  this.setState({room: user_id});
             })
             .catch((error) => {
                 console.log("an error occured", error);
@@ -243,10 +219,8 @@ class Doctor extends Component {
             this.setState({button: "none"});
         }
       }
-
-
     endCall() {
-    this.room = undefined;
+    this.setState({room: undefined});
     this.caller.close();
     for (let track of this.localUserMedia.getTracks()) {
         track.stop();
@@ -256,8 +230,8 @@ class Doctor extends Component {
     }
 
     endCurrentCall() {
-    channel.trigger("client-endcall", {
-        room: this.room
+    this.channel.trigger("client-endcall", {
+        room: this.state.room
     });
 
     this.endCall();
@@ -267,24 +241,28 @@ class Doctor extends Component {
     render() {
         return (
             <div className="Doctor">
-                <div className="row-fluid">
-                    <div className="span4 offset-3">
-                        {this.state.users.map((user_id) => {
-                            return <button key={user_id} className="btn btn-success justify-content-center" onClick={() => this.callUser(user_id)}>Call Patient {user_id}</button>
-                        })}
+                <BlockUi tag="div" blocking={this.state.blocking}>
+                    <div className="row-fluid">
+                        <div className="span4 offset-3">
+                            {this.state.users.map((user_id) => {
+                                if(this.state.room == undefined){
+                                    return <button key={user_id} className="btn btn-success justify-content-center" onClick={() => this.callUser(user_id)}>Call Patient {user_id}</button>
+                                }
+                            })}
+                        </div>
                     </div>
-                </div>
-                <br/>
-                <br/>
-                <div className="video-container">
-                    <video className="my-video" ref={(ref)=> {this.myVideo = ref;}} autoPlay muted></video>
-                    <video className="user-video" ref={(ref)=> {this.userVideo = ref;}} autoPlay></video>
-                </div>
-                <div className="row-fluid">
-                    <div className="span4 offset-3">
-                        <button className="btn btn-success justify-content-center" style={{display: this.state.button}} onClick={() => this.endCurrentCall()}>End Call</button>
+                    <br/>
+                    <br/>
+                    <div className="video-container">
+                        <video className="my-video" ref={(ref)=> {this.myVideo = ref;}} autoPlay muted></video>
+                        <video className="user-video" ref={(ref)=> {this.userVideo = ref;}} autoPlay></video>
                     </div>
-                </div>
+                    <div className="row-fluid">
+                        <div className="span4 offset-3">
+                            <button className="btn btn-success justify-content-center" style={{display: this.state.button}} onClick={() => this.endCurrentCall()}>End Call</button>
+                        </div>
+                    </div>
+                </BlockUi>
             </div>
         );
     }

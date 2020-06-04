@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import Pusher from 'pusher-js';
 import MediaHandler from '../MediaHandler';
+import Swal from 'sweetalert2'
 
 const APP_KEY = '52b6df945610aa082478';
 
@@ -11,13 +12,13 @@ class Patient extends Component {
         this.state = {
             users: [],
             button: "none",
+            room: undefined
         };
         this.user = window.user;
         this.usersOnline;
         this.caller;
         this.localUserMedia = null;
         this.sessionDesc;
-        this.room;
 
 
         this.mediaHandler = new MediaHandler();
@@ -70,20 +71,19 @@ class Patient extends Component {
 
         this.channel.bind("pusher:member_removed", member => {
         // for remove member from list:
-            let index = this.state.users.indexOf(member.id);
-            this.setState(state => {
-                const users = state.users.filter((user, j) => index !== j);
-                return {
-                  users,
-                };
-              });
-            if (member.id == this.room) {
+            let array = [...this.state.users]; // make a separate copy of the array
+            let index = array.indexOf(member.id);
+            if (index !== -1) {
+                array.splice(index, 1);
+                this.setState({users: array});
+            }
+            if (member.id == this.state.room) {
                 this.endCall();
             }
         });
 
         this.channel.bind("client-candidate", (msg) => {
-            if(msg.room == this.room ){
+            if(msg.room == this.state.room ){
                 console.log("candidate received");
                 this.caller.addIceCandidate(new RTCIceCandidate(msg.candidate));
             }
@@ -91,61 +91,64 @@ class Patient extends Component {
 
         this.channel.bind(`client-signal-${this.user.id}`, (msg)=> {
             if(msg.room == this.user.id){
-                let answer = confirm("You have a call from: "+ msg.from + "Would you like to answer?");
-                if(!answer){
-                    return channel.trigger("client-reject", {"room": msg.room, "rejected":this.user.id});
-                }
-                this.room = msg.room;
-                this.mediaHandler.getPermissions()
-                .then(stream => {
-                    this.localUserMedia = stream;
-                    this.toggleEndCallButton();
-                    try {
-                        this.myVideo.srcObject = stream;
-                    } catch (e) {
-                        this.myVideo.src = URL.createObjectURL(stream);
-                    }
-                    this.caller.addStream(stream);
-                    let sessionDesc = new RTCSessionDescription(msg.sdp);
-                    this.caller.setRemoteDescription(sessionDesc);
-                    this.caller.createAnswer().then((sdp) => {
-                        this.caller.setLocalDescription(new RTCSessionDescription(sdp));
-                        this.channel.trigger("client-answer", {
-                            "sdp": sdp,
-                            "room": this.room
-                        });
-                    });
 
-                })
-                .catch(error => {
-                    console.log('an error occured', error);
-                })
+                Swal.fire({
+                    title: 'Hello',
+                    text: 'You have a call from: Dr. '+ msg.from + ' Would you like to answer?"',
+                    icon: 'info',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    cancelButtonText: 'Decline',
+                    confirmButtonText: 'Accept!'
+                 }).then((result) => {
+                    if(result.value){
+                        this.state.room = msg.room;
+                        this.mediaHandler.getPermissions()
+                        .then(stream => {
+                            this.localUserMedia = stream;
+                            this.toggleEndCallButton();
+                            try {
+                                this.myVideo.srcObject = stream;
+                            } catch (e) {
+                                this.myVideo.src = URL.createObjectURL(stream);
+                            }
+                            this.caller.addStream(stream);
+                            let sessionDesc = new RTCSessionDescription(msg.sdp);
+                            this.caller.setRemoteDescription(sessionDesc);
+                            this.caller.createAnswer().then((sdp) => {
+                                this.caller.setLocalDescription(new RTCSessionDescription(sdp));
+                                this.channel.trigger("client-answer", {
+                                    "sdp": sdp,
+                                    "room": this.state.room
+                                });
+                            });
+
+                        })
+                        .catch(error => {
+                            console.log('an error occured', error);
+                        })
+                   }
+                   if(!result.value){
+                    return this.channel.trigger("client-reject", {"room": msg.room, "rejected":this.user.name});
+                    }
+                 });
             }
         });
 
         this.channel.bind("client-answer", (answer) => {
-            if (answer.room == this.room) {
+            if (answer.room == this.state.room) {
               console.log("answer received");
               this.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
             }
           });
 
-          this.channel.bind("client-reject", (answer) => {
-            if (answer.room == this.room) {
-              console.log("Call declined");
-              alert("call to " + answer.rejected + "was politely declined");
-              this.endCall();
-            }
-          });
-
           this.channel.bind("client-endcall", (answer) => {
-            if (answer.room == this.room) {
+            if (answer.room == this.state.room) {
               console.log("Call Ended");
               this.endCall();
             }
           });
-
-
     }
 
 
@@ -192,51 +195,12 @@ class Patient extends Component {
         if (evt.candidate) {
             this.channel.trigger("client-candidate", {
                 "candidate": evt.candidate,
-                "room": this.room
+                "room": this.state.room
             });
         }
     }
 
-
-
-     //Create and send offer to remote peer on button click
-     callUser(user_id) {
-        this.mediaHandler.getPermissions()
-        .then(stream => {
-            this.localUserMedia = stream;
-            this.toggleEndCallButton();
-            try {
-                this.myVideo.srcObject = stream;
-            } catch (e) {
-                this.myVideo.src = URL.createObjectURL(stream);
-            }
-            this.toggleEndCallButton();
-            this.prepareCaller();
-            stream.getTracks().forEach(track => {
-                this.caller.addTrack(track, stream);
-            });
-            this.caller.createOffer().then((desc) => {
-                console.log(desc);
-                return this.caller.setLocalDescription(desc);
-            })
-            .then(() => {
-                this.channel.trigger(`client-signal-${user_id}`, {
-                    sdp: this.caller.localDescription,
-                    room: user_id,
-                    from: this.user.id,
-                  });
-                  this.room = user_id;
-            })
-            .catch((error) => {
-                console.log("an error occured", error);
-              });
-
-          })
-          .catch(error => {
-            console.log("an error occured", error);
-          });
-      }
-      toggleEndCallButton() {
+    toggleEndCallButton() {
         if (this.state.button == "none") {
           this.setState({button: "block"});
         } else {
@@ -246,7 +210,7 @@ class Patient extends Component {
 
 
     endCall() {
-    this.room = undefined;
+    this.setState({room: undefined});
     this.caller.close();
     for (let track of this.localUserMedia.getTracks()) {
         track.stop();
@@ -256,8 +220,8 @@ class Patient extends Component {
     }
 
     endCurrentCall() {
-    channel.trigger("client-endcall", {
-        room: this.room
+    this.channel.trigger("client-endcall", {
+        room: this.state.room
     });
 
     this.endCall();
