@@ -78755,7 +78755,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
           if (member.id != _this2.user.id) {
             var index = _this2.state.users.indexOf(member.id);
 
-            if (index == -1) {
+            if (index === -1) {
               var joined = _this2.state.users.concat(member.id);
 
               _this2.setState({
@@ -78766,11 +78766,15 @@ var Doctor = /*#__PURE__*/function (_Component) {
         });
       });
       this.channel.bind("pusher:member_added", function (member) {
-        var joined = _this2.state.users.concat(member.id);
+        var index = _this2.state.users.indexOf(member.id);
 
-        _this2.setState({
-          users: joined
-        });
+        if (index == -1) {
+          var joined = _this2.state.users.concat(member.id);
+
+          _this2.setState({
+            users: joined
+          });
+        }
       });
       this.channel.bind("pusher:member_removed", function (member) {
         // for remove member from list:

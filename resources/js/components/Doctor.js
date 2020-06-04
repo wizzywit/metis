@@ -75,7 +75,7 @@ class Doctor extends Component {
             members.each(member => {
               if (member.id != this.user.id) {
                 let index = this.state.users.indexOf(member.id);
-                if(index == -1){
+                if(index === -1){
                     var joined = this.state.users.concat(member.id);
                     this.setState({ users: joined });
                 }
@@ -84,8 +84,11 @@ class Doctor extends Component {
           });
 
         this.channel.bind("pusher:member_added", member => {
-            var joined = this.state.users.concat(member.id);
-            this.setState({ users: joined });
+            let index = this.state.users.indexOf(member.id);
+                if(index == -1){
+                    var joined = this.state.users.concat(member.id);
+                    this.setState({ users: joined });
+                }
         });
 
         this.channel.bind("pusher:member_removed", member => {
