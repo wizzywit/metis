@@ -78492,8 +78492,10 @@ var MediaHandler = /*#__PURE__*/function () {
   _createClass(MediaHandler, [{
     key: "getPermissions",
     value: function getPermissions() {
+      var _this = this;
+
       return new Promise(function (res, rej) {
-        navigator.mediaDevices.getUserMedia({
+        _this.navigator.mediaDevices.getUserMedia({
           video: true,
           audio: true
         }).then(function (stream) {
