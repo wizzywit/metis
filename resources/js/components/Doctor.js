@@ -22,7 +22,13 @@ class Doctor extends Component {
         this.caller;
         this.localUserMedia = null;
         this.sessionDesc;
-        this.config = {url:'stun1.l.google.com:19302'};
+        this.config = {
+            iceServers: [
+                {
+                    urls:'stun1.l.google.com:19302'
+                }
+            ]
+        };
 
 
         this.mediaHandler;

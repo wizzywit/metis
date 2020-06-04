@@ -78702,7 +78702,9 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.localUserMedia = null;
     _this.sessionDesc;
     _this.config = {
-      url: 'stun1.l.google.com:19302'
+      iceServers: [{
+        urls: 'stun1.l.google.com:19302'
+      }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
@@ -79119,7 +79121,9 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.localUserMedia = null;
     _this.sessionDesc;
     _this.config = {
-      url: 'stun1.l.google.com:19302'
+      iceServers: [{
+        urls: 'stun1.l.google.com:19302'
+      }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
