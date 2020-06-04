@@ -25,7 +25,7 @@ class Doctor extends Component {
         this.sessionDesc;
 
 
-        this.mediaHandler = new MediaHandler();
+        this.mediaHandler;
 
         //To iron over browser implementation anomalies like prefixes
         this.GetRTCPeerConnection();
@@ -44,7 +44,7 @@ class Doctor extends Component {
     }
 
     setupPusher() {
-        // Pusher.logToConsole=true;
+        Pusher.logToConsole=true;
         this.pusher = new Pusher(APP_KEY, {
             authEndpoint: '/pusher/auth',
             cluster: 'ap2',
@@ -179,6 +179,7 @@ class Doctor extends Component {
      //Create and send offer to remote peer on button click
      callUser(user_id) {
         this.setState({blocking: true});
+        this.mediaHandler = new MediaHandler();
         this.mediaHandler.getPermissions()
         .then(stream => {
             this.localUserMedia = stream;

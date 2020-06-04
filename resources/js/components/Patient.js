@@ -21,7 +21,7 @@ class Patient extends Component {
         this.sessionDesc;
 
 
-        this.mediaHandler = new MediaHandler();
+        this.mediaHandler;
 
         //To iron over browser implementation anomalies like prefixes
         this.GetRTCPeerConnection();
@@ -40,7 +40,7 @@ class Patient extends Component {
     }
 
     setupPusher() {
-        // Pusher.logToConsole=true;
+        Pusher.logToConsole=true;
         this.pusher = new Pusher(APP_KEY, {
             authEndpoint: '/pusher/auth',
             cluster: 'ap2',
@@ -104,6 +104,7 @@ class Patient extends Component {
                  }).then((result) => {
                     if(result.value){
                         this.state.room = msg.room;
+                        this.mediaHandler = new MediaHandler();
                         this.mediaHandler.getPermissions()
                         .then(stream => {
                             this.localUserMedia = stream;

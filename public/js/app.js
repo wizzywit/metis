@@ -78747,7 +78747,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.caller;
     _this.localUserMedia = null;
     _this.sessionDesc;
-    _this.mediaHandler = new _MediaHandler__WEBPACK_IMPORTED_MODULE_2__["default"](); //To iron over browser implementation anomalies like prefixes
+    _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
     _this.GetRTCPeerConnection();
 
@@ -78932,6 +78932,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
       this.setState({
         blocking: true
       });
+      this.mediaHandler = new _MediaHandler__WEBPACK_IMPORTED_MODULE_2__["default"]();
       this.mediaHandler.getPermissions().then(function (stream) {
         _this4.localUserMedia = stream;
 
@@ -79154,7 +79155,7 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.caller;
     _this.localUserMedia = null;
     _this.sessionDesc;
-    _this.mediaHandler = new _MediaHandler__WEBPACK_IMPORTED_MODULE_2__["default"](); //To iron over browser implementation anomalies like prefixes
+    _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
     _this.GetRTCPeerConnection();
 
@@ -79252,6 +79253,7 @@ var Patient = /*#__PURE__*/function (_Component) {
           }).then(function (result) {
             if (result.value) {
               _this2.state.room = msg.room;
+              _this2.mediaHandler = new _MediaHandler__WEBPACK_IMPORTED_MODULE_2__["default"]();
 
               _this2.mediaHandler.getPermissions().then(function (stream) {
                 _this2.localUserMedia = stream;
