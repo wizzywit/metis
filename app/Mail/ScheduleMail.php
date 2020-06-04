@@ -29,7 +29,7 @@ class ScheduleMail extends Mailable
      */
     public function build()
     {
-        return $this->from('metis@technigence.in', 'Metis Technology')
+        return $this->from('metis@technigence.in', 'Metis Technologies')
                 ->subject('Your Scheduled Appointment')
                 ->view('scheduling_mail_template')
                 ->with('data',$this->data);
