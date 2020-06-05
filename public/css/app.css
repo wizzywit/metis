@@ -10934,11 +10934,10 @@ a.text-dark:focus {
 }
 
 .video-container {
-  width: 500px;
-  height: 380px;
-  margin: 0px auto;
+  height: 430px;
   border: 2px solid #645cff;
   position: relative;
+  border-radius: 5px;
   box-shadow: 1px 1px 11px #9e9e9e;
 }
 
@@ -10961,5 +10960,41 @@ a.text-dark:focus {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+.video-container .end-button {
+  position: absolute;
+  bottom: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  right: 50%;
+  left: 50%;
+  color: red;
+  width: 40px;
+  height: 40px;
+  font-weight: 900px;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.video-container .end-button:hover {
+  box-shadow: 1px 1px 11px #9e9e9e;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call_button {
+  margin: auto;
+  padding: 20px;
+}
+
+.button {
+  border-radius: 20px;
 }
 

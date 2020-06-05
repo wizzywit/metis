@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
 import Pusher from 'pusher-js';
 import Swal from 'sweetalert2'
+import BlockUi from 'react-block-ui';
 
 //APP_Key for pusher configuration
 const APP_KEY = '52b6df945610aa082478';
@@ -12,7 +13,8 @@ class Patient extends Component {
         this.state = {
             users: [],
             button: "none",
-            room: undefined
+            room: undefined,
+            blocking: true,
         };
         this.user = window.user;
         this.usersOnline;
@@ -142,6 +144,7 @@ class Patient extends Component {
                         .then(stream => {
                             this.localUserMedia = stream;
                             this.toggleEndCallButton();
+                            this.setState({blocking: false});
                             try {
                                 this.myVideo.srcObject = stream;
                             } catch (e) {
@@ -257,7 +260,7 @@ class Patient extends Component {
     //toggle endcall button method
     toggleEndCallButton() {
         if (this.state.button == "none") {
-          this.setState({button: "block"});
+          this.setState({button: "flex"});
         } else {
             this.setState({button: "none"});
         }
@@ -288,16 +291,21 @@ class Patient extends Component {
 
     render() {
         return (
-            <div className="">
-                <div className="video-container">
-                    <video className="my-video" ref={(ref)=> {this.myVideo = ref;}} autoPlay muted></video>
-                    <video className="user-video" ref={(ref)=> {this.userVideo = ref;}} autoPlay></video>
-                </div>
-                <div className="row-fluid">
-                    <div className="span4 offset-3">
-                        <button className="btn btn-success justify-content-center" style={{display: this.state.button}} onClick={() => this.endCurrentCall()}>End Call</button>
+            <div className="container">
+                <BlockUi tag="div" blocking={this.state.blocking} message="Awaiting Doctor's Call, Please wait">
+                    <div className="row">
+                        <div className="col-xl-7">
+                                <div className="video-container">
+                                    <video className="my-video" ref={(ref)=> {this.myVideo = ref;}} autoPlay muted></video>
+                                    <video className="user-video" ref={(ref)=> {this.userVideo = ref;}} autoPlay></video>
+                                    <i title="End Call" style={{display: this.state.button}} onClick={() => this.endCurrentCall()} className="end-button fa fa-phone flex" aria-hidden="true"></i>
+                                </div>
+                        </div>
+                        <div className="col-xl-5 call_button">
+                            <h3 style={{textAlign: "center"}} >Welcome To Metis Conference</h3>
+                        </div>
                     </div>
-                </div>
+                </BlockUi>
             </div>
         );
     }

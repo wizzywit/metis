@@ -15,7 +15,8 @@ class Doctor extends Component {
             users: [],
             button: "none",
             blocking: false,
-            room: undefined
+            room: undefined,
+            awaiting: true
         };
         this.user = window.user;
         this.usersOnline;
@@ -37,6 +38,7 @@ class Doctor extends Component {
         };
 
 
+
         this.mediaHandler;
 
         //To iron over browser implementation anomalies like prefixes
@@ -56,7 +58,7 @@ class Doctor extends Component {
     }
 
     setupPusher() {
-        Pusher.logToConsole=true;
+        // Pusher.logToConsole=true;
         this.pusher = new Pusher(APP_KEY, {
             authEndpoint: '/pusher/auth',
             cluster: 'ap2',
@@ -77,7 +79,7 @@ class Doctor extends Component {
                 let index = this.state.users.indexOf(member.id);
                 if(index === -1){
                     var joined = this.state.users.concat(member.id);
-                    this.setState({ users: joined });
+                    this.setState({ users: joined, awaiting: false });
                 }
               }
             });
@@ -87,7 +89,7 @@ class Doctor extends Component {
             let index = this.state.users.indexOf(member.id);
                 if(index == -1){
                     var joined = this.state.users.concat(member.id);
-                    this.setState({ users: joined });
+                    this.setState({ users: joined, awaiting: false });
                 }
         });
 
@@ -240,7 +242,7 @@ class Doctor extends Component {
       }
       toggleEndCallButton() {
         if (this.state.button == "none") {
-          this.setState({button: "block"});
+          this.setState({button: "flex"});
         } else {
             this.setState({button: "none"});
         }
@@ -266,30 +268,33 @@ class Doctor extends Component {
 
     render() {
         return (
-            <div className="Doctor">
-                <BlockUi tag="div" blocking={this.state.blocking}>
-                    <div className="row-fluid">
-                        <div className="span4 offset-3">
-                            {this.state.users.map((user_id) => {
-                                if(this.state.room == undefined){
-                                    return <button key={user_id} className="btn btn-success justify-content-center" onClick={() => this.callUser(user_id)}>Call Patient {user_id}</button>
-                                }
-                            })}
+            <BlockUi tag="div" blocking={this.state.awaiting} message="Awaiting Patient, Please wait..">
+            <div className="container" style={{marginTop: '10%'}}>
+                <BlockUi tag="div" blocking={this.state.blocking} message="Awaiting Patient Pickup">
+                    <div className="row">
+                        <div className="col-xl-7">
+                            <div className="video-container">
+                                <video className="my-video" ref={(ref)=> {this.myVideo = ref;}} autoPlay muted></video>
+                                <video className="user-video" ref={(ref)=> {this.userVideo = ref;}} autoPlay></video>
+                                <i title="End Call" style={{display: this.state.button}} onClick={() => this.endCurrentCall()} className="end-button fa fa-phone flex" aria-hidden="true"></i>
+                            </div>
                         </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <div className="video-container">
-                        <video className="my-video" ref={(ref)=> {this.myVideo = ref;}} autoPlay muted></video>
-                        <video className="user-video" ref={(ref)=> {this.userVideo = ref;}} autoPlay></video>
-                    </div>
-                    <div className="row-fluid">
-                        <div className="span4 offset-3">
-                            <button className="btn btn-success justify-content-center" style={{display: this.state.button}} onClick={() => this.endCurrentCall()}>End Call</button>
+                        <div className="col-xl-5 call_button">
+                            <h3 style={{textAlign: "center"}} >Welcome To Metis Conference</h3>
+                                <div style={{textAlign: "center"}}>
+                                {this.state.users.map((user_id) => {
+                                        if(this.state.room == undefined){
+                                        return <button key={user_id} className="btn btn-success btn-lg button" style={{ marginRight: "20px"}} onClick={() => this.callUser(user_id)}><i className="fa fa-phone" aria-hidden="true"></i> Call {this.user.patient_name}</button>
+                                        }
+                                    })}
+                                </div>
                         </div>
                     </div>
                 </BlockUi>
             </div>
+
+            </BlockUi>
+
         );
     }
 }

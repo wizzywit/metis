@@ -78694,7 +78694,8 @@ var Doctor = /*#__PURE__*/function (_Component) {
       users: [],
       button: "none",
       blocking: false,
-      room: undefined
+      room: undefined,
+      awaiting: true
     };
     _this.user = window.user;
     _this.usersOnline;
@@ -78736,7 +78737,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
     value: function setupPusher() {
       var _this2 = this;
 
-      pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a.logToConsole = true;
+      // Pusher.logToConsole=true;
       this.pusher = new pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a(APP_KEY, {
         authEndpoint: '/pusher/auth',
         cluster: 'ap2',
@@ -78759,7 +78760,8 @@ var Doctor = /*#__PURE__*/function (_Component) {
               var joined = _this2.state.users.concat(member.id);
 
               _this2.setState({
-                users: joined
+                users: joined,
+                awaiting: false
               });
             }
           }
@@ -78772,7 +78774,8 @@ var Doctor = /*#__PURE__*/function (_Component) {
           var joined = _this2.state.users.concat(member.id);
 
           _this2.setState({
-            users: joined
+            users: joined,
+            awaiting: false
           });
         }
       });
@@ -78952,7 +78955,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
     value: function toggleEndCallButton() {
       if (this.state.button == "none") {
         this.setState({
-          button: "block"
+          button: "flex"
         });
       } else {
         this.setState({
@@ -78998,26 +79001,24 @@ var Doctor = /*#__PURE__*/function (_Component) {
     value: function render() {
       var _this5 = this;
 
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "Doctor"
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_block_ui__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        tag: "div",
+        blocking: this.state.awaiting,
+        message: "Awaiting Patient, Please wait.."
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container",
+        style: {
+          marginTop: '10%'
+        }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_block_ui__WEBPACK_IMPORTED_MODULE_2__["default"], {
         tag: "div",
-        blocking: this.state.blocking
+        blocking: this.state.blocking,
+        message: "Awaiting Patient Pickup"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row-fluid"
+        className: "row"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "span4 offset-3"
-      }, this.state.users.map(function (user_id) {
-        if (_this5.state.room == undefined) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-            key: user_id,
-            className: "btn btn-success justify-content-center",
-            onClick: function onClick() {
-              return _this5.callUser(user_id);
-            }
-          }, "Call Patient ", user_id);
-        }
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-xl-7"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "video-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
         className: "my-video",
@@ -79032,19 +79033,43 @@ var Doctor = /*#__PURE__*/function (_Component) {
           _this5.userVideo = _ref2;
         },
         autoPlay: true
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row-fluid"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "span4 offset-3"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-success justify-content-center",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        title: "End Call",
         style: {
           display: this.state.button
         },
         onClick: function onClick() {
           return _this5.endCurrentCall();
+        },
+        className: "end-button fa fa-phone flex",
+        "aria-hidden": "true"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-xl-5 call_button"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        style: {
+          textAlign: "center"
         }
-      }, "End Call")))));
+      }, "Welcome To Metis Conference"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          textAlign: "center"
+        }
+      }, this.state.users.map(function (user_id) {
+        if (_this5.state.room == undefined) {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+            key: user_id,
+            className: "btn btn-success btn-lg button",
+            style: {
+              marginRight: "20px"
+            },
+            onClick: function onClick() {
+              return _this5.callUser(user_id);
+            }
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+            className: "fa fa-phone",
+            "aria-hidden": "true"
+          }), " Call ", _this5.user.patient_name);
+        }
+      })))))));
     }
   }]);
 
@@ -79070,6 +79095,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(pusher_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
 /* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_block_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-block-ui */ "./node_modules/react-block-ui/dist/reactblockui.es.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
@@ -79108,6 +79134,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
  //APP_Key for pusher configuration
 
 var APP_KEY = '52b6df945610aa082478';
@@ -79126,7 +79153,8 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.state = {
       users: [],
       button: "none",
-      room: undefined
+      room: undefined,
+      blocking: true
     };
     _this.user = window.user;
     _this.usersOnline;
@@ -79259,6 +79287,10 @@ var Patient = /*#__PURE__*/function (_Component) {
 
                 _this2.toggleEndCallButton();
 
+                _this2.setState({
+                  blocking: false
+                });
+
                 try {
                   _this2.myVideo.srcObject = stream;
                 } catch (e) {
@@ -79390,7 +79422,7 @@ var Patient = /*#__PURE__*/function (_Component) {
     value: function toggleEndCallButton() {
       if (this.state.button == "none") {
         this.setState({
-          button: "block"
+          button: "flex"
         });
       } else {
         this.setState({
@@ -79439,7 +79471,15 @@ var Patient = /*#__PURE__*/function (_Component) {
       var _this4 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: ""
+        className: "container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_block_ui__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        tag: "div",
+        blocking: this.state.blocking,
+        message: "Awaiting Doctor's Call, Please wait"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-xl-7"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "video-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
@@ -79455,19 +79495,23 @@ var Patient = /*#__PURE__*/function (_Component) {
           _this4.userVideo = _ref2;
         },
         autoPlay: true
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row-fluid"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "span4 offset-3"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-success justify-content-center",
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        title: "End Call",
         style: {
           display: this.state.button
         },
         onClick: function onClick() {
           return _this4.endCurrentCall();
+        },
+        className: "end-button fa fa-phone flex",
+        "aria-hidden": "true"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-xl-5 call_button"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        style: {
+          textAlign: "center"
         }
-      }, "End Call"))));
+      }, "Welcome To Metis Conference")))));
     }
   }]);
 
