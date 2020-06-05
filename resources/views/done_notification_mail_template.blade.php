@@ -317,7 +317,7 @@ a {
 				<table class="main" width="100%" cellpadding="0" cellspacing="0">
 					<tr>
 						<td class="alert alert-warning table-header">
-                                <a href="{{ route('doctor.dashboard') }}"><span style="text-align: center">Metis Technologies Doctor Schedule</span></a>
+                                <a href="{{ route('doctor.dashboard') }}"><span style="text-align: center">Metis Technologies Doctor Appointment Concluded</span></a>
 						</td>
 					</tr>
 					<tr>
@@ -325,12 +325,17 @@ a {
 							<table width="100%" cellpadding="0" cellspacing="0">
                                 <tr>
 									<td class="content-block">
-										This is to notify you of your booked doctor appointment, and all information stated below:
+										This is to notify you of your booked doctor appointment with metis technology has been carried out with all information stated below:
 									</td>
                                 </tr>
                                 <tr>
 									<td class="content-block">
-										Doctor To Meet: Dr. {{$data['doctor']}}
+										Doctor Communicated With: Dr. {{$data['doctor']}}
+									</td>
+                                </tr>
+                                <tr>
+									<td class="content-block">
+										Doctor Contact: {{$data['doctor_number']}}
 									</td>
                                 </tr>
                                 <tr>
@@ -350,7 +355,7 @@ a {
 								</tr>
 								<tr>
 									<td class="content-block">
-                                        For further information concerning your appointment please contact the doctor on: {{$data['doctor_number']}}
+                                        For further information or issues concerning your completed appointment please contact the doctor on: {{$data['doctor_number']}}
 									</td>
 								</tr>
 								<tr>

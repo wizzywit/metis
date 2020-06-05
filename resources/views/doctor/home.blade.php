@@ -50,7 +50,7 @@ $id = 1;
                                     </td>
                                     <td class="center">
                                         @if($appointment->scheduled == true)
-                                        <a href="#" class="btn btn-success">View Schedule</a>
+                                        <a href="{{route('doctor.appointment.view',$appointment->id)}}" class="btn btn-success">View Schedule</a>
                                         @else
                                         <a href="{{route('doctor.schedule.request',$appointment->id)}}" class="btn btn-success">Schedule</a>
                                         @endif

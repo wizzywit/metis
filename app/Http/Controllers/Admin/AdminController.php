@@ -31,7 +31,11 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.home');
+        $appointments = Appointment::get()->count();
+        $doctors = Doctor::get()->count();
+        $patients = Patient::get()->count();
+        $appointments_completed = Appointment::where('done',true)->get()->count();
+        return view('admin.home')->with(compact('appointments','doctors','patients','appointments_completed'));
     }
 
     public function showPasswordForm() {
@@ -44,7 +48,7 @@ class AdminController extends Controller
         $current_password = $request->current_pwd;
         $chk_password = Auth::guard('admin')->user()->password;
         // echo "<pre>"; print_r($chk_password); die;
-        
+
         if(Hash::check($current_password,$chk_password)){
             return "true";
         }else {
@@ -59,7 +63,7 @@ class AdminController extends Controller
         $current_password = $data['current_password'];
         $chk_password = Auth::guard('admin')->user()->password;
         // echo "<pre>"; print_r($chk_password); die;
-        
+
         if(Hash::check($current_password,$chk_password)){
             $id = Auth::guard('admin')->id();
             $admin = Admin::findOrFail($id);

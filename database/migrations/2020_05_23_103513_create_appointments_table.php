@@ -21,6 +21,7 @@ class CreateAppointmentsTable extends Migration
             $table->foreign('doctor_id')->references('id')->on('doctors');
             $table->string('room_name')->nullable();
             $table->string('price');
+            $table->boolean('done')->default(false);
             $table->boolean('payed')->default('0');
             $table->date('date');
             $table->time('start_time');

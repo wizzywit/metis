@@ -9,6 +9,7 @@ use App\Doctor;
 use File;
 use App\Appointment;
 use App\Mail\ScheduleMail;
+use App\Mail\DoneMail;
 use Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
@@ -35,7 +36,7 @@ class DoctorController extends Controller
      */
     public function index()
     {
-        $appointments = Appointment::with('patient')->where(['doctor_id'=>Auth::guard('doctor')->id(),'payed'=>true])->get();
+        $appointments = Appointment::with('patient')->where(['doctor_id'=>Auth::guard('doctor')->id(),'payed'=>true, 'done'=>false])->get();
         return view('doctor.home')->with(compact('appointments'));
     }
 
@@ -91,6 +92,7 @@ class DoctorController extends Controller
             'end_time' => $request->end_time,
             'date' => $request->date,
             'doctor' => Auth::guard('doctor')->user()->name,
+            'doctor_number'=> Auth::guard('doctor')->user()->phone,
             'room_name'=> $request->room_name,
         );
 
@@ -175,7 +177,7 @@ class DoctorController extends Controller
     }
 
     public function showRooms() {
-        $appointments = Appointment::with('patient')->where(['doctor_id'=>Auth::guard('doctor')->id(),'payed'=>true, 'scheduled'=>true])->get();
+        $appointments = Appointment::with('patient')->where(['doctor_id'=>Auth::guard('doctor')->id(),'payed'=>true, 'scheduled'=>true, 'done' => false])->get();
         return view('doctor.room')->with(compact('appointments'));
     }
 
@@ -192,6 +194,86 @@ class DoctorController extends Controller
             "patient_name" => $appointment->patient->name
         ];
         return view('doctor.video')->with(compact('appointment'));
+    }
+
+
+    public function todayAppointments() {
+        $date = date('Y-m-d');
+        $appointments = Appointment::with('patient')->where(['doctor_id'=>Auth::guard('doctor')->id(),'payed'=>true, 'scheduled'=>true, 'date'=>$date, 'done'=>false])->get();
+        return view('doctor.today')->with(compact('appointments'));
+
+    }
+
+    public function viewAppointments() {
+        $appointments = Appointment::with('patient')->where(['doctor_id'=>Auth::guard('doctor')->id(),'payed'=>true, 'scheduled'=>true, 'done'=>false])->get();
+        return view('doctor.appointments')->with(compact('appointments'));
+    }
+
+    public function appointmentsCalender() {
+        $events = [];
+        $appointments = Appointment::with('patient')->where(['doctor_id'=>Auth::guard('doctor')->id(),'payed'=>true, 'scheduled'=>true, 'done'=>false])->get();
+        foreach($appointments as $appointment){
+
+            $events[] = [
+                'title'=> $appointment->patient->name,
+                'start' => $appointment->date.' '.$appointment->start_time ,
+                'end' => $appointment->date.' '.$appointment->end_time ,
+                'url' => route('doctor.appointments'),
+            ];
+        }
+
+        return view('doctor.calender')->with(compact('events'));
+    }
+
+    public function endAppointment($id = null) {
+        $appointment = Appointment::with('patient')->where('id',$id)->first();
+
+
+        $data = array(
+            'start_time'=> $appointment->start_time,
+            'end_time' => $appointment->end_time,
+            'date' => $appointment->date,
+            'doctor' => Auth::guard('doctor')->user()->name,
+            'doctor_number'=> Auth::guard('doctor')->user()->phone,
+            'room_name'=> $appointment->room_name,
+        );
+
+        Mail::to($appointment->patient->email)->send(new DoneMail($data));
+        if(Mail::failures()){
+            return redirect()->back()->with('flash_message_error','Unable to Close Appointment, Notification Mail Failed to send');
+        } else {
+            $appointment->update([
+                'done' => true,
+            ]);
+
+            return redirect()->back()->with('flash_message_success','Appointment Closed Successfully');
+
+        }
+
+    }
+
+    public function doneAppointments() {
+        $appointments = Appointment::with('patient')->where([
+            'doctor_id'=>Auth::guard('doctor')->id(),
+            'done'=>true
+        ])->get();
+        return view('doctor.done')->with(compact('appointments'));
+    }
+
+    public function viewAppointment($id = null){
+        $appointment = Appointment::with('patient')->where('id',$id)->first();
+        return view('doctor.view')->with(compact('appointment'));
+    }
+
+    public function deleteAppointment($id = null) {
+        $appointment = Appointment::where('id',$id)->first()->delete();
+
+        if($appointment){
+            return redirect()->back()->with('flash_message_success','Appointment Successfully Deleted');
+        } else {
+            return redirect()->back()->with('flash_message_error','Appointment Deletion Failed');
+        }
+
     }
 
 

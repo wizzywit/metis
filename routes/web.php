@@ -117,6 +117,15 @@ Route::prefix('doctor')->group(function() {
     Route::post('/video/home','DoctorController@videoHome')->name('doctor.video.conference');
     Route::get('/video/start','DoctorController@showRooms')->name('doctor.video.rooms');
 
+    //appointments routes
+    Route::get('/appointments/today','DoctorController@todayAppointments')->name('doctor.appointment.today');
+    Route::get('/appointments/view','DoctorController@viewAppointments')->name('doctor.appointments');
+    Route::get('/appointments/calender','DoctorController@appointmentsCalender')->name('doctor.appointments.calender');
+    Route::get('/appointments/finished','DoctorController@doneAppointments')->name('doctor.appointments.done');
+    Route::get('/appointment/delete/{id}','DoctorController@deleteAppointment')->name('doctor.appointment.delete');
+    Route::get('/appointment/end/{id}','DoctorController@endAppointment')->name('doctor.appointment.end');
+    Route::get('/appointment/view/{id}','DoctorController@viewAppointment')->name('doctor.appointment.view');
+
 });
 
 
