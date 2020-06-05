@@ -14,6 +14,10 @@ class PusherController extends Controller
         $socketId = $request->socket_id;
         $channelName = $request->channel_name;
 
+        if(!Auth::guard('doctor')->check() && !Auth::guard('web')->check()) {
+            abort(404);
+        }
+
         $pusher = new Pusher('52b6df945610aa082478', 'ae75f5c3fd040b211bd8', '1011578', [
             'cluster' => 'ap2',
             'encrypted' => true

@@ -27,6 +27,18 @@
                         <h3>Schedule Appointment</h3>
                     </div>
                     <div class="module-body">
+                        @if($errors->any())
+                                <div class="alert alert-error">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <strong>
+                                        <ul>
+                                            @foreach($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </strong>
+                                </div>
+                            @endif
                             @if(Session::has('flash_message_success'))
                             <div class="alert alert-success">
                                 <button type="button" class="close" data-dismiss="alert">×</button>

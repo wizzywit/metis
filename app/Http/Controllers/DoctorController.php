@@ -87,6 +87,9 @@ class DoctorController extends Controller
     public function schedule(Request $request, $id = null ){
         $appointment = Appointment::with('patient')->where('id',$id)->first();
         // echo "<pre>"; print_r($request->all()); die;
+        $this->validate($request,[
+            'room_name' => ['required', 'string', 'unique:appointments'],
+        ]);
         $data = array(
             'start_time'=> $request->start_time,
             'end_time' => $request->end_time,
