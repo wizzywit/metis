@@ -4,8 +4,6 @@ import Swal from 'sweetalert2'
 import BlockUi from 'react-block-ui';
 
 
-var freeice = require('freeice');
-
 //APP_Key for pusher configuration
 const APP_KEY = '52b6df945610aa082478';
 
@@ -24,22 +22,18 @@ class Patient extends Component {
         this.caller;
         this.localUserMedia = null;
         this.sessionDesc;
-        // this.config = {
-        //     'iceServers': [
-        //         {
-        //             'url': 'stun:stun.l.google.com:19302'
-        //         },
-        //         {
-        //             'url': 'turn:numb.viagenie.ca',
-        //             'credential': 'Jesuschrist01',
-        //             'username': 'wisdompraise968@gmail.com'
-        //         },
-        //     ]
-        // };
-
         this.config = {
-            'iceServers': freeice()
-        }
+            'iceServers': [
+                {
+                    'url': 'stun:stun.l.google.com:19302'
+                },
+                {
+                    'url': 'turn:numb.viagenie.ca',
+                    'credential': 'Jesuschrist01',
+                    'username': 'wisdompraise968@gmail.com'
+                },
+            ]
+        };
 
 
 
