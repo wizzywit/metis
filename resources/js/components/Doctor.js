@@ -116,8 +116,8 @@ class Doctor extends Component {
         this.channel.bind("client-answer", (answer) => {
             if (answer.room == this.state.room) {
               console.log("answer received");
-              this.setState({blocking: false});
               this.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
+              this.setState({blocking: false});
             }
           });
 
@@ -174,7 +174,7 @@ class Doctor extends Component {
       };
       //onaddstream handler to receive remote feed and show in remoteview video element
       this.caller.onaddstream = (evt) => {
-        console.log("onaddstream called");
+        console.log("STREAM: "+evt.stream);
         try {
             this.userVideo.src = URL.createObjectURL(evt.stream);
         } catch (e) {

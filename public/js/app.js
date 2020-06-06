@@ -78809,11 +78809,11 @@ var Doctor = /*#__PURE__*/function (_Component) {
         if (answer.room == _this2.state.room) {
           console.log("answer received");
 
+          _this2.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
+
           _this2.setState({
             blocking: false
           });
-
-          _this2.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
         }
       });
       this.channel.bind("client-reject", function (answer) {
@@ -78877,7 +78877,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
 
 
       this.caller.onaddstream = function (evt) {
-        console.log("onaddstream called");
+        console.log("STREAM: " + evt.stream);
 
         try {
           _this3.userVideo.src = URL.createObjectURL(evt.stream);
