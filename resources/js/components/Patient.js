@@ -236,7 +236,7 @@ class Patient extends Component {
       };
       //onaddstream handler to receive remote feed and show in remoteview video element
       this.caller.onaddstream = (evt) => {
-        console.log("onaddstream called");
+        console.log("STREAM: "+evt.stream);
         try {
             this.userVideo.src = URL.createObjectURL(evt.stream);
         } catch (e) {

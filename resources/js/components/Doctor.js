@@ -58,7 +58,7 @@ class Doctor extends Component {
     }
 
     setupPusher() {
-        // Pusher.logToConsole=true;
+        Pusher.logToConsole=true;
         this.pusher = new Pusher(APP_KEY, {
             authEndpoint: '/pusher/auth',
             cluster: 'ap2',

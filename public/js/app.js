@@ -78737,7 +78737,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
     value: function setupPusher() {
       var _this2 = this;
 
-      // Pusher.logToConsole=true;
+      pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a.logToConsole = true;
       this.pusher = new pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a(APP_KEY, {
         authEndpoint: '/pusher/auth',
         cluster: 'ap2',
@@ -79396,7 +79396,7 @@ var Patient = /*#__PURE__*/function (_Component) {
 
 
       this.caller.onaddstream = function (evt) {
-        console.log("onaddstream called");
+        console.log("STREAM: " + evt.stream);
 
         try {
           _this3.userVideo.src = URL.createObjectURL(evt.stream);
