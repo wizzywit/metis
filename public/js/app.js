@@ -78704,33 +78704,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.sessionDesc;
     _this.config = {
       'iceServers': [{
-        'url': 'stun:stun.stunprotocol.org:3478'
-      }, {
         'url': 'stun:stun.l.google.com:19302'
-      }, {
-        'url': 'stun:stun2.l.google.com:19302'
-      }, {
-        'url': 'stun:stun3.l.google.com:19302'
-      }, {
-        'url': 'stun:stun4.l.google.com:19302'
-      }, {
-        'url': 'stun:stun.ekiga.net'
-      }, {
-        'url': 'stun:stun.iptel.org'
-      }, {
-        'url': 'stun:stun.rixtelecom.se'
-      }, {
-        'url': 'stun:stun.schlund.de'
-      }, {
-        'url': 'stun:stunserver.org'
-      }, {
-        'url': 'stun:stun.softjoys.com'
-      }, {
-        'url': 'stun:stun.voiparound.com'
-      }, {
-        'url': 'stun:stun.voipbuster.com'
-      }, {
-        'url': 'stun:stun.voipstunt.com'
       }, {
         'url': 'turn:numb.viagenie.ca',
         'credential': 'Jesuschrist01',
@@ -79189,33 +79163,7 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.sessionDesc;
     _this.config = {
       'iceServers': [{
-        'url': 'stun:stun.stunprotocol.org:3478'
-      }, {
         'url': 'stun:stun.l.google.com:19302'
-      }, {
-        'url': 'stun:stun2.l.google.com:19302'
-      }, {
-        'url': 'stun:stun3.l.google.com:19302'
-      }, {
-        'url': 'stun:stun4.l.google.com:19302'
-      }, {
-        'url': 'stun:stun.ekiga.net'
-      }, {
-        'url': 'stun:stun.iptel.org'
-      }, {
-        'url': 'stun:stun.rixtelecom.se'
-      }, {
-        'url': 'stun:stun.schlund.de'
-      }, {
-        'url': 'stun:stunserver.org'
-      }, {
-        'url': 'stun:stun.softjoys.com'
-      }, {
-        'url': 'stun:stun.voiparound.com'
-      }, {
-        'url': 'stun:stun.voipbuster.com'
-      }, {
-        'url': 'stun:stun.voipstunt.com'
       }, {
         'url': 'turn:numb.viagenie.ca',
         'credential': 'Jesuschrist01',
