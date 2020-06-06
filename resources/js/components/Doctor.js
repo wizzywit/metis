@@ -27,12 +27,6 @@ class Doctor extends Component {
             'iceServers': [
                 {
                     'url':'stun:numb.viagenie.ca'
-                },
-                {
-                    'url': 'turn:numb.viagenie.ca',
-                    'credential': 'Jesuschrist01',
-                    'username': 'wisdompraise968@gmail.com'
-
                 }
             ]
         };
@@ -216,11 +210,10 @@ class Doctor extends Component {
             } catch (e) {
                 this.myVideo.src = URL.createObjectURL(stream);
             }
-            // stream.getTracks().forEach(track => {
-            //     this.caller.addTrack(track, stream);
-            // });
+            stream.getTracks().forEach(track => {
+                this.caller.addTrack(track, stream);
+            });
 
-            this.caller.addStream(stream);
             this.caller.createOffer().then((desc) => {
                 console.log(desc);
                 return this.caller.setLocalDescription(new RTCSessionDescription(desc));

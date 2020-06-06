@@ -78705,10 +78705,6 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.config = {
       'iceServers': [{
         'url': 'stun:numb.viagenie.ca'
-      }, {
-        'url': 'turn:numb.viagenie.ca',
-        'credential': 'Jesuschrist01',
-        'username': 'wisdompraise968@gmail.com'
       }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
@@ -78924,12 +78920,11 @@ var Doctor = /*#__PURE__*/function (_Component) {
           _this4.myVideo.srcObject = stream;
         } catch (e) {
           _this4.myVideo.src = URL.createObjectURL(stream);
-        } // stream.getTracks().forEach(track => {
-        //     this.caller.addTrack(track, stream);
-        // });
+        }
 
-
-        _this4.caller.addStream(stream);
+        stream.getTracks().forEach(function (track) {
+          _this4.caller.addTrack(track, stream);
+        });
 
         _this4.caller.createOffer().then(function (desc) {
           console.log(desc);
@@ -79165,10 +79160,6 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.config = {
       'iceServers': [{
         'url': 'stun:numb.viagenie.ca'
-      }, {
-        'url': 'turn:numb.viagenie.ca',
-        'credential': 'Jesuschrist01',
-        'username': 'wisdompraise968@gmail.com'
       }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
