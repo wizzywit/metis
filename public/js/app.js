@@ -6510,6 +6510,146 @@ function toComment(sourceMap) {
 
 /***/ }),
 
+/***/ "./node_modules/freeice/index.js":
+/*!***************************************!*\
+  !*** ./node_modules/freeice/index.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* jshint node: true */
+
+
+var normalice = __webpack_require__(/*! normalice */ "./node_modules/normalice/index.js");
+
+/**
+  # freeice
+
+  The `freeice` module is a simple way of getting random STUN or TURN server
+  for your WebRTC application.  The list of servers (just STUN at this stage)
+  were sourced from this [gist](https://gist.github.com/zziuni/3741933).
+
+  ## Example Use
+
+  The following demonstrates how you can use `freeice` with
+  [rtc-quickconnect](https://github.com/rtc-io/rtc-quickconnect):
+
+  <<< examples/quickconnect.js
+
+  As the `freeice` module generates ice servers in a list compliant with the
+  WebRTC spec you will be able to use it with raw `RTCPeerConnection`
+  constructors and other WebRTC libraries.
+
+  ## Hey, don't use my STUN/TURN server!
+
+  If for some reason your free STUN or TURN server ends up in the
+  list of servers ([stun](https://github.com/DamonOehlman/freeice/blob/master/stun.json) or
+  [turn](https://github.com/DamonOehlman/freeice/blob/master/turn.json))
+  that is used in this module, you can feel
+  free to open an issue on this repository and those servers will be removed
+  within 24 hours (or sooner).  This is the quickest and probably the most
+  polite way to have something removed (and provides us some visibility
+  if someone opens a pull request requesting that a server is added).
+
+  ## Please add my server!
+
+  If you have a server that you wish to add to the list, that's awesome! I'm
+  sure I speak on behalf of a whole pile of WebRTC developers who say thanks.
+  To get it into the list, feel free to either open a pull request or if you
+  find that process a bit daunting then just create an issue requesting
+  the addition of the server (make sure you provide all the details, and if
+  you have a Terms of Service then including that in the PR/issue would be
+  awesome).
+
+  ## I know of a free server, can I add it?
+
+  Sure, if you do your homework and make sure it is ok to use (I'm currently
+  in the process of reviewing the terms of those STUN servers included from
+  the original list).  If it's ok to go, then please see the previous entry
+  for how to add it.
+
+  ## Current List of Servers
+
+  * current as at the time of last `README.md` file generation
+
+  ### STUN
+
+  <<< stun.json
+
+  ### TURN
+
+  <<< turn.json
+
+**/
+
+var freeice = function(opts) {
+  // if a list of servers has been provided, then use it instead of defaults
+  var servers = {
+    stun: (opts || {}).stun || __webpack_require__(/*! ./stun.json */ "./node_modules/freeice/stun.json"),
+    turn: (opts || {}).turn || __webpack_require__(/*! ./turn.json */ "./node_modules/freeice/turn.json")
+  };
+
+  var stunCount = (opts || {}).stunCount || 2;
+  var turnCount = (opts || {}).turnCount || 0;
+  var selected;
+
+  function getServers(type, count) {
+    var out = [];
+    var input = [].concat(servers[type]);
+    var idx;
+
+    while (input.length && out.length < count) {
+      idx = (Math.random() * input.length) | 0;
+      out = out.concat(input.splice(idx, 1));
+    }
+
+    return out.map(function(url) {
+        //If it's a not a string, don't try to "normalice" it otherwise using type:url will screw it up
+        if ((typeof url !== 'string') && (! (url instanceof String))) {
+            return url;
+        } else {
+            return normalice(type + ':' + url);
+        }
+    });
+  }
+
+  // add stun servers
+  selected = [].concat(getServers('stun', stunCount));
+
+  if (turnCount) {
+    selected = selected.concat(getServers('turn', turnCount));
+  }
+
+  return selected;
+};
+
+module.exports = freeice;
+
+/***/ }),
+
+/***/ "./node_modules/freeice/stun.json":
+/*!****************************************!*\
+  !*** ./node_modules/freeice/stun.json ***!
+  \****************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[\"stun.l.google.com:19302\",\"stun1.l.google.com:19302\",\"stun2.l.google.com:19302\",\"stun3.l.google.com:19302\",\"stun4.l.google.com:19302\",\"stun.ekiga.net\",\"stun.ideasip.com\",\"stun.schlund.de\",\"stun.stunprotocol.org:3478\",\"stun.voiparound.com\",\"stun.voipbuster.com\",\"stun.voipstunt.com\",\"stun.voxgratia.org\"]");
+
+/***/ }),
+
+/***/ "./node_modules/freeice/turn.json":
+/*!****************************************!*\
+  !*** ./node_modules/freeice/turn.json ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[]");
+
+/***/ }),
+
 /***/ "./node_modules/history/esm/history.js":
 /*!*********************************************!*\
   !*** ./node_modules/history/esm/history.js ***!
@@ -35762,6 +35902,77 @@ var index = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext || create
 /* harmony default export */ __webpack_exports__["default"] = (index);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/normalice/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/normalice/index.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+  # normalice
+
+  Normalize an ice server configuration object (or plain old string) into a format
+  that is usable in all browsers supporting WebRTC.  Primarily this module is designed
+  to help with the transition of the `url` attribute of the configuration object to
+  the `urls` attribute.
+
+  ## Example Usage
+
+  <<< examples/simple.js
+
+**/
+
+var protocols = [
+  'stun:',
+  'turn:'
+];
+
+module.exports = function(input) {
+  var url = (input || {}).url || input;
+  var protocol;
+  var parts;
+  var output = {};
+
+  // if we don't have a string url, then allow the input to passthrough
+  if (typeof url != 'string' && (! (url instanceof String))) {
+    return input;
+  }
+
+  // trim the url string, and convert to an array
+  url = url.trim();
+
+  // if the protocol is not known, then passthrough
+  protocol = protocols[protocols.indexOf(url.slice(0, 5))];
+  if (! protocol) {
+    return input;
+  }
+
+  // now let's attack the remaining url parts
+  url = url.slice(5);
+  parts = url.split('@');
+
+  output.username = input.username;
+  output.credential = input.credential;
+  // if we have an authentication part, then set the credentials
+  if (parts.length > 1) {
+    url = parts[1];
+    parts = parts[0].split(':');
+
+    // add the output credential and username
+    output.username = parts[0];
+    output.credential = (input || {}).credential || parts[1] || '';
+  }
+
+  output.url = protocol + url;
+  output.urls = [ output.url ];
+
+  return output;
+};
+
 
 /***/ }),
 
@@ -78677,6 +78888,9 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+
+var freeice = __webpack_require__(/*! freeice */ "./node_modules/freeice/index.js");
+
 var APP_KEY = '52b6df945610aa082478';
 
 var Doctor = /*#__PURE__*/function (_Component) {
@@ -78701,15 +78915,21 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.usersOnline;
     _this.caller;
     _this.localUserMedia = null;
-    _this.sessionDesc;
+    _this.sessionDesc; // this.config = {
+    //     'iceServers': [
+    //         {
+    //             'url': 'stun:stun.l.google.com:19302'
+    //         },
+    //         {
+    //             'url': 'turn:numb.viagenie.ca',
+    //             'credential': 'Jesuschrist01',
+    //             'username': 'wisdompraise968@gmail.com'
+    //         },
+    //     ]
+    // };
+
     _this.config = {
-      'iceServers': [{
-        'url': 'stun:stun.l.google.com:19302'
-      }, {
-        'url': 'turn:numb.viagenie.ca',
-        'credential': 'Jesuschrist01',
-        'username': 'wisdompraise968@gmail.com'
-      }]
+      'iceServers': freeice()
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
@@ -79135,7 +79355,10 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
- //APP_Key for pusher configuration
+
+
+var freeice = __webpack_require__(/*! freeice */ "./node_modules/freeice/index.js"); //APP_Key for pusher configuration
+
 
 var APP_KEY = '52b6df945610aa082478';
 
@@ -79160,15 +79383,21 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.usersOnline;
     _this.caller;
     _this.localUserMedia = null;
-    _this.sessionDesc;
+    _this.sessionDesc; // this.config = {
+    //     'iceServers': [
+    //         {
+    //             'url': 'stun:stun.l.google.com:19302'
+    //         },
+    //         {
+    //             'url': 'turn:numb.viagenie.ca',
+    //             'credential': 'Jesuschrist01',
+    //             'username': 'wisdompraise968@gmail.com'
+    //         },
+    //     ]
+    // };
+
     _this.config = {
-      'iceServers': [{
-        'url': 'stun:stun.l.google.com:19302'
-      }, {
-        'url': 'turn:numb.viagenie.ca',
-        'credential': 'Jesuschrist01',
-        'username': 'wisdompraise968@gmail.com'
-      }]
+      'iceServers': freeice()
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
