@@ -69,7 +69,7 @@ class Doctor extends Component {
                 },
                 {
                     'url': 'turn:numb.viagenie.ca',
-                    'credentials': 'Jesuschrist01',
+                    'credential': 'Jesuschrist01',
                     'username': 'wisdompraise968@gmail.com'
                 },
             ]

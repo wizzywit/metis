@@ -78733,7 +78733,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
         'url': 'stun:stun.voipstunt.com'
       }, {
         'url': 'turn:numb.viagenie.ca',
-        'credentials': 'Jesuschrist01',
+        'credential': 'Jesuschrist01',
         'username': 'wisdompraise968@gmail.com'
       }]
     };
@@ -79218,7 +79218,7 @@ var Patient = /*#__PURE__*/function (_Component) {
         'url': 'stun:stun.voipstunt.com'
       }, {
         'url': 'turn:numb.viagenie.ca',
-        'credentials': 'Jesuschrist01',
+        'credential': 'Jesuschrist01',
         'username': 'wisdompraise968@gmail.com'
       }]
     };
