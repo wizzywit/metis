@@ -144,7 +144,9 @@ class Patient extends Component {
                             } catch (e) {
                                 this.myVideo.src = URL.createObjectURL(stream);
                             }
-                            this.caller.addStream(stream);
+                            stream.getTracks().forEach(track => {
+                                this.caller.addTrack(track, stream);
+                            });
                             let sessionDesc = new RTCSessionDescription(msg.sdp);
                             this.caller.setRemoteDescription(sessionDesc);
                             this.caller.createAnswer().then((sdp) => {

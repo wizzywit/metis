@@ -79289,8 +79289,9 @@ var Patient = /*#__PURE__*/function (_Component) {
                   _this2.myVideo.src = URL.createObjectURL(stream);
                 }
 
-                _this2.caller.addStream(stream);
-
+                stream.getTracks().forEach(function (track) {
+                  _this2.caller.addTrack(track, stream);
+                });
                 var sessionDesc = new RTCSessionDescription(msg.sdp);
 
                 _this2.caller.setRemoteDescription(sessionDesc);
