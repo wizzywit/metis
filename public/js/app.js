@@ -78704,9 +78704,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.sessionDesc;
     _this.config = {
       'iceServers': [{
-        'url': 'turn:numb.viagenie.ca',
-        'credential': 'Jesuschrist01',
-        'username': 'wisdompraise968@gmail.com'
+        'url': 'stun:numb.viagenie.ca'
       }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
@@ -79161,9 +79159,7 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.sessionDesc;
     _this.config = {
       'iceServers': [{
-        'url': 'turn:numb.viagenie.ca',
-        'credential': 'Jesuschrist01',
-        'username': 'wisdompraise968@gmail.com'
+        'url': 'stun:numb.viagenie.ca'
       }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes

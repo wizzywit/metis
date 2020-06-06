@@ -24,10 +24,8 @@ class Patient extends Component {
         this.config = {
             'iceServers': [
                 {
-                    'url': 'turn:numb.viagenie.ca',
-                    'credential': 'Jesuschrist01',
-                    'username': 'wisdompraise968@gmail.com'
-                },
+                    'url':'stun:numb.viagenie.ca'
+                }
             ]
         };
 
