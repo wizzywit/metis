@@ -78704,7 +78704,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.sessionDesc;
     _this.config = {
       'iceServers': [{
-        'url': 'stun:stun.l.google.com:19302'
+        'url': 'stun:numb.viagenie.ca'
       }, {
         'url': 'turn:numb.viagenie.ca',
         'credential': 'Jesuschrist01',
@@ -79163,7 +79163,7 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.sessionDesc;
     _this.config = {
       'iceServers': [{
-        'url': 'stun:stun.l.google.com:19302'
+        'url': 'stun:numb.viagenie.ca'
       }, {
         'url': 'turn:numb.viagenie.ca',
         'credential': 'Jesuschrist01',

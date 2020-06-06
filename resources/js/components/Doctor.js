@@ -26,7 +26,7 @@ class Doctor extends Component {
         this.config = {
             'iceServers': [
                 {
-                    'url':'stun:stun.l.google.com:19302'
+                    'url':'stun:numb.viagenie.ca'
                 },
                 {
                     'url': 'turn:numb.viagenie.ca',
