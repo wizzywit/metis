@@ -24,7 +24,7 @@ class Patient extends Component {
         this.config = {
             'iceServers': [
                 {
-                    'url':'stun:numb.viagenie.ca'
+                    'url':'stun:stun1.l.google.com:19302'
                 }
             ]
         };
