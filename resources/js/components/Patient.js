@@ -62,7 +62,7 @@ class Patient extends Component {
 
     //pusher setup method
     setupPusher() {
-        // Pusher.logToConsole=true;
+        Pusher.logToConsole=true;
 
         //Instantiate Pusher Object
         this.pusher = new Pusher(APP_KEY, {

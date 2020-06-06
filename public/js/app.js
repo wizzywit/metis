@@ -78865,8 +78865,8 @@ var Doctor = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection(this.config); //   console.log(this.caller);
-      //Listen for ICE Candidates and send them to remote peers
+      this.caller = new window.RTCPeerConnection(this.config);
+      console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
         if (!evt.candidate) return;
@@ -78924,15 +78924,16 @@ var Doctor = /*#__PURE__*/function (_Component) {
           _this4.myVideo.srcObject = stream;
         } catch (e) {
           _this4.myVideo.src = URL.createObjectURL(stream);
-        }
+        } // stream.getTracks().forEach(track => {
+        //     this.caller.addTrack(track, stream);
+        // });
 
-        stream.getTracks().forEach(function (track) {
-          _this4.caller.addTrack(track, stream);
-        });
+
+        _this4.caller.addStream(stream);
 
         _this4.caller.createOffer().then(function (desc) {
           console.log(desc);
-          return _this4.caller.setLocalDescription(desc);
+          return _this4.caller.setLocalDescription(new RTCSessionDescription(desc));
         }).then(function () {
           _this4.channel.trigger("client-signal-".concat(user_id), {
             sdp: _this4.caller.localDescription,
@@ -79199,8 +79200,8 @@ var Patient = /*#__PURE__*/function (_Component) {
     value: function setupPusher() {
       var _this2 = this;
 
-      // Pusher.logToConsole=true;
-      //Instantiate Pusher Object
+      pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a.logToConsole = true; //Instantiate Pusher Object
+
       this.pusher = new pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a(APP_KEY, {
         authEndpoint: '/pusher/auth',
         cluster: 'ap2',

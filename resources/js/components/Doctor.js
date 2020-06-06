@@ -165,7 +165,7 @@ class Doctor extends Component {
       //Initializing a peer connection
 
       this.caller = new window.RTCPeerConnection(this.config);
-    //   console.log(this.caller);
+      console.log(this.caller);
       //Listen for ICE Candidates and send them to remote peers
       this.caller.onicecandidate = (evt) => {
         if (!evt.candidate) return;
@@ -216,12 +216,14 @@ class Doctor extends Component {
             } catch (e) {
                 this.myVideo.src = URL.createObjectURL(stream);
             }
-            stream.getTracks().forEach(track => {
-                this.caller.addTrack(track, stream);
-            });
+            // stream.getTracks().forEach(track => {
+            //     this.caller.addTrack(track, stream);
+            // });
+
+            this.caller.addStream(stream);
             this.caller.createOffer().then((desc) => {
                 console.log(desc);
-                return this.caller.setLocalDescription(desc);
+                return this.caller.setLocalDescription(new RTCSessionDescription(desc));
             })
             .then(() => {
                 this.channel.trigger(`client-signal-${user_id}`, {
