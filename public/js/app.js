@@ -79091,9 +79091,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
       //Initializing a peer connection
       this.caller = new window.RTCPeerConnection({
         'iceServers': [{
-          'url': 'turn:numb.viagenie.ca',
-          'credential': 'Jesuschrist01',
-          'username': 'wisdompraise968@gmail.com'
+          'url': 'stun:numb.viagenie.ca'
         }]
       });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
@@ -79629,9 +79627,7 @@ var Patient = /*#__PURE__*/function (_Component) {
       //Initializing a peer connection
       this.caller = new window.RTCPeerConnection({
         'iceServers': [{
-          'url': 'turn:numb.viagenie.ca',
-          'credential': 'Jesuschrist01',
-          'username': 'wisdompraise968@gmail.com'
+          'url': 'stun:numb.viagenie.ca'
         }]
       });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
