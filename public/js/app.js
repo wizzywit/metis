@@ -79095,7 +79095,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
           'credential': 'Jesuschrist01',
           'username': 'wisdompraise968@gmail.com'
         }, {
-          'url': 'stun:stun.l.google.com:19302'
+          'url': 'stun:numb.viagenie.ca'
         }]
       });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
