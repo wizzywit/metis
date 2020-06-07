@@ -239,7 +239,7 @@ class Patient extends Component {
     prepareCaller() {
       //Initializing a peer connection
 
-      this.caller = new window.RTCPeerConnection(this.config);
+      this.caller = new window.RTCPeerConnection();
       console.log(this.caller);
       //Listen for ICE Candidates and send them to remote peers
       this.caller.onicecandidate = (evt) => {
