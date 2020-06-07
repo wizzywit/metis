@@ -179,7 +179,7 @@ class Doctor extends Component {
                     'username': 'wisdompraise968@gmail.com'
                 },
                 {
-                    'url': 'stun:numb.viagenie.ca'
+                    'url': 'stun:127.0.0.1:4040'
                 }
             ]
         });
