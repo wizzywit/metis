@@ -242,8 +242,12 @@ class Patient extends Component {
       this.caller = new window.RTCPeerConnection({
             'iceServers': [
                 {
-                    'url': 'stun:numb.viagenie.ca'
-
+                    'url': 'turn:numb.viagenie.ca',
+                    'credential': 'Jesuschrist01',
+                    'username': 'wisdompraise968@gmail.com'
+                },
+                {
+                    'url': 'stun:stun.l.google.com:19302'
                 }
             ]
         });
