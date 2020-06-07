@@ -24,26 +24,26 @@ class Doctor extends Component {
         this.caller;
         this.localUserMedia = null;
         this.sessionDesc;
-        // this.config = {
-        //     'iceServers': [
-        //         {
-        //             'url': 'stun:stun.l.google.com:19302'
-        //         },
-        //         {
-        //             'url': 'turn:numb.viagenie.ca',
-        //             'credential': 'Jesuschrist01',
-        //             'username': 'wisdompraise968@gmail.com'
-        //         },
-        //     ]
-        // };
-
         this.config = {
             'iceServers': [
                 {
-                    'url': 'stun:127.0.0.1:4040'
-                }
+                    'url': 'stun:stun.l.google.com:19302'
+                },
+                {
+                    'url': 'turn:numb.viagenie.ca',
+                    'credential': 'Jesuschrist01',
+                    'username': 'wisdompraise968@gmail.com'
+                },
             ]
         };
+
+        // this.config = {
+        //     'iceServers': [
+        //         {
+        //             'url': 'stun:127.0.0.1:4040'
+        //         }
+        //     ]
+        // };
 
         this.mediaHandler;
 

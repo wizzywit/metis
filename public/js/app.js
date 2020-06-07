@@ -78915,24 +78915,23 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.usersOnline;
     _this.caller;
     _this.localUserMedia = null;
-    _this.sessionDesc; // this.config = {
+    _this.sessionDesc;
+    _this.config = {
+      'iceServers': [{
+        'url': 'stun:stun.l.google.com:19302'
+      }, {
+        'url': 'turn:numb.viagenie.ca',
+        'credential': 'Jesuschrist01',
+        'username': 'wisdompraise968@gmail.com'
+      }]
+    }; // this.config = {
     //     'iceServers': [
     //         {
-    //             'url': 'stun:stun.l.google.com:19302'
-    //         },
-    //         {
-    //             'url': 'turn:numb.viagenie.ca',
-    //             'credential': 'Jesuschrist01',
-    //             'username': 'wisdompraise968@gmail.com'
-    //         },
+    //             'url': 'stun:127.0.0.1:4040'
+    //         }
     //     ]
     // };
 
-    _this.config = {
-      'iceServers': [{
-        'url': 'stun:127.0.0.1:4040'
-      }]
-    };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
     _this.GetRTCPeerConnection();
@@ -79387,24 +79386,23 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.usersOnline;
     _this.caller;
     _this.localUserMedia = null;
-    _this.sessionDesc; // this.config = {
-    //     'iceServers': [
-    //         {
-    //             'url': 'stun:stun.l.google.com:19302'
-    //         },
-    //         {
-    //             'url': 'turn:numb.viagenie.ca',
-    //             'credential': 'Jesuschrist01',
-    //             'username': 'wisdompraise968@gmail.com'
-    //         },
-    //     ]
-    // };
-
+    _this.sessionDesc;
     _this.config = {
       'iceServers': [{
-        'url': 'stun:127.0.0.1:4040'
+        'url': 'stun:stun.l.google.com:19302'
+      }, {
+        'url': 'turn:numb.viagenie.ca',
+        'credential': 'Jesuschrist01',
+        'username': 'wisdompraise968@gmail.com'
       }]
-    };
+    }; // this.config = {
+    //     'iceServers': [
+    //         {
+    //             'url': 'stun:127.0.0.1:4040'
+    //         }
+    //     ]
+    // }
+
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
     _this.GetRTCPeerConnection();
