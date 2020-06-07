@@ -78929,7 +78929,9 @@ var Doctor = /*#__PURE__*/function (_Component) {
     // };
 
     _this.config = {
-      'iceServers': freeice()
+      'iceServers': [{
+        'url': 'stun:127.0.0.1:4040'
+      }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
@@ -79030,6 +79032,8 @@ var Doctor = /*#__PURE__*/function (_Component) {
           console.log("answer received");
 
           _this2.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
+
+          console.log("Patient SDP: " + new RTCSessionDescription(answer.sdp));
 
           _this2.setState({
             blocking: false
@@ -79397,7 +79401,9 @@ var Patient = /*#__PURE__*/function (_Component) {
     // };
 
     _this.config = {
-      'iceServers': freeice()
+      'iceServers': [{
+        'url': 'stun:127.0.0.1:4040'
+      }]
     };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
@@ -79530,6 +79536,7 @@ var Patient = /*#__PURE__*/function (_Component) {
                   _this2.caller.addTrack(track, stream);
                 });
                 var sessionDesc = new RTCSessionDescription(msg.sdp);
+                console.log("Patient SDP: " + sessionDesc);
 
                 _this2.caller.setRemoteDescription(sessionDesc);
 

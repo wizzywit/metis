@@ -38,7 +38,11 @@ class Doctor extends Component {
         // };
 
         this.config = {
-            'iceServers': freeice()
+            'iceServers': [
+                {
+                    'url': 'stun:127.0.0.1:4040'
+                }
+            ]
         };
 
         this.mediaHandler;
@@ -119,6 +123,7 @@ class Doctor extends Component {
             if (answer.room == this.state.room) {
               console.log("answer received");
               this.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
+              console.log("Patient SDP: "+new RTCSessionDescription(answer.sdp));
               this.setState({blocking: false});
             }
           });

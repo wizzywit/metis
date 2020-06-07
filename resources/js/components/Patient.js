@@ -38,7 +38,11 @@ class Patient extends Component {
         // };
 
         this.config = {
-            'iceServers': freeice()
+            'iceServers': [
+                {
+                    'url': 'stun:127.0.0.1:4040'
+                }
+            ]
         }
 
 
@@ -160,6 +164,7 @@ class Patient extends Component {
                                 this.caller.addTrack(track, stream);
                             });
                             let sessionDesc = new RTCSessionDescription(msg.sdp);
+                            console.log("Patient SDP: "+sessionDesc);
                             this.caller.setRemoteDescription(sessionDesc);
                             this.caller.createAnswer().then((sdp) => {
                                 this.caller.setLocalDescription(new RTCSessionDescription(sdp));
