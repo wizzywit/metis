@@ -79089,7 +79089,11 @@ var Doctor = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection();
+      this.caller = new window.RTCPeerConnection({
+        'iceServers': [{
+          'url': 'stun:127.0.0.1:4040'
+        }]
+      });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
@@ -79621,7 +79625,11 @@ var Patient = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection();
+      this.caller = new window.RTCPeerConnection({
+        'iceServers': [{
+          'url': 'stun:127.0.0.1:4040'
+        }]
+      });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
@@ -79633,7 +79641,7 @@ var Patient = /*#__PURE__*/function (_Component) {
 
 
       this.caller.onaddstream = function (evt) {
-        console.log("STREAM: " + evt.stream);
+        console.log("STREAM: " + JSON.stringify(evt.stream));
 
         try {
           _this3.userVideo.src = URL.createObjectURL(evt.stream);

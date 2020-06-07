@@ -239,7 +239,13 @@ class Patient extends Component {
     prepareCaller() {
       //Initializing a peer connection
 
-      this.caller = new window.RTCPeerConnection();
+      this.caller = new window.RTCPeerConnection({
+        'iceServers': [
+            {
+                'url': 'stun:127.0.0.1:4040'
+            }
+        ]
+    });
       console.log(this.caller);
       //Listen for ICE Candidates and send them to remote peers
       this.caller.onicecandidate = (evt) => {
@@ -249,7 +255,7 @@ class Patient extends Component {
       };
       //onaddstream handler to receive remote feed and show in remoteview video element
       this.caller.onaddstream = (evt) => {
-        console.log("STREAM: "+evt.stream);
+        console.log("STREAM: "+JSON.stringify(evt.stream));
         try {
             this.userVideo.src = URL.createObjectURL(evt.stream);
         } catch (e) {
