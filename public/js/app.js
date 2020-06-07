@@ -79089,11 +79089,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection({
-        'iceServers': [{
-          'url': 'stun:127.0.0.1:4040'
-        }]
-      });
+      this.caller = new window.RTCPeerConnection();
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
@@ -79600,20 +79596,20 @@ var Patient = /*#__PURE__*/function (_Component) {
   }, {
     key: "GetRTCIceCandidate",
     value: function GetRTCIceCandidate() {
-      window.RTCIceCandidate = window.RTCIceCandidate || window.webkitRTCIceCandidate || window.mozRTCIceCandidate || window.msRTCIceCandidate;
-      return window.RTCIceCandidate;
+      this.window.RTCIceCandidate = this.window.RTCIceCandidate || this.window.webkitRTCIceCandidate || this.window.mozRTCIceCandidate || this.window.msRTCIceCandidate;
+      return this.window.RTCIceCandidate;
     }
   }, {
     key: "GetRTCPeerConnection",
     value: function GetRTCPeerConnection() {
-      window.RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection || window.msRTCPeerConnection;
-      return window.RTCPeerConnection;
+      this.window.RTCPeerConnection = this.window.RTCPeerConnection || this.window.webkitRTCPeerConnection || this.window.mozRTCPeerConnection || this.window.msRTCPeerConnection;
+      return this.window.RTCPeerConnection;
     }
   }, {
     key: "GetRTCSessionDescription",
     value: function GetRTCSessionDescription() {
-      window.RTCSessionDescription = window.RTCSessionDescription || window.webkitRTCSessionDescription || window.mozRTCSessionDescription || window.msRTCSessionDescription;
-      return window.RTCSessionDescription;
+      this.window.RTCSessionDescription = this.window.RTCSessionDescription || this.window.webkitRTCSessionDescription || this.window.mozRTCSessionDescription || this.window.msRTCSessionDescription;
+      return this.window.RTCSessionDescription;
     }
     /* End of required methods
     */
@@ -79625,11 +79621,7 @@ var Patient = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection({
-        'iceServers': [{
-          'url': 'stun:127.0.0.1:4040'
-        }]
-      });
+      this.caller = new window.RTCPeerConnection();
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {

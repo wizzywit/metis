@@ -171,13 +171,7 @@ class Doctor extends Component {
     prepareCaller() {
       //Initializing a peer connection
 
-      this.caller = new window.RTCPeerConnection({
-        'iceServers': [
-            {
-                'url': 'stun:127.0.0.1:4040'
-            }
-        ]
-    });
+      this.caller = new window.RTCPeerConnection();
       console.log(this.caller);
       //Listen for ICE Candidates and send them to remote peers
       this.caller.onicecandidate = (evt) => {
