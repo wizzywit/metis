@@ -78915,23 +78915,24 @@ var Doctor = /*#__PURE__*/function (_Component) {
     _this.usersOnline;
     _this.caller;
     _this.localUserMedia = null;
-    _this.sessionDesc;
-    _this.config = {
-      'iceServers': [{
-        'url': 'stun:stun.l.google.com:19302'
-      }, {
-        'url': 'turn:numb.viagenie.ca',
-        'credential': 'Jesuschrist01',
-        'username': 'wisdompraise968@gmail.com'
-      }]
-    }; // this.config = {
+    _this.sessionDesc; // this.config = {
     //     'iceServers': [
     //         {
-    //             'url': 'stun:127.0.0.1:4040'
-    //         }
+    //             'url': 'stun:stun.l.google.com:19302'
+    //         },
+    //         {
+    //             'url': 'turn:numb.viagenie.ca',
+    //             'credential': 'Jesuschrist01',
+    //             'username': 'wisdompraise968@gmail.com'
+    //         },
     //     ]
     // };
 
+    _this.config = {
+      'iceServers': [{
+        'url': 'stun:127.0.0.1:4040'
+      }]
+    };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
     _this.GetRTCPeerConnection();
@@ -79088,7 +79089,11 @@ var Doctor = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection(this.config);
+      this.caller = new window.RTCPeerConnection({
+        iceServers: [{
+          urls: 'stun:bdd181b260aa.ngrok.io'
+        }]
+      });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
@@ -79386,23 +79391,24 @@ var Patient = /*#__PURE__*/function (_Component) {
     _this.usersOnline;
     _this.caller;
     _this.localUserMedia = null;
-    _this.sessionDesc;
-    _this.config = {
-      'iceServers': [{
-        'url': 'stun:stun.l.google.com:19302'
-      }, {
-        'url': 'turn:numb.viagenie.ca',
-        'credential': 'Jesuschrist01',
-        'username': 'wisdompraise968@gmail.com'
-      }]
-    }; // this.config = {
+    _this.sessionDesc; // this.config = {
     //     'iceServers': [
     //         {
-    //             'url': 'stun:127.0.0.1:4040'
-    //         }
+    //             'url': 'stun:stun.l.google.com:19302'
+    //         },
+    //         {
+    //             'url': 'turn:numb.viagenie.ca',
+    //             'credential': 'Jesuschrist01',
+    //             'username': 'wisdompraise968@gmail.com'
+    //         },
     //     ]
-    // }
+    // };
 
+    _this.config = {
+      'iceServers': [{
+        'url': 'stun:127.0.0.1:4040'
+      }]
+    };
     _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
 
     _this.GetRTCPeerConnection();
@@ -79534,13 +79540,12 @@ var Patient = /*#__PURE__*/function (_Component) {
                   _this2.caller.addTrack(track, stream);
                 });
                 var sessionDesc = new RTCSessionDescription(msg.sdp);
+                console.log("Patient SDP: " + sessionDesc);
 
                 _this2.caller.setRemoteDescription(sessionDesc);
 
                 _this2.caller.createAnswer().then(function (sdp) {
                   _this2.caller.setLocalDescription(new RTCSessionDescription(sdp));
-
-                  console.log(_this2.caller);
 
                   _this2.channel.trigger("client-answer", {
                     "sdp": sdp,
@@ -79595,20 +79600,20 @@ var Patient = /*#__PURE__*/function (_Component) {
   }, {
     key: "GetRTCIceCandidate",
     value: function GetRTCIceCandidate() {
-      RTCIceCandidate = RTCIceCandidate || webkitRTCIceCandidate || mozRTCIceCandidate || msRTCIceCandidate;
-      return RTCIceCandidate;
+      window.RTCIceCandidate = window.RTCIceCandidate || window.webkitRTCIceCandidate || window.mozRTCIceCandidate || window.msRTCIceCandidate;
+      return window.RTCIceCandidate;
     }
   }, {
     key: "GetRTCPeerConnection",
     value: function GetRTCPeerConnection() {
-      RTCPeerConnection = RTCPeerConnection || webkitRTCPeerConnection || mozRTCPeerConnection || msRTCPeerConnection;
-      return RTCPeerConnection;
+      window.RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection || window.msRTCPeerConnection;
+      return window.RTCPeerConnection;
     }
   }, {
     key: "GetRTCSessionDescription",
     value: function GetRTCSessionDescription() {
-      RTCSessionDescription = RTCSessionDescription || webkitRTCSessionDescription || mozRTCSessionDescription || window.msRTCSessionDescription;
-      return RTCSessionDescription;
+      window.RTCSessionDescription = window.RTCSessionDescription || window.webkitRTCSessionDescription || window.mozRTCSessionDescription || window.msRTCSessionDescription;
+      return window.RTCSessionDescription;
     }
     /* End of required methods
     */
@@ -79620,7 +79625,11 @@ var Patient = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new RTCPeerConnection(this.config);
+      this.caller = new window.RTCPeerConnection({
+        iceServers: [{
+          urls: 'stun:bdd181b260aa.ngrok.io'
+        }]
+      });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {

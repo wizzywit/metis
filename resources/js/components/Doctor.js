@@ -172,9 +172,9 @@ class Doctor extends Component {
       //Initializing a peer connection
 
       this.caller = new window.RTCPeerConnection({
-            'iceServers': [
+            iceServers: [
                 {
-                    'url': 'stun:127.0.0.1:4040'
+                    urls: 'stun:bdd181b260aa.ngrok.io'
                 }
             ]
         });
