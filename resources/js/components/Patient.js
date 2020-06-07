@@ -24,26 +24,26 @@ class Patient extends Component {
         this.caller;
         this.localUserMedia = null;
         this.sessionDesc;
-        this.config = {
-            'iceServers': [
-                {
-                    'url': 'stun:stun.l.google.com:19302'
-                },
-                {
-                    'url': 'turn:numb.viagenie.ca',
-                    'credential': 'Jesuschrist01',
-                    'username': 'wisdompraise968@gmail.com'
-                },
-            ]
-        };
-
         // this.config = {
         //     'iceServers': [
         //         {
-        //             'url': 'stun:127.0.0.1:4040'
-        //         }
+        //             'url': 'stun:stun.l.google.com:19302'
+        //         },
+        //         {
+        //             'url': 'turn:numb.viagenie.ca',
+        //             'credential': 'Jesuschrist01',
+        //             'username': 'wisdompraise968@gmail.com'
+        //         },
         //     ]
-        // }
+        // };
+
+        this.config = {
+            'iceServers': [
+                {
+                    'url': 'stun:127.0.0.1:4040'
+                }
+            ]
+        }
 
 
 
@@ -164,10 +164,10 @@ class Patient extends Component {
                                 this.caller.addTrack(track, stream);
                             });
                             let sessionDesc = new RTCSessionDescription(msg.sdp);
+                            console.log("Patient SDP: "+sessionDesc);
                             this.caller.setRemoteDescription(sessionDesc);
                             this.caller.createAnswer().then((sdp) => {
                                 this.caller.setLocalDescription(new RTCSessionDescription(sdp));
-                                console.log(this.caller);
                                 this.channel.trigger("client-answer", {
                                     "sdp": sdp,
                                     "room": this.state.room
@@ -217,18 +217,18 @@ class Patient extends Component {
       Different required Methods for peer connections
      */
      GetRTCIceCandidate() {
-      RTCIceCandidate = RTCIceCandidate || webkitRTCIceCandidate || mozRTCIceCandidate || msRTCIceCandidate;
-      return RTCIceCandidate;
+      window.RTCIceCandidate = window.RTCIceCandidate || window.webkitRTCIceCandidate || window.mozRTCIceCandidate || window.msRTCIceCandidate;
+      return window.RTCIceCandidate;
     }
 
      GetRTCPeerConnection() {
-        RTCPeerConnection = RTCPeerConnection || webkitRTCPeerConnection || mozRTCPeerConnection || msRTCPeerConnection;
-      return RTCPeerConnection;
+      window.RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection || window.msRTCPeerConnection;
+      return window.RTCPeerConnection;
     }
 
     GetRTCSessionDescription() {
-      RTCSessionDescription = RTCSessionDescription || webkitRTCSessionDescription ||  mozRTCSessionDescription || window.msRTCSessionDescription;
-      return RTCSessionDescription;
+      window.RTCSessionDescription = window.RTCSessionDescription || window.webkitRTCSessionDescription ||  window.mozRTCSessionDescription || window.msRTCSessionDescription;
+      return window.RTCSessionDescription;
     }
 
     /* End of required methods
@@ -239,7 +239,13 @@ class Patient extends Component {
     prepareCaller() {
       //Initializing a peer connection
 
-      this.caller = new RTCPeerConnection(this.config);
+      this.caller = new window.RTCPeerConnection({
+            'iceServers': [
+                {
+                    'url': 'stun:127.0.0.1:4040'
+                }
+            ]
+        });
       console.log(this.caller);
       //Listen for ICE Candidates and send them to remote peers
       this.caller.onicecandidate = (evt) => {
