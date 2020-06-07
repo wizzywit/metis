@@ -247,7 +247,7 @@ class Patient extends Component {
                     'username': 'wisdompraise968@gmail.com'
                 },
                 {
-                    'url': 'stun:127.0.0.1:4040'
+                    'url': 'stun:numb.viagenie.ca'
                 }
             ]
         });
