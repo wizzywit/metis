@@ -79596,20 +79596,20 @@ var Patient = /*#__PURE__*/function (_Component) {
   }, {
     key: "GetRTCIceCandidate",
     value: function GetRTCIceCandidate() {
-      this.window.RTCIceCandidate = this.window.RTCIceCandidate || this.window.webkitRTCIceCandidate || this.window.mozRTCIceCandidate || this.window.msRTCIceCandidate;
-      return this.window.RTCIceCandidate;
+      RTCIceCandidate = RTCIceCandidate || webkitRTCIceCandidate || mozRTCIceCandidate || msRTCIceCandidate;
+      return RTCIceCandidate;
     }
   }, {
     key: "GetRTCPeerConnection",
     value: function GetRTCPeerConnection() {
-      this.window.RTCPeerConnection = this.window.RTCPeerConnection || this.window.webkitRTCPeerConnection || this.window.mozRTCPeerConnection || this.window.msRTCPeerConnection;
-      return this.window.RTCPeerConnection;
+      RTCPeerConnection = RTCPeerConnection || webkitRTCPeerConnection || mozRTCPeerConnection || msRTCPeerConnection;
+      return RTCPeerConnection;
     }
   }, {
     key: "GetRTCSessionDescription",
     value: function GetRTCSessionDescription() {
-      this.window.RTCSessionDescription = this.window.RTCSessionDescription || this.window.webkitRTCSessionDescription || this.window.mozRTCSessionDescription || this.window.msRTCSessionDescription;
-      return this.window.RTCSessionDescription;
+      RTCSessionDescription = RTCSessionDescription || webkitRTCSessionDescription || mozRTCSessionDescription || window.msRTCSessionDescription;
+      return RTCSessionDescription;
     }
     /* End of required methods
     */
@@ -79621,7 +79621,7 @@ var Patient = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection();
+      this.caller = new RTCPeerConnection();
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
 
       this.caller.onicecandidate = function (evt) {
