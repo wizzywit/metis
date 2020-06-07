@@ -79536,12 +79536,13 @@ var Patient = /*#__PURE__*/function (_Component) {
                   _this2.caller.addTrack(track, stream);
                 });
                 var sessionDesc = new RTCSessionDescription(msg.sdp);
-                console.log("Patient SDP: " + sessionDesc);
 
                 _this2.caller.setRemoteDescription(sessionDesc);
 
                 _this2.caller.createAnswer().then(function (sdp) {
                   _this2.caller.setLocalDescription(new RTCSessionDescription(sdp));
+
+                  console.log(_this2.caller);
 
                   _this2.channel.trigger("client-answer", {
                     "sdp": sdp,

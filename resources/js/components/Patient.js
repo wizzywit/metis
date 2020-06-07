@@ -164,10 +164,10 @@ class Patient extends Component {
                                 this.caller.addTrack(track, stream);
                             });
                             let sessionDesc = new RTCSessionDescription(msg.sdp);
-                            console.log("Patient SDP: "+sessionDesc);
                             this.caller.setRemoteDescription(sessionDesc);
                             this.caller.createAnswer().then((sdp) => {
                                 this.caller.setLocalDescription(new RTCSessionDescription(sdp));
+                                console.log(this.caller);
                                 this.channel.trigger("client-answer", {
                                     "sdp": sdp,
                                     "room": this.state.room
