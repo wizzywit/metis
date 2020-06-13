@@ -154,12 +154,12 @@ class Doctor extends Component {
       this.caller = new window.RTCPeerConnection({
             'iceServers': [
                 {
-                    'url': 'turn:turn.technigence.in?transport=tls',
+                    'url': 'turn:turn.technigence.in',
                     'credential': 'metispass',
                     'username': 'metis'
                 },
                 {
-                    'url': 'stun:turn.technigence.in?transport=tls'
+                    'url': 'stun:turn.technigence.in'
                 }
             ]
         });

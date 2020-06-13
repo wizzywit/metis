@@ -79074,11 +79074,11 @@ var Doctor = /*#__PURE__*/function (_Component) {
       //Initializing a peer connection
       this.caller = new window.RTCPeerConnection({
         'iceServers': [{
-          'url': 'turn:turn.technigence.in?transport=tls',
+          'url': 'turn:turn.technigence.in',
           'credential': 'metispass',
           'username': 'metis'
         }, {
-          'url': 'stun:turn.technigence.in?transport=tls'
+          'url': 'stun:turn.technigence.in'
         }]
       });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
@@ -79597,11 +79597,11 @@ var Patient = /*#__PURE__*/function (_Component) {
       //Initializing a peer connection
       this.caller = new window.RTCPeerConnection({
         'iceServers': [{
-          'url': 'turn:turn.technigence.in?transport=tls',
+          'url': 'turn:turn.technigence.in',
           'credential': 'metispass',
           'username': 'metis'
         }, {
-          'url': 'stun:turn.technigence.in?transport=tls'
+          'url': 'stun:turn.technigence.in'
         }]
       });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
