@@ -157,9 +157,6 @@ class Doctor extends Component {
                     'url': 'turn:turn.technigence.in:5349',
                     'credential': 'metispass',
                     'username': 'metis'
-                },
-                {
-                    'url': 'stun:turn.technigence.in:5349'
                 }
             ]
         });
