@@ -242,7 +242,7 @@ class Patient extends Component {
       this.caller = new window.RTCPeerConnection({
             'iceServers': [
                 {
-                    'url': 'turn:152.44.41.25:3478',
+                    'url': 'turn:turn.technigence.in',
                     'credential': 'metispass',
                     'username': 'metis'
                 },
