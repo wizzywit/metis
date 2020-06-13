@@ -24,7 +24,7 @@ class Patient extends Component {
         this.caller;
         this.localUserMedia = null;
         this.sessionDesc;
-        
+
 
 
         this.mediaHandler;
@@ -222,12 +222,12 @@ class Patient extends Component {
       this.caller = new window.RTCPeerConnection({
             'iceServers': [
                 {
-                    'url': 'turn:turn.technigence.in',
+                    'url': 'turn:turn.technigence.in?transport=tls',
                     'credential': 'metispass',
                     'username': 'metis'
                 },
                 {
-                    'url': 'stun:turn.technigence.in'
+                    'url': 'stun:turn.technigence.in?transport=tls'
                 }
             ]
         });
