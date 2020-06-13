@@ -79078,6 +79078,10 @@ var Doctor = /*#__PURE__*/function (_Component) {
           'credential': 'metispass',
           'username': 'metis'
         }, {
+          'url': 'turn:turn.technigence.in:5349?transport=udp',
+          'credential': 'metispass',
+          'username': 'metis'
+        }, {
           'url': 'stun:turn.technigence.in:5349?transport=tcp'
         }]
       });
@@ -79598,6 +79602,10 @@ var Patient = /*#__PURE__*/function (_Component) {
       this.caller = new window.RTCPeerConnection({
         'iceServers': [{
           'url': 'turn:turn.technigence.in:5349?transport=tcp',
+          'credential': 'metispass',
+          'username': 'metis'
+        }, {
+          'url': 'turn:turn.technigence.in:5349?transport=udp',
           'credential': 'metispass',
           'username': 'metis'
         }, {

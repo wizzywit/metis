@@ -227,6 +227,11 @@ class Patient extends Component {
                     'username': 'metis'
                 },
                 {
+                    'url': 'turn:turn.technigence.in:5349?transport=udp',
+                    'credential': 'metispass',
+                    'username': 'metis'
+                },
+                {
                     'url': 'stun:turn.technigence.in:5349?transport=tcp'
                 }
             ]
