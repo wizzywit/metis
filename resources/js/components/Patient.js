@@ -247,7 +247,7 @@ class Patient extends Component {
                     'username': 'metis'
                 },
                 {
-                    'url': 'stun:numb.viagenie.ca'
+                    'url': 'stun:turn.technigence.in'
                 }
             ]
         });
