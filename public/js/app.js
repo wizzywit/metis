@@ -79078,7 +79078,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
           'credential': 'metispass',
           'username': 'metis'
         }, {
-          'url': 'stun.l.google.com:19302'
+          'url': 'stun:stun.l.google.com:19302'
         }]
       });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
@@ -79601,7 +79601,7 @@ var Patient = /*#__PURE__*/function (_Component) {
           'credential': 'metispass',
           'username': 'metis'
         }, {
-          'url': 'stun.l.google.com:19302'
+          'url': 'stun:stun.l.google.com:19302'
         }]
       });
       console.log(this.caller); //Listen for ICE Candidates and send them to remote peers

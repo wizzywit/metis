@@ -227,7 +227,7 @@ class Patient extends Component {
                     'username': 'metis'
                 },
                 {
-                    'url': 'stun.l.google.com:19302'
+                    'url': 'stun:stun.l.google.com:19302'
                 }
             ]
         });
