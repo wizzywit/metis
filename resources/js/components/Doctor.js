@@ -159,7 +159,7 @@ class Doctor extends Component {
                     'username': 'metis'
                 },
                 {
-                    'url': 'stun:152.44.41.25:5349'
+                    'url': 'stun.l.google.com:19302'
                 }
             ]
         });
