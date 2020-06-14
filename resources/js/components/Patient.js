@@ -222,12 +222,12 @@ class Patient extends Component {
       this.caller = new window.RTCPeerConnection({
             'iceServers': [
                 {
-                    'url': 'turn:152.44.41.25:5349?transport=tcp',
+                    'url': 'turn:152.44.41.25:5349',
                     'credential': 'metispass',
                     'username': 'metis'
                 },
                 {
-                    'url': 'stun:152.44.41.25:5349?transport=tcp'
+                    'url': 'stun:152.44.41.25:5349'
                 }
             ]
         });
