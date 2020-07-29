@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/video/call/home', function () {return view('videocall');});
 Auth::routes();
 
 Route::prefix('admin')->group(function() {

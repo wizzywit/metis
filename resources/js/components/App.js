@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Doctor from './Doctor';
-import Patient from './Patient';
+import VideoCall from './VideoCall';
 import ReactDOM from 'react-dom';
 
 class App extends Component {
-    render() {
+render() {
       return (
       <Router>
           <div>
             <Switch>
-                <Route exact path='/doctor/video/home' component={Doctor} />
-                <Route exact path='/patient/video/home' component={Patient} />
-            </Switch>
+                <Route exact path='/doctor/video/home' render={() => (<VideoCall account_type={1}/>)}/>
+                <Route exact path='/patient/video/home' render={() => (<VideoCall account_type={2}/>)}/>
+                <Route exact path='/video/call/home' component={VideoCall} />
+		     </Switch>
           </div>
         </Router>
       );

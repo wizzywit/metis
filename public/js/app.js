@@ -161,6 +161,103 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/@mdi/font/css/materialdesignicons.css":
+/*!************************************************************!*\
+  !*** ./node_modules/@mdi/font/css/materialdesignicons.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../css-loader??ref--6-1!../../../postcss-loader/src??ref--6-2!./materialdesignicons.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@mdi/font/css/materialdesignicons.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/@mdi/materialdesignicons-webfont.eot?66dc854e8e6da281f8beee081d633d70";
+
+/***/ }),
+
+/***/ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot?v=5.4.55":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot?v=5.4.55 ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/@mdi/materialdesignicons-webfont.eot?66dc854e8e6da281f8beee081d633d70";
+
+/***/ }),
+
+/***/ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf?v=5.4.55":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf?v=5.4.55 ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/@mdi/materialdesignicons-webfont.ttf?8ed8f0719def123d77bf6ea8919b8d8a";
+
+/***/ }),
+
+/***/ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2?v=5.4.55":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2?v=5.4.55 ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/@mdi/materialdesignicons-webfont.woff2?c0f7978a13704c522aaf355a80a5d0b0";
+
+/***/ }),
+
+/***/ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff?v=5.4.55":
+/*!********************************************************************************!*\
+  !*** ./node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff?v=5.4.55 ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/@mdi/materialdesignicons-webfont.woff?8ac434c848d34646f73544f35a903a67";
+
+/***/ }),
+
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -6404,19 +6501,39 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/react-block-ui/style.css":
-/*!*******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/react-block-ui/style.css ***!
-  \*******************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/@mdi/font/css/materialdesignicons.css":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/@mdi/font/css/materialdesignicons.css ***!
+  \********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(/*! ../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+var escape = __webpack_require__(/*! ../../../css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
+exports = module.exports = __webpack_require__(/*! ../../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 
 
 // module
-exports.push([module.i, ".loading-indicator {\n    text-align: center;\n}\n.loading-bullet {\n    display: inline-block;\n    opacity: 0;\n    font-size: 2em;\n    color: #02a17c;\n}\n.block-ui {\n    position: relative;\n    min-height: 3em;\n}\n.block-ui-container {\n    position: absolute;\n    z-index: 1010;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    height: 100%;\n    min-height: 2em;\n    cursor: wait;\n    overflow: hidden;\n}\n.block-ui-container:focus {\n    outline: none;\n}\n.block-ui-overlay {\n    width: 100%;\n    height: 100%;\n    opacity: 0.5;\n    filter: alpha(opacity=50);\n    background-color: white;\n}\n.block-ui-message-container {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    right: 0;\n    text-align: center;\n    transform: translateY(-50%);\n    z-index: 10001;\n}\n.block-ui-message {\n    color: #333;\n    background: none;\n    z-index: 1011;\n}\n\n/* CSS Animations */\n@-webkit-keyframes fadeInRTL1 {\n    0% {\n        opacity: 0;\n        transform: translateX(20px);\n    }\n    30% {\n        opacity: 1;\n        transform: translateX(0px);\n    }\n    60% {\n        opacity: 1;\n    }\n    80% {\n        opacity: 0;\n    }\n}\n@keyframes fadeInRTL1 {\n    0% {\n        opacity: 0;\n        transform: translateX(20px);\n    }\n    30% {\n        opacity: 1;\n        transform: translateX(0px);\n    }\n    60% {\n        opacity: 1;\n    }\n    80% {\n        opacity: 0;\n    }\n}\n@-webkit-keyframes fadeInRTL2 {\n    0% {\n        opacity: 0;\n    }\n    10% {\n        opacity: 0;\n        transform: translateX(20px);\n    }\n    40% {\n        opacity: 1;\n        transform: translateX(0px);\n    }\n    60% {\n        opacity: 1;\n    }\n    80% {\n        opacity: 0;\n    }\n}\n@keyframes fadeInRTL2 {\n    0% {\n        opacity: 0;\n    }\n    10% {\n        opacity: 0;\n        transform: translateX(20px);\n    }\n    40% {\n        opacity: 1;\n        transform: translateX(0px);\n    }\n    60% {\n        opacity: 1;\n    }\n    80% {\n        opacity: 0;\n    }\n}\n@-webkit-keyframes fadeInRTL3 {\n    0% {\n        opacity: 0;\n    }\n    20% {\n        opacity: 0;\n        transform: translateX(20px);\n    }\n    50% {\n        opacity: 1;\n        transform: translateX(0px);\n    }\n    60% {\n        opacity: 1;\n    }\n    80% {\n        opacity: 0;\n    }\n}\n@keyframes fadeInRTL3 {\n    0% {\n        opacity: 0;\n    }\n    20% {\n        opacity: 0;\n        transform: translateX(20px);\n    }\n    50% {\n        opacity: 1;\n        transform: translateX(0px);\n    }\n    60% {\n        opacity: 1;\n    }\n    80% {\n        opacity: 0;\n    }\n}\n.loading-bullet {\n    display: inline-block;\n    opacity: 0;\n    -webkit-animation: 3s ease .5s infinite fadeInRTL1;\n    animation: 3s ease .5s infinite fadeInRTL1;\n}\n.loading-bullet + .loading-bullet {\n    -webkit-animation-name: fadeInRTL2;\n    animation-name: fadeInRTL2;\n}\n.loading-bullet + .loading-bullet + .loading-bullet {\n    -webkit-animation-name: fadeInRTL3;\n    animation-name: fadeInRTL3;\n}\n", ""]);
+exports.push([module.i, "/* MaterialDesignIcons.com */\n@font-face {\n  font-family: \"Material Design Icons\";\n  src: url(" + escape(__webpack_require__(/*! ../fonts/materialdesignicons-webfont.eot?v=5.4.55 */ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot?v=5.4.55")) + ");\n  src: url(" + escape(__webpack_require__(/*! ../fonts/materialdesignicons-webfont.eot */ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot")) + "?#iefix&v=5.4.55) format(\"embedded-opentype\"), url(" + escape(__webpack_require__(/*! ../fonts/materialdesignicons-webfont.woff2?v=5.4.55 */ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff2?v=5.4.55")) + ") format(\"woff2\"), url(" + escape(__webpack_require__(/*! ../fonts/materialdesignicons-webfont.woff?v=5.4.55 */ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.woff?v=5.4.55")) + ") format(\"woff\"), url(" + escape(__webpack_require__(/*! ../fonts/materialdesignicons-webfont.ttf?v=5.4.55 */ "./node_modules/@mdi/font/fonts/materialdesignicons-webfont.ttf?v=5.4.55")) + ") format(\"truetype\");\n  font-weight: normal;\n  font-style: normal;\n}\n\n.mdi:before,\n.mdi-set {\n  display: inline-block;\n  font: normal normal normal 24px/1 \"Material Design Icons\";\n  font-size: inherit;\n  text-rendering: auto;\n  line-height: inherit;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.mdi-ab-testing::before {\n  content: \"\\F01C9\";\n}\n\n.mdi-abjad-arabic::before {\n  content: \"\\F1328\";\n}\n\n.mdi-abjad-hebrew::before {\n  content: \"\\F1329\";\n}\n\n.mdi-abugida-devanagari::before {\n  content: \"\\F132A\";\n}\n\n.mdi-abugida-thai::before {\n  content: \"\\F132B\";\n}\n\n.mdi-access-point::before {\n  content: \"\\F0003\";\n}\n\n.mdi-access-point-check::before {\n  content: \"\\F1538\";\n}\n\n.mdi-access-point-minus::before {\n  content: \"\\F1539\";\n}\n\n.mdi-access-point-network::before {\n  content: \"\\F0002\";\n}\n\n.mdi-access-point-network-off::before {\n  content: \"\\F0BE1\";\n}\n\n.mdi-access-point-off::before {\n  content: \"\\F1511\";\n}\n\n.mdi-access-point-plus::before {\n  content: \"\\F153A\";\n}\n\n.mdi-access-point-remove::before {\n  content: \"\\F153B\";\n}\n\n.mdi-account::before {\n  content: \"\\F0004\";\n}\n\n.mdi-account-alert::before {\n  content: \"\\F0005\";\n}\n\n.mdi-account-alert-outline::before {\n  content: \"\\F0B50\";\n}\n\n.mdi-account-arrow-left::before {\n  content: \"\\F0B51\";\n}\n\n.mdi-account-arrow-left-outline::before {\n  content: \"\\F0B52\";\n}\n\n.mdi-account-arrow-right::before {\n  content: \"\\F0B53\";\n}\n\n.mdi-account-arrow-right-outline::before {\n  content: \"\\F0B54\";\n}\n\n.mdi-account-box::before {\n  content: \"\\F0006\";\n}\n\n.mdi-account-box-multiple::before {\n  content: \"\\F0934\";\n}\n\n.mdi-account-box-multiple-outline::before {\n  content: \"\\F100A\";\n}\n\n.mdi-account-box-outline::before {\n  content: \"\\F0007\";\n}\n\n.mdi-account-cancel::before {\n  content: \"\\F12DF\";\n}\n\n.mdi-account-cancel-outline::before {\n  content: \"\\F12E0\";\n}\n\n.mdi-account-cash::before {\n  content: \"\\F1097\";\n}\n\n.mdi-account-cash-outline::before {\n  content: \"\\F1098\";\n}\n\n.mdi-account-check::before {\n  content: \"\\F0008\";\n}\n\n.mdi-account-check-outline::before {\n  content: \"\\F0BE2\";\n}\n\n.mdi-account-child::before {\n  content: \"\\F0A89\";\n}\n\n.mdi-account-child-circle::before {\n  content: \"\\F0A8A\";\n}\n\n.mdi-account-child-outline::before {\n  content: \"\\F10C8\";\n}\n\n.mdi-account-circle::before {\n  content: \"\\F0009\";\n}\n\n.mdi-account-circle-outline::before {\n  content: \"\\F0B55\";\n}\n\n.mdi-account-clock::before {\n  content: \"\\F0B56\";\n}\n\n.mdi-account-clock-outline::before {\n  content: \"\\F0B57\";\n}\n\n.mdi-account-cog::before {\n  content: \"\\F1370\";\n}\n\n.mdi-account-cog-outline::before {\n  content: \"\\F1371\";\n}\n\n.mdi-account-convert::before {\n  content: \"\\F000A\";\n}\n\n.mdi-account-convert-outline::before {\n  content: \"\\F1301\";\n}\n\n.mdi-account-cowboy-hat::before {\n  content: \"\\F0E9B\";\n}\n\n.mdi-account-details::before {\n  content: \"\\F0631\";\n}\n\n.mdi-account-details-outline::before {\n  content: \"\\F1372\";\n}\n\n.mdi-account-edit::before {\n  content: \"\\F06BC\";\n}\n\n.mdi-account-edit-outline::before {\n  content: \"\\F0FFB\";\n}\n\n.mdi-account-group::before {\n  content: \"\\F0849\";\n}\n\n.mdi-account-group-outline::before {\n  content: \"\\F0B58\";\n}\n\n.mdi-account-hard-hat::before {\n  content: \"\\F05B5\";\n}\n\n.mdi-account-heart::before {\n  content: \"\\F0899\";\n}\n\n.mdi-account-heart-outline::before {\n  content: \"\\F0BE3\";\n}\n\n.mdi-account-key::before {\n  content: \"\\F000B\";\n}\n\n.mdi-account-key-outline::before {\n  content: \"\\F0BE4\";\n}\n\n.mdi-account-lock::before {\n  content: \"\\F115E\";\n}\n\n.mdi-account-lock-outline::before {\n  content: \"\\F115F\";\n}\n\n.mdi-account-minus::before {\n  content: \"\\F000D\";\n}\n\n.mdi-account-minus-outline::before {\n  content: \"\\F0AEC\";\n}\n\n.mdi-account-multiple::before {\n  content: \"\\F000E\";\n}\n\n.mdi-account-multiple-check::before {\n  content: \"\\F08C5\";\n}\n\n.mdi-account-multiple-check-outline::before {\n  content: \"\\F11FE\";\n}\n\n.mdi-account-multiple-minus::before {\n  content: \"\\F05D3\";\n}\n\n.mdi-account-multiple-minus-outline::before {\n  content: \"\\F0BE5\";\n}\n\n.mdi-account-multiple-outline::before {\n  content: \"\\F000F\";\n}\n\n.mdi-account-multiple-plus::before {\n  content: \"\\F0010\";\n}\n\n.mdi-account-multiple-plus-outline::before {\n  content: \"\\F0800\";\n}\n\n.mdi-account-multiple-remove::before {\n  content: \"\\F120A\";\n}\n\n.mdi-account-multiple-remove-outline::before {\n  content: \"\\F120B\";\n}\n\n.mdi-account-music::before {\n  content: \"\\F0803\";\n}\n\n.mdi-account-music-outline::before {\n  content: \"\\F0CE9\";\n}\n\n.mdi-account-network::before {\n  content: \"\\F0011\";\n}\n\n.mdi-account-network-outline::before {\n  content: \"\\F0BE6\";\n}\n\n.mdi-account-off::before {\n  content: \"\\F0012\";\n}\n\n.mdi-account-off-outline::before {\n  content: \"\\F0BE7\";\n}\n\n.mdi-account-outline::before {\n  content: \"\\F0013\";\n}\n\n.mdi-account-plus::before {\n  content: \"\\F0014\";\n}\n\n.mdi-account-plus-outline::before {\n  content: \"\\F0801\";\n}\n\n.mdi-account-question::before {\n  content: \"\\F0B59\";\n}\n\n.mdi-account-question-outline::before {\n  content: \"\\F0B5A\";\n}\n\n.mdi-account-reactivate::before {\n  content: \"\\F152B\";\n}\n\n.mdi-account-reactivate-outline::before {\n  content: \"\\F152C\";\n}\n\n.mdi-account-remove::before {\n  content: \"\\F0015\";\n}\n\n.mdi-account-remove-outline::before {\n  content: \"\\F0AED\";\n}\n\n.mdi-account-search::before {\n  content: \"\\F0016\";\n}\n\n.mdi-account-search-outline::before {\n  content: \"\\F0935\";\n}\n\n.mdi-account-settings::before {\n  content: \"\\F0630\";\n}\n\n.mdi-account-settings-outline::before {\n  content: \"\\F10C9\";\n}\n\n.mdi-account-star::before {\n  content: \"\\F0017\";\n}\n\n.mdi-account-star-outline::before {\n  content: \"\\F0BE8\";\n}\n\n.mdi-account-supervisor::before {\n  content: \"\\F0A8B\";\n}\n\n.mdi-account-supervisor-circle::before {\n  content: \"\\F0A8C\";\n}\n\n.mdi-account-supervisor-circle-outline::before {\n  content: \"\\F14EC\";\n}\n\n.mdi-account-supervisor-outline::before {\n  content: \"\\F112D\";\n}\n\n.mdi-account-switch::before {\n  content: \"\\F0019\";\n}\n\n.mdi-account-switch-outline::before {\n  content: \"\\F04CB\";\n}\n\n.mdi-account-tie::before {\n  content: \"\\F0CE3\";\n}\n\n.mdi-account-tie-outline::before {\n  content: \"\\F10CA\";\n}\n\n.mdi-account-tie-voice::before {\n  content: \"\\F1308\";\n}\n\n.mdi-account-tie-voice-off::before {\n  content: \"\\F130A\";\n}\n\n.mdi-account-tie-voice-off-outline::before {\n  content: \"\\F130B\";\n}\n\n.mdi-account-tie-voice-outline::before {\n  content: \"\\F1309\";\n}\n\n.mdi-account-voice::before {\n  content: \"\\F05CB\";\n}\n\n.mdi-adjust::before {\n  content: \"\\F001A\";\n}\n\n.mdi-adobe::before {\n  content: \"\\F0936\";\n}\n\n.mdi-adobe-acrobat::before {\n  content: \"\\F0F9D\";\n}\n\n.mdi-air-conditioner::before {\n  content: \"\\F001B\";\n}\n\n.mdi-air-filter::before {\n  content: \"\\F0D43\";\n}\n\n.mdi-air-horn::before {\n  content: \"\\F0DAC\";\n}\n\n.mdi-air-humidifier::before {\n  content: \"\\F1099\";\n}\n\n.mdi-air-humidifier-off::before {\n  content: \"\\F1466\";\n}\n\n.mdi-air-purifier::before {\n  content: \"\\F0D44\";\n}\n\n.mdi-airbag::before {\n  content: \"\\F0BE9\";\n}\n\n.mdi-airballoon::before {\n  content: \"\\F001C\";\n}\n\n.mdi-airballoon-outline::before {\n  content: \"\\F100B\";\n}\n\n.mdi-airplane::before {\n  content: \"\\F001D\";\n}\n\n.mdi-airplane-landing::before {\n  content: \"\\F05D4\";\n}\n\n.mdi-airplane-off::before {\n  content: \"\\F001E\";\n}\n\n.mdi-airplane-takeoff::before {\n  content: \"\\F05D5\";\n}\n\n.mdi-airport::before {\n  content: \"\\F084B\";\n}\n\n.mdi-alarm::before {\n  content: \"\\F0020\";\n}\n\n.mdi-alarm-bell::before {\n  content: \"\\F078E\";\n}\n\n.mdi-alarm-check::before {\n  content: \"\\F0021\";\n}\n\n.mdi-alarm-light::before {\n  content: \"\\F078F\";\n}\n\n.mdi-alarm-light-outline::before {\n  content: \"\\F0BEA\";\n}\n\n.mdi-alarm-multiple::before {\n  content: \"\\F0022\";\n}\n\n.mdi-alarm-note::before {\n  content: \"\\F0E71\";\n}\n\n.mdi-alarm-note-off::before {\n  content: \"\\F0E72\";\n}\n\n.mdi-alarm-off::before {\n  content: \"\\F0023\";\n}\n\n.mdi-alarm-plus::before {\n  content: \"\\F0024\";\n}\n\n.mdi-alarm-snooze::before {\n  content: \"\\F068E\";\n}\n\n.mdi-album::before {\n  content: \"\\F0025\";\n}\n\n.mdi-alert::before {\n  content: \"\\F0026\";\n}\n\n.mdi-alert-box::before {\n  content: \"\\F0027\";\n}\n\n.mdi-alert-box-outline::before {\n  content: \"\\F0CE4\";\n}\n\n.mdi-alert-circle::before {\n  content: \"\\F0028\";\n}\n\n.mdi-alert-circle-check::before {\n  content: \"\\F11ED\";\n}\n\n.mdi-alert-circle-check-outline::before {\n  content: \"\\F11EE\";\n}\n\n.mdi-alert-circle-outline::before {\n  content: \"\\F05D6\";\n}\n\n.mdi-alert-decagram::before {\n  content: \"\\F06BD\";\n}\n\n.mdi-alert-decagram-outline::before {\n  content: \"\\F0CE5\";\n}\n\n.mdi-alert-minus::before {\n  content: \"\\F14BB\";\n}\n\n.mdi-alert-minus-outline::before {\n  content: \"\\F14BE\";\n}\n\n.mdi-alert-octagon::before {\n  content: \"\\F0029\";\n}\n\n.mdi-alert-octagon-outline::before {\n  content: \"\\F0CE6\";\n}\n\n.mdi-alert-octagram::before {\n  content: \"\\F0767\";\n}\n\n.mdi-alert-octagram-outline::before {\n  content: \"\\F0CE7\";\n}\n\n.mdi-alert-outline::before {\n  content: \"\\F002A\";\n}\n\n.mdi-alert-plus::before {\n  content: \"\\F14BA\";\n}\n\n.mdi-alert-plus-outline::before {\n  content: \"\\F14BD\";\n}\n\n.mdi-alert-remove::before {\n  content: \"\\F14BC\";\n}\n\n.mdi-alert-remove-outline::before {\n  content: \"\\F14BF\";\n}\n\n.mdi-alert-rhombus::before {\n  content: \"\\F11CE\";\n}\n\n.mdi-alert-rhombus-outline::before {\n  content: \"\\F11CF\";\n}\n\n.mdi-alien::before {\n  content: \"\\F089A\";\n}\n\n.mdi-alien-outline::before {\n  content: \"\\F10CB\";\n}\n\n.mdi-align-horizontal-center::before {\n  content: \"\\F11C3\";\n}\n\n.mdi-align-horizontal-left::before {\n  content: \"\\F11C2\";\n}\n\n.mdi-align-horizontal-right::before {\n  content: \"\\F11C4\";\n}\n\n.mdi-align-vertical-bottom::before {\n  content: \"\\F11C5\";\n}\n\n.mdi-align-vertical-center::before {\n  content: \"\\F11C6\";\n}\n\n.mdi-align-vertical-top::before {\n  content: \"\\F11C7\";\n}\n\n.mdi-all-inclusive::before {\n  content: \"\\F06BE\";\n}\n\n.mdi-allergy::before {\n  content: \"\\F1258\";\n}\n\n.mdi-alpha::before {\n  content: \"\\F002B\";\n}\n\n.mdi-alpha-a::before {\n  content: \"\\F0AEE\";\n}\n\n.mdi-alpha-a-box::before {\n  content: \"\\F0B08\";\n}\n\n.mdi-alpha-a-box-outline::before {\n  content: \"\\F0BEB\";\n}\n\n.mdi-alpha-a-circle::before {\n  content: \"\\F0BEC\";\n}\n\n.mdi-alpha-a-circle-outline::before {\n  content: \"\\F0BED\";\n}\n\n.mdi-alpha-b::before {\n  content: \"\\F0AEF\";\n}\n\n.mdi-alpha-b-box::before {\n  content: \"\\F0B09\";\n}\n\n.mdi-alpha-b-box-outline::before {\n  content: \"\\F0BEE\";\n}\n\n.mdi-alpha-b-circle::before {\n  content: \"\\F0BEF\";\n}\n\n.mdi-alpha-b-circle-outline::before {\n  content: \"\\F0BF0\";\n}\n\n.mdi-alpha-c::before {\n  content: \"\\F0AF0\";\n}\n\n.mdi-alpha-c-box::before {\n  content: \"\\F0B0A\";\n}\n\n.mdi-alpha-c-box-outline::before {\n  content: \"\\F0BF1\";\n}\n\n.mdi-alpha-c-circle::before {\n  content: \"\\F0BF2\";\n}\n\n.mdi-alpha-c-circle-outline::before {\n  content: \"\\F0BF3\";\n}\n\n.mdi-alpha-d::before {\n  content: \"\\F0AF1\";\n}\n\n.mdi-alpha-d-box::before {\n  content: \"\\F0B0B\";\n}\n\n.mdi-alpha-d-box-outline::before {\n  content: \"\\F0BF4\";\n}\n\n.mdi-alpha-d-circle::before {\n  content: \"\\F0BF5\";\n}\n\n.mdi-alpha-d-circle-outline::before {\n  content: \"\\F0BF6\";\n}\n\n.mdi-alpha-e::before {\n  content: \"\\F0AF2\";\n}\n\n.mdi-alpha-e-box::before {\n  content: \"\\F0B0C\";\n}\n\n.mdi-alpha-e-box-outline::before {\n  content: \"\\F0BF7\";\n}\n\n.mdi-alpha-e-circle::before {\n  content: \"\\F0BF8\";\n}\n\n.mdi-alpha-e-circle-outline::before {\n  content: \"\\F0BF9\";\n}\n\n.mdi-alpha-f::before {\n  content: \"\\F0AF3\";\n}\n\n.mdi-alpha-f-box::before {\n  content: \"\\F0B0D\";\n}\n\n.mdi-alpha-f-box-outline::before {\n  content: \"\\F0BFA\";\n}\n\n.mdi-alpha-f-circle::before {\n  content: \"\\F0BFB\";\n}\n\n.mdi-alpha-f-circle-outline::before {\n  content: \"\\F0BFC\";\n}\n\n.mdi-alpha-g::before {\n  content: \"\\F0AF4\";\n}\n\n.mdi-alpha-g-box::before {\n  content: \"\\F0B0E\";\n}\n\n.mdi-alpha-g-box-outline::before {\n  content: \"\\F0BFD\";\n}\n\n.mdi-alpha-g-circle::before {\n  content: \"\\F0BFE\";\n}\n\n.mdi-alpha-g-circle-outline::before {\n  content: \"\\F0BFF\";\n}\n\n.mdi-alpha-h::before {\n  content: \"\\F0AF5\";\n}\n\n.mdi-alpha-h-box::before {\n  content: \"\\F0B0F\";\n}\n\n.mdi-alpha-h-box-outline::before {\n  content: \"\\F0C00\";\n}\n\n.mdi-alpha-h-circle::before {\n  content: \"\\F0C01\";\n}\n\n.mdi-alpha-h-circle-outline::before {\n  content: \"\\F0C02\";\n}\n\n.mdi-alpha-i::before {\n  content: \"\\F0AF6\";\n}\n\n.mdi-alpha-i-box::before {\n  content: \"\\F0B10\";\n}\n\n.mdi-alpha-i-box-outline::before {\n  content: \"\\F0C03\";\n}\n\n.mdi-alpha-i-circle::before {\n  content: \"\\F0C04\";\n}\n\n.mdi-alpha-i-circle-outline::before {\n  content: \"\\F0C05\";\n}\n\n.mdi-alpha-j::before {\n  content: \"\\F0AF7\";\n}\n\n.mdi-alpha-j-box::before {\n  content: \"\\F0B11\";\n}\n\n.mdi-alpha-j-box-outline::before {\n  content: \"\\F0C06\";\n}\n\n.mdi-alpha-j-circle::before {\n  content: \"\\F0C07\";\n}\n\n.mdi-alpha-j-circle-outline::before {\n  content: \"\\F0C08\";\n}\n\n.mdi-alpha-k::before {\n  content: \"\\F0AF8\";\n}\n\n.mdi-alpha-k-box::before {\n  content: \"\\F0B12\";\n}\n\n.mdi-alpha-k-box-outline::before {\n  content: \"\\F0C09\";\n}\n\n.mdi-alpha-k-circle::before {\n  content: \"\\F0C0A\";\n}\n\n.mdi-alpha-k-circle-outline::before {\n  content: \"\\F0C0B\";\n}\n\n.mdi-alpha-l::before {\n  content: \"\\F0AF9\";\n}\n\n.mdi-alpha-l-box::before {\n  content: \"\\F0B13\";\n}\n\n.mdi-alpha-l-box-outline::before {\n  content: \"\\F0C0C\";\n}\n\n.mdi-alpha-l-circle::before {\n  content: \"\\F0C0D\";\n}\n\n.mdi-alpha-l-circle-outline::before {\n  content: \"\\F0C0E\";\n}\n\n.mdi-alpha-m::before {\n  content: \"\\F0AFA\";\n}\n\n.mdi-alpha-m-box::before {\n  content: \"\\F0B14\";\n}\n\n.mdi-alpha-m-box-outline::before {\n  content: \"\\F0C0F\";\n}\n\n.mdi-alpha-m-circle::before {\n  content: \"\\F0C10\";\n}\n\n.mdi-alpha-m-circle-outline::before {\n  content: \"\\F0C11\";\n}\n\n.mdi-alpha-n::before {\n  content: \"\\F0AFB\";\n}\n\n.mdi-alpha-n-box::before {\n  content: \"\\F0B15\";\n}\n\n.mdi-alpha-n-box-outline::before {\n  content: \"\\F0C12\";\n}\n\n.mdi-alpha-n-circle::before {\n  content: \"\\F0C13\";\n}\n\n.mdi-alpha-n-circle-outline::before {\n  content: \"\\F0C14\";\n}\n\n.mdi-alpha-o::before {\n  content: \"\\F0AFC\";\n}\n\n.mdi-alpha-o-box::before {\n  content: \"\\F0B16\";\n}\n\n.mdi-alpha-o-box-outline::before {\n  content: \"\\F0C15\";\n}\n\n.mdi-alpha-o-circle::before {\n  content: \"\\F0C16\";\n}\n\n.mdi-alpha-o-circle-outline::before {\n  content: \"\\F0C17\";\n}\n\n.mdi-alpha-p::before {\n  content: \"\\F0AFD\";\n}\n\n.mdi-alpha-p-box::before {\n  content: \"\\F0B17\";\n}\n\n.mdi-alpha-p-box-outline::before {\n  content: \"\\F0C18\";\n}\n\n.mdi-alpha-p-circle::before {\n  content: \"\\F0C19\";\n}\n\n.mdi-alpha-p-circle-outline::before {\n  content: \"\\F0C1A\";\n}\n\n.mdi-alpha-q::before {\n  content: \"\\F0AFE\";\n}\n\n.mdi-alpha-q-box::before {\n  content: \"\\F0B18\";\n}\n\n.mdi-alpha-q-box-outline::before {\n  content: \"\\F0C1B\";\n}\n\n.mdi-alpha-q-circle::before {\n  content: \"\\F0C1C\";\n}\n\n.mdi-alpha-q-circle-outline::before {\n  content: \"\\F0C1D\";\n}\n\n.mdi-alpha-r::before {\n  content: \"\\F0AFF\";\n}\n\n.mdi-alpha-r-box::before {\n  content: \"\\F0B19\";\n}\n\n.mdi-alpha-r-box-outline::before {\n  content: \"\\F0C1E\";\n}\n\n.mdi-alpha-r-circle::before {\n  content: \"\\F0C1F\";\n}\n\n.mdi-alpha-r-circle-outline::before {\n  content: \"\\F0C20\";\n}\n\n.mdi-alpha-s::before {\n  content: \"\\F0B00\";\n}\n\n.mdi-alpha-s-box::before {\n  content: \"\\F0B1A\";\n}\n\n.mdi-alpha-s-box-outline::before {\n  content: \"\\F0C21\";\n}\n\n.mdi-alpha-s-circle::before {\n  content: \"\\F0C22\";\n}\n\n.mdi-alpha-s-circle-outline::before {\n  content: \"\\F0C23\";\n}\n\n.mdi-alpha-t::before {\n  content: \"\\F0B01\";\n}\n\n.mdi-alpha-t-box::before {\n  content: \"\\F0B1B\";\n}\n\n.mdi-alpha-t-box-outline::before {\n  content: \"\\F0C24\";\n}\n\n.mdi-alpha-t-circle::before {\n  content: \"\\F0C25\";\n}\n\n.mdi-alpha-t-circle-outline::before {\n  content: \"\\F0C26\";\n}\n\n.mdi-alpha-u::before {\n  content: \"\\F0B02\";\n}\n\n.mdi-alpha-u-box::before {\n  content: \"\\F0B1C\";\n}\n\n.mdi-alpha-u-box-outline::before {\n  content: \"\\F0C27\";\n}\n\n.mdi-alpha-u-circle::before {\n  content: \"\\F0C28\";\n}\n\n.mdi-alpha-u-circle-outline::before {\n  content: \"\\F0C29\";\n}\n\n.mdi-alpha-v::before {\n  content: \"\\F0B03\";\n}\n\n.mdi-alpha-v-box::before {\n  content: \"\\F0B1D\";\n}\n\n.mdi-alpha-v-box-outline::before {\n  content: \"\\F0C2A\";\n}\n\n.mdi-alpha-v-circle::before {\n  content: \"\\F0C2B\";\n}\n\n.mdi-alpha-v-circle-outline::before {\n  content: \"\\F0C2C\";\n}\n\n.mdi-alpha-w::before {\n  content: \"\\F0B04\";\n}\n\n.mdi-alpha-w-box::before {\n  content: \"\\F0B1E\";\n}\n\n.mdi-alpha-w-box-outline::before {\n  content: \"\\F0C2D\";\n}\n\n.mdi-alpha-w-circle::before {\n  content: \"\\F0C2E\";\n}\n\n.mdi-alpha-w-circle-outline::before {\n  content: \"\\F0C2F\";\n}\n\n.mdi-alpha-x::before {\n  content: \"\\F0B05\";\n}\n\n.mdi-alpha-x-box::before {\n  content: \"\\F0B1F\";\n}\n\n.mdi-alpha-x-box-outline::before {\n  content: \"\\F0C30\";\n}\n\n.mdi-alpha-x-circle::before {\n  content: \"\\F0C31\";\n}\n\n.mdi-alpha-x-circle-outline::before {\n  content: \"\\F0C32\";\n}\n\n.mdi-alpha-y::before {\n  content: \"\\F0B06\";\n}\n\n.mdi-alpha-y-box::before {\n  content: \"\\F0B20\";\n}\n\n.mdi-alpha-y-box-outline::before {\n  content: \"\\F0C33\";\n}\n\n.mdi-alpha-y-circle::before {\n  content: \"\\F0C34\";\n}\n\n.mdi-alpha-y-circle-outline::before {\n  content: \"\\F0C35\";\n}\n\n.mdi-alpha-z::before {\n  content: \"\\F0B07\";\n}\n\n.mdi-alpha-z-box::before {\n  content: \"\\F0B21\";\n}\n\n.mdi-alpha-z-box-outline::before {\n  content: \"\\F0C36\";\n}\n\n.mdi-alpha-z-circle::before {\n  content: \"\\F0C37\";\n}\n\n.mdi-alpha-z-circle-outline::before {\n  content: \"\\F0C38\";\n}\n\n.mdi-alphabet-aurebesh::before {\n  content: \"\\F132C\";\n}\n\n.mdi-alphabet-cyrillic::before {\n  content: \"\\F132D\";\n}\n\n.mdi-alphabet-greek::before {\n  content: \"\\F132E\";\n}\n\n.mdi-alphabet-latin::before {\n  content: \"\\F132F\";\n}\n\n.mdi-alphabet-piqad::before {\n  content: \"\\F1330\";\n}\n\n.mdi-alphabet-tengwar::before {\n  content: \"\\F1337\";\n}\n\n.mdi-alphabetical::before {\n  content: \"\\F002C\";\n}\n\n.mdi-alphabetical-off::before {\n  content: \"\\F100C\";\n}\n\n.mdi-alphabetical-variant::before {\n  content: \"\\F100D\";\n}\n\n.mdi-alphabetical-variant-off::before {\n  content: \"\\F100E\";\n}\n\n.mdi-altimeter::before {\n  content: \"\\F05D7\";\n}\n\n.mdi-amazon::before {\n  content: \"\\F002D\";\n}\n\n.mdi-amazon-alexa::before {\n  content: \"\\F08C6\";\n}\n\n.mdi-ambulance::before {\n  content: \"\\F002F\";\n}\n\n.mdi-ammunition::before {\n  content: \"\\F0CE8\";\n}\n\n.mdi-ampersand::before {\n  content: \"\\F0A8D\";\n}\n\n.mdi-amplifier::before {\n  content: \"\\F0030\";\n}\n\n.mdi-amplifier-off::before {\n  content: \"\\F11B5\";\n}\n\n.mdi-anchor::before {\n  content: \"\\F0031\";\n}\n\n.mdi-android::before {\n  content: \"\\F0032\";\n}\n\n.mdi-android-auto::before {\n  content: \"\\F0A8E\";\n}\n\n.mdi-android-debug-bridge::before {\n  content: \"\\F0033\";\n}\n\n.mdi-android-messages::before {\n  content: \"\\F0D45\";\n}\n\n.mdi-android-studio::before {\n  content: \"\\F0034\";\n}\n\n.mdi-angle-acute::before {\n  content: \"\\F0937\";\n}\n\n.mdi-angle-obtuse::before {\n  content: \"\\F0938\";\n}\n\n.mdi-angle-right::before {\n  content: \"\\F0939\";\n}\n\n.mdi-angular::before {\n  content: \"\\F06B2\";\n}\n\n.mdi-angularjs::before {\n  content: \"\\F06BF\";\n}\n\n.mdi-animation::before {\n  content: \"\\F05D8\";\n}\n\n.mdi-animation-outline::before {\n  content: \"\\F0A8F\";\n}\n\n.mdi-animation-play::before {\n  content: \"\\F093A\";\n}\n\n.mdi-animation-play-outline::before {\n  content: \"\\F0A90\";\n}\n\n.mdi-ansible::before {\n  content: \"\\F109A\";\n}\n\n.mdi-antenna::before {\n  content: \"\\F1119\";\n}\n\n.mdi-anvil::before {\n  content: \"\\F089B\";\n}\n\n.mdi-apache-kafka::before {\n  content: \"\\F100F\";\n}\n\n.mdi-api::before {\n  content: \"\\F109B\";\n}\n\n.mdi-api-off::before {\n  content: \"\\F1257\";\n}\n\n.mdi-apple::before {\n  content: \"\\F0035\";\n}\n\n.mdi-apple-airplay::before {\n  content: \"\\F001F\";\n}\n\n.mdi-apple-finder::before {\n  content: \"\\F0036\";\n}\n\n.mdi-apple-icloud::before {\n  content: \"\\F0038\";\n}\n\n.mdi-apple-ios::before {\n  content: \"\\F0037\";\n}\n\n.mdi-apple-keyboard-caps::before {\n  content: \"\\F0632\";\n}\n\n.mdi-apple-keyboard-command::before {\n  content: \"\\F0633\";\n}\n\n.mdi-apple-keyboard-control::before {\n  content: \"\\F0634\";\n}\n\n.mdi-apple-keyboard-option::before {\n  content: \"\\F0635\";\n}\n\n.mdi-apple-keyboard-shift::before {\n  content: \"\\F0636\";\n}\n\n.mdi-apple-safari::before {\n  content: \"\\F0039\";\n}\n\n.mdi-application::before {\n  content: \"\\F0614\";\n}\n\n.mdi-application-export::before {\n  content: \"\\F0DAD\";\n}\n\n.mdi-application-import::before {\n  content: \"\\F0DAE\";\n}\n\n.mdi-approximately-equal::before {\n  content: \"\\F0F9E\";\n}\n\n.mdi-approximately-equal-box::before {\n  content: \"\\F0F9F\";\n}\n\n.mdi-apps::before {\n  content: \"\\F003B\";\n}\n\n.mdi-apps-box::before {\n  content: \"\\F0D46\";\n}\n\n.mdi-arch::before {\n  content: \"\\F08C7\";\n}\n\n.mdi-archive::before {\n  content: \"\\F003C\";\n}\n\n.mdi-archive-alert::before {\n  content: \"\\F14FD\";\n}\n\n.mdi-archive-alert-outline::before {\n  content: \"\\F14FE\";\n}\n\n.mdi-archive-arrow-down::before {\n  content: \"\\F1259\";\n}\n\n.mdi-archive-arrow-down-outline::before {\n  content: \"\\F125A\";\n}\n\n.mdi-archive-arrow-up::before {\n  content: \"\\F125B\";\n}\n\n.mdi-archive-arrow-up-outline::before {\n  content: \"\\F125C\";\n}\n\n.mdi-archive-outline::before {\n  content: \"\\F120E\";\n}\n\n.mdi-arm-flex::before {\n  content: \"\\F0FD7\";\n}\n\n.mdi-arm-flex-outline::before {\n  content: \"\\F0FD6\";\n}\n\n.mdi-arrange-bring-forward::before {\n  content: \"\\F003D\";\n}\n\n.mdi-arrange-bring-to-front::before {\n  content: \"\\F003E\";\n}\n\n.mdi-arrange-send-backward::before {\n  content: \"\\F003F\";\n}\n\n.mdi-arrange-send-to-back::before {\n  content: \"\\F0040\";\n}\n\n.mdi-arrow-all::before {\n  content: \"\\F0041\";\n}\n\n.mdi-arrow-bottom-left::before {\n  content: \"\\F0042\";\n}\n\n.mdi-arrow-bottom-left-bold-outline::before {\n  content: \"\\F09B7\";\n}\n\n.mdi-arrow-bottom-left-thick::before {\n  content: \"\\F09B8\";\n}\n\n.mdi-arrow-bottom-right::before {\n  content: \"\\F0043\";\n}\n\n.mdi-arrow-bottom-right-bold-outline::before {\n  content: \"\\F09B9\";\n}\n\n.mdi-arrow-bottom-right-thick::before {\n  content: \"\\F09BA\";\n}\n\n.mdi-arrow-collapse::before {\n  content: \"\\F0615\";\n}\n\n.mdi-arrow-collapse-all::before {\n  content: \"\\F0044\";\n}\n\n.mdi-arrow-collapse-down::before {\n  content: \"\\F0792\";\n}\n\n.mdi-arrow-collapse-horizontal::before {\n  content: \"\\F084C\";\n}\n\n.mdi-arrow-collapse-left::before {\n  content: \"\\F0793\";\n}\n\n.mdi-arrow-collapse-right::before {\n  content: \"\\F0794\";\n}\n\n.mdi-arrow-collapse-up::before {\n  content: \"\\F0795\";\n}\n\n.mdi-arrow-collapse-vertical::before {\n  content: \"\\F084D\";\n}\n\n.mdi-arrow-decision::before {\n  content: \"\\F09BB\";\n}\n\n.mdi-arrow-decision-auto::before {\n  content: \"\\F09BC\";\n}\n\n.mdi-arrow-decision-auto-outline::before {\n  content: \"\\F09BD\";\n}\n\n.mdi-arrow-decision-outline::before {\n  content: \"\\F09BE\";\n}\n\n.mdi-arrow-down::before {\n  content: \"\\F0045\";\n}\n\n.mdi-arrow-down-bold::before {\n  content: \"\\F072E\";\n}\n\n.mdi-arrow-down-bold-box::before {\n  content: \"\\F072F\";\n}\n\n.mdi-arrow-down-bold-box-outline::before {\n  content: \"\\F0730\";\n}\n\n.mdi-arrow-down-bold-circle::before {\n  content: \"\\F0047\";\n}\n\n.mdi-arrow-down-bold-circle-outline::before {\n  content: \"\\F0048\";\n}\n\n.mdi-arrow-down-bold-hexagon-outline::before {\n  content: \"\\F0049\";\n}\n\n.mdi-arrow-down-bold-outline::before {\n  content: \"\\F09BF\";\n}\n\n.mdi-arrow-down-box::before {\n  content: \"\\F06C0\";\n}\n\n.mdi-arrow-down-circle::before {\n  content: \"\\F0CDB\";\n}\n\n.mdi-arrow-down-circle-outline::before {\n  content: \"\\F0CDC\";\n}\n\n.mdi-arrow-down-drop-circle::before {\n  content: \"\\F004A\";\n}\n\n.mdi-arrow-down-drop-circle-outline::before {\n  content: \"\\F004B\";\n}\n\n.mdi-arrow-down-thick::before {\n  content: \"\\F0046\";\n}\n\n.mdi-arrow-expand::before {\n  content: \"\\F0616\";\n}\n\n.mdi-arrow-expand-all::before {\n  content: \"\\F004C\";\n}\n\n.mdi-arrow-expand-down::before {\n  content: \"\\F0796\";\n}\n\n.mdi-arrow-expand-horizontal::before {\n  content: \"\\F084E\";\n}\n\n.mdi-arrow-expand-left::before {\n  content: \"\\F0797\";\n}\n\n.mdi-arrow-expand-right::before {\n  content: \"\\F0798\";\n}\n\n.mdi-arrow-expand-up::before {\n  content: \"\\F0799\";\n}\n\n.mdi-arrow-expand-vertical::before {\n  content: \"\\F084F\";\n}\n\n.mdi-arrow-horizontal-lock::before {\n  content: \"\\F115B\";\n}\n\n.mdi-arrow-left::before {\n  content: \"\\F004D\";\n}\n\n.mdi-arrow-left-bold::before {\n  content: \"\\F0731\";\n}\n\n.mdi-arrow-left-bold-box::before {\n  content: \"\\F0732\";\n}\n\n.mdi-arrow-left-bold-box-outline::before {\n  content: \"\\F0733\";\n}\n\n.mdi-arrow-left-bold-circle::before {\n  content: \"\\F004F\";\n}\n\n.mdi-arrow-left-bold-circle-outline::before {\n  content: \"\\F0050\";\n}\n\n.mdi-arrow-left-bold-hexagon-outline::before {\n  content: \"\\F0051\";\n}\n\n.mdi-arrow-left-bold-outline::before {\n  content: \"\\F09C0\";\n}\n\n.mdi-arrow-left-box::before {\n  content: \"\\F06C1\";\n}\n\n.mdi-arrow-left-circle::before {\n  content: \"\\F0CDD\";\n}\n\n.mdi-arrow-left-circle-outline::before {\n  content: \"\\F0CDE\";\n}\n\n.mdi-arrow-left-drop-circle::before {\n  content: \"\\F0052\";\n}\n\n.mdi-arrow-left-drop-circle-outline::before {\n  content: \"\\F0053\";\n}\n\n.mdi-arrow-left-right::before {\n  content: \"\\F0E73\";\n}\n\n.mdi-arrow-left-right-bold::before {\n  content: \"\\F0E74\";\n}\n\n.mdi-arrow-left-right-bold-outline::before {\n  content: \"\\F09C1\";\n}\n\n.mdi-arrow-left-thick::before {\n  content: \"\\F004E\";\n}\n\n.mdi-arrow-right::before {\n  content: \"\\F0054\";\n}\n\n.mdi-arrow-right-bold::before {\n  content: \"\\F0734\";\n}\n\n.mdi-arrow-right-bold-box::before {\n  content: \"\\F0735\";\n}\n\n.mdi-arrow-right-bold-box-outline::before {\n  content: \"\\F0736\";\n}\n\n.mdi-arrow-right-bold-circle::before {\n  content: \"\\F0056\";\n}\n\n.mdi-arrow-right-bold-circle-outline::before {\n  content: \"\\F0057\";\n}\n\n.mdi-arrow-right-bold-hexagon-outline::before {\n  content: \"\\F0058\";\n}\n\n.mdi-arrow-right-bold-outline::before {\n  content: \"\\F09C2\";\n}\n\n.mdi-arrow-right-box::before {\n  content: \"\\F06C2\";\n}\n\n.mdi-arrow-right-circle::before {\n  content: \"\\F0CDF\";\n}\n\n.mdi-arrow-right-circle-outline::before {\n  content: \"\\F0CE0\";\n}\n\n.mdi-arrow-right-drop-circle::before {\n  content: \"\\F0059\";\n}\n\n.mdi-arrow-right-drop-circle-outline::before {\n  content: \"\\F005A\";\n}\n\n.mdi-arrow-right-thick::before {\n  content: \"\\F0055\";\n}\n\n.mdi-arrow-split-horizontal::before {\n  content: \"\\F093B\";\n}\n\n.mdi-arrow-split-vertical::before {\n  content: \"\\F093C\";\n}\n\n.mdi-arrow-top-left::before {\n  content: \"\\F005B\";\n}\n\n.mdi-arrow-top-left-bold-outline::before {\n  content: \"\\F09C3\";\n}\n\n.mdi-arrow-top-left-bottom-right::before {\n  content: \"\\F0E75\";\n}\n\n.mdi-arrow-top-left-bottom-right-bold::before {\n  content: \"\\F0E76\";\n}\n\n.mdi-arrow-top-left-thick::before {\n  content: \"\\F09C4\";\n}\n\n.mdi-arrow-top-right::before {\n  content: \"\\F005C\";\n}\n\n.mdi-arrow-top-right-bold-outline::before {\n  content: \"\\F09C5\";\n}\n\n.mdi-arrow-top-right-bottom-left::before {\n  content: \"\\F0E77\";\n}\n\n.mdi-arrow-top-right-bottom-left-bold::before {\n  content: \"\\F0E78\";\n}\n\n.mdi-arrow-top-right-thick::before {\n  content: \"\\F09C6\";\n}\n\n.mdi-arrow-up::before {\n  content: \"\\F005D\";\n}\n\n.mdi-arrow-up-bold::before {\n  content: \"\\F0737\";\n}\n\n.mdi-arrow-up-bold-box::before {\n  content: \"\\F0738\";\n}\n\n.mdi-arrow-up-bold-box-outline::before {\n  content: \"\\F0739\";\n}\n\n.mdi-arrow-up-bold-circle::before {\n  content: \"\\F005F\";\n}\n\n.mdi-arrow-up-bold-circle-outline::before {\n  content: \"\\F0060\";\n}\n\n.mdi-arrow-up-bold-hexagon-outline::before {\n  content: \"\\F0061\";\n}\n\n.mdi-arrow-up-bold-outline::before {\n  content: \"\\F09C7\";\n}\n\n.mdi-arrow-up-box::before {\n  content: \"\\F06C3\";\n}\n\n.mdi-arrow-up-circle::before {\n  content: \"\\F0CE1\";\n}\n\n.mdi-arrow-up-circle-outline::before {\n  content: \"\\F0CE2\";\n}\n\n.mdi-arrow-up-down::before {\n  content: \"\\F0E79\";\n}\n\n.mdi-arrow-up-down-bold::before {\n  content: \"\\F0E7A\";\n}\n\n.mdi-arrow-up-down-bold-outline::before {\n  content: \"\\F09C8\";\n}\n\n.mdi-arrow-up-drop-circle::before {\n  content: \"\\F0062\";\n}\n\n.mdi-arrow-up-drop-circle-outline::before {\n  content: \"\\F0063\";\n}\n\n.mdi-arrow-up-thick::before {\n  content: \"\\F005E\";\n}\n\n.mdi-arrow-vertical-lock::before {\n  content: \"\\F115C\";\n}\n\n.mdi-artstation::before {\n  content: \"\\F0B5B\";\n}\n\n.mdi-aspect-ratio::before {\n  content: \"\\F0A24\";\n}\n\n.mdi-assistant::before {\n  content: \"\\F0064\";\n}\n\n.mdi-asterisk::before {\n  content: \"\\F06C4\";\n}\n\n.mdi-at::before {\n  content: \"\\F0065\";\n}\n\n.mdi-atlassian::before {\n  content: \"\\F0804\";\n}\n\n.mdi-atm::before {\n  content: \"\\F0D47\";\n}\n\n.mdi-atom::before {\n  content: \"\\F0768\";\n}\n\n.mdi-atom-variant::before {\n  content: \"\\F0E7B\";\n}\n\n.mdi-attachment::before {\n  content: \"\\F0066\";\n}\n\n.mdi-audio-video::before {\n  content: \"\\F093D\";\n}\n\n.mdi-audio-video-off::before {\n  content: \"\\F11B6\";\n}\n\n.mdi-augmented-reality::before {\n  content: \"\\F0850\";\n}\n\n.mdi-auto-download::before {\n  content: \"\\F137E\";\n}\n\n.mdi-auto-fix::before {\n  content: \"\\F0068\";\n}\n\n.mdi-auto-upload::before {\n  content: \"\\F0069\";\n}\n\n.mdi-autorenew::before {\n  content: \"\\F006A\";\n}\n\n.mdi-av-timer::before {\n  content: \"\\F006B\";\n}\n\n.mdi-aws::before {\n  content: \"\\F0E0F\";\n}\n\n.mdi-axe::before {\n  content: \"\\F08C8\";\n}\n\n.mdi-axis::before {\n  content: \"\\F0D48\";\n}\n\n.mdi-axis-arrow::before {\n  content: \"\\F0D49\";\n}\n\n.mdi-axis-arrow-info::before {\n  content: \"\\F140E\";\n}\n\n.mdi-axis-arrow-lock::before {\n  content: \"\\F0D4A\";\n}\n\n.mdi-axis-lock::before {\n  content: \"\\F0D4B\";\n}\n\n.mdi-axis-x-arrow::before {\n  content: \"\\F0D4C\";\n}\n\n.mdi-axis-x-arrow-lock::before {\n  content: \"\\F0D4D\";\n}\n\n.mdi-axis-x-rotate-clockwise::before {\n  content: \"\\F0D4E\";\n}\n\n.mdi-axis-x-rotate-counterclockwise::before {\n  content: \"\\F0D4F\";\n}\n\n.mdi-axis-x-y-arrow-lock::before {\n  content: \"\\F0D50\";\n}\n\n.mdi-axis-y-arrow::before {\n  content: \"\\F0D51\";\n}\n\n.mdi-axis-y-arrow-lock::before {\n  content: \"\\F0D52\";\n}\n\n.mdi-axis-y-rotate-clockwise::before {\n  content: \"\\F0D53\";\n}\n\n.mdi-axis-y-rotate-counterclockwise::before {\n  content: \"\\F0D54\";\n}\n\n.mdi-axis-z-arrow::before {\n  content: \"\\F0D55\";\n}\n\n.mdi-axis-z-arrow-lock::before {\n  content: \"\\F0D56\";\n}\n\n.mdi-axis-z-rotate-clockwise::before {\n  content: \"\\F0D57\";\n}\n\n.mdi-axis-z-rotate-counterclockwise::before {\n  content: \"\\F0D58\";\n}\n\n.mdi-babel::before {\n  content: \"\\F0A25\";\n}\n\n.mdi-baby::before {\n  content: \"\\F006C\";\n}\n\n.mdi-baby-bottle::before {\n  content: \"\\F0F39\";\n}\n\n.mdi-baby-bottle-outline::before {\n  content: \"\\F0F3A\";\n}\n\n.mdi-baby-buggy::before {\n  content: \"\\F13E0\";\n}\n\n.mdi-baby-carriage::before {\n  content: \"\\F068F\";\n}\n\n.mdi-baby-carriage-off::before {\n  content: \"\\F0FA0\";\n}\n\n.mdi-baby-face::before {\n  content: \"\\F0E7C\";\n}\n\n.mdi-baby-face-outline::before {\n  content: \"\\F0E7D\";\n}\n\n.mdi-backburger::before {\n  content: \"\\F006D\";\n}\n\n.mdi-backspace::before {\n  content: \"\\F006E\";\n}\n\n.mdi-backspace-outline::before {\n  content: \"\\F0B5C\";\n}\n\n.mdi-backspace-reverse::before {\n  content: \"\\F0E7E\";\n}\n\n.mdi-backspace-reverse-outline::before {\n  content: \"\\F0E7F\";\n}\n\n.mdi-backup-restore::before {\n  content: \"\\F006F\";\n}\n\n.mdi-bacteria::before {\n  content: \"\\F0ED5\";\n}\n\n.mdi-bacteria-outline::before {\n  content: \"\\F0ED6\";\n}\n\n.mdi-badge-account::before {\n  content: \"\\F0DA7\";\n}\n\n.mdi-badge-account-alert::before {\n  content: \"\\F0DA8\";\n}\n\n.mdi-badge-account-alert-outline::before {\n  content: \"\\F0DA9\";\n}\n\n.mdi-badge-account-horizontal::before {\n  content: \"\\F0E0D\";\n}\n\n.mdi-badge-account-horizontal-outline::before {\n  content: \"\\F0E0E\";\n}\n\n.mdi-badge-account-outline::before {\n  content: \"\\F0DAA\";\n}\n\n.mdi-badminton::before {\n  content: \"\\F0851\";\n}\n\n.mdi-bag-carry-on::before {\n  content: \"\\F0F3B\";\n}\n\n.mdi-bag-carry-on-check::before {\n  content: \"\\F0D65\";\n}\n\n.mdi-bag-carry-on-off::before {\n  content: \"\\F0F3C\";\n}\n\n.mdi-bag-checked::before {\n  content: \"\\F0F3D\";\n}\n\n.mdi-bag-personal::before {\n  content: \"\\F0E10\";\n}\n\n.mdi-bag-personal-off::before {\n  content: \"\\F0E11\";\n}\n\n.mdi-bag-personal-off-outline::before {\n  content: \"\\F0E12\";\n}\n\n.mdi-bag-personal-outline::before {\n  content: \"\\F0E13\";\n}\n\n.mdi-baguette::before {\n  content: \"\\F0F3E\";\n}\n\n.mdi-balloon::before {\n  content: \"\\F0A26\";\n}\n\n.mdi-ballot::before {\n  content: \"\\F09C9\";\n}\n\n.mdi-ballot-outline::before {\n  content: \"\\F09CA\";\n}\n\n.mdi-ballot-recount::before {\n  content: \"\\F0C39\";\n}\n\n.mdi-ballot-recount-outline::before {\n  content: \"\\F0C3A\";\n}\n\n.mdi-bandage::before {\n  content: \"\\F0DAF\";\n}\n\n.mdi-bandcamp::before {\n  content: \"\\F0675\";\n}\n\n.mdi-bank::before {\n  content: \"\\F0070\";\n}\n\n.mdi-bank-minus::before {\n  content: \"\\F0DB0\";\n}\n\n.mdi-bank-outline::before {\n  content: \"\\F0E80\";\n}\n\n.mdi-bank-plus::before {\n  content: \"\\F0DB1\";\n}\n\n.mdi-bank-remove::before {\n  content: \"\\F0DB2\";\n}\n\n.mdi-bank-transfer::before {\n  content: \"\\F0A27\";\n}\n\n.mdi-bank-transfer-in::before {\n  content: \"\\F0A28\";\n}\n\n.mdi-bank-transfer-out::before {\n  content: \"\\F0A29\";\n}\n\n.mdi-barcode::before {\n  content: \"\\F0071\";\n}\n\n.mdi-barcode-off::before {\n  content: \"\\F1236\";\n}\n\n.mdi-barcode-scan::before {\n  content: \"\\F0072\";\n}\n\n.mdi-barley::before {\n  content: \"\\F0073\";\n}\n\n.mdi-barley-off::before {\n  content: \"\\F0B5D\";\n}\n\n.mdi-barn::before {\n  content: \"\\F0B5E\";\n}\n\n.mdi-barrel::before {\n  content: \"\\F0074\";\n}\n\n.mdi-baseball::before {\n  content: \"\\F0852\";\n}\n\n.mdi-baseball-bat::before {\n  content: \"\\F0853\";\n}\n\n.mdi-bash::before {\n  content: \"\\F1183\";\n}\n\n.mdi-basket::before {\n  content: \"\\F0076\";\n}\n\n.mdi-basket-fill::before {\n  content: \"\\F0077\";\n}\n\n.mdi-basket-minus::before {\n  content: \"\\F1523\";\n}\n\n.mdi-basket-minus-outline::before {\n  content: \"\\F1524\";\n}\n\n.mdi-basket-off::before {\n  content: \"\\F1525\";\n}\n\n.mdi-basket-off-outline::before {\n  content: \"\\F1526\";\n}\n\n.mdi-basket-outline::before {\n  content: \"\\F1181\";\n}\n\n.mdi-basket-plus::before {\n  content: \"\\F1527\";\n}\n\n.mdi-basket-plus-outline::before {\n  content: \"\\F1528\";\n}\n\n.mdi-basket-remove::before {\n  content: \"\\F1529\";\n}\n\n.mdi-basket-remove-outline::before {\n  content: \"\\F152A\";\n}\n\n.mdi-basket-unfill::before {\n  content: \"\\F0078\";\n}\n\n.mdi-basketball::before {\n  content: \"\\F0806\";\n}\n\n.mdi-basketball-hoop::before {\n  content: \"\\F0C3B\";\n}\n\n.mdi-basketball-hoop-outline::before {\n  content: \"\\F0C3C\";\n}\n\n.mdi-bat::before {\n  content: \"\\F0B5F\";\n}\n\n.mdi-battery::before {\n  content: \"\\F0079\";\n}\n\n.mdi-battery-10::before {\n  content: \"\\F007A\";\n}\n\n.mdi-battery-10-bluetooth::before {\n  content: \"\\F093E\";\n}\n\n.mdi-battery-20::before {\n  content: \"\\F007B\";\n}\n\n.mdi-battery-20-bluetooth::before {\n  content: \"\\F093F\";\n}\n\n.mdi-battery-30::before {\n  content: \"\\F007C\";\n}\n\n.mdi-battery-30-bluetooth::before {\n  content: \"\\F0940\";\n}\n\n.mdi-battery-40::before {\n  content: \"\\F007D\";\n}\n\n.mdi-battery-40-bluetooth::before {\n  content: \"\\F0941\";\n}\n\n.mdi-battery-50::before {\n  content: \"\\F007E\";\n}\n\n.mdi-battery-50-bluetooth::before {\n  content: \"\\F0942\";\n}\n\n.mdi-battery-60::before {\n  content: \"\\F007F\";\n}\n\n.mdi-battery-60-bluetooth::before {\n  content: \"\\F0943\";\n}\n\n.mdi-battery-70::before {\n  content: \"\\F0080\";\n}\n\n.mdi-battery-70-bluetooth::before {\n  content: \"\\F0944\";\n}\n\n.mdi-battery-80::before {\n  content: \"\\F0081\";\n}\n\n.mdi-battery-80-bluetooth::before {\n  content: \"\\F0945\";\n}\n\n.mdi-battery-90::before {\n  content: \"\\F0082\";\n}\n\n.mdi-battery-90-bluetooth::before {\n  content: \"\\F0946\";\n}\n\n.mdi-battery-alert::before {\n  content: \"\\F0083\";\n}\n\n.mdi-battery-alert-bluetooth::before {\n  content: \"\\F0947\";\n}\n\n.mdi-battery-alert-variant::before {\n  content: \"\\F10CC\";\n}\n\n.mdi-battery-alert-variant-outline::before {\n  content: \"\\F10CD\";\n}\n\n.mdi-battery-bluetooth::before {\n  content: \"\\F0948\";\n}\n\n.mdi-battery-bluetooth-variant::before {\n  content: \"\\F0949\";\n}\n\n.mdi-battery-charging::before {\n  content: \"\\F0084\";\n}\n\n.mdi-battery-charging-10::before {\n  content: \"\\F089C\";\n}\n\n.mdi-battery-charging-100::before {\n  content: \"\\F0085\";\n}\n\n.mdi-battery-charging-20::before {\n  content: \"\\F0086\";\n}\n\n.mdi-battery-charging-30::before {\n  content: \"\\F0087\";\n}\n\n.mdi-battery-charging-40::before {\n  content: \"\\F0088\";\n}\n\n.mdi-battery-charging-50::before {\n  content: \"\\F089D\";\n}\n\n.mdi-battery-charging-60::before {\n  content: \"\\F0089\";\n}\n\n.mdi-battery-charging-70::before {\n  content: \"\\F089E\";\n}\n\n.mdi-battery-charging-80::before {\n  content: \"\\F008A\";\n}\n\n.mdi-battery-charging-90::before {\n  content: \"\\F008B\";\n}\n\n.mdi-battery-charging-high::before {\n  content: \"\\F12A6\";\n}\n\n.mdi-battery-charging-low::before {\n  content: \"\\F12A4\";\n}\n\n.mdi-battery-charging-medium::before {\n  content: \"\\F12A5\";\n}\n\n.mdi-battery-charging-outline::before {\n  content: \"\\F089F\";\n}\n\n.mdi-battery-charging-wireless::before {\n  content: \"\\F0807\";\n}\n\n.mdi-battery-charging-wireless-10::before {\n  content: \"\\F0808\";\n}\n\n.mdi-battery-charging-wireless-20::before {\n  content: \"\\F0809\";\n}\n\n.mdi-battery-charging-wireless-30::before {\n  content: \"\\F080A\";\n}\n\n.mdi-battery-charging-wireless-40::before {\n  content: \"\\F080B\";\n}\n\n.mdi-battery-charging-wireless-50::before {\n  content: \"\\F080C\";\n}\n\n.mdi-battery-charging-wireless-60::before {\n  content: \"\\F080D\";\n}\n\n.mdi-battery-charging-wireless-70::before {\n  content: \"\\F080E\";\n}\n\n.mdi-battery-charging-wireless-80::before {\n  content: \"\\F080F\";\n}\n\n.mdi-battery-charging-wireless-90::before {\n  content: \"\\F0810\";\n}\n\n.mdi-battery-charging-wireless-alert::before {\n  content: \"\\F0811\";\n}\n\n.mdi-battery-charging-wireless-outline::before {\n  content: \"\\F0812\";\n}\n\n.mdi-battery-heart::before {\n  content: \"\\F120F\";\n}\n\n.mdi-battery-heart-outline::before {\n  content: \"\\F1210\";\n}\n\n.mdi-battery-heart-variant::before {\n  content: \"\\F1211\";\n}\n\n.mdi-battery-high::before {\n  content: \"\\F12A3\";\n}\n\n.mdi-battery-low::before {\n  content: \"\\F12A1\";\n}\n\n.mdi-battery-medium::before {\n  content: \"\\F12A2\";\n}\n\n.mdi-battery-minus::before {\n  content: \"\\F008C\";\n}\n\n.mdi-battery-negative::before {\n  content: \"\\F008D\";\n}\n\n.mdi-battery-off::before {\n  content: \"\\F125D\";\n}\n\n.mdi-battery-off-outline::before {\n  content: \"\\F125E\";\n}\n\n.mdi-battery-outline::before {\n  content: \"\\F008E\";\n}\n\n.mdi-battery-plus::before {\n  content: \"\\F008F\";\n}\n\n.mdi-battery-positive::before {\n  content: \"\\F0090\";\n}\n\n.mdi-battery-unknown::before {\n  content: \"\\F0091\";\n}\n\n.mdi-battery-unknown-bluetooth::before {\n  content: \"\\F094A\";\n}\n\n.mdi-battlenet::before {\n  content: \"\\F0B60\";\n}\n\n.mdi-beach::before {\n  content: \"\\F0092\";\n}\n\n.mdi-beaker::before {\n  content: \"\\F0CEA\";\n}\n\n.mdi-beaker-alert::before {\n  content: \"\\F1229\";\n}\n\n.mdi-beaker-alert-outline::before {\n  content: \"\\F122A\";\n}\n\n.mdi-beaker-check::before {\n  content: \"\\F122B\";\n}\n\n.mdi-beaker-check-outline::before {\n  content: \"\\F122C\";\n}\n\n.mdi-beaker-minus::before {\n  content: \"\\F122D\";\n}\n\n.mdi-beaker-minus-outline::before {\n  content: \"\\F122E\";\n}\n\n.mdi-beaker-outline::before {\n  content: \"\\F0690\";\n}\n\n.mdi-beaker-plus::before {\n  content: \"\\F122F\";\n}\n\n.mdi-beaker-plus-outline::before {\n  content: \"\\F1230\";\n}\n\n.mdi-beaker-question::before {\n  content: \"\\F1231\";\n}\n\n.mdi-beaker-question-outline::before {\n  content: \"\\F1232\";\n}\n\n.mdi-beaker-remove::before {\n  content: \"\\F1233\";\n}\n\n.mdi-beaker-remove-outline::before {\n  content: \"\\F1234\";\n}\n\n.mdi-bed::before {\n  content: \"\\F02E3\";\n}\n\n.mdi-bed-double::before {\n  content: \"\\F0FD4\";\n}\n\n.mdi-bed-double-outline::before {\n  content: \"\\F0FD3\";\n}\n\n.mdi-bed-empty::before {\n  content: \"\\F08A0\";\n}\n\n.mdi-bed-king::before {\n  content: \"\\F0FD2\";\n}\n\n.mdi-bed-king-outline::before {\n  content: \"\\F0FD1\";\n}\n\n.mdi-bed-outline::before {\n  content: \"\\F0099\";\n}\n\n.mdi-bed-queen::before {\n  content: \"\\F0FD0\";\n}\n\n.mdi-bed-queen-outline::before {\n  content: \"\\F0FDB\";\n}\n\n.mdi-bed-single::before {\n  content: \"\\F106D\";\n}\n\n.mdi-bed-single-outline::before {\n  content: \"\\F106E\";\n}\n\n.mdi-bee::before {\n  content: \"\\F0FA1\";\n}\n\n.mdi-bee-flower::before {\n  content: \"\\F0FA2\";\n}\n\n.mdi-beehive-off-outline::before {\n  content: \"\\F13ED\";\n}\n\n.mdi-beehive-outline::before {\n  content: \"\\F10CE\";\n}\n\n.mdi-beekeeper::before {\n  content: \"\\F14E2\";\n}\n\n.mdi-beer::before {\n  content: \"\\F0098\";\n}\n\n.mdi-beer-outline::before {\n  content: \"\\F130C\";\n}\n\n.mdi-bell::before {\n  content: \"\\F009A\";\n}\n\n.mdi-bell-alert::before {\n  content: \"\\F0D59\";\n}\n\n.mdi-bell-alert-outline::before {\n  content: \"\\F0E81\";\n}\n\n.mdi-bell-cancel::before {\n  content: \"\\F13E7\";\n}\n\n.mdi-bell-cancel-outline::before {\n  content: \"\\F13E8\";\n}\n\n.mdi-bell-check::before {\n  content: \"\\F11E5\";\n}\n\n.mdi-bell-check-outline::before {\n  content: \"\\F11E6\";\n}\n\n.mdi-bell-circle::before {\n  content: \"\\F0D5A\";\n}\n\n.mdi-bell-circle-outline::before {\n  content: \"\\F0D5B\";\n}\n\n.mdi-bell-minus::before {\n  content: \"\\F13E9\";\n}\n\n.mdi-bell-minus-outline::before {\n  content: \"\\F13EA\";\n}\n\n.mdi-bell-off::before {\n  content: \"\\F009B\";\n}\n\n.mdi-bell-off-outline::before {\n  content: \"\\F0A91\";\n}\n\n.mdi-bell-outline::before {\n  content: \"\\F009C\";\n}\n\n.mdi-bell-plus::before {\n  content: \"\\F009D\";\n}\n\n.mdi-bell-plus-outline::before {\n  content: \"\\F0A92\";\n}\n\n.mdi-bell-remove::before {\n  content: \"\\F13EB\";\n}\n\n.mdi-bell-remove-outline::before {\n  content: \"\\F13EC\";\n}\n\n.mdi-bell-ring::before {\n  content: \"\\F009E\";\n}\n\n.mdi-bell-ring-outline::before {\n  content: \"\\F009F\";\n}\n\n.mdi-bell-sleep::before {\n  content: \"\\F00A0\";\n}\n\n.mdi-bell-sleep-outline::before {\n  content: \"\\F0A93\";\n}\n\n.mdi-beta::before {\n  content: \"\\F00A1\";\n}\n\n.mdi-betamax::before {\n  content: \"\\F09CB\";\n}\n\n.mdi-biathlon::before {\n  content: \"\\F0E14\";\n}\n\n.mdi-bicycle::before {\n  content: \"\\F109C\";\n}\n\n.mdi-bicycle-basket::before {\n  content: \"\\F1235\";\n}\n\n.mdi-bike::before {\n  content: \"\\F00A3\";\n}\n\n.mdi-bike-fast::before {\n  content: \"\\F111F\";\n}\n\n.mdi-billboard::before {\n  content: \"\\F1010\";\n}\n\n.mdi-billiards::before {\n  content: \"\\F0B61\";\n}\n\n.mdi-billiards-rack::before {\n  content: \"\\F0B62\";\n}\n\n.mdi-binoculars::before {\n  content: \"\\F00A5\";\n}\n\n.mdi-bio::before {\n  content: \"\\F00A6\";\n}\n\n.mdi-biohazard::before {\n  content: \"\\F00A7\";\n}\n\n.mdi-bitbucket::before {\n  content: \"\\F00A8\";\n}\n\n.mdi-bitcoin::before {\n  content: \"\\F0813\";\n}\n\n.mdi-black-mesa::before {\n  content: \"\\F00A9\";\n}\n\n.mdi-blender::before {\n  content: \"\\F0CEB\";\n}\n\n.mdi-blender-software::before {\n  content: \"\\F00AB\";\n}\n\n.mdi-blinds::before {\n  content: \"\\F00AC\";\n}\n\n.mdi-blinds-open::before {\n  content: \"\\F1011\";\n}\n\n.mdi-block-helper::before {\n  content: \"\\F00AD\";\n}\n\n.mdi-blogger::before {\n  content: \"\\F00AE\";\n}\n\n.mdi-blood-bag::before {\n  content: \"\\F0CEC\";\n}\n\n.mdi-bluetooth::before {\n  content: \"\\F00AF\";\n}\n\n.mdi-bluetooth-audio::before {\n  content: \"\\F00B0\";\n}\n\n.mdi-bluetooth-connect::before {\n  content: \"\\F00B1\";\n}\n\n.mdi-bluetooth-off::before {\n  content: \"\\F00B2\";\n}\n\n.mdi-bluetooth-settings::before {\n  content: \"\\F00B3\";\n}\n\n.mdi-bluetooth-transfer::before {\n  content: \"\\F00B4\";\n}\n\n.mdi-blur::before {\n  content: \"\\F00B5\";\n}\n\n.mdi-blur-linear::before {\n  content: \"\\F00B6\";\n}\n\n.mdi-blur-off::before {\n  content: \"\\F00B7\";\n}\n\n.mdi-blur-radial::before {\n  content: \"\\F00B8\";\n}\n\n.mdi-bolnisi-cross::before {\n  content: \"\\F0CED\";\n}\n\n.mdi-bolt::before {\n  content: \"\\F0DB3\";\n}\n\n.mdi-bomb::before {\n  content: \"\\F0691\";\n}\n\n.mdi-bomb-off::before {\n  content: \"\\F06C5\";\n}\n\n.mdi-bone::before {\n  content: \"\\F00B9\";\n}\n\n.mdi-book::before {\n  content: \"\\F00BA\";\n}\n\n.mdi-book-account::before {\n  content: \"\\F13AD\";\n}\n\n.mdi-book-account-outline::before {\n  content: \"\\F13AE\";\n}\n\n.mdi-book-alphabet::before {\n  content: \"\\F061D\";\n}\n\n.mdi-book-check::before {\n  content: \"\\F14F3\";\n}\n\n.mdi-book-check-outline::before {\n  content: \"\\F14F4\";\n}\n\n.mdi-book-cross::before {\n  content: \"\\F00A2\";\n}\n\n.mdi-book-information-variant::before {\n  content: \"\\F106F\";\n}\n\n.mdi-book-lock::before {\n  content: \"\\F079A\";\n}\n\n.mdi-book-lock-open::before {\n  content: \"\\F079B\";\n}\n\n.mdi-book-minus::before {\n  content: \"\\F05D9\";\n}\n\n.mdi-book-minus-multiple::before {\n  content: \"\\F0A94\";\n}\n\n.mdi-book-minus-multiple-outline::before {\n  content: \"\\F090B\";\n}\n\n.mdi-book-multiple::before {\n  content: \"\\F00BB\";\n}\n\n.mdi-book-multiple-outline::before {\n  content: \"\\F0436\";\n}\n\n.mdi-book-music::before {\n  content: \"\\F0067\";\n}\n\n.mdi-book-open::before {\n  content: \"\\F00BD\";\n}\n\n.mdi-book-open-blank-variant::before {\n  content: \"\\F00BE\";\n}\n\n.mdi-book-open-outline::before {\n  content: \"\\F0B63\";\n}\n\n.mdi-book-open-page-variant::before {\n  content: \"\\F05DA\";\n}\n\n.mdi-book-open-variant::before {\n  content: \"\\F14F7\";\n}\n\n.mdi-book-outline::before {\n  content: \"\\F0B64\";\n}\n\n.mdi-book-play::before {\n  content: \"\\F0E82\";\n}\n\n.mdi-book-play-outline::before {\n  content: \"\\F0E83\";\n}\n\n.mdi-book-plus::before {\n  content: \"\\F05DB\";\n}\n\n.mdi-book-plus-multiple::before {\n  content: \"\\F0A95\";\n}\n\n.mdi-book-plus-multiple-outline::before {\n  content: \"\\F0ADE\";\n}\n\n.mdi-book-remove::before {\n  content: \"\\F0A97\";\n}\n\n.mdi-book-remove-multiple::before {\n  content: \"\\F0A96\";\n}\n\n.mdi-book-remove-multiple-outline::before {\n  content: \"\\F04CA\";\n}\n\n.mdi-book-search::before {\n  content: \"\\F0E84\";\n}\n\n.mdi-book-search-outline::before {\n  content: \"\\F0E85\";\n}\n\n.mdi-book-variant::before {\n  content: \"\\F00BF\";\n}\n\n.mdi-book-variant-multiple::before {\n  content: \"\\F00BC\";\n}\n\n.mdi-bookmark::before {\n  content: \"\\F00C0\";\n}\n\n.mdi-bookmark-check::before {\n  content: \"\\F00C1\";\n}\n\n.mdi-bookmark-check-outline::before {\n  content: \"\\F137B\";\n}\n\n.mdi-bookmark-minus::before {\n  content: \"\\F09CC\";\n}\n\n.mdi-bookmark-minus-outline::before {\n  content: \"\\F09CD\";\n}\n\n.mdi-bookmark-multiple::before {\n  content: \"\\F0E15\";\n}\n\n.mdi-bookmark-multiple-outline::before {\n  content: \"\\F0E16\";\n}\n\n.mdi-bookmark-music::before {\n  content: \"\\F00C2\";\n}\n\n.mdi-bookmark-music-outline::before {\n  content: \"\\F1379\";\n}\n\n.mdi-bookmark-off::before {\n  content: \"\\F09CE\";\n}\n\n.mdi-bookmark-off-outline::before {\n  content: \"\\F09CF\";\n}\n\n.mdi-bookmark-outline::before {\n  content: \"\\F00C3\";\n}\n\n.mdi-bookmark-plus::before {\n  content: \"\\F00C5\";\n}\n\n.mdi-bookmark-plus-outline::before {\n  content: \"\\F00C4\";\n}\n\n.mdi-bookmark-remove::before {\n  content: \"\\F00C6\";\n}\n\n.mdi-bookmark-remove-outline::before {\n  content: \"\\F137A\";\n}\n\n.mdi-bookshelf::before {\n  content: \"\\F125F\";\n}\n\n.mdi-boom-gate::before {\n  content: \"\\F0E86\";\n}\n\n.mdi-boom-gate-alert::before {\n  content: \"\\F0E87\";\n}\n\n.mdi-boom-gate-alert-outline::before {\n  content: \"\\F0E88\";\n}\n\n.mdi-boom-gate-down::before {\n  content: \"\\F0E89\";\n}\n\n.mdi-boom-gate-down-outline::before {\n  content: \"\\F0E8A\";\n}\n\n.mdi-boom-gate-outline::before {\n  content: \"\\F0E8B\";\n}\n\n.mdi-boom-gate-up::before {\n  content: \"\\F0E8C\";\n}\n\n.mdi-boom-gate-up-outline::before {\n  content: \"\\F0E8D\";\n}\n\n.mdi-boombox::before {\n  content: \"\\F05DC\";\n}\n\n.mdi-boomerang::before {\n  content: \"\\F10CF\";\n}\n\n.mdi-bootstrap::before {\n  content: \"\\F06C6\";\n}\n\n.mdi-border-all::before {\n  content: \"\\F00C7\";\n}\n\n.mdi-border-all-variant::before {\n  content: \"\\F08A1\";\n}\n\n.mdi-border-bottom::before {\n  content: \"\\F00C8\";\n}\n\n.mdi-border-bottom-variant::before {\n  content: \"\\F08A2\";\n}\n\n.mdi-border-color::before {\n  content: \"\\F00C9\";\n}\n\n.mdi-border-horizontal::before {\n  content: \"\\F00CA\";\n}\n\n.mdi-border-inside::before {\n  content: \"\\F00CB\";\n}\n\n.mdi-border-left::before {\n  content: \"\\F00CC\";\n}\n\n.mdi-border-left-variant::before {\n  content: \"\\F08A3\";\n}\n\n.mdi-border-none::before {\n  content: \"\\F00CD\";\n}\n\n.mdi-border-none-variant::before {\n  content: \"\\F08A4\";\n}\n\n.mdi-border-outside::before {\n  content: \"\\F00CE\";\n}\n\n.mdi-border-right::before {\n  content: \"\\F00CF\";\n}\n\n.mdi-border-right-variant::before {\n  content: \"\\F08A5\";\n}\n\n.mdi-border-style::before {\n  content: \"\\F00D0\";\n}\n\n.mdi-border-top::before {\n  content: \"\\F00D1\";\n}\n\n.mdi-border-top-variant::before {\n  content: \"\\F08A6\";\n}\n\n.mdi-border-vertical::before {\n  content: \"\\F00D2\";\n}\n\n.mdi-bottle-soda::before {\n  content: \"\\F1070\";\n}\n\n.mdi-bottle-soda-classic::before {\n  content: \"\\F1071\";\n}\n\n.mdi-bottle-soda-classic-outline::before {\n  content: \"\\F1363\";\n}\n\n.mdi-bottle-soda-outline::before {\n  content: \"\\F1072\";\n}\n\n.mdi-bottle-tonic::before {\n  content: \"\\F112E\";\n}\n\n.mdi-bottle-tonic-outline::before {\n  content: \"\\F112F\";\n}\n\n.mdi-bottle-tonic-plus::before {\n  content: \"\\F1130\";\n}\n\n.mdi-bottle-tonic-plus-outline::before {\n  content: \"\\F1131\";\n}\n\n.mdi-bottle-tonic-skull::before {\n  content: \"\\F1132\";\n}\n\n.mdi-bottle-tonic-skull-outline::before {\n  content: \"\\F1133\";\n}\n\n.mdi-bottle-wine::before {\n  content: \"\\F0854\";\n}\n\n.mdi-bottle-wine-outline::before {\n  content: \"\\F1310\";\n}\n\n.mdi-bow-tie::before {\n  content: \"\\F0678\";\n}\n\n.mdi-bowl::before {\n  content: \"\\F028E\";\n}\n\n.mdi-bowl-mix::before {\n  content: \"\\F0617\";\n}\n\n.mdi-bowl-mix-outline::before {\n  content: \"\\F02E4\";\n}\n\n.mdi-bowl-outline::before {\n  content: \"\\F02A9\";\n}\n\n.mdi-bowling::before {\n  content: \"\\F00D3\";\n}\n\n.mdi-box::before {\n  content: \"\\F00D4\";\n}\n\n.mdi-box-cutter::before {\n  content: \"\\F00D5\";\n}\n\n.mdi-box-cutter-off::before {\n  content: \"\\F0B4A\";\n}\n\n.mdi-box-shadow::before {\n  content: \"\\F0637\";\n}\n\n.mdi-boxing-glove::before {\n  content: \"\\F0B65\";\n}\n\n.mdi-braille::before {\n  content: \"\\F09D0\";\n}\n\n.mdi-brain::before {\n  content: \"\\F09D1\";\n}\n\n.mdi-bread-slice::before {\n  content: \"\\F0CEE\";\n}\n\n.mdi-bread-slice-outline::before {\n  content: \"\\F0CEF\";\n}\n\n.mdi-bridge::before {\n  content: \"\\F0618\";\n}\n\n.mdi-briefcase::before {\n  content: \"\\F00D6\";\n}\n\n.mdi-briefcase-account::before {\n  content: \"\\F0CF0\";\n}\n\n.mdi-briefcase-account-outline::before {\n  content: \"\\F0CF1\";\n}\n\n.mdi-briefcase-check::before {\n  content: \"\\F00D7\";\n}\n\n.mdi-briefcase-check-outline::before {\n  content: \"\\F131E\";\n}\n\n.mdi-briefcase-clock::before {\n  content: \"\\F10D0\";\n}\n\n.mdi-briefcase-clock-outline::before {\n  content: \"\\F10D1\";\n}\n\n.mdi-briefcase-download::before {\n  content: \"\\F00D8\";\n}\n\n.mdi-briefcase-download-outline::before {\n  content: \"\\F0C3D\";\n}\n\n.mdi-briefcase-edit::before {\n  content: \"\\F0A98\";\n}\n\n.mdi-briefcase-edit-outline::before {\n  content: \"\\F0C3E\";\n}\n\n.mdi-briefcase-minus::before {\n  content: \"\\F0A2A\";\n}\n\n.mdi-briefcase-minus-outline::before {\n  content: \"\\F0C3F\";\n}\n\n.mdi-briefcase-outline::before {\n  content: \"\\F0814\";\n}\n\n.mdi-briefcase-plus::before {\n  content: \"\\F0A2B\";\n}\n\n.mdi-briefcase-plus-outline::before {\n  content: \"\\F0C40\";\n}\n\n.mdi-briefcase-remove::before {\n  content: \"\\F0A2C\";\n}\n\n.mdi-briefcase-remove-outline::before {\n  content: \"\\F0C41\";\n}\n\n.mdi-briefcase-search::before {\n  content: \"\\F0A2D\";\n}\n\n.mdi-briefcase-search-outline::before {\n  content: \"\\F0C42\";\n}\n\n.mdi-briefcase-upload::before {\n  content: \"\\F00D9\";\n}\n\n.mdi-briefcase-upload-outline::before {\n  content: \"\\F0C43\";\n}\n\n.mdi-briefcase-variant::before {\n  content: \"\\F1494\";\n}\n\n.mdi-briefcase-variant-outline::before {\n  content: \"\\F1495\";\n}\n\n.mdi-brightness-1::before {\n  content: \"\\F00DA\";\n}\n\n.mdi-brightness-2::before {\n  content: \"\\F00DB\";\n}\n\n.mdi-brightness-3::before {\n  content: \"\\F00DC\";\n}\n\n.mdi-brightness-4::before {\n  content: \"\\F00DD\";\n}\n\n.mdi-brightness-5::before {\n  content: \"\\F00DE\";\n}\n\n.mdi-brightness-6::before {\n  content: \"\\F00DF\";\n}\n\n.mdi-brightness-7::before {\n  content: \"\\F00E0\";\n}\n\n.mdi-brightness-auto::before {\n  content: \"\\F00E1\";\n}\n\n.mdi-brightness-percent::before {\n  content: \"\\F0CF2\";\n}\n\n.mdi-broom::before {\n  content: \"\\F00E2\";\n}\n\n.mdi-brush::before {\n  content: \"\\F00E3\";\n}\n\n.mdi-bucket::before {\n  content: \"\\F1415\";\n}\n\n.mdi-bucket-outline::before {\n  content: \"\\F1416\";\n}\n\n.mdi-buddhism::before {\n  content: \"\\F094B\";\n}\n\n.mdi-buffer::before {\n  content: \"\\F0619\";\n}\n\n.mdi-buffet::before {\n  content: \"\\F0578\";\n}\n\n.mdi-bug::before {\n  content: \"\\F00E4\";\n}\n\n.mdi-bug-check::before {\n  content: \"\\F0A2E\";\n}\n\n.mdi-bug-check-outline::before {\n  content: \"\\F0A2F\";\n}\n\n.mdi-bug-outline::before {\n  content: \"\\F0A30\";\n}\n\n.mdi-bugle::before {\n  content: \"\\F0DB4\";\n}\n\n.mdi-bulldozer::before {\n  content: \"\\F0B22\";\n}\n\n.mdi-bullet::before {\n  content: \"\\F0CF3\";\n}\n\n.mdi-bulletin-board::before {\n  content: \"\\F00E5\";\n}\n\n.mdi-bullhorn::before {\n  content: \"\\F00E6\";\n}\n\n.mdi-bullhorn-outline::before {\n  content: \"\\F0B23\";\n}\n\n.mdi-bullseye::before {\n  content: \"\\F05DD\";\n}\n\n.mdi-bullseye-arrow::before {\n  content: \"\\F08C9\";\n}\n\n.mdi-bulma::before {\n  content: \"\\F12E7\";\n}\n\n.mdi-bunk-bed::before {\n  content: \"\\F1302\";\n}\n\n.mdi-bunk-bed-outline::before {\n  content: \"\\F0097\";\n}\n\n.mdi-bus::before {\n  content: \"\\F00E7\";\n}\n\n.mdi-bus-alert::before {\n  content: \"\\F0A99\";\n}\n\n.mdi-bus-articulated-end::before {\n  content: \"\\F079C\";\n}\n\n.mdi-bus-articulated-front::before {\n  content: \"\\F079D\";\n}\n\n.mdi-bus-clock::before {\n  content: \"\\F08CA\";\n}\n\n.mdi-bus-double-decker::before {\n  content: \"\\F079E\";\n}\n\n.mdi-bus-marker::before {\n  content: \"\\F1212\";\n}\n\n.mdi-bus-multiple::before {\n  content: \"\\F0F3F\";\n}\n\n.mdi-bus-school::before {\n  content: \"\\F079F\";\n}\n\n.mdi-bus-side::before {\n  content: \"\\F07A0\";\n}\n\n.mdi-bus-stop::before {\n  content: \"\\F1012\";\n}\n\n.mdi-bus-stop-covered::before {\n  content: \"\\F1013\";\n}\n\n.mdi-bus-stop-uncovered::before {\n  content: \"\\F1014\";\n}\n\n.mdi-cable-data::before {\n  content: \"\\F1394\";\n}\n\n.mdi-cached::before {\n  content: \"\\F00E8\";\n}\n\n.mdi-cactus::before {\n  content: \"\\F0DB5\";\n}\n\n.mdi-cake::before {\n  content: \"\\F00E9\";\n}\n\n.mdi-cake-layered::before {\n  content: \"\\F00EA\";\n}\n\n.mdi-cake-variant::before {\n  content: \"\\F00EB\";\n}\n\n.mdi-calculator::before {\n  content: \"\\F00EC\";\n}\n\n.mdi-calculator-variant::before {\n  content: \"\\F0A9A\";\n}\n\n.mdi-calendar::before {\n  content: \"\\F00ED\";\n}\n\n.mdi-calendar-account::before {\n  content: \"\\F0ED7\";\n}\n\n.mdi-calendar-account-outline::before {\n  content: \"\\F0ED8\";\n}\n\n.mdi-calendar-alert::before {\n  content: \"\\F0A31\";\n}\n\n.mdi-calendar-arrow-left::before {\n  content: \"\\F1134\";\n}\n\n.mdi-calendar-arrow-right::before {\n  content: \"\\F1135\";\n}\n\n.mdi-calendar-blank::before {\n  content: \"\\F00EE\";\n}\n\n.mdi-calendar-blank-multiple::before {\n  content: \"\\F1073\";\n}\n\n.mdi-calendar-blank-outline::before {\n  content: \"\\F0B66\";\n}\n\n.mdi-calendar-check::before {\n  content: \"\\F00EF\";\n}\n\n.mdi-calendar-check-outline::before {\n  content: \"\\F0C44\";\n}\n\n.mdi-calendar-clock::before {\n  content: \"\\F00F0\";\n}\n\n.mdi-calendar-edit::before {\n  content: \"\\F08A7\";\n}\n\n.mdi-calendar-export::before {\n  content: \"\\F0B24\";\n}\n\n.mdi-calendar-heart::before {\n  content: \"\\F09D2\";\n}\n\n.mdi-calendar-import::before {\n  content: \"\\F0B25\";\n}\n\n.mdi-calendar-minus::before {\n  content: \"\\F0D5C\";\n}\n\n.mdi-calendar-month::before {\n  content: \"\\F0E17\";\n}\n\n.mdi-calendar-month-outline::before {\n  content: \"\\F0E18\";\n}\n\n.mdi-calendar-multiple::before {\n  content: \"\\F00F1\";\n}\n\n.mdi-calendar-multiple-check::before {\n  content: \"\\F00F2\";\n}\n\n.mdi-calendar-multiselect::before {\n  content: \"\\F0A32\";\n}\n\n.mdi-calendar-outline::before {\n  content: \"\\F0B67\";\n}\n\n.mdi-calendar-plus::before {\n  content: \"\\F00F3\";\n}\n\n.mdi-calendar-question::before {\n  content: \"\\F0692\";\n}\n\n.mdi-calendar-range::before {\n  content: \"\\F0679\";\n}\n\n.mdi-calendar-range-outline::before {\n  content: \"\\F0B68\";\n}\n\n.mdi-calendar-refresh::before {\n  content: \"\\F01E1\";\n}\n\n.mdi-calendar-refresh-outline::before {\n  content: \"\\F0203\";\n}\n\n.mdi-calendar-remove::before {\n  content: \"\\F00F4\";\n}\n\n.mdi-calendar-remove-outline::before {\n  content: \"\\F0C45\";\n}\n\n.mdi-calendar-search::before {\n  content: \"\\F094C\";\n}\n\n.mdi-calendar-star::before {\n  content: \"\\F09D3\";\n}\n\n.mdi-calendar-sync::before {\n  content: \"\\F0E8E\";\n}\n\n.mdi-calendar-sync-outline::before {\n  content: \"\\F0E8F\";\n}\n\n.mdi-calendar-text::before {\n  content: \"\\F00F5\";\n}\n\n.mdi-calendar-text-outline::before {\n  content: \"\\F0C46\";\n}\n\n.mdi-calendar-today::before {\n  content: \"\\F00F6\";\n}\n\n.mdi-calendar-week::before {\n  content: \"\\F0A33\";\n}\n\n.mdi-calendar-week-begin::before {\n  content: \"\\F0A34\";\n}\n\n.mdi-calendar-weekend::before {\n  content: \"\\F0ED9\";\n}\n\n.mdi-calendar-weekend-outline::before {\n  content: \"\\F0EDA\";\n}\n\n.mdi-call-made::before {\n  content: \"\\F00F7\";\n}\n\n.mdi-call-merge::before {\n  content: \"\\F00F8\";\n}\n\n.mdi-call-missed::before {\n  content: \"\\F00F9\";\n}\n\n.mdi-call-received::before {\n  content: \"\\F00FA\";\n}\n\n.mdi-call-split::before {\n  content: \"\\F00FB\";\n}\n\n.mdi-camcorder::before {\n  content: \"\\F00FC\";\n}\n\n.mdi-camcorder-off::before {\n  content: \"\\F00FF\";\n}\n\n.mdi-camera::before {\n  content: \"\\F0100\";\n}\n\n.mdi-camera-account::before {\n  content: \"\\F08CB\";\n}\n\n.mdi-camera-burst::before {\n  content: \"\\F0693\";\n}\n\n.mdi-camera-control::before {\n  content: \"\\F0B69\";\n}\n\n.mdi-camera-enhance::before {\n  content: \"\\F0101\";\n}\n\n.mdi-camera-enhance-outline::before {\n  content: \"\\F0B6A\";\n}\n\n.mdi-camera-front::before {\n  content: \"\\F0102\";\n}\n\n.mdi-camera-front-variant::before {\n  content: \"\\F0103\";\n}\n\n.mdi-camera-gopro::before {\n  content: \"\\F07A1\";\n}\n\n.mdi-camera-image::before {\n  content: \"\\F08CC\";\n}\n\n.mdi-camera-iris::before {\n  content: \"\\F0104\";\n}\n\n.mdi-camera-metering-center::before {\n  content: \"\\F07A2\";\n}\n\n.mdi-camera-metering-matrix::before {\n  content: \"\\F07A3\";\n}\n\n.mdi-camera-metering-partial::before {\n  content: \"\\F07A4\";\n}\n\n.mdi-camera-metering-spot::before {\n  content: \"\\F07A5\";\n}\n\n.mdi-camera-off::before {\n  content: \"\\F05DF\";\n}\n\n.mdi-camera-outline::before {\n  content: \"\\F0D5D\";\n}\n\n.mdi-camera-party-mode::before {\n  content: \"\\F0105\";\n}\n\n.mdi-camera-plus::before {\n  content: \"\\F0EDB\";\n}\n\n.mdi-camera-plus-outline::before {\n  content: \"\\F0EDC\";\n}\n\n.mdi-camera-rear::before {\n  content: \"\\F0106\";\n}\n\n.mdi-camera-rear-variant::before {\n  content: \"\\F0107\";\n}\n\n.mdi-camera-retake::before {\n  content: \"\\F0E19\";\n}\n\n.mdi-camera-retake-outline::before {\n  content: \"\\F0E1A\";\n}\n\n.mdi-camera-switch::before {\n  content: \"\\F0108\";\n}\n\n.mdi-camera-switch-outline::before {\n  content: \"\\F084A\";\n}\n\n.mdi-camera-timer::before {\n  content: \"\\F0109\";\n}\n\n.mdi-camera-wireless::before {\n  content: \"\\F0DB6\";\n}\n\n.mdi-camera-wireless-outline::before {\n  content: \"\\F0DB7\";\n}\n\n.mdi-campfire::before {\n  content: \"\\F0EDD\";\n}\n\n.mdi-cancel::before {\n  content: \"\\F073A\";\n}\n\n.mdi-candle::before {\n  content: \"\\F05E2\";\n}\n\n.mdi-candycane::before {\n  content: \"\\F010A\";\n}\n\n.mdi-cannabis::before {\n  content: \"\\F07A6\";\n}\n\n.mdi-caps-lock::before {\n  content: \"\\F0A9B\";\n}\n\n.mdi-car::before {\n  content: \"\\F010B\";\n}\n\n.mdi-car-2-plus::before {\n  content: \"\\F1015\";\n}\n\n.mdi-car-3-plus::before {\n  content: \"\\F1016\";\n}\n\n.mdi-car-arrow-left::before {\n  content: \"\\F13B2\";\n}\n\n.mdi-car-arrow-right::before {\n  content: \"\\F13B3\";\n}\n\n.mdi-car-back::before {\n  content: \"\\F0E1B\";\n}\n\n.mdi-car-battery::before {\n  content: \"\\F010C\";\n}\n\n.mdi-car-brake-abs::before {\n  content: \"\\F0C47\";\n}\n\n.mdi-car-brake-alert::before {\n  content: \"\\F0C48\";\n}\n\n.mdi-car-brake-hold::before {\n  content: \"\\F0D5E\";\n}\n\n.mdi-car-brake-parking::before {\n  content: \"\\F0D5F\";\n}\n\n.mdi-car-brake-retarder::before {\n  content: \"\\F1017\";\n}\n\n.mdi-car-child-seat::before {\n  content: \"\\F0FA3\";\n}\n\n.mdi-car-clutch::before {\n  content: \"\\F1018\";\n}\n\n.mdi-car-cog::before {\n  content: \"\\F13CC\";\n}\n\n.mdi-car-connected::before {\n  content: \"\\F010D\";\n}\n\n.mdi-car-convertible::before {\n  content: \"\\F07A7\";\n}\n\n.mdi-car-coolant-level::before {\n  content: \"\\F1019\";\n}\n\n.mdi-car-cruise-control::before {\n  content: \"\\F0D60\";\n}\n\n.mdi-car-defrost-front::before {\n  content: \"\\F0D61\";\n}\n\n.mdi-car-defrost-rear::before {\n  content: \"\\F0D62\";\n}\n\n.mdi-car-door::before {\n  content: \"\\F0B6B\";\n}\n\n.mdi-car-door-lock::before {\n  content: \"\\F109D\";\n}\n\n.mdi-car-electric::before {\n  content: \"\\F0B6C\";\n}\n\n.mdi-car-esp::before {\n  content: \"\\F0C49\";\n}\n\n.mdi-car-estate::before {\n  content: \"\\F07A8\";\n}\n\n.mdi-car-hatchback::before {\n  content: \"\\F07A9\";\n}\n\n.mdi-car-info::before {\n  content: \"\\F11BE\";\n}\n\n.mdi-car-key::before {\n  content: \"\\F0B6D\";\n}\n\n.mdi-car-lifted-pickup::before {\n  content: \"\\F152D\";\n}\n\n.mdi-car-light-dimmed::before {\n  content: \"\\F0C4A\";\n}\n\n.mdi-car-light-fog::before {\n  content: \"\\F0C4B\";\n}\n\n.mdi-car-light-high::before {\n  content: \"\\F0C4C\";\n}\n\n.mdi-car-limousine::before {\n  content: \"\\F08CD\";\n}\n\n.mdi-car-multiple::before {\n  content: \"\\F0B6E\";\n}\n\n.mdi-car-off::before {\n  content: \"\\F0E1C\";\n}\n\n.mdi-car-outline::before {\n  content: \"\\F14ED\";\n}\n\n.mdi-car-parking-lights::before {\n  content: \"\\F0D63\";\n}\n\n.mdi-car-pickup::before {\n  content: \"\\F07AA\";\n}\n\n.mdi-car-seat::before {\n  content: \"\\F0FA4\";\n}\n\n.mdi-car-seat-cooler::before {\n  content: \"\\F0FA5\";\n}\n\n.mdi-car-seat-heater::before {\n  content: \"\\F0FA6\";\n}\n\n.mdi-car-settings::before {\n  content: \"\\F13CD\";\n}\n\n.mdi-car-shift-pattern::before {\n  content: \"\\F0F40\";\n}\n\n.mdi-car-side::before {\n  content: \"\\F07AB\";\n}\n\n.mdi-car-sports::before {\n  content: \"\\F07AC\";\n}\n\n.mdi-car-tire-alert::before {\n  content: \"\\F0C4D\";\n}\n\n.mdi-car-traction-control::before {\n  content: \"\\F0D64\";\n}\n\n.mdi-car-turbocharger::before {\n  content: \"\\F101A\";\n}\n\n.mdi-car-wash::before {\n  content: \"\\F010E\";\n}\n\n.mdi-car-windshield::before {\n  content: \"\\F101B\";\n}\n\n.mdi-car-windshield-outline::before {\n  content: \"\\F101C\";\n}\n\n.mdi-carabiner::before {\n  content: \"\\F14C0\";\n}\n\n.mdi-caravan::before {\n  content: \"\\F07AD\";\n}\n\n.mdi-card::before {\n  content: \"\\F0B6F\";\n}\n\n.mdi-card-account-details::before {\n  content: \"\\F05D2\";\n}\n\n.mdi-card-account-details-outline::before {\n  content: \"\\F0DAB\";\n}\n\n.mdi-card-account-details-star::before {\n  content: \"\\F02A3\";\n}\n\n.mdi-card-account-details-star-outline::before {\n  content: \"\\F06DB\";\n}\n\n.mdi-card-account-mail::before {\n  content: \"\\F018E\";\n}\n\n.mdi-card-account-mail-outline::before {\n  content: \"\\F0E98\";\n}\n\n.mdi-card-account-phone::before {\n  content: \"\\F0E99\";\n}\n\n.mdi-card-account-phone-outline::before {\n  content: \"\\F0E9A\";\n}\n\n.mdi-card-bulleted::before {\n  content: \"\\F0B70\";\n}\n\n.mdi-card-bulleted-off::before {\n  content: \"\\F0B71\";\n}\n\n.mdi-card-bulleted-off-outline::before {\n  content: \"\\F0B72\";\n}\n\n.mdi-card-bulleted-outline::before {\n  content: \"\\F0B73\";\n}\n\n.mdi-card-bulleted-settings::before {\n  content: \"\\F0B74\";\n}\n\n.mdi-card-bulleted-settings-outline::before {\n  content: \"\\F0B75\";\n}\n\n.mdi-card-outline::before {\n  content: \"\\F0B76\";\n}\n\n.mdi-card-plus::before {\n  content: \"\\F11FF\";\n}\n\n.mdi-card-plus-outline::before {\n  content: \"\\F1200\";\n}\n\n.mdi-card-search::before {\n  content: \"\\F1074\";\n}\n\n.mdi-card-search-outline::before {\n  content: \"\\F1075\";\n}\n\n.mdi-card-text::before {\n  content: \"\\F0B77\";\n}\n\n.mdi-card-text-outline::before {\n  content: \"\\F0B78\";\n}\n\n.mdi-cards::before {\n  content: \"\\F0638\";\n}\n\n.mdi-cards-club::before {\n  content: \"\\F08CE\";\n}\n\n.mdi-cards-diamond::before {\n  content: \"\\F08CF\";\n}\n\n.mdi-cards-diamond-outline::before {\n  content: \"\\F101D\";\n}\n\n.mdi-cards-heart::before {\n  content: \"\\F08D0\";\n}\n\n.mdi-cards-outline::before {\n  content: \"\\F0639\";\n}\n\n.mdi-cards-playing-outline::before {\n  content: \"\\F063A\";\n}\n\n.mdi-cards-spade::before {\n  content: \"\\F08D1\";\n}\n\n.mdi-cards-variant::before {\n  content: \"\\F06C7\";\n}\n\n.mdi-carrot::before {\n  content: \"\\F010F\";\n}\n\n.mdi-cart::before {\n  content: \"\\F0110\";\n}\n\n.mdi-cart-arrow-down::before {\n  content: \"\\F0D66\";\n}\n\n.mdi-cart-arrow-right::before {\n  content: \"\\F0C4E\";\n}\n\n.mdi-cart-arrow-up::before {\n  content: \"\\F0D67\";\n}\n\n.mdi-cart-minus::before {\n  content: \"\\F0D68\";\n}\n\n.mdi-cart-off::before {\n  content: \"\\F066B\";\n}\n\n.mdi-cart-outline::before {\n  content: \"\\F0111\";\n}\n\n.mdi-cart-plus::before {\n  content: \"\\F0112\";\n}\n\n.mdi-cart-remove::before {\n  content: \"\\F0D69\";\n}\n\n.mdi-case-sensitive-alt::before {\n  content: \"\\F0113\";\n}\n\n.mdi-cash::before {\n  content: \"\\F0114\";\n}\n\n.mdi-cash-100::before {\n  content: \"\\F0115\";\n}\n\n.mdi-cash-check::before {\n  content: \"\\F14EE\";\n}\n\n.mdi-cash-lock::before {\n  content: \"\\F14EA\";\n}\n\n.mdi-cash-lock-open::before {\n  content: \"\\F14EB\";\n}\n\n.mdi-cash-marker::before {\n  content: \"\\F0DB8\";\n}\n\n.mdi-cash-minus::before {\n  content: \"\\F1260\";\n}\n\n.mdi-cash-multiple::before {\n  content: \"\\F0116\";\n}\n\n.mdi-cash-plus::before {\n  content: \"\\F1261\";\n}\n\n.mdi-cash-refund::before {\n  content: \"\\F0A9C\";\n}\n\n.mdi-cash-register::before {\n  content: \"\\F0CF4\";\n}\n\n.mdi-cash-remove::before {\n  content: \"\\F1262\";\n}\n\n.mdi-cash-usd::before {\n  content: \"\\F1176\";\n}\n\n.mdi-cash-usd-outline::before {\n  content: \"\\F0117\";\n}\n\n.mdi-cassette::before {\n  content: \"\\F09D4\";\n}\n\n.mdi-cast::before {\n  content: \"\\F0118\";\n}\n\n.mdi-cast-audio::before {\n  content: \"\\F101E\";\n}\n\n.mdi-cast-connected::before {\n  content: \"\\F0119\";\n}\n\n.mdi-cast-education::before {\n  content: \"\\F0E1D\";\n}\n\n.mdi-cast-off::before {\n  content: \"\\F078A\";\n}\n\n.mdi-castle::before {\n  content: \"\\F011A\";\n}\n\n.mdi-cat::before {\n  content: \"\\F011B\";\n}\n\n.mdi-cctv::before {\n  content: \"\\F07AE\";\n}\n\n.mdi-ceiling-light::before {\n  content: \"\\F0769\";\n}\n\n.mdi-cellphone::before {\n  content: \"\\F011C\";\n}\n\n.mdi-cellphone-android::before {\n  content: \"\\F011D\";\n}\n\n.mdi-cellphone-arrow-down::before {\n  content: \"\\F09D5\";\n}\n\n.mdi-cellphone-basic::before {\n  content: \"\\F011E\";\n}\n\n.mdi-cellphone-charging::before {\n  content: \"\\F1397\";\n}\n\n.mdi-cellphone-cog::before {\n  content: \"\\F0951\";\n}\n\n.mdi-cellphone-dock::before {\n  content: \"\\F011F\";\n}\n\n.mdi-cellphone-erase::before {\n  content: \"\\F094D\";\n}\n\n.mdi-cellphone-information::before {\n  content: \"\\F0F41\";\n}\n\n.mdi-cellphone-iphone::before {\n  content: \"\\F0120\";\n}\n\n.mdi-cellphone-key::before {\n  content: \"\\F094E\";\n}\n\n.mdi-cellphone-link::before {\n  content: \"\\F0121\";\n}\n\n.mdi-cellphone-link-off::before {\n  content: \"\\F0122\";\n}\n\n.mdi-cellphone-lock::before {\n  content: \"\\F094F\";\n}\n\n.mdi-cellphone-message::before {\n  content: \"\\F08D3\";\n}\n\n.mdi-cellphone-message-off::before {\n  content: \"\\F10D2\";\n}\n\n.mdi-cellphone-nfc::before {\n  content: \"\\F0E90\";\n}\n\n.mdi-cellphone-nfc-off::before {\n  content: \"\\F12D8\";\n}\n\n.mdi-cellphone-off::before {\n  content: \"\\F0950\";\n}\n\n.mdi-cellphone-play::before {\n  content: \"\\F101F\";\n}\n\n.mdi-cellphone-screenshot::before {\n  content: \"\\F0A35\";\n}\n\n.mdi-cellphone-settings::before {\n  content: \"\\F0123\";\n}\n\n.mdi-cellphone-sound::before {\n  content: \"\\F0952\";\n}\n\n.mdi-cellphone-text::before {\n  content: \"\\F08D2\";\n}\n\n.mdi-cellphone-wireless::before {\n  content: \"\\F0815\";\n}\n\n.mdi-celtic-cross::before {\n  content: \"\\F0CF5\";\n}\n\n.mdi-centos::before {\n  content: \"\\F111A\";\n}\n\n.mdi-certificate::before {\n  content: \"\\F0124\";\n}\n\n.mdi-certificate-outline::before {\n  content: \"\\F1188\";\n}\n\n.mdi-chair-rolling::before {\n  content: \"\\F0F48\";\n}\n\n.mdi-chair-school::before {\n  content: \"\\F0125\";\n}\n\n.mdi-charity::before {\n  content: \"\\F0C4F\";\n}\n\n.mdi-chart-arc::before {\n  content: \"\\F0126\";\n}\n\n.mdi-chart-areaspline::before {\n  content: \"\\F0127\";\n}\n\n.mdi-chart-areaspline-variant::before {\n  content: \"\\F0E91\";\n}\n\n.mdi-chart-bar::before {\n  content: \"\\F0128\";\n}\n\n.mdi-chart-bar-stacked::before {\n  content: \"\\F076A\";\n}\n\n.mdi-chart-bell-curve::before {\n  content: \"\\F0C50\";\n}\n\n.mdi-chart-bell-curve-cumulative::before {\n  content: \"\\F0FA7\";\n}\n\n.mdi-chart-box::before {\n  content: \"\\F154D\";\n}\n\n.mdi-chart-box-outline::before {\n  content: \"\\F154E\";\n}\n\n.mdi-chart-box-plus-outline::before {\n  content: \"\\F154F\";\n}\n\n.mdi-chart-bubble::before {\n  content: \"\\F05E3\";\n}\n\n.mdi-chart-donut::before {\n  content: \"\\F07AF\";\n}\n\n.mdi-chart-donut-variant::before {\n  content: \"\\F07B0\";\n}\n\n.mdi-chart-gantt::before {\n  content: \"\\F066C\";\n}\n\n.mdi-chart-histogram::before {\n  content: \"\\F0129\";\n}\n\n.mdi-chart-line::before {\n  content: \"\\F012A\";\n}\n\n.mdi-chart-line-stacked::before {\n  content: \"\\F076B\";\n}\n\n.mdi-chart-line-variant::before {\n  content: \"\\F07B1\";\n}\n\n.mdi-chart-multiline::before {\n  content: \"\\F08D4\";\n}\n\n.mdi-chart-multiple::before {\n  content: \"\\F1213\";\n}\n\n.mdi-chart-pie::before {\n  content: \"\\F012B\";\n}\n\n.mdi-chart-ppf::before {\n  content: \"\\F1380\";\n}\n\n.mdi-chart-sankey::before {\n  content: \"\\F11DF\";\n}\n\n.mdi-chart-sankey-variant::before {\n  content: \"\\F11E0\";\n}\n\n.mdi-chart-scatter-plot::before {\n  content: \"\\F0E92\";\n}\n\n.mdi-chart-scatter-plot-hexbin::before {\n  content: \"\\F066D\";\n}\n\n.mdi-chart-timeline::before {\n  content: \"\\F066E\";\n}\n\n.mdi-chart-timeline-variant::before {\n  content: \"\\F0E93\";\n}\n\n.mdi-chart-tree::before {\n  content: \"\\F0E94\";\n}\n\n.mdi-chat::before {\n  content: \"\\F0B79\";\n}\n\n.mdi-chat-alert::before {\n  content: \"\\F0B7A\";\n}\n\n.mdi-chat-alert-outline::before {\n  content: \"\\F12C9\";\n}\n\n.mdi-chat-minus::before {\n  content: \"\\F1410\";\n}\n\n.mdi-chat-minus-outline::before {\n  content: \"\\F1413\";\n}\n\n.mdi-chat-outline::before {\n  content: \"\\F0EDE\";\n}\n\n.mdi-chat-plus::before {\n  content: \"\\F140F\";\n}\n\n.mdi-chat-plus-outline::before {\n  content: \"\\F1412\";\n}\n\n.mdi-chat-processing::before {\n  content: \"\\F0B7B\";\n}\n\n.mdi-chat-processing-outline::before {\n  content: \"\\F12CA\";\n}\n\n.mdi-chat-remove::before {\n  content: \"\\F1411\";\n}\n\n.mdi-chat-remove-outline::before {\n  content: \"\\F1414\";\n}\n\n.mdi-chat-sleep::before {\n  content: \"\\F12D1\";\n}\n\n.mdi-chat-sleep-outline::before {\n  content: \"\\F12D2\";\n}\n\n.mdi-check::before {\n  content: \"\\F012C\";\n}\n\n.mdi-check-all::before {\n  content: \"\\F012D\";\n}\n\n.mdi-check-bold::before {\n  content: \"\\F0E1E\";\n}\n\n.mdi-check-box-multiple-outline::before {\n  content: \"\\F0C51\";\n}\n\n.mdi-check-box-outline::before {\n  content: \"\\F0C52\";\n}\n\n.mdi-check-circle::before {\n  content: \"\\F05E0\";\n}\n\n.mdi-check-circle-outline::before {\n  content: \"\\F05E1\";\n}\n\n.mdi-check-decagram::before {\n  content: \"\\F0791\";\n}\n\n.mdi-check-network::before {\n  content: \"\\F0C53\";\n}\n\n.mdi-check-network-outline::before {\n  content: \"\\F0C54\";\n}\n\n.mdi-check-outline::before {\n  content: \"\\F0855\";\n}\n\n.mdi-check-underline::before {\n  content: \"\\F0E1F\";\n}\n\n.mdi-check-underline-circle::before {\n  content: \"\\F0E20\";\n}\n\n.mdi-check-underline-circle-outline::before {\n  content: \"\\F0E21\";\n}\n\n.mdi-checkbook::before {\n  content: \"\\F0A9D\";\n}\n\n.mdi-checkbox-blank::before {\n  content: \"\\F012E\";\n}\n\n.mdi-checkbox-blank-circle::before {\n  content: \"\\F012F\";\n}\n\n.mdi-checkbox-blank-circle-outline::before {\n  content: \"\\F0130\";\n}\n\n.mdi-checkbox-blank-off::before {\n  content: \"\\F12EC\";\n}\n\n.mdi-checkbox-blank-off-outline::before {\n  content: \"\\F12ED\";\n}\n\n.mdi-checkbox-blank-outline::before {\n  content: \"\\F0131\";\n}\n\n.mdi-checkbox-intermediate::before {\n  content: \"\\F0856\";\n}\n\n.mdi-checkbox-marked::before {\n  content: \"\\F0132\";\n}\n\n.mdi-checkbox-marked-circle::before {\n  content: \"\\F0133\";\n}\n\n.mdi-checkbox-marked-circle-outline::before {\n  content: \"\\F0134\";\n}\n\n.mdi-checkbox-marked-outline::before {\n  content: \"\\F0135\";\n}\n\n.mdi-checkbox-multiple-blank::before {\n  content: \"\\F0136\";\n}\n\n.mdi-checkbox-multiple-blank-circle::before {\n  content: \"\\F063B\";\n}\n\n.mdi-checkbox-multiple-blank-circle-outline::before {\n  content: \"\\F063C\";\n}\n\n.mdi-checkbox-multiple-blank-outline::before {\n  content: \"\\F0137\";\n}\n\n.mdi-checkbox-multiple-marked::before {\n  content: \"\\F0138\";\n}\n\n.mdi-checkbox-multiple-marked-circle::before {\n  content: \"\\F063D\";\n}\n\n.mdi-checkbox-multiple-marked-circle-outline::before {\n  content: \"\\F063E\";\n}\n\n.mdi-checkbox-multiple-marked-outline::before {\n  content: \"\\F0139\";\n}\n\n.mdi-checkerboard::before {\n  content: \"\\F013A\";\n}\n\n.mdi-checkerboard-minus::before {\n  content: \"\\F1202\";\n}\n\n.mdi-checkerboard-plus::before {\n  content: \"\\F1201\";\n}\n\n.mdi-checkerboard-remove::before {\n  content: \"\\F1203\";\n}\n\n.mdi-cheese::before {\n  content: \"\\F12B9\";\n}\n\n.mdi-cheese-off::before {\n  content: \"\\F13EE\";\n}\n\n.mdi-chef-hat::before {\n  content: \"\\F0B7C\";\n}\n\n.mdi-chemical-weapon::before {\n  content: \"\\F013B\";\n}\n\n.mdi-chess-bishop::before {\n  content: \"\\F085C\";\n}\n\n.mdi-chess-king::before {\n  content: \"\\F0857\";\n}\n\n.mdi-chess-knight::before {\n  content: \"\\F0858\";\n}\n\n.mdi-chess-pawn::before {\n  content: \"\\F0859\";\n}\n\n.mdi-chess-queen::before {\n  content: \"\\F085A\";\n}\n\n.mdi-chess-rook::before {\n  content: \"\\F085B\";\n}\n\n.mdi-chevron-double-down::before {\n  content: \"\\F013C\";\n}\n\n.mdi-chevron-double-left::before {\n  content: \"\\F013D\";\n}\n\n.mdi-chevron-double-right::before {\n  content: \"\\F013E\";\n}\n\n.mdi-chevron-double-up::before {\n  content: \"\\F013F\";\n}\n\n.mdi-chevron-down::before {\n  content: \"\\F0140\";\n}\n\n.mdi-chevron-down-box::before {\n  content: \"\\F09D6\";\n}\n\n.mdi-chevron-down-box-outline::before {\n  content: \"\\F09D7\";\n}\n\n.mdi-chevron-down-circle::before {\n  content: \"\\F0B26\";\n}\n\n.mdi-chevron-down-circle-outline::before {\n  content: \"\\F0B27\";\n}\n\n.mdi-chevron-left::before {\n  content: \"\\F0141\";\n}\n\n.mdi-chevron-left-box::before {\n  content: \"\\F09D8\";\n}\n\n.mdi-chevron-left-box-outline::before {\n  content: \"\\F09D9\";\n}\n\n.mdi-chevron-left-circle::before {\n  content: \"\\F0B28\";\n}\n\n.mdi-chevron-left-circle-outline::before {\n  content: \"\\F0B29\";\n}\n\n.mdi-chevron-right::before {\n  content: \"\\F0142\";\n}\n\n.mdi-chevron-right-box::before {\n  content: \"\\F09DA\";\n}\n\n.mdi-chevron-right-box-outline::before {\n  content: \"\\F09DB\";\n}\n\n.mdi-chevron-right-circle::before {\n  content: \"\\F0B2A\";\n}\n\n.mdi-chevron-right-circle-outline::before {\n  content: \"\\F0B2B\";\n}\n\n.mdi-chevron-triple-down::before {\n  content: \"\\F0DB9\";\n}\n\n.mdi-chevron-triple-left::before {\n  content: \"\\F0DBA\";\n}\n\n.mdi-chevron-triple-right::before {\n  content: \"\\F0DBB\";\n}\n\n.mdi-chevron-triple-up::before {\n  content: \"\\F0DBC\";\n}\n\n.mdi-chevron-up::before {\n  content: \"\\F0143\";\n}\n\n.mdi-chevron-up-box::before {\n  content: \"\\F09DC\";\n}\n\n.mdi-chevron-up-box-outline::before {\n  content: \"\\F09DD\";\n}\n\n.mdi-chevron-up-circle::before {\n  content: \"\\F0B2C\";\n}\n\n.mdi-chevron-up-circle-outline::before {\n  content: \"\\F0B2D\";\n}\n\n.mdi-chili-hot::before {\n  content: \"\\F07B2\";\n}\n\n.mdi-chili-medium::before {\n  content: \"\\F07B3\";\n}\n\n.mdi-chili-mild::before {\n  content: \"\\F07B4\";\n}\n\n.mdi-chili-off::before {\n  content: \"\\F1467\";\n}\n\n.mdi-chip::before {\n  content: \"\\F061A\";\n}\n\n.mdi-christianity::before {\n  content: \"\\F0953\";\n}\n\n.mdi-christianity-outline::before {\n  content: \"\\F0CF6\";\n}\n\n.mdi-church::before {\n  content: \"\\F0144\";\n}\n\n.mdi-cigar::before {\n  content: \"\\F1189\";\n}\n\n.mdi-cigar-off::before {\n  content: \"\\F141B\";\n}\n\n.mdi-circle::before {\n  content: \"\\F0765\";\n}\n\n.mdi-circle-double::before {\n  content: \"\\F0E95\";\n}\n\n.mdi-circle-edit-outline::before {\n  content: \"\\F08D5\";\n}\n\n.mdi-circle-expand::before {\n  content: \"\\F0E96\";\n}\n\n.mdi-circle-half::before {\n  content: \"\\F1395\";\n}\n\n.mdi-circle-half-full::before {\n  content: \"\\F1396\";\n}\n\n.mdi-circle-medium::before {\n  content: \"\\F09DE\";\n}\n\n.mdi-circle-multiple::before {\n  content: \"\\F0B38\";\n}\n\n.mdi-circle-multiple-outline::before {\n  content: \"\\F0695\";\n}\n\n.mdi-circle-off-outline::before {\n  content: \"\\F10D3\";\n}\n\n.mdi-circle-outline::before {\n  content: \"\\F0766\";\n}\n\n.mdi-circle-slice-1::before {\n  content: \"\\F0A9E\";\n}\n\n.mdi-circle-slice-2::before {\n  content: \"\\F0A9F\";\n}\n\n.mdi-circle-slice-3::before {\n  content: \"\\F0AA0\";\n}\n\n.mdi-circle-slice-4::before {\n  content: \"\\F0AA1\";\n}\n\n.mdi-circle-slice-5::before {\n  content: \"\\F0AA2\";\n}\n\n.mdi-circle-slice-6::before {\n  content: \"\\F0AA3\";\n}\n\n.mdi-circle-slice-7::before {\n  content: \"\\F0AA4\";\n}\n\n.mdi-circle-slice-8::before {\n  content: \"\\F0AA5\";\n}\n\n.mdi-circle-small::before {\n  content: \"\\F09DF\";\n}\n\n.mdi-circular-saw::before {\n  content: \"\\F0E22\";\n}\n\n.mdi-city::before {\n  content: \"\\F0146\";\n}\n\n.mdi-city-variant::before {\n  content: \"\\F0A36\";\n}\n\n.mdi-city-variant-outline::before {\n  content: \"\\F0A37\";\n}\n\n.mdi-clipboard::before {\n  content: \"\\F0147\";\n}\n\n.mdi-clipboard-account::before {\n  content: \"\\F0148\";\n}\n\n.mdi-clipboard-account-outline::before {\n  content: \"\\F0C55\";\n}\n\n.mdi-clipboard-alert::before {\n  content: \"\\F0149\";\n}\n\n.mdi-clipboard-alert-outline::before {\n  content: \"\\F0CF7\";\n}\n\n.mdi-clipboard-arrow-down::before {\n  content: \"\\F014A\";\n}\n\n.mdi-clipboard-arrow-down-outline::before {\n  content: \"\\F0C56\";\n}\n\n.mdi-clipboard-arrow-left::before {\n  content: \"\\F014B\";\n}\n\n.mdi-clipboard-arrow-left-outline::before {\n  content: \"\\F0CF8\";\n}\n\n.mdi-clipboard-arrow-right::before {\n  content: \"\\F0CF9\";\n}\n\n.mdi-clipboard-arrow-right-outline::before {\n  content: \"\\F0CFA\";\n}\n\n.mdi-clipboard-arrow-up::before {\n  content: \"\\F0C57\";\n}\n\n.mdi-clipboard-arrow-up-outline::before {\n  content: \"\\F0C58\";\n}\n\n.mdi-clipboard-check::before {\n  content: \"\\F014E\";\n}\n\n.mdi-clipboard-check-multiple::before {\n  content: \"\\F1263\";\n}\n\n.mdi-clipboard-check-multiple-outline::before {\n  content: \"\\F1264\";\n}\n\n.mdi-clipboard-check-outline::before {\n  content: \"\\F08A8\";\n}\n\n.mdi-clipboard-edit::before {\n  content: \"\\F14E5\";\n}\n\n.mdi-clipboard-edit-outline::before {\n  content: \"\\F14E6\";\n}\n\n.mdi-clipboard-file::before {\n  content: \"\\F1265\";\n}\n\n.mdi-clipboard-file-outline::before {\n  content: \"\\F1266\";\n}\n\n.mdi-clipboard-flow::before {\n  content: \"\\F06C8\";\n}\n\n.mdi-clipboard-flow-outline::before {\n  content: \"\\F1117\";\n}\n\n.mdi-clipboard-list::before {\n  content: \"\\F10D4\";\n}\n\n.mdi-clipboard-list-outline::before {\n  content: \"\\F10D5\";\n}\n\n.mdi-clipboard-multiple::before {\n  content: \"\\F1267\";\n}\n\n.mdi-clipboard-multiple-outline::before {\n  content: \"\\F1268\";\n}\n\n.mdi-clipboard-outline::before {\n  content: \"\\F014C\";\n}\n\n.mdi-clipboard-play::before {\n  content: \"\\F0C59\";\n}\n\n.mdi-clipboard-play-multiple::before {\n  content: \"\\F1269\";\n}\n\n.mdi-clipboard-play-multiple-outline::before {\n  content: \"\\F126A\";\n}\n\n.mdi-clipboard-play-outline::before {\n  content: \"\\F0C5A\";\n}\n\n.mdi-clipboard-plus::before {\n  content: \"\\F0751\";\n}\n\n.mdi-clipboard-plus-outline::before {\n  content: \"\\F131F\";\n}\n\n.mdi-clipboard-pulse::before {\n  content: \"\\F085D\";\n}\n\n.mdi-clipboard-pulse-outline::before {\n  content: \"\\F085E\";\n}\n\n.mdi-clipboard-text::before {\n  content: \"\\F014D\";\n}\n\n.mdi-clipboard-text-multiple::before {\n  content: \"\\F126B\";\n}\n\n.mdi-clipboard-text-multiple-outline::before {\n  content: \"\\F126C\";\n}\n\n.mdi-clipboard-text-outline::before {\n  content: \"\\F0A38\";\n}\n\n.mdi-clipboard-text-play::before {\n  content: \"\\F0C5B\";\n}\n\n.mdi-clipboard-text-play-outline::before {\n  content: \"\\F0C5C\";\n}\n\n.mdi-clippy::before {\n  content: \"\\F014F\";\n}\n\n.mdi-clock::before {\n  content: \"\\F0954\";\n}\n\n.mdi-clock-alert::before {\n  content: \"\\F0955\";\n}\n\n.mdi-clock-alert-outline::before {\n  content: \"\\F05CE\";\n}\n\n.mdi-clock-check::before {\n  content: \"\\F0FA8\";\n}\n\n.mdi-clock-check-outline::before {\n  content: \"\\F0FA9\";\n}\n\n.mdi-clock-digital::before {\n  content: \"\\F0E97\";\n}\n\n.mdi-clock-end::before {\n  content: \"\\F0151\";\n}\n\n.mdi-clock-fast::before {\n  content: \"\\F0152\";\n}\n\n.mdi-clock-in::before {\n  content: \"\\F0153\";\n}\n\n.mdi-clock-out::before {\n  content: \"\\F0154\";\n}\n\n.mdi-clock-outline::before {\n  content: \"\\F0150\";\n}\n\n.mdi-clock-start::before {\n  content: \"\\F0155\";\n}\n\n.mdi-clock-time-eight::before {\n  content: \"\\F1446\";\n}\n\n.mdi-clock-time-eight-outline::before {\n  content: \"\\F1452\";\n}\n\n.mdi-clock-time-eleven::before {\n  content: \"\\F1449\";\n}\n\n.mdi-clock-time-eleven-outline::before {\n  content: \"\\F1455\";\n}\n\n.mdi-clock-time-five::before {\n  content: \"\\F1443\";\n}\n\n.mdi-clock-time-five-outline::before {\n  content: \"\\F144F\";\n}\n\n.mdi-clock-time-four::before {\n  content: \"\\F1442\";\n}\n\n.mdi-clock-time-four-outline::before {\n  content: \"\\F144E\";\n}\n\n.mdi-clock-time-nine::before {\n  content: \"\\F1447\";\n}\n\n.mdi-clock-time-nine-outline::before {\n  content: \"\\F1453\";\n}\n\n.mdi-clock-time-one::before {\n  content: \"\\F143F\";\n}\n\n.mdi-clock-time-one-outline::before {\n  content: \"\\F144B\";\n}\n\n.mdi-clock-time-seven::before {\n  content: \"\\F1445\";\n}\n\n.mdi-clock-time-seven-outline::before {\n  content: \"\\F1451\";\n}\n\n.mdi-clock-time-six::before {\n  content: \"\\F1444\";\n}\n\n.mdi-clock-time-six-outline::before {\n  content: \"\\F1450\";\n}\n\n.mdi-clock-time-ten::before {\n  content: \"\\F1448\";\n}\n\n.mdi-clock-time-ten-outline::before {\n  content: \"\\F1454\";\n}\n\n.mdi-clock-time-three::before {\n  content: \"\\F1441\";\n}\n\n.mdi-clock-time-three-outline::before {\n  content: \"\\F144D\";\n}\n\n.mdi-clock-time-twelve::before {\n  content: \"\\F144A\";\n}\n\n.mdi-clock-time-twelve-outline::before {\n  content: \"\\F1456\";\n}\n\n.mdi-clock-time-two::before {\n  content: \"\\F1440\";\n}\n\n.mdi-clock-time-two-outline::before {\n  content: \"\\F144C\";\n}\n\n.mdi-close::before {\n  content: \"\\F0156\";\n}\n\n.mdi-close-box::before {\n  content: \"\\F0157\";\n}\n\n.mdi-close-box-multiple::before {\n  content: \"\\F0C5D\";\n}\n\n.mdi-close-box-multiple-outline::before {\n  content: \"\\F0C5E\";\n}\n\n.mdi-close-box-outline::before {\n  content: \"\\F0158\";\n}\n\n.mdi-close-circle::before {\n  content: \"\\F0159\";\n}\n\n.mdi-close-circle-multiple::before {\n  content: \"\\F062A\";\n}\n\n.mdi-close-circle-multiple-outline::before {\n  content: \"\\F0883\";\n}\n\n.mdi-close-circle-outline::before {\n  content: \"\\F015A\";\n}\n\n.mdi-close-network::before {\n  content: \"\\F015B\";\n}\n\n.mdi-close-network-outline::before {\n  content: \"\\F0C5F\";\n}\n\n.mdi-close-octagon::before {\n  content: \"\\F015C\";\n}\n\n.mdi-close-octagon-outline::before {\n  content: \"\\F015D\";\n}\n\n.mdi-close-outline::before {\n  content: \"\\F06C9\";\n}\n\n.mdi-close-thick::before {\n  content: \"\\F1398\";\n}\n\n.mdi-closed-caption::before {\n  content: \"\\F015E\";\n}\n\n.mdi-closed-caption-outline::before {\n  content: \"\\F0DBD\";\n}\n\n.mdi-cloud::before {\n  content: \"\\F015F\";\n}\n\n.mdi-cloud-alert::before {\n  content: \"\\F09E0\";\n}\n\n.mdi-cloud-braces::before {\n  content: \"\\F07B5\";\n}\n\n.mdi-cloud-check::before {\n  content: \"\\F0160\";\n}\n\n.mdi-cloud-check-outline::before {\n  content: \"\\F12CC\";\n}\n\n.mdi-cloud-circle::before {\n  content: \"\\F0161\";\n}\n\n.mdi-cloud-download::before {\n  content: \"\\F0162\";\n}\n\n.mdi-cloud-download-outline::before {\n  content: \"\\F0B7D\";\n}\n\n.mdi-cloud-lock::before {\n  content: \"\\F11F1\";\n}\n\n.mdi-cloud-lock-outline::before {\n  content: \"\\F11F2\";\n}\n\n.mdi-cloud-off-outline::before {\n  content: \"\\F0164\";\n}\n\n.mdi-cloud-outline::before {\n  content: \"\\F0163\";\n}\n\n.mdi-cloud-print::before {\n  content: \"\\F0165\";\n}\n\n.mdi-cloud-print-outline::before {\n  content: \"\\F0166\";\n}\n\n.mdi-cloud-question::before {\n  content: \"\\F0A39\";\n}\n\n.mdi-cloud-refresh::before {\n  content: \"\\F052A\";\n}\n\n.mdi-cloud-search::before {\n  content: \"\\F0956\";\n}\n\n.mdi-cloud-search-outline::before {\n  content: \"\\F0957\";\n}\n\n.mdi-cloud-sync::before {\n  content: \"\\F063F\";\n}\n\n.mdi-cloud-sync-outline::before {\n  content: \"\\F12D6\";\n}\n\n.mdi-cloud-tags::before {\n  content: \"\\F07B6\";\n}\n\n.mdi-cloud-upload::before {\n  content: \"\\F0167\";\n}\n\n.mdi-cloud-upload-outline::before {\n  content: \"\\F0B7E\";\n}\n\n.mdi-clover::before {\n  content: \"\\F0816\";\n}\n\n.mdi-coach-lamp::before {\n  content: \"\\F1020\";\n}\n\n.mdi-coat-rack::before {\n  content: \"\\F109E\";\n}\n\n.mdi-code-array::before {\n  content: \"\\F0168\";\n}\n\n.mdi-code-braces::before {\n  content: \"\\F0169\";\n}\n\n.mdi-code-braces-box::before {\n  content: \"\\F10D6\";\n}\n\n.mdi-code-brackets::before {\n  content: \"\\F016A\";\n}\n\n.mdi-code-equal::before {\n  content: \"\\F016B\";\n}\n\n.mdi-code-greater-than::before {\n  content: \"\\F016C\";\n}\n\n.mdi-code-greater-than-or-equal::before {\n  content: \"\\F016D\";\n}\n\n.mdi-code-json::before {\n  content: \"\\F0626\";\n}\n\n.mdi-code-less-than::before {\n  content: \"\\F016E\";\n}\n\n.mdi-code-less-than-or-equal::before {\n  content: \"\\F016F\";\n}\n\n.mdi-code-not-equal::before {\n  content: \"\\F0170\";\n}\n\n.mdi-code-not-equal-variant::before {\n  content: \"\\F0171\";\n}\n\n.mdi-code-parentheses::before {\n  content: \"\\F0172\";\n}\n\n.mdi-code-parentheses-box::before {\n  content: \"\\F10D7\";\n}\n\n.mdi-code-string::before {\n  content: \"\\F0173\";\n}\n\n.mdi-code-tags::before {\n  content: \"\\F0174\";\n}\n\n.mdi-code-tags-check::before {\n  content: \"\\F0694\";\n}\n\n.mdi-codepen::before {\n  content: \"\\F0175\";\n}\n\n.mdi-coffee::before {\n  content: \"\\F0176\";\n}\n\n.mdi-coffee-maker::before {\n  content: \"\\F109F\";\n}\n\n.mdi-coffee-off::before {\n  content: \"\\F0FAA\";\n}\n\n.mdi-coffee-off-outline::before {\n  content: \"\\F0FAB\";\n}\n\n.mdi-coffee-outline::before {\n  content: \"\\F06CA\";\n}\n\n.mdi-coffee-to-go::before {\n  content: \"\\F0177\";\n}\n\n.mdi-coffee-to-go-outline::before {\n  content: \"\\F130E\";\n}\n\n.mdi-coffin::before {\n  content: \"\\F0B7F\";\n}\n\n.mdi-cog::before {\n  content: \"\\F0493\";\n}\n\n.mdi-cog-box::before {\n  content: \"\\F0494\";\n}\n\n.mdi-cog-clockwise::before {\n  content: \"\\F11DD\";\n}\n\n.mdi-cog-counterclockwise::before {\n  content: \"\\F11DE\";\n}\n\n.mdi-cog-off::before {\n  content: \"\\F13CE\";\n}\n\n.mdi-cog-off-outline::before {\n  content: \"\\F13CF\";\n}\n\n.mdi-cog-outline::before {\n  content: \"\\F08BB\";\n}\n\n.mdi-cog-refresh::before {\n  content: \"\\F145E\";\n}\n\n.mdi-cog-refresh-outline::before {\n  content: \"\\F145F\";\n}\n\n.mdi-cog-sync::before {\n  content: \"\\F1460\";\n}\n\n.mdi-cog-sync-outline::before {\n  content: \"\\F1461\";\n}\n\n.mdi-cog-transfer::before {\n  content: \"\\F105B\";\n}\n\n.mdi-cog-transfer-outline::before {\n  content: \"\\F105C\";\n}\n\n.mdi-cogs::before {\n  content: \"\\F08D6\";\n}\n\n.mdi-collage::before {\n  content: \"\\F0640\";\n}\n\n.mdi-collapse-all::before {\n  content: \"\\F0AA6\";\n}\n\n.mdi-collapse-all-outline::before {\n  content: \"\\F0AA7\";\n}\n\n.mdi-color-helper::before {\n  content: \"\\F0179\";\n}\n\n.mdi-comma::before {\n  content: \"\\F0E23\";\n}\n\n.mdi-comma-box::before {\n  content: \"\\F0E2B\";\n}\n\n.mdi-comma-box-outline::before {\n  content: \"\\F0E24\";\n}\n\n.mdi-comma-circle::before {\n  content: \"\\F0E25\";\n}\n\n.mdi-comma-circle-outline::before {\n  content: \"\\F0E26\";\n}\n\n.mdi-comment::before {\n  content: \"\\F017A\";\n}\n\n.mdi-comment-account::before {\n  content: \"\\F017B\";\n}\n\n.mdi-comment-account-outline::before {\n  content: \"\\F017C\";\n}\n\n.mdi-comment-alert::before {\n  content: \"\\F017D\";\n}\n\n.mdi-comment-alert-outline::before {\n  content: \"\\F017E\";\n}\n\n.mdi-comment-arrow-left::before {\n  content: \"\\F09E1\";\n}\n\n.mdi-comment-arrow-left-outline::before {\n  content: \"\\F09E2\";\n}\n\n.mdi-comment-arrow-right::before {\n  content: \"\\F09E3\";\n}\n\n.mdi-comment-arrow-right-outline::before {\n  content: \"\\F09E4\";\n}\n\n.mdi-comment-check::before {\n  content: \"\\F017F\";\n}\n\n.mdi-comment-check-outline::before {\n  content: \"\\F0180\";\n}\n\n.mdi-comment-edit::before {\n  content: \"\\F11BF\";\n}\n\n.mdi-comment-edit-outline::before {\n  content: \"\\F12C4\";\n}\n\n.mdi-comment-eye::before {\n  content: \"\\F0A3A\";\n}\n\n.mdi-comment-eye-outline::before {\n  content: \"\\F0A3B\";\n}\n\n.mdi-comment-multiple::before {\n  content: \"\\F085F\";\n}\n\n.mdi-comment-multiple-outline::before {\n  content: \"\\F0181\";\n}\n\n.mdi-comment-outline::before {\n  content: \"\\F0182\";\n}\n\n.mdi-comment-plus::before {\n  content: \"\\F09E5\";\n}\n\n.mdi-comment-plus-outline::before {\n  content: \"\\F0183\";\n}\n\n.mdi-comment-processing::before {\n  content: \"\\F0184\";\n}\n\n.mdi-comment-processing-outline::before {\n  content: \"\\F0185\";\n}\n\n.mdi-comment-question::before {\n  content: \"\\F0817\";\n}\n\n.mdi-comment-question-outline::before {\n  content: \"\\F0186\";\n}\n\n.mdi-comment-quote::before {\n  content: \"\\F1021\";\n}\n\n.mdi-comment-quote-outline::before {\n  content: \"\\F1022\";\n}\n\n.mdi-comment-remove::before {\n  content: \"\\F05DE\";\n}\n\n.mdi-comment-remove-outline::before {\n  content: \"\\F0187\";\n}\n\n.mdi-comment-search::before {\n  content: \"\\F0A3C\";\n}\n\n.mdi-comment-search-outline::before {\n  content: \"\\F0A3D\";\n}\n\n.mdi-comment-text::before {\n  content: \"\\F0188\";\n}\n\n.mdi-comment-text-multiple::before {\n  content: \"\\F0860\";\n}\n\n.mdi-comment-text-multiple-outline::before {\n  content: \"\\F0861\";\n}\n\n.mdi-comment-text-outline::before {\n  content: \"\\F0189\";\n}\n\n.mdi-compare::before {\n  content: \"\\F018A\";\n}\n\n.mdi-compare-horizontal::before {\n  content: \"\\F1492\";\n}\n\n.mdi-compare-vertical::before {\n  content: \"\\F1493\";\n}\n\n.mdi-compass::before {\n  content: \"\\F018B\";\n}\n\n.mdi-compass-off::before {\n  content: \"\\F0B80\";\n}\n\n.mdi-compass-off-outline::before {\n  content: \"\\F0B81\";\n}\n\n.mdi-compass-outline::before {\n  content: \"\\F018C\";\n}\n\n.mdi-compass-rose::before {\n  content: \"\\F1382\";\n}\n\n.mdi-concourse-ci::before {\n  content: \"\\F10A0\";\n}\n\n.mdi-console::before {\n  content: \"\\F018D\";\n}\n\n.mdi-console-line::before {\n  content: \"\\F07B7\";\n}\n\n.mdi-console-network::before {\n  content: \"\\F08A9\";\n}\n\n.mdi-console-network-outline::before {\n  content: \"\\F0C60\";\n}\n\n.mdi-consolidate::before {\n  content: \"\\F10D8\";\n}\n\n.mdi-contactless-payment::before {\n  content: \"\\F0D6A\";\n}\n\n.mdi-contactless-payment-circle::before {\n  content: \"\\F0321\";\n}\n\n.mdi-contactless-payment-circle-outline::before {\n  content: \"\\F0408\";\n}\n\n.mdi-contacts::before {\n  content: \"\\F06CB\";\n}\n\n.mdi-contacts-outline::before {\n  content: \"\\F05B8\";\n}\n\n.mdi-contain::before {\n  content: \"\\F0A3E\";\n}\n\n.mdi-contain-end::before {\n  content: \"\\F0A3F\";\n}\n\n.mdi-contain-start::before {\n  content: \"\\F0A40\";\n}\n\n.mdi-content-copy::before {\n  content: \"\\F018F\";\n}\n\n.mdi-content-cut::before {\n  content: \"\\F0190\";\n}\n\n.mdi-content-duplicate::before {\n  content: \"\\F0191\";\n}\n\n.mdi-content-paste::before {\n  content: \"\\F0192\";\n}\n\n.mdi-content-save::before {\n  content: \"\\F0193\";\n}\n\n.mdi-content-save-alert::before {\n  content: \"\\F0F42\";\n}\n\n.mdi-content-save-alert-outline::before {\n  content: \"\\F0F43\";\n}\n\n.mdi-content-save-all::before {\n  content: \"\\F0194\";\n}\n\n.mdi-content-save-all-outline::before {\n  content: \"\\F0F44\";\n}\n\n.mdi-content-save-cog::before {\n  content: \"\\F145B\";\n}\n\n.mdi-content-save-cog-outline::before {\n  content: \"\\F145C\";\n}\n\n.mdi-content-save-edit::before {\n  content: \"\\F0CFB\";\n}\n\n.mdi-content-save-edit-outline::before {\n  content: \"\\F0CFC\";\n}\n\n.mdi-content-save-move::before {\n  content: \"\\F0E27\";\n}\n\n.mdi-content-save-move-outline::before {\n  content: \"\\F0E28\";\n}\n\n.mdi-content-save-outline::before {\n  content: \"\\F0818\";\n}\n\n.mdi-content-save-settings::before {\n  content: \"\\F061B\";\n}\n\n.mdi-content-save-settings-outline::before {\n  content: \"\\F0B2E\";\n}\n\n.mdi-contrast::before {\n  content: \"\\F0195\";\n}\n\n.mdi-contrast-box::before {\n  content: \"\\F0196\";\n}\n\n.mdi-contrast-circle::before {\n  content: \"\\F0197\";\n}\n\n.mdi-controller-classic::before {\n  content: \"\\F0B82\";\n}\n\n.mdi-controller-classic-outline::before {\n  content: \"\\F0B83\";\n}\n\n.mdi-cookie::before {\n  content: \"\\F0198\";\n}\n\n.mdi-coolant-temperature::before {\n  content: \"\\F03C8\";\n}\n\n.mdi-copyright::before {\n  content: \"\\F05E6\";\n}\n\n.mdi-cordova::before {\n  content: \"\\F0958\";\n}\n\n.mdi-corn::before {\n  content: \"\\F07B8\";\n}\n\n.mdi-corn-off::before {\n  content: \"\\F13EF\";\n}\n\n.mdi-cosine-wave::before {\n  content: \"\\F1479\";\n}\n\n.mdi-counter::before {\n  content: \"\\F0199\";\n}\n\n.mdi-cow::before {\n  content: \"\\F019A\";\n}\n\n.mdi-cpu-32-bit::before {\n  content: \"\\F0EDF\";\n}\n\n.mdi-cpu-64-bit::before {\n  content: \"\\F0EE0\";\n}\n\n.mdi-crane::before {\n  content: \"\\F0862\";\n}\n\n.mdi-creation::before {\n  content: \"\\F0674\";\n}\n\n.mdi-creative-commons::before {\n  content: \"\\F0D6B\";\n}\n\n.mdi-credit-card::before {\n  content: \"\\F0FEF\";\n}\n\n.mdi-credit-card-check::before {\n  content: \"\\F13D0\";\n}\n\n.mdi-credit-card-check-outline::before {\n  content: \"\\F13D1\";\n}\n\n.mdi-credit-card-clock::before {\n  content: \"\\F0EE1\";\n}\n\n.mdi-credit-card-clock-outline::before {\n  content: \"\\F0EE2\";\n}\n\n.mdi-credit-card-marker::before {\n  content: \"\\F06A8\";\n}\n\n.mdi-credit-card-marker-outline::before {\n  content: \"\\F0DBE\";\n}\n\n.mdi-credit-card-minus::before {\n  content: \"\\F0FAC\";\n}\n\n.mdi-credit-card-minus-outline::before {\n  content: \"\\F0FAD\";\n}\n\n.mdi-credit-card-multiple::before {\n  content: \"\\F0FF0\";\n}\n\n.mdi-credit-card-multiple-outline::before {\n  content: \"\\F019C\";\n}\n\n.mdi-credit-card-off::before {\n  content: \"\\F0FF1\";\n}\n\n.mdi-credit-card-off-outline::before {\n  content: \"\\F05E4\";\n}\n\n.mdi-credit-card-outline::before {\n  content: \"\\F019B\";\n}\n\n.mdi-credit-card-plus::before {\n  content: \"\\F0FF2\";\n}\n\n.mdi-credit-card-plus-outline::before {\n  content: \"\\F0676\";\n}\n\n.mdi-credit-card-refund::before {\n  content: \"\\F0FF3\";\n}\n\n.mdi-credit-card-refund-outline::before {\n  content: \"\\F0AA8\";\n}\n\n.mdi-credit-card-remove::before {\n  content: \"\\F0FAE\";\n}\n\n.mdi-credit-card-remove-outline::before {\n  content: \"\\F0FAF\";\n}\n\n.mdi-credit-card-scan::before {\n  content: \"\\F0FF4\";\n}\n\n.mdi-credit-card-scan-outline::before {\n  content: \"\\F019D\";\n}\n\n.mdi-credit-card-settings::before {\n  content: \"\\F0FF5\";\n}\n\n.mdi-credit-card-settings-outline::before {\n  content: \"\\F08D7\";\n}\n\n.mdi-credit-card-wireless::before {\n  content: \"\\F0802\";\n}\n\n.mdi-credit-card-wireless-off::before {\n  content: \"\\F057A\";\n}\n\n.mdi-credit-card-wireless-off-outline::before {\n  content: \"\\F057B\";\n}\n\n.mdi-credit-card-wireless-outline::before {\n  content: \"\\F0D6C\";\n}\n\n.mdi-cricket::before {\n  content: \"\\F0D6D\";\n}\n\n.mdi-crop::before {\n  content: \"\\F019E\";\n}\n\n.mdi-crop-free::before {\n  content: \"\\F019F\";\n}\n\n.mdi-crop-landscape::before {\n  content: \"\\F01A0\";\n}\n\n.mdi-crop-portrait::before {\n  content: \"\\F01A1\";\n}\n\n.mdi-crop-rotate::before {\n  content: \"\\F0696\";\n}\n\n.mdi-crop-square::before {\n  content: \"\\F01A2\";\n}\n\n.mdi-crosshairs::before {\n  content: \"\\F01A3\";\n}\n\n.mdi-crosshairs-gps::before {\n  content: \"\\F01A4\";\n}\n\n.mdi-crosshairs-off::before {\n  content: \"\\F0F45\";\n}\n\n.mdi-crosshairs-question::before {\n  content: \"\\F1136\";\n}\n\n.mdi-crown::before {\n  content: \"\\F01A5\";\n}\n\n.mdi-crown-outline::before {\n  content: \"\\F11D0\";\n}\n\n.mdi-cryengine::before {\n  content: \"\\F0959\";\n}\n\n.mdi-crystal-ball::before {\n  content: \"\\F0B2F\";\n}\n\n.mdi-cube::before {\n  content: \"\\F01A6\";\n}\n\n.mdi-cube-off::before {\n  content: \"\\F141C\";\n}\n\n.mdi-cube-off-outline::before {\n  content: \"\\F141D\";\n}\n\n.mdi-cube-outline::before {\n  content: \"\\F01A7\";\n}\n\n.mdi-cube-scan::before {\n  content: \"\\F0B84\";\n}\n\n.mdi-cube-send::before {\n  content: \"\\F01A8\";\n}\n\n.mdi-cube-unfolded::before {\n  content: \"\\F01A9\";\n}\n\n.mdi-cup::before {\n  content: \"\\F01AA\";\n}\n\n.mdi-cup-off::before {\n  content: \"\\F05E5\";\n}\n\n.mdi-cup-off-outline::before {\n  content: \"\\F137D\";\n}\n\n.mdi-cup-outline::before {\n  content: \"\\F130F\";\n}\n\n.mdi-cup-water::before {\n  content: \"\\F01AB\";\n}\n\n.mdi-cupboard::before {\n  content: \"\\F0F46\";\n}\n\n.mdi-cupboard-outline::before {\n  content: \"\\F0F47\";\n}\n\n.mdi-cupcake::before {\n  content: \"\\F095A\";\n}\n\n.mdi-curling::before {\n  content: \"\\F0863\";\n}\n\n.mdi-currency-bdt::before {\n  content: \"\\F0864\";\n}\n\n.mdi-currency-brl::before {\n  content: \"\\F0B85\";\n}\n\n.mdi-currency-btc::before {\n  content: \"\\F01AC\";\n}\n\n.mdi-currency-cny::before {\n  content: \"\\F07BA\";\n}\n\n.mdi-currency-eth::before {\n  content: \"\\F07BB\";\n}\n\n.mdi-currency-eur::before {\n  content: \"\\F01AD\";\n}\n\n.mdi-currency-eur-off::before {\n  content: \"\\F1315\";\n}\n\n.mdi-currency-gbp::before {\n  content: \"\\F01AE\";\n}\n\n.mdi-currency-ils::before {\n  content: \"\\F0C61\";\n}\n\n.mdi-currency-inr::before {\n  content: \"\\F01AF\";\n}\n\n.mdi-currency-jpy::before {\n  content: \"\\F07BC\";\n}\n\n.mdi-currency-krw::before {\n  content: \"\\F07BD\";\n}\n\n.mdi-currency-kzt::before {\n  content: \"\\F0865\";\n}\n\n.mdi-currency-mnt::before {\n  content: \"\\F1512\";\n}\n\n.mdi-currency-ngn::before {\n  content: \"\\F01B0\";\n}\n\n.mdi-currency-php::before {\n  content: \"\\F09E6\";\n}\n\n.mdi-currency-rial::before {\n  content: \"\\F0E9C\";\n}\n\n.mdi-currency-rub::before {\n  content: \"\\F01B1\";\n}\n\n.mdi-currency-sign::before {\n  content: \"\\F07BE\";\n}\n\n.mdi-currency-try::before {\n  content: \"\\F01B2\";\n}\n\n.mdi-currency-twd::before {\n  content: \"\\F07BF\";\n}\n\n.mdi-currency-usd::before {\n  content: \"\\F01C1\";\n}\n\n.mdi-currency-usd-circle::before {\n  content: \"\\F116B\";\n}\n\n.mdi-currency-usd-circle-outline::before {\n  content: \"\\F0178\";\n}\n\n.mdi-currency-usd-off::before {\n  content: \"\\F067A\";\n}\n\n.mdi-current-ac::before {\n  content: \"\\F1480\";\n}\n\n.mdi-current-dc::before {\n  content: \"\\F095C\";\n}\n\n.mdi-cursor-default::before {\n  content: \"\\F01C0\";\n}\n\n.mdi-cursor-default-click::before {\n  content: \"\\F0CFD\";\n}\n\n.mdi-cursor-default-click-outline::before {\n  content: \"\\F0CFE\";\n}\n\n.mdi-cursor-default-gesture::before {\n  content: \"\\F1127\";\n}\n\n.mdi-cursor-default-gesture-outline::before {\n  content: \"\\F1128\";\n}\n\n.mdi-cursor-default-outline::before {\n  content: \"\\F01BF\";\n}\n\n.mdi-cursor-move::before {\n  content: \"\\F01BE\";\n}\n\n.mdi-cursor-pointer::before {\n  content: \"\\F01BD\";\n}\n\n.mdi-cursor-text::before {\n  content: \"\\F05E7\";\n}\n\n.mdi-data-matrix::before {\n  content: \"\\F153C\";\n}\n\n.mdi-data-matrix-edit::before {\n  content: \"\\F153D\";\n}\n\n.mdi-data-matrix-minus::before {\n  content: \"\\F153E\";\n}\n\n.mdi-data-matrix-plus::before {\n  content: \"\\F153F\";\n}\n\n.mdi-data-matrix-remove::before {\n  content: \"\\F1540\";\n}\n\n.mdi-data-matrix-scan::before {\n  content: \"\\F1541\";\n}\n\n.mdi-database::before {\n  content: \"\\F01BC\";\n}\n\n.mdi-database-check::before {\n  content: \"\\F0AA9\";\n}\n\n.mdi-database-edit::before {\n  content: \"\\F0B86\";\n}\n\n.mdi-database-export::before {\n  content: \"\\F095E\";\n}\n\n.mdi-database-import::before {\n  content: \"\\F095D\";\n}\n\n.mdi-database-lock::before {\n  content: \"\\F0AAA\";\n}\n\n.mdi-database-marker::before {\n  content: \"\\F12F6\";\n}\n\n.mdi-database-minus::before {\n  content: \"\\F01BB\";\n}\n\n.mdi-database-plus::before {\n  content: \"\\F01BA\";\n}\n\n.mdi-database-refresh::before {\n  content: \"\\F05C2\";\n}\n\n.mdi-database-remove::before {\n  content: \"\\F0D00\";\n}\n\n.mdi-database-search::before {\n  content: \"\\F0866\";\n}\n\n.mdi-database-settings::before {\n  content: \"\\F0D01\";\n}\n\n.mdi-database-sync::before {\n  content: \"\\F0CFF\";\n}\n\n.mdi-death-star::before {\n  content: \"\\F08D8\";\n}\n\n.mdi-death-star-variant::before {\n  content: \"\\F08D9\";\n}\n\n.mdi-deathly-hallows::before {\n  content: \"\\F0B87\";\n}\n\n.mdi-debian::before {\n  content: \"\\F08DA\";\n}\n\n.mdi-debug-step-into::before {\n  content: \"\\F01B9\";\n}\n\n.mdi-debug-step-out::before {\n  content: \"\\F01B8\";\n}\n\n.mdi-debug-step-over::before {\n  content: \"\\F01B7\";\n}\n\n.mdi-decagram::before {\n  content: \"\\F076C\";\n}\n\n.mdi-decagram-outline::before {\n  content: \"\\F076D\";\n}\n\n.mdi-decimal::before {\n  content: \"\\F10A1\";\n}\n\n.mdi-decimal-comma::before {\n  content: \"\\F10A2\";\n}\n\n.mdi-decimal-comma-decrease::before {\n  content: \"\\F10A3\";\n}\n\n.mdi-decimal-comma-increase::before {\n  content: \"\\F10A4\";\n}\n\n.mdi-decimal-decrease::before {\n  content: \"\\F01B6\";\n}\n\n.mdi-decimal-increase::before {\n  content: \"\\F01B5\";\n}\n\n.mdi-delete::before {\n  content: \"\\F01B4\";\n}\n\n.mdi-delete-alert::before {\n  content: \"\\F10A5\";\n}\n\n.mdi-delete-alert-outline::before {\n  content: \"\\F10A6\";\n}\n\n.mdi-delete-circle::before {\n  content: \"\\F0683\";\n}\n\n.mdi-delete-circle-outline::before {\n  content: \"\\F0B88\";\n}\n\n.mdi-delete-empty::before {\n  content: \"\\F06CC\";\n}\n\n.mdi-delete-empty-outline::before {\n  content: \"\\F0E9D\";\n}\n\n.mdi-delete-forever::before {\n  content: \"\\F05E8\";\n}\n\n.mdi-delete-forever-outline::before {\n  content: \"\\F0B89\";\n}\n\n.mdi-delete-off::before {\n  content: \"\\F10A7\";\n}\n\n.mdi-delete-off-outline::before {\n  content: \"\\F10A8\";\n}\n\n.mdi-delete-outline::before {\n  content: \"\\F09E7\";\n}\n\n.mdi-delete-restore::before {\n  content: \"\\F0819\";\n}\n\n.mdi-delete-sweep::before {\n  content: \"\\F05E9\";\n}\n\n.mdi-delete-sweep-outline::before {\n  content: \"\\F0C62\";\n}\n\n.mdi-delete-variant::before {\n  content: \"\\F01B3\";\n}\n\n.mdi-delta::before {\n  content: \"\\F01C2\";\n}\n\n.mdi-desk::before {\n  content: \"\\F1239\";\n}\n\n.mdi-desk-lamp::before {\n  content: \"\\F095F\";\n}\n\n.mdi-deskphone::before {\n  content: \"\\F01C3\";\n}\n\n.mdi-desktop-classic::before {\n  content: \"\\F07C0\";\n}\n\n.mdi-desktop-mac::before {\n  content: \"\\F01C4\";\n}\n\n.mdi-desktop-mac-dashboard::before {\n  content: \"\\F09E8\";\n}\n\n.mdi-desktop-tower::before {\n  content: \"\\F01C5\";\n}\n\n.mdi-desktop-tower-monitor::before {\n  content: \"\\F0AAB\";\n}\n\n.mdi-details::before {\n  content: \"\\F01C6\";\n}\n\n.mdi-dev-to::before {\n  content: \"\\F0D6E\";\n}\n\n.mdi-developer-board::before {\n  content: \"\\F0697\";\n}\n\n.mdi-deviantart::before {\n  content: \"\\F01C7\";\n}\n\n.mdi-devices::before {\n  content: \"\\F0FB0\";\n}\n\n.mdi-diabetes::before {\n  content: \"\\F1126\";\n}\n\n.mdi-dialpad::before {\n  content: \"\\F061C\";\n}\n\n.mdi-diameter::before {\n  content: \"\\F0C63\";\n}\n\n.mdi-diameter-outline::before {\n  content: \"\\F0C64\";\n}\n\n.mdi-diameter-variant::before {\n  content: \"\\F0C65\";\n}\n\n.mdi-diamond::before {\n  content: \"\\F0B8A\";\n}\n\n.mdi-diamond-outline::before {\n  content: \"\\F0B8B\";\n}\n\n.mdi-diamond-stone::before {\n  content: \"\\F01C8\";\n}\n\n.mdi-dice-1::before {\n  content: \"\\F01CA\";\n}\n\n.mdi-dice-1-outline::before {\n  content: \"\\F114A\";\n}\n\n.mdi-dice-2::before {\n  content: \"\\F01CB\";\n}\n\n.mdi-dice-2-outline::before {\n  content: \"\\F114B\";\n}\n\n.mdi-dice-3::before {\n  content: \"\\F01CC\";\n}\n\n.mdi-dice-3-outline::before {\n  content: \"\\F114C\";\n}\n\n.mdi-dice-4::before {\n  content: \"\\F01CD\";\n}\n\n.mdi-dice-4-outline::before {\n  content: \"\\F114D\";\n}\n\n.mdi-dice-5::before {\n  content: \"\\F01CE\";\n}\n\n.mdi-dice-5-outline::before {\n  content: \"\\F114E\";\n}\n\n.mdi-dice-6::before {\n  content: \"\\F01CF\";\n}\n\n.mdi-dice-6-outline::before {\n  content: \"\\F114F\";\n}\n\n.mdi-dice-d10::before {\n  content: \"\\F1153\";\n}\n\n.mdi-dice-d10-outline::before {\n  content: \"\\F076F\";\n}\n\n.mdi-dice-d12::before {\n  content: \"\\F1154\";\n}\n\n.mdi-dice-d12-outline::before {\n  content: \"\\F0867\";\n}\n\n.mdi-dice-d20::before {\n  content: \"\\F1155\";\n}\n\n.mdi-dice-d20-outline::before {\n  content: \"\\F05EA\";\n}\n\n.mdi-dice-d4::before {\n  content: \"\\F1150\";\n}\n\n.mdi-dice-d4-outline::before {\n  content: \"\\F05EB\";\n}\n\n.mdi-dice-d6::before {\n  content: \"\\F1151\";\n}\n\n.mdi-dice-d6-outline::before {\n  content: \"\\F05ED\";\n}\n\n.mdi-dice-d8::before {\n  content: \"\\F1152\";\n}\n\n.mdi-dice-d8-outline::before {\n  content: \"\\F05EC\";\n}\n\n.mdi-dice-multiple::before {\n  content: \"\\F076E\";\n}\n\n.mdi-dice-multiple-outline::before {\n  content: \"\\F1156\";\n}\n\n.mdi-digital-ocean::before {\n  content: \"\\F1237\";\n}\n\n.mdi-dip-switch::before {\n  content: \"\\F07C1\";\n}\n\n.mdi-directions::before {\n  content: \"\\F01D0\";\n}\n\n.mdi-directions-fork::before {\n  content: \"\\F0641\";\n}\n\n.mdi-disc::before {\n  content: \"\\F05EE\";\n}\n\n.mdi-disc-alert::before {\n  content: \"\\F01D1\";\n}\n\n.mdi-disc-player::before {\n  content: \"\\F0960\";\n}\n\n.mdi-discord::before {\n  content: \"\\F066F\";\n}\n\n.mdi-dishwasher::before {\n  content: \"\\F0AAC\";\n}\n\n.mdi-dishwasher-alert::before {\n  content: \"\\F11B8\";\n}\n\n.mdi-dishwasher-off::before {\n  content: \"\\F11B9\";\n}\n\n.mdi-disqus::before {\n  content: \"\\F01D2\";\n}\n\n.mdi-distribute-horizontal-center::before {\n  content: \"\\F11C9\";\n}\n\n.mdi-distribute-horizontal-left::before {\n  content: \"\\F11C8\";\n}\n\n.mdi-distribute-horizontal-right::before {\n  content: \"\\F11CA\";\n}\n\n.mdi-distribute-vertical-bottom::before {\n  content: \"\\F11CB\";\n}\n\n.mdi-distribute-vertical-center::before {\n  content: \"\\F11CC\";\n}\n\n.mdi-distribute-vertical-top::before {\n  content: \"\\F11CD\";\n}\n\n.mdi-diving-flippers::before {\n  content: \"\\F0DBF\";\n}\n\n.mdi-diving-helmet::before {\n  content: \"\\F0DC0\";\n}\n\n.mdi-diving-scuba::before {\n  content: \"\\F0DC1\";\n}\n\n.mdi-diving-scuba-flag::before {\n  content: \"\\F0DC2\";\n}\n\n.mdi-diving-scuba-tank::before {\n  content: \"\\F0DC3\";\n}\n\n.mdi-diving-scuba-tank-multiple::before {\n  content: \"\\F0DC4\";\n}\n\n.mdi-diving-snorkel::before {\n  content: \"\\F0DC5\";\n}\n\n.mdi-division::before {\n  content: \"\\F01D4\";\n}\n\n.mdi-division-box::before {\n  content: \"\\F01D5\";\n}\n\n.mdi-dlna::before {\n  content: \"\\F0A41\";\n}\n\n.mdi-dna::before {\n  content: \"\\F0684\";\n}\n\n.mdi-dns::before {\n  content: \"\\F01D6\";\n}\n\n.mdi-dns-outline::before {\n  content: \"\\F0B8C\";\n}\n\n.mdi-do-not-disturb::before {\n  content: \"\\F0698\";\n}\n\n.mdi-do-not-disturb-off::before {\n  content: \"\\F0699\";\n}\n\n.mdi-dock-bottom::before {\n  content: \"\\F10A9\";\n}\n\n.mdi-dock-left::before {\n  content: \"\\F10AA\";\n}\n\n.mdi-dock-right::before {\n  content: \"\\F10AB\";\n}\n\n.mdi-dock-top::before {\n  content: \"\\F1513\";\n}\n\n.mdi-dock-window::before {\n  content: \"\\F10AC\";\n}\n\n.mdi-docker::before {\n  content: \"\\F0868\";\n}\n\n.mdi-doctor::before {\n  content: \"\\F0A42\";\n}\n\n.mdi-dog::before {\n  content: \"\\F0A43\";\n}\n\n.mdi-dog-service::before {\n  content: \"\\F0AAD\";\n}\n\n.mdi-dog-side::before {\n  content: \"\\F0A44\";\n}\n\n.mdi-dolby::before {\n  content: \"\\F06B3\";\n}\n\n.mdi-dolly::before {\n  content: \"\\F0E9E\";\n}\n\n.mdi-domain::before {\n  content: \"\\F01D7\";\n}\n\n.mdi-domain-off::before {\n  content: \"\\F0D6F\";\n}\n\n.mdi-domain-plus::before {\n  content: \"\\F10AD\";\n}\n\n.mdi-domain-remove::before {\n  content: \"\\F10AE\";\n}\n\n.mdi-dome-light::before {\n  content: \"\\F141E\";\n}\n\n.mdi-domino-mask::before {\n  content: \"\\F1023\";\n}\n\n.mdi-donkey::before {\n  content: \"\\F07C2\";\n}\n\n.mdi-door::before {\n  content: \"\\F081A\";\n}\n\n.mdi-door-closed::before {\n  content: \"\\F081B\";\n}\n\n.mdi-door-closed-lock::before {\n  content: \"\\F10AF\";\n}\n\n.mdi-door-open::before {\n  content: \"\\F081C\";\n}\n\n.mdi-doorbell::before {\n  content: \"\\F12E6\";\n}\n\n.mdi-doorbell-video::before {\n  content: \"\\F0869\";\n}\n\n.mdi-dot-net::before {\n  content: \"\\F0AAE\";\n}\n\n.mdi-dots-horizontal::before {\n  content: \"\\F01D8\";\n}\n\n.mdi-dots-horizontal-circle::before {\n  content: \"\\F07C3\";\n}\n\n.mdi-dots-horizontal-circle-outline::before {\n  content: \"\\F0B8D\";\n}\n\n.mdi-dots-vertical::before {\n  content: \"\\F01D9\";\n}\n\n.mdi-dots-vertical-circle::before {\n  content: \"\\F07C4\";\n}\n\n.mdi-dots-vertical-circle-outline::before {\n  content: \"\\F0B8E\";\n}\n\n.mdi-douban::before {\n  content: \"\\F069A\";\n}\n\n.mdi-download::before {\n  content: \"\\F01DA\";\n}\n\n.mdi-download-box::before {\n  content: \"\\F1462\";\n}\n\n.mdi-download-box-outline::before {\n  content: \"\\F1463\";\n}\n\n.mdi-download-circle::before {\n  content: \"\\F1464\";\n}\n\n.mdi-download-circle-outline::before {\n  content: \"\\F1465\";\n}\n\n.mdi-download-lock::before {\n  content: \"\\F1320\";\n}\n\n.mdi-download-lock-outline::before {\n  content: \"\\F1321\";\n}\n\n.mdi-download-multiple::before {\n  content: \"\\F09E9\";\n}\n\n.mdi-download-network::before {\n  content: \"\\F06F4\";\n}\n\n.mdi-download-network-outline::before {\n  content: \"\\F0C66\";\n}\n\n.mdi-download-off::before {\n  content: \"\\F10B0\";\n}\n\n.mdi-download-off-outline::before {\n  content: \"\\F10B1\";\n}\n\n.mdi-download-outline::before {\n  content: \"\\F0B8F\";\n}\n\n.mdi-drag::before {\n  content: \"\\F01DB\";\n}\n\n.mdi-drag-horizontal::before {\n  content: \"\\F01DC\";\n}\n\n.mdi-drag-horizontal-variant::before {\n  content: \"\\F12F0\";\n}\n\n.mdi-drag-variant::before {\n  content: \"\\F0B90\";\n}\n\n.mdi-drag-vertical::before {\n  content: \"\\F01DD\";\n}\n\n.mdi-drag-vertical-variant::before {\n  content: \"\\F12F1\";\n}\n\n.mdi-drama-masks::before {\n  content: \"\\F0D02\";\n}\n\n.mdi-draw::before {\n  content: \"\\F0F49\";\n}\n\n.mdi-drawing::before {\n  content: \"\\F01DE\";\n}\n\n.mdi-drawing-box::before {\n  content: \"\\F01DF\";\n}\n\n.mdi-dresser::before {\n  content: \"\\F0F4A\";\n}\n\n.mdi-dresser-outline::before {\n  content: \"\\F0F4B\";\n}\n\n.mdi-drone::before {\n  content: \"\\F01E2\";\n}\n\n.mdi-dropbox::before {\n  content: \"\\F01E3\";\n}\n\n.mdi-drupal::before {\n  content: \"\\F01E4\";\n}\n\n.mdi-duck::before {\n  content: \"\\F01E5\";\n}\n\n.mdi-dumbbell::before {\n  content: \"\\F01E6\";\n}\n\n.mdi-dump-truck::before {\n  content: \"\\F0C67\";\n}\n\n.mdi-ear-hearing::before {\n  content: \"\\F07C5\";\n}\n\n.mdi-ear-hearing-off::before {\n  content: \"\\F0A45\";\n}\n\n.mdi-earth::before {\n  content: \"\\F01E7\";\n}\n\n.mdi-earth-arrow-right::before {\n  content: \"\\F1311\";\n}\n\n.mdi-earth-box::before {\n  content: \"\\F06CD\";\n}\n\n.mdi-earth-box-minus::before {\n  content: \"\\F1407\";\n}\n\n.mdi-earth-box-off::before {\n  content: \"\\F06CE\";\n}\n\n.mdi-earth-box-plus::before {\n  content: \"\\F1406\";\n}\n\n.mdi-earth-box-remove::before {\n  content: \"\\F1408\";\n}\n\n.mdi-earth-minus::before {\n  content: \"\\F1404\";\n}\n\n.mdi-earth-off::before {\n  content: \"\\F01E8\";\n}\n\n.mdi-earth-plus::before {\n  content: \"\\F1403\";\n}\n\n.mdi-earth-remove::before {\n  content: \"\\F1405\";\n}\n\n.mdi-egg::before {\n  content: \"\\F0AAF\";\n}\n\n.mdi-egg-easter::before {\n  content: \"\\F0AB0\";\n}\n\n.mdi-egg-off::before {\n  content: \"\\F13F0\";\n}\n\n.mdi-egg-off-outline::before {\n  content: \"\\F13F1\";\n}\n\n.mdi-egg-outline::before {\n  content: \"\\F13F2\";\n}\n\n.mdi-eight-track::before {\n  content: \"\\F09EA\";\n}\n\n.mdi-eject::before {\n  content: \"\\F01EA\";\n}\n\n.mdi-eject-outline::before {\n  content: \"\\F0B91\";\n}\n\n.mdi-electric-switch::before {\n  content: \"\\F0E9F\";\n}\n\n.mdi-electric-switch-closed::before {\n  content: \"\\F10D9\";\n}\n\n.mdi-electron-framework::before {\n  content: \"\\F1024\";\n}\n\n.mdi-elephant::before {\n  content: \"\\F07C6\";\n}\n\n.mdi-elevation-decline::before {\n  content: \"\\F01EB\";\n}\n\n.mdi-elevation-rise::before {\n  content: \"\\F01EC\";\n}\n\n.mdi-elevator::before {\n  content: \"\\F01ED\";\n}\n\n.mdi-elevator-down::before {\n  content: \"\\F12C2\";\n}\n\n.mdi-elevator-passenger::before {\n  content: \"\\F1381\";\n}\n\n.mdi-elevator-up::before {\n  content: \"\\F12C1\";\n}\n\n.mdi-ellipse::before {\n  content: \"\\F0EA0\";\n}\n\n.mdi-ellipse-outline::before {\n  content: \"\\F0EA1\";\n}\n\n.mdi-email::before {\n  content: \"\\F01EE\";\n}\n\n.mdi-email-alert::before {\n  content: \"\\F06CF\";\n}\n\n.mdi-email-alert-outline::before {\n  content: \"\\F0D42\";\n}\n\n.mdi-email-box::before {\n  content: \"\\F0D03\";\n}\n\n.mdi-email-check::before {\n  content: \"\\F0AB1\";\n}\n\n.mdi-email-check-outline::before {\n  content: \"\\F0AB2\";\n}\n\n.mdi-email-edit::before {\n  content: \"\\F0EE3\";\n}\n\n.mdi-email-edit-outline::before {\n  content: \"\\F0EE4\";\n}\n\n.mdi-email-lock::before {\n  content: \"\\F01F1\";\n}\n\n.mdi-email-mark-as-unread::before {\n  content: \"\\F0B92\";\n}\n\n.mdi-email-minus::before {\n  content: \"\\F0EE5\";\n}\n\n.mdi-email-minus-outline::before {\n  content: \"\\F0EE6\";\n}\n\n.mdi-email-multiple::before {\n  content: \"\\F0EE7\";\n}\n\n.mdi-email-multiple-outline::before {\n  content: \"\\F0EE8\";\n}\n\n.mdi-email-newsletter::before {\n  content: \"\\F0FB1\";\n}\n\n.mdi-email-off::before {\n  content: \"\\F13E3\";\n}\n\n.mdi-email-off-outline::before {\n  content: \"\\F13E4\";\n}\n\n.mdi-email-open::before {\n  content: \"\\F01EF\";\n}\n\n.mdi-email-open-multiple::before {\n  content: \"\\F0EE9\";\n}\n\n.mdi-email-open-multiple-outline::before {\n  content: \"\\F0EEA\";\n}\n\n.mdi-email-open-outline::before {\n  content: \"\\F05EF\";\n}\n\n.mdi-email-outline::before {\n  content: \"\\F01F0\";\n}\n\n.mdi-email-plus::before {\n  content: \"\\F09EB\";\n}\n\n.mdi-email-plus-outline::before {\n  content: \"\\F09EC\";\n}\n\n.mdi-email-receive::before {\n  content: \"\\F10DA\";\n}\n\n.mdi-email-receive-outline::before {\n  content: \"\\F10DB\";\n}\n\n.mdi-email-search::before {\n  content: \"\\F0961\";\n}\n\n.mdi-email-search-outline::before {\n  content: \"\\F0962\";\n}\n\n.mdi-email-send::before {\n  content: \"\\F10DC\";\n}\n\n.mdi-email-send-outline::before {\n  content: \"\\F10DD\";\n}\n\n.mdi-email-sync::before {\n  content: \"\\F12C7\";\n}\n\n.mdi-email-sync-outline::before {\n  content: \"\\F12C8\";\n}\n\n.mdi-email-variant::before {\n  content: \"\\F05F0\";\n}\n\n.mdi-ember::before {\n  content: \"\\F0B30\";\n}\n\n.mdi-emby::before {\n  content: \"\\F06B4\";\n}\n\n.mdi-emoticon::before {\n  content: \"\\F0C68\";\n}\n\n.mdi-emoticon-angry::before {\n  content: \"\\F0C69\";\n}\n\n.mdi-emoticon-angry-outline::before {\n  content: \"\\F0C6A\";\n}\n\n.mdi-emoticon-confused::before {\n  content: \"\\F10DE\";\n}\n\n.mdi-emoticon-confused-outline::before {\n  content: \"\\F10DF\";\n}\n\n.mdi-emoticon-cool::before {\n  content: \"\\F0C6B\";\n}\n\n.mdi-emoticon-cool-outline::before {\n  content: \"\\F01F3\";\n}\n\n.mdi-emoticon-cry::before {\n  content: \"\\F0C6C\";\n}\n\n.mdi-emoticon-cry-outline::before {\n  content: \"\\F0C6D\";\n}\n\n.mdi-emoticon-dead::before {\n  content: \"\\F0C6E\";\n}\n\n.mdi-emoticon-dead-outline::before {\n  content: \"\\F069B\";\n}\n\n.mdi-emoticon-devil::before {\n  content: \"\\F0C6F\";\n}\n\n.mdi-emoticon-devil-outline::before {\n  content: \"\\F01F4\";\n}\n\n.mdi-emoticon-excited::before {\n  content: \"\\F0C70\";\n}\n\n.mdi-emoticon-excited-outline::before {\n  content: \"\\F069C\";\n}\n\n.mdi-emoticon-frown::before {\n  content: \"\\F0F4C\";\n}\n\n.mdi-emoticon-frown-outline::before {\n  content: \"\\F0F4D\";\n}\n\n.mdi-emoticon-happy::before {\n  content: \"\\F0C71\";\n}\n\n.mdi-emoticon-happy-outline::before {\n  content: \"\\F01F5\";\n}\n\n.mdi-emoticon-kiss::before {\n  content: \"\\F0C72\";\n}\n\n.mdi-emoticon-kiss-outline::before {\n  content: \"\\F0C73\";\n}\n\n.mdi-emoticon-lol::before {\n  content: \"\\F1214\";\n}\n\n.mdi-emoticon-lol-outline::before {\n  content: \"\\F1215\";\n}\n\n.mdi-emoticon-neutral::before {\n  content: \"\\F0C74\";\n}\n\n.mdi-emoticon-neutral-outline::before {\n  content: \"\\F01F6\";\n}\n\n.mdi-emoticon-outline::before {\n  content: \"\\F01F2\";\n}\n\n.mdi-emoticon-poop::before {\n  content: \"\\F01F7\";\n}\n\n.mdi-emoticon-poop-outline::before {\n  content: \"\\F0C75\";\n}\n\n.mdi-emoticon-sad::before {\n  content: \"\\F0C76\";\n}\n\n.mdi-emoticon-sad-outline::before {\n  content: \"\\F01F8\";\n}\n\n.mdi-emoticon-tongue::before {\n  content: \"\\F01F9\";\n}\n\n.mdi-emoticon-tongue-outline::before {\n  content: \"\\F0C77\";\n}\n\n.mdi-emoticon-wink::before {\n  content: \"\\F0C78\";\n}\n\n.mdi-emoticon-wink-outline::before {\n  content: \"\\F0C79\";\n}\n\n.mdi-engine::before {\n  content: \"\\F01FA\";\n}\n\n.mdi-engine-off::before {\n  content: \"\\F0A46\";\n}\n\n.mdi-engine-off-outline::before {\n  content: \"\\F0A47\";\n}\n\n.mdi-engine-outline::before {\n  content: \"\\F01FB\";\n}\n\n.mdi-epsilon::before {\n  content: \"\\F10E0\";\n}\n\n.mdi-equal::before {\n  content: \"\\F01FC\";\n}\n\n.mdi-equal-box::before {\n  content: \"\\F01FD\";\n}\n\n.mdi-equalizer::before {\n  content: \"\\F0EA2\";\n}\n\n.mdi-equalizer-outline::before {\n  content: \"\\F0EA3\";\n}\n\n.mdi-eraser::before {\n  content: \"\\F01FE\";\n}\n\n.mdi-eraser-variant::before {\n  content: \"\\F0642\";\n}\n\n.mdi-escalator::before {\n  content: \"\\F01FF\";\n}\n\n.mdi-escalator-box::before {\n  content: \"\\F1399\";\n}\n\n.mdi-escalator-down::before {\n  content: \"\\F12C0\";\n}\n\n.mdi-escalator-up::before {\n  content: \"\\F12BF\";\n}\n\n.mdi-eslint::before {\n  content: \"\\F0C7A\";\n}\n\n.mdi-et::before {\n  content: \"\\F0AB3\";\n}\n\n.mdi-ethereum::before {\n  content: \"\\F086A\";\n}\n\n.mdi-ethernet::before {\n  content: \"\\F0200\";\n}\n\n.mdi-ethernet-cable::before {\n  content: \"\\F0201\";\n}\n\n.mdi-ethernet-cable-off::before {\n  content: \"\\F0202\";\n}\n\n.mdi-ev-plug-ccs1::before {\n  content: \"\\F1519\";\n}\n\n.mdi-ev-plug-ccs2::before {\n  content: \"\\F151A\";\n}\n\n.mdi-ev-plug-chademo::before {\n  content: \"\\F151B\";\n}\n\n.mdi-ev-plug-tesla::before {\n  content: \"\\F151C\";\n}\n\n.mdi-ev-plug-type1::before {\n  content: \"\\F151D\";\n}\n\n.mdi-ev-plug-type2::before {\n  content: \"\\F151E\";\n}\n\n.mdi-ev-station::before {\n  content: \"\\F05F1\";\n}\n\n.mdi-evernote::before {\n  content: \"\\F0204\";\n}\n\n.mdi-excavator::before {\n  content: \"\\F1025\";\n}\n\n.mdi-exclamation::before {\n  content: \"\\F0205\";\n}\n\n.mdi-exclamation-thick::before {\n  content: \"\\F1238\";\n}\n\n.mdi-exit-run::before {\n  content: \"\\F0A48\";\n}\n\n.mdi-exit-to-app::before {\n  content: \"\\F0206\";\n}\n\n.mdi-expand-all::before {\n  content: \"\\F0AB4\";\n}\n\n.mdi-expand-all-outline::before {\n  content: \"\\F0AB5\";\n}\n\n.mdi-expansion-card::before {\n  content: \"\\F08AE\";\n}\n\n.mdi-expansion-card-variant::before {\n  content: \"\\F0FB2\";\n}\n\n.mdi-exponent::before {\n  content: \"\\F0963\";\n}\n\n.mdi-exponent-box::before {\n  content: \"\\F0964\";\n}\n\n.mdi-export::before {\n  content: \"\\F0207\";\n}\n\n.mdi-export-variant::before {\n  content: \"\\F0B93\";\n}\n\n.mdi-eye::before {\n  content: \"\\F0208\";\n}\n\n.mdi-eye-check::before {\n  content: \"\\F0D04\";\n}\n\n.mdi-eye-check-outline::before {\n  content: \"\\F0D05\";\n}\n\n.mdi-eye-circle::before {\n  content: \"\\F0B94\";\n}\n\n.mdi-eye-circle-outline::before {\n  content: \"\\F0B95\";\n}\n\n.mdi-eye-minus::before {\n  content: \"\\F1026\";\n}\n\n.mdi-eye-minus-outline::before {\n  content: \"\\F1027\";\n}\n\n.mdi-eye-off::before {\n  content: \"\\F0209\";\n}\n\n.mdi-eye-off-outline::before {\n  content: \"\\F06D1\";\n}\n\n.mdi-eye-outline::before {\n  content: \"\\F06D0\";\n}\n\n.mdi-eye-plus::before {\n  content: \"\\F086B\";\n}\n\n.mdi-eye-plus-outline::before {\n  content: \"\\F086C\";\n}\n\n.mdi-eye-settings::before {\n  content: \"\\F086D\";\n}\n\n.mdi-eye-settings-outline::before {\n  content: \"\\F086E\";\n}\n\n.mdi-eyedropper::before {\n  content: \"\\F020A\";\n}\n\n.mdi-eyedropper-minus::before {\n  content: \"\\F13DD\";\n}\n\n.mdi-eyedropper-off::before {\n  content: \"\\F13DF\";\n}\n\n.mdi-eyedropper-plus::before {\n  content: \"\\F13DC\";\n}\n\n.mdi-eyedropper-remove::before {\n  content: \"\\F13DE\";\n}\n\n.mdi-eyedropper-variant::before {\n  content: \"\\F020B\";\n}\n\n.mdi-face::before {\n  content: \"\\F0643\";\n}\n\n.mdi-face-agent::before {\n  content: \"\\F0D70\";\n}\n\n.mdi-face-outline::before {\n  content: \"\\F0B96\";\n}\n\n.mdi-face-profile::before {\n  content: \"\\F0644\";\n}\n\n.mdi-face-profile-woman::before {\n  content: \"\\F1076\";\n}\n\n.mdi-face-recognition::before {\n  content: \"\\F0C7B\";\n}\n\n.mdi-face-woman::before {\n  content: \"\\F1077\";\n}\n\n.mdi-face-woman-outline::before {\n  content: \"\\F1078\";\n}\n\n.mdi-facebook::before {\n  content: \"\\F020C\";\n}\n\n.mdi-facebook-gaming::before {\n  content: \"\\F07DD\";\n}\n\n.mdi-facebook-messenger::before {\n  content: \"\\F020E\";\n}\n\n.mdi-facebook-workplace::before {\n  content: \"\\F0B31\";\n}\n\n.mdi-factory::before {\n  content: \"\\F020F\";\n}\n\n.mdi-fan::before {\n  content: \"\\F0210\";\n}\n\n.mdi-fan-alert::before {\n  content: \"\\F146C\";\n}\n\n.mdi-fan-chevron-down::before {\n  content: \"\\F146D\";\n}\n\n.mdi-fan-chevron-up::before {\n  content: \"\\F146E\";\n}\n\n.mdi-fan-minus::before {\n  content: \"\\F1470\";\n}\n\n.mdi-fan-off::before {\n  content: \"\\F081D\";\n}\n\n.mdi-fan-plus::before {\n  content: \"\\F146F\";\n}\n\n.mdi-fan-remove::before {\n  content: \"\\F1471\";\n}\n\n.mdi-fan-speed-1::before {\n  content: \"\\F1472\";\n}\n\n.mdi-fan-speed-2::before {\n  content: \"\\F1473\";\n}\n\n.mdi-fan-speed-3::before {\n  content: \"\\F1474\";\n}\n\n.mdi-fast-forward::before {\n  content: \"\\F0211\";\n}\n\n.mdi-fast-forward-10::before {\n  content: \"\\F0D71\";\n}\n\n.mdi-fast-forward-30::before {\n  content: \"\\F0D06\";\n}\n\n.mdi-fast-forward-5::before {\n  content: \"\\F11F8\";\n}\n\n.mdi-fast-forward-outline::before {\n  content: \"\\F06D2\";\n}\n\n.mdi-fax::before {\n  content: \"\\F0212\";\n}\n\n.mdi-feather::before {\n  content: \"\\F06D3\";\n}\n\n.mdi-feature-search::before {\n  content: \"\\F0A49\";\n}\n\n.mdi-feature-search-outline::before {\n  content: \"\\F0A4A\";\n}\n\n.mdi-fedora::before {\n  content: \"\\F08DB\";\n}\n\n.mdi-fencing::before {\n  content: \"\\F14C1\";\n}\n\n.mdi-ferris-wheel::before {\n  content: \"\\F0EA4\";\n}\n\n.mdi-ferry::before {\n  content: \"\\F0213\";\n}\n\n.mdi-file::before {\n  content: \"\\F0214\";\n}\n\n.mdi-file-account::before {\n  content: \"\\F073B\";\n}\n\n.mdi-file-account-outline::before {\n  content: \"\\F1028\";\n}\n\n.mdi-file-alert::before {\n  content: \"\\F0A4B\";\n}\n\n.mdi-file-alert-outline::before {\n  content: \"\\F0A4C\";\n}\n\n.mdi-file-cabinet::before {\n  content: \"\\F0AB6\";\n}\n\n.mdi-file-cad::before {\n  content: \"\\F0EEB\";\n}\n\n.mdi-file-cad-box::before {\n  content: \"\\F0EEC\";\n}\n\n.mdi-file-cancel::before {\n  content: \"\\F0DC6\";\n}\n\n.mdi-file-cancel-outline::before {\n  content: \"\\F0DC7\";\n}\n\n.mdi-file-certificate::before {\n  content: \"\\F1186\";\n}\n\n.mdi-file-certificate-outline::before {\n  content: \"\\F1187\";\n}\n\n.mdi-file-chart::before {\n  content: \"\\F0215\";\n}\n\n.mdi-file-chart-outline::before {\n  content: \"\\F1029\";\n}\n\n.mdi-file-check::before {\n  content: \"\\F0216\";\n}\n\n.mdi-file-check-outline::before {\n  content: \"\\F0E29\";\n}\n\n.mdi-file-clock::before {\n  content: \"\\F12E1\";\n}\n\n.mdi-file-clock-outline::before {\n  content: \"\\F12E2\";\n}\n\n.mdi-file-cloud::before {\n  content: \"\\F0217\";\n}\n\n.mdi-file-cloud-outline::before {\n  content: \"\\F102A\";\n}\n\n.mdi-file-code::before {\n  content: \"\\F022E\";\n}\n\n.mdi-file-code-outline::before {\n  content: \"\\F102B\";\n}\n\n.mdi-file-cog::before {\n  content: \"\\F107B\";\n}\n\n.mdi-file-cog-outline::before {\n  content: \"\\F107C\";\n}\n\n.mdi-file-compare::before {\n  content: \"\\F08AA\";\n}\n\n.mdi-file-delimited::before {\n  content: \"\\F0218\";\n}\n\n.mdi-file-delimited-outline::before {\n  content: \"\\F0EA5\";\n}\n\n.mdi-file-document::before {\n  content: \"\\F0219\";\n}\n\n.mdi-file-document-edit::before {\n  content: \"\\F0DC8\";\n}\n\n.mdi-file-document-edit-outline::before {\n  content: \"\\F0DC9\";\n}\n\n.mdi-file-document-multiple::before {\n  content: \"\\F1517\";\n}\n\n.mdi-file-document-multiple-outline::before {\n  content: \"\\F1518\";\n}\n\n.mdi-file-document-outline::before {\n  content: \"\\F09EE\";\n}\n\n.mdi-file-download::before {\n  content: \"\\F0965\";\n}\n\n.mdi-file-download-outline::before {\n  content: \"\\F0966\";\n}\n\n.mdi-file-edit::before {\n  content: \"\\F11E7\";\n}\n\n.mdi-file-edit-outline::before {\n  content: \"\\F11E8\";\n}\n\n.mdi-file-excel::before {\n  content: \"\\F021B\";\n}\n\n.mdi-file-excel-box::before {\n  content: \"\\F021C\";\n}\n\n.mdi-file-excel-box-outline::before {\n  content: \"\\F102C\";\n}\n\n.mdi-file-excel-outline::before {\n  content: \"\\F102D\";\n}\n\n.mdi-file-export::before {\n  content: \"\\F021D\";\n}\n\n.mdi-file-export-outline::before {\n  content: \"\\F102E\";\n}\n\n.mdi-file-eye::before {\n  content: \"\\F0DCA\";\n}\n\n.mdi-file-eye-outline::before {\n  content: \"\\F0DCB\";\n}\n\n.mdi-file-find::before {\n  content: \"\\F021E\";\n}\n\n.mdi-file-find-outline::before {\n  content: \"\\F0B97\";\n}\n\n.mdi-file-hidden::before {\n  content: \"\\F0613\";\n}\n\n.mdi-file-image::before {\n  content: \"\\F021F\";\n}\n\n.mdi-file-image-outline::before {\n  content: \"\\F0EB0\";\n}\n\n.mdi-file-import::before {\n  content: \"\\F0220\";\n}\n\n.mdi-file-import-outline::before {\n  content: \"\\F102F\";\n}\n\n.mdi-file-key::before {\n  content: \"\\F1184\";\n}\n\n.mdi-file-key-outline::before {\n  content: \"\\F1185\";\n}\n\n.mdi-file-link::before {\n  content: \"\\F1177\";\n}\n\n.mdi-file-link-outline::before {\n  content: \"\\F1178\";\n}\n\n.mdi-file-lock::before {\n  content: \"\\F0221\";\n}\n\n.mdi-file-lock-outline::before {\n  content: \"\\F1030\";\n}\n\n.mdi-file-move::before {\n  content: \"\\F0AB9\";\n}\n\n.mdi-file-move-outline::before {\n  content: \"\\F1031\";\n}\n\n.mdi-file-multiple::before {\n  content: \"\\F0222\";\n}\n\n.mdi-file-multiple-outline::before {\n  content: \"\\F1032\";\n}\n\n.mdi-file-music::before {\n  content: \"\\F0223\";\n}\n\n.mdi-file-music-outline::before {\n  content: \"\\F0E2A\";\n}\n\n.mdi-file-outline::before {\n  content: \"\\F0224\";\n}\n\n.mdi-file-pdf::before {\n  content: \"\\F0225\";\n}\n\n.mdi-file-pdf-box::before {\n  content: \"\\F0226\";\n}\n\n.mdi-file-pdf-box-outline::before {\n  content: \"\\F0FB3\";\n}\n\n.mdi-file-pdf-outline::before {\n  content: \"\\F0E2D\";\n}\n\n.mdi-file-percent::before {\n  content: \"\\F081E\";\n}\n\n.mdi-file-percent-outline::before {\n  content: \"\\F1033\";\n}\n\n.mdi-file-phone::before {\n  content: \"\\F1179\";\n}\n\n.mdi-file-phone-outline::before {\n  content: \"\\F117A\";\n}\n\n.mdi-file-plus::before {\n  content: \"\\F0752\";\n}\n\n.mdi-file-plus-outline::before {\n  content: \"\\F0EED\";\n}\n\n.mdi-file-powerpoint::before {\n  content: \"\\F0227\";\n}\n\n.mdi-file-powerpoint-box::before {\n  content: \"\\F0228\";\n}\n\n.mdi-file-powerpoint-box-outline::before {\n  content: \"\\F1034\";\n}\n\n.mdi-file-powerpoint-outline::before {\n  content: \"\\F1035\";\n}\n\n.mdi-file-presentation-box::before {\n  content: \"\\F0229\";\n}\n\n.mdi-file-question::before {\n  content: \"\\F086F\";\n}\n\n.mdi-file-question-outline::before {\n  content: \"\\F1036\";\n}\n\n.mdi-file-refresh::before {\n  content: \"\\F0918\";\n}\n\n.mdi-file-refresh-outline::before {\n  content: \"\\F0541\";\n}\n\n.mdi-file-remove::before {\n  content: \"\\F0B98\";\n}\n\n.mdi-file-remove-outline::before {\n  content: \"\\F1037\";\n}\n\n.mdi-file-replace::before {\n  content: \"\\F0B32\";\n}\n\n.mdi-file-replace-outline::before {\n  content: \"\\F0B33\";\n}\n\n.mdi-file-restore::before {\n  content: \"\\F0670\";\n}\n\n.mdi-file-restore-outline::before {\n  content: \"\\F1038\";\n}\n\n.mdi-file-search::before {\n  content: \"\\F0C7C\";\n}\n\n.mdi-file-search-outline::before {\n  content: \"\\F0C7D\";\n}\n\n.mdi-file-send::before {\n  content: \"\\F022A\";\n}\n\n.mdi-file-send-outline::before {\n  content: \"\\F1039\";\n}\n\n.mdi-file-settings::before {\n  content: \"\\F1079\";\n}\n\n.mdi-file-settings-outline::before {\n  content: \"\\F107A\";\n}\n\n.mdi-file-star::before {\n  content: \"\\F103A\";\n}\n\n.mdi-file-star-outline::before {\n  content: \"\\F103B\";\n}\n\n.mdi-file-swap::before {\n  content: \"\\F0FB4\";\n}\n\n.mdi-file-swap-outline::before {\n  content: \"\\F0FB5\";\n}\n\n.mdi-file-sync::before {\n  content: \"\\F1216\";\n}\n\n.mdi-file-sync-outline::before {\n  content: \"\\F1217\";\n}\n\n.mdi-file-table::before {\n  content: \"\\F0C7E\";\n}\n\n.mdi-file-table-box::before {\n  content: \"\\F10E1\";\n}\n\n.mdi-file-table-box-multiple::before {\n  content: \"\\F10E2\";\n}\n\n.mdi-file-table-box-multiple-outline::before {\n  content: \"\\F10E3\";\n}\n\n.mdi-file-table-box-outline::before {\n  content: \"\\F10E4\";\n}\n\n.mdi-file-table-outline::before {\n  content: \"\\F0C7F\";\n}\n\n.mdi-file-tree::before {\n  content: \"\\F0645\";\n}\n\n.mdi-file-tree-outline::before {\n  content: \"\\F13D2\";\n}\n\n.mdi-file-undo::before {\n  content: \"\\F08DC\";\n}\n\n.mdi-file-undo-outline::before {\n  content: \"\\F103C\";\n}\n\n.mdi-file-upload::before {\n  content: \"\\F0A4D\";\n}\n\n.mdi-file-upload-outline::before {\n  content: \"\\F0A4E\";\n}\n\n.mdi-file-video::before {\n  content: \"\\F022B\";\n}\n\n.mdi-file-video-outline::before {\n  content: \"\\F0E2C\";\n}\n\n.mdi-file-word::before {\n  content: \"\\F022C\";\n}\n\n.mdi-file-word-box::before {\n  content: \"\\F022D\";\n}\n\n.mdi-file-word-box-outline::before {\n  content: \"\\F103D\";\n}\n\n.mdi-file-word-outline::before {\n  content: \"\\F103E\";\n}\n\n.mdi-film::before {\n  content: \"\\F022F\";\n}\n\n.mdi-filmstrip::before {\n  content: \"\\F0230\";\n}\n\n.mdi-filmstrip-box::before {\n  content: \"\\F0332\";\n}\n\n.mdi-filmstrip-box-multiple::before {\n  content: \"\\F0D18\";\n}\n\n.mdi-filmstrip-off::before {\n  content: \"\\F0231\";\n}\n\n.mdi-filter::before {\n  content: \"\\F0232\";\n}\n\n.mdi-filter-menu::before {\n  content: \"\\F10E5\";\n}\n\n.mdi-filter-menu-outline::before {\n  content: \"\\F10E6\";\n}\n\n.mdi-filter-minus::before {\n  content: \"\\F0EEE\";\n}\n\n.mdi-filter-minus-outline::before {\n  content: \"\\F0EEF\";\n}\n\n.mdi-filter-off::before {\n  content: \"\\F14EF\";\n}\n\n.mdi-filter-off-outline::before {\n  content: \"\\F14F0\";\n}\n\n.mdi-filter-outline::before {\n  content: \"\\F0233\";\n}\n\n.mdi-filter-plus::before {\n  content: \"\\F0EF0\";\n}\n\n.mdi-filter-plus-outline::before {\n  content: \"\\F0EF1\";\n}\n\n.mdi-filter-remove::before {\n  content: \"\\F0234\";\n}\n\n.mdi-filter-remove-outline::before {\n  content: \"\\F0235\";\n}\n\n.mdi-filter-variant::before {\n  content: \"\\F0236\";\n}\n\n.mdi-filter-variant-minus::before {\n  content: \"\\F1112\";\n}\n\n.mdi-filter-variant-plus::before {\n  content: \"\\F1113\";\n}\n\n.mdi-filter-variant-remove::before {\n  content: \"\\F103F\";\n}\n\n.mdi-finance::before {\n  content: \"\\F081F\";\n}\n\n.mdi-find-replace::before {\n  content: \"\\F06D4\";\n}\n\n.mdi-fingerprint::before {\n  content: \"\\F0237\";\n}\n\n.mdi-fingerprint-off::before {\n  content: \"\\F0EB1\";\n}\n\n.mdi-fire::before {\n  content: \"\\F0238\";\n}\n\n.mdi-fire-extinguisher::before {\n  content: \"\\F0EF2\";\n}\n\n.mdi-fire-hydrant::before {\n  content: \"\\F1137\";\n}\n\n.mdi-fire-hydrant-alert::before {\n  content: \"\\F1138\";\n}\n\n.mdi-fire-hydrant-off::before {\n  content: \"\\F1139\";\n}\n\n.mdi-fire-truck::before {\n  content: \"\\F08AB\";\n}\n\n.mdi-firebase::before {\n  content: \"\\F0967\";\n}\n\n.mdi-firefox::before {\n  content: \"\\F0239\";\n}\n\n.mdi-fireplace::before {\n  content: \"\\F0E2E\";\n}\n\n.mdi-fireplace-off::before {\n  content: \"\\F0E2F\";\n}\n\n.mdi-firework::before {\n  content: \"\\F0E30\";\n}\n\n.mdi-fish::before {\n  content: \"\\F023A\";\n}\n\n.mdi-fish-off::before {\n  content: \"\\F13F3\";\n}\n\n.mdi-fishbowl::before {\n  content: \"\\F0EF3\";\n}\n\n.mdi-fishbowl-outline::before {\n  content: \"\\F0EF4\";\n}\n\n.mdi-fit-to-page::before {\n  content: \"\\F0EF5\";\n}\n\n.mdi-fit-to-page-outline::before {\n  content: \"\\F0EF6\";\n}\n\n.mdi-flag::before {\n  content: \"\\F023B\";\n}\n\n.mdi-flag-checkered::before {\n  content: \"\\F023C\";\n}\n\n.mdi-flag-minus::before {\n  content: \"\\F0B99\";\n}\n\n.mdi-flag-minus-outline::before {\n  content: \"\\F10B2\";\n}\n\n.mdi-flag-outline::before {\n  content: \"\\F023D\";\n}\n\n.mdi-flag-plus::before {\n  content: \"\\F0B9A\";\n}\n\n.mdi-flag-plus-outline::before {\n  content: \"\\F10B3\";\n}\n\n.mdi-flag-remove::before {\n  content: \"\\F0B9B\";\n}\n\n.mdi-flag-remove-outline::before {\n  content: \"\\F10B4\";\n}\n\n.mdi-flag-triangle::before {\n  content: \"\\F023F\";\n}\n\n.mdi-flag-variant::before {\n  content: \"\\F0240\";\n}\n\n.mdi-flag-variant-outline::before {\n  content: \"\\F023E\";\n}\n\n.mdi-flare::before {\n  content: \"\\F0D72\";\n}\n\n.mdi-flash::before {\n  content: \"\\F0241\";\n}\n\n.mdi-flash-alert::before {\n  content: \"\\F0EF7\";\n}\n\n.mdi-flash-alert-outline::before {\n  content: \"\\F0EF8\";\n}\n\n.mdi-flash-auto::before {\n  content: \"\\F0242\";\n}\n\n.mdi-flash-circle::before {\n  content: \"\\F0820\";\n}\n\n.mdi-flash-off::before {\n  content: \"\\F0243\";\n}\n\n.mdi-flash-outline::before {\n  content: \"\\F06D5\";\n}\n\n.mdi-flash-red-eye::before {\n  content: \"\\F067B\";\n}\n\n.mdi-flashlight::before {\n  content: \"\\F0244\";\n}\n\n.mdi-flashlight-off::before {\n  content: \"\\F0245\";\n}\n\n.mdi-flask::before {\n  content: \"\\F0093\";\n}\n\n.mdi-flask-empty::before {\n  content: \"\\F0094\";\n}\n\n.mdi-flask-empty-minus::before {\n  content: \"\\F123A\";\n}\n\n.mdi-flask-empty-minus-outline::before {\n  content: \"\\F123B\";\n}\n\n.mdi-flask-empty-off::before {\n  content: \"\\F13F4\";\n}\n\n.mdi-flask-empty-off-outline::before {\n  content: \"\\F13F5\";\n}\n\n.mdi-flask-empty-outline::before {\n  content: \"\\F0095\";\n}\n\n.mdi-flask-empty-plus::before {\n  content: \"\\F123C\";\n}\n\n.mdi-flask-empty-plus-outline::before {\n  content: \"\\F123D\";\n}\n\n.mdi-flask-empty-remove::before {\n  content: \"\\F123E\";\n}\n\n.mdi-flask-empty-remove-outline::before {\n  content: \"\\F123F\";\n}\n\n.mdi-flask-minus::before {\n  content: \"\\F1240\";\n}\n\n.mdi-flask-minus-outline::before {\n  content: \"\\F1241\";\n}\n\n.mdi-flask-off::before {\n  content: \"\\F13F6\";\n}\n\n.mdi-flask-off-outline::before {\n  content: \"\\F13F7\";\n}\n\n.mdi-flask-outline::before {\n  content: \"\\F0096\";\n}\n\n.mdi-flask-plus::before {\n  content: \"\\F1242\";\n}\n\n.mdi-flask-plus-outline::before {\n  content: \"\\F1243\";\n}\n\n.mdi-flask-remove::before {\n  content: \"\\F1244\";\n}\n\n.mdi-flask-remove-outline::before {\n  content: \"\\F1245\";\n}\n\n.mdi-flask-round-bottom::before {\n  content: \"\\F124B\";\n}\n\n.mdi-flask-round-bottom-empty::before {\n  content: \"\\F124C\";\n}\n\n.mdi-flask-round-bottom-empty-outline::before {\n  content: \"\\F124D\";\n}\n\n.mdi-flask-round-bottom-outline::before {\n  content: \"\\F124E\";\n}\n\n.mdi-fleur-de-lis::before {\n  content: \"\\F1303\";\n}\n\n.mdi-flip-horizontal::before {\n  content: \"\\F10E7\";\n}\n\n.mdi-flip-to-back::before {\n  content: \"\\F0247\";\n}\n\n.mdi-flip-to-front::before {\n  content: \"\\F0248\";\n}\n\n.mdi-flip-vertical::before {\n  content: \"\\F10E8\";\n}\n\n.mdi-floor-lamp::before {\n  content: \"\\F08DD\";\n}\n\n.mdi-floor-lamp-dual::before {\n  content: \"\\F1040\";\n}\n\n.mdi-floor-lamp-variant::before {\n  content: \"\\F1041\";\n}\n\n.mdi-floor-plan::before {\n  content: \"\\F0821\";\n}\n\n.mdi-floppy::before {\n  content: \"\\F0249\";\n}\n\n.mdi-floppy-variant::before {\n  content: \"\\F09EF\";\n}\n\n.mdi-flower::before {\n  content: \"\\F024A\";\n}\n\n.mdi-flower-outline::before {\n  content: \"\\F09F0\";\n}\n\n.mdi-flower-poppy::before {\n  content: \"\\F0D08\";\n}\n\n.mdi-flower-tulip::before {\n  content: \"\\F09F1\";\n}\n\n.mdi-flower-tulip-outline::before {\n  content: \"\\F09F2\";\n}\n\n.mdi-focus-auto::before {\n  content: \"\\F0F4E\";\n}\n\n.mdi-focus-field::before {\n  content: \"\\F0F4F\";\n}\n\n.mdi-focus-field-horizontal::before {\n  content: \"\\F0F50\";\n}\n\n.mdi-focus-field-vertical::before {\n  content: \"\\F0F51\";\n}\n\n.mdi-folder::before {\n  content: \"\\F024B\";\n}\n\n.mdi-folder-account::before {\n  content: \"\\F024C\";\n}\n\n.mdi-folder-account-outline::before {\n  content: \"\\F0B9C\";\n}\n\n.mdi-folder-alert::before {\n  content: \"\\F0DCC\";\n}\n\n.mdi-folder-alert-outline::before {\n  content: \"\\F0DCD\";\n}\n\n.mdi-folder-clock::before {\n  content: \"\\F0ABA\";\n}\n\n.mdi-folder-clock-outline::before {\n  content: \"\\F0ABB\";\n}\n\n.mdi-folder-cog::before {\n  content: \"\\F107F\";\n}\n\n.mdi-folder-cog-outline::before {\n  content: \"\\F1080\";\n}\n\n.mdi-folder-download::before {\n  content: \"\\F024D\";\n}\n\n.mdi-folder-download-outline::before {\n  content: \"\\F10E9\";\n}\n\n.mdi-folder-edit::before {\n  content: \"\\F08DE\";\n}\n\n.mdi-folder-edit-outline::before {\n  content: \"\\F0DCE\";\n}\n\n.mdi-folder-google-drive::before {\n  content: \"\\F024E\";\n}\n\n.mdi-folder-heart::before {\n  content: \"\\F10EA\";\n}\n\n.mdi-folder-heart-outline::before {\n  content: \"\\F10EB\";\n}\n\n.mdi-folder-home::before {\n  content: \"\\F10B5\";\n}\n\n.mdi-folder-home-outline::before {\n  content: \"\\F10B6\";\n}\n\n.mdi-folder-image::before {\n  content: \"\\F024F\";\n}\n\n.mdi-folder-information::before {\n  content: \"\\F10B7\";\n}\n\n.mdi-folder-information-outline::before {\n  content: \"\\F10B8\";\n}\n\n.mdi-folder-key::before {\n  content: \"\\F08AC\";\n}\n\n.mdi-folder-key-network::before {\n  content: \"\\F08AD\";\n}\n\n.mdi-folder-key-network-outline::before {\n  content: \"\\F0C80\";\n}\n\n.mdi-folder-key-outline::before {\n  content: \"\\F10EC\";\n}\n\n.mdi-folder-lock::before {\n  content: \"\\F0250\";\n}\n\n.mdi-folder-lock-open::before {\n  content: \"\\F0251\";\n}\n\n.mdi-folder-marker::before {\n  content: \"\\F126D\";\n}\n\n.mdi-folder-marker-outline::before {\n  content: \"\\F126E\";\n}\n\n.mdi-folder-move::before {\n  content: \"\\F0252\";\n}\n\n.mdi-folder-move-outline::before {\n  content: \"\\F1246\";\n}\n\n.mdi-folder-multiple::before {\n  content: \"\\F0253\";\n}\n\n.mdi-folder-multiple-image::before {\n  content: \"\\F0254\";\n}\n\n.mdi-folder-multiple-outline::before {\n  content: \"\\F0255\";\n}\n\n.mdi-folder-multiple-plus::before {\n  content: \"\\F147E\";\n}\n\n.mdi-folder-multiple-plus-outline::before {\n  content: \"\\F147F\";\n}\n\n.mdi-folder-music::before {\n  content: \"\\F1359\";\n}\n\n.mdi-folder-music-outline::before {\n  content: \"\\F135A\";\n}\n\n.mdi-folder-network::before {\n  content: \"\\F0870\";\n}\n\n.mdi-folder-network-outline::before {\n  content: \"\\F0C81\";\n}\n\n.mdi-folder-open::before {\n  content: \"\\F0770\";\n}\n\n.mdi-folder-open-outline::before {\n  content: \"\\F0DCF\";\n}\n\n.mdi-folder-outline::before {\n  content: \"\\F0256\";\n}\n\n.mdi-folder-plus::before {\n  content: \"\\F0257\";\n}\n\n.mdi-folder-plus-outline::before {\n  content: \"\\F0B9D\";\n}\n\n.mdi-folder-pound::before {\n  content: \"\\F0D09\";\n}\n\n.mdi-folder-pound-outline::before {\n  content: \"\\F0D0A\";\n}\n\n.mdi-folder-refresh::before {\n  content: \"\\F0749\";\n}\n\n.mdi-folder-refresh-outline::before {\n  content: \"\\F0542\";\n}\n\n.mdi-folder-remove::before {\n  content: \"\\F0258\";\n}\n\n.mdi-folder-remove-outline::before {\n  content: \"\\F0B9E\";\n}\n\n.mdi-folder-search::before {\n  content: \"\\F0968\";\n}\n\n.mdi-folder-search-outline::before {\n  content: \"\\F0969\";\n}\n\n.mdi-folder-settings::before {\n  content: \"\\F107D\";\n}\n\n.mdi-folder-settings-outline::before {\n  content: \"\\F107E\";\n}\n\n.mdi-folder-star::before {\n  content: \"\\F069D\";\n}\n\n.mdi-folder-star-multiple::before {\n  content: \"\\F13D3\";\n}\n\n.mdi-folder-star-multiple-outline::before {\n  content: \"\\F13D4\";\n}\n\n.mdi-folder-star-outline::before {\n  content: \"\\F0B9F\";\n}\n\n.mdi-folder-swap::before {\n  content: \"\\F0FB6\";\n}\n\n.mdi-folder-swap-outline::before {\n  content: \"\\F0FB7\";\n}\n\n.mdi-folder-sync::before {\n  content: \"\\F0D0B\";\n}\n\n.mdi-folder-sync-outline::before {\n  content: \"\\F0D0C\";\n}\n\n.mdi-folder-table::before {\n  content: \"\\F12E3\";\n}\n\n.mdi-folder-table-outline::before {\n  content: \"\\F12E4\";\n}\n\n.mdi-folder-text::before {\n  content: \"\\F0C82\";\n}\n\n.mdi-folder-text-outline::before {\n  content: \"\\F0C83\";\n}\n\n.mdi-folder-upload::before {\n  content: \"\\F0259\";\n}\n\n.mdi-folder-upload-outline::before {\n  content: \"\\F10ED\";\n}\n\n.mdi-folder-zip::before {\n  content: \"\\F06EB\";\n}\n\n.mdi-folder-zip-outline::before {\n  content: \"\\F07B9\";\n}\n\n.mdi-font-awesome::before {\n  content: \"\\F003A\";\n}\n\n.mdi-food::before {\n  content: \"\\F025A\";\n}\n\n.mdi-food-apple::before {\n  content: \"\\F025B\";\n}\n\n.mdi-food-apple-outline::before {\n  content: \"\\F0C84\";\n}\n\n.mdi-food-croissant::before {\n  content: \"\\F07C8\";\n}\n\n.mdi-food-drumstick::before {\n  content: \"\\F141F\";\n}\n\n.mdi-food-drumstick-off::before {\n  content: \"\\F1468\";\n}\n\n.mdi-food-drumstick-off-outline::before {\n  content: \"\\F1469\";\n}\n\n.mdi-food-drumstick-outline::before {\n  content: \"\\F1420\";\n}\n\n.mdi-food-fork-drink::before {\n  content: \"\\F05F2\";\n}\n\n.mdi-food-off::before {\n  content: \"\\F05F3\";\n}\n\n.mdi-food-steak::before {\n  content: \"\\F146A\";\n}\n\n.mdi-food-steak-off::before {\n  content: \"\\F146B\";\n}\n\n.mdi-food-variant::before {\n  content: \"\\F025C\";\n}\n\n.mdi-food-variant-off::before {\n  content: \"\\F13E5\";\n}\n\n.mdi-foot-print::before {\n  content: \"\\F0F52\";\n}\n\n.mdi-football::before {\n  content: \"\\F025D\";\n}\n\n.mdi-football-australian::before {\n  content: \"\\F025E\";\n}\n\n.mdi-football-helmet::before {\n  content: \"\\F025F\";\n}\n\n.mdi-forklift::before {\n  content: \"\\F07C9\";\n}\n\n.mdi-form-dropdown::before {\n  content: \"\\F1400\";\n}\n\n.mdi-form-select::before {\n  content: \"\\F1401\";\n}\n\n.mdi-form-textarea::before {\n  content: \"\\F1095\";\n}\n\n.mdi-form-textbox::before {\n  content: \"\\F060E\";\n}\n\n.mdi-form-textbox-lock::before {\n  content: \"\\F135D\";\n}\n\n.mdi-form-textbox-password::before {\n  content: \"\\F07F5\";\n}\n\n.mdi-format-align-bottom::before {\n  content: \"\\F0753\";\n}\n\n.mdi-format-align-center::before {\n  content: \"\\F0260\";\n}\n\n.mdi-format-align-justify::before {\n  content: \"\\F0261\";\n}\n\n.mdi-format-align-left::before {\n  content: \"\\F0262\";\n}\n\n.mdi-format-align-middle::before {\n  content: \"\\F0754\";\n}\n\n.mdi-format-align-right::before {\n  content: \"\\F0263\";\n}\n\n.mdi-format-align-top::before {\n  content: \"\\F0755\";\n}\n\n.mdi-format-annotation-minus::before {\n  content: \"\\F0ABC\";\n}\n\n.mdi-format-annotation-plus::before {\n  content: \"\\F0646\";\n}\n\n.mdi-format-bold::before {\n  content: \"\\F0264\";\n}\n\n.mdi-format-clear::before {\n  content: \"\\F0265\";\n}\n\n.mdi-format-color-fill::before {\n  content: \"\\F0266\";\n}\n\n.mdi-format-color-highlight::before {\n  content: \"\\F0E31\";\n}\n\n.mdi-format-color-marker-cancel::before {\n  content: \"\\F1313\";\n}\n\n.mdi-format-color-text::before {\n  content: \"\\F069E\";\n}\n\n.mdi-format-columns::before {\n  content: \"\\F08DF\";\n}\n\n.mdi-format-float-center::before {\n  content: \"\\F0267\";\n}\n\n.mdi-format-float-left::before {\n  content: \"\\F0268\";\n}\n\n.mdi-format-float-none::before {\n  content: \"\\F0269\";\n}\n\n.mdi-format-float-right::before {\n  content: \"\\F026A\";\n}\n\n.mdi-format-font::before {\n  content: \"\\F06D6\";\n}\n\n.mdi-format-font-size-decrease::before {\n  content: \"\\F09F3\";\n}\n\n.mdi-format-font-size-increase::before {\n  content: \"\\F09F4\";\n}\n\n.mdi-format-header-1::before {\n  content: \"\\F026B\";\n}\n\n.mdi-format-header-2::before {\n  content: \"\\F026C\";\n}\n\n.mdi-format-header-3::before {\n  content: \"\\F026D\";\n}\n\n.mdi-format-header-4::before {\n  content: \"\\F026E\";\n}\n\n.mdi-format-header-5::before {\n  content: \"\\F026F\";\n}\n\n.mdi-format-header-6::before {\n  content: \"\\F0270\";\n}\n\n.mdi-format-header-decrease::before {\n  content: \"\\F0271\";\n}\n\n.mdi-format-header-equal::before {\n  content: \"\\F0272\";\n}\n\n.mdi-format-header-increase::before {\n  content: \"\\F0273\";\n}\n\n.mdi-format-header-pound::before {\n  content: \"\\F0274\";\n}\n\n.mdi-format-horizontal-align-center::before {\n  content: \"\\F061E\";\n}\n\n.mdi-format-horizontal-align-left::before {\n  content: \"\\F061F\";\n}\n\n.mdi-format-horizontal-align-right::before {\n  content: \"\\F0620\";\n}\n\n.mdi-format-indent-decrease::before {\n  content: \"\\F0275\";\n}\n\n.mdi-format-indent-increase::before {\n  content: \"\\F0276\";\n}\n\n.mdi-format-italic::before {\n  content: \"\\F0277\";\n}\n\n.mdi-format-letter-case::before {\n  content: \"\\F0B34\";\n}\n\n.mdi-format-letter-case-lower::before {\n  content: \"\\F0B35\";\n}\n\n.mdi-format-letter-case-upper::before {\n  content: \"\\F0B36\";\n}\n\n.mdi-format-letter-ends-with::before {\n  content: \"\\F0FB8\";\n}\n\n.mdi-format-letter-matches::before {\n  content: \"\\F0FB9\";\n}\n\n.mdi-format-letter-starts-with::before {\n  content: \"\\F0FBA\";\n}\n\n.mdi-format-line-spacing::before {\n  content: \"\\F0278\";\n}\n\n.mdi-format-line-style::before {\n  content: \"\\F05C8\";\n}\n\n.mdi-format-line-weight::before {\n  content: \"\\F05C9\";\n}\n\n.mdi-format-list-bulleted::before {\n  content: \"\\F0279\";\n}\n\n.mdi-format-list-bulleted-square::before {\n  content: \"\\F0DD0\";\n}\n\n.mdi-format-list-bulleted-triangle::before {\n  content: \"\\F0EB2\";\n}\n\n.mdi-format-list-bulleted-type::before {\n  content: \"\\F027A\";\n}\n\n.mdi-format-list-checkbox::before {\n  content: \"\\F096A\";\n}\n\n.mdi-format-list-checks::before {\n  content: \"\\F0756\";\n}\n\n.mdi-format-list-numbered::before {\n  content: \"\\F027B\";\n}\n\n.mdi-format-list-numbered-rtl::before {\n  content: \"\\F0D0D\";\n}\n\n.mdi-format-list-text::before {\n  content: \"\\F126F\";\n}\n\n.mdi-format-overline::before {\n  content: \"\\F0EB3\";\n}\n\n.mdi-format-page-break::before {\n  content: \"\\F06D7\";\n}\n\n.mdi-format-paint::before {\n  content: \"\\F027C\";\n}\n\n.mdi-format-paragraph::before {\n  content: \"\\F027D\";\n}\n\n.mdi-format-pilcrow::before {\n  content: \"\\F06D8\";\n}\n\n.mdi-format-quote-close::before {\n  content: \"\\F027E\";\n}\n\n.mdi-format-quote-close-outline::before {\n  content: \"\\F11A8\";\n}\n\n.mdi-format-quote-open::before {\n  content: \"\\F0757\";\n}\n\n.mdi-format-quote-open-outline::before {\n  content: \"\\F11A7\";\n}\n\n.mdi-format-rotate-90::before {\n  content: \"\\F06AA\";\n}\n\n.mdi-format-section::before {\n  content: \"\\F069F\";\n}\n\n.mdi-format-size::before {\n  content: \"\\F027F\";\n}\n\n.mdi-format-strikethrough::before {\n  content: \"\\F0280\";\n}\n\n.mdi-format-strikethrough-variant::before {\n  content: \"\\F0281\";\n}\n\n.mdi-format-subscript::before {\n  content: \"\\F0282\";\n}\n\n.mdi-format-superscript::before {\n  content: \"\\F0283\";\n}\n\n.mdi-format-text::before {\n  content: \"\\F0284\";\n}\n\n.mdi-format-text-rotation-angle-down::before {\n  content: \"\\F0FBB\";\n}\n\n.mdi-format-text-rotation-angle-up::before {\n  content: \"\\F0FBC\";\n}\n\n.mdi-format-text-rotation-down::before {\n  content: \"\\F0D73\";\n}\n\n.mdi-format-text-rotation-down-vertical::before {\n  content: \"\\F0FBD\";\n}\n\n.mdi-format-text-rotation-none::before {\n  content: \"\\F0D74\";\n}\n\n.mdi-format-text-rotation-up::before {\n  content: \"\\F0FBE\";\n}\n\n.mdi-format-text-rotation-vertical::before {\n  content: \"\\F0FBF\";\n}\n\n.mdi-format-text-variant::before {\n  content: \"\\F0E32\";\n}\n\n.mdi-format-text-variant-outline::before {\n  content: \"\\F150F\";\n}\n\n.mdi-format-text-wrapping-clip::before {\n  content: \"\\F0D0E\";\n}\n\n.mdi-format-text-wrapping-overflow::before {\n  content: \"\\F0D0F\";\n}\n\n.mdi-format-text-wrapping-wrap::before {\n  content: \"\\F0D10\";\n}\n\n.mdi-format-textbox::before {\n  content: \"\\F0D11\";\n}\n\n.mdi-format-textdirection-l-to-r::before {\n  content: \"\\F0285\";\n}\n\n.mdi-format-textdirection-r-to-l::before {\n  content: \"\\F0286\";\n}\n\n.mdi-format-title::before {\n  content: \"\\F05F4\";\n}\n\n.mdi-format-underline::before {\n  content: \"\\F0287\";\n}\n\n.mdi-format-vertical-align-bottom::before {\n  content: \"\\F0621\";\n}\n\n.mdi-format-vertical-align-center::before {\n  content: \"\\F0622\";\n}\n\n.mdi-format-vertical-align-top::before {\n  content: \"\\F0623\";\n}\n\n.mdi-format-wrap-inline::before {\n  content: \"\\F0288\";\n}\n\n.mdi-format-wrap-square::before {\n  content: \"\\F0289\";\n}\n\n.mdi-format-wrap-tight::before {\n  content: \"\\F028A\";\n}\n\n.mdi-format-wrap-top-bottom::before {\n  content: \"\\F028B\";\n}\n\n.mdi-forum::before {\n  content: \"\\F028C\";\n}\n\n.mdi-forum-outline::before {\n  content: \"\\F0822\";\n}\n\n.mdi-forward::before {\n  content: \"\\F028D\";\n}\n\n.mdi-forwardburger::before {\n  content: \"\\F0D75\";\n}\n\n.mdi-fountain::before {\n  content: \"\\F096B\";\n}\n\n.mdi-fountain-pen::before {\n  content: \"\\F0D12\";\n}\n\n.mdi-fountain-pen-tip::before {\n  content: \"\\F0D13\";\n}\n\n.mdi-freebsd::before {\n  content: \"\\F08E0\";\n}\n\n.mdi-frequently-asked-questions::before {\n  content: \"\\F0EB4\";\n}\n\n.mdi-fridge::before {\n  content: \"\\F0290\";\n}\n\n.mdi-fridge-alert::before {\n  content: \"\\F11B1\";\n}\n\n.mdi-fridge-alert-outline::before {\n  content: \"\\F11B2\";\n}\n\n.mdi-fridge-bottom::before {\n  content: \"\\F0292\";\n}\n\n.mdi-fridge-off::before {\n  content: \"\\F11AF\";\n}\n\n.mdi-fridge-off-outline::before {\n  content: \"\\F11B0\";\n}\n\n.mdi-fridge-outline::before {\n  content: \"\\F028F\";\n}\n\n.mdi-fridge-top::before {\n  content: \"\\F0291\";\n}\n\n.mdi-fruit-cherries::before {\n  content: \"\\F1042\";\n}\n\n.mdi-fruit-cherries-off::before {\n  content: \"\\F13F8\";\n}\n\n.mdi-fruit-citrus::before {\n  content: \"\\F1043\";\n}\n\n.mdi-fruit-citrus-off::before {\n  content: \"\\F13F9\";\n}\n\n.mdi-fruit-grapes::before {\n  content: \"\\F1044\";\n}\n\n.mdi-fruit-grapes-outline::before {\n  content: \"\\F1045\";\n}\n\n.mdi-fruit-pineapple::before {\n  content: \"\\F1046\";\n}\n\n.mdi-fruit-watermelon::before {\n  content: \"\\F1047\";\n}\n\n.mdi-fuel::before {\n  content: \"\\F07CA\";\n}\n\n.mdi-fullscreen::before {\n  content: \"\\F0293\";\n}\n\n.mdi-fullscreen-exit::before {\n  content: \"\\F0294\";\n}\n\n.mdi-function::before {\n  content: \"\\F0295\";\n}\n\n.mdi-function-variant::before {\n  content: \"\\F0871\";\n}\n\n.mdi-furigana-horizontal::before {\n  content: \"\\F1081\";\n}\n\n.mdi-furigana-vertical::before {\n  content: \"\\F1082\";\n}\n\n.mdi-fuse::before {\n  content: \"\\F0C85\";\n}\n\n.mdi-fuse-alert::before {\n  content: \"\\F142D\";\n}\n\n.mdi-fuse-blade::before {\n  content: \"\\F0C86\";\n}\n\n.mdi-fuse-off::before {\n  content: \"\\F142C\";\n}\n\n.mdi-gamepad::before {\n  content: \"\\F0296\";\n}\n\n.mdi-gamepad-circle::before {\n  content: \"\\F0E33\";\n}\n\n.mdi-gamepad-circle-down::before {\n  content: \"\\F0E34\";\n}\n\n.mdi-gamepad-circle-left::before {\n  content: \"\\F0E35\";\n}\n\n.mdi-gamepad-circle-outline::before {\n  content: \"\\F0E36\";\n}\n\n.mdi-gamepad-circle-right::before {\n  content: \"\\F0E37\";\n}\n\n.mdi-gamepad-circle-up::before {\n  content: \"\\F0E38\";\n}\n\n.mdi-gamepad-down::before {\n  content: \"\\F0E39\";\n}\n\n.mdi-gamepad-left::before {\n  content: \"\\F0E3A\";\n}\n\n.mdi-gamepad-right::before {\n  content: \"\\F0E3B\";\n}\n\n.mdi-gamepad-round::before {\n  content: \"\\F0E3C\";\n}\n\n.mdi-gamepad-round-down::before {\n  content: \"\\F0E3D\";\n}\n\n.mdi-gamepad-round-left::before {\n  content: \"\\F0E3E\";\n}\n\n.mdi-gamepad-round-outline::before {\n  content: \"\\F0E3F\";\n}\n\n.mdi-gamepad-round-right::before {\n  content: \"\\F0E40\";\n}\n\n.mdi-gamepad-round-up::before {\n  content: \"\\F0E41\";\n}\n\n.mdi-gamepad-square::before {\n  content: \"\\F0EB5\";\n}\n\n.mdi-gamepad-square-outline::before {\n  content: \"\\F0EB6\";\n}\n\n.mdi-gamepad-up::before {\n  content: \"\\F0E42\";\n}\n\n.mdi-gamepad-variant::before {\n  content: \"\\F0297\";\n}\n\n.mdi-gamepad-variant-outline::before {\n  content: \"\\F0EB7\";\n}\n\n.mdi-gamma::before {\n  content: \"\\F10EE\";\n}\n\n.mdi-gantry-crane::before {\n  content: \"\\F0DD1\";\n}\n\n.mdi-garage::before {\n  content: \"\\F06D9\";\n}\n\n.mdi-garage-alert::before {\n  content: \"\\F0872\";\n}\n\n.mdi-garage-alert-variant::before {\n  content: \"\\F12D5\";\n}\n\n.mdi-garage-open::before {\n  content: \"\\F06DA\";\n}\n\n.mdi-garage-open-variant::before {\n  content: \"\\F12D4\";\n}\n\n.mdi-garage-variant::before {\n  content: \"\\F12D3\";\n}\n\n.mdi-gas-cylinder::before {\n  content: \"\\F0647\";\n}\n\n.mdi-gas-station::before {\n  content: \"\\F0298\";\n}\n\n.mdi-gas-station-off::before {\n  content: \"\\F1409\";\n}\n\n.mdi-gas-station-off-outline::before {\n  content: \"\\F140A\";\n}\n\n.mdi-gas-station-outline::before {\n  content: \"\\F0EB8\";\n}\n\n.mdi-gate::before {\n  content: \"\\F0299\";\n}\n\n.mdi-gate-and::before {\n  content: \"\\F08E1\";\n}\n\n.mdi-gate-arrow-right::before {\n  content: \"\\F1169\";\n}\n\n.mdi-gate-nand::before {\n  content: \"\\F08E2\";\n}\n\n.mdi-gate-nor::before {\n  content: \"\\F08E3\";\n}\n\n.mdi-gate-not::before {\n  content: \"\\F08E4\";\n}\n\n.mdi-gate-open::before {\n  content: \"\\F116A\";\n}\n\n.mdi-gate-or::before {\n  content: \"\\F08E5\";\n}\n\n.mdi-gate-xnor::before {\n  content: \"\\F08E6\";\n}\n\n.mdi-gate-xor::before {\n  content: \"\\F08E7\";\n}\n\n.mdi-gatsby::before {\n  content: \"\\F0E43\";\n}\n\n.mdi-gauge::before {\n  content: \"\\F029A\";\n}\n\n.mdi-gauge-empty::before {\n  content: \"\\F0873\";\n}\n\n.mdi-gauge-full::before {\n  content: \"\\F0874\";\n}\n\n.mdi-gauge-low::before {\n  content: \"\\F0875\";\n}\n\n.mdi-gavel::before {\n  content: \"\\F029B\";\n}\n\n.mdi-gender-female::before {\n  content: \"\\F029C\";\n}\n\n.mdi-gender-male::before {\n  content: \"\\F029D\";\n}\n\n.mdi-gender-male-female::before {\n  content: \"\\F029E\";\n}\n\n.mdi-gender-male-female-variant::before {\n  content: \"\\F113F\";\n}\n\n.mdi-gender-non-binary::before {\n  content: \"\\F1140\";\n}\n\n.mdi-gender-transgender::before {\n  content: \"\\F029F\";\n}\n\n.mdi-gentoo::before {\n  content: \"\\F08E8\";\n}\n\n.mdi-gesture::before {\n  content: \"\\F07CB\";\n}\n\n.mdi-gesture-double-tap::before {\n  content: \"\\F073C\";\n}\n\n.mdi-gesture-pinch::before {\n  content: \"\\F0ABD\";\n}\n\n.mdi-gesture-spread::before {\n  content: \"\\F0ABE\";\n}\n\n.mdi-gesture-swipe::before {\n  content: \"\\F0D76\";\n}\n\n.mdi-gesture-swipe-down::before {\n  content: \"\\F073D\";\n}\n\n.mdi-gesture-swipe-horizontal::before {\n  content: \"\\F0ABF\";\n}\n\n.mdi-gesture-swipe-left::before {\n  content: \"\\F073E\";\n}\n\n.mdi-gesture-swipe-right::before {\n  content: \"\\F073F\";\n}\n\n.mdi-gesture-swipe-up::before {\n  content: \"\\F0740\";\n}\n\n.mdi-gesture-swipe-vertical::before {\n  content: \"\\F0AC0\";\n}\n\n.mdi-gesture-tap::before {\n  content: \"\\F0741\";\n}\n\n.mdi-gesture-tap-box::before {\n  content: \"\\F12A9\";\n}\n\n.mdi-gesture-tap-button::before {\n  content: \"\\F12A8\";\n}\n\n.mdi-gesture-tap-hold::before {\n  content: \"\\F0D77\";\n}\n\n.mdi-gesture-two-double-tap::before {\n  content: \"\\F0742\";\n}\n\n.mdi-gesture-two-tap::before {\n  content: \"\\F0743\";\n}\n\n.mdi-ghost::before {\n  content: \"\\F02A0\";\n}\n\n.mdi-ghost-off::before {\n  content: \"\\F09F5\";\n}\n\n.mdi-gif::before {\n  content: \"\\F0D78\";\n}\n\n.mdi-gift::before {\n  content: \"\\F0E44\";\n}\n\n.mdi-gift-outline::before {\n  content: \"\\F02A1\";\n}\n\n.mdi-git::before {\n  content: \"\\F02A2\";\n}\n\n.mdi-github::before {\n  content: \"\\F02A4\";\n}\n\n.mdi-gitlab::before {\n  content: \"\\F0BA0\";\n}\n\n.mdi-glass-cocktail::before {\n  content: \"\\F0356\";\n}\n\n.mdi-glass-flute::before {\n  content: \"\\F02A5\";\n}\n\n.mdi-glass-mug::before {\n  content: \"\\F02A6\";\n}\n\n.mdi-glass-mug-variant::before {\n  content: \"\\F1116\";\n}\n\n.mdi-glass-pint-outline::before {\n  content: \"\\F130D\";\n}\n\n.mdi-glass-stange::before {\n  content: \"\\F02A7\";\n}\n\n.mdi-glass-tulip::before {\n  content: \"\\F02A8\";\n}\n\n.mdi-glass-wine::before {\n  content: \"\\F0876\";\n}\n\n.mdi-glasses::before {\n  content: \"\\F02AA\";\n}\n\n.mdi-globe-light::before {\n  content: \"\\F12D7\";\n}\n\n.mdi-globe-model::before {\n  content: \"\\F08E9\";\n}\n\n.mdi-gmail::before {\n  content: \"\\F02AB\";\n}\n\n.mdi-gnome::before {\n  content: \"\\F02AC\";\n}\n\n.mdi-go-kart::before {\n  content: \"\\F0D79\";\n}\n\n.mdi-go-kart-track::before {\n  content: \"\\F0D7A\";\n}\n\n.mdi-gog::before {\n  content: \"\\F0BA1\";\n}\n\n.mdi-gold::before {\n  content: \"\\F124F\";\n}\n\n.mdi-golf::before {\n  content: \"\\F0823\";\n}\n\n.mdi-golf-cart::before {\n  content: \"\\F11A4\";\n}\n\n.mdi-golf-tee::before {\n  content: \"\\F1083\";\n}\n\n.mdi-gondola::before {\n  content: \"\\F0686\";\n}\n\n.mdi-goodreads::before {\n  content: \"\\F0D7B\";\n}\n\n.mdi-google::before {\n  content: \"\\F02AD\";\n}\n\n.mdi-google-ads::before {\n  content: \"\\F0C87\";\n}\n\n.mdi-google-analytics::before {\n  content: \"\\F07CC\";\n}\n\n.mdi-google-assistant::before {\n  content: \"\\F07CD\";\n}\n\n.mdi-google-cardboard::before {\n  content: \"\\F02AE\";\n}\n\n.mdi-google-chrome::before {\n  content: \"\\F02AF\";\n}\n\n.mdi-google-circles::before {\n  content: \"\\F02B0\";\n}\n\n.mdi-google-circles-communities::before {\n  content: \"\\F02B1\";\n}\n\n.mdi-google-circles-extended::before {\n  content: \"\\F02B2\";\n}\n\n.mdi-google-circles-group::before {\n  content: \"\\F02B3\";\n}\n\n.mdi-google-classroom::before {\n  content: \"\\F02C0\";\n}\n\n.mdi-google-cloud::before {\n  content: \"\\F11F6\";\n}\n\n.mdi-google-controller::before {\n  content: \"\\F02B4\";\n}\n\n.mdi-google-controller-off::before {\n  content: \"\\F02B5\";\n}\n\n.mdi-google-downasaur::before {\n  content: \"\\F1362\";\n}\n\n.mdi-google-drive::before {\n  content: \"\\F02B6\";\n}\n\n.mdi-google-earth::before {\n  content: \"\\F02B7\";\n}\n\n.mdi-google-fit::before {\n  content: \"\\F096C\";\n}\n\n.mdi-google-glass::before {\n  content: \"\\F02B8\";\n}\n\n.mdi-google-hangouts::before {\n  content: \"\\F02C9\";\n}\n\n.mdi-google-home::before {\n  content: \"\\F0824\";\n}\n\n.mdi-google-keep::before {\n  content: \"\\F06DC\";\n}\n\n.mdi-google-lens::before {\n  content: \"\\F09F6\";\n}\n\n.mdi-google-maps::before {\n  content: \"\\F05F5\";\n}\n\n.mdi-google-my-business::before {\n  content: \"\\F1048\";\n}\n\n.mdi-google-nearby::before {\n  content: \"\\F02B9\";\n}\n\n.mdi-google-photos::before {\n  content: \"\\F06DD\";\n}\n\n.mdi-google-play::before {\n  content: \"\\F02BC\";\n}\n\n.mdi-google-plus::before {\n  content: \"\\F02BD\";\n}\n\n.mdi-google-podcast::before {\n  content: \"\\F0EB9\";\n}\n\n.mdi-google-spreadsheet::before {\n  content: \"\\F09F7\";\n}\n\n.mdi-google-street-view::before {\n  content: \"\\F0C88\";\n}\n\n.mdi-google-translate::before {\n  content: \"\\F02BF\";\n}\n\n.mdi-gradient::before {\n  content: \"\\F06A0\";\n}\n\n.mdi-grain::before {\n  content: \"\\F0D7C\";\n}\n\n.mdi-graph::before {\n  content: \"\\F1049\";\n}\n\n.mdi-graph-outline::before {\n  content: \"\\F104A\";\n}\n\n.mdi-graphql::before {\n  content: \"\\F0877\";\n}\n\n.mdi-grass::before {\n  content: \"\\F1510\";\n}\n\n.mdi-grave-stone::before {\n  content: \"\\F0BA2\";\n}\n\n.mdi-grease-pencil::before {\n  content: \"\\F0648\";\n}\n\n.mdi-greater-than::before {\n  content: \"\\F096D\";\n}\n\n.mdi-greater-than-or-equal::before {\n  content: \"\\F096E\";\n}\n\n.mdi-grid::before {\n  content: \"\\F02C1\";\n}\n\n.mdi-grid-large::before {\n  content: \"\\F0758\";\n}\n\n.mdi-grid-off::before {\n  content: \"\\F02C2\";\n}\n\n.mdi-grill::before {\n  content: \"\\F0E45\";\n}\n\n.mdi-grill-outline::before {\n  content: \"\\F118A\";\n}\n\n.mdi-group::before {\n  content: \"\\F02C3\";\n}\n\n.mdi-guitar-acoustic::before {\n  content: \"\\F0771\";\n}\n\n.mdi-guitar-electric::before {\n  content: \"\\F02C4\";\n}\n\n.mdi-guitar-pick::before {\n  content: \"\\F02C5\";\n}\n\n.mdi-guitar-pick-outline::before {\n  content: \"\\F02C6\";\n}\n\n.mdi-guy-fawkes-mask::before {\n  content: \"\\F0825\";\n}\n\n.mdi-hail::before {\n  content: \"\\F0AC1\";\n}\n\n.mdi-hair-dryer::before {\n  content: \"\\F10EF\";\n}\n\n.mdi-hair-dryer-outline::before {\n  content: \"\\F10F0\";\n}\n\n.mdi-halloween::before {\n  content: \"\\F0BA3\";\n}\n\n.mdi-hamburger::before {\n  content: \"\\F0685\";\n}\n\n.mdi-hammer::before {\n  content: \"\\F08EA\";\n}\n\n.mdi-hammer-screwdriver::before {\n  content: \"\\F1322\";\n}\n\n.mdi-hammer-wrench::before {\n  content: \"\\F1323\";\n}\n\n.mdi-hand::before {\n  content: \"\\F0A4F\";\n}\n\n.mdi-hand-heart::before {\n  content: \"\\F10F1\";\n}\n\n.mdi-hand-left::before {\n  content: \"\\F0E46\";\n}\n\n.mdi-hand-okay::before {\n  content: \"\\F0A50\";\n}\n\n.mdi-hand-peace::before {\n  content: \"\\F0A51\";\n}\n\n.mdi-hand-peace-variant::before {\n  content: \"\\F0A52\";\n}\n\n.mdi-hand-pointing-down::before {\n  content: \"\\F0A53\";\n}\n\n.mdi-hand-pointing-left::before {\n  content: \"\\F0A54\";\n}\n\n.mdi-hand-pointing-right::before {\n  content: \"\\F02C7\";\n}\n\n.mdi-hand-pointing-up::before {\n  content: \"\\F0A55\";\n}\n\n.mdi-hand-right::before {\n  content: \"\\F0E47\";\n}\n\n.mdi-hand-saw::before {\n  content: \"\\F0E48\";\n}\n\n.mdi-hand-water::before {\n  content: \"\\F139F\";\n}\n\n.mdi-handball::before {\n  content: \"\\F0F53\";\n}\n\n.mdi-handcuffs::before {\n  content: \"\\F113E\";\n}\n\n.mdi-handshake::before {\n  content: \"\\F1218\";\n}\n\n.mdi-hanger::before {\n  content: \"\\F02C8\";\n}\n\n.mdi-hard-hat::before {\n  content: \"\\F096F\";\n}\n\n.mdi-harddisk::before {\n  content: \"\\F02CA\";\n}\n\n.mdi-harddisk-plus::before {\n  content: \"\\F104B\";\n}\n\n.mdi-harddisk-remove::before {\n  content: \"\\F104C\";\n}\n\n.mdi-hat-fedora::before {\n  content: \"\\F0BA4\";\n}\n\n.mdi-hazard-lights::before {\n  content: \"\\F0C89\";\n}\n\n.mdi-hdr::before {\n  content: \"\\F0D7D\";\n}\n\n.mdi-hdr-off::before {\n  content: \"\\F0D7E\";\n}\n\n.mdi-head::before {\n  content: \"\\F135E\";\n}\n\n.mdi-head-alert::before {\n  content: \"\\F1338\";\n}\n\n.mdi-head-alert-outline::before {\n  content: \"\\F1339\";\n}\n\n.mdi-head-check::before {\n  content: \"\\F133A\";\n}\n\n.mdi-head-check-outline::before {\n  content: \"\\F133B\";\n}\n\n.mdi-head-cog::before {\n  content: \"\\F133C\";\n}\n\n.mdi-head-cog-outline::before {\n  content: \"\\F133D\";\n}\n\n.mdi-head-dots-horizontal::before {\n  content: \"\\F133E\";\n}\n\n.mdi-head-dots-horizontal-outline::before {\n  content: \"\\F133F\";\n}\n\n.mdi-head-flash::before {\n  content: \"\\F1340\";\n}\n\n.mdi-head-flash-outline::before {\n  content: \"\\F1341\";\n}\n\n.mdi-head-heart::before {\n  content: \"\\F1342\";\n}\n\n.mdi-head-heart-outline::before {\n  content: \"\\F1343\";\n}\n\n.mdi-head-lightbulb::before {\n  content: \"\\F1344\";\n}\n\n.mdi-head-lightbulb-outline::before {\n  content: \"\\F1345\";\n}\n\n.mdi-head-minus::before {\n  content: \"\\F1346\";\n}\n\n.mdi-head-minus-outline::before {\n  content: \"\\F1347\";\n}\n\n.mdi-head-outline::before {\n  content: \"\\F135F\";\n}\n\n.mdi-head-plus::before {\n  content: \"\\F1348\";\n}\n\n.mdi-head-plus-outline::before {\n  content: \"\\F1349\";\n}\n\n.mdi-head-question::before {\n  content: \"\\F134A\";\n}\n\n.mdi-head-question-outline::before {\n  content: \"\\F134B\";\n}\n\n.mdi-head-remove::before {\n  content: \"\\F134C\";\n}\n\n.mdi-head-remove-outline::before {\n  content: \"\\F134D\";\n}\n\n.mdi-head-snowflake::before {\n  content: \"\\F134E\";\n}\n\n.mdi-head-snowflake-outline::before {\n  content: \"\\F134F\";\n}\n\n.mdi-head-sync::before {\n  content: \"\\F1350\";\n}\n\n.mdi-head-sync-outline::before {\n  content: \"\\F1351\";\n}\n\n.mdi-headphones::before {\n  content: \"\\F02CB\";\n}\n\n.mdi-headphones-bluetooth::before {\n  content: \"\\F0970\";\n}\n\n.mdi-headphones-box::before {\n  content: \"\\F02CC\";\n}\n\n.mdi-headphones-off::before {\n  content: \"\\F07CE\";\n}\n\n.mdi-headphones-settings::before {\n  content: \"\\F02CD\";\n}\n\n.mdi-headset::before {\n  content: \"\\F02CE\";\n}\n\n.mdi-headset-dock::before {\n  content: \"\\F02CF\";\n}\n\n.mdi-headset-off::before {\n  content: \"\\F02D0\";\n}\n\n.mdi-heart::before {\n  content: \"\\F02D1\";\n}\n\n.mdi-heart-box::before {\n  content: \"\\F02D2\";\n}\n\n.mdi-heart-box-outline::before {\n  content: \"\\F02D3\";\n}\n\n.mdi-heart-broken::before {\n  content: \"\\F02D4\";\n}\n\n.mdi-heart-broken-outline::before {\n  content: \"\\F0D14\";\n}\n\n.mdi-heart-circle::before {\n  content: \"\\F0971\";\n}\n\n.mdi-heart-circle-outline::before {\n  content: \"\\F0972\";\n}\n\n.mdi-heart-flash::before {\n  content: \"\\F0EF9\";\n}\n\n.mdi-heart-half::before {\n  content: \"\\F06DF\";\n}\n\n.mdi-heart-half-full::before {\n  content: \"\\F06DE\";\n}\n\n.mdi-heart-half-outline::before {\n  content: \"\\F06E0\";\n}\n\n.mdi-heart-minus::before {\n  content: \"\\F142F\";\n}\n\n.mdi-heart-minus-outline::before {\n  content: \"\\F1432\";\n}\n\n.mdi-heart-multiple::before {\n  content: \"\\F0A56\";\n}\n\n.mdi-heart-multiple-outline::before {\n  content: \"\\F0A57\";\n}\n\n.mdi-heart-off::before {\n  content: \"\\F0759\";\n}\n\n.mdi-heart-off-outline::before {\n  content: \"\\F1434\";\n}\n\n.mdi-heart-outline::before {\n  content: \"\\F02D5\";\n}\n\n.mdi-heart-plus::before {\n  content: \"\\F142E\";\n}\n\n.mdi-heart-plus-outline::before {\n  content: \"\\F1431\";\n}\n\n.mdi-heart-pulse::before {\n  content: \"\\F05F6\";\n}\n\n.mdi-heart-remove::before {\n  content: \"\\F1430\";\n}\n\n.mdi-heart-remove-outline::before {\n  content: \"\\F1433\";\n}\n\n.mdi-helicopter::before {\n  content: \"\\F0AC2\";\n}\n\n.mdi-help::before {\n  content: \"\\F02D6\";\n}\n\n.mdi-help-box::before {\n  content: \"\\F078B\";\n}\n\n.mdi-help-circle::before {\n  content: \"\\F02D7\";\n}\n\n.mdi-help-circle-outline::before {\n  content: \"\\F0625\";\n}\n\n.mdi-help-network::before {\n  content: \"\\F06F5\";\n}\n\n.mdi-help-network-outline::before {\n  content: \"\\F0C8A\";\n}\n\n.mdi-help-rhombus::before {\n  content: \"\\F0BA5\";\n}\n\n.mdi-help-rhombus-outline::before {\n  content: \"\\F0BA6\";\n}\n\n.mdi-hexadecimal::before {\n  content: \"\\F12A7\";\n}\n\n.mdi-hexagon::before {\n  content: \"\\F02D8\";\n}\n\n.mdi-hexagon-multiple::before {\n  content: \"\\F06E1\";\n}\n\n.mdi-hexagon-multiple-outline::before {\n  content: \"\\F10F2\";\n}\n\n.mdi-hexagon-outline::before {\n  content: \"\\F02D9\";\n}\n\n.mdi-hexagon-slice-1::before {\n  content: \"\\F0AC3\";\n}\n\n.mdi-hexagon-slice-2::before {\n  content: \"\\F0AC4\";\n}\n\n.mdi-hexagon-slice-3::before {\n  content: \"\\F0AC5\";\n}\n\n.mdi-hexagon-slice-4::before {\n  content: \"\\F0AC6\";\n}\n\n.mdi-hexagon-slice-5::before {\n  content: \"\\F0AC7\";\n}\n\n.mdi-hexagon-slice-6::before {\n  content: \"\\F0AC8\";\n}\n\n.mdi-hexagram::before {\n  content: \"\\F0AC9\";\n}\n\n.mdi-hexagram-outline::before {\n  content: \"\\F0ACA\";\n}\n\n.mdi-high-definition::before {\n  content: \"\\F07CF\";\n}\n\n.mdi-high-definition-box::before {\n  content: \"\\F0878\";\n}\n\n.mdi-highway::before {\n  content: \"\\F05F7\";\n}\n\n.mdi-hiking::before {\n  content: \"\\F0D7F\";\n}\n\n.mdi-hinduism::before {\n  content: \"\\F0973\";\n}\n\n.mdi-history::before {\n  content: \"\\F02DA\";\n}\n\n.mdi-hockey-puck::before {\n  content: \"\\F0879\";\n}\n\n.mdi-hockey-sticks::before {\n  content: \"\\F087A\";\n}\n\n.mdi-hololens::before {\n  content: \"\\F02DB\";\n}\n\n.mdi-home::before {\n  content: \"\\F02DC\";\n}\n\n.mdi-home-account::before {\n  content: \"\\F0826\";\n}\n\n.mdi-home-alert::before {\n  content: \"\\F087B\";\n}\n\n.mdi-home-analytics::before {\n  content: \"\\F0EBA\";\n}\n\n.mdi-home-assistant::before {\n  content: \"\\F07D0\";\n}\n\n.mdi-home-automation::before {\n  content: \"\\F07D1\";\n}\n\n.mdi-home-circle::before {\n  content: \"\\F07D2\";\n}\n\n.mdi-home-circle-outline::before {\n  content: \"\\F104D\";\n}\n\n.mdi-home-city::before {\n  content: \"\\F0D15\";\n}\n\n.mdi-home-city-outline::before {\n  content: \"\\F0D16\";\n}\n\n.mdi-home-currency-usd::before {\n  content: \"\\F08AF\";\n}\n\n.mdi-home-edit::before {\n  content: \"\\F1159\";\n}\n\n.mdi-home-edit-outline::before {\n  content: \"\\F115A\";\n}\n\n.mdi-home-export-outline::before {\n  content: \"\\F0F9B\";\n}\n\n.mdi-home-flood::before {\n  content: \"\\F0EFA\";\n}\n\n.mdi-home-floor-0::before {\n  content: \"\\F0DD2\";\n}\n\n.mdi-home-floor-1::before {\n  content: \"\\F0D80\";\n}\n\n.mdi-home-floor-2::before {\n  content: \"\\F0D81\";\n}\n\n.mdi-home-floor-3::before {\n  content: \"\\F0D82\";\n}\n\n.mdi-home-floor-a::before {\n  content: \"\\F0D83\";\n}\n\n.mdi-home-floor-b::before {\n  content: \"\\F0D84\";\n}\n\n.mdi-home-floor-g::before {\n  content: \"\\F0D85\";\n}\n\n.mdi-home-floor-l::before {\n  content: \"\\F0D86\";\n}\n\n.mdi-home-floor-negative-1::before {\n  content: \"\\F0DD3\";\n}\n\n.mdi-home-group::before {\n  content: \"\\F0DD4\";\n}\n\n.mdi-home-heart::before {\n  content: \"\\F0827\";\n}\n\n.mdi-home-import-outline::before {\n  content: \"\\F0F9C\";\n}\n\n.mdi-home-lightbulb::before {\n  content: \"\\F1251\";\n}\n\n.mdi-home-lightbulb-outline::before {\n  content: \"\\F1252\";\n}\n\n.mdi-home-lock::before {\n  content: \"\\F08EB\";\n}\n\n.mdi-home-lock-open::before {\n  content: \"\\F08EC\";\n}\n\n.mdi-home-map-marker::before {\n  content: \"\\F05F8\";\n}\n\n.mdi-home-minus::before {\n  content: \"\\F0974\";\n}\n\n.mdi-home-minus-outline::before {\n  content: \"\\F13D5\";\n}\n\n.mdi-home-modern::before {\n  content: \"\\F02DD\";\n}\n\n.mdi-home-outline::before {\n  content: \"\\F06A1\";\n}\n\n.mdi-home-plus::before {\n  content: \"\\F0975\";\n}\n\n.mdi-home-plus-outline::before {\n  content: \"\\F13D6\";\n}\n\n.mdi-home-remove::before {\n  content: \"\\F1247\";\n}\n\n.mdi-home-remove-outline::before {\n  content: \"\\F13D7\";\n}\n\n.mdi-home-roof::before {\n  content: \"\\F112B\";\n}\n\n.mdi-home-search::before {\n  content: \"\\F13B0\";\n}\n\n.mdi-home-search-outline::before {\n  content: \"\\F13B1\";\n}\n\n.mdi-home-thermometer::before {\n  content: \"\\F0F54\";\n}\n\n.mdi-home-thermometer-outline::before {\n  content: \"\\F0F55\";\n}\n\n.mdi-home-variant::before {\n  content: \"\\F02DE\";\n}\n\n.mdi-home-variant-outline::before {\n  content: \"\\F0BA7\";\n}\n\n.mdi-hook::before {\n  content: \"\\F06E2\";\n}\n\n.mdi-hook-off::before {\n  content: \"\\F06E3\";\n}\n\n.mdi-hops::before {\n  content: \"\\F02DF\";\n}\n\n.mdi-horizontal-rotate-clockwise::before {\n  content: \"\\F10F3\";\n}\n\n.mdi-horizontal-rotate-counterclockwise::before {\n  content: \"\\F10F4\";\n}\n\n.mdi-horseshoe::before {\n  content: \"\\F0A58\";\n}\n\n.mdi-hospital::before {\n  content: \"\\F0FF6\";\n}\n\n.mdi-hospital-box::before {\n  content: \"\\F02E0\";\n}\n\n.mdi-hospital-box-outline::before {\n  content: \"\\F0FF7\";\n}\n\n.mdi-hospital-building::before {\n  content: \"\\F02E1\";\n}\n\n.mdi-hospital-marker::before {\n  content: \"\\F02E2\";\n}\n\n.mdi-hot-tub::before {\n  content: \"\\F0828\";\n}\n\n.mdi-hours-24::before {\n  content: \"\\F1478\";\n}\n\n.mdi-hubspot::before {\n  content: \"\\F0D17\";\n}\n\n.mdi-hulu::before {\n  content: \"\\F0829\";\n}\n\n.mdi-human::before {\n  content: \"\\F02E6\";\n}\n\n.mdi-human-baby-changing-table::before {\n  content: \"\\F138B\";\n}\n\n.mdi-human-child::before {\n  content: \"\\F02E7\";\n}\n\n.mdi-human-edit::before {\n  content: \"\\F14E8\";\n}\n\n.mdi-human-female::before {\n  content: \"\\F0649\";\n}\n\n.mdi-human-female-boy::before {\n  content: \"\\F0A59\";\n}\n\n.mdi-human-female-female::before {\n  content: \"\\F0A5A\";\n}\n\n.mdi-human-female-girl::before {\n  content: \"\\F0A5B\";\n}\n\n.mdi-human-greeting::before {\n  content: \"\\F064A\";\n}\n\n.mdi-human-handsdown::before {\n  content: \"\\F064B\";\n}\n\n.mdi-human-handsup::before {\n  content: \"\\F064C\";\n}\n\n.mdi-human-male::before {\n  content: \"\\F064D\";\n}\n\n.mdi-human-male-boy::before {\n  content: \"\\F0A5C\";\n}\n\n.mdi-human-male-child::before {\n  content: \"\\F138C\";\n}\n\n.mdi-human-male-female::before {\n  content: \"\\F02E8\";\n}\n\n.mdi-human-male-girl::before {\n  content: \"\\F0A5D\";\n}\n\n.mdi-human-male-height::before {\n  content: \"\\F0EFB\";\n}\n\n.mdi-human-male-height-variant::before {\n  content: \"\\F0EFC\";\n}\n\n.mdi-human-male-male::before {\n  content: \"\\F0A5E\";\n}\n\n.mdi-human-pregnant::before {\n  content: \"\\F05CF\";\n}\n\n.mdi-human-wheelchair::before {\n  content: \"\\F138D\";\n}\n\n.mdi-humble-bundle::before {\n  content: \"\\F0744\";\n}\n\n.mdi-hvac::before {\n  content: \"\\F1352\";\n}\n\n.mdi-hydraulic-oil-level::before {\n  content: \"\\F1324\";\n}\n\n.mdi-hydraulic-oil-temperature::before {\n  content: \"\\F1325\";\n}\n\n.mdi-hydro-power::before {\n  content: \"\\F12E5\";\n}\n\n.mdi-ice-cream::before {\n  content: \"\\F082A\";\n}\n\n.mdi-ice-cream-off::before {\n  content: \"\\F0E52\";\n}\n\n.mdi-ice-pop::before {\n  content: \"\\F0EFD\";\n}\n\n.mdi-id-card::before {\n  content: \"\\F0FC0\";\n}\n\n.mdi-identifier::before {\n  content: \"\\F0EFE\";\n}\n\n.mdi-ideogram-cjk::before {\n  content: \"\\F1331\";\n}\n\n.mdi-ideogram-cjk-variant::before {\n  content: \"\\F1332\";\n}\n\n.mdi-iframe::before {\n  content: \"\\F0C8B\";\n}\n\n.mdi-iframe-array::before {\n  content: \"\\F10F5\";\n}\n\n.mdi-iframe-array-outline::before {\n  content: \"\\F10F6\";\n}\n\n.mdi-iframe-braces::before {\n  content: \"\\F10F7\";\n}\n\n.mdi-iframe-braces-outline::before {\n  content: \"\\F10F8\";\n}\n\n.mdi-iframe-outline::before {\n  content: \"\\F0C8C\";\n}\n\n.mdi-iframe-parentheses::before {\n  content: \"\\F10F9\";\n}\n\n.mdi-iframe-parentheses-outline::before {\n  content: \"\\F10FA\";\n}\n\n.mdi-iframe-variable::before {\n  content: \"\\F10FB\";\n}\n\n.mdi-iframe-variable-outline::before {\n  content: \"\\F10FC\";\n}\n\n.mdi-image::before {\n  content: \"\\F02E9\";\n}\n\n.mdi-image-album::before {\n  content: \"\\F02EA\";\n}\n\n.mdi-image-area::before {\n  content: \"\\F02EB\";\n}\n\n.mdi-image-area-close::before {\n  content: \"\\F02EC\";\n}\n\n.mdi-image-auto-adjust::before {\n  content: \"\\F0FC1\";\n}\n\n.mdi-image-broken::before {\n  content: \"\\F02ED\";\n}\n\n.mdi-image-broken-variant::before {\n  content: \"\\F02EE\";\n}\n\n.mdi-image-edit::before {\n  content: \"\\F11E3\";\n}\n\n.mdi-image-edit-outline::before {\n  content: \"\\F11E4\";\n}\n\n.mdi-image-filter-black-white::before {\n  content: \"\\F02F0\";\n}\n\n.mdi-image-filter-center-focus::before {\n  content: \"\\F02F1\";\n}\n\n.mdi-image-filter-center-focus-strong::before {\n  content: \"\\F0EFF\";\n}\n\n.mdi-image-filter-center-focus-strong-outline::before {\n  content: \"\\F0F00\";\n}\n\n.mdi-image-filter-center-focus-weak::before {\n  content: \"\\F02F2\";\n}\n\n.mdi-image-filter-drama::before {\n  content: \"\\F02F3\";\n}\n\n.mdi-image-filter-frames::before {\n  content: \"\\F02F4\";\n}\n\n.mdi-image-filter-hdr::before {\n  content: \"\\F02F5\";\n}\n\n.mdi-image-filter-none::before {\n  content: \"\\F02F6\";\n}\n\n.mdi-image-filter-tilt-shift::before {\n  content: \"\\F02F7\";\n}\n\n.mdi-image-filter-vintage::before {\n  content: \"\\F02F8\";\n}\n\n.mdi-image-frame::before {\n  content: \"\\F0E49\";\n}\n\n.mdi-image-minus::before {\n  content: \"\\F1419\";\n}\n\n.mdi-image-move::before {\n  content: \"\\F09F8\";\n}\n\n.mdi-image-multiple::before {\n  content: \"\\F02F9\";\n}\n\n.mdi-image-multiple-outline::before {\n  content: \"\\F02EF\";\n}\n\n.mdi-image-off::before {\n  content: \"\\F082B\";\n}\n\n.mdi-image-off-outline::before {\n  content: \"\\F11D1\";\n}\n\n.mdi-image-outline::before {\n  content: \"\\F0976\";\n}\n\n.mdi-image-plus::before {\n  content: \"\\F087C\";\n}\n\n.mdi-image-remove::before {\n  content: \"\\F1418\";\n}\n\n.mdi-image-search::before {\n  content: \"\\F0977\";\n}\n\n.mdi-image-search-outline::before {\n  content: \"\\F0978\";\n}\n\n.mdi-image-size-select-actual::before {\n  content: \"\\F0C8D\";\n}\n\n.mdi-image-size-select-large::before {\n  content: \"\\F0C8E\";\n}\n\n.mdi-image-size-select-small::before {\n  content: \"\\F0C8F\";\n}\n\n.mdi-import::before {\n  content: \"\\F02FA\";\n}\n\n.mdi-inbox::before {\n  content: \"\\F0687\";\n}\n\n.mdi-inbox-arrow-down::before {\n  content: \"\\F02FB\";\n}\n\n.mdi-inbox-arrow-down-outline::before {\n  content: \"\\F1270\";\n}\n\n.mdi-inbox-arrow-up::before {\n  content: \"\\F03D1\";\n}\n\n.mdi-inbox-arrow-up-outline::before {\n  content: \"\\F1271\";\n}\n\n.mdi-inbox-full::before {\n  content: \"\\F1272\";\n}\n\n.mdi-inbox-full-outline::before {\n  content: \"\\F1273\";\n}\n\n.mdi-inbox-multiple::before {\n  content: \"\\F08B0\";\n}\n\n.mdi-inbox-multiple-outline::before {\n  content: \"\\F0BA8\";\n}\n\n.mdi-inbox-outline::before {\n  content: \"\\F1274\";\n}\n\n.mdi-incognito::before {\n  content: \"\\F05F9\";\n}\n\n.mdi-incognito-circle::before {\n  content: \"\\F1421\";\n}\n\n.mdi-incognito-circle-off::before {\n  content: \"\\F1422\";\n}\n\n.mdi-incognito-off::before {\n  content: \"\\F0075\";\n}\n\n.mdi-infinity::before {\n  content: \"\\F06E4\";\n}\n\n.mdi-information::before {\n  content: \"\\F02FC\";\n}\n\n.mdi-information-outline::before {\n  content: \"\\F02FD\";\n}\n\n.mdi-information-variant::before {\n  content: \"\\F064E\";\n}\n\n.mdi-instagram::before {\n  content: \"\\F02FE\";\n}\n\n.mdi-instrument-triangle::before {\n  content: \"\\F104E\";\n}\n\n.mdi-invert-colors::before {\n  content: \"\\F0301\";\n}\n\n.mdi-invert-colors-off::before {\n  content: \"\\F0E4A\";\n}\n\n.mdi-iobroker::before {\n  content: \"\\F12E8\";\n}\n\n.mdi-ip::before {\n  content: \"\\F0A5F\";\n}\n\n.mdi-ip-network::before {\n  content: \"\\F0A60\";\n}\n\n.mdi-ip-network-outline::before {\n  content: \"\\F0C90\";\n}\n\n.mdi-ipod::before {\n  content: \"\\F0C91\";\n}\n\n.mdi-islam::before {\n  content: \"\\F0979\";\n}\n\n.mdi-island::before {\n  content: \"\\F104F\";\n}\n\n.mdi-iv-bag::before {\n  content: \"\\F10B9\";\n}\n\n.mdi-jabber::before {\n  content: \"\\F0DD5\";\n}\n\n.mdi-jeepney::before {\n  content: \"\\F0302\";\n}\n\n.mdi-jellyfish::before {\n  content: \"\\F0F01\";\n}\n\n.mdi-jellyfish-outline::before {\n  content: \"\\F0F02\";\n}\n\n.mdi-jira::before {\n  content: \"\\F0303\";\n}\n\n.mdi-jquery::before {\n  content: \"\\F087D\";\n}\n\n.mdi-jsfiddle::before {\n  content: \"\\F0304\";\n}\n\n.mdi-judaism::before {\n  content: \"\\F097A\";\n}\n\n.mdi-jump-rope::before {\n  content: \"\\F12FF\";\n}\n\n.mdi-kabaddi::before {\n  content: \"\\F0D87\";\n}\n\n.mdi-karate::before {\n  content: \"\\F082C\";\n}\n\n.mdi-keg::before {\n  content: \"\\F0305\";\n}\n\n.mdi-kettle::before {\n  content: \"\\F05FA\";\n}\n\n.mdi-kettle-alert::before {\n  content: \"\\F1317\";\n}\n\n.mdi-kettle-alert-outline::before {\n  content: \"\\F1318\";\n}\n\n.mdi-kettle-off::before {\n  content: \"\\F131B\";\n}\n\n.mdi-kettle-off-outline::before {\n  content: \"\\F131C\";\n}\n\n.mdi-kettle-outline::before {\n  content: \"\\F0F56\";\n}\n\n.mdi-kettle-steam::before {\n  content: \"\\F1319\";\n}\n\n.mdi-kettle-steam-outline::before {\n  content: \"\\F131A\";\n}\n\n.mdi-kettlebell::before {\n  content: \"\\F1300\";\n}\n\n.mdi-key::before {\n  content: \"\\F0306\";\n}\n\n.mdi-key-arrow-right::before {\n  content: \"\\F1312\";\n}\n\n.mdi-key-change::before {\n  content: \"\\F0307\";\n}\n\n.mdi-key-link::before {\n  content: \"\\F119F\";\n}\n\n.mdi-key-minus::before {\n  content: \"\\F0308\";\n}\n\n.mdi-key-outline::before {\n  content: \"\\F0DD6\";\n}\n\n.mdi-key-plus::before {\n  content: \"\\F0309\";\n}\n\n.mdi-key-remove::before {\n  content: \"\\F030A\";\n}\n\n.mdi-key-star::before {\n  content: \"\\F119E\";\n}\n\n.mdi-key-variant::before {\n  content: \"\\F030B\";\n}\n\n.mdi-key-wireless::before {\n  content: \"\\F0FC2\";\n}\n\n.mdi-keyboard::before {\n  content: \"\\F030C\";\n}\n\n.mdi-keyboard-backspace::before {\n  content: \"\\F030D\";\n}\n\n.mdi-keyboard-caps::before {\n  content: \"\\F030E\";\n}\n\n.mdi-keyboard-close::before {\n  content: \"\\F030F\";\n}\n\n.mdi-keyboard-esc::before {\n  content: \"\\F12B7\";\n}\n\n.mdi-keyboard-f1::before {\n  content: \"\\F12AB\";\n}\n\n.mdi-keyboard-f10::before {\n  content: \"\\F12B4\";\n}\n\n.mdi-keyboard-f11::before {\n  content: \"\\F12B5\";\n}\n\n.mdi-keyboard-f12::before {\n  content: \"\\F12B6\";\n}\n\n.mdi-keyboard-f2::before {\n  content: \"\\F12AC\";\n}\n\n.mdi-keyboard-f3::before {\n  content: \"\\F12AD\";\n}\n\n.mdi-keyboard-f4::before {\n  content: \"\\F12AE\";\n}\n\n.mdi-keyboard-f5::before {\n  content: \"\\F12AF\";\n}\n\n.mdi-keyboard-f6::before {\n  content: \"\\F12B0\";\n}\n\n.mdi-keyboard-f7::before {\n  content: \"\\F12B1\";\n}\n\n.mdi-keyboard-f8::before {\n  content: \"\\F12B2\";\n}\n\n.mdi-keyboard-f9::before {\n  content: \"\\F12B3\";\n}\n\n.mdi-keyboard-off::before {\n  content: \"\\F0310\";\n}\n\n.mdi-keyboard-off-outline::before {\n  content: \"\\F0E4B\";\n}\n\n.mdi-keyboard-outline::before {\n  content: \"\\F097B\";\n}\n\n.mdi-keyboard-return::before {\n  content: \"\\F0311\";\n}\n\n.mdi-keyboard-settings::before {\n  content: \"\\F09F9\";\n}\n\n.mdi-keyboard-settings-outline::before {\n  content: \"\\F09FA\";\n}\n\n.mdi-keyboard-space::before {\n  content: \"\\F1050\";\n}\n\n.mdi-keyboard-tab::before {\n  content: \"\\F0312\";\n}\n\n.mdi-keyboard-variant::before {\n  content: \"\\F0313\";\n}\n\n.mdi-khanda::before {\n  content: \"\\F10FD\";\n}\n\n.mdi-kickstarter::before {\n  content: \"\\F0745\";\n}\n\n.mdi-klingon::before {\n  content: \"\\F135B\";\n}\n\n.mdi-knife::before {\n  content: \"\\F09FB\";\n}\n\n.mdi-knife-military::before {\n  content: \"\\F09FC\";\n}\n\n.mdi-kodi::before {\n  content: \"\\F0314\";\n}\n\n.mdi-kubernetes::before {\n  content: \"\\F10FE\";\n}\n\n.mdi-label::before {\n  content: \"\\F0315\";\n}\n\n.mdi-label-multiple::before {\n  content: \"\\F1375\";\n}\n\n.mdi-label-multiple-outline::before {\n  content: \"\\F1376\";\n}\n\n.mdi-label-off::before {\n  content: \"\\F0ACB\";\n}\n\n.mdi-label-off-outline::before {\n  content: \"\\F0ACC\";\n}\n\n.mdi-label-outline::before {\n  content: \"\\F0316\";\n}\n\n.mdi-label-percent::before {\n  content: \"\\F12EA\";\n}\n\n.mdi-label-percent-outline::before {\n  content: \"\\F12EB\";\n}\n\n.mdi-label-variant::before {\n  content: \"\\F0ACD\";\n}\n\n.mdi-label-variant-outline::before {\n  content: \"\\F0ACE\";\n}\n\n.mdi-ladybug::before {\n  content: \"\\F082D\";\n}\n\n.mdi-lambda::before {\n  content: \"\\F0627\";\n}\n\n.mdi-lamp::before {\n  content: \"\\F06B5\";\n}\n\n.mdi-lan::before {\n  content: \"\\F0317\";\n}\n\n.mdi-lan-check::before {\n  content: \"\\F12AA\";\n}\n\n.mdi-lan-connect::before {\n  content: \"\\F0318\";\n}\n\n.mdi-lan-disconnect::before {\n  content: \"\\F0319\";\n}\n\n.mdi-lan-pending::before {\n  content: \"\\F031A\";\n}\n\n.mdi-language-c::before {\n  content: \"\\F0671\";\n}\n\n.mdi-language-cpp::before {\n  content: \"\\F0672\";\n}\n\n.mdi-language-csharp::before {\n  content: \"\\F031B\";\n}\n\n.mdi-language-css3::before {\n  content: \"\\F031C\";\n}\n\n.mdi-language-fortran::before {\n  content: \"\\F121A\";\n}\n\n.mdi-language-go::before {\n  content: \"\\F07D3\";\n}\n\n.mdi-language-haskell::before {\n  content: \"\\F0C92\";\n}\n\n.mdi-language-html5::before {\n  content: \"\\F031D\";\n}\n\n.mdi-language-java::before {\n  content: \"\\F0B37\";\n}\n\n.mdi-language-javascript::before {\n  content: \"\\F031E\";\n}\n\n.mdi-language-kotlin::before {\n  content: \"\\F1219\";\n}\n\n.mdi-language-lua::before {\n  content: \"\\F08B1\";\n}\n\n.mdi-language-markdown::before {\n  content: \"\\F0354\";\n}\n\n.mdi-language-markdown-outline::before {\n  content: \"\\F0F5B\";\n}\n\n.mdi-language-php::before {\n  content: \"\\F031F\";\n}\n\n.mdi-language-python::before {\n  content: \"\\F0320\";\n}\n\n.mdi-language-r::before {\n  content: \"\\F07D4\";\n}\n\n.mdi-language-ruby::before {\n  content: \"\\F0D2D\";\n}\n\n.mdi-language-ruby-on-rails::before {\n  content: \"\\F0ACF\";\n}\n\n.mdi-language-swift::before {\n  content: \"\\F06E5\";\n}\n\n.mdi-language-typescript::before {\n  content: \"\\F06E6\";\n}\n\n.mdi-language-xaml::before {\n  content: \"\\F0673\";\n}\n\n.mdi-laptop::before {\n  content: \"\\F0322\";\n}\n\n.mdi-laptop-chromebook::before {\n  content: \"\\F0323\";\n}\n\n.mdi-laptop-mac::before {\n  content: \"\\F0324\";\n}\n\n.mdi-laptop-off::before {\n  content: \"\\F06E7\";\n}\n\n.mdi-laptop-windows::before {\n  content: \"\\F0325\";\n}\n\n.mdi-laravel::before {\n  content: \"\\F0AD0\";\n}\n\n.mdi-laser-pointer::before {\n  content: \"\\F1484\";\n}\n\n.mdi-lasso::before {\n  content: \"\\F0F03\";\n}\n\n.mdi-lastpass::before {\n  content: \"\\F0446\";\n}\n\n.mdi-latitude::before {\n  content: \"\\F0F57\";\n}\n\n.mdi-launch::before {\n  content: \"\\F0327\";\n}\n\n.mdi-lava-lamp::before {\n  content: \"\\F07D5\";\n}\n\n.mdi-layers::before {\n  content: \"\\F0328\";\n}\n\n.mdi-layers-minus::before {\n  content: \"\\F0E4C\";\n}\n\n.mdi-layers-off::before {\n  content: \"\\F0329\";\n}\n\n.mdi-layers-off-outline::before {\n  content: \"\\F09FD\";\n}\n\n.mdi-layers-outline::before {\n  content: \"\\F09FE\";\n}\n\n.mdi-layers-plus::before {\n  content: \"\\F0E4D\";\n}\n\n.mdi-layers-remove::before {\n  content: \"\\F0E4E\";\n}\n\n.mdi-layers-search::before {\n  content: \"\\F1206\";\n}\n\n.mdi-layers-search-outline::before {\n  content: \"\\F1207\";\n}\n\n.mdi-layers-triple::before {\n  content: \"\\F0F58\";\n}\n\n.mdi-layers-triple-outline::before {\n  content: \"\\F0F59\";\n}\n\n.mdi-lead-pencil::before {\n  content: \"\\F064F\";\n}\n\n.mdi-leaf::before {\n  content: \"\\F032A\";\n}\n\n.mdi-leaf-maple::before {\n  content: \"\\F0C93\";\n}\n\n.mdi-leaf-maple-off::before {\n  content: \"\\F12DA\";\n}\n\n.mdi-leaf-off::before {\n  content: \"\\F12D9\";\n}\n\n.mdi-leak::before {\n  content: \"\\F0DD7\";\n}\n\n.mdi-leak-off::before {\n  content: \"\\F0DD8\";\n}\n\n.mdi-led-off::before {\n  content: \"\\F032B\";\n}\n\n.mdi-led-on::before {\n  content: \"\\F032C\";\n}\n\n.mdi-led-outline::before {\n  content: \"\\F032D\";\n}\n\n.mdi-led-strip::before {\n  content: \"\\F07D6\";\n}\n\n.mdi-led-strip-variant::before {\n  content: \"\\F1051\";\n}\n\n.mdi-led-variant-off::before {\n  content: \"\\F032E\";\n}\n\n.mdi-led-variant-on::before {\n  content: \"\\F032F\";\n}\n\n.mdi-led-variant-outline::before {\n  content: \"\\F0330\";\n}\n\n.mdi-leek::before {\n  content: \"\\F117D\";\n}\n\n.mdi-less-than::before {\n  content: \"\\F097C\";\n}\n\n.mdi-less-than-or-equal::before {\n  content: \"\\F097D\";\n}\n\n.mdi-library::before {\n  content: \"\\F0331\";\n}\n\n.mdi-library-shelves::before {\n  content: \"\\F0BA9\";\n}\n\n.mdi-license::before {\n  content: \"\\F0FC3\";\n}\n\n.mdi-lifebuoy::before {\n  content: \"\\F087E\";\n}\n\n.mdi-light-switch::before {\n  content: \"\\F097E\";\n}\n\n.mdi-lightbulb::before {\n  content: \"\\F0335\";\n}\n\n.mdi-lightbulb-cfl::before {\n  content: \"\\F1208\";\n}\n\n.mdi-lightbulb-cfl-off::before {\n  content: \"\\F1209\";\n}\n\n.mdi-lightbulb-cfl-spiral::before {\n  content: \"\\F1275\";\n}\n\n.mdi-lightbulb-cfl-spiral-off::before {\n  content: \"\\F12C3\";\n}\n\n.mdi-lightbulb-group::before {\n  content: \"\\F1253\";\n}\n\n.mdi-lightbulb-group-off::before {\n  content: \"\\F12CD\";\n}\n\n.mdi-lightbulb-group-off-outline::before {\n  content: \"\\F12CE\";\n}\n\n.mdi-lightbulb-group-outline::before {\n  content: \"\\F1254\";\n}\n\n.mdi-lightbulb-multiple::before {\n  content: \"\\F1255\";\n}\n\n.mdi-lightbulb-multiple-off::before {\n  content: \"\\F12CF\";\n}\n\n.mdi-lightbulb-multiple-off-outline::before {\n  content: \"\\F12D0\";\n}\n\n.mdi-lightbulb-multiple-outline::before {\n  content: \"\\F1256\";\n}\n\n.mdi-lightbulb-off::before {\n  content: \"\\F0E4F\";\n}\n\n.mdi-lightbulb-off-outline::before {\n  content: \"\\F0E50\";\n}\n\n.mdi-lightbulb-on::before {\n  content: \"\\F06E8\";\n}\n\n.mdi-lightbulb-on-outline::before {\n  content: \"\\F06E9\";\n}\n\n.mdi-lightbulb-outline::before {\n  content: \"\\F0336\";\n}\n\n.mdi-lighthouse::before {\n  content: \"\\F09FF\";\n}\n\n.mdi-lighthouse-on::before {\n  content: \"\\F0A00\";\n}\n\n.mdi-lightning-bolt::before {\n  content: \"\\F140B\";\n}\n\n.mdi-lightning-bolt-outline::before {\n  content: \"\\F140C\";\n}\n\n.mdi-lingerie::before {\n  content: \"\\F1476\";\n}\n\n.mdi-link::before {\n  content: \"\\F0337\";\n}\n\n.mdi-link-box::before {\n  content: \"\\F0D1A\";\n}\n\n.mdi-link-box-outline::before {\n  content: \"\\F0D1B\";\n}\n\n.mdi-link-box-variant::before {\n  content: \"\\F0D1C\";\n}\n\n.mdi-link-box-variant-outline::before {\n  content: \"\\F0D1D\";\n}\n\n.mdi-link-lock::before {\n  content: \"\\F10BA\";\n}\n\n.mdi-link-off::before {\n  content: \"\\F0338\";\n}\n\n.mdi-link-plus::before {\n  content: \"\\F0C94\";\n}\n\n.mdi-link-variant::before {\n  content: \"\\F0339\";\n}\n\n.mdi-link-variant-minus::before {\n  content: \"\\F10FF\";\n}\n\n.mdi-link-variant-off::before {\n  content: \"\\F033A\";\n}\n\n.mdi-link-variant-plus::before {\n  content: \"\\F1100\";\n}\n\n.mdi-link-variant-remove::before {\n  content: \"\\F1101\";\n}\n\n.mdi-linkedin::before {\n  content: \"\\F033B\";\n}\n\n.mdi-linux::before {\n  content: \"\\F033D\";\n}\n\n.mdi-linux-mint::before {\n  content: \"\\F08ED\";\n}\n\n.mdi-lipstick::before {\n  content: \"\\F13B5\";\n}\n\n.mdi-litecoin::before {\n  content: \"\\F0A61\";\n}\n\n.mdi-loading::before {\n  content: \"\\F0772\";\n}\n\n.mdi-location-enter::before {\n  content: \"\\F0FC4\";\n}\n\n.mdi-location-exit::before {\n  content: \"\\F0FC5\";\n}\n\n.mdi-lock::before {\n  content: \"\\F033E\";\n}\n\n.mdi-lock-alert::before {\n  content: \"\\F08EE\";\n}\n\n.mdi-lock-check::before {\n  content: \"\\F139A\";\n}\n\n.mdi-lock-clock::before {\n  content: \"\\F097F\";\n}\n\n.mdi-lock-open::before {\n  content: \"\\F033F\";\n}\n\n.mdi-lock-open-alert::before {\n  content: \"\\F139B\";\n}\n\n.mdi-lock-open-check::before {\n  content: \"\\F139C\";\n}\n\n.mdi-lock-open-outline::before {\n  content: \"\\F0340\";\n}\n\n.mdi-lock-open-variant::before {\n  content: \"\\F0FC6\";\n}\n\n.mdi-lock-open-variant-outline::before {\n  content: \"\\F0FC7\";\n}\n\n.mdi-lock-outline::before {\n  content: \"\\F0341\";\n}\n\n.mdi-lock-pattern::before {\n  content: \"\\F06EA\";\n}\n\n.mdi-lock-plus::before {\n  content: \"\\F05FB\";\n}\n\n.mdi-lock-question::before {\n  content: \"\\F08EF\";\n}\n\n.mdi-lock-reset::before {\n  content: \"\\F0773\";\n}\n\n.mdi-lock-smart::before {\n  content: \"\\F08B2\";\n}\n\n.mdi-locker::before {\n  content: \"\\F07D7\";\n}\n\n.mdi-locker-multiple::before {\n  content: \"\\F07D8\";\n}\n\n.mdi-login::before {\n  content: \"\\F0342\";\n}\n\n.mdi-login-variant::before {\n  content: \"\\F05FC\";\n}\n\n.mdi-logout::before {\n  content: \"\\F0343\";\n}\n\n.mdi-logout-variant::before {\n  content: \"\\F05FD\";\n}\n\n.mdi-longitude::before {\n  content: \"\\F0F5A\";\n}\n\n.mdi-looks::before {\n  content: \"\\F0344\";\n}\n\n.mdi-loupe::before {\n  content: \"\\F0345\";\n}\n\n.mdi-lumx::before {\n  content: \"\\F0346\";\n}\n\n.mdi-lungs::before {\n  content: \"\\F1084\";\n}\n\n.mdi-magnet::before {\n  content: \"\\F0347\";\n}\n\n.mdi-magnet-on::before {\n  content: \"\\F0348\";\n}\n\n.mdi-magnify::before {\n  content: \"\\F0349\";\n}\n\n.mdi-magnify-close::before {\n  content: \"\\F0980\";\n}\n\n.mdi-magnify-minus::before {\n  content: \"\\F034A\";\n}\n\n.mdi-magnify-minus-cursor::before {\n  content: \"\\F0A62\";\n}\n\n.mdi-magnify-minus-outline::before {\n  content: \"\\F06EC\";\n}\n\n.mdi-magnify-plus::before {\n  content: \"\\F034B\";\n}\n\n.mdi-magnify-plus-cursor::before {\n  content: \"\\F0A63\";\n}\n\n.mdi-magnify-plus-outline::before {\n  content: \"\\F06ED\";\n}\n\n.mdi-magnify-remove-cursor::before {\n  content: \"\\F120C\";\n}\n\n.mdi-magnify-remove-outline::before {\n  content: \"\\F120D\";\n}\n\n.mdi-magnify-scan::before {\n  content: \"\\F1276\";\n}\n\n.mdi-mail::before {\n  content: \"\\F0EBB\";\n}\n\n.mdi-mailbox::before {\n  content: \"\\F06EE\";\n}\n\n.mdi-mailbox-open::before {\n  content: \"\\F0D88\";\n}\n\n.mdi-mailbox-open-outline::before {\n  content: \"\\F0D89\";\n}\n\n.mdi-mailbox-open-up::before {\n  content: \"\\F0D8A\";\n}\n\n.mdi-mailbox-open-up-outline::before {\n  content: \"\\F0D8B\";\n}\n\n.mdi-mailbox-outline::before {\n  content: \"\\F0D8C\";\n}\n\n.mdi-mailbox-up::before {\n  content: \"\\F0D8D\";\n}\n\n.mdi-mailbox-up-outline::before {\n  content: \"\\F0D8E\";\n}\n\n.mdi-map::before {\n  content: \"\\F034D\";\n}\n\n.mdi-map-check::before {\n  content: \"\\F0EBC\";\n}\n\n.mdi-map-check-outline::before {\n  content: \"\\F0EBD\";\n}\n\n.mdi-map-clock::before {\n  content: \"\\F0D1E\";\n}\n\n.mdi-map-clock-outline::before {\n  content: \"\\F0D1F\";\n}\n\n.mdi-map-legend::before {\n  content: \"\\F0A01\";\n}\n\n.mdi-map-marker::before {\n  content: \"\\F034E\";\n}\n\n.mdi-map-marker-alert::before {\n  content: \"\\F0F05\";\n}\n\n.mdi-map-marker-alert-outline::before {\n  content: \"\\F0F06\";\n}\n\n.mdi-map-marker-check::before {\n  content: \"\\F0C95\";\n}\n\n.mdi-map-marker-check-outline::before {\n  content: \"\\F12FB\";\n}\n\n.mdi-map-marker-circle::before {\n  content: \"\\F034F\";\n}\n\n.mdi-map-marker-distance::before {\n  content: \"\\F08F0\";\n}\n\n.mdi-map-marker-down::before {\n  content: \"\\F1102\";\n}\n\n.mdi-map-marker-left::before {\n  content: \"\\F12DB\";\n}\n\n.mdi-map-marker-left-outline::before {\n  content: \"\\F12DD\";\n}\n\n.mdi-map-marker-minus::before {\n  content: \"\\F0650\";\n}\n\n.mdi-map-marker-minus-outline::before {\n  content: \"\\F12F9\";\n}\n\n.mdi-map-marker-multiple::before {\n  content: \"\\F0350\";\n}\n\n.mdi-map-marker-multiple-outline::before {\n  content: \"\\F1277\";\n}\n\n.mdi-map-marker-off::before {\n  content: \"\\F0351\";\n}\n\n.mdi-map-marker-off-outline::before {\n  content: \"\\F12FD\";\n}\n\n.mdi-map-marker-outline::before {\n  content: \"\\F07D9\";\n}\n\n.mdi-map-marker-path::before {\n  content: \"\\F0D20\";\n}\n\n.mdi-map-marker-plus::before {\n  content: \"\\F0651\";\n}\n\n.mdi-map-marker-plus-outline::before {\n  content: \"\\F12F8\";\n}\n\n.mdi-map-marker-question::before {\n  content: \"\\F0F07\";\n}\n\n.mdi-map-marker-question-outline::before {\n  content: \"\\F0F08\";\n}\n\n.mdi-map-marker-radius::before {\n  content: \"\\F0352\";\n}\n\n.mdi-map-marker-radius-outline::before {\n  content: \"\\F12FC\";\n}\n\n.mdi-map-marker-remove::before {\n  content: \"\\F0F09\";\n}\n\n.mdi-map-marker-remove-outline::before {\n  content: \"\\F12FA\";\n}\n\n.mdi-map-marker-remove-variant::before {\n  content: \"\\F0F0A\";\n}\n\n.mdi-map-marker-right::before {\n  content: \"\\F12DC\";\n}\n\n.mdi-map-marker-right-outline::before {\n  content: \"\\F12DE\";\n}\n\n.mdi-map-marker-up::before {\n  content: \"\\F1103\";\n}\n\n.mdi-map-minus::before {\n  content: \"\\F0981\";\n}\n\n.mdi-map-outline::before {\n  content: \"\\F0982\";\n}\n\n.mdi-map-plus::before {\n  content: \"\\F0983\";\n}\n\n.mdi-map-search::before {\n  content: \"\\F0984\";\n}\n\n.mdi-map-search-outline::before {\n  content: \"\\F0985\";\n}\n\n.mdi-mapbox::before {\n  content: \"\\F0BAA\";\n}\n\n.mdi-margin::before {\n  content: \"\\F0353\";\n}\n\n.mdi-marker::before {\n  content: \"\\F0652\";\n}\n\n.mdi-marker-cancel::before {\n  content: \"\\F0DD9\";\n}\n\n.mdi-marker-check::before {\n  content: \"\\F0355\";\n}\n\n.mdi-mastodon::before {\n  content: \"\\F0AD1\";\n}\n\n.mdi-material-design::before {\n  content: \"\\F0986\";\n}\n\n.mdi-material-ui::before {\n  content: \"\\F0357\";\n}\n\n.mdi-math-compass::before {\n  content: \"\\F0358\";\n}\n\n.mdi-math-cos::before {\n  content: \"\\F0C96\";\n}\n\n.mdi-math-integral::before {\n  content: \"\\F0FC8\";\n}\n\n.mdi-math-integral-box::before {\n  content: \"\\F0FC9\";\n}\n\n.mdi-math-log::before {\n  content: \"\\F1085\";\n}\n\n.mdi-math-norm::before {\n  content: \"\\F0FCA\";\n}\n\n.mdi-math-norm-box::before {\n  content: \"\\F0FCB\";\n}\n\n.mdi-math-sin::before {\n  content: \"\\F0C97\";\n}\n\n.mdi-math-tan::before {\n  content: \"\\F0C98\";\n}\n\n.mdi-matrix::before {\n  content: \"\\F0628\";\n}\n\n.mdi-medal::before {\n  content: \"\\F0987\";\n}\n\n.mdi-medal-outline::before {\n  content: \"\\F1326\";\n}\n\n.mdi-medical-bag::before {\n  content: \"\\F06EF\";\n}\n\n.mdi-meditation::before {\n  content: \"\\F117B\";\n}\n\n.mdi-memory::before {\n  content: \"\\F035B\";\n}\n\n.mdi-menu::before {\n  content: \"\\F035C\";\n}\n\n.mdi-menu-down::before {\n  content: \"\\F035D\";\n}\n\n.mdi-menu-down-outline::before {\n  content: \"\\F06B6\";\n}\n\n.mdi-menu-left::before {\n  content: \"\\F035E\";\n}\n\n.mdi-menu-left-outline::before {\n  content: \"\\F0A02\";\n}\n\n.mdi-menu-open::before {\n  content: \"\\F0BAB\";\n}\n\n.mdi-menu-right::before {\n  content: \"\\F035F\";\n}\n\n.mdi-menu-right-outline::before {\n  content: \"\\F0A03\";\n}\n\n.mdi-menu-swap::before {\n  content: \"\\F0A64\";\n}\n\n.mdi-menu-swap-outline::before {\n  content: \"\\F0A65\";\n}\n\n.mdi-menu-up::before {\n  content: \"\\F0360\";\n}\n\n.mdi-menu-up-outline::before {\n  content: \"\\F06B7\";\n}\n\n.mdi-merge::before {\n  content: \"\\F0F5C\";\n}\n\n.mdi-message::before {\n  content: \"\\F0361\";\n}\n\n.mdi-message-alert::before {\n  content: \"\\F0362\";\n}\n\n.mdi-message-alert-outline::before {\n  content: \"\\F0A04\";\n}\n\n.mdi-message-arrow-left::before {\n  content: \"\\F12F2\";\n}\n\n.mdi-message-arrow-left-outline::before {\n  content: \"\\F12F3\";\n}\n\n.mdi-message-arrow-right::before {\n  content: \"\\F12F4\";\n}\n\n.mdi-message-arrow-right-outline::before {\n  content: \"\\F12F5\";\n}\n\n.mdi-message-bulleted::before {\n  content: \"\\F06A2\";\n}\n\n.mdi-message-bulleted-off::before {\n  content: \"\\F06A3\";\n}\n\n.mdi-message-cog::before {\n  content: \"\\F06F1\";\n}\n\n.mdi-message-cog-outline::before {\n  content: \"\\F1172\";\n}\n\n.mdi-message-draw::before {\n  content: \"\\F0363\";\n}\n\n.mdi-message-image::before {\n  content: \"\\F0364\";\n}\n\n.mdi-message-image-outline::before {\n  content: \"\\F116C\";\n}\n\n.mdi-message-lock::before {\n  content: \"\\F0FCC\";\n}\n\n.mdi-message-lock-outline::before {\n  content: \"\\F116D\";\n}\n\n.mdi-message-minus::before {\n  content: \"\\F116E\";\n}\n\n.mdi-message-minus-outline::before {\n  content: \"\\F116F\";\n}\n\n.mdi-message-outline::before {\n  content: \"\\F0365\";\n}\n\n.mdi-message-plus::before {\n  content: \"\\F0653\";\n}\n\n.mdi-message-plus-outline::before {\n  content: \"\\F10BB\";\n}\n\n.mdi-message-processing::before {\n  content: \"\\F0366\";\n}\n\n.mdi-message-processing-outline::before {\n  content: \"\\F1170\";\n}\n\n.mdi-message-reply::before {\n  content: \"\\F0367\";\n}\n\n.mdi-message-reply-text::before {\n  content: \"\\F0368\";\n}\n\n.mdi-message-settings::before {\n  content: \"\\F06F0\";\n}\n\n.mdi-message-settings-outline::before {\n  content: \"\\F1171\";\n}\n\n.mdi-message-text::before {\n  content: \"\\F0369\";\n}\n\n.mdi-message-text-clock::before {\n  content: \"\\F1173\";\n}\n\n.mdi-message-text-clock-outline::before {\n  content: \"\\F1174\";\n}\n\n.mdi-message-text-lock::before {\n  content: \"\\F0FCD\";\n}\n\n.mdi-message-text-lock-outline::before {\n  content: \"\\F1175\";\n}\n\n.mdi-message-text-outline::before {\n  content: \"\\F036A\";\n}\n\n.mdi-message-video::before {\n  content: \"\\F036B\";\n}\n\n.mdi-meteor::before {\n  content: \"\\F0629\";\n}\n\n.mdi-metronome::before {\n  content: \"\\F07DA\";\n}\n\n.mdi-metronome-tick::before {\n  content: \"\\F07DB\";\n}\n\n.mdi-micro-sd::before {\n  content: \"\\F07DC\";\n}\n\n.mdi-microphone::before {\n  content: \"\\F036C\";\n}\n\n.mdi-microphone-minus::before {\n  content: \"\\F08B3\";\n}\n\n.mdi-microphone-off::before {\n  content: \"\\F036D\";\n}\n\n.mdi-microphone-outline::before {\n  content: \"\\F036E\";\n}\n\n.mdi-microphone-plus::before {\n  content: \"\\F08B4\";\n}\n\n.mdi-microphone-settings::before {\n  content: \"\\F036F\";\n}\n\n.mdi-microphone-variant::before {\n  content: \"\\F0370\";\n}\n\n.mdi-microphone-variant-off::before {\n  content: \"\\F0371\";\n}\n\n.mdi-microscope::before {\n  content: \"\\F0654\";\n}\n\n.mdi-microsoft::before {\n  content: \"\\F0372\";\n}\n\n.mdi-microsoft-access::before {\n  content: \"\\F138E\";\n}\n\n.mdi-microsoft-azure::before {\n  content: \"\\F0805\";\n}\n\n.mdi-microsoft-azure-devops::before {\n  content: \"\\F0FD5\";\n}\n\n.mdi-microsoft-bing::before {\n  content: \"\\F00A4\";\n}\n\n.mdi-microsoft-dynamics-365::before {\n  content: \"\\F0988\";\n}\n\n.mdi-microsoft-edge::before {\n  content: \"\\F01E9\";\n}\n\n.mdi-microsoft-edge-legacy::before {\n  content: \"\\F1250\";\n}\n\n.mdi-microsoft-excel::before {\n  content: \"\\F138F\";\n}\n\n.mdi-microsoft-internet-explorer::before {\n  content: \"\\F0300\";\n}\n\n.mdi-microsoft-office::before {\n  content: \"\\F03C6\";\n}\n\n.mdi-microsoft-onedrive::before {\n  content: \"\\F03CA\";\n}\n\n.mdi-microsoft-onenote::before {\n  content: \"\\F0747\";\n}\n\n.mdi-microsoft-outlook::before {\n  content: \"\\F0D22\";\n}\n\n.mdi-microsoft-powerpoint::before {\n  content: \"\\F1390\";\n}\n\n.mdi-microsoft-sharepoint::before {\n  content: \"\\F1391\";\n}\n\n.mdi-microsoft-teams::before {\n  content: \"\\F02BB\";\n}\n\n.mdi-microsoft-visual-studio::before {\n  content: \"\\F0610\";\n}\n\n.mdi-microsoft-visual-studio-code::before {\n  content: \"\\F0A1E\";\n}\n\n.mdi-microsoft-windows::before {\n  content: \"\\F05B3\";\n}\n\n.mdi-microsoft-windows-classic::before {\n  content: \"\\F0A21\";\n}\n\n.mdi-microsoft-word::before {\n  content: \"\\F1392\";\n}\n\n.mdi-microsoft-xbox::before {\n  content: \"\\F05B9\";\n}\n\n.mdi-microsoft-xbox-controller::before {\n  content: \"\\F05BA\";\n}\n\n.mdi-microsoft-xbox-controller-battery-alert::before {\n  content: \"\\F074B\";\n}\n\n.mdi-microsoft-xbox-controller-battery-charging::before {\n  content: \"\\F0A22\";\n}\n\n.mdi-microsoft-xbox-controller-battery-empty::before {\n  content: \"\\F074C\";\n}\n\n.mdi-microsoft-xbox-controller-battery-full::before {\n  content: \"\\F074D\";\n}\n\n.mdi-microsoft-xbox-controller-battery-low::before {\n  content: \"\\F074E\";\n}\n\n.mdi-microsoft-xbox-controller-battery-medium::before {\n  content: \"\\F074F\";\n}\n\n.mdi-microsoft-xbox-controller-battery-unknown::before {\n  content: \"\\F0750\";\n}\n\n.mdi-microsoft-xbox-controller-menu::before {\n  content: \"\\F0E6F\";\n}\n\n.mdi-microsoft-xbox-controller-off::before {\n  content: \"\\F05BB\";\n}\n\n.mdi-microsoft-xbox-controller-view::before {\n  content: \"\\F0E70\";\n}\n\n.mdi-microsoft-yammer::before {\n  content: \"\\F0789\";\n}\n\n.mdi-microwave::before {\n  content: \"\\F0C99\";\n}\n\n.mdi-microwave-off::before {\n  content: \"\\F1423\";\n}\n\n.mdi-middleware::before {\n  content: \"\\F0F5D\";\n}\n\n.mdi-middleware-outline::before {\n  content: \"\\F0F5E\";\n}\n\n.mdi-midi::before {\n  content: \"\\F08F1\";\n}\n\n.mdi-midi-port::before {\n  content: \"\\F08F2\";\n}\n\n.mdi-mine::before {\n  content: \"\\F0DDA\";\n}\n\n.mdi-minecraft::before {\n  content: \"\\F0373\";\n}\n\n.mdi-mini-sd::before {\n  content: \"\\F0A05\";\n}\n\n.mdi-minidisc::before {\n  content: \"\\F0A06\";\n}\n\n.mdi-minus::before {\n  content: \"\\F0374\";\n}\n\n.mdi-minus-box::before {\n  content: \"\\F0375\";\n}\n\n.mdi-minus-box-multiple::before {\n  content: \"\\F1141\";\n}\n\n.mdi-minus-box-multiple-outline::before {\n  content: \"\\F1142\";\n}\n\n.mdi-minus-box-outline::before {\n  content: \"\\F06F2\";\n}\n\n.mdi-minus-circle::before {\n  content: \"\\F0376\";\n}\n\n.mdi-minus-circle-multiple::before {\n  content: \"\\F035A\";\n}\n\n.mdi-minus-circle-multiple-outline::before {\n  content: \"\\F0AD3\";\n}\n\n.mdi-minus-circle-off::before {\n  content: \"\\F1459\";\n}\n\n.mdi-minus-circle-off-outline::before {\n  content: \"\\F145A\";\n}\n\n.mdi-minus-circle-outline::before {\n  content: \"\\F0377\";\n}\n\n.mdi-minus-network::before {\n  content: \"\\F0378\";\n}\n\n.mdi-minus-network-outline::before {\n  content: \"\\F0C9A\";\n}\n\n.mdi-mirror::before {\n  content: \"\\F11FD\";\n}\n\n.mdi-mixed-martial-arts::before {\n  content: \"\\F0D8F\";\n}\n\n.mdi-mixed-reality::before {\n  content: \"\\F087F\";\n}\n\n.mdi-molecule::before {\n  content: \"\\F0BAC\";\n}\n\n.mdi-molecule-co::before {\n  content: \"\\F12FE\";\n}\n\n.mdi-molecule-co2::before {\n  content: \"\\F07E4\";\n}\n\n.mdi-monitor::before {\n  content: \"\\F0379\";\n}\n\n.mdi-monitor-cellphone::before {\n  content: \"\\F0989\";\n}\n\n.mdi-monitor-cellphone-star::before {\n  content: \"\\F098A\";\n}\n\n.mdi-monitor-clean::before {\n  content: \"\\F1104\";\n}\n\n.mdi-monitor-dashboard::before {\n  content: \"\\F0A07\";\n}\n\n.mdi-monitor-edit::before {\n  content: \"\\F12C6\";\n}\n\n.mdi-monitor-eye::before {\n  content: \"\\F13B4\";\n}\n\n.mdi-monitor-lock::before {\n  content: \"\\F0DDB\";\n}\n\n.mdi-monitor-multiple::before {\n  content: \"\\F037A\";\n}\n\n.mdi-monitor-off::before {\n  content: \"\\F0D90\";\n}\n\n.mdi-monitor-screenshot::before {\n  content: \"\\F0E51\";\n}\n\n.mdi-monitor-share::before {\n  content: \"\\F1483\";\n}\n\n.mdi-monitor-speaker::before {\n  content: \"\\F0F5F\";\n}\n\n.mdi-monitor-speaker-off::before {\n  content: \"\\F0F60\";\n}\n\n.mdi-monitor-star::before {\n  content: \"\\F0DDC\";\n}\n\n.mdi-moon-first-quarter::before {\n  content: \"\\F0F61\";\n}\n\n.mdi-moon-full::before {\n  content: \"\\F0F62\";\n}\n\n.mdi-moon-last-quarter::before {\n  content: \"\\F0F63\";\n}\n\n.mdi-moon-new::before {\n  content: \"\\F0F64\";\n}\n\n.mdi-moon-waning-crescent::before {\n  content: \"\\F0F65\";\n}\n\n.mdi-moon-waning-gibbous::before {\n  content: \"\\F0F66\";\n}\n\n.mdi-moon-waxing-crescent::before {\n  content: \"\\F0F67\";\n}\n\n.mdi-moon-waxing-gibbous::before {\n  content: \"\\F0F68\";\n}\n\n.mdi-moped::before {\n  content: \"\\F1086\";\n}\n\n.mdi-more::before {\n  content: \"\\F037B\";\n}\n\n.mdi-mother-heart::before {\n  content: \"\\F1314\";\n}\n\n.mdi-mother-nurse::before {\n  content: \"\\F0D21\";\n}\n\n.mdi-motion-sensor::before {\n  content: \"\\F0D91\";\n}\n\n.mdi-motion-sensor-off::before {\n  content: \"\\F1435\";\n}\n\n.mdi-motorbike::before {\n  content: \"\\F037C\";\n}\n\n.mdi-mouse::before {\n  content: \"\\F037D\";\n}\n\n.mdi-mouse-bluetooth::before {\n  content: \"\\F098B\";\n}\n\n.mdi-mouse-off::before {\n  content: \"\\F037E\";\n}\n\n.mdi-mouse-variant::before {\n  content: \"\\F037F\";\n}\n\n.mdi-mouse-variant-off::before {\n  content: \"\\F0380\";\n}\n\n.mdi-move-resize::before {\n  content: \"\\F0655\";\n}\n\n.mdi-move-resize-variant::before {\n  content: \"\\F0656\";\n}\n\n.mdi-movie::before {\n  content: \"\\F0381\";\n}\n\n.mdi-movie-edit::before {\n  content: \"\\F1122\";\n}\n\n.mdi-movie-edit-outline::before {\n  content: \"\\F1123\";\n}\n\n.mdi-movie-filter::before {\n  content: \"\\F1124\";\n}\n\n.mdi-movie-filter-outline::before {\n  content: \"\\F1125\";\n}\n\n.mdi-movie-open::before {\n  content: \"\\F0FCE\";\n}\n\n.mdi-movie-open-outline::before {\n  content: \"\\F0FCF\";\n}\n\n.mdi-movie-outline::before {\n  content: \"\\F0DDD\";\n}\n\n.mdi-movie-roll::before {\n  content: \"\\F07DE\";\n}\n\n.mdi-movie-search::before {\n  content: \"\\F11D2\";\n}\n\n.mdi-movie-search-outline::before {\n  content: \"\\F11D3\";\n}\n\n.mdi-muffin::before {\n  content: \"\\F098C\";\n}\n\n.mdi-multiplication::before {\n  content: \"\\F0382\";\n}\n\n.mdi-multiplication-box::before {\n  content: \"\\F0383\";\n}\n\n.mdi-mushroom::before {\n  content: \"\\F07DF\";\n}\n\n.mdi-mushroom-off::before {\n  content: \"\\F13FA\";\n}\n\n.mdi-mushroom-off-outline::before {\n  content: \"\\F13FB\";\n}\n\n.mdi-mushroom-outline::before {\n  content: \"\\F07E0\";\n}\n\n.mdi-music::before {\n  content: \"\\F075A\";\n}\n\n.mdi-music-accidental-double-flat::before {\n  content: \"\\F0F69\";\n}\n\n.mdi-music-accidental-double-sharp::before {\n  content: \"\\F0F6A\";\n}\n\n.mdi-music-accidental-flat::before {\n  content: \"\\F0F6B\";\n}\n\n.mdi-music-accidental-natural::before {\n  content: \"\\F0F6C\";\n}\n\n.mdi-music-accidental-sharp::before {\n  content: \"\\F0F6D\";\n}\n\n.mdi-music-box::before {\n  content: \"\\F0384\";\n}\n\n.mdi-music-box-multiple::before {\n  content: \"\\F0333\";\n}\n\n.mdi-music-box-multiple-outline::before {\n  content: \"\\F0F04\";\n}\n\n.mdi-music-box-outline::before {\n  content: \"\\F0385\";\n}\n\n.mdi-music-circle::before {\n  content: \"\\F0386\";\n}\n\n.mdi-music-circle-outline::before {\n  content: \"\\F0AD4\";\n}\n\n.mdi-music-clef-alto::before {\n  content: \"\\F0F6E\";\n}\n\n.mdi-music-clef-bass::before {\n  content: \"\\F0F6F\";\n}\n\n.mdi-music-clef-treble::before {\n  content: \"\\F0F70\";\n}\n\n.mdi-music-note::before {\n  content: \"\\F0387\";\n}\n\n.mdi-music-note-bluetooth::before {\n  content: \"\\F05FE\";\n}\n\n.mdi-music-note-bluetooth-off::before {\n  content: \"\\F05FF\";\n}\n\n.mdi-music-note-eighth::before {\n  content: \"\\F0388\";\n}\n\n.mdi-music-note-eighth-dotted::before {\n  content: \"\\F0F71\";\n}\n\n.mdi-music-note-half::before {\n  content: \"\\F0389\";\n}\n\n.mdi-music-note-half-dotted::before {\n  content: \"\\F0F72\";\n}\n\n.mdi-music-note-off::before {\n  content: \"\\F038A\";\n}\n\n.mdi-music-note-off-outline::before {\n  content: \"\\F0F73\";\n}\n\n.mdi-music-note-outline::before {\n  content: \"\\F0F74\";\n}\n\n.mdi-music-note-plus::before {\n  content: \"\\F0DDE\";\n}\n\n.mdi-music-note-quarter::before {\n  content: \"\\F038B\";\n}\n\n.mdi-music-note-quarter-dotted::before {\n  content: \"\\F0F75\";\n}\n\n.mdi-music-note-sixteenth::before {\n  content: \"\\F038C\";\n}\n\n.mdi-music-note-sixteenth-dotted::before {\n  content: \"\\F0F76\";\n}\n\n.mdi-music-note-whole::before {\n  content: \"\\F038D\";\n}\n\n.mdi-music-note-whole-dotted::before {\n  content: \"\\F0F77\";\n}\n\n.mdi-music-off::before {\n  content: \"\\F075B\";\n}\n\n.mdi-music-rest-eighth::before {\n  content: \"\\F0F78\";\n}\n\n.mdi-music-rest-half::before {\n  content: \"\\F0F79\";\n}\n\n.mdi-music-rest-quarter::before {\n  content: \"\\F0F7A\";\n}\n\n.mdi-music-rest-sixteenth::before {\n  content: \"\\F0F7B\";\n}\n\n.mdi-music-rest-whole::before {\n  content: \"\\F0F7C\";\n}\n\n.mdi-nail::before {\n  content: \"\\F0DDF\";\n}\n\n.mdi-nas::before {\n  content: \"\\F08F3\";\n}\n\n.mdi-nativescript::before {\n  content: \"\\F0880\";\n}\n\n.mdi-nature::before {\n  content: \"\\F038E\";\n}\n\n.mdi-nature-people::before {\n  content: \"\\F038F\";\n}\n\n.mdi-navigation::before {\n  content: \"\\F0390\";\n}\n\n.mdi-near-me::before {\n  content: \"\\F05CD\";\n}\n\n.mdi-necklace::before {\n  content: \"\\F0F0B\";\n}\n\n.mdi-needle::before {\n  content: \"\\F0391\";\n}\n\n.mdi-netflix::before {\n  content: \"\\F0746\";\n}\n\n.mdi-network::before {\n  content: \"\\F06F3\";\n}\n\n.mdi-network-off::before {\n  content: \"\\F0C9B\";\n}\n\n.mdi-network-off-outline::before {\n  content: \"\\F0C9C\";\n}\n\n.mdi-network-outline::before {\n  content: \"\\F0C9D\";\n}\n\n.mdi-network-strength-1::before {\n  content: \"\\F08F4\";\n}\n\n.mdi-network-strength-1-alert::before {\n  content: \"\\F08F5\";\n}\n\n.mdi-network-strength-2::before {\n  content: \"\\F08F6\";\n}\n\n.mdi-network-strength-2-alert::before {\n  content: \"\\F08F7\";\n}\n\n.mdi-network-strength-3::before {\n  content: \"\\F08F8\";\n}\n\n.mdi-network-strength-3-alert::before {\n  content: \"\\F08F9\";\n}\n\n.mdi-network-strength-4::before {\n  content: \"\\F08FA\";\n}\n\n.mdi-network-strength-4-alert::before {\n  content: \"\\F08FB\";\n}\n\n.mdi-network-strength-off::before {\n  content: \"\\F08FC\";\n}\n\n.mdi-network-strength-off-outline::before {\n  content: \"\\F08FD\";\n}\n\n.mdi-network-strength-outline::before {\n  content: \"\\F08FE\";\n}\n\n.mdi-new-box::before {\n  content: \"\\F0394\";\n}\n\n.mdi-newspaper::before {\n  content: \"\\F0395\";\n}\n\n.mdi-newspaper-minus::before {\n  content: \"\\F0F0C\";\n}\n\n.mdi-newspaper-plus::before {\n  content: \"\\F0F0D\";\n}\n\n.mdi-newspaper-variant::before {\n  content: \"\\F1001\";\n}\n\n.mdi-newspaper-variant-multiple::before {\n  content: \"\\F1002\";\n}\n\n.mdi-newspaper-variant-multiple-outline::before {\n  content: \"\\F1003\";\n}\n\n.mdi-newspaper-variant-outline::before {\n  content: \"\\F1004\";\n}\n\n.mdi-nfc::before {\n  content: \"\\F0396\";\n}\n\n.mdi-nfc-search-variant::before {\n  content: \"\\F0E53\";\n}\n\n.mdi-nfc-tap::before {\n  content: \"\\F0397\";\n}\n\n.mdi-nfc-variant::before {\n  content: \"\\F0398\";\n}\n\n.mdi-nfc-variant-off::before {\n  content: \"\\F0E54\";\n}\n\n.mdi-ninja::before {\n  content: \"\\F0774\";\n}\n\n.mdi-nintendo-game-boy::before {\n  content: \"\\F1393\";\n}\n\n.mdi-nintendo-switch::before {\n  content: \"\\F07E1\";\n}\n\n.mdi-nintendo-wii::before {\n  content: \"\\F05AB\";\n}\n\n.mdi-nintendo-wiiu::before {\n  content: \"\\F072D\";\n}\n\n.mdi-nix::before {\n  content: \"\\F1105\";\n}\n\n.mdi-nodejs::before {\n  content: \"\\F0399\";\n}\n\n.mdi-noodles::before {\n  content: \"\\F117E\";\n}\n\n.mdi-not-equal::before {\n  content: \"\\F098D\";\n}\n\n.mdi-not-equal-variant::before {\n  content: \"\\F098E\";\n}\n\n.mdi-note::before {\n  content: \"\\F039A\";\n}\n\n.mdi-note-multiple::before {\n  content: \"\\F06B8\";\n}\n\n.mdi-note-multiple-outline::before {\n  content: \"\\F06B9\";\n}\n\n.mdi-note-outline::before {\n  content: \"\\F039B\";\n}\n\n.mdi-note-plus::before {\n  content: \"\\F039C\";\n}\n\n.mdi-note-plus-outline::before {\n  content: \"\\F039D\";\n}\n\n.mdi-note-text::before {\n  content: \"\\F039E\";\n}\n\n.mdi-note-text-outline::before {\n  content: \"\\F11D7\";\n}\n\n.mdi-notebook::before {\n  content: \"\\F082E\";\n}\n\n.mdi-notebook-check::before {\n  content: \"\\F14F5\";\n}\n\n.mdi-notebook-check-outline::before {\n  content: \"\\F14F6\";\n}\n\n.mdi-notebook-edit::before {\n  content: \"\\F14E7\";\n}\n\n.mdi-notebook-edit-outline::before {\n  content: \"\\F14E9\";\n}\n\n.mdi-notebook-multiple::before {\n  content: \"\\F0E55\";\n}\n\n.mdi-notebook-outline::before {\n  content: \"\\F0EBF\";\n}\n\n.mdi-notification-clear-all::before {\n  content: \"\\F039F\";\n}\n\n.mdi-npm::before {\n  content: \"\\F06F7\";\n}\n\n.mdi-nuke::before {\n  content: \"\\F06A4\";\n}\n\n.mdi-null::before {\n  content: \"\\F07E2\";\n}\n\n.mdi-numeric::before {\n  content: \"\\F03A0\";\n}\n\n.mdi-numeric-0::before {\n  content: \"\\F0B39\";\n}\n\n.mdi-numeric-0-box::before {\n  content: \"\\F03A1\";\n}\n\n.mdi-numeric-0-box-multiple::before {\n  content: \"\\F0F0E\";\n}\n\n.mdi-numeric-0-box-multiple-outline::before {\n  content: \"\\F03A2\";\n}\n\n.mdi-numeric-0-box-outline::before {\n  content: \"\\F03A3\";\n}\n\n.mdi-numeric-0-circle::before {\n  content: \"\\F0C9E\";\n}\n\n.mdi-numeric-0-circle-outline::before {\n  content: \"\\F0C9F\";\n}\n\n.mdi-numeric-1::before {\n  content: \"\\F0B3A\";\n}\n\n.mdi-numeric-1-box::before {\n  content: \"\\F03A4\";\n}\n\n.mdi-numeric-1-box-multiple::before {\n  content: \"\\F0F0F\";\n}\n\n.mdi-numeric-1-box-multiple-outline::before {\n  content: \"\\F03A5\";\n}\n\n.mdi-numeric-1-box-outline::before {\n  content: \"\\F03A6\";\n}\n\n.mdi-numeric-1-circle::before {\n  content: \"\\F0CA0\";\n}\n\n.mdi-numeric-1-circle-outline::before {\n  content: \"\\F0CA1\";\n}\n\n.mdi-numeric-10::before {\n  content: \"\\F0FE9\";\n}\n\n.mdi-numeric-10-box::before {\n  content: \"\\F0F7D\";\n}\n\n.mdi-numeric-10-box-multiple::before {\n  content: \"\\F0FEA\";\n}\n\n.mdi-numeric-10-box-multiple-outline::before {\n  content: \"\\F0FEB\";\n}\n\n.mdi-numeric-10-box-outline::before {\n  content: \"\\F0F7E\";\n}\n\n.mdi-numeric-10-circle::before {\n  content: \"\\F0FEC\";\n}\n\n.mdi-numeric-10-circle-outline::before {\n  content: \"\\F0FED\";\n}\n\n.mdi-numeric-2::before {\n  content: \"\\F0B3B\";\n}\n\n.mdi-numeric-2-box::before {\n  content: \"\\F03A7\";\n}\n\n.mdi-numeric-2-box-multiple::before {\n  content: \"\\F0F10\";\n}\n\n.mdi-numeric-2-box-multiple-outline::before {\n  content: \"\\F03A8\";\n}\n\n.mdi-numeric-2-box-outline::before {\n  content: \"\\F03A9\";\n}\n\n.mdi-numeric-2-circle::before {\n  content: \"\\F0CA2\";\n}\n\n.mdi-numeric-2-circle-outline::before {\n  content: \"\\F0CA3\";\n}\n\n.mdi-numeric-3::before {\n  content: \"\\F0B3C\";\n}\n\n.mdi-numeric-3-box::before {\n  content: \"\\F03AA\";\n}\n\n.mdi-numeric-3-box-multiple::before {\n  content: \"\\F0F11\";\n}\n\n.mdi-numeric-3-box-multiple-outline::before {\n  content: \"\\F03AB\";\n}\n\n.mdi-numeric-3-box-outline::before {\n  content: \"\\F03AC\";\n}\n\n.mdi-numeric-3-circle::before {\n  content: \"\\F0CA4\";\n}\n\n.mdi-numeric-3-circle-outline::before {\n  content: \"\\F0CA5\";\n}\n\n.mdi-numeric-4::before {\n  content: \"\\F0B3D\";\n}\n\n.mdi-numeric-4-box::before {\n  content: \"\\F03AD\";\n}\n\n.mdi-numeric-4-box-multiple::before {\n  content: \"\\F0F12\";\n}\n\n.mdi-numeric-4-box-multiple-outline::before {\n  content: \"\\F03B2\";\n}\n\n.mdi-numeric-4-box-outline::before {\n  content: \"\\F03AE\";\n}\n\n.mdi-numeric-4-circle::before {\n  content: \"\\F0CA6\";\n}\n\n.mdi-numeric-4-circle-outline::before {\n  content: \"\\F0CA7\";\n}\n\n.mdi-numeric-5::before {\n  content: \"\\F0B3E\";\n}\n\n.mdi-numeric-5-box::before {\n  content: \"\\F03B1\";\n}\n\n.mdi-numeric-5-box-multiple::before {\n  content: \"\\F0F13\";\n}\n\n.mdi-numeric-5-box-multiple-outline::before {\n  content: \"\\F03AF\";\n}\n\n.mdi-numeric-5-box-outline::before {\n  content: \"\\F03B0\";\n}\n\n.mdi-numeric-5-circle::before {\n  content: \"\\F0CA8\";\n}\n\n.mdi-numeric-5-circle-outline::before {\n  content: \"\\F0CA9\";\n}\n\n.mdi-numeric-6::before {\n  content: \"\\F0B3F\";\n}\n\n.mdi-numeric-6-box::before {\n  content: \"\\F03B3\";\n}\n\n.mdi-numeric-6-box-multiple::before {\n  content: \"\\F0F14\";\n}\n\n.mdi-numeric-6-box-multiple-outline::before {\n  content: \"\\F03B4\";\n}\n\n.mdi-numeric-6-box-outline::before {\n  content: \"\\F03B5\";\n}\n\n.mdi-numeric-6-circle::before {\n  content: \"\\F0CAA\";\n}\n\n.mdi-numeric-6-circle-outline::before {\n  content: \"\\F0CAB\";\n}\n\n.mdi-numeric-7::before {\n  content: \"\\F0B40\";\n}\n\n.mdi-numeric-7-box::before {\n  content: \"\\F03B6\";\n}\n\n.mdi-numeric-7-box-multiple::before {\n  content: \"\\F0F15\";\n}\n\n.mdi-numeric-7-box-multiple-outline::before {\n  content: \"\\F03B7\";\n}\n\n.mdi-numeric-7-box-outline::before {\n  content: \"\\F03B8\";\n}\n\n.mdi-numeric-7-circle::before {\n  content: \"\\F0CAC\";\n}\n\n.mdi-numeric-7-circle-outline::before {\n  content: \"\\F0CAD\";\n}\n\n.mdi-numeric-8::before {\n  content: \"\\F0B41\";\n}\n\n.mdi-numeric-8-box::before {\n  content: \"\\F03B9\";\n}\n\n.mdi-numeric-8-box-multiple::before {\n  content: \"\\F0F16\";\n}\n\n.mdi-numeric-8-box-multiple-outline::before {\n  content: \"\\F03BA\";\n}\n\n.mdi-numeric-8-box-outline::before {\n  content: \"\\F03BB\";\n}\n\n.mdi-numeric-8-circle::before {\n  content: \"\\F0CAE\";\n}\n\n.mdi-numeric-8-circle-outline::before {\n  content: \"\\F0CAF\";\n}\n\n.mdi-numeric-9::before {\n  content: \"\\F0B42\";\n}\n\n.mdi-numeric-9-box::before {\n  content: \"\\F03BC\";\n}\n\n.mdi-numeric-9-box-multiple::before {\n  content: \"\\F0F17\";\n}\n\n.mdi-numeric-9-box-multiple-outline::before {\n  content: \"\\F03BD\";\n}\n\n.mdi-numeric-9-box-outline::before {\n  content: \"\\F03BE\";\n}\n\n.mdi-numeric-9-circle::before {\n  content: \"\\F0CB0\";\n}\n\n.mdi-numeric-9-circle-outline::before {\n  content: \"\\F0CB1\";\n}\n\n.mdi-numeric-9-plus::before {\n  content: \"\\F0FEE\";\n}\n\n.mdi-numeric-9-plus-box::before {\n  content: \"\\F03BF\";\n}\n\n.mdi-numeric-9-plus-box-multiple::before {\n  content: \"\\F0F18\";\n}\n\n.mdi-numeric-9-plus-box-multiple-outline::before {\n  content: \"\\F03C0\";\n}\n\n.mdi-numeric-9-plus-box-outline::before {\n  content: \"\\F03C1\";\n}\n\n.mdi-numeric-9-plus-circle::before {\n  content: \"\\F0CB2\";\n}\n\n.mdi-numeric-9-plus-circle-outline::before {\n  content: \"\\F0CB3\";\n}\n\n.mdi-numeric-negative-1::before {\n  content: \"\\F1052\";\n}\n\n.mdi-nut::before {\n  content: \"\\F06F8\";\n}\n\n.mdi-nutrition::before {\n  content: \"\\F03C2\";\n}\n\n.mdi-nuxt::before {\n  content: \"\\F1106\";\n}\n\n.mdi-oar::before {\n  content: \"\\F067C\";\n}\n\n.mdi-ocarina::before {\n  content: \"\\F0DE0\";\n}\n\n.mdi-oci::before {\n  content: \"\\F12E9\";\n}\n\n.mdi-ocr::before {\n  content: \"\\F113A\";\n}\n\n.mdi-octagon::before {\n  content: \"\\F03C3\";\n}\n\n.mdi-octagon-outline::before {\n  content: \"\\F03C4\";\n}\n\n.mdi-octagram::before {\n  content: \"\\F06F9\";\n}\n\n.mdi-octagram-outline::before {\n  content: \"\\F0775\";\n}\n\n.mdi-odnoklassniki::before {\n  content: \"\\F03C5\";\n}\n\n.mdi-offer::before {\n  content: \"\\F121B\";\n}\n\n.mdi-office-building::before {\n  content: \"\\F0991\";\n}\n\n.mdi-office-building-marker::before {\n  content: \"\\F1520\";\n}\n\n.mdi-office-building-marker-outline::before {\n  content: \"\\F1521\";\n}\n\n.mdi-office-building-outline::before {\n  content: \"\\F151F\";\n}\n\n.mdi-oil::before {\n  content: \"\\F03C7\";\n}\n\n.mdi-oil-lamp::before {\n  content: \"\\F0F19\";\n}\n\n.mdi-oil-level::before {\n  content: \"\\F1053\";\n}\n\n.mdi-oil-temperature::before {\n  content: \"\\F0FF8\";\n}\n\n.mdi-omega::before {\n  content: \"\\F03C9\";\n}\n\n.mdi-one-up::before {\n  content: \"\\F0BAD\";\n}\n\n.mdi-onepassword::before {\n  content: \"\\F0881\";\n}\n\n.mdi-opacity::before {\n  content: \"\\F05CC\";\n}\n\n.mdi-open-in-app::before {\n  content: \"\\F03CB\";\n}\n\n.mdi-open-in-new::before {\n  content: \"\\F03CC\";\n}\n\n.mdi-open-source-initiative::before {\n  content: \"\\F0BAE\";\n}\n\n.mdi-openid::before {\n  content: \"\\F03CD\";\n}\n\n.mdi-opera::before {\n  content: \"\\F03CE\";\n}\n\n.mdi-orbit::before {\n  content: \"\\F0018\";\n}\n\n.mdi-order-alphabetical-ascending::before {\n  content: \"\\F020D\";\n}\n\n.mdi-order-alphabetical-descending::before {\n  content: \"\\F0D07\";\n}\n\n.mdi-order-bool-ascending::before {\n  content: \"\\F02BE\";\n}\n\n.mdi-order-bool-ascending-variant::before {\n  content: \"\\F098F\";\n}\n\n.mdi-order-bool-descending::before {\n  content: \"\\F1384\";\n}\n\n.mdi-order-bool-descending-variant::before {\n  content: \"\\F0990\";\n}\n\n.mdi-order-numeric-ascending::before {\n  content: \"\\F0545\";\n}\n\n.mdi-order-numeric-descending::before {\n  content: \"\\F0546\";\n}\n\n.mdi-origin::before {\n  content: \"\\F0B43\";\n}\n\n.mdi-ornament::before {\n  content: \"\\F03CF\";\n}\n\n.mdi-ornament-variant::before {\n  content: \"\\F03D0\";\n}\n\n.mdi-outdoor-lamp::before {\n  content: \"\\F1054\";\n}\n\n.mdi-overscan::before {\n  content: \"\\F1005\";\n}\n\n.mdi-owl::before {\n  content: \"\\F03D2\";\n}\n\n.mdi-pac-man::before {\n  content: \"\\F0BAF\";\n}\n\n.mdi-package::before {\n  content: \"\\F03D3\";\n}\n\n.mdi-package-down::before {\n  content: \"\\F03D4\";\n}\n\n.mdi-package-up::before {\n  content: \"\\F03D5\";\n}\n\n.mdi-package-variant::before {\n  content: \"\\F03D6\";\n}\n\n.mdi-package-variant-closed::before {\n  content: \"\\F03D7\";\n}\n\n.mdi-page-first::before {\n  content: \"\\F0600\";\n}\n\n.mdi-page-last::before {\n  content: \"\\F0601\";\n}\n\n.mdi-page-layout-body::before {\n  content: \"\\F06FA\";\n}\n\n.mdi-page-layout-footer::before {\n  content: \"\\F06FB\";\n}\n\n.mdi-page-layout-header::before {\n  content: \"\\F06FC\";\n}\n\n.mdi-page-layout-header-footer::before {\n  content: \"\\F0F7F\";\n}\n\n.mdi-page-layout-sidebar-left::before {\n  content: \"\\F06FD\";\n}\n\n.mdi-page-layout-sidebar-right::before {\n  content: \"\\F06FE\";\n}\n\n.mdi-page-next::before {\n  content: \"\\F0BB0\";\n}\n\n.mdi-page-next-outline::before {\n  content: \"\\F0BB1\";\n}\n\n.mdi-page-previous::before {\n  content: \"\\F0BB2\";\n}\n\n.mdi-page-previous-outline::before {\n  content: \"\\F0BB3\";\n}\n\n.mdi-pail::before {\n  content: \"\\F1417\";\n}\n\n.mdi-pail-minus::before {\n  content: \"\\F1437\";\n}\n\n.mdi-pail-minus-outline::before {\n  content: \"\\F143C\";\n}\n\n.mdi-pail-off::before {\n  content: \"\\F1439\";\n}\n\n.mdi-pail-off-outline::before {\n  content: \"\\F143E\";\n}\n\n.mdi-pail-outline::before {\n  content: \"\\F143A\";\n}\n\n.mdi-pail-plus::before {\n  content: \"\\F1436\";\n}\n\n.mdi-pail-plus-outline::before {\n  content: \"\\F143B\";\n}\n\n.mdi-pail-remove::before {\n  content: \"\\F1438\";\n}\n\n.mdi-pail-remove-outline::before {\n  content: \"\\F143D\";\n}\n\n.mdi-palette::before {\n  content: \"\\F03D8\";\n}\n\n.mdi-palette-advanced::before {\n  content: \"\\F03D9\";\n}\n\n.mdi-palette-outline::before {\n  content: \"\\F0E0C\";\n}\n\n.mdi-palette-swatch::before {\n  content: \"\\F08B5\";\n}\n\n.mdi-palette-swatch-outline::before {\n  content: \"\\F135C\";\n}\n\n.mdi-palm-tree::before {\n  content: \"\\F1055\";\n}\n\n.mdi-pan::before {\n  content: \"\\F0BB4\";\n}\n\n.mdi-pan-bottom-left::before {\n  content: \"\\F0BB5\";\n}\n\n.mdi-pan-bottom-right::before {\n  content: \"\\F0BB6\";\n}\n\n.mdi-pan-down::before {\n  content: \"\\F0BB7\";\n}\n\n.mdi-pan-horizontal::before {\n  content: \"\\F0BB8\";\n}\n\n.mdi-pan-left::before {\n  content: \"\\F0BB9\";\n}\n\n.mdi-pan-right::before {\n  content: \"\\F0BBA\";\n}\n\n.mdi-pan-top-left::before {\n  content: \"\\F0BBB\";\n}\n\n.mdi-pan-top-right::before {\n  content: \"\\F0BBC\";\n}\n\n.mdi-pan-up::before {\n  content: \"\\F0BBD\";\n}\n\n.mdi-pan-vertical::before {\n  content: \"\\F0BBE\";\n}\n\n.mdi-panda::before {\n  content: \"\\F03DA\";\n}\n\n.mdi-pandora::before {\n  content: \"\\F03DB\";\n}\n\n.mdi-panorama::before {\n  content: \"\\F03DC\";\n}\n\n.mdi-panorama-fisheye::before {\n  content: \"\\F03DD\";\n}\n\n.mdi-panorama-horizontal::before {\n  content: \"\\F03DE\";\n}\n\n.mdi-panorama-vertical::before {\n  content: \"\\F03DF\";\n}\n\n.mdi-panorama-wide-angle::before {\n  content: \"\\F03E0\";\n}\n\n.mdi-paper-cut-vertical::before {\n  content: \"\\F03E1\";\n}\n\n.mdi-paper-roll::before {\n  content: \"\\F1157\";\n}\n\n.mdi-paper-roll-outline::before {\n  content: \"\\F1158\";\n}\n\n.mdi-paperclip::before {\n  content: \"\\F03E2\";\n}\n\n.mdi-parachute::before {\n  content: \"\\F0CB4\";\n}\n\n.mdi-parachute-outline::before {\n  content: \"\\F0CB5\";\n}\n\n.mdi-parking::before {\n  content: \"\\F03E3\";\n}\n\n.mdi-party-popper::before {\n  content: \"\\F1056\";\n}\n\n.mdi-passport::before {\n  content: \"\\F07E3\";\n}\n\n.mdi-passport-biometric::before {\n  content: \"\\F0DE1\";\n}\n\n.mdi-pasta::before {\n  content: \"\\F1160\";\n}\n\n.mdi-patio-heater::before {\n  content: \"\\F0F80\";\n}\n\n.mdi-patreon::before {\n  content: \"\\F0882\";\n}\n\n.mdi-pause::before {\n  content: \"\\F03E4\";\n}\n\n.mdi-pause-circle::before {\n  content: \"\\F03E5\";\n}\n\n.mdi-pause-circle-outline::before {\n  content: \"\\F03E6\";\n}\n\n.mdi-pause-octagon::before {\n  content: \"\\F03E7\";\n}\n\n.mdi-pause-octagon-outline::before {\n  content: \"\\F03E8\";\n}\n\n.mdi-paw::before {\n  content: \"\\F03E9\";\n}\n\n.mdi-paw-off::before {\n  content: \"\\F0657\";\n}\n\n.mdi-pdf-box::before {\n  content: \"\\F0E56\";\n}\n\n.mdi-peace::before {\n  content: \"\\F0884\";\n}\n\n.mdi-peanut::before {\n  content: \"\\F0FFC\";\n}\n\n.mdi-peanut-off::before {\n  content: \"\\F0FFD\";\n}\n\n.mdi-peanut-off-outline::before {\n  content: \"\\F0FFF\";\n}\n\n.mdi-peanut-outline::before {\n  content: \"\\F0FFE\";\n}\n\n.mdi-pen::before {\n  content: \"\\F03EA\";\n}\n\n.mdi-pen-lock::before {\n  content: \"\\F0DE2\";\n}\n\n.mdi-pen-minus::before {\n  content: \"\\F0DE3\";\n}\n\n.mdi-pen-off::before {\n  content: \"\\F0DE4\";\n}\n\n.mdi-pen-plus::before {\n  content: \"\\F0DE5\";\n}\n\n.mdi-pen-remove::before {\n  content: \"\\F0DE6\";\n}\n\n.mdi-pencil::before {\n  content: \"\\F03EB\";\n}\n\n.mdi-pencil-box::before {\n  content: \"\\F03EC\";\n}\n\n.mdi-pencil-box-multiple::before {\n  content: \"\\F1144\";\n}\n\n.mdi-pencil-box-multiple-outline::before {\n  content: \"\\F1145\";\n}\n\n.mdi-pencil-box-outline::before {\n  content: \"\\F03ED\";\n}\n\n.mdi-pencil-circle::before {\n  content: \"\\F06FF\";\n}\n\n.mdi-pencil-circle-outline::before {\n  content: \"\\F0776\";\n}\n\n.mdi-pencil-lock::before {\n  content: \"\\F03EE\";\n}\n\n.mdi-pencil-lock-outline::before {\n  content: \"\\F0DE7\";\n}\n\n.mdi-pencil-minus::before {\n  content: \"\\F0DE8\";\n}\n\n.mdi-pencil-minus-outline::before {\n  content: \"\\F0DE9\";\n}\n\n.mdi-pencil-off::before {\n  content: \"\\F03EF\";\n}\n\n.mdi-pencil-off-outline::before {\n  content: \"\\F0DEA\";\n}\n\n.mdi-pencil-outline::before {\n  content: \"\\F0CB6\";\n}\n\n.mdi-pencil-plus::before {\n  content: \"\\F0DEB\";\n}\n\n.mdi-pencil-plus-outline::before {\n  content: \"\\F0DEC\";\n}\n\n.mdi-pencil-remove::before {\n  content: \"\\F0DED\";\n}\n\n.mdi-pencil-remove-outline::before {\n  content: \"\\F0DEE\";\n}\n\n.mdi-pencil-ruler::before {\n  content: \"\\F1353\";\n}\n\n.mdi-penguin::before {\n  content: \"\\F0EC0\";\n}\n\n.mdi-pentagon::before {\n  content: \"\\F0701\";\n}\n\n.mdi-pentagon-outline::before {\n  content: \"\\F0700\";\n}\n\n.mdi-percent::before {\n  content: \"\\F03F0\";\n}\n\n.mdi-percent-outline::before {\n  content: \"\\F1278\";\n}\n\n.mdi-periodic-table::before {\n  content: \"\\F08B6\";\n}\n\n.mdi-perspective-less::before {\n  content: \"\\F0D23\";\n}\n\n.mdi-perspective-more::before {\n  content: \"\\F0D24\";\n}\n\n.mdi-pharmacy::before {\n  content: \"\\F03F1\";\n}\n\n.mdi-phone::before {\n  content: \"\\F03F2\";\n}\n\n.mdi-phone-alert::before {\n  content: \"\\F0F1A\";\n}\n\n.mdi-phone-alert-outline::before {\n  content: \"\\F118E\";\n}\n\n.mdi-phone-bluetooth::before {\n  content: \"\\F03F3\";\n}\n\n.mdi-phone-bluetooth-outline::before {\n  content: \"\\F118F\";\n}\n\n.mdi-phone-cancel::before {\n  content: \"\\F10BC\";\n}\n\n.mdi-phone-cancel-outline::before {\n  content: \"\\F1190\";\n}\n\n.mdi-phone-check::before {\n  content: \"\\F11A9\";\n}\n\n.mdi-phone-check-outline::before {\n  content: \"\\F11AA\";\n}\n\n.mdi-phone-classic::before {\n  content: \"\\F0602\";\n}\n\n.mdi-phone-classic-off::before {\n  content: \"\\F1279\";\n}\n\n.mdi-phone-forward::before {\n  content: \"\\F03F4\";\n}\n\n.mdi-phone-forward-outline::before {\n  content: \"\\F1191\";\n}\n\n.mdi-phone-hangup::before {\n  content: \"\\F03F5\";\n}\n\n.mdi-phone-hangup-outline::before {\n  content: \"\\F1192\";\n}\n\n.mdi-phone-in-talk::before {\n  content: \"\\F03F6\";\n}\n\n.mdi-phone-in-talk-outline::before {\n  content: \"\\F1182\";\n}\n\n.mdi-phone-incoming::before {\n  content: \"\\F03F7\";\n}\n\n.mdi-phone-incoming-outline::before {\n  content: \"\\F1193\";\n}\n\n.mdi-phone-lock::before {\n  content: \"\\F03F8\";\n}\n\n.mdi-phone-lock-outline::before {\n  content: \"\\F1194\";\n}\n\n.mdi-phone-log::before {\n  content: \"\\F03F9\";\n}\n\n.mdi-phone-log-outline::before {\n  content: \"\\F1195\";\n}\n\n.mdi-phone-message::before {\n  content: \"\\F1196\";\n}\n\n.mdi-phone-message-outline::before {\n  content: \"\\F1197\";\n}\n\n.mdi-phone-minus::before {\n  content: \"\\F0658\";\n}\n\n.mdi-phone-minus-outline::before {\n  content: \"\\F1198\";\n}\n\n.mdi-phone-missed::before {\n  content: \"\\F03FA\";\n}\n\n.mdi-phone-missed-outline::before {\n  content: \"\\F11A5\";\n}\n\n.mdi-phone-off::before {\n  content: \"\\F0DEF\";\n}\n\n.mdi-phone-off-outline::before {\n  content: \"\\F11A6\";\n}\n\n.mdi-phone-outgoing::before {\n  content: \"\\F03FB\";\n}\n\n.mdi-phone-outgoing-outline::before {\n  content: \"\\F1199\";\n}\n\n.mdi-phone-outline::before {\n  content: \"\\F0DF0\";\n}\n\n.mdi-phone-paused::before {\n  content: \"\\F03FC\";\n}\n\n.mdi-phone-paused-outline::before {\n  content: \"\\F119A\";\n}\n\n.mdi-phone-plus::before {\n  content: \"\\F0659\";\n}\n\n.mdi-phone-plus-outline::before {\n  content: \"\\F119B\";\n}\n\n.mdi-phone-remove::before {\n  content: \"\\F152F\";\n}\n\n.mdi-phone-remove-outline::before {\n  content: \"\\F1530\";\n}\n\n.mdi-phone-return::before {\n  content: \"\\F082F\";\n}\n\n.mdi-phone-return-outline::before {\n  content: \"\\F119C\";\n}\n\n.mdi-phone-ring::before {\n  content: \"\\F11AB\";\n}\n\n.mdi-phone-ring-outline::before {\n  content: \"\\F11AC\";\n}\n\n.mdi-phone-rotate-landscape::before {\n  content: \"\\F0885\";\n}\n\n.mdi-phone-rotate-portrait::before {\n  content: \"\\F0886\";\n}\n\n.mdi-phone-settings::before {\n  content: \"\\F03FD\";\n}\n\n.mdi-phone-settings-outline::before {\n  content: \"\\F119D\";\n}\n\n.mdi-phone-voip::before {\n  content: \"\\F03FE\";\n}\n\n.mdi-pi::before {\n  content: \"\\F03FF\";\n}\n\n.mdi-pi-box::before {\n  content: \"\\F0400\";\n}\n\n.mdi-pi-hole::before {\n  content: \"\\F0DF1\";\n}\n\n.mdi-piano::before {\n  content: \"\\F067D\";\n}\n\n.mdi-pickaxe::before {\n  content: \"\\F08B7\";\n}\n\n.mdi-picture-in-picture-bottom-right::before {\n  content: \"\\F0E57\";\n}\n\n.mdi-picture-in-picture-bottom-right-outline::before {\n  content: \"\\F0E58\";\n}\n\n.mdi-picture-in-picture-top-right::before {\n  content: \"\\F0E59\";\n}\n\n.mdi-picture-in-picture-top-right-outline::before {\n  content: \"\\F0E5A\";\n}\n\n.mdi-pier::before {\n  content: \"\\F0887\";\n}\n\n.mdi-pier-crane::before {\n  content: \"\\F0888\";\n}\n\n.mdi-pig::before {\n  content: \"\\F0401\";\n}\n\n.mdi-pig-variant::before {\n  content: \"\\F1006\";\n}\n\n.mdi-piggy-bank::before {\n  content: \"\\F1007\";\n}\n\n.mdi-pill::before {\n  content: \"\\F0402\";\n}\n\n.mdi-pillar::before {\n  content: \"\\F0702\";\n}\n\n.mdi-pin::before {\n  content: \"\\F0403\";\n}\n\n.mdi-pin-off::before {\n  content: \"\\F0404\";\n}\n\n.mdi-pin-off-outline::before {\n  content: \"\\F0930\";\n}\n\n.mdi-pin-outline::before {\n  content: \"\\F0931\";\n}\n\n.mdi-pine-tree::before {\n  content: \"\\F0405\";\n}\n\n.mdi-pine-tree-box::before {\n  content: \"\\F0406\";\n}\n\n.mdi-pine-tree-fire::before {\n  content: \"\\F141A\";\n}\n\n.mdi-pinterest::before {\n  content: \"\\F0407\";\n}\n\n.mdi-pinwheel::before {\n  content: \"\\F0AD5\";\n}\n\n.mdi-pinwheel-outline::before {\n  content: \"\\F0AD6\";\n}\n\n.mdi-pipe::before {\n  content: \"\\F07E5\";\n}\n\n.mdi-pipe-disconnected::before {\n  content: \"\\F07E6\";\n}\n\n.mdi-pipe-leak::before {\n  content: \"\\F0889\";\n}\n\n.mdi-pipe-wrench::before {\n  content: \"\\F1354\";\n}\n\n.mdi-pirate::before {\n  content: \"\\F0A08\";\n}\n\n.mdi-pistol::before {\n  content: \"\\F0703\";\n}\n\n.mdi-piston::before {\n  content: \"\\F088A\";\n}\n\n.mdi-pizza::before {\n  content: \"\\F0409\";\n}\n\n.mdi-play::before {\n  content: \"\\F040A\";\n}\n\n.mdi-play-box::before {\n  content: \"\\F127A\";\n}\n\n.mdi-play-box-multiple::before {\n  content: \"\\F0D19\";\n}\n\n.mdi-play-box-multiple-outline::before {\n  content: \"\\F13E6\";\n}\n\n.mdi-play-box-outline::before {\n  content: \"\\F040B\";\n}\n\n.mdi-play-circle::before {\n  content: \"\\F040C\";\n}\n\n.mdi-play-circle-outline::before {\n  content: \"\\F040D\";\n}\n\n.mdi-play-network::before {\n  content: \"\\F088B\";\n}\n\n.mdi-play-network-outline::before {\n  content: \"\\F0CB7\";\n}\n\n.mdi-play-outline::before {\n  content: \"\\F0F1B\";\n}\n\n.mdi-play-pause::before {\n  content: \"\\F040E\";\n}\n\n.mdi-play-protected-content::before {\n  content: \"\\F040F\";\n}\n\n.mdi-play-speed::before {\n  content: \"\\F08FF\";\n}\n\n.mdi-playlist-check::before {\n  content: \"\\F05C7\";\n}\n\n.mdi-playlist-edit::before {\n  content: \"\\F0900\";\n}\n\n.mdi-playlist-minus::before {\n  content: \"\\F0410\";\n}\n\n.mdi-playlist-music::before {\n  content: \"\\F0CB8\";\n}\n\n.mdi-playlist-music-outline::before {\n  content: \"\\F0CB9\";\n}\n\n.mdi-playlist-play::before {\n  content: \"\\F0411\";\n}\n\n.mdi-playlist-plus::before {\n  content: \"\\F0412\";\n}\n\n.mdi-playlist-remove::before {\n  content: \"\\F0413\";\n}\n\n.mdi-playlist-star::before {\n  content: \"\\F0DF2\";\n}\n\n.mdi-plex::before {\n  content: \"\\F06BA\";\n}\n\n.mdi-plus::before {\n  content: \"\\F0415\";\n}\n\n.mdi-plus-box::before {\n  content: \"\\F0416\";\n}\n\n.mdi-plus-box-multiple::before {\n  content: \"\\F0334\";\n}\n\n.mdi-plus-box-multiple-outline::before {\n  content: \"\\F1143\";\n}\n\n.mdi-plus-box-outline::before {\n  content: \"\\F0704\";\n}\n\n.mdi-plus-circle::before {\n  content: \"\\F0417\";\n}\n\n.mdi-plus-circle-multiple::before {\n  content: \"\\F034C\";\n}\n\n.mdi-plus-circle-multiple-outline::before {\n  content: \"\\F0418\";\n}\n\n.mdi-plus-circle-outline::before {\n  content: \"\\F0419\";\n}\n\n.mdi-plus-minus::before {\n  content: \"\\F0992\";\n}\n\n.mdi-plus-minus-box::before {\n  content: \"\\F0993\";\n}\n\n.mdi-plus-minus-variant::before {\n  content: \"\\F14C9\";\n}\n\n.mdi-plus-network::before {\n  content: \"\\F041A\";\n}\n\n.mdi-plus-network-outline::before {\n  content: \"\\F0CBA\";\n}\n\n.mdi-plus-one::before {\n  content: \"\\F041B\";\n}\n\n.mdi-plus-outline::before {\n  content: \"\\F0705\";\n}\n\n.mdi-plus-thick::before {\n  content: \"\\F11EC\";\n}\n\n.mdi-podcast::before {\n  content: \"\\F0994\";\n}\n\n.mdi-podium::before {\n  content: \"\\F0D25\";\n}\n\n.mdi-podium-bronze::before {\n  content: \"\\F0D26\";\n}\n\n.mdi-podium-gold::before {\n  content: \"\\F0D27\";\n}\n\n.mdi-podium-silver::before {\n  content: \"\\F0D28\";\n}\n\n.mdi-point-of-sale::before {\n  content: \"\\F0D92\";\n}\n\n.mdi-pokeball::before {\n  content: \"\\F041D\";\n}\n\n.mdi-pokemon-go::before {\n  content: \"\\F0A09\";\n}\n\n.mdi-poker-chip::before {\n  content: \"\\F0830\";\n}\n\n.mdi-polaroid::before {\n  content: \"\\F041E\";\n}\n\n.mdi-police-badge::before {\n  content: \"\\F1167\";\n}\n\n.mdi-police-badge-outline::before {\n  content: \"\\F1168\";\n}\n\n.mdi-poll::before {\n  content: \"\\F041F\";\n}\n\n.mdi-poll-box::before {\n  content: \"\\F0420\";\n}\n\n.mdi-poll-box-outline::before {\n  content: \"\\F127B\";\n}\n\n.mdi-polo::before {\n  content: \"\\F14C3\";\n}\n\n.mdi-polymer::before {\n  content: \"\\F0421\";\n}\n\n.mdi-pool::before {\n  content: \"\\F0606\";\n}\n\n.mdi-popcorn::before {\n  content: \"\\F0422\";\n}\n\n.mdi-post::before {\n  content: \"\\F1008\";\n}\n\n.mdi-post-outline::before {\n  content: \"\\F1009\";\n}\n\n.mdi-postage-stamp::before {\n  content: \"\\F0CBB\";\n}\n\n.mdi-pot::before {\n  content: \"\\F02E5\";\n}\n\n.mdi-pot-mix::before {\n  content: \"\\F065B\";\n}\n\n.mdi-pot-mix-outline::before {\n  content: \"\\F0677\";\n}\n\n.mdi-pot-outline::before {\n  content: \"\\F02FF\";\n}\n\n.mdi-pot-steam::before {\n  content: \"\\F065A\";\n}\n\n.mdi-pot-steam-outline::before {\n  content: \"\\F0326\";\n}\n\n.mdi-pound::before {\n  content: \"\\F0423\";\n}\n\n.mdi-pound-box::before {\n  content: \"\\F0424\";\n}\n\n.mdi-pound-box-outline::before {\n  content: \"\\F117F\";\n}\n\n.mdi-power::before {\n  content: \"\\F0425\";\n}\n\n.mdi-power-cycle::before {\n  content: \"\\F0901\";\n}\n\n.mdi-power-off::before {\n  content: \"\\F0902\";\n}\n\n.mdi-power-on::before {\n  content: \"\\F0903\";\n}\n\n.mdi-power-plug::before {\n  content: \"\\F06A5\";\n}\n\n.mdi-power-plug-off::before {\n  content: \"\\F06A6\";\n}\n\n.mdi-power-plug-off-outline::before {\n  content: \"\\F1424\";\n}\n\n.mdi-power-plug-outline::before {\n  content: \"\\F1425\";\n}\n\n.mdi-power-settings::before {\n  content: \"\\F0426\";\n}\n\n.mdi-power-sleep::before {\n  content: \"\\F0904\";\n}\n\n.mdi-power-socket::before {\n  content: \"\\F0427\";\n}\n\n.mdi-power-socket-au::before {\n  content: \"\\F0905\";\n}\n\n.mdi-power-socket-de::before {\n  content: \"\\F1107\";\n}\n\n.mdi-power-socket-eu::before {\n  content: \"\\F07E7\";\n}\n\n.mdi-power-socket-fr::before {\n  content: \"\\F1108\";\n}\n\n.mdi-power-socket-it::before {\n  content: \"\\F14FF\";\n}\n\n.mdi-power-socket-jp::before {\n  content: \"\\F1109\";\n}\n\n.mdi-power-socket-uk::before {\n  content: \"\\F07E8\";\n}\n\n.mdi-power-socket-us::before {\n  content: \"\\F07E9\";\n}\n\n.mdi-power-standby::before {\n  content: \"\\F0906\";\n}\n\n.mdi-powershell::before {\n  content: \"\\F0A0A\";\n}\n\n.mdi-prescription::before {\n  content: \"\\F0706\";\n}\n\n.mdi-presentation::before {\n  content: \"\\F0428\";\n}\n\n.mdi-presentation-play::before {\n  content: \"\\F0429\";\n}\n\n.mdi-printer::before {\n  content: \"\\F042A\";\n}\n\n.mdi-printer-3d::before {\n  content: \"\\F042B\";\n}\n\n.mdi-printer-3d-nozzle::before {\n  content: \"\\F0E5B\";\n}\n\n.mdi-printer-3d-nozzle-alert::before {\n  content: \"\\F11C0\";\n}\n\n.mdi-printer-3d-nozzle-alert-outline::before {\n  content: \"\\F11C1\";\n}\n\n.mdi-printer-3d-nozzle-outline::before {\n  content: \"\\F0E5C\";\n}\n\n.mdi-printer-alert::before {\n  content: \"\\F042C\";\n}\n\n.mdi-printer-check::before {\n  content: \"\\F1146\";\n}\n\n.mdi-printer-eye::before {\n  content: \"\\F1458\";\n}\n\n.mdi-printer-off::before {\n  content: \"\\F0E5D\";\n}\n\n.mdi-printer-pos::before {\n  content: \"\\F1057\";\n}\n\n.mdi-printer-search::before {\n  content: \"\\F1457\";\n}\n\n.mdi-printer-settings::before {\n  content: \"\\F0707\";\n}\n\n.mdi-printer-wireless::before {\n  content: \"\\F0A0B\";\n}\n\n.mdi-priority-high::before {\n  content: \"\\F0603\";\n}\n\n.mdi-priority-low::before {\n  content: \"\\F0604\";\n}\n\n.mdi-professional-hexagon::before {\n  content: \"\\F042D\";\n}\n\n.mdi-progress-alert::before {\n  content: \"\\F0CBC\";\n}\n\n.mdi-progress-check::before {\n  content: \"\\F0995\";\n}\n\n.mdi-progress-clock::before {\n  content: \"\\F0996\";\n}\n\n.mdi-progress-close::before {\n  content: \"\\F110A\";\n}\n\n.mdi-progress-download::before {\n  content: \"\\F0997\";\n}\n\n.mdi-progress-question::before {\n  content: \"\\F1522\";\n}\n\n.mdi-progress-upload::before {\n  content: \"\\F0998\";\n}\n\n.mdi-progress-wrench::before {\n  content: \"\\F0CBD\";\n}\n\n.mdi-projector::before {\n  content: \"\\F042E\";\n}\n\n.mdi-projector-screen::before {\n  content: \"\\F042F\";\n}\n\n.mdi-propane-tank::before {\n  content: \"\\F1357\";\n}\n\n.mdi-propane-tank-outline::before {\n  content: \"\\F1358\";\n}\n\n.mdi-protocol::before {\n  content: \"\\F0FD8\";\n}\n\n.mdi-publish::before {\n  content: \"\\F06A7\";\n}\n\n.mdi-pulse::before {\n  content: \"\\F0430\";\n}\n\n.mdi-pump::before {\n  content: \"\\F1402\";\n}\n\n.mdi-pumpkin::before {\n  content: \"\\F0BBF\";\n}\n\n.mdi-purse::before {\n  content: \"\\F0F1C\";\n}\n\n.mdi-purse-outline::before {\n  content: \"\\F0F1D\";\n}\n\n.mdi-puzzle::before {\n  content: \"\\F0431\";\n}\n\n.mdi-puzzle-check::before {\n  content: \"\\F1426\";\n}\n\n.mdi-puzzle-check-outline::before {\n  content: \"\\F1427\";\n}\n\n.mdi-puzzle-edit::before {\n  content: \"\\F14D3\";\n}\n\n.mdi-puzzle-edit-outline::before {\n  content: \"\\F14D9\";\n}\n\n.mdi-puzzle-heart::before {\n  content: \"\\F14D4\";\n}\n\n.mdi-puzzle-heart-outline::before {\n  content: \"\\F14DA\";\n}\n\n.mdi-puzzle-minus::before {\n  content: \"\\F14D1\";\n}\n\n.mdi-puzzle-minus-outline::before {\n  content: \"\\F14D7\";\n}\n\n.mdi-puzzle-outline::before {\n  content: \"\\F0A66\";\n}\n\n.mdi-puzzle-plus::before {\n  content: \"\\F14D0\";\n}\n\n.mdi-puzzle-plus-outline::before {\n  content: \"\\F14D6\";\n}\n\n.mdi-puzzle-remove::before {\n  content: \"\\F14D2\";\n}\n\n.mdi-puzzle-remove-outline::before {\n  content: \"\\F14D8\";\n}\n\n.mdi-puzzle-star::before {\n  content: \"\\F14D5\";\n}\n\n.mdi-puzzle-star-outline::before {\n  content: \"\\F14DB\";\n}\n\n.mdi-qi::before {\n  content: \"\\F0999\";\n}\n\n.mdi-qqchat::before {\n  content: \"\\F0605\";\n}\n\n.mdi-qrcode::before {\n  content: \"\\F0432\";\n}\n\n.mdi-qrcode-edit::before {\n  content: \"\\F08B8\";\n}\n\n.mdi-qrcode-minus::before {\n  content: \"\\F118C\";\n}\n\n.mdi-qrcode-plus::before {\n  content: \"\\F118B\";\n}\n\n.mdi-qrcode-remove::before {\n  content: \"\\F118D\";\n}\n\n.mdi-qrcode-scan::before {\n  content: \"\\F0433\";\n}\n\n.mdi-quadcopter::before {\n  content: \"\\F0434\";\n}\n\n.mdi-quality-high::before {\n  content: \"\\F0435\";\n}\n\n.mdi-quality-low::before {\n  content: \"\\F0A0C\";\n}\n\n.mdi-quality-medium::before {\n  content: \"\\F0A0D\";\n}\n\n.mdi-quora::before {\n  content: \"\\F0D29\";\n}\n\n.mdi-rabbit::before {\n  content: \"\\F0907\";\n}\n\n.mdi-racing-helmet::before {\n  content: \"\\F0D93\";\n}\n\n.mdi-racquetball::before {\n  content: \"\\F0D94\";\n}\n\n.mdi-radar::before {\n  content: \"\\F0437\";\n}\n\n.mdi-radiator::before {\n  content: \"\\F0438\";\n}\n\n.mdi-radiator-disabled::before {\n  content: \"\\F0AD7\";\n}\n\n.mdi-radiator-off::before {\n  content: \"\\F0AD8\";\n}\n\n.mdi-radio::before {\n  content: \"\\F0439\";\n}\n\n.mdi-radio-am::before {\n  content: \"\\F0CBE\";\n}\n\n.mdi-radio-fm::before {\n  content: \"\\F0CBF\";\n}\n\n.mdi-radio-handheld::before {\n  content: \"\\F043A\";\n}\n\n.mdi-radio-off::before {\n  content: \"\\F121C\";\n}\n\n.mdi-radio-tower::before {\n  content: \"\\F043B\";\n}\n\n.mdi-radioactive::before {\n  content: \"\\F043C\";\n}\n\n.mdi-radioactive-off::before {\n  content: \"\\F0EC1\";\n}\n\n.mdi-radiobox-blank::before {\n  content: \"\\F043D\";\n}\n\n.mdi-radiobox-marked::before {\n  content: \"\\F043E\";\n}\n\n.mdi-radiology-box::before {\n  content: \"\\F14C5\";\n}\n\n.mdi-radiology-box-outline::before {\n  content: \"\\F14C6\";\n}\n\n.mdi-radius::before {\n  content: \"\\F0CC0\";\n}\n\n.mdi-radius-outline::before {\n  content: \"\\F0CC1\";\n}\n\n.mdi-railroad-light::before {\n  content: \"\\F0F1E\";\n}\n\n.mdi-rake::before {\n  content: \"\\F1544\";\n}\n\n.mdi-raspberry-pi::before {\n  content: \"\\F043F\";\n}\n\n.mdi-ray-end::before {\n  content: \"\\F0440\";\n}\n\n.mdi-ray-end-arrow::before {\n  content: \"\\F0441\";\n}\n\n.mdi-ray-start::before {\n  content: \"\\F0442\";\n}\n\n.mdi-ray-start-arrow::before {\n  content: \"\\F0443\";\n}\n\n.mdi-ray-start-end::before {\n  content: \"\\F0444\";\n}\n\n.mdi-ray-vertex::before {\n  content: \"\\F0445\";\n}\n\n.mdi-react::before {\n  content: \"\\F0708\";\n}\n\n.mdi-read::before {\n  content: \"\\F0447\";\n}\n\n.mdi-receipt::before {\n  content: \"\\F0449\";\n}\n\n.mdi-record::before {\n  content: \"\\F044A\";\n}\n\n.mdi-record-circle::before {\n  content: \"\\F0EC2\";\n}\n\n.mdi-record-circle-outline::before {\n  content: \"\\F0EC3\";\n}\n\n.mdi-record-player::before {\n  content: \"\\F099A\";\n}\n\n.mdi-record-rec::before {\n  content: \"\\F044B\";\n}\n\n.mdi-rectangle::before {\n  content: \"\\F0E5E\";\n}\n\n.mdi-rectangle-outline::before {\n  content: \"\\F0E5F\";\n}\n\n.mdi-recycle::before {\n  content: \"\\F044C\";\n}\n\n.mdi-recycle-variant::before {\n  content: \"\\F139D\";\n}\n\n.mdi-reddit::before {\n  content: \"\\F044D\";\n}\n\n.mdi-redhat::before {\n  content: \"\\F111B\";\n}\n\n.mdi-redo::before {\n  content: \"\\F044E\";\n}\n\n.mdi-redo-variant::before {\n  content: \"\\F044F\";\n}\n\n.mdi-reflect-horizontal::before {\n  content: \"\\F0A0E\";\n}\n\n.mdi-reflect-vertical::before {\n  content: \"\\F0A0F\";\n}\n\n.mdi-refresh::before {\n  content: \"\\F0450\";\n}\n\n.mdi-refresh-circle::before {\n  content: \"\\F1377\";\n}\n\n.mdi-regex::before {\n  content: \"\\F0451\";\n}\n\n.mdi-registered-trademark::before {\n  content: \"\\F0A67\";\n}\n\n.mdi-relation-many-to-many::before {\n  content: \"\\F1496\";\n}\n\n.mdi-relation-many-to-one::before {\n  content: \"\\F1497\";\n}\n\n.mdi-relation-many-to-one-or-many::before {\n  content: \"\\F1498\";\n}\n\n.mdi-relation-many-to-only-one::before {\n  content: \"\\F1499\";\n}\n\n.mdi-relation-many-to-zero-or-many::before {\n  content: \"\\F149A\";\n}\n\n.mdi-relation-many-to-zero-or-one::before {\n  content: \"\\F149B\";\n}\n\n.mdi-relation-one-or-many-to-many::before {\n  content: \"\\F149C\";\n}\n\n.mdi-relation-one-or-many-to-one::before {\n  content: \"\\F149D\";\n}\n\n.mdi-relation-one-or-many-to-one-or-many::before {\n  content: \"\\F149E\";\n}\n\n.mdi-relation-one-or-many-to-only-one::before {\n  content: \"\\F149F\";\n}\n\n.mdi-relation-one-or-many-to-zero-or-many::before {\n  content: \"\\F14A0\";\n}\n\n.mdi-relation-one-or-many-to-zero-or-one::before {\n  content: \"\\F14A1\";\n}\n\n.mdi-relation-one-to-many::before {\n  content: \"\\F14A2\";\n}\n\n.mdi-relation-one-to-one::before {\n  content: \"\\F14A3\";\n}\n\n.mdi-relation-one-to-one-or-many::before {\n  content: \"\\F14A4\";\n}\n\n.mdi-relation-one-to-only-one::before {\n  content: \"\\F14A5\";\n}\n\n.mdi-relation-one-to-zero-or-many::before {\n  content: \"\\F14A6\";\n}\n\n.mdi-relation-one-to-zero-or-one::before {\n  content: \"\\F14A7\";\n}\n\n.mdi-relation-only-one-to-many::before {\n  content: \"\\F14A8\";\n}\n\n.mdi-relation-only-one-to-one::before {\n  content: \"\\F14A9\";\n}\n\n.mdi-relation-only-one-to-one-or-many::before {\n  content: \"\\F14AA\";\n}\n\n.mdi-relation-only-one-to-only-one::before {\n  content: \"\\F14AB\";\n}\n\n.mdi-relation-only-one-to-zero-or-many::before {\n  content: \"\\F14AC\";\n}\n\n.mdi-relation-only-one-to-zero-or-one::before {\n  content: \"\\F14AD\";\n}\n\n.mdi-relation-zero-or-many-to-many::before {\n  content: \"\\F14AE\";\n}\n\n.mdi-relation-zero-or-many-to-one::before {\n  content: \"\\F14AF\";\n}\n\n.mdi-relation-zero-or-many-to-one-or-many::before {\n  content: \"\\F14B0\";\n}\n\n.mdi-relation-zero-or-many-to-only-one::before {\n  content: \"\\F14B1\";\n}\n\n.mdi-relation-zero-or-many-to-zero-or-many::before {\n  content: \"\\F14B2\";\n}\n\n.mdi-relation-zero-or-many-to-zero-or-one::before {\n  content: \"\\F14B3\";\n}\n\n.mdi-relation-zero-or-one-to-many::before {\n  content: \"\\F14B4\";\n}\n\n.mdi-relation-zero-or-one-to-one::before {\n  content: \"\\F14B5\";\n}\n\n.mdi-relation-zero-or-one-to-one-or-many::before {\n  content: \"\\F14B6\";\n}\n\n.mdi-relation-zero-or-one-to-only-one::before {\n  content: \"\\F14B7\";\n}\n\n.mdi-relation-zero-or-one-to-zero-or-many::before {\n  content: \"\\F14B8\";\n}\n\n.mdi-relation-zero-or-one-to-zero-or-one::before {\n  content: \"\\F14B9\";\n}\n\n.mdi-relative-scale::before {\n  content: \"\\F0452\";\n}\n\n.mdi-reload::before {\n  content: \"\\F0453\";\n}\n\n.mdi-reload-alert::before {\n  content: \"\\F110B\";\n}\n\n.mdi-reminder::before {\n  content: \"\\F088C\";\n}\n\n.mdi-remote::before {\n  content: \"\\F0454\";\n}\n\n.mdi-remote-desktop::before {\n  content: \"\\F08B9\";\n}\n\n.mdi-remote-off::before {\n  content: \"\\F0EC4\";\n}\n\n.mdi-remote-tv::before {\n  content: \"\\F0EC5\";\n}\n\n.mdi-remote-tv-off::before {\n  content: \"\\F0EC6\";\n}\n\n.mdi-rename-box::before {\n  content: \"\\F0455\";\n}\n\n.mdi-reorder-horizontal::before {\n  content: \"\\F0688\";\n}\n\n.mdi-reorder-vertical::before {\n  content: \"\\F0689\";\n}\n\n.mdi-repeat::before {\n  content: \"\\F0456\";\n}\n\n.mdi-repeat-off::before {\n  content: \"\\F0457\";\n}\n\n.mdi-repeat-once::before {\n  content: \"\\F0458\";\n}\n\n.mdi-replay::before {\n  content: \"\\F0459\";\n}\n\n.mdi-reply::before {\n  content: \"\\F045A\";\n}\n\n.mdi-reply-all::before {\n  content: \"\\F045B\";\n}\n\n.mdi-reply-all-outline::before {\n  content: \"\\F0F1F\";\n}\n\n.mdi-reply-circle::before {\n  content: \"\\F11AE\";\n}\n\n.mdi-reply-outline::before {\n  content: \"\\F0F20\";\n}\n\n.mdi-reproduction::before {\n  content: \"\\F045C\";\n}\n\n.mdi-resistor::before {\n  content: \"\\F0B44\";\n}\n\n.mdi-resistor-nodes::before {\n  content: \"\\F0B45\";\n}\n\n.mdi-resize::before {\n  content: \"\\F0A68\";\n}\n\n.mdi-resize-bottom-right::before {\n  content: \"\\F045D\";\n}\n\n.mdi-responsive::before {\n  content: \"\\F045E\";\n}\n\n.mdi-restart::before {\n  content: \"\\F0709\";\n}\n\n.mdi-restart-alert::before {\n  content: \"\\F110C\";\n}\n\n.mdi-restart-off::before {\n  content: \"\\F0D95\";\n}\n\n.mdi-restore::before {\n  content: \"\\F099B\";\n}\n\n.mdi-restore-alert::before {\n  content: \"\\F110D\";\n}\n\n.mdi-rewind::before {\n  content: \"\\F045F\";\n}\n\n.mdi-rewind-10::before {\n  content: \"\\F0D2A\";\n}\n\n.mdi-rewind-30::before {\n  content: \"\\F0D96\";\n}\n\n.mdi-rewind-5::before {\n  content: \"\\F11F9\";\n}\n\n.mdi-rewind-outline::before {\n  content: \"\\F070A\";\n}\n\n.mdi-rhombus::before {\n  content: \"\\F070B\";\n}\n\n.mdi-rhombus-medium::before {\n  content: \"\\F0A10\";\n}\n\n.mdi-rhombus-medium-outline::before {\n  content: \"\\F14DC\";\n}\n\n.mdi-rhombus-outline::before {\n  content: \"\\F070C\";\n}\n\n.mdi-rhombus-split::before {\n  content: \"\\F0A11\";\n}\n\n.mdi-rhombus-split-outline::before {\n  content: \"\\F14DD\";\n}\n\n.mdi-ribbon::before {\n  content: \"\\F0460\";\n}\n\n.mdi-rice::before {\n  content: \"\\F07EA\";\n}\n\n.mdi-ring::before {\n  content: \"\\F07EB\";\n}\n\n.mdi-rivet::before {\n  content: \"\\F0E60\";\n}\n\n.mdi-road::before {\n  content: \"\\F0461\";\n}\n\n.mdi-road-variant::before {\n  content: \"\\F0462\";\n}\n\n.mdi-robber::before {\n  content: \"\\F1058\";\n}\n\n.mdi-robot::before {\n  content: \"\\F06A9\";\n}\n\n.mdi-robot-industrial::before {\n  content: \"\\F0B46\";\n}\n\n.mdi-robot-mower::before {\n  content: \"\\F11F7\";\n}\n\n.mdi-robot-mower-outline::before {\n  content: \"\\F11F3\";\n}\n\n.mdi-robot-vacuum::before {\n  content: \"\\F070D\";\n}\n\n.mdi-robot-vacuum-variant::before {\n  content: \"\\F0908\";\n}\n\n.mdi-rocket::before {\n  content: \"\\F0463\";\n}\n\n.mdi-rocket-launch::before {\n  content: \"\\F14DE\";\n}\n\n.mdi-rocket-launch-outline::before {\n  content: \"\\F14DF\";\n}\n\n.mdi-rocket-outline::before {\n  content: \"\\F13AF\";\n}\n\n.mdi-rodent::before {\n  content: \"\\F1327\";\n}\n\n.mdi-roller-skate::before {\n  content: \"\\F0D2B\";\n}\n\n.mdi-roller-skate-off::before {\n  content: \"\\F0145\";\n}\n\n.mdi-rollerblade::before {\n  content: \"\\F0D2C\";\n}\n\n.mdi-rollerblade-off::before {\n  content: \"\\F002E\";\n}\n\n.mdi-rollupjs::before {\n  content: \"\\F0BC0\";\n}\n\n.mdi-roman-numeral-1::before {\n  content: \"\\F1088\";\n}\n\n.mdi-roman-numeral-10::before {\n  content: \"\\F1091\";\n}\n\n.mdi-roman-numeral-2::before {\n  content: \"\\F1089\";\n}\n\n.mdi-roman-numeral-3::before {\n  content: \"\\F108A\";\n}\n\n.mdi-roman-numeral-4::before {\n  content: \"\\F108B\";\n}\n\n.mdi-roman-numeral-5::before {\n  content: \"\\F108C\";\n}\n\n.mdi-roman-numeral-6::before {\n  content: \"\\F108D\";\n}\n\n.mdi-roman-numeral-7::before {\n  content: \"\\F108E\";\n}\n\n.mdi-roman-numeral-8::before {\n  content: \"\\F108F\";\n}\n\n.mdi-roman-numeral-9::before {\n  content: \"\\F1090\";\n}\n\n.mdi-room-service::before {\n  content: \"\\F088D\";\n}\n\n.mdi-room-service-outline::before {\n  content: \"\\F0D97\";\n}\n\n.mdi-rotate-3d::before {\n  content: \"\\F0EC7\";\n}\n\n.mdi-rotate-3d-variant::before {\n  content: \"\\F0464\";\n}\n\n.mdi-rotate-left::before {\n  content: \"\\F0465\";\n}\n\n.mdi-rotate-left-variant::before {\n  content: \"\\F0466\";\n}\n\n.mdi-rotate-orbit::before {\n  content: \"\\F0D98\";\n}\n\n.mdi-rotate-right::before {\n  content: \"\\F0467\";\n}\n\n.mdi-rotate-right-variant::before {\n  content: \"\\F0468\";\n}\n\n.mdi-rounded-corner::before {\n  content: \"\\F0607\";\n}\n\n.mdi-router::before {\n  content: \"\\F11E2\";\n}\n\n.mdi-router-network::before {\n  content: \"\\F1087\";\n}\n\n.mdi-router-wireless::before {\n  content: \"\\F0469\";\n}\n\n.mdi-router-wireless-settings::before {\n  content: \"\\F0A69\";\n}\n\n.mdi-routes::before {\n  content: \"\\F046A\";\n}\n\n.mdi-routes-clock::before {\n  content: \"\\F1059\";\n}\n\n.mdi-rowing::before {\n  content: \"\\F0608\";\n}\n\n.mdi-rss::before {\n  content: \"\\F046B\";\n}\n\n.mdi-rss-box::before {\n  content: \"\\F046C\";\n}\n\n.mdi-rss-off::before {\n  content: \"\\F0F21\";\n}\n\n.mdi-rug::before {\n  content: \"\\F1475\";\n}\n\n.mdi-rugby::before {\n  content: \"\\F0D99\";\n}\n\n.mdi-ruler::before {\n  content: \"\\F046D\";\n}\n\n.mdi-ruler-square::before {\n  content: \"\\F0CC2\";\n}\n\n.mdi-ruler-square-compass::before {\n  content: \"\\F0EBE\";\n}\n\n.mdi-run::before {\n  content: \"\\F070E\";\n}\n\n.mdi-run-fast::before {\n  content: \"\\F046E\";\n}\n\n.mdi-rv-truck::before {\n  content: \"\\F11D4\";\n}\n\n.mdi-sack::before {\n  content: \"\\F0D2E\";\n}\n\n.mdi-sack-percent::before {\n  content: \"\\F0D2F\";\n}\n\n.mdi-safe::before {\n  content: \"\\F0A6A\";\n}\n\n.mdi-safe-square::before {\n  content: \"\\F127C\";\n}\n\n.mdi-safe-square-outline::before {\n  content: \"\\F127D\";\n}\n\n.mdi-safety-goggles::before {\n  content: \"\\F0D30\";\n}\n\n.mdi-sail-boat::before {\n  content: \"\\F0EC8\";\n}\n\n.mdi-sale::before {\n  content: \"\\F046F\";\n}\n\n.mdi-salesforce::before {\n  content: \"\\F088E\";\n}\n\n.mdi-sass::before {\n  content: \"\\F07EC\";\n}\n\n.mdi-satellite::before {\n  content: \"\\F0470\";\n}\n\n.mdi-satellite-uplink::before {\n  content: \"\\F0909\";\n}\n\n.mdi-satellite-variant::before {\n  content: \"\\F0471\";\n}\n\n.mdi-sausage::before {\n  content: \"\\F08BA\";\n}\n\n.mdi-saw-blade::before {\n  content: \"\\F0E61\";\n}\n\n.mdi-sawtooth-wave::before {\n  content: \"\\F147A\";\n}\n\n.mdi-saxophone::before {\n  content: \"\\F0609\";\n}\n\n.mdi-scale::before {\n  content: \"\\F0472\";\n}\n\n.mdi-scale-balance::before {\n  content: \"\\F05D1\";\n}\n\n.mdi-scale-bathroom::before {\n  content: \"\\F0473\";\n}\n\n.mdi-scale-off::before {\n  content: \"\\F105A\";\n}\n\n.mdi-scan-helper::before {\n  content: \"\\F13D8\";\n}\n\n.mdi-scanner::before {\n  content: \"\\F06AB\";\n}\n\n.mdi-scanner-off::before {\n  content: \"\\F090A\";\n}\n\n.mdi-scatter-plot::before {\n  content: \"\\F0EC9\";\n}\n\n.mdi-scatter-plot-outline::before {\n  content: \"\\F0ECA\";\n}\n\n.mdi-school::before {\n  content: \"\\F0474\";\n}\n\n.mdi-school-outline::before {\n  content: \"\\F1180\";\n}\n\n.mdi-scissors-cutting::before {\n  content: \"\\F0A6B\";\n}\n\n.mdi-scooter::before {\n  content: \"\\F11E9\";\n}\n\n.mdi-scoreboard::before {\n  content: \"\\F127E\";\n}\n\n.mdi-scoreboard-outline::before {\n  content: \"\\F127F\";\n}\n\n.mdi-screen-rotation::before {\n  content: \"\\F0475\";\n}\n\n.mdi-screen-rotation-lock::before {\n  content: \"\\F0478\";\n}\n\n.mdi-screw-flat-top::before {\n  content: \"\\F0DF3\";\n}\n\n.mdi-screw-lag::before {\n  content: \"\\F0DF4\";\n}\n\n.mdi-screw-machine-flat-top::before {\n  content: \"\\F0DF5\";\n}\n\n.mdi-screw-machine-round-top::before {\n  content: \"\\F0DF6\";\n}\n\n.mdi-screw-round-top::before {\n  content: \"\\F0DF7\";\n}\n\n.mdi-screwdriver::before {\n  content: \"\\F0476\";\n}\n\n.mdi-script::before {\n  content: \"\\F0BC1\";\n}\n\n.mdi-script-outline::before {\n  content: \"\\F0477\";\n}\n\n.mdi-script-text::before {\n  content: \"\\F0BC2\";\n}\n\n.mdi-script-text-outline::before {\n  content: \"\\F0BC3\";\n}\n\n.mdi-sd::before {\n  content: \"\\F0479\";\n}\n\n.mdi-seal::before {\n  content: \"\\F047A\";\n}\n\n.mdi-seal-variant::before {\n  content: \"\\F0FD9\";\n}\n\n.mdi-search-web::before {\n  content: \"\\F070F\";\n}\n\n.mdi-seat::before {\n  content: \"\\F0CC3\";\n}\n\n.mdi-seat-flat::before {\n  content: \"\\F047B\";\n}\n\n.mdi-seat-flat-angled::before {\n  content: \"\\F047C\";\n}\n\n.mdi-seat-individual-suite::before {\n  content: \"\\F047D\";\n}\n\n.mdi-seat-legroom-extra::before {\n  content: \"\\F047E\";\n}\n\n.mdi-seat-legroom-normal::before {\n  content: \"\\F047F\";\n}\n\n.mdi-seat-legroom-reduced::before {\n  content: \"\\F0480\";\n}\n\n.mdi-seat-outline::before {\n  content: \"\\F0CC4\";\n}\n\n.mdi-seat-passenger::before {\n  content: \"\\F1249\";\n}\n\n.mdi-seat-recline-extra::before {\n  content: \"\\F0481\";\n}\n\n.mdi-seat-recline-normal::before {\n  content: \"\\F0482\";\n}\n\n.mdi-seatbelt::before {\n  content: \"\\F0CC5\";\n}\n\n.mdi-security::before {\n  content: \"\\F0483\";\n}\n\n.mdi-security-network::before {\n  content: \"\\F0484\";\n}\n\n.mdi-seed::before {\n  content: \"\\F0E62\";\n}\n\n.mdi-seed-off::before {\n  content: \"\\F13FD\";\n}\n\n.mdi-seed-off-outline::before {\n  content: \"\\F13FE\";\n}\n\n.mdi-seed-outline::before {\n  content: \"\\F0E63\";\n}\n\n.mdi-segment::before {\n  content: \"\\F0ECB\";\n}\n\n.mdi-select::before {\n  content: \"\\F0485\";\n}\n\n.mdi-select-all::before {\n  content: \"\\F0486\";\n}\n\n.mdi-select-color::before {\n  content: \"\\F0D31\";\n}\n\n.mdi-select-compare::before {\n  content: \"\\F0AD9\";\n}\n\n.mdi-select-drag::before {\n  content: \"\\F0A6C\";\n}\n\n.mdi-select-group::before {\n  content: \"\\F0F82\";\n}\n\n.mdi-select-inverse::before {\n  content: \"\\F0487\";\n}\n\n.mdi-select-marker::before {\n  content: \"\\F1280\";\n}\n\n.mdi-select-multiple::before {\n  content: \"\\F1281\";\n}\n\n.mdi-select-multiple-marker::before {\n  content: \"\\F1282\";\n}\n\n.mdi-select-off::before {\n  content: \"\\F0488\";\n}\n\n.mdi-select-place::before {\n  content: \"\\F0FDA\";\n}\n\n.mdi-select-search::before {\n  content: \"\\F1204\";\n}\n\n.mdi-selection::before {\n  content: \"\\F0489\";\n}\n\n.mdi-selection-drag::before {\n  content: \"\\F0A6D\";\n}\n\n.mdi-selection-ellipse::before {\n  content: \"\\F0D32\";\n}\n\n.mdi-selection-ellipse-arrow-inside::before {\n  content: \"\\F0F22\";\n}\n\n.mdi-selection-marker::before {\n  content: \"\\F1283\";\n}\n\n.mdi-selection-multiple::before {\n  content: \"\\F1285\";\n}\n\n.mdi-selection-multiple-marker::before {\n  content: \"\\F1284\";\n}\n\n.mdi-selection-off::before {\n  content: \"\\F0777\";\n}\n\n.mdi-selection-search::before {\n  content: \"\\F1205\";\n}\n\n.mdi-semantic-web::before {\n  content: \"\\F1316\";\n}\n\n.mdi-send::before {\n  content: \"\\F048A\";\n}\n\n.mdi-send-check::before {\n  content: \"\\F1161\";\n}\n\n.mdi-send-check-outline::before {\n  content: \"\\F1162\";\n}\n\n.mdi-send-circle::before {\n  content: \"\\F0DF8\";\n}\n\n.mdi-send-circle-outline::before {\n  content: \"\\F0DF9\";\n}\n\n.mdi-send-clock::before {\n  content: \"\\F1163\";\n}\n\n.mdi-send-clock-outline::before {\n  content: \"\\F1164\";\n}\n\n.mdi-send-lock::before {\n  content: \"\\F07ED\";\n}\n\n.mdi-send-lock-outline::before {\n  content: \"\\F1166\";\n}\n\n.mdi-send-outline::before {\n  content: \"\\F1165\";\n}\n\n.mdi-serial-port::before {\n  content: \"\\F065C\";\n}\n\n.mdi-server::before {\n  content: \"\\F048B\";\n}\n\n.mdi-server-minus::before {\n  content: \"\\F048C\";\n}\n\n.mdi-server-network::before {\n  content: \"\\F048D\";\n}\n\n.mdi-server-network-off::before {\n  content: \"\\F048E\";\n}\n\n.mdi-server-off::before {\n  content: \"\\F048F\";\n}\n\n.mdi-server-plus::before {\n  content: \"\\F0490\";\n}\n\n.mdi-server-remove::before {\n  content: \"\\F0491\";\n}\n\n.mdi-server-security::before {\n  content: \"\\F0492\";\n}\n\n.mdi-set-all::before {\n  content: \"\\F0778\";\n}\n\n.mdi-set-center::before {\n  content: \"\\F0779\";\n}\n\n.mdi-set-center-right::before {\n  content: \"\\F077A\";\n}\n\n.mdi-set-left::before {\n  content: \"\\F077B\";\n}\n\n.mdi-set-left-center::before {\n  content: \"\\F077C\";\n}\n\n.mdi-set-left-right::before {\n  content: \"\\F077D\";\n}\n\n.mdi-set-merge::before {\n  content: \"\\F14E0\";\n}\n\n.mdi-set-none::before {\n  content: \"\\F077E\";\n}\n\n.mdi-set-right::before {\n  content: \"\\F077F\";\n}\n\n.mdi-set-split::before {\n  content: \"\\F14E1\";\n}\n\n.mdi-set-square::before {\n  content: \"\\F145D\";\n}\n\n.mdi-set-top-box::before {\n  content: \"\\F099F\";\n}\n\n.mdi-settings-helper::before {\n  content: \"\\F0A6E\";\n}\n\n.mdi-shaker::before {\n  content: \"\\F110E\";\n}\n\n.mdi-shaker-outline::before {\n  content: \"\\F110F\";\n}\n\n.mdi-shape::before {\n  content: \"\\F0831\";\n}\n\n.mdi-shape-circle-plus::before {\n  content: \"\\F065D\";\n}\n\n.mdi-shape-outline::before {\n  content: \"\\F0832\";\n}\n\n.mdi-shape-oval-plus::before {\n  content: \"\\F11FA\";\n}\n\n.mdi-shape-plus::before {\n  content: \"\\F0495\";\n}\n\n.mdi-shape-polygon-plus::before {\n  content: \"\\F065E\";\n}\n\n.mdi-shape-rectangle-plus::before {\n  content: \"\\F065F\";\n}\n\n.mdi-shape-square-plus::before {\n  content: \"\\F0660\";\n}\n\n.mdi-shape-square-rounded-plus::before {\n  content: \"\\F14FA\";\n}\n\n.mdi-share::before {\n  content: \"\\F0496\";\n}\n\n.mdi-share-all::before {\n  content: \"\\F11F4\";\n}\n\n.mdi-share-all-outline::before {\n  content: \"\\F11F5\";\n}\n\n.mdi-share-circle::before {\n  content: \"\\F11AD\";\n}\n\n.mdi-share-off::before {\n  content: \"\\F0F23\";\n}\n\n.mdi-share-off-outline::before {\n  content: \"\\F0F24\";\n}\n\n.mdi-share-outline::before {\n  content: \"\\F0932\";\n}\n\n.mdi-share-variant::before {\n  content: \"\\F0497\";\n}\n\n.mdi-share-variant-outline::before {\n  content: \"\\F1514\";\n}\n\n.mdi-sheep::before {\n  content: \"\\F0CC6\";\n}\n\n.mdi-shield::before {\n  content: \"\\F0498\";\n}\n\n.mdi-shield-account::before {\n  content: \"\\F088F\";\n}\n\n.mdi-shield-account-outline::before {\n  content: \"\\F0A12\";\n}\n\n.mdi-shield-airplane::before {\n  content: \"\\F06BB\";\n}\n\n.mdi-shield-airplane-outline::before {\n  content: \"\\F0CC7\";\n}\n\n.mdi-shield-alert::before {\n  content: \"\\F0ECC\";\n}\n\n.mdi-shield-alert-outline::before {\n  content: \"\\F0ECD\";\n}\n\n.mdi-shield-bug::before {\n  content: \"\\F13DA\";\n}\n\n.mdi-shield-bug-outline::before {\n  content: \"\\F13DB\";\n}\n\n.mdi-shield-car::before {\n  content: \"\\F0F83\";\n}\n\n.mdi-shield-check::before {\n  content: \"\\F0565\";\n}\n\n.mdi-shield-check-outline::before {\n  content: \"\\F0CC8\";\n}\n\n.mdi-shield-cross::before {\n  content: \"\\F0CC9\";\n}\n\n.mdi-shield-cross-outline::before {\n  content: \"\\F0CCA\";\n}\n\n.mdi-shield-edit::before {\n  content: \"\\F11A0\";\n}\n\n.mdi-shield-edit-outline::before {\n  content: \"\\F11A1\";\n}\n\n.mdi-shield-half::before {\n  content: \"\\F1360\";\n}\n\n.mdi-shield-half-full::before {\n  content: \"\\F0780\";\n}\n\n.mdi-shield-home::before {\n  content: \"\\F068A\";\n}\n\n.mdi-shield-home-outline::before {\n  content: \"\\F0CCB\";\n}\n\n.mdi-shield-key::before {\n  content: \"\\F0BC4\";\n}\n\n.mdi-shield-key-outline::before {\n  content: \"\\F0BC5\";\n}\n\n.mdi-shield-link-variant::before {\n  content: \"\\F0D33\";\n}\n\n.mdi-shield-link-variant-outline::before {\n  content: \"\\F0D34\";\n}\n\n.mdi-shield-lock::before {\n  content: \"\\F099D\";\n}\n\n.mdi-shield-lock-outline::before {\n  content: \"\\F0CCC\";\n}\n\n.mdi-shield-off::before {\n  content: \"\\F099E\";\n}\n\n.mdi-shield-off-outline::before {\n  content: \"\\F099C\";\n}\n\n.mdi-shield-outline::before {\n  content: \"\\F0499\";\n}\n\n.mdi-shield-plus::before {\n  content: \"\\F0ADA\";\n}\n\n.mdi-shield-plus-outline::before {\n  content: \"\\F0ADB\";\n}\n\n.mdi-shield-refresh::before {\n  content: \"\\F00AA\";\n}\n\n.mdi-shield-refresh-outline::before {\n  content: \"\\F01E0\";\n}\n\n.mdi-shield-remove::before {\n  content: \"\\F0ADC\";\n}\n\n.mdi-shield-remove-outline::before {\n  content: \"\\F0ADD\";\n}\n\n.mdi-shield-search::before {\n  content: \"\\F0D9A\";\n}\n\n.mdi-shield-star::before {\n  content: \"\\F113B\";\n}\n\n.mdi-shield-star-outline::before {\n  content: \"\\F113C\";\n}\n\n.mdi-shield-sun::before {\n  content: \"\\F105D\";\n}\n\n.mdi-shield-sun-outline::before {\n  content: \"\\F105E\";\n}\n\n.mdi-shield-sync::before {\n  content: \"\\F11A2\";\n}\n\n.mdi-shield-sync-outline::before {\n  content: \"\\F11A3\";\n}\n\n.mdi-ship-wheel::before {\n  content: \"\\F0833\";\n}\n\n.mdi-shoe-formal::before {\n  content: \"\\F0B47\";\n}\n\n.mdi-shoe-heel::before {\n  content: \"\\F0B48\";\n}\n\n.mdi-shoe-print::before {\n  content: \"\\F0DFA\";\n}\n\n.mdi-shopping::before {\n  content: \"\\F049A\";\n}\n\n.mdi-shopping-music::before {\n  content: \"\\F049B\";\n}\n\n.mdi-shopping-outline::before {\n  content: \"\\F11D5\";\n}\n\n.mdi-shopping-search::before {\n  content: \"\\F0F84\";\n}\n\n.mdi-shore::before {\n  content: \"\\F14F9\";\n}\n\n.mdi-shovel::before {\n  content: \"\\F0710\";\n}\n\n.mdi-shovel-off::before {\n  content: \"\\F0711\";\n}\n\n.mdi-shower::before {\n  content: \"\\F09A0\";\n}\n\n.mdi-shower-head::before {\n  content: \"\\F09A1\";\n}\n\n.mdi-shredder::before {\n  content: \"\\F049C\";\n}\n\n.mdi-shuffle::before {\n  content: \"\\F049D\";\n}\n\n.mdi-shuffle-disabled::before {\n  content: \"\\F049E\";\n}\n\n.mdi-shuffle-variant::before {\n  content: \"\\F049F\";\n}\n\n.mdi-shuriken::before {\n  content: \"\\F137F\";\n}\n\n.mdi-sigma::before {\n  content: \"\\F04A0\";\n}\n\n.mdi-sigma-lower::before {\n  content: \"\\F062B\";\n}\n\n.mdi-sign-caution::before {\n  content: \"\\F04A1\";\n}\n\n.mdi-sign-direction::before {\n  content: \"\\F0781\";\n}\n\n.mdi-sign-direction-minus::before {\n  content: \"\\F1000\";\n}\n\n.mdi-sign-direction-plus::before {\n  content: \"\\F0FDC\";\n}\n\n.mdi-sign-direction-remove::before {\n  content: \"\\F0FDD\";\n}\n\n.mdi-sign-pole::before {\n  content: \"\\F14F8\";\n}\n\n.mdi-sign-real-estate::before {\n  content: \"\\F1118\";\n}\n\n.mdi-sign-text::before {\n  content: \"\\F0782\";\n}\n\n.mdi-signal::before {\n  content: \"\\F04A2\";\n}\n\n.mdi-signal-2g::before {\n  content: \"\\F0712\";\n}\n\n.mdi-signal-3g::before {\n  content: \"\\F0713\";\n}\n\n.mdi-signal-4g::before {\n  content: \"\\F0714\";\n}\n\n.mdi-signal-5g::before {\n  content: \"\\F0A6F\";\n}\n\n.mdi-signal-cellular-1::before {\n  content: \"\\F08BC\";\n}\n\n.mdi-signal-cellular-2::before {\n  content: \"\\F08BD\";\n}\n\n.mdi-signal-cellular-3::before {\n  content: \"\\F08BE\";\n}\n\n.mdi-signal-cellular-outline::before {\n  content: \"\\F08BF\";\n}\n\n.mdi-signal-distance-variant::before {\n  content: \"\\F0E64\";\n}\n\n.mdi-signal-hspa::before {\n  content: \"\\F0715\";\n}\n\n.mdi-signal-hspa-plus::before {\n  content: \"\\F0716\";\n}\n\n.mdi-signal-off::before {\n  content: \"\\F0783\";\n}\n\n.mdi-signal-variant::before {\n  content: \"\\F060A\";\n}\n\n.mdi-signature::before {\n  content: \"\\F0DFB\";\n}\n\n.mdi-signature-freehand::before {\n  content: \"\\F0DFC\";\n}\n\n.mdi-signature-image::before {\n  content: \"\\F0DFD\";\n}\n\n.mdi-signature-text::before {\n  content: \"\\F0DFE\";\n}\n\n.mdi-silo::before {\n  content: \"\\F0B49\";\n}\n\n.mdi-silverware::before {\n  content: \"\\F04A3\";\n}\n\n.mdi-silverware-clean::before {\n  content: \"\\F0FDE\";\n}\n\n.mdi-silverware-fork::before {\n  content: \"\\F04A4\";\n}\n\n.mdi-silverware-fork-knife::before {\n  content: \"\\F0A70\";\n}\n\n.mdi-silverware-spoon::before {\n  content: \"\\F04A5\";\n}\n\n.mdi-silverware-variant::before {\n  content: \"\\F04A6\";\n}\n\n.mdi-sim::before {\n  content: \"\\F04A7\";\n}\n\n.mdi-sim-alert::before {\n  content: \"\\F04A8\";\n}\n\n.mdi-sim-off::before {\n  content: \"\\F04A9\";\n}\n\n.mdi-simple-icons::before {\n  content: \"\\F131D\";\n}\n\n.mdi-sina-weibo::before {\n  content: \"\\F0ADF\";\n}\n\n.mdi-sine-wave::before {\n  content: \"\\F095B\";\n}\n\n.mdi-sitemap::before {\n  content: \"\\F04AA\";\n}\n\n.mdi-size-l::before {\n  content: \"\\F13A6\";\n}\n\n.mdi-size-m::before {\n  content: \"\\F13A5\";\n}\n\n.mdi-size-s::before {\n  content: \"\\F13A4\";\n}\n\n.mdi-size-xl::before {\n  content: \"\\F13A7\";\n}\n\n.mdi-size-xs::before {\n  content: \"\\F13A3\";\n}\n\n.mdi-size-xxl::before {\n  content: \"\\F13A8\";\n}\n\n.mdi-size-xxs::before {\n  content: \"\\F13A2\";\n}\n\n.mdi-size-xxxl::before {\n  content: \"\\F13A9\";\n}\n\n.mdi-skate::before {\n  content: \"\\F0D35\";\n}\n\n.mdi-skateboard::before {\n  content: \"\\F14C2\";\n}\n\n.mdi-skew-less::before {\n  content: \"\\F0D36\";\n}\n\n.mdi-skew-more::before {\n  content: \"\\F0D37\";\n}\n\n.mdi-ski::before {\n  content: \"\\F1304\";\n}\n\n.mdi-ski-cross-country::before {\n  content: \"\\F1305\";\n}\n\n.mdi-ski-water::before {\n  content: \"\\F1306\";\n}\n\n.mdi-skip-backward::before {\n  content: \"\\F04AB\";\n}\n\n.mdi-skip-backward-outline::before {\n  content: \"\\F0F25\";\n}\n\n.mdi-skip-forward::before {\n  content: \"\\F04AC\";\n}\n\n.mdi-skip-forward-outline::before {\n  content: \"\\F0F26\";\n}\n\n.mdi-skip-next::before {\n  content: \"\\F04AD\";\n}\n\n.mdi-skip-next-circle::before {\n  content: \"\\F0661\";\n}\n\n.mdi-skip-next-circle-outline::before {\n  content: \"\\F0662\";\n}\n\n.mdi-skip-next-outline::before {\n  content: \"\\F0F27\";\n}\n\n.mdi-skip-previous::before {\n  content: \"\\F04AE\";\n}\n\n.mdi-skip-previous-circle::before {\n  content: \"\\F0663\";\n}\n\n.mdi-skip-previous-circle-outline::before {\n  content: \"\\F0664\";\n}\n\n.mdi-skip-previous-outline::before {\n  content: \"\\F0F28\";\n}\n\n.mdi-skull::before {\n  content: \"\\F068C\";\n}\n\n.mdi-skull-crossbones::before {\n  content: \"\\F0BC6\";\n}\n\n.mdi-skull-crossbones-outline::before {\n  content: \"\\F0BC7\";\n}\n\n.mdi-skull-outline::before {\n  content: \"\\F0BC8\";\n}\n\n.mdi-skull-scan::before {\n  content: \"\\F14C7\";\n}\n\n.mdi-skull-scan-outline::before {\n  content: \"\\F14C8\";\n}\n\n.mdi-skype::before {\n  content: \"\\F04AF\";\n}\n\n.mdi-skype-business::before {\n  content: \"\\F04B0\";\n}\n\n.mdi-slack::before {\n  content: \"\\F04B1\";\n}\n\n.mdi-slash-forward::before {\n  content: \"\\F0FDF\";\n}\n\n.mdi-slash-forward-box::before {\n  content: \"\\F0FE0\";\n}\n\n.mdi-sleep::before {\n  content: \"\\F04B2\";\n}\n\n.mdi-sleep-off::before {\n  content: \"\\F04B3\";\n}\n\n.mdi-slope-downhill::before {\n  content: \"\\F0DFF\";\n}\n\n.mdi-slope-uphill::before {\n  content: \"\\F0E00\";\n}\n\n.mdi-slot-machine::before {\n  content: \"\\F1114\";\n}\n\n.mdi-slot-machine-outline::before {\n  content: \"\\F1115\";\n}\n\n.mdi-smart-card::before {\n  content: \"\\F10BD\";\n}\n\n.mdi-smart-card-outline::before {\n  content: \"\\F10BE\";\n}\n\n.mdi-smart-card-reader::before {\n  content: \"\\F10BF\";\n}\n\n.mdi-smart-card-reader-outline::before {\n  content: \"\\F10C0\";\n}\n\n.mdi-smog::before {\n  content: \"\\F0A71\";\n}\n\n.mdi-smoke-detector::before {\n  content: \"\\F0392\";\n}\n\n.mdi-smoking::before {\n  content: \"\\F04B4\";\n}\n\n.mdi-smoking-off::before {\n  content: \"\\F04B5\";\n}\n\n.mdi-smoking-pipe::before {\n  content: \"\\F140D\";\n}\n\n.mdi-smoking-pipe-off::before {\n  content: \"\\F1428\";\n}\n\n.mdi-snake::before {\n  content: \"\\F150E\";\n}\n\n.mdi-snapchat::before {\n  content: \"\\F04B6\";\n}\n\n.mdi-snowboard::before {\n  content: \"\\F1307\";\n}\n\n.mdi-snowflake::before {\n  content: \"\\F0717\";\n}\n\n.mdi-snowflake-alert::before {\n  content: \"\\F0F29\";\n}\n\n.mdi-snowflake-melt::before {\n  content: \"\\F12CB\";\n}\n\n.mdi-snowflake-off::before {\n  content: \"\\F14E3\";\n}\n\n.mdi-snowflake-variant::before {\n  content: \"\\F0F2A\";\n}\n\n.mdi-snowman::before {\n  content: \"\\F04B7\";\n}\n\n.mdi-soccer::before {\n  content: \"\\F04B8\";\n}\n\n.mdi-soccer-field::before {\n  content: \"\\F0834\";\n}\n\n.mdi-sofa::before {\n  content: \"\\F04B9\";\n}\n\n.mdi-solar-panel::before {\n  content: \"\\F0D9B\";\n}\n\n.mdi-solar-panel-large::before {\n  content: \"\\F0D9C\";\n}\n\n.mdi-solar-power::before {\n  content: \"\\F0A72\";\n}\n\n.mdi-soldering-iron::before {\n  content: \"\\F1092\";\n}\n\n.mdi-solid::before {\n  content: \"\\F068D\";\n}\n\n.mdi-sony-playstation::before {\n  content: \"\\F0414\";\n}\n\n.mdi-sort::before {\n  content: \"\\F04BA\";\n}\n\n.mdi-sort-alphabetical-ascending::before {\n  content: \"\\F05BD\";\n}\n\n.mdi-sort-alphabetical-ascending-variant::before {\n  content: \"\\F1148\";\n}\n\n.mdi-sort-alphabetical-descending::before {\n  content: \"\\F05BF\";\n}\n\n.mdi-sort-alphabetical-descending-variant::before {\n  content: \"\\F1149\";\n}\n\n.mdi-sort-alphabetical-variant::before {\n  content: \"\\F04BB\";\n}\n\n.mdi-sort-ascending::before {\n  content: \"\\F04BC\";\n}\n\n.mdi-sort-bool-ascending::before {\n  content: \"\\F1385\";\n}\n\n.mdi-sort-bool-ascending-variant::before {\n  content: \"\\F1386\";\n}\n\n.mdi-sort-bool-descending::before {\n  content: \"\\F1387\";\n}\n\n.mdi-sort-bool-descending-variant::before {\n  content: \"\\F1388\";\n}\n\n.mdi-sort-calendar-ascending::before {\n  content: \"\\F1547\";\n}\n\n.mdi-sort-calendar-descending::before {\n  content: \"\\F1548\";\n}\n\n.mdi-sort-clock-ascending::before {\n  content: \"\\F1549\";\n}\n\n.mdi-sort-clock-ascending-outline::before {\n  content: \"\\F154A\";\n}\n\n.mdi-sort-clock-descending::before {\n  content: \"\\F154B\";\n}\n\n.mdi-sort-clock-descending-outline::before {\n  content: \"\\F154C\";\n}\n\n.mdi-sort-descending::before {\n  content: \"\\F04BD\";\n}\n\n.mdi-sort-numeric-ascending::before {\n  content: \"\\F1389\";\n}\n\n.mdi-sort-numeric-ascending-variant::before {\n  content: \"\\F090D\";\n}\n\n.mdi-sort-numeric-descending::before {\n  content: \"\\F138A\";\n}\n\n.mdi-sort-numeric-descending-variant::before {\n  content: \"\\F0AD2\";\n}\n\n.mdi-sort-numeric-variant::before {\n  content: \"\\F04BE\";\n}\n\n.mdi-sort-reverse-variant::before {\n  content: \"\\F033C\";\n}\n\n.mdi-sort-variant::before {\n  content: \"\\F04BF\";\n}\n\n.mdi-sort-variant-lock::before {\n  content: \"\\F0CCD\";\n}\n\n.mdi-sort-variant-lock-open::before {\n  content: \"\\F0CCE\";\n}\n\n.mdi-sort-variant-remove::before {\n  content: \"\\F1147\";\n}\n\n.mdi-soundcloud::before {\n  content: \"\\F04C0\";\n}\n\n.mdi-source-branch::before {\n  content: \"\\F062C\";\n}\n\n.mdi-source-branch-check::before {\n  content: \"\\F14CF\";\n}\n\n.mdi-source-branch-minus::before {\n  content: \"\\F14CB\";\n}\n\n.mdi-source-branch-plus::before {\n  content: \"\\F14CA\";\n}\n\n.mdi-source-branch-refresh::before {\n  content: \"\\F14CD\";\n}\n\n.mdi-source-branch-remove::before {\n  content: \"\\F14CC\";\n}\n\n.mdi-source-branch-sync::before {\n  content: \"\\F14CE\";\n}\n\n.mdi-source-commit::before {\n  content: \"\\F0718\";\n}\n\n.mdi-source-commit-end::before {\n  content: \"\\F0719\";\n}\n\n.mdi-source-commit-end-local::before {\n  content: \"\\F071A\";\n}\n\n.mdi-source-commit-local::before {\n  content: \"\\F071B\";\n}\n\n.mdi-source-commit-next-local::before {\n  content: \"\\F071C\";\n}\n\n.mdi-source-commit-start::before {\n  content: \"\\F071D\";\n}\n\n.mdi-source-commit-start-next-local::before {\n  content: \"\\F071E\";\n}\n\n.mdi-source-fork::before {\n  content: \"\\F04C1\";\n}\n\n.mdi-source-merge::before {\n  content: \"\\F062D\";\n}\n\n.mdi-source-pull::before {\n  content: \"\\F04C2\";\n}\n\n.mdi-source-repository::before {\n  content: \"\\F0CCF\";\n}\n\n.mdi-source-repository-multiple::before {\n  content: \"\\F0CD0\";\n}\n\n.mdi-soy-sauce::before {\n  content: \"\\F07EE\";\n}\n\n.mdi-soy-sauce-off::before {\n  content: \"\\F13FC\";\n}\n\n.mdi-spa::before {\n  content: \"\\F0CD1\";\n}\n\n.mdi-spa-outline::before {\n  content: \"\\F0CD2\";\n}\n\n.mdi-space-invaders::before {\n  content: \"\\F0BC9\";\n}\n\n.mdi-space-station::before {\n  content: \"\\F1383\";\n}\n\n.mdi-spade::before {\n  content: \"\\F0E65\";\n}\n\n.mdi-sparkles::before {\n  content: \"\\F1545\";\n}\n\n.mdi-speaker::before {\n  content: \"\\F04C3\";\n}\n\n.mdi-speaker-bluetooth::before {\n  content: \"\\F09A2\";\n}\n\n.mdi-speaker-multiple::before {\n  content: \"\\F0D38\";\n}\n\n.mdi-speaker-off::before {\n  content: \"\\F04C4\";\n}\n\n.mdi-speaker-wireless::before {\n  content: \"\\F071F\";\n}\n\n.mdi-speedometer::before {\n  content: \"\\F04C5\";\n}\n\n.mdi-speedometer-medium::before {\n  content: \"\\F0F85\";\n}\n\n.mdi-speedometer-slow::before {\n  content: \"\\F0F86\";\n}\n\n.mdi-spellcheck::before {\n  content: \"\\F04C6\";\n}\n\n.mdi-spider::before {\n  content: \"\\F11EA\";\n}\n\n.mdi-spider-thread::before {\n  content: \"\\F11EB\";\n}\n\n.mdi-spider-web::before {\n  content: \"\\F0BCA\";\n}\n\n.mdi-spirit-level::before {\n  content: \"\\F14F1\";\n}\n\n.mdi-spoon-sugar::before {\n  content: \"\\F1429\";\n}\n\n.mdi-spotify::before {\n  content: \"\\F04C7\";\n}\n\n.mdi-spotlight::before {\n  content: \"\\F04C8\";\n}\n\n.mdi-spotlight-beam::before {\n  content: \"\\F04C9\";\n}\n\n.mdi-spray::before {\n  content: \"\\F0665\";\n}\n\n.mdi-spray-bottle::before {\n  content: \"\\F0AE0\";\n}\n\n.mdi-sprinkler::before {\n  content: \"\\F105F\";\n}\n\n.mdi-sprinkler-variant::before {\n  content: \"\\F1060\";\n}\n\n.mdi-sprout::before {\n  content: \"\\F0E66\";\n}\n\n.mdi-sprout-outline::before {\n  content: \"\\F0E67\";\n}\n\n.mdi-square::before {\n  content: \"\\F0764\";\n}\n\n.mdi-square-circle::before {\n  content: \"\\F1500\";\n}\n\n.mdi-square-edit-outline::before {\n  content: \"\\F090C\";\n}\n\n.mdi-square-medium::before {\n  content: \"\\F0A13\";\n}\n\n.mdi-square-medium-outline::before {\n  content: \"\\F0A14\";\n}\n\n.mdi-square-off::before {\n  content: \"\\F12EE\";\n}\n\n.mdi-square-off-outline::before {\n  content: \"\\F12EF\";\n}\n\n.mdi-square-outline::before {\n  content: \"\\F0763\";\n}\n\n.mdi-square-root::before {\n  content: \"\\F0784\";\n}\n\n.mdi-square-root-box::before {\n  content: \"\\F09A3\";\n}\n\n.mdi-square-rounded::before {\n  content: \"\\F14FB\";\n}\n\n.mdi-square-rounded-outline::before {\n  content: \"\\F14FC\";\n}\n\n.mdi-square-small::before {\n  content: \"\\F0A15\";\n}\n\n.mdi-square-wave::before {\n  content: \"\\F147B\";\n}\n\n.mdi-squeegee::before {\n  content: \"\\F0AE1\";\n}\n\n.mdi-ssh::before {\n  content: \"\\F08C0\";\n}\n\n.mdi-stack-exchange::before {\n  content: \"\\F060B\";\n}\n\n.mdi-stack-overflow::before {\n  content: \"\\F04CC\";\n}\n\n.mdi-stackpath::before {\n  content: \"\\F0359\";\n}\n\n.mdi-stadium::before {\n  content: \"\\F0FF9\";\n}\n\n.mdi-stadium-variant::before {\n  content: \"\\F0720\";\n}\n\n.mdi-stairs::before {\n  content: \"\\F04CD\";\n}\n\n.mdi-stairs-box::before {\n  content: \"\\F139E\";\n}\n\n.mdi-stairs-down::before {\n  content: \"\\F12BE\";\n}\n\n.mdi-stairs-up::before {\n  content: \"\\F12BD\";\n}\n\n.mdi-stamper::before {\n  content: \"\\F0D39\";\n}\n\n.mdi-standard-definition::before {\n  content: \"\\F07EF\";\n}\n\n.mdi-star::before {\n  content: \"\\F04CE\";\n}\n\n.mdi-star-box::before {\n  content: \"\\F0A73\";\n}\n\n.mdi-star-box-multiple::before {\n  content: \"\\F1286\";\n}\n\n.mdi-star-box-multiple-outline::before {\n  content: \"\\F1287\";\n}\n\n.mdi-star-box-outline::before {\n  content: \"\\F0A74\";\n}\n\n.mdi-star-circle::before {\n  content: \"\\F04CF\";\n}\n\n.mdi-star-circle-outline::before {\n  content: \"\\F09A4\";\n}\n\n.mdi-star-face::before {\n  content: \"\\F09A5\";\n}\n\n.mdi-star-four-points::before {\n  content: \"\\F0AE2\";\n}\n\n.mdi-star-four-points-outline::before {\n  content: \"\\F0AE3\";\n}\n\n.mdi-star-half::before {\n  content: \"\\F0246\";\n}\n\n.mdi-star-half-full::before {\n  content: \"\\F04D0\";\n}\n\n.mdi-star-off::before {\n  content: \"\\F04D1\";\n}\n\n.mdi-star-outline::before {\n  content: \"\\F04D2\";\n}\n\n.mdi-star-three-points::before {\n  content: \"\\F0AE4\";\n}\n\n.mdi-star-three-points-outline::before {\n  content: \"\\F0AE5\";\n}\n\n.mdi-state-machine::before {\n  content: \"\\F11EF\";\n}\n\n.mdi-steam::before {\n  content: \"\\F04D3\";\n}\n\n.mdi-steering::before {\n  content: \"\\F04D4\";\n}\n\n.mdi-steering-off::before {\n  content: \"\\F090E\";\n}\n\n.mdi-step-backward::before {\n  content: \"\\F04D5\";\n}\n\n.mdi-step-backward-2::before {\n  content: \"\\F04D6\";\n}\n\n.mdi-step-forward::before {\n  content: \"\\F04D7\";\n}\n\n.mdi-step-forward-2::before {\n  content: \"\\F04D8\";\n}\n\n.mdi-stethoscope::before {\n  content: \"\\F04D9\";\n}\n\n.mdi-sticker::before {\n  content: \"\\F1364\";\n}\n\n.mdi-sticker-alert::before {\n  content: \"\\F1365\";\n}\n\n.mdi-sticker-alert-outline::before {\n  content: \"\\F1366\";\n}\n\n.mdi-sticker-check::before {\n  content: \"\\F1367\";\n}\n\n.mdi-sticker-check-outline::before {\n  content: \"\\F1368\";\n}\n\n.mdi-sticker-circle-outline::before {\n  content: \"\\F05D0\";\n}\n\n.mdi-sticker-emoji::before {\n  content: \"\\F0785\";\n}\n\n.mdi-sticker-minus::before {\n  content: \"\\F1369\";\n}\n\n.mdi-sticker-minus-outline::before {\n  content: \"\\F136A\";\n}\n\n.mdi-sticker-outline::before {\n  content: \"\\F136B\";\n}\n\n.mdi-sticker-plus::before {\n  content: \"\\F136C\";\n}\n\n.mdi-sticker-plus-outline::before {\n  content: \"\\F136D\";\n}\n\n.mdi-sticker-remove::before {\n  content: \"\\F136E\";\n}\n\n.mdi-sticker-remove-outline::before {\n  content: \"\\F136F\";\n}\n\n.mdi-stocking::before {\n  content: \"\\F04DA\";\n}\n\n.mdi-stomach::before {\n  content: \"\\F1093\";\n}\n\n.mdi-stop::before {\n  content: \"\\F04DB\";\n}\n\n.mdi-stop-circle::before {\n  content: \"\\F0666\";\n}\n\n.mdi-stop-circle-outline::before {\n  content: \"\\F0667\";\n}\n\n.mdi-store::before {\n  content: \"\\F04DC\";\n}\n\n.mdi-store-24-hour::before {\n  content: \"\\F04DD\";\n}\n\n.mdi-store-outline::before {\n  content: \"\\F1361\";\n}\n\n.mdi-storefront::before {\n  content: \"\\F07C7\";\n}\n\n.mdi-storefront-outline::before {\n  content: \"\\F10C1\";\n}\n\n.mdi-stove::before {\n  content: \"\\F04DE\";\n}\n\n.mdi-strategy::before {\n  content: \"\\F11D6\";\n}\n\n.mdi-stretch-to-page::before {\n  content: \"\\F0F2B\";\n}\n\n.mdi-stretch-to-page-outline::before {\n  content: \"\\F0F2C\";\n}\n\n.mdi-string-lights::before {\n  content: \"\\F12BA\";\n}\n\n.mdi-string-lights-off::before {\n  content: \"\\F12BB\";\n}\n\n.mdi-subdirectory-arrow-left::before {\n  content: \"\\F060C\";\n}\n\n.mdi-subdirectory-arrow-right::before {\n  content: \"\\F060D\";\n}\n\n.mdi-subtitles::before {\n  content: \"\\F0A16\";\n}\n\n.mdi-subtitles-outline::before {\n  content: \"\\F0A17\";\n}\n\n.mdi-subway::before {\n  content: \"\\F06AC\";\n}\n\n.mdi-subway-alert-variant::before {\n  content: \"\\F0D9D\";\n}\n\n.mdi-subway-variant::before {\n  content: \"\\F04DF\";\n}\n\n.mdi-summit::before {\n  content: \"\\F0786\";\n}\n\n.mdi-sunglasses::before {\n  content: \"\\F04E0\";\n}\n\n.mdi-surround-sound::before {\n  content: \"\\F05C5\";\n}\n\n.mdi-surround-sound-2-0::before {\n  content: \"\\F07F0\";\n}\n\n.mdi-surround-sound-3-1::before {\n  content: \"\\F07F1\";\n}\n\n.mdi-surround-sound-5-1::before {\n  content: \"\\F07F2\";\n}\n\n.mdi-surround-sound-7-1::before {\n  content: \"\\F07F3\";\n}\n\n.mdi-svg::before {\n  content: \"\\F0721\";\n}\n\n.mdi-swap-horizontal::before {\n  content: \"\\F04E1\";\n}\n\n.mdi-swap-horizontal-bold::before {\n  content: \"\\F0BCD\";\n}\n\n.mdi-swap-horizontal-circle::before {\n  content: \"\\F0FE1\";\n}\n\n.mdi-swap-horizontal-circle-outline::before {\n  content: \"\\F0FE2\";\n}\n\n.mdi-swap-horizontal-variant::before {\n  content: \"\\F08C1\";\n}\n\n.mdi-swap-vertical::before {\n  content: \"\\F04E2\";\n}\n\n.mdi-swap-vertical-bold::before {\n  content: \"\\F0BCE\";\n}\n\n.mdi-swap-vertical-circle::before {\n  content: \"\\F0FE3\";\n}\n\n.mdi-swap-vertical-circle-outline::before {\n  content: \"\\F0FE4\";\n}\n\n.mdi-swap-vertical-variant::before {\n  content: \"\\F08C2\";\n}\n\n.mdi-swim::before {\n  content: \"\\F04E3\";\n}\n\n.mdi-switch::before {\n  content: \"\\F04E4\";\n}\n\n.mdi-sword::before {\n  content: \"\\F04E5\";\n}\n\n.mdi-sword-cross::before {\n  content: \"\\F0787\";\n}\n\n.mdi-syllabary-hangul::before {\n  content: \"\\F1333\";\n}\n\n.mdi-syllabary-hiragana::before {\n  content: \"\\F1334\";\n}\n\n.mdi-syllabary-katakana::before {\n  content: \"\\F1335\";\n}\n\n.mdi-syllabary-katakana-halfwidth::before {\n  content: \"\\F1336\";\n}\n\n.mdi-symbol::before {\n  content: \"\\F1501\";\n}\n\n.mdi-symfony::before {\n  content: \"\\F0AE6\";\n}\n\n.mdi-sync::before {\n  content: \"\\F04E6\";\n}\n\n.mdi-sync-alert::before {\n  content: \"\\F04E7\";\n}\n\n.mdi-sync-circle::before {\n  content: \"\\F1378\";\n}\n\n.mdi-sync-off::before {\n  content: \"\\F04E8\";\n}\n\n.mdi-tab::before {\n  content: \"\\F04E9\";\n}\n\n.mdi-tab-minus::before {\n  content: \"\\F0B4B\";\n}\n\n.mdi-tab-plus::before {\n  content: \"\\F075C\";\n}\n\n.mdi-tab-remove::before {\n  content: \"\\F0B4C\";\n}\n\n.mdi-tab-unselected::before {\n  content: \"\\F04EA\";\n}\n\n.mdi-table::before {\n  content: \"\\F04EB\";\n}\n\n.mdi-table-account::before {\n  content: \"\\F13B9\";\n}\n\n.mdi-table-alert::before {\n  content: \"\\F13BA\";\n}\n\n.mdi-table-arrow-down::before {\n  content: \"\\F13BB\";\n}\n\n.mdi-table-arrow-left::before {\n  content: \"\\F13BC\";\n}\n\n.mdi-table-arrow-right::before {\n  content: \"\\F13BD\";\n}\n\n.mdi-table-arrow-up::before {\n  content: \"\\F13BE\";\n}\n\n.mdi-table-border::before {\n  content: \"\\F0A18\";\n}\n\n.mdi-table-cancel::before {\n  content: \"\\F13BF\";\n}\n\n.mdi-table-chair::before {\n  content: \"\\F1061\";\n}\n\n.mdi-table-check::before {\n  content: \"\\F13C0\";\n}\n\n.mdi-table-clock::before {\n  content: \"\\F13C1\";\n}\n\n.mdi-table-cog::before {\n  content: \"\\F13C2\";\n}\n\n.mdi-table-column::before {\n  content: \"\\F0835\";\n}\n\n.mdi-table-column-plus-after::before {\n  content: \"\\F04EC\";\n}\n\n.mdi-table-column-plus-before::before {\n  content: \"\\F04ED\";\n}\n\n.mdi-table-column-remove::before {\n  content: \"\\F04EE\";\n}\n\n.mdi-table-column-width::before {\n  content: \"\\F04EF\";\n}\n\n.mdi-table-edit::before {\n  content: \"\\F04F0\";\n}\n\n.mdi-table-eye::before {\n  content: \"\\F1094\";\n}\n\n.mdi-table-eye-off::before {\n  content: \"\\F13C3\";\n}\n\n.mdi-table-furniture::before {\n  content: \"\\F05BC\";\n}\n\n.mdi-table-headers-eye::before {\n  content: \"\\F121D\";\n}\n\n.mdi-table-headers-eye-off::before {\n  content: \"\\F121E\";\n}\n\n.mdi-table-heart::before {\n  content: \"\\F13C4\";\n}\n\n.mdi-table-key::before {\n  content: \"\\F13C5\";\n}\n\n.mdi-table-large::before {\n  content: \"\\F04F1\";\n}\n\n.mdi-table-large-plus::before {\n  content: \"\\F0F87\";\n}\n\n.mdi-table-large-remove::before {\n  content: \"\\F0F88\";\n}\n\n.mdi-table-lock::before {\n  content: \"\\F13C6\";\n}\n\n.mdi-table-merge-cells::before {\n  content: \"\\F09A6\";\n}\n\n.mdi-table-minus::before {\n  content: \"\\F13C7\";\n}\n\n.mdi-table-multiple::before {\n  content: \"\\F13C8\";\n}\n\n.mdi-table-network::before {\n  content: \"\\F13C9\";\n}\n\n.mdi-table-of-contents::before {\n  content: \"\\F0836\";\n}\n\n.mdi-table-off::before {\n  content: \"\\F13CA\";\n}\n\n.mdi-table-plus::before {\n  content: \"\\F0A75\";\n}\n\n.mdi-table-refresh::before {\n  content: \"\\F13A0\";\n}\n\n.mdi-table-remove::before {\n  content: \"\\F0A76\";\n}\n\n.mdi-table-row::before {\n  content: \"\\F0837\";\n}\n\n.mdi-table-row-height::before {\n  content: \"\\F04F2\";\n}\n\n.mdi-table-row-plus-after::before {\n  content: \"\\F04F3\";\n}\n\n.mdi-table-row-plus-before::before {\n  content: \"\\F04F4\";\n}\n\n.mdi-table-row-remove::before {\n  content: \"\\F04F5\";\n}\n\n.mdi-table-search::before {\n  content: \"\\F090F\";\n}\n\n.mdi-table-settings::before {\n  content: \"\\F0838\";\n}\n\n.mdi-table-split-cell::before {\n  content: \"\\F142A\";\n}\n\n.mdi-table-star::before {\n  content: \"\\F13CB\";\n}\n\n.mdi-table-sync::before {\n  content: \"\\F13A1\";\n}\n\n.mdi-table-tennis::before {\n  content: \"\\F0E68\";\n}\n\n.mdi-tablet::before {\n  content: \"\\F04F6\";\n}\n\n.mdi-tablet-android::before {\n  content: \"\\F04F7\";\n}\n\n.mdi-tablet-cellphone::before {\n  content: \"\\F09A7\";\n}\n\n.mdi-tablet-dashboard::before {\n  content: \"\\F0ECE\";\n}\n\n.mdi-tablet-ipad::before {\n  content: \"\\F04F8\";\n}\n\n.mdi-taco::before {\n  content: \"\\F0762\";\n}\n\n.mdi-tag::before {\n  content: \"\\F04F9\";\n}\n\n.mdi-tag-faces::before {\n  content: \"\\F04FA\";\n}\n\n.mdi-tag-heart::before {\n  content: \"\\F068B\";\n}\n\n.mdi-tag-heart-outline::before {\n  content: \"\\F0BCF\";\n}\n\n.mdi-tag-minus::before {\n  content: \"\\F0910\";\n}\n\n.mdi-tag-minus-outline::before {\n  content: \"\\F121F\";\n}\n\n.mdi-tag-multiple::before {\n  content: \"\\F04FB\";\n}\n\n.mdi-tag-multiple-outline::before {\n  content: \"\\F12F7\";\n}\n\n.mdi-tag-off::before {\n  content: \"\\F1220\";\n}\n\n.mdi-tag-off-outline::before {\n  content: \"\\F1221\";\n}\n\n.mdi-tag-outline::before {\n  content: \"\\F04FC\";\n}\n\n.mdi-tag-plus::before {\n  content: \"\\F0722\";\n}\n\n.mdi-tag-plus-outline::before {\n  content: \"\\F1222\";\n}\n\n.mdi-tag-remove::before {\n  content: \"\\F0723\";\n}\n\n.mdi-tag-remove-outline::before {\n  content: \"\\F1223\";\n}\n\n.mdi-tag-text::before {\n  content: \"\\F1224\";\n}\n\n.mdi-tag-text-outline::before {\n  content: \"\\F04FD\";\n}\n\n.mdi-tailwind::before {\n  content: \"\\F13FF\";\n}\n\n.mdi-tank::before {\n  content: \"\\F0D3A\";\n}\n\n.mdi-tanker-truck::before {\n  content: \"\\F0FE5\";\n}\n\n.mdi-tape-measure::before {\n  content: \"\\F0B4D\";\n}\n\n.mdi-target::before {\n  content: \"\\F04FE\";\n}\n\n.mdi-target-account::before {\n  content: \"\\F0BD0\";\n}\n\n.mdi-target-variant::before {\n  content: \"\\F0A77\";\n}\n\n.mdi-taxi::before {\n  content: \"\\F04FF\";\n}\n\n.mdi-tea::before {\n  content: \"\\F0D9E\";\n}\n\n.mdi-tea-outline::before {\n  content: \"\\F0D9F\";\n}\n\n.mdi-teach::before {\n  content: \"\\F0890\";\n}\n\n.mdi-teamviewer::before {\n  content: \"\\F0500\";\n}\n\n.mdi-telegram::before {\n  content: \"\\F0501\";\n}\n\n.mdi-telescope::before {\n  content: \"\\F0B4E\";\n}\n\n.mdi-television::before {\n  content: \"\\F0502\";\n}\n\n.mdi-television-ambient-light::before {\n  content: \"\\F1356\";\n}\n\n.mdi-television-box::before {\n  content: \"\\F0839\";\n}\n\n.mdi-television-classic::before {\n  content: \"\\F07F4\";\n}\n\n.mdi-television-classic-off::before {\n  content: \"\\F083A\";\n}\n\n.mdi-television-clean::before {\n  content: \"\\F1110\";\n}\n\n.mdi-television-guide::before {\n  content: \"\\F0503\";\n}\n\n.mdi-television-off::before {\n  content: \"\\F083B\";\n}\n\n.mdi-television-pause::before {\n  content: \"\\F0F89\";\n}\n\n.mdi-television-play::before {\n  content: \"\\F0ECF\";\n}\n\n.mdi-television-stop::before {\n  content: \"\\F0F8A\";\n}\n\n.mdi-temperature-celsius::before {\n  content: \"\\F0504\";\n}\n\n.mdi-temperature-fahrenheit::before {\n  content: \"\\F0505\";\n}\n\n.mdi-temperature-kelvin::before {\n  content: \"\\F0506\";\n}\n\n.mdi-tennis::before {\n  content: \"\\F0DA0\";\n}\n\n.mdi-tennis-ball::before {\n  content: \"\\F0507\";\n}\n\n.mdi-tent::before {\n  content: \"\\F0508\";\n}\n\n.mdi-terraform::before {\n  content: \"\\F1062\";\n}\n\n.mdi-terrain::before {\n  content: \"\\F0509\";\n}\n\n.mdi-test-tube::before {\n  content: \"\\F0668\";\n}\n\n.mdi-test-tube-empty::before {\n  content: \"\\F0911\";\n}\n\n.mdi-test-tube-off::before {\n  content: \"\\F0912\";\n}\n\n.mdi-text::before {\n  content: \"\\F09A8\";\n}\n\n.mdi-text-box::before {\n  content: \"\\F021A\";\n}\n\n.mdi-text-box-check::before {\n  content: \"\\F0EA6\";\n}\n\n.mdi-text-box-check-outline::before {\n  content: \"\\F0EA7\";\n}\n\n.mdi-text-box-minus::before {\n  content: \"\\F0EA8\";\n}\n\n.mdi-text-box-minus-outline::before {\n  content: \"\\F0EA9\";\n}\n\n.mdi-text-box-multiple::before {\n  content: \"\\F0AB7\";\n}\n\n.mdi-text-box-multiple-outline::before {\n  content: \"\\F0AB8\";\n}\n\n.mdi-text-box-outline::before {\n  content: \"\\F09ED\";\n}\n\n.mdi-text-box-plus::before {\n  content: \"\\F0EAA\";\n}\n\n.mdi-text-box-plus-outline::before {\n  content: \"\\F0EAB\";\n}\n\n.mdi-text-box-remove::before {\n  content: \"\\F0EAC\";\n}\n\n.mdi-text-box-remove-outline::before {\n  content: \"\\F0EAD\";\n}\n\n.mdi-text-box-search::before {\n  content: \"\\F0EAE\";\n}\n\n.mdi-text-box-search-outline::before {\n  content: \"\\F0EAF\";\n}\n\n.mdi-text-recognition::before {\n  content: \"\\F113D\";\n}\n\n.mdi-text-search::before {\n  content: \"\\F13B8\";\n}\n\n.mdi-text-shadow::before {\n  content: \"\\F0669\";\n}\n\n.mdi-text-short::before {\n  content: \"\\F09A9\";\n}\n\n.mdi-text-subject::before {\n  content: \"\\F09AA\";\n}\n\n.mdi-text-to-speech::before {\n  content: \"\\F050A\";\n}\n\n.mdi-text-to-speech-off::before {\n  content: \"\\F050B\";\n}\n\n.mdi-texture::before {\n  content: \"\\F050C\";\n}\n\n.mdi-texture-box::before {\n  content: \"\\F0FE6\";\n}\n\n.mdi-theater::before {\n  content: \"\\F050D\";\n}\n\n.mdi-theme-light-dark::before {\n  content: \"\\F050E\";\n}\n\n.mdi-thermometer::before {\n  content: \"\\F050F\";\n}\n\n.mdi-thermometer-alert::before {\n  content: \"\\F0E01\";\n}\n\n.mdi-thermometer-chevron-down::before {\n  content: \"\\F0E02\";\n}\n\n.mdi-thermometer-chevron-up::before {\n  content: \"\\F0E03\";\n}\n\n.mdi-thermometer-high::before {\n  content: \"\\F10C2\";\n}\n\n.mdi-thermometer-lines::before {\n  content: \"\\F0510\";\n}\n\n.mdi-thermometer-low::before {\n  content: \"\\F10C3\";\n}\n\n.mdi-thermometer-minus::before {\n  content: \"\\F0E04\";\n}\n\n.mdi-thermometer-off::before {\n  content: \"\\F1531\";\n}\n\n.mdi-thermometer-plus::before {\n  content: \"\\F0E05\";\n}\n\n.mdi-thermostat::before {\n  content: \"\\F0393\";\n}\n\n.mdi-thermostat-box::before {\n  content: \"\\F0891\";\n}\n\n.mdi-thought-bubble::before {\n  content: \"\\F07F6\";\n}\n\n.mdi-thought-bubble-outline::before {\n  content: \"\\F07F7\";\n}\n\n.mdi-thumb-down::before {\n  content: \"\\F0511\";\n}\n\n.mdi-thumb-down-outline::before {\n  content: \"\\F0512\";\n}\n\n.mdi-thumb-up::before {\n  content: \"\\F0513\";\n}\n\n.mdi-thumb-up-outline::before {\n  content: \"\\F0514\";\n}\n\n.mdi-thumbs-up-down::before {\n  content: \"\\F0515\";\n}\n\n.mdi-ticket::before {\n  content: \"\\F0516\";\n}\n\n.mdi-ticket-account::before {\n  content: \"\\F0517\";\n}\n\n.mdi-ticket-confirmation::before {\n  content: \"\\F0518\";\n}\n\n.mdi-ticket-confirmation-outline::before {\n  content: \"\\F13AA\";\n}\n\n.mdi-ticket-outline::before {\n  content: \"\\F0913\";\n}\n\n.mdi-ticket-percent::before {\n  content: \"\\F0724\";\n}\n\n.mdi-ticket-percent-outline::before {\n  content: \"\\F142B\";\n}\n\n.mdi-tie::before {\n  content: \"\\F0519\";\n}\n\n.mdi-tilde::before {\n  content: \"\\F0725\";\n}\n\n.mdi-timelapse::before {\n  content: \"\\F051A\";\n}\n\n.mdi-timeline::before {\n  content: \"\\F0BD1\";\n}\n\n.mdi-timeline-alert::before {\n  content: \"\\F0F95\";\n}\n\n.mdi-timeline-alert-outline::before {\n  content: \"\\F0F98\";\n}\n\n.mdi-timeline-check::before {\n  content: \"\\F1532\";\n}\n\n.mdi-timeline-check-outline::before {\n  content: \"\\F1533\";\n}\n\n.mdi-timeline-clock::before {\n  content: \"\\F11FB\";\n}\n\n.mdi-timeline-clock-outline::before {\n  content: \"\\F11FC\";\n}\n\n.mdi-timeline-help::before {\n  content: \"\\F0F99\";\n}\n\n.mdi-timeline-help-outline::before {\n  content: \"\\F0F9A\";\n}\n\n.mdi-timeline-minus::before {\n  content: \"\\F1534\";\n}\n\n.mdi-timeline-minus-outline::before {\n  content: \"\\F1535\";\n}\n\n.mdi-timeline-outline::before {\n  content: \"\\F0BD2\";\n}\n\n.mdi-timeline-plus::before {\n  content: \"\\F0F96\";\n}\n\n.mdi-timeline-plus-outline::before {\n  content: \"\\F0F97\";\n}\n\n.mdi-timeline-remove::before {\n  content: \"\\F1536\";\n}\n\n.mdi-timeline-remove-outline::before {\n  content: \"\\F1537\";\n}\n\n.mdi-timeline-text::before {\n  content: \"\\F0BD3\";\n}\n\n.mdi-timeline-text-outline::before {\n  content: \"\\F0BD4\";\n}\n\n.mdi-timer::before {\n  content: \"\\F13AB\";\n}\n\n.mdi-timer-10::before {\n  content: \"\\F051C\";\n}\n\n.mdi-timer-3::before {\n  content: \"\\F051D\";\n}\n\n.mdi-timer-off::before {\n  content: \"\\F13AC\";\n}\n\n.mdi-timer-off-outline::before {\n  content: \"\\F051E\";\n}\n\n.mdi-timer-outline::before {\n  content: \"\\F051B\";\n}\n\n.mdi-timer-sand::before {\n  content: \"\\F051F\";\n}\n\n.mdi-timer-sand-empty::before {\n  content: \"\\F06AD\";\n}\n\n.mdi-timer-sand-full::before {\n  content: \"\\F078C\";\n}\n\n.mdi-timetable::before {\n  content: \"\\F0520\";\n}\n\n.mdi-toaster::before {\n  content: \"\\F1063\";\n}\n\n.mdi-toaster-off::before {\n  content: \"\\F11B7\";\n}\n\n.mdi-toaster-oven::before {\n  content: \"\\F0CD3\";\n}\n\n.mdi-toggle-switch::before {\n  content: \"\\F0521\";\n}\n\n.mdi-toggle-switch-off::before {\n  content: \"\\F0522\";\n}\n\n.mdi-toggle-switch-off-outline::before {\n  content: \"\\F0A19\";\n}\n\n.mdi-toggle-switch-outline::before {\n  content: \"\\F0A1A\";\n}\n\n.mdi-toilet::before {\n  content: \"\\F09AB\";\n}\n\n.mdi-toolbox::before {\n  content: \"\\F09AC\";\n}\n\n.mdi-toolbox-outline::before {\n  content: \"\\F09AD\";\n}\n\n.mdi-tools::before {\n  content: \"\\F1064\";\n}\n\n.mdi-tooltip::before {\n  content: \"\\F0523\";\n}\n\n.mdi-tooltip-account::before {\n  content: \"\\F000C\";\n}\n\n.mdi-tooltip-edit::before {\n  content: \"\\F0524\";\n}\n\n.mdi-tooltip-edit-outline::before {\n  content: \"\\F12C5\";\n}\n\n.mdi-tooltip-image::before {\n  content: \"\\F0525\";\n}\n\n.mdi-tooltip-image-outline::before {\n  content: \"\\F0BD5\";\n}\n\n.mdi-tooltip-outline::before {\n  content: \"\\F0526\";\n}\n\n.mdi-tooltip-plus::before {\n  content: \"\\F0BD6\";\n}\n\n.mdi-tooltip-plus-outline::before {\n  content: \"\\F0527\";\n}\n\n.mdi-tooltip-text::before {\n  content: \"\\F0528\";\n}\n\n.mdi-tooltip-text-outline::before {\n  content: \"\\F0BD7\";\n}\n\n.mdi-tooth::before {\n  content: \"\\F08C3\";\n}\n\n.mdi-tooth-outline::before {\n  content: \"\\F0529\";\n}\n\n.mdi-toothbrush::before {\n  content: \"\\F1129\";\n}\n\n.mdi-toothbrush-electric::before {\n  content: \"\\F112C\";\n}\n\n.mdi-toothbrush-paste::before {\n  content: \"\\F112A\";\n}\n\n.mdi-tortoise::before {\n  content: \"\\F0D3B\";\n}\n\n.mdi-toslink::before {\n  content: \"\\F12B8\";\n}\n\n.mdi-tournament::before {\n  content: \"\\F09AE\";\n}\n\n.mdi-tow-truck::before {\n  content: \"\\F083C\";\n}\n\n.mdi-tower-beach::before {\n  content: \"\\F0681\";\n}\n\n.mdi-tower-fire::before {\n  content: \"\\F0682\";\n}\n\n.mdi-toy-brick::before {\n  content: \"\\F1288\";\n}\n\n.mdi-toy-brick-marker::before {\n  content: \"\\F1289\";\n}\n\n.mdi-toy-brick-marker-outline::before {\n  content: \"\\F128A\";\n}\n\n.mdi-toy-brick-minus::before {\n  content: \"\\F128B\";\n}\n\n.mdi-toy-brick-minus-outline::before {\n  content: \"\\F128C\";\n}\n\n.mdi-toy-brick-outline::before {\n  content: \"\\F128D\";\n}\n\n.mdi-toy-brick-plus::before {\n  content: \"\\F128E\";\n}\n\n.mdi-toy-brick-plus-outline::before {\n  content: \"\\F128F\";\n}\n\n.mdi-toy-brick-remove::before {\n  content: \"\\F1290\";\n}\n\n.mdi-toy-brick-remove-outline::before {\n  content: \"\\F1291\";\n}\n\n.mdi-toy-brick-search::before {\n  content: \"\\F1292\";\n}\n\n.mdi-toy-brick-search-outline::before {\n  content: \"\\F1293\";\n}\n\n.mdi-track-light::before {\n  content: \"\\F0914\";\n}\n\n.mdi-trackpad::before {\n  content: \"\\F07F8\";\n}\n\n.mdi-trackpad-lock::before {\n  content: \"\\F0933\";\n}\n\n.mdi-tractor::before {\n  content: \"\\F0892\";\n}\n\n.mdi-tractor-variant::before {\n  content: \"\\F14C4\";\n}\n\n.mdi-trademark::before {\n  content: \"\\F0A78\";\n}\n\n.mdi-traffic-cone::before {\n  content: \"\\F137C\";\n}\n\n.mdi-traffic-light::before {\n  content: \"\\F052B\";\n}\n\n.mdi-train::before {\n  content: \"\\F052C\";\n}\n\n.mdi-train-car::before {\n  content: \"\\F0BD8\";\n}\n\n.mdi-train-variant::before {\n  content: \"\\F08C4\";\n}\n\n.mdi-tram::before {\n  content: \"\\F052D\";\n}\n\n.mdi-tram-side::before {\n  content: \"\\F0FE7\";\n}\n\n.mdi-transcribe::before {\n  content: \"\\F052E\";\n}\n\n.mdi-transcribe-close::before {\n  content: \"\\F052F\";\n}\n\n.mdi-transfer::before {\n  content: \"\\F1065\";\n}\n\n.mdi-transfer-down::before {\n  content: \"\\F0DA1\";\n}\n\n.mdi-transfer-left::before {\n  content: \"\\F0DA2\";\n}\n\n.mdi-transfer-right::before {\n  content: \"\\F0530\";\n}\n\n.mdi-transfer-up::before {\n  content: \"\\F0DA3\";\n}\n\n.mdi-transit-connection::before {\n  content: \"\\F0D3C\";\n}\n\n.mdi-transit-connection-horizontal::before {\n  content: \"\\F1546\";\n}\n\n.mdi-transit-connection-variant::before {\n  content: \"\\F0D3D\";\n}\n\n.mdi-transit-detour::before {\n  content: \"\\F0F8B\";\n}\n\n.mdi-transit-skip::before {\n  content: \"\\F1515\";\n}\n\n.mdi-transit-transfer::before {\n  content: \"\\F06AE\";\n}\n\n.mdi-transition::before {\n  content: \"\\F0915\";\n}\n\n.mdi-transition-masked::before {\n  content: \"\\F0916\";\n}\n\n.mdi-translate::before {\n  content: \"\\F05CA\";\n}\n\n.mdi-translate-off::before {\n  content: \"\\F0E06\";\n}\n\n.mdi-transmission-tower::before {\n  content: \"\\F0D3E\";\n}\n\n.mdi-trash-can::before {\n  content: \"\\F0A79\";\n}\n\n.mdi-trash-can-outline::before {\n  content: \"\\F0A7A\";\n}\n\n.mdi-tray::before {\n  content: \"\\F1294\";\n}\n\n.mdi-tray-alert::before {\n  content: \"\\F1295\";\n}\n\n.mdi-tray-full::before {\n  content: \"\\F1296\";\n}\n\n.mdi-tray-minus::before {\n  content: \"\\F1297\";\n}\n\n.mdi-tray-plus::before {\n  content: \"\\F1298\";\n}\n\n.mdi-tray-remove::before {\n  content: \"\\F1299\";\n}\n\n.mdi-treasure-chest::before {\n  content: \"\\F0726\";\n}\n\n.mdi-tree::before {\n  content: \"\\F0531\";\n}\n\n.mdi-tree-outline::before {\n  content: \"\\F0E69\";\n}\n\n.mdi-trello::before {\n  content: \"\\F0532\";\n}\n\n.mdi-trending-down::before {\n  content: \"\\F0533\";\n}\n\n.mdi-trending-neutral::before {\n  content: \"\\F0534\";\n}\n\n.mdi-trending-up::before {\n  content: \"\\F0535\";\n}\n\n.mdi-triangle::before {\n  content: \"\\F0536\";\n}\n\n.mdi-triangle-outline::before {\n  content: \"\\F0537\";\n}\n\n.mdi-triangle-wave::before {\n  content: \"\\F147C\";\n}\n\n.mdi-triforce::before {\n  content: \"\\F0BD9\";\n}\n\n.mdi-trophy::before {\n  content: \"\\F0538\";\n}\n\n.mdi-trophy-award::before {\n  content: \"\\F0539\";\n}\n\n.mdi-trophy-broken::before {\n  content: \"\\F0DA4\";\n}\n\n.mdi-trophy-outline::before {\n  content: \"\\F053A\";\n}\n\n.mdi-trophy-variant::before {\n  content: \"\\F053B\";\n}\n\n.mdi-trophy-variant-outline::before {\n  content: \"\\F053C\";\n}\n\n.mdi-truck::before {\n  content: \"\\F053D\";\n}\n\n.mdi-truck-check::before {\n  content: \"\\F0CD4\";\n}\n\n.mdi-truck-check-outline::before {\n  content: \"\\F129A\";\n}\n\n.mdi-truck-delivery::before {\n  content: \"\\F053E\";\n}\n\n.mdi-truck-delivery-outline::before {\n  content: \"\\F129B\";\n}\n\n.mdi-truck-fast::before {\n  content: \"\\F0788\";\n}\n\n.mdi-truck-fast-outline::before {\n  content: \"\\F129C\";\n}\n\n.mdi-truck-outline::before {\n  content: \"\\F129D\";\n}\n\n.mdi-truck-trailer::before {\n  content: \"\\F0727\";\n}\n\n.mdi-trumpet::before {\n  content: \"\\F1096\";\n}\n\n.mdi-tshirt-crew::before {\n  content: \"\\F0A7B\";\n}\n\n.mdi-tshirt-crew-outline::before {\n  content: \"\\F053F\";\n}\n\n.mdi-tshirt-v::before {\n  content: \"\\F0A7C\";\n}\n\n.mdi-tshirt-v-outline::before {\n  content: \"\\F0540\";\n}\n\n.mdi-tumble-dryer::before {\n  content: \"\\F0917\";\n}\n\n.mdi-tumble-dryer-alert::before {\n  content: \"\\F11BA\";\n}\n\n.mdi-tumble-dryer-off::before {\n  content: \"\\F11BB\";\n}\n\n.mdi-tune::before {\n  content: \"\\F062E\";\n}\n\n.mdi-tune-variant::before {\n  content: \"\\F1542\";\n}\n\n.mdi-tune-vertical::before {\n  content: \"\\F066A\";\n}\n\n.mdi-tune-vertical-variant::before {\n  content: \"\\F1543\";\n}\n\n.mdi-turnstile::before {\n  content: \"\\F0CD5\";\n}\n\n.mdi-turnstile-outline::before {\n  content: \"\\F0CD6\";\n}\n\n.mdi-turtle::before {\n  content: \"\\F0CD7\";\n}\n\n.mdi-twitch::before {\n  content: \"\\F0543\";\n}\n\n.mdi-twitter::before {\n  content: \"\\F0544\";\n}\n\n.mdi-twitter-retweet::before {\n  content: \"\\F0547\";\n}\n\n.mdi-two-factor-authentication::before {\n  content: \"\\F09AF\";\n}\n\n.mdi-typewriter::before {\n  content: \"\\F0F2D\";\n}\n\n.mdi-ubisoft::before {\n  content: \"\\F0BDA\";\n}\n\n.mdi-ubuntu::before {\n  content: \"\\F0548\";\n}\n\n.mdi-ufo::before {\n  content: \"\\F10C4\";\n}\n\n.mdi-ufo-outline::before {\n  content: \"\\F10C5\";\n}\n\n.mdi-ultra-high-definition::before {\n  content: \"\\F07F9\";\n}\n\n.mdi-umbraco::before {\n  content: \"\\F0549\";\n}\n\n.mdi-umbrella::before {\n  content: \"\\F054A\";\n}\n\n.mdi-umbrella-closed::before {\n  content: \"\\F09B0\";\n}\n\n.mdi-umbrella-closed-outline::before {\n  content: \"\\F13E2\";\n}\n\n.mdi-umbrella-closed-variant::before {\n  content: \"\\F13E1\";\n}\n\n.mdi-umbrella-outline::before {\n  content: \"\\F054B\";\n}\n\n.mdi-undo::before {\n  content: \"\\F054C\";\n}\n\n.mdi-undo-variant::before {\n  content: \"\\F054D\";\n}\n\n.mdi-unfold-less-horizontal::before {\n  content: \"\\F054E\";\n}\n\n.mdi-unfold-less-vertical::before {\n  content: \"\\F0760\";\n}\n\n.mdi-unfold-more-horizontal::before {\n  content: \"\\F054F\";\n}\n\n.mdi-unfold-more-vertical::before {\n  content: \"\\F0761\";\n}\n\n.mdi-ungroup::before {\n  content: \"\\F0550\";\n}\n\n.mdi-unicode::before {\n  content: \"\\F0ED0\";\n}\n\n.mdi-unity::before {\n  content: \"\\F06AF\";\n}\n\n.mdi-unreal::before {\n  content: \"\\F09B1\";\n}\n\n.mdi-untappd::before {\n  content: \"\\F0551\";\n}\n\n.mdi-update::before {\n  content: \"\\F06B0\";\n}\n\n.mdi-upload::before {\n  content: \"\\F0552\";\n}\n\n.mdi-upload-lock::before {\n  content: \"\\F1373\";\n}\n\n.mdi-upload-lock-outline::before {\n  content: \"\\F1374\";\n}\n\n.mdi-upload-multiple::before {\n  content: \"\\F083D\";\n}\n\n.mdi-upload-network::before {\n  content: \"\\F06F6\";\n}\n\n.mdi-upload-network-outline::before {\n  content: \"\\F0CD8\";\n}\n\n.mdi-upload-off::before {\n  content: \"\\F10C6\";\n}\n\n.mdi-upload-off-outline::before {\n  content: \"\\F10C7\";\n}\n\n.mdi-upload-outline::before {\n  content: \"\\F0E07\";\n}\n\n.mdi-usb::before {\n  content: \"\\F0553\";\n}\n\n.mdi-usb-flash-drive::before {\n  content: \"\\F129E\";\n}\n\n.mdi-usb-flash-drive-outline::before {\n  content: \"\\F129F\";\n}\n\n.mdi-usb-port::before {\n  content: \"\\F11F0\";\n}\n\n.mdi-valve::before {\n  content: \"\\F1066\";\n}\n\n.mdi-valve-closed::before {\n  content: \"\\F1067\";\n}\n\n.mdi-valve-open::before {\n  content: \"\\F1068\";\n}\n\n.mdi-van-passenger::before {\n  content: \"\\F07FA\";\n}\n\n.mdi-van-utility::before {\n  content: \"\\F07FB\";\n}\n\n.mdi-vanish::before {\n  content: \"\\F07FC\";\n}\n\n.mdi-vanity-light::before {\n  content: \"\\F11E1\";\n}\n\n.mdi-variable::before {\n  content: \"\\F0AE7\";\n}\n\n.mdi-variable-box::before {\n  content: \"\\F1111\";\n}\n\n.mdi-vector-arrange-above::before {\n  content: \"\\F0554\";\n}\n\n.mdi-vector-arrange-below::before {\n  content: \"\\F0555\";\n}\n\n.mdi-vector-bezier::before {\n  content: \"\\F0AE8\";\n}\n\n.mdi-vector-circle::before {\n  content: \"\\F0556\";\n}\n\n.mdi-vector-circle-variant::before {\n  content: \"\\F0557\";\n}\n\n.mdi-vector-combine::before {\n  content: \"\\F0558\";\n}\n\n.mdi-vector-curve::before {\n  content: \"\\F0559\";\n}\n\n.mdi-vector-difference::before {\n  content: \"\\F055A\";\n}\n\n.mdi-vector-difference-ab::before {\n  content: \"\\F055B\";\n}\n\n.mdi-vector-difference-ba::before {\n  content: \"\\F055C\";\n}\n\n.mdi-vector-ellipse::before {\n  content: \"\\F0893\";\n}\n\n.mdi-vector-intersection::before {\n  content: \"\\F055D\";\n}\n\n.mdi-vector-line::before {\n  content: \"\\F055E\";\n}\n\n.mdi-vector-link::before {\n  content: \"\\F0FE8\";\n}\n\n.mdi-vector-point::before {\n  content: \"\\F055F\";\n}\n\n.mdi-vector-polygon::before {\n  content: \"\\F0560\";\n}\n\n.mdi-vector-polyline::before {\n  content: \"\\F0561\";\n}\n\n.mdi-vector-polyline-edit::before {\n  content: \"\\F1225\";\n}\n\n.mdi-vector-polyline-minus::before {\n  content: \"\\F1226\";\n}\n\n.mdi-vector-polyline-plus::before {\n  content: \"\\F1227\";\n}\n\n.mdi-vector-polyline-remove::before {\n  content: \"\\F1228\";\n}\n\n.mdi-vector-radius::before {\n  content: \"\\F074A\";\n}\n\n.mdi-vector-rectangle::before {\n  content: \"\\F05C6\";\n}\n\n.mdi-vector-selection::before {\n  content: \"\\F0562\";\n}\n\n.mdi-vector-square::before {\n  content: \"\\F0001\";\n}\n\n.mdi-vector-triangle::before {\n  content: \"\\F0563\";\n}\n\n.mdi-vector-union::before {\n  content: \"\\F0564\";\n}\n\n.mdi-vhs::before {\n  content: \"\\F0A1B\";\n}\n\n.mdi-vibrate::before {\n  content: \"\\F0566\";\n}\n\n.mdi-vibrate-off::before {\n  content: \"\\F0CD9\";\n}\n\n.mdi-video::before {\n  content: \"\\F0567\";\n}\n\n.mdi-video-3d::before {\n  content: \"\\F07FD\";\n}\n\n.mdi-video-3d-off::before {\n  content: \"\\F13D9\";\n}\n\n.mdi-video-3d-variant::before {\n  content: \"\\F0ED1\";\n}\n\n.mdi-video-4k-box::before {\n  content: \"\\F083E\";\n}\n\n.mdi-video-account::before {\n  content: \"\\F0919\";\n}\n\n.mdi-video-box::before {\n  content: \"\\F00FD\";\n}\n\n.mdi-video-box-off::before {\n  content: \"\\F00FE\";\n}\n\n.mdi-video-check::before {\n  content: \"\\F1069\";\n}\n\n.mdi-video-check-outline::before {\n  content: \"\\F106A\";\n}\n\n.mdi-video-high-definition::before {\n  content: \"\\F152E\";\n}\n\n.mdi-video-image::before {\n  content: \"\\F091A\";\n}\n\n.mdi-video-input-antenna::before {\n  content: \"\\F083F\";\n}\n\n.mdi-video-input-component::before {\n  content: \"\\F0840\";\n}\n\n.mdi-video-input-hdmi::before {\n  content: \"\\F0841\";\n}\n\n.mdi-video-input-scart::before {\n  content: \"\\F0F8C\";\n}\n\n.mdi-video-input-svideo::before {\n  content: \"\\F0842\";\n}\n\n.mdi-video-minus::before {\n  content: \"\\F09B2\";\n}\n\n.mdi-video-minus-outline::before {\n  content: \"\\F02BA\";\n}\n\n.mdi-video-off::before {\n  content: \"\\F0568\";\n}\n\n.mdi-video-off-outline::before {\n  content: \"\\F0BDB\";\n}\n\n.mdi-video-outline::before {\n  content: \"\\F0BDC\";\n}\n\n.mdi-video-plus::before {\n  content: \"\\F09B3\";\n}\n\n.mdi-video-plus-outline::before {\n  content: \"\\F01D3\";\n}\n\n.mdi-video-stabilization::before {\n  content: \"\\F091B\";\n}\n\n.mdi-video-switch::before {\n  content: \"\\F0569\";\n}\n\n.mdi-video-switch-outline::before {\n  content: \"\\F0790\";\n}\n\n.mdi-video-vintage::before {\n  content: \"\\F0A1C\";\n}\n\n.mdi-video-wireless::before {\n  content: \"\\F0ED2\";\n}\n\n.mdi-video-wireless-outline::before {\n  content: \"\\F0ED3\";\n}\n\n.mdi-view-agenda::before {\n  content: \"\\F056A\";\n}\n\n.mdi-view-agenda-outline::before {\n  content: \"\\F11D8\";\n}\n\n.mdi-view-array::before {\n  content: \"\\F056B\";\n}\n\n.mdi-view-array-outline::before {\n  content: \"\\F1485\";\n}\n\n.mdi-view-carousel::before {\n  content: \"\\F056C\";\n}\n\n.mdi-view-carousel-outline::before {\n  content: \"\\F1486\";\n}\n\n.mdi-view-column::before {\n  content: \"\\F056D\";\n}\n\n.mdi-view-column-outline::before {\n  content: \"\\F1487\";\n}\n\n.mdi-view-comfy::before {\n  content: \"\\F0E6A\";\n}\n\n.mdi-view-comfy-outline::before {\n  content: \"\\F1488\";\n}\n\n.mdi-view-compact::before {\n  content: \"\\F0E6B\";\n}\n\n.mdi-view-compact-outline::before {\n  content: \"\\F0E6C\";\n}\n\n.mdi-view-dashboard::before {\n  content: \"\\F056E\";\n}\n\n.mdi-view-dashboard-outline::before {\n  content: \"\\F0A1D\";\n}\n\n.mdi-view-dashboard-variant::before {\n  content: \"\\F0843\";\n}\n\n.mdi-view-dashboard-variant-outline::before {\n  content: \"\\F1489\";\n}\n\n.mdi-view-day::before {\n  content: \"\\F056F\";\n}\n\n.mdi-view-day-outline::before {\n  content: \"\\F148A\";\n}\n\n.mdi-view-grid::before {\n  content: \"\\F0570\";\n}\n\n.mdi-view-grid-outline::before {\n  content: \"\\F11D9\";\n}\n\n.mdi-view-grid-plus::before {\n  content: \"\\F0F8D\";\n}\n\n.mdi-view-grid-plus-outline::before {\n  content: \"\\F11DA\";\n}\n\n.mdi-view-headline::before {\n  content: \"\\F0571\";\n}\n\n.mdi-view-list::before {\n  content: \"\\F0572\";\n}\n\n.mdi-view-list-outline::before {\n  content: \"\\F148B\";\n}\n\n.mdi-view-module::before {\n  content: \"\\F0573\";\n}\n\n.mdi-view-module-outline::before {\n  content: \"\\F148C\";\n}\n\n.mdi-view-parallel::before {\n  content: \"\\F0728\";\n}\n\n.mdi-view-parallel-outline::before {\n  content: \"\\F148D\";\n}\n\n.mdi-view-quilt::before {\n  content: \"\\F0574\";\n}\n\n.mdi-view-quilt-outline::before {\n  content: \"\\F148E\";\n}\n\n.mdi-view-sequential::before {\n  content: \"\\F0729\";\n}\n\n.mdi-view-sequential-outline::before {\n  content: \"\\F148F\";\n}\n\n.mdi-view-split-horizontal::before {\n  content: \"\\F0BCB\";\n}\n\n.mdi-view-split-vertical::before {\n  content: \"\\F0BCC\";\n}\n\n.mdi-view-stream::before {\n  content: \"\\F0575\";\n}\n\n.mdi-view-stream-outline::before {\n  content: \"\\F1490\";\n}\n\n.mdi-view-week::before {\n  content: \"\\F0576\";\n}\n\n.mdi-view-week-outline::before {\n  content: \"\\F1491\";\n}\n\n.mdi-vimeo::before {\n  content: \"\\F0577\";\n}\n\n.mdi-violin::before {\n  content: \"\\F060F\";\n}\n\n.mdi-virtual-reality::before {\n  content: \"\\F0894\";\n}\n\n.mdi-virus::before {\n  content: \"\\F13B6\";\n}\n\n.mdi-virus-outline::before {\n  content: \"\\F13B7\";\n}\n\n.mdi-vk::before {\n  content: \"\\F0579\";\n}\n\n.mdi-vlc::before {\n  content: \"\\F057C\";\n}\n\n.mdi-voice-off::before {\n  content: \"\\F0ED4\";\n}\n\n.mdi-voicemail::before {\n  content: \"\\F057D\";\n}\n\n.mdi-volleyball::before {\n  content: \"\\F09B4\";\n}\n\n.mdi-volume-high::before {\n  content: \"\\F057E\";\n}\n\n.mdi-volume-low::before {\n  content: \"\\F057F\";\n}\n\n.mdi-volume-medium::before {\n  content: \"\\F0580\";\n}\n\n.mdi-volume-minus::before {\n  content: \"\\F075E\";\n}\n\n.mdi-volume-mute::before {\n  content: \"\\F075F\";\n}\n\n.mdi-volume-off::before {\n  content: \"\\F0581\";\n}\n\n.mdi-volume-plus::before {\n  content: \"\\F075D\";\n}\n\n.mdi-volume-source::before {\n  content: \"\\F1120\";\n}\n\n.mdi-volume-variant-off::before {\n  content: \"\\F0E08\";\n}\n\n.mdi-volume-vibrate::before {\n  content: \"\\F1121\";\n}\n\n.mdi-vote::before {\n  content: \"\\F0A1F\";\n}\n\n.mdi-vote-outline::before {\n  content: \"\\F0A20\";\n}\n\n.mdi-vpn::before {\n  content: \"\\F0582\";\n}\n\n.mdi-vuejs::before {\n  content: \"\\F0844\";\n}\n\n.mdi-vuetify::before {\n  content: \"\\F0E6D\";\n}\n\n.mdi-walk::before {\n  content: \"\\F0583\";\n}\n\n.mdi-wall::before {\n  content: \"\\F07FE\";\n}\n\n.mdi-wall-sconce::before {\n  content: \"\\F091C\";\n}\n\n.mdi-wall-sconce-flat::before {\n  content: \"\\F091D\";\n}\n\n.mdi-wall-sconce-flat-variant::before {\n  content: \"\\F041C\";\n}\n\n.mdi-wall-sconce-round::before {\n  content: \"\\F0748\";\n}\n\n.mdi-wall-sconce-round-variant::before {\n  content: \"\\F091E\";\n}\n\n.mdi-wallet::before {\n  content: \"\\F0584\";\n}\n\n.mdi-wallet-giftcard::before {\n  content: \"\\F0585\";\n}\n\n.mdi-wallet-membership::before {\n  content: \"\\F0586\";\n}\n\n.mdi-wallet-outline::before {\n  content: \"\\F0BDD\";\n}\n\n.mdi-wallet-plus::before {\n  content: \"\\F0F8E\";\n}\n\n.mdi-wallet-plus-outline::before {\n  content: \"\\F0F8F\";\n}\n\n.mdi-wallet-travel::before {\n  content: \"\\F0587\";\n}\n\n.mdi-wallpaper::before {\n  content: \"\\F0E09\";\n}\n\n.mdi-wan::before {\n  content: \"\\F0588\";\n}\n\n.mdi-wardrobe::before {\n  content: \"\\F0F90\";\n}\n\n.mdi-wardrobe-outline::before {\n  content: \"\\F0F91\";\n}\n\n.mdi-warehouse::before {\n  content: \"\\F0F81\";\n}\n\n.mdi-washing-machine::before {\n  content: \"\\F072A\";\n}\n\n.mdi-washing-machine-alert::before {\n  content: \"\\F11BC\";\n}\n\n.mdi-washing-machine-off::before {\n  content: \"\\F11BD\";\n}\n\n.mdi-watch::before {\n  content: \"\\F0589\";\n}\n\n.mdi-watch-export::before {\n  content: \"\\F058A\";\n}\n\n.mdi-watch-export-variant::before {\n  content: \"\\F0895\";\n}\n\n.mdi-watch-import::before {\n  content: \"\\F058B\";\n}\n\n.mdi-watch-import-variant::before {\n  content: \"\\F0896\";\n}\n\n.mdi-watch-variant::before {\n  content: \"\\F0897\";\n}\n\n.mdi-watch-vibrate::before {\n  content: \"\\F06B1\";\n}\n\n.mdi-watch-vibrate-off::before {\n  content: \"\\F0CDA\";\n}\n\n.mdi-water::before {\n  content: \"\\F058C\";\n}\n\n.mdi-water-alert::before {\n  content: \"\\F1502\";\n}\n\n.mdi-water-alert-outline::before {\n  content: \"\\F1503\";\n}\n\n.mdi-water-boiler::before {\n  content: \"\\F0F92\";\n}\n\n.mdi-water-boiler-alert::before {\n  content: \"\\F11B3\";\n}\n\n.mdi-water-boiler-off::before {\n  content: \"\\F11B4\";\n}\n\n.mdi-water-check::before {\n  content: \"\\F1504\";\n}\n\n.mdi-water-check-outline::before {\n  content: \"\\F1505\";\n}\n\n.mdi-water-minus::before {\n  content: \"\\F1506\";\n}\n\n.mdi-water-minus-outline::before {\n  content: \"\\F1507\";\n}\n\n.mdi-water-off::before {\n  content: \"\\F058D\";\n}\n\n.mdi-water-off-outline::before {\n  content: \"\\F1508\";\n}\n\n.mdi-water-outline::before {\n  content: \"\\F0E0A\";\n}\n\n.mdi-water-percent::before {\n  content: \"\\F058E\";\n}\n\n.mdi-water-percent-alert::before {\n  content: \"\\F1509\";\n}\n\n.mdi-water-plus::before {\n  content: \"\\F150A\";\n}\n\n.mdi-water-plus-outline::before {\n  content: \"\\F150B\";\n}\n\n.mdi-water-polo::before {\n  content: \"\\F12A0\";\n}\n\n.mdi-water-pump::before {\n  content: \"\\F058F\";\n}\n\n.mdi-water-pump-off::before {\n  content: \"\\F0F93\";\n}\n\n.mdi-water-remove::before {\n  content: \"\\F150C\";\n}\n\n.mdi-water-remove-outline::before {\n  content: \"\\F150D\";\n}\n\n.mdi-water-well::before {\n  content: \"\\F106B\";\n}\n\n.mdi-water-well-outline::before {\n  content: \"\\F106C\";\n}\n\n.mdi-watering-can::before {\n  content: \"\\F1481\";\n}\n\n.mdi-watering-can-outline::before {\n  content: \"\\F1482\";\n}\n\n.mdi-watermark::before {\n  content: \"\\F0612\";\n}\n\n.mdi-wave::before {\n  content: \"\\F0F2E\";\n}\n\n.mdi-waveform::before {\n  content: \"\\F147D\";\n}\n\n.mdi-waves::before {\n  content: \"\\F078D\";\n}\n\n.mdi-waze::before {\n  content: \"\\F0BDE\";\n}\n\n.mdi-weather-cloudy::before {\n  content: \"\\F0590\";\n}\n\n.mdi-weather-cloudy-alert::before {\n  content: \"\\F0F2F\";\n}\n\n.mdi-weather-cloudy-arrow-right::before {\n  content: \"\\F0E6E\";\n}\n\n.mdi-weather-fog::before {\n  content: \"\\F0591\";\n}\n\n.mdi-weather-hail::before {\n  content: \"\\F0592\";\n}\n\n.mdi-weather-hazy::before {\n  content: \"\\F0F30\";\n}\n\n.mdi-weather-hurricane::before {\n  content: \"\\F0898\";\n}\n\n.mdi-weather-lightning::before {\n  content: \"\\F0593\";\n}\n\n.mdi-weather-lightning-rainy::before {\n  content: \"\\F067E\";\n}\n\n.mdi-weather-night::before {\n  content: \"\\F0594\";\n}\n\n.mdi-weather-night-partly-cloudy::before {\n  content: \"\\F0F31\";\n}\n\n.mdi-weather-partly-cloudy::before {\n  content: \"\\F0595\";\n}\n\n.mdi-weather-partly-lightning::before {\n  content: \"\\F0F32\";\n}\n\n.mdi-weather-partly-rainy::before {\n  content: \"\\F0F33\";\n}\n\n.mdi-weather-partly-snowy::before {\n  content: \"\\F0F34\";\n}\n\n.mdi-weather-partly-snowy-rainy::before {\n  content: \"\\F0F35\";\n}\n\n.mdi-weather-pouring::before {\n  content: \"\\F0596\";\n}\n\n.mdi-weather-rainy::before {\n  content: \"\\F0597\";\n}\n\n.mdi-weather-snowy::before {\n  content: \"\\F0598\";\n}\n\n.mdi-weather-snowy-heavy::before {\n  content: \"\\F0F36\";\n}\n\n.mdi-weather-snowy-rainy::before {\n  content: \"\\F067F\";\n}\n\n.mdi-weather-sunny::before {\n  content: \"\\F0599\";\n}\n\n.mdi-weather-sunny-alert::before {\n  content: \"\\F0F37\";\n}\n\n.mdi-weather-sunny-off::before {\n  content: \"\\F14E4\";\n}\n\n.mdi-weather-sunset::before {\n  content: \"\\F059A\";\n}\n\n.mdi-weather-sunset-down::before {\n  content: \"\\F059B\";\n}\n\n.mdi-weather-sunset-up::before {\n  content: \"\\F059C\";\n}\n\n.mdi-weather-tornado::before {\n  content: \"\\F0F38\";\n}\n\n.mdi-weather-windy::before {\n  content: \"\\F059D\";\n}\n\n.mdi-weather-windy-variant::before {\n  content: \"\\F059E\";\n}\n\n.mdi-web::before {\n  content: \"\\F059F\";\n}\n\n.mdi-web-box::before {\n  content: \"\\F0F94\";\n}\n\n.mdi-web-clock::before {\n  content: \"\\F124A\";\n}\n\n.mdi-webcam::before {\n  content: \"\\F05A0\";\n}\n\n.mdi-webhook::before {\n  content: \"\\F062F\";\n}\n\n.mdi-webpack::before {\n  content: \"\\F072B\";\n}\n\n.mdi-webrtc::before {\n  content: \"\\F1248\";\n}\n\n.mdi-wechat::before {\n  content: \"\\F0611\";\n}\n\n.mdi-weight::before {\n  content: \"\\F05A1\";\n}\n\n.mdi-weight-gram::before {\n  content: \"\\F0D3F\";\n}\n\n.mdi-weight-kilogram::before {\n  content: \"\\F05A2\";\n}\n\n.mdi-weight-lifter::before {\n  content: \"\\F115D\";\n}\n\n.mdi-weight-pound::before {\n  content: \"\\F09B5\";\n}\n\n.mdi-whatsapp::before {\n  content: \"\\F05A3\";\n}\n\n.mdi-wheel-barrow::before {\n  content: \"\\F14F2\";\n}\n\n.mdi-wheelchair-accessibility::before {\n  content: \"\\F05A4\";\n}\n\n.mdi-whistle::before {\n  content: \"\\F09B6\";\n}\n\n.mdi-whistle-outline::before {\n  content: \"\\F12BC\";\n}\n\n.mdi-white-balance-auto::before {\n  content: \"\\F05A5\";\n}\n\n.mdi-white-balance-incandescent::before {\n  content: \"\\F05A6\";\n}\n\n.mdi-white-balance-iridescent::before {\n  content: \"\\F05A7\";\n}\n\n.mdi-white-balance-sunny::before {\n  content: \"\\F05A8\";\n}\n\n.mdi-widgets::before {\n  content: \"\\F072C\";\n}\n\n.mdi-widgets-outline::before {\n  content: \"\\F1355\";\n}\n\n.mdi-wifi::before {\n  content: \"\\F05A9\";\n}\n\n.mdi-wifi-off::before {\n  content: \"\\F05AA\";\n}\n\n.mdi-wifi-star::before {\n  content: \"\\F0E0B\";\n}\n\n.mdi-wifi-strength-1::before {\n  content: \"\\F091F\";\n}\n\n.mdi-wifi-strength-1-alert::before {\n  content: \"\\F0920\";\n}\n\n.mdi-wifi-strength-1-lock::before {\n  content: \"\\F0921\";\n}\n\n.mdi-wifi-strength-2::before {\n  content: \"\\F0922\";\n}\n\n.mdi-wifi-strength-2-alert::before {\n  content: \"\\F0923\";\n}\n\n.mdi-wifi-strength-2-lock::before {\n  content: \"\\F0924\";\n}\n\n.mdi-wifi-strength-3::before {\n  content: \"\\F0925\";\n}\n\n.mdi-wifi-strength-3-alert::before {\n  content: \"\\F0926\";\n}\n\n.mdi-wifi-strength-3-lock::before {\n  content: \"\\F0927\";\n}\n\n.mdi-wifi-strength-4::before {\n  content: \"\\F0928\";\n}\n\n.mdi-wifi-strength-4-alert::before {\n  content: \"\\F0929\";\n}\n\n.mdi-wifi-strength-4-lock::before {\n  content: \"\\F092A\";\n}\n\n.mdi-wifi-strength-alert-outline::before {\n  content: \"\\F092B\";\n}\n\n.mdi-wifi-strength-lock-outline::before {\n  content: \"\\F092C\";\n}\n\n.mdi-wifi-strength-off::before {\n  content: \"\\F092D\";\n}\n\n.mdi-wifi-strength-off-outline::before {\n  content: \"\\F092E\";\n}\n\n.mdi-wifi-strength-outline::before {\n  content: \"\\F092F\";\n}\n\n.mdi-wikipedia::before {\n  content: \"\\F05AC\";\n}\n\n.mdi-wind-turbine::before {\n  content: \"\\F0DA5\";\n}\n\n.mdi-window-close::before {\n  content: \"\\F05AD\";\n}\n\n.mdi-window-closed::before {\n  content: \"\\F05AE\";\n}\n\n.mdi-window-closed-variant::before {\n  content: \"\\F11DB\";\n}\n\n.mdi-window-maximize::before {\n  content: \"\\F05AF\";\n}\n\n.mdi-window-minimize::before {\n  content: \"\\F05B0\";\n}\n\n.mdi-window-open::before {\n  content: \"\\F05B1\";\n}\n\n.mdi-window-open-variant::before {\n  content: \"\\F11DC\";\n}\n\n.mdi-window-restore::before {\n  content: \"\\F05B2\";\n}\n\n.mdi-window-shutter::before {\n  content: \"\\F111C\";\n}\n\n.mdi-window-shutter-alert::before {\n  content: \"\\F111D\";\n}\n\n.mdi-window-shutter-open::before {\n  content: \"\\F111E\";\n}\n\n.mdi-wiper::before {\n  content: \"\\F0AE9\";\n}\n\n.mdi-wiper-wash::before {\n  content: \"\\F0DA6\";\n}\n\n.mdi-wizard-hat::before {\n  content: \"\\F1477\";\n}\n\n.mdi-wordpress::before {\n  content: \"\\F05B4\";\n}\n\n.mdi-wrap::before {\n  content: \"\\F05B6\";\n}\n\n.mdi-wrap-disabled::before {\n  content: \"\\F0BDF\";\n}\n\n.mdi-wrench::before {\n  content: \"\\F05B7\";\n}\n\n.mdi-wrench-outline::before {\n  content: \"\\F0BE0\";\n}\n\n.mdi-xamarin::before {\n  content: \"\\F0845\";\n}\n\n.mdi-xamarin-outline::before {\n  content: \"\\F0846\";\n}\n\n.mdi-xing::before {\n  content: \"\\F05BE\";\n}\n\n.mdi-xml::before {\n  content: \"\\F05C0\";\n}\n\n.mdi-xmpp::before {\n  content: \"\\F07FF\";\n}\n\n.mdi-y-combinator::before {\n  content: \"\\F0624\";\n}\n\n.mdi-yahoo::before {\n  content: \"\\F0B4F\";\n}\n\n.mdi-yeast::before {\n  content: \"\\F05C1\";\n}\n\n.mdi-yin-yang::before {\n  content: \"\\F0680\";\n}\n\n.mdi-yoga::before {\n  content: \"\\F117C\";\n}\n\n.mdi-youtube::before {\n  content: \"\\F05C3\";\n}\n\n.mdi-youtube-gaming::before {\n  content: \"\\F0848\";\n}\n\n.mdi-youtube-studio::before {\n  content: \"\\F0847\";\n}\n\n.mdi-youtube-subscription::before {\n  content: \"\\F0D40\";\n}\n\n.mdi-youtube-tv::before {\n  content: \"\\F0448\";\n}\n\n.mdi-yurt::before {\n  content: \"\\F1516\";\n}\n\n.mdi-z-wave::before {\n  content: \"\\F0AEA\";\n}\n\n.mdi-zend::before {\n  content: \"\\F0AEB\";\n}\n\n.mdi-zigbee::before {\n  content: \"\\F0D41\";\n}\n\n.mdi-zip-box::before {\n  content: \"\\F05C4\";\n}\n\n.mdi-zip-box-outline::before {\n  content: \"\\F0FFA\";\n}\n\n.mdi-zip-disk::before {\n  content: \"\\F0A23\";\n}\n\n.mdi-zodiac-aquarius::before {\n  content: \"\\F0A7D\";\n}\n\n.mdi-zodiac-aries::before {\n  content: \"\\F0A7E\";\n}\n\n.mdi-zodiac-cancer::before {\n  content: \"\\F0A7F\";\n}\n\n.mdi-zodiac-capricorn::before {\n  content: \"\\F0A80\";\n}\n\n.mdi-zodiac-gemini::before {\n  content: \"\\F0A81\";\n}\n\n.mdi-zodiac-leo::before {\n  content: \"\\F0A82\";\n}\n\n.mdi-zodiac-libra::before {\n  content: \"\\F0A83\";\n}\n\n.mdi-zodiac-pisces::before {\n  content: \"\\F0A84\";\n}\n\n.mdi-zodiac-sagittarius::before {\n  content: \"\\F0A85\";\n}\n\n.mdi-zodiac-scorpio::before {\n  content: \"\\F0A86\";\n}\n\n.mdi-zodiac-taurus::before {\n  content: \"\\F0A87\";\n}\n\n.mdi-zodiac-virgo::before {\n  content: \"\\F0A88\";\n}\n\n.mdi-blank::before {\n  content: \"\\F68C\";\n  visibility: hidden;\n}\n\n.mdi-18px.mdi-set, .mdi-18px.mdi:before {\n  font-size: 18px;\n}\n\n.mdi-24px.mdi-set, .mdi-24px.mdi:before {\n  font-size: 24px;\n}\n\n.mdi-36px.mdi-set, .mdi-36px.mdi:before {\n  font-size: 36px;\n}\n\n.mdi-48px.mdi-set, .mdi-48px.mdi:before {\n  font-size: 48px;\n}\n\n.mdi-dark:before {\n  color: rgba(0, 0, 0, 0.54);\n}\n\n.mdi-dark.mdi-inactive:before {\n  color: rgba(0, 0, 0, 0.26);\n}\n\n.mdi-light:before {\n  color: white;\n}\n\n.mdi-light.mdi-inactive:before {\n  color: rgba(255, 255, 255, 0.3);\n}\n\n.mdi-rotate-45 {\n  /*\r\n        // Not included in production\r\n        &.mdi-flip-h:before {\r\n            -webkit-transform: scaleX(-1) rotate(45deg);\r\n            transform: scaleX(-1) rotate(45deg);\r\n            filter: FlipH;\r\n            -ms-filter: \"FlipH\";\r\n        }\r\n        &.mdi-flip-v:before {\r\n            -webkit-transform: scaleY(-1) rotate(45deg);\r\n            -ms-transform: rotate(45deg);\r\n            transform: scaleY(-1) rotate(45deg);\r\n            filter: FlipV;\r\n            -ms-filter: \"FlipV\";\r\n        }\r\n        */\n}\n\n.mdi-rotate-45:before {\n  transform: rotate(45deg);\n}\n\n.mdi-rotate-90 {\n  /*\r\n        // Not included in production\r\n        &.mdi-flip-h:before {\r\n            -webkit-transform: scaleX(-1) rotate(90deg);\r\n            transform: scaleX(-1) rotate(90deg);\r\n            filter: FlipH;\r\n            -ms-filter: \"FlipH\";\r\n        }\r\n        &.mdi-flip-v:before {\r\n            -webkit-transform: scaleY(-1) rotate(90deg);\r\n            -ms-transform: rotate(90deg);\r\n            transform: scaleY(-1) rotate(90deg);\r\n            filter: FlipV;\r\n            -ms-filter: \"FlipV\";\r\n        }\r\n        */\n}\n\n.mdi-rotate-90:before {\n  transform: rotate(90deg);\n}\n\n.mdi-rotate-135 {\n  /*\r\n        // Not included in production\r\n        &.mdi-flip-h:before {\r\n            -webkit-transform: scaleX(-1) rotate(135deg);\r\n            transform: scaleX(-1) rotate(135deg);\r\n            filter: FlipH;\r\n            -ms-filter: \"FlipH\";\r\n        }\r\n        &.mdi-flip-v:before {\r\n            -webkit-transform: scaleY(-1) rotate(135deg);\r\n            -ms-transform: rotate(135deg);\r\n            transform: scaleY(-1) rotate(135deg);\r\n            filter: FlipV;\r\n            -ms-filter: \"FlipV\";\r\n        }\r\n        */\n}\n\n.mdi-rotate-135:before {\n  transform: rotate(135deg);\n}\n\n.mdi-rotate-180 {\n  /*\r\n        // Not included in production\r\n        &.mdi-flip-h:before {\r\n            -webkit-transform: scaleX(-1) rotate(180deg);\r\n            transform: scaleX(-1) rotate(180deg);\r\n            filter: FlipH;\r\n            -ms-filter: \"FlipH\";\r\n        }\r\n        &.mdi-flip-v:before {\r\n            -webkit-transform: scaleY(-1) rotate(180deg);\r\n            -ms-transform: rotate(180deg);\r\n            transform: scaleY(-1) rotate(180deg);\r\n            filter: FlipV;\r\n            -ms-filter: \"FlipV\";\r\n        }\r\n        */\n}\n\n.mdi-rotate-180:before {\n  transform: rotate(180deg);\n}\n\n.mdi-rotate-225 {\n  /*\r\n        // Not included in production\r\n        &.mdi-flip-h:before {\r\n            -webkit-transform: scaleX(-1) rotate(225deg);\r\n            transform: scaleX(-1) rotate(225deg);\r\n            filter: FlipH;\r\n            -ms-filter: \"FlipH\";\r\n        }\r\n        &.mdi-flip-v:before {\r\n            -webkit-transform: scaleY(-1) rotate(225deg);\r\n            -ms-transform: rotate(225deg);\r\n            transform: scaleY(-1) rotate(225deg);\r\n            filter: FlipV;\r\n            -ms-filter: \"FlipV\";\r\n        }\r\n        */\n}\n\n.mdi-rotate-225:before {\n  transform: rotate(225deg);\n}\n\n.mdi-rotate-270 {\n  /*\r\n        // Not included in production\r\n        &.mdi-flip-h:before {\r\n            -webkit-transform: scaleX(-1) rotate(270deg);\r\n            transform: scaleX(-1) rotate(270deg);\r\n            filter: FlipH;\r\n            -ms-filter: \"FlipH\";\r\n        }\r\n        &.mdi-flip-v:before {\r\n            -webkit-transform: scaleY(-1) rotate(270deg);\r\n            -ms-transform: rotate(270deg);\r\n            transform: scaleY(-1) rotate(270deg);\r\n            filter: FlipV;\r\n            -ms-filter: \"FlipV\";\r\n        }\r\n        */\n}\n\n.mdi-rotate-270:before {\n  transform: rotate(270deg);\n}\n\n.mdi-rotate-315 {\n  /*\r\n        // Not included in production\r\n        &.mdi-flip-h:before {\r\n            -webkit-transform: scaleX(-1) rotate(315deg);\r\n            transform: scaleX(-1) rotate(315deg);\r\n            filter: FlipH;\r\n            -ms-filter: \"FlipH\";\r\n        }\r\n        &.mdi-flip-v:before {\r\n            -webkit-transform: scaleY(-1) rotate(315deg);\r\n            -ms-transform: rotate(315deg);\r\n            transform: scaleY(-1) rotate(315deg);\r\n            filter: FlipV;\r\n            -ms-filter: \"FlipV\";\r\n        }\r\n        */\n}\n\n.mdi-rotate-315:before {\n  transform: rotate(315deg);\n}\n\n.mdi-flip-h:before {\n  transform: scaleX(-1);\n  -webkit-filter: FlipH;\n          filter: FlipH;\n  -ms-filter: \"FlipH\";\n}\n\n.mdi-flip-v:before {\n  transform: scaleY(-1);\n  -webkit-filter: FlipV;\n          filter: FlipV;\n  -ms-filter: \"FlipV\";\n}\n\n.mdi-spin:before {\n  -webkit-animation: mdi-spin 2s infinite linear;\n  animation: mdi-spin 2s infinite linear;\n}\n\n@-webkit-keyframes mdi-spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(359deg);\n  }\n}\n\n@keyframes mdi-spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(359deg);\n  }\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/style2.css":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/style2.css ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "body {\n    font-family: \"Source Sans Pro\", sans-serif;\n    padding: 0;\n    font-size: 12px;\n    margin: 0 auto;\n    color: #1d1d1d;\n    background-color: #fff;\n    font-weight: 300;\n    background: #f2f2f2;\n}\n\n.member-card {\n    /* width: 100%;\n    height: 150px;\n    background: black;\n    border-radius: 15px;\n    margin-bottom: 15px; */\n}\n\n.remote-video-box {\n    margin: 20px;\n    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.06);\n    border-radius: 20px;\n}\n.local-video-box {\n    box-shadow: 0 0 10px 0 rgba(58, 57, 57, 0.13);\n    border-radius: 20px;\n    width: 190px;\n    position: absolute;\n    right: 0;\n    bottom: 0;\n    margin: 15px;\n    z-index: 1;\n    /* border: 2px solid #fff; */\n    /* background: #fff; */\n}\n\n.caller-info {\n    padding: 15px;\n    font-weight: bold;\n    font-size: 13px;\n    position: absolute;\n    width: 100%;\n    color: #f2f2f2;\n}\n\n/* .overlay {\n    width: 100%;\n    position: relative;\n    z-index: 9000;\n    top: 0;\n    height: 600px;\n    background: linear-gradient(0deg, #000000d6, transparent);\n} */\n\n.main-box {\n    margin: auto;\n    float: none;\n    margin-top: 40px;\n    background: #fff;\n}\n\n.video-play {\n    width: 100%;\n    border-radius: 20px;\n    /* border: 3px solid #ffff; */\n    height: 100%;\n}\n\n#remote-video {\n    border-radius: 0 20px 20px 0 !important;\n}\n\n#wrapper {\n    background-color: #f2f2f2;\n    padding: 40px;\n    height: 100%;\n}\n\n.widget-thumb a img {\n    display: block;\n    width: 60px !important;\n    height: 60px !important;\n    min-width: 60px !important;\n    min-height: 60px !important;\n    float: left;\n    border-radius: 10px;\n    margin: 3px 22px 0 0;\n    background: #f2f2f238;\n}\n\n.widget-text h5 {\n    font-size: 13px;\n    font-weight: 600;\n    line-height: 24px;\n    margin: 0 0 5px;\n    margin: 0;\n    padding: 0;\n}\n\n.widget-thumb a img {\n    display: block;\n    width: 70px;\n    height: 70px;\n    float: left;\n    border-radius: 100%;\n    margin: 0;\n}\n\n.widget-tabs li:first-child {\n    margin: 0;\n}\n\n.widget-tabs li {\n    border: none;\n    padding: 10px;\n    margin-bottom: 10px;\n    border-radius: 10px;\n    box-shadow: 0 0 5px 0 rgba(58, 57, 57, 0.13);\n    margin-top: 15px;\n    background: #e6e6e60a;\n}\n\n.online-dot {\n    border-radius: 10px;\n    width: 10px;\n    height: 10px;\n    background: #5bd45b;\n    display: block;\n    float: left;\n    margin: 3px;\n    margin-right: 10px;\n}\n\n.widget-tabs.shop .widget-content {\n    display: flex;\n}\n.widget-thumb {\n    width: auto;\n    margin-right: 10px;\n}\n\n.controls a {\n    border-radius: 100%;\n    width: 50px;\n    height: 50px;\n    font-size: 20px !important;\n    text-align: center;\n    padding: 15px !important;\n    margin: 5px;\n}\n.controls {\n    position: absolute;\n    bottom: 20px;\n    left: calc(50% - 84px);\n    z-index: 1;\n}\n\n.left-side {\n    max-height: 564.5px;\n    overflow-y: scroll;\n}\n#remote-video {\n    min-height: 563.5px !important;\n    max-height: 563.5px !important;\n}\n\n#local-video {\n    /* height: 120px !important; */\n    /* background-color: #f2f2f2; */\n    border: 2px solid #f2f2f2c7;\n    border-radius: 10px;\n}\n\n.primary {\n    background: #1167ca !important;\n}\n\n.danger {\n    background: #ff3346 !important;\n}\n\n.primaryactive:hover {\n    background: #1167ca !important;\n    color: #fff !important;\n}\n.primary:hover {\n    background: #fff !important;\n    color: #1167ca !important;\n}\n\n.primaryactive {\n    background: #fff !important;\n    color: #1167ca !important;\n}\n\n.dangeractive {\n    background: #fff !important;\n    color: #ff3346 !important;\n}\n\n.controls .dangeractive:hover {\n    background: #ff3346 !important;\n    color: #fff !important;\n}\n.danger:hover {\n    background: #fff !important;\n    color: #ff3346 !important;\n}\n\n.overlay {\n    width: 100%;\n    height: 245px;\n    position: absolute;\n    bottom: 0;\n    background: linear-gradient(0deg, #00000069, transparent);\n    z-index: 0;\n    border-radius: 0 0 20px 0;\n}\n\n.title {\n    padding: 0;\n    margin: auto;\n    float: none;\n}\n\n.off-video-inner {\n    text-align: center;\n    margin-top: calc(50% - 40px);\n    font-size: 40px;\n    color: #ffffff8c;\n}\n\n.off-video {\n    width: 100%;\n    height: 143.5px;\n    position: absolute;\n    top: 0;\n    border-radius: 10px;\n    background: #b5b5b5e3;\n}\n\n.mute-video {\n    background: #b5b5b500 !important;\n}\n\n.call-ended {\n    height: 100%;\n    z-index: 9;\n    padding: 50px;\n    border-radius: 0 20px 20px 0;\n    background: #f7f7f7de;\n}\n\n.call-ended-2 {\n    height: 100%;\n    z-index: 9;\n    padding: 50px;\n    border-radius: 10px;\n    background: #f7f7f7de;\n}\n.call-ended .off-video-inner {\n    font-size: 20px;\n    color: black;\n    text-align: center !important;\n    font-weight: bold;\n    margin-top: calc(37% - 40px);\n}\n.call-ended .off-video-inner p {\n    text-align: center;\n}\n\n.widget-text h5 {\n    font-size: 12px;\n    font-weight: 600;\n    line-height: 24px;\n    margin: 0 0 5px;\n    margin: 0;\n    padding: 0;\n}\n\n.telephone {\n    width: 150px;\n    margin: auto;\n    margin-top: calc(50% - 240px);\n}\n\n@media screen and (max-width: 900px) {\n    #remote-video {\n        border-radius: 20px !important;\n        margin-bottom: 50px;\n    }\n\n    .overlay {\n        border-radius: 0 0 20px 20px;\n    }\n\n    .local-video-box {\n        box-shadow: 0 0 10px 0 rgba(58, 57, 57, 0.13);\n        border-radius: 20px;\n        width: 190px;\n        position: absolute;\n        right: 0;\n        bottom: 100px;\n        margin: 15px;\n        z-index: 1;\n        /* border: 2px solid #fff; */\n        /* background: #fff; */\n        width: 100px;\n    }\n\n    .caller-info.caller-info {\n        font-size: 9px;\n        bottom: -25px;\n        text-align: center;\n    }\n\n    .left-side {\n        max-height: 200px;\n        overflow-y: scroll;\n    }\n\n    .online-users-tile {\n        width: 100%;\n        position: absolute;\n        top: 0;\n    }\n}\n", ""]);
 
 // exports
 
@@ -6510,143 +6627,30 @@ function toComment(sourceMap) {
 
 /***/ }),
 
-/***/ "./node_modules/freeice/index.js":
-/*!***************************************!*\
-  !*** ./node_modules/freeice/index.js ***!
-  \***************************************/
+/***/ "./node_modules/css-loader/lib/url/escape.js":
+/*!***************************************************!*\
+  !*** ./node_modules/css-loader/lib/url/escape.js ***!
+  \***************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-/* jshint node: true */
-
-
-var normalice = __webpack_require__(/*! normalice */ "./node_modules/normalice/index.js");
-
-/**
-  # freeice
-
-  The `freeice` module is a simple way of getting random STUN or TURN server
-  for your WebRTC application.  The list of servers (just STUN at this stage)
-  were sourced from this [gist](https://gist.github.com/zziuni/3741933).
-
-  ## Example Use
-
-  The following demonstrates how you can use `freeice` with
-  [rtc-quickconnect](https://github.com/rtc-io/rtc-quickconnect):
-
-  <<< examples/quickconnect.js
-
-  As the `freeice` module generates ice servers in a list compliant with the
-  WebRTC spec you will be able to use it with raw `RTCPeerConnection`
-  constructors and other WebRTC libraries.
-
-  ## Hey, don't use my STUN/TURN server!
-
-  If for some reason your free STUN or TURN server ends up in the
-  list of servers ([stun](https://github.com/DamonOehlman/freeice/blob/master/stun.json) or
-  [turn](https://github.com/DamonOehlman/freeice/blob/master/turn.json))
-  that is used in this module, you can feel
-  free to open an issue on this repository and those servers will be removed
-  within 24 hours (or sooner).  This is the quickest and probably the most
-  polite way to have something removed (and provides us some visibility
-  if someone opens a pull request requesting that a server is added).
-
-  ## Please add my server!
-
-  If you have a server that you wish to add to the list, that's awesome! I'm
-  sure I speak on behalf of a whole pile of WebRTC developers who say thanks.
-  To get it into the list, feel free to either open a pull request or if you
-  find that process a bit daunting then just create an issue requesting
-  the addition of the server (make sure you provide all the details, and if
-  you have a Terms of Service then including that in the PR/issue would be
-  awesome).
-
-  ## I know of a free server, can I add it?
-
-  Sure, if you do your homework and make sure it is ok to use (I'm currently
-  in the process of reviewing the terms of those STUN servers included from
-  the original list).  If it's ok to go, then please see the previous entry
-  for how to add it.
-
-  ## Current List of Servers
-
-  * current as at the time of last `README.md` file generation
-
-  ### STUN
-
-  <<< stun.json
-
-  ### TURN
-
-  <<< turn.json
-
-**/
-
-var freeice = function(opts) {
-  // if a list of servers has been provided, then use it instead of defaults
-  var servers = {
-    stun: (opts || {}).stun || __webpack_require__(/*! ./stun.json */ "./node_modules/freeice/stun.json"),
-    turn: (opts || {}).turn || __webpack_require__(/*! ./turn.json */ "./node_modules/freeice/turn.json")
-  };
-
-  var stunCount = (opts || {}).stunCount || 2;
-  var turnCount = (opts || {}).turnCount || 0;
-  var selected;
-
-  function getServers(type, count) {
-    var out = [];
-    var input = [].concat(servers[type]);
-    var idx;
-
-    while (input.length && out.length < count) {
-      idx = (Math.random() * input.length) | 0;
-      out = out.concat(input.splice(idx, 1));
+module.exports = function escape(url) {
+    if (typeof url !== 'string') {
+        return url
+    }
+    // If url is already wrapped in quotes, remove them
+    if (/^['"].*['"]$/.test(url)) {
+        url = url.slice(1, -1);
+    }
+    // Should url be wrapped?
+    // See https://drafts.csswg.org/css-values-3/#urls
+    if (/["'() \t\n]/.test(url)) {
+        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
     }
 
-    return out.map(function(url) {
-        //If it's a not a string, don't try to "normalice" it otherwise using type:url will screw it up
-        if ((typeof url !== 'string') && (! (url instanceof String))) {
-            return url;
-        } else {
-            return normalice(type + ':' + url);
-        }
-    });
-  }
+    return url
+}
 
-  // add stun servers
-  selected = [].concat(getServers('stun', stunCount));
-
-  if (turnCount) {
-    selected = selected.concat(getServers('turn', turnCount));
-  }
-
-  return selected;
-};
-
-module.exports = freeice;
-
-/***/ }),
-
-/***/ "./node_modules/freeice/stun.json":
-/*!****************************************!*\
-  !*** ./node_modules/freeice/stun.json ***!
-  \****************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[\"stun.l.google.com:19302\",\"stun1.l.google.com:19302\",\"stun2.l.google.com:19302\",\"stun3.l.google.com:19302\",\"stun4.l.google.com:19302\",\"stun.ekiga.net\",\"stun.ideasip.com\",\"stun.schlund.de\",\"stun.stunprotocol.org:3478\",\"stun.voiparound.com\",\"stun.voipbuster.com\",\"stun.voipstunt.com\",\"stun.voxgratia.org\"]");
-
-/***/ }),
-
-/***/ "./node_modules/freeice/turn.json":
-/*!****************************************!*\
-  !*** ./node_modules/freeice/turn.json ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[]");
 
 /***/ }),
 
@@ -35905,77 +35909,6 @@ var index = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext || create
 
 /***/ }),
 
-/***/ "./node_modules/normalice/index.js":
-/*!*****************************************!*\
-  !*** ./node_modules/normalice/index.js ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
-  # normalice
-
-  Normalize an ice server configuration object (or plain old string) into a format
-  that is usable in all browsers supporting WebRTC.  Primarily this module is designed
-  to help with the transition of the `url` attribute of the configuration object to
-  the `urls` attribute.
-
-  ## Example Usage
-
-  <<< examples/simple.js
-
-**/
-
-var protocols = [
-  'stun:',
-  'turn:'
-];
-
-module.exports = function(input) {
-  var url = (input || {}).url || input;
-  var protocol;
-  var parts;
-  var output = {};
-
-  // if we don't have a string url, then allow the input to passthrough
-  if (typeof url != 'string' && (! (url instanceof String))) {
-    return input;
-  }
-
-  // trim the url string, and convert to an array
-  url = url.trim();
-
-  // if the protocol is not known, then passthrough
-  protocol = protocols[protocols.indexOf(url.slice(0, 5))];
-  if (! protocol) {
-    return input;
-  }
-
-  // now let's attack the remaining url parts
-  url = url.slice(5);
-  parts = url.split('@');
-
-  output.username = input.username;
-  output.credential = input.credential;
-  // if we have an authentication part, then set the credentials
-  if (parts.length > 1) {
-    url = parts[1];
-    parts = parts[0].split(':');
-
-    // add the output credential and username
-    output.username = parts[0];
-    output.credential = (input || {}).credential || parts[1] || '';
-  }
-
-  output.url = protocol + url;
-  output.urls = [ output.url ];
-
-  return output;
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -39667,4952 +39600,6 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-
-/***/ }),
-
-/***/ "./node_modules/pusher-js/dist/web/pusher.js":
-/*!***************************************************!*\
-  !*** ./node_modules/pusher-js/dist/web/pusher.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
- * Pusher JavaScript Library v6.0.3
- * https://pusher.com/
- *
- * Copyright 2020, Pusher
- * Released under the MIT licence.
- */
-
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory();
-	else {}
-})(window, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// Copyright (C) 2016 Dmitry Chestnykh
-// MIT License. See LICENSE file for details.
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * Package base64 implements Base64 encoding and decoding.
- */
-// Invalid character used in decoding to indicate
-// that the character to decode is out of range of
-// alphabet and cannot be decoded.
-var INVALID_BYTE = 256;
-/**
- * Implements standard Base64 encoding.
- *
- * Operates in constant time.
- */
-var Coder = /** @class */ (function () {
-    // TODO(dchest): methods to encode chunk-by-chunk.
-    function Coder(_paddingCharacter) {
-        if (_paddingCharacter === void 0) { _paddingCharacter = "="; }
-        this._paddingCharacter = _paddingCharacter;
-    }
-    Coder.prototype.encodedLength = function (length) {
-        if (!this._paddingCharacter) {
-            return (length * 8 + 5) / 6 | 0;
-        }
-        return (length + 2) / 3 * 4 | 0;
-    };
-    Coder.prototype.encode = function (data) {
-        var out = "";
-        var i = 0;
-        for (; i < data.length - 2; i += 3) {
-            var c = (data[i] << 16) | (data[i + 1] << 8) | (data[i + 2]);
-            out += this._encodeByte((c >>> 3 * 6) & 63);
-            out += this._encodeByte((c >>> 2 * 6) & 63);
-            out += this._encodeByte((c >>> 1 * 6) & 63);
-            out += this._encodeByte((c >>> 0 * 6) & 63);
-        }
-        var left = data.length - i;
-        if (left > 0) {
-            var c = (data[i] << 16) | (left === 2 ? data[i + 1] << 8 : 0);
-            out += this._encodeByte((c >>> 3 * 6) & 63);
-            out += this._encodeByte((c >>> 2 * 6) & 63);
-            if (left === 2) {
-                out += this._encodeByte((c >>> 1 * 6) & 63);
-            }
-            else {
-                out += this._paddingCharacter || "";
-            }
-            out += this._paddingCharacter || "";
-        }
-        return out;
-    };
-    Coder.prototype.maxDecodedLength = function (length) {
-        if (!this._paddingCharacter) {
-            return (length * 6 + 7) / 8 | 0;
-        }
-        return length / 4 * 3 | 0;
-    };
-    Coder.prototype.decodedLength = function (s) {
-        return this.maxDecodedLength(s.length - this._getPaddingLength(s));
-    };
-    Coder.prototype.decode = function (s) {
-        if (s.length === 0) {
-            return new Uint8Array(0);
-        }
-        var paddingLength = this._getPaddingLength(s);
-        var length = s.length - paddingLength;
-        var out = new Uint8Array(this.maxDecodedLength(length));
-        var op = 0;
-        var i = 0;
-        var haveBad = 0;
-        var v0 = 0, v1 = 0, v2 = 0, v3 = 0;
-        for (; i < length - 4; i += 4) {
-            v0 = this._decodeChar(s.charCodeAt(i + 0));
-            v1 = this._decodeChar(s.charCodeAt(i + 1));
-            v2 = this._decodeChar(s.charCodeAt(i + 2));
-            v3 = this._decodeChar(s.charCodeAt(i + 3));
-            out[op++] = (v0 << 2) | (v1 >>> 4);
-            out[op++] = (v1 << 4) | (v2 >>> 2);
-            out[op++] = (v2 << 6) | v3;
-            haveBad |= v0 & INVALID_BYTE;
-            haveBad |= v1 & INVALID_BYTE;
-            haveBad |= v2 & INVALID_BYTE;
-            haveBad |= v3 & INVALID_BYTE;
-        }
-        if (i < length - 1) {
-            v0 = this._decodeChar(s.charCodeAt(i));
-            v1 = this._decodeChar(s.charCodeAt(i + 1));
-            out[op++] = (v0 << 2) | (v1 >>> 4);
-            haveBad |= v0 & INVALID_BYTE;
-            haveBad |= v1 & INVALID_BYTE;
-        }
-        if (i < length - 2) {
-            v2 = this._decodeChar(s.charCodeAt(i + 2));
-            out[op++] = (v1 << 4) | (v2 >>> 2);
-            haveBad |= v2 & INVALID_BYTE;
-        }
-        if (i < length - 3) {
-            v3 = this._decodeChar(s.charCodeAt(i + 3));
-            out[op++] = (v2 << 6) | v3;
-            haveBad |= v3 & INVALID_BYTE;
-        }
-        if (haveBad !== 0) {
-            throw new Error("Base64Coder: incorrect characters for decoding");
-        }
-        return out;
-    };
-    // Standard encoding have the following encoded/decoded ranges,
-    // which we need to convert between.
-    //
-    // ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789  +   /
-    // Index:   0 - 25                    26 - 51              52 - 61   62  63
-    // ASCII:  65 - 90                    97 - 122             48 - 57   43  47
-    //
-    // Encode 6 bits in b into a new character.
-    Coder.prototype._encodeByte = function (b) {
-        // Encoding uses constant time operations as follows:
-        //
-        // 1. Define comparison of A with B using (A - B) >>> 8:
-        //          if A > B, then result is positive integer
-        //          if A <= B, then result is 0
-        //
-        // 2. Define selection of C or 0 using bitwise AND: X & C:
-        //          if X == 0, then result is 0
-        //          if X != 0, then result is C
-        //
-        // 3. Start with the smallest comparison (b >= 0), which is always
-        //    true, so set the result to the starting ASCII value (65).
-        //
-        // 4. Continue comparing b to higher ASCII values, and selecting
-        //    zero if comparison isn't true, otherwise selecting a value
-        //    to add to result, which:
-        //
-        //          a) undoes the previous addition
-        //          b) provides new value to add
-        //
-        var result = b;
-        // b >= 0
-        result += 65;
-        // b > 25
-        result += ((25 - b) >>> 8) & ((0 - 65) - 26 + 97);
-        // b > 51
-        result += ((51 - b) >>> 8) & ((26 - 97) - 52 + 48);
-        // b > 61
-        result += ((61 - b) >>> 8) & ((52 - 48) - 62 + 43);
-        // b > 62
-        result += ((62 - b) >>> 8) & ((62 - 43) - 63 + 47);
-        return String.fromCharCode(result);
-    };
-    // Decode a character code into a byte.
-    // Must return 256 if character is out of alphabet range.
-    Coder.prototype._decodeChar = function (c) {
-        // Decoding works similar to encoding: using the same comparison
-        // function, but now it works on ranges: result is always incremented
-        // by value, but this value becomes zero if the range is not
-        // satisfied.
-        //
-        // Decoding starts with invalid value, 256, which is then
-        // subtracted when the range is satisfied. If none of the ranges
-        // apply, the function returns 256, which is then checked by
-        // the caller to throw error.
-        var result = INVALID_BYTE; // start with invalid character
-        // c == 43 (c > 42 and c < 44)
-        result += (((42 - c) & (c - 44)) >>> 8) & (-INVALID_BYTE + c - 43 + 62);
-        // c == 47 (c > 46 and c < 48)
-        result += (((46 - c) & (c - 48)) >>> 8) & (-INVALID_BYTE + c - 47 + 63);
-        // c > 47 and c < 58
-        result += (((47 - c) & (c - 58)) >>> 8) & (-INVALID_BYTE + c - 48 + 52);
-        // c > 64 and c < 91
-        result += (((64 - c) & (c - 91)) >>> 8) & (-INVALID_BYTE + c - 65 + 0);
-        // c > 96 and c < 123
-        result += (((96 - c) & (c - 123)) >>> 8) & (-INVALID_BYTE + c - 97 + 26);
-        return result;
-    };
-    Coder.prototype._getPaddingLength = function (s) {
-        var paddingLength = 0;
-        if (this._paddingCharacter) {
-            for (var i = s.length - 1; i >= 0; i--) {
-                if (s[i] !== this._paddingCharacter) {
-                    break;
-                }
-                paddingLength++;
-            }
-            if (s.length < 4 || paddingLength > 2) {
-                throw new Error("Base64Coder: incorrect padding");
-            }
-        }
-        return paddingLength;
-    };
-    return Coder;
-}());
-exports.Coder = Coder;
-var stdCoder = new Coder();
-function encode(data) {
-    return stdCoder.encode(data);
-}
-exports.encode = encode;
-function decode(s) {
-    return stdCoder.decode(s);
-}
-exports.decode = decode;
-/**
- * Implements URL-safe Base64 encoding.
- * (Same as Base64, but '+' is replaced with '-', and '/' with '_').
- *
- * Operates in constant time.
- */
-var URLSafeCoder = /** @class */ (function (_super) {
-    __extends(URLSafeCoder, _super);
-    function URLSafeCoder() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    // URL-safe encoding have the following encoded/decoded ranges:
-    //
-    // ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789  -   _
-    // Index:   0 - 25                    26 - 51              52 - 61   62  63
-    // ASCII:  65 - 90                    97 - 122             48 - 57   45  95
-    //
-    URLSafeCoder.prototype._encodeByte = function (b) {
-        var result = b;
-        // b >= 0
-        result += 65;
-        // b > 25
-        result += ((25 - b) >>> 8) & ((0 - 65) - 26 + 97);
-        // b > 51
-        result += ((51 - b) >>> 8) & ((26 - 97) - 52 + 48);
-        // b > 61
-        result += ((61 - b) >>> 8) & ((52 - 48) - 62 + 45);
-        // b > 62
-        result += ((62 - b) >>> 8) & ((62 - 45) - 63 + 95);
-        return String.fromCharCode(result);
-    };
-    URLSafeCoder.prototype._decodeChar = function (c) {
-        var result = INVALID_BYTE;
-        // c == 45 (c > 44 and c < 46)
-        result += (((44 - c) & (c - 46)) >>> 8) & (-INVALID_BYTE + c - 45 + 62);
-        // c == 95 (c > 94 and c < 96)
-        result += (((94 - c) & (c - 96)) >>> 8) & (-INVALID_BYTE + c - 95 + 63);
-        // c > 47 and c < 58
-        result += (((47 - c) & (c - 58)) >>> 8) & (-INVALID_BYTE + c - 48 + 52);
-        // c > 64 and c < 91
-        result += (((64 - c) & (c - 91)) >>> 8) & (-INVALID_BYTE + c - 65 + 0);
-        // c > 96 and c < 123
-        result += (((96 - c) & (c - 123)) >>> 8) & (-INVALID_BYTE + c - 97 + 26);
-        return result;
-    };
-    return URLSafeCoder;
-}(Coder));
-exports.URLSafeCoder = URLSafeCoder;
-var urlSafeCoder = new URLSafeCoder();
-function encodeURLSafe(data) {
-    return urlSafeCoder.encode(data);
-}
-exports.encodeURLSafe = encodeURLSafe;
-function decodeURLSafe(s) {
-    return urlSafeCoder.decode(s);
-}
-exports.decodeURLSafe = decodeURLSafe;
-exports.encodedLength = function (length) {
-    return stdCoder.encodedLength(length);
-};
-exports.maxDecodedLength = function (length) {
-    return stdCoder.maxDecodedLength(length);
-};
-exports.decodedLength = function (s) {
-    return stdCoder.decodedLength(s);
-};
-//# sourceMappingURL=base64.js.map
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// Copyright (C) 2016 Dmitry Chestnykh
-// MIT License. See LICENSE file for details.
-Object.defineProperty(exports, "__esModule", { value: true });
-/**
- * Package utf8 implements UTF-8 encoding and decoding.
- */
-var INVALID_UTF16 = "utf8: invalid string";
-var INVALID_UTF8 = "utf8: invalid source encoding";
-/**
- * Encodes the given string into UTF-8 byte array.
- * Throws if the source string has invalid UTF-16 encoding.
- */
-function encode(s) {
-    // Calculate result length and allocate output array.
-    // encodedLength() also validates string and throws errors,
-    // so we don't need repeat validation here.
-    var arr = new Uint8Array(encodedLength(s));
-    var pos = 0;
-    for (var i = 0; i < s.length; i++) {
-        var c = s.charCodeAt(i);
-        if (c < 0x80) {
-            arr[pos++] = c;
-        }
-        else if (c < 0x800) {
-            arr[pos++] = 0xc0 | c >> 6;
-            arr[pos++] = 0x80 | c & 0x3f;
-        }
-        else if (c < 0xd800) {
-            arr[pos++] = 0xe0 | c >> 12;
-            arr[pos++] = 0x80 | (c >> 6) & 0x3f;
-            arr[pos++] = 0x80 | c & 0x3f;
-        }
-        else {
-            i++; // get one more character
-            c = (c & 0x3ff) << 10;
-            c |= s.charCodeAt(i) & 0x3ff;
-            c += 0x10000;
-            arr[pos++] = 0xf0 | c >> 18;
-            arr[pos++] = 0x80 | (c >> 12) & 0x3f;
-            arr[pos++] = 0x80 | (c >> 6) & 0x3f;
-            arr[pos++] = 0x80 | c & 0x3f;
-        }
-    }
-    return arr;
-}
-exports.encode = encode;
-/**
- * Returns the number of bytes required to encode the given string into UTF-8.
- * Throws if the source string has invalid UTF-16 encoding.
- */
-function encodedLength(s) {
-    var result = 0;
-    for (var i = 0; i < s.length; i++) {
-        var c = s.charCodeAt(i);
-        if (c < 0x80) {
-            result += 1;
-        }
-        else if (c < 0x800) {
-            result += 2;
-        }
-        else if (c < 0xd800) {
-            result += 3;
-        }
-        else if (c <= 0xdfff) {
-            if (i >= s.length - 1) {
-                throw new Error(INVALID_UTF16);
-            }
-            i++; // "eat" next character
-            result += 4;
-        }
-        else {
-            throw new Error(INVALID_UTF16);
-        }
-    }
-    return result;
-}
-exports.encodedLength = encodedLength;
-/**
- * Decodes the given byte array from UTF-8 into a string.
- * Throws if encoding is invalid.
- */
-function decode(arr) {
-    var chars = [];
-    for (var i = 0; i < arr.length; i++) {
-        var b = arr[i];
-        if (b & 0x80) {
-            var min = void 0;
-            if (b < 0xe0) {
-                // Need 1 more byte.
-                if (i >= arr.length) {
-                    throw new Error(INVALID_UTF8);
-                }
-                var n1 = arr[++i];
-                if ((n1 & 0xc0) !== 0x80) {
-                    throw new Error(INVALID_UTF8);
-                }
-                b = (b & 0x1f) << 6 | (n1 & 0x3f);
-                min = 0x80;
-            }
-            else if (b < 0xf0) {
-                // Need 2 more bytes.
-                if (i >= arr.length - 1) {
-                    throw new Error(INVALID_UTF8);
-                }
-                var n1 = arr[++i];
-                var n2 = arr[++i];
-                if ((n1 & 0xc0) !== 0x80 || (n2 & 0xc0) !== 0x80) {
-                    throw new Error(INVALID_UTF8);
-                }
-                b = (b & 0x0f) << 12 | (n1 & 0x3f) << 6 | (n2 & 0x3f);
-                min = 0x800;
-            }
-            else if (b < 0xf8) {
-                // Need 3 more bytes.
-                if (i >= arr.length - 2) {
-                    throw new Error(INVALID_UTF8);
-                }
-                var n1 = arr[++i];
-                var n2 = arr[++i];
-                var n3 = arr[++i];
-                if ((n1 & 0xc0) !== 0x80 || (n2 & 0xc0) !== 0x80 || (n3 & 0xc0) !== 0x80) {
-                    throw new Error(INVALID_UTF8);
-                }
-                b = (b & 0x0f) << 18 | (n1 & 0x3f) << 12 | (n2 & 0x3f) << 6 | (n3 & 0x3f);
-                min = 0x10000;
-            }
-            else {
-                throw new Error(INVALID_UTF8);
-            }
-            if (b < min || (b >= 0xd800 && b <= 0xdfff)) {
-                throw new Error(INVALID_UTF8);
-            }
-            if (b >= 0x10000) {
-                // Surrogate pair.
-                if (b > 0x10ffff) {
-                    throw new Error(INVALID_UTF8);
-                }
-                b -= 0x10000;
-                chars.push(String.fromCharCode(0xd800 | (b >> 10)));
-                b = 0xdc00 | (b & 0x3ff);
-            }
-        }
-        chars.push(String.fromCharCode(b));
-    }
-    return chars.join("");
-}
-exports.decode = decode;
-//# sourceMappingURL=utf8.js.map
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// required so we don't have to do require('pusher').default etc.
-module.exports = __webpack_require__(3).default;
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./src/runtimes/web/dom/script_receiver_factory.ts
-var ScriptReceiverFactory = (function () {
-    function ScriptReceiverFactory(prefix, name) {
-        this.lastId = 0;
-        this.prefix = prefix;
-        this.name = name;
-    }
-    ScriptReceiverFactory.prototype.create = function (callback) {
-        this.lastId++;
-        var number = this.lastId;
-        var id = this.prefix + number;
-        var name = this.name + '[' + number + ']';
-        var called = false;
-        var callbackWrapper = function () {
-            if (!called) {
-                callback.apply(null, arguments);
-                called = true;
-            }
-        };
-        this[number] = callbackWrapper;
-        return { number: number, id: id, name: name, callback: callbackWrapper };
-    };
-    ScriptReceiverFactory.prototype.remove = function (receiver) {
-        delete this[receiver.number];
-    };
-    return ScriptReceiverFactory;
-}());
-
-var ScriptReceivers = new ScriptReceiverFactory('_pusher_script_', 'Pusher.ScriptReceivers');
-
-// CONCATENATED MODULE: ./src/core/defaults.ts
-var Defaults = {
-    VERSION: "6.0.3",
-    PROTOCOL: 7,
-    wsPort: 80,
-    wssPort: 443,
-    wsPath: '',
-    httpHost: 'sockjs.pusher.com',
-    httpPort: 80,
-    httpsPort: 443,
-    httpPath: '/pusher',
-    stats_host: 'stats.pusher.com',
-    authEndpoint: '/pusher/auth',
-    authTransport: 'ajax',
-    activityTimeout: 120000,
-    pongTimeout: 30000,
-    unavailableTimeout: 10000,
-    cluster: 'mt1',
-    cdn_http: "http://js.pusher.com",
-    cdn_https: "https://js.pusher.com",
-    dependency_suffix: ""
-};
-/* harmony default export */ var defaults = (Defaults);
-
-// CONCATENATED MODULE: ./src/runtimes/web/dom/dependency_loader.ts
-
-
-var dependency_loader_DependencyLoader = (function () {
-    function DependencyLoader(options) {
-        this.options = options;
-        this.receivers = options.receivers || ScriptReceivers;
-        this.loading = {};
-    }
-    DependencyLoader.prototype.load = function (name, options, callback) {
-        var self = this;
-        if (self.loading[name] && self.loading[name].length > 0) {
-            self.loading[name].push(callback);
-        }
-        else {
-            self.loading[name] = [callback];
-            var request = runtime.createScriptRequest(self.getPath(name, options));
-            var receiver = self.receivers.create(function (error) {
-                self.receivers.remove(receiver);
-                if (self.loading[name]) {
-                    var callbacks = self.loading[name];
-                    delete self.loading[name];
-                    var successCallback = function (wasSuccessful) {
-                        if (!wasSuccessful) {
-                            request.cleanup();
-                        }
-                    };
-                    for (var i = 0; i < callbacks.length; i++) {
-                        callbacks[i](error, successCallback);
-                    }
-                }
-            });
-            request.send(receiver);
-        }
-    };
-    DependencyLoader.prototype.getRoot = function (options) {
-        var cdn;
-        var protocol = runtime.getDocument().location.protocol;
-        if ((options && options.useTLS) || protocol === 'https:') {
-            cdn = this.options.cdn_https;
-        }
-        else {
-            cdn = this.options.cdn_http;
-        }
-        return cdn.replace(/\/*$/, '') + '/' + this.options.version;
-    };
-    DependencyLoader.prototype.getPath = function (name, options) {
-        return this.getRoot(options) + '/' + name + this.options.suffix + '.js';
-    };
-    return DependencyLoader;
-}());
-/* harmony default export */ var dependency_loader = (dependency_loader_DependencyLoader);
-
-// CONCATENATED MODULE: ./src/runtimes/web/dom/dependencies.ts
-
-
-
-var DependenciesReceivers = new ScriptReceiverFactory('_pusher_dependencies', 'Pusher.DependenciesReceivers');
-var Dependencies = new dependency_loader({
-    cdn_http: defaults.cdn_http,
-    cdn_https: defaults.cdn_https,
-    version: defaults.VERSION,
-    suffix: defaults.dependency_suffix,
-    receivers: DependenciesReceivers
-});
-
-// CONCATENATED MODULE: ./src/core/base64.ts
-function encode(s) {
-    return btoa(utob(s));
-}
-var fromCharCode = String.fromCharCode;
-var b64chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
-var b64tab = {};
-for (var base64_i = 0, l = b64chars.length; base64_i < l; base64_i++) {
-    b64tab[b64chars.charAt(base64_i)] = base64_i;
-}
-var cb_utob = function (c) {
-    var cc = c.charCodeAt(0);
-    return cc < 0x80
-        ? c
-        : cc < 0x800
-            ? fromCharCode(0xc0 | (cc >>> 6)) + fromCharCode(0x80 | (cc & 0x3f))
-            : fromCharCode(0xe0 | ((cc >>> 12) & 0x0f)) +
-                fromCharCode(0x80 | ((cc >>> 6) & 0x3f)) +
-                fromCharCode(0x80 | (cc & 0x3f));
-};
-var utob = function (u) {
-    return u.replace(/[^\x00-\x7F]/g, cb_utob);
-};
-var cb_encode = function (ccc) {
-    var padlen = [0, 2, 1][ccc.length % 3];
-    var ord = (ccc.charCodeAt(0) << 16) |
-        ((ccc.length > 1 ? ccc.charCodeAt(1) : 0) << 8) |
-        (ccc.length > 2 ? ccc.charCodeAt(2) : 0);
-    var chars = [
-        b64chars.charAt(ord >>> 18),
-        b64chars.charAt((ord >>> 12) & 63),
-        padlen >= 2 ? '=' : b64chars.charAt((ord >>> 6) & 63),
-        padlen >= 1 ? '=' : b64chars.charAt(ord & 63)
-    ];
-    return chars.join('');
-};
-var btoa = window.btoa ||
-    function (b) {
-        return b.replace(/[\s\S]{1,3}/g, cb_encode);
-    };
-
-// CONCATENATED MODULE: ./src/core/utils/timers/abstract_timer.ts
-var Timer = (function () {
-    function Timer(set, clear, delay, callback) {
-        var _this = this;
-        this.clear = clear;
-        this.timer = set(function () {
-            if (_this.timer) {
-                _this.timer = callback(_this.timer);
-            }
-        }, delay);
-    }
-    Timer.prototype.isRunning = function () {
-        return this.timer !== null;
-    };
-    Timer.prototype.ensureAborted = function () {
-        if (this.timer) {
-            this.clear(this.timer);
-            this.timer = null;
-        }
-    };
-    return Timer;
-}());
-/* harmony default export */ var abstract_timer = (Timer);
-
-// CONCATENATED MODULE: ./src/core/utils/timers/index.ts
-var __extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-function timers_clearTimeout(timer) {
-    window.clearTimeout(timer);
-}
-function timers_clearInterval(timer) {
-    window.clearInterval(timer);
-}
-var OneOffTimer = (function (_super) {
-    __extends(OneOffTimer, _super);
-    function OneOffTimer(delay, callback) {
-        return _super.call(this, setTimeout, timers_clearTimeout, delay, function (timer) {
-            callback();
-            return null;
-        }) || this;
-    }
-    return OneOffTimer;
-}(abstract_timer));
-
-var PeriodicTimer = (function (_super) {
-    __extends(PeriodicTimer, _super);
-    function PeriodicTimer(delay, callback) {
-        return _super.call(this, setInterval, timers_clearInterval, delay, function (timer) {
-            callback();
-            return timer;
-        }) || this;
-    }
-    return PeriodicTimer;
-}(abstract_timer));
-
-
-// CONCATENATED MODULE: ./src/core/util.ts
-
-var Util = {
-    now: function () {
-        if (Date.now) {
-            return Date.now();
-        }
-        else {
-            return new Date().valueOf();
-        }
-    },
-    defer: function (callback) {
-        return new OneOffTimer(0, callback);
-    },
-    method: function (name) {
-        var args = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            args[_i - 1] = arguments[_i];
-        }
-        var boundArguments = Array.prototype.slice.call(arguments, 1);
-        return function (object) {
-            return object[name].apply(object, boundArguments.concat(arguments));
-        };
-    }
-};
-/* harmony default export */ var util = (Util);
-
-// CONCATENATED MODULE: ./src/core/utils/collections.ts
-
-
-function extend(target) {
-    var sources = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        sources[_i - 1] = arguments[_i];
-    }
-    for (var i = 0; i < sources.length; i++) {
-        var extensions = sources[i];
-        for (var property in extensions) {
-            if (extensions[property] &&
-                extensions[property].constructor &&
-                extensions[property].constructor === Object) {
-                target[property] = extend(target[property] || {}, extensions[property]);
-            }
-            else {
-                target[property] = extensions[property];
-            }
-        }
-    }
-    return target;
-}
-function stringify() {
-    var m = ['Pusher'];
-    for (var i = 0; i < arguments.length; i++) {
-        if (typeof arguments[i] === 'string') {
-            m.push(arguments[i]);
-        }
-        else {
-            m.push(safeJSONStringify(arguments[i]));
-        }
-    }
-    return m.join(' : ');
-}
-function arrayIndexOf(array, item) {
-    var nativeIndexOf = Array.prototype.indexOf;
-    if (array === null) {
-        return -1;
-    }
-    if (nativeIndexOf && array.indexOf === nativeIndexOf) {
-        return array.indexOf(item);
-    }
-    for (var i = 0, l = array.length; i < l; i++) {
-        if (array[i] === item) {
-            return i;
-        }
-    }
-    return -1;
-}
-function objectApply(object, f) {
-    for (var key in object) {
-        if (Object.prototype.hasOwnProperty.call(object, key)) {
-            f(object[key], key, object);
-        }
-    }
-}
-function keys(object) {
-    var keys = [];
-    objectApply(object, function (_, key) {
-        keys.push(key);
-    });
-    return keys;
-}
-function values(object) {
-    var values = [];
-    objectApply(object, function (value) {
-        values.push(value);
-    });
-    return values;
-}
-function apply(array, f, context) {
-    for (var i = 0; i < array.length; i++) {
-        f.call(context || window, array[i], i, array);
-    }
-}
-function map(array, f) {
-    var result = [];
-    for (var i = 0; i < array.length; i++) {
-        result.push(f(array[i], i, array, result));
-    }
-    return result;
-}
-function mapObject(object, f) {
-    var result = {};
-    objectApply(object, function (value, key) {
-        result[key] = f(value);
-    });
-    return result;
-}
-function filter(array, test) {
-    test =
-        test ||
-            function (value) {
-                return !!value;
-            };
-    var result = [];
-    for (var i = 0; i < array.length; i++) {
-        if (test(array[i], i, array, result)) {
-            result.push(array[i]);
-        }
-    }
-    return result;
-}
-function filterObject(object, test) {
-    var result = {};
-    objectApply(object, function (value, key) {
-        if ((test && test(value, key, object, result)) || Boolean(value)) {
-            result[key] = value;
-        }
-    });
-    return result;
-}
-function flatten(object) {
-    var result = [];
-    objectApply(object, function (value, key) {
-        result.push([key, value]);
-    });
-    return result;
-}
-function any(array, test) {
-    for (var i = 0; i < array.length; i++) {
-        if (test(array[i], i, array)) {
-            return true;
-        }
-    }
-    return false;
-}
-function collections_all(array, test) {
-    for (var i = 0; i < array.length; i++) {
-        if (!test(array[i], i, array)) {
-            return false;
-        }
-    }
-    return true;
-}
-function encodeParamsObject(data) {
-    return mapObject(data, function (value) {
-        if (typeof value === 'object') {
-            value = safeJSONStringify(value);
-        }
-        return encodeURIComponent(encode(value.toString()));
-    });
-}
-function buildQueryString(data) {
-    var params = filterObject(data, function (value) {
-        return value !== undefined;
-    });
-    var query = map(flatten(encodeParamsObject(params)), util.method('join', '=')).join('&');
-    return query;
-}
-function decycleObject(object) {
-    var objects = [], paths = [];
-    return (function derez(value, path) {
-        var i, name, nu;
-        switch (typeof value) {
-            case 'object':
-                if (!value) {
-                    return null;
-                }
-                for (i = 0; i < objects.length; i += 1) {
-                    if (objects[i] === value) {
-                        return { $ref: paths[i] };
-                    }
-                }
-                objects.push(value);
-                paths.push(path);
-                if (Object.prototype.toString.apply(value) === '[object Array]') {
-                    nu = [];
-                    for (i = 0; i < value.length; i += 1) {
-                        nu[i] = derez(value[i], path + '[' + i + ']');
-                    }
-                }
-                else {
-                    nu = {};
-                    for (name in value) {
-                        if (Object.prototype.hasOwnProperty.call(value, name)) {
-                            nu[name] = derez(value[name], path + '[' + JSON.stringify(name) + ']');
-                        }
-                    }
-                }
-                return nu;
-            case 'number':
-            case 'string':
-            case 'boolean':
-                return value;
-        }
-    })(object, '$');
-}
-function safeJSONStringify(source) {
-    try {
-        return JSON.stringify(source);
-    }
-    catch (e) {
-        return JSON.stringify(decycleObject(source));
-    }
-}
-
-// CONCATENATED MODULE: ./src/core/logger.ts
-
-
-var logger_Logger = (function () {
-    function Logger() {
-        this.globalLog = function (message) {
-            if (window.console && window.console.log) {
-                window.console.log(message);
-            }
-        };
-    }
-    Logger.prototype.debug = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
-        this.log(this.globalLog, args);
-    };
-    Logger.prototype.warn = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
-        this.log(this.globalLogWarn, args);
-    };
-    Logger.prototype.error = function () {
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-        }
-        this.log(this.globalLogError, args);
-    };
-    Logger.prototype.globalLogWarn = function (message) {
-        if (window.console && window.console.warn) {
-            window.console.warn(message);
-        }
-        else {
-            this.globalLog(message);
-        }
-    };
-    Logger.prototype.globalLogError = function (message) {
-        if (window.console && window.console.error) {
-            window.console.error(message);
-        }
-        else {
-            this.globalLogWarn(message);
-        }
-    };
-    Logger.prototype.log = function (defaultLoggingFunction) {
-        var args = [];
-        for (var _i = 1; _i < arguments.length; _i++) {
-            args[_i - 1] = arguments[_i];
-        }
-        var message = stringify.apply(this, arguments);
-        if (core_pusher.log) {
-            core_pusher.log(message);
-        }
-        else if (core_pusher.logToConsole) {
-            var log = defaultLoggingFunction.bind(this);
-            log(message);
-        }
-    };
-    return Logger;
-}());
-/* harmony default export */ var logger = (new logger_Logger());
-
-// CONCATENATED MODULE: ./src/core/utils/url_store.ts
-var urlStore = {
-    baseUrl: 'https://pusher.com',
-    urls: {
-        authenticationEndpoint: {
-            path: '/docs/authenticating_users'
-        },
-        javascriptQuickStart: {
-            path: '/docs/javascript_quick_start'
-        },
-        triggeringClientEvents: {
-            path: '/docs/client_api_guide/client_events#trigger-events'
-        },
-        encryptedChannelSupport: {
-            fullUrl: 'https://github.com/pusher/pusher-js/tree/cc491015371a4bde5743d1c87a0fbac0feb53195#encrypted-channel-support'
-        }
-    }
-};
-var buildLogSuffix = function (key) {
-    var urlPrefix = 'See:';
-    var urlObj = urlStore.urls[key];
-    if (!urlObj)
-        return '';
-    var url;
-    if (urlObj.fullUrl) {
-        url = urlObj.fullUrl;
-    }
-    else if (urlObj.path) {
-        url = urlStore.baseUrl + urlObj.path;
-    }
-    if (!url)
-        return '';
-    return urlPrefix + " " + url;
-};
-/* harmony default export */ var url_store = ({ buildLogSuffix: buildLogSuffix });
-
-// CONCATENATED MODULE: ./src/runtimes/isomorphic/auth/xhr_auth.ts
-
-
-
-var ajax = function (context, socketId, callback) {
-    var self = this, xhr;
-    xhr = runtime.createXHR();
-    xhr.open('POST', self.options.authEndpoint, true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    for (var headerName in this.authOptions.headers) {
-        xhr.setRequestHeader(headerName, this.authOptions.headers[headerName]);
-    }
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                var data, parsed = false;
-                try {
-                    data = JSON.parse(xhr.responseText);
-                    parsed = true;
-                }
-                catch (e) {
-                    callback(true, 'JSON returned from auth endpoint was invalid, yet status code was 200. Data was: ' +
-                        xhr.responseText);
-                }
-                if (parsed) {
-                    callback(false, data);
-                }
-            }
-            else {
-                var suffix = url_store.buildLogSuffix('authenticationEndpoint');
-                logger.error('Unable to retrieve auth string from auth endpoint - ' +
-                    ("received status " + xhr.status + " from " + self.options.authEndpoint + ". ") +
-                    ("Clients must be authenticated to join private or presence channels. " + suffix));
-                callback(true, xhr.status);
-            }
-        }
-    };
-    xhr.send(this.composeQuery(socketId));
-    return xhr;
-};
-/* harmony default export */ var xhr_auth = (ajax);
-
-// CONCATENATED MODULE: ./src/runtimes/web/auth/jsonp_auth.ts
-
-var jsonp = function (context, socketId, callback) {
-    if (this.authOptions.headers !== undefined) {
-        logger.warn('To send headers with the auth request, you must use AJAX, rather than JSONP.');
-    }
-    var callbackName = context.nextAuthCallbackID.toString();
-    context.nextAuthCallbackID++;
-    var document = context.getDocument();
-    var script = document.createElement('script');
-    context.auth_callbacks[callbackName] = function (data) {
-        callback(false, data);
-    };
-    var callback_name = "Pusher.auth_callbacks['" + callbackName + "']";
-    script.src =
-        this.options.authEndpoint +
-            '?callback=' +
-            encodeURIComponent(callback_name) +
-            '&' +
-            this.composeQuery(socketId);
-    var head = document.getElementsByTagName('head')[0] || document.documentElement;
-    head.insertBefore(script, head.firstChild);
-};
-/* harmony default export */ var jsonp_auth = (jsonp);
-
-// CONCATENATED MODULE: ./src/runtimes/web/dom/script_request.ts
-var ScriptRequest = (function () {
-    function ScriptRequest(src) {
-        this.src = src;
-    }
-    ScriptRequest.prototype.send = function (receiver) {
-        var self = this;
-        var errorString = 'Error loading ' + self.src;
-        self.script = document.createElement('script');
-        self.script.id = receiver.id;
-        self.script.src = self.src;
-        self.script.type = 'text/javascript';
-        self.script.charset = 'UTF-8';
-        if (self.script.addEventListener) {
-            self.script.onerror = function () {
-                receiver.callback(errorString);
-            };
-            self.script.onload = function () {
-                receiver.callback(null);
-            };
-        }
-        else {
-            self.script.onreadystatechange = function () {
-                if (self.script.readyState === 'loaded' ||
-                    self.script.readyState === 'complete') {
-                    receiver.callback(null);
-                }
-            };
-        }
-        if (self.script.async === undefined &&
-            document.attachEvent &&
-            /opera/i.test(navigator.userAgent)) {
-            self.errorScript = document.createElement('script');
-            self.errorScript.id = receiver.id + '_error';
-            self.errorScript.text = receiver.name + "('" + errorString + "');";
-            self.script.async = self.errorScript.async = false;
-        }
-        else {
-            self.script.async = true;
-        }
-        var head = document.getElementsByTagName('head')[0];
-        head.insertBefore(self.script, head.firstChild);
-        if (self.errorScript) {
-            head.insertBefore(self.errorScript, self.script.nextSibling);
-        }
-    };
-    ScriptRequest.prototype.cleanup = function () {
-        if (this.script) {
-            this.script.onload = this.script.onerror = null;
-            this.script.onreadystatechange = null;
-        }
-        if (this.script && this.script.parentNode) {
-            this.script.parentNode.removeChild(this.script);
-        }
-        if (this.errorScript && this.errorScript.parentNode) {
-            this.errorScript.parentNode.removeChild(this.errorScript);
-        }
-        this.script = null;
-        this.errorScript = null;
-    };
-    return ScriptRequest;
-}());
-/* harmony default export */ var script_request = (ScriptRequest);
-
-// CONCATENATED MODULE: ./src/runtimes/web/dom/jsonp_request.ts
-
-
-var jsonp_request_JSONPRequest = (function () {
-    function JSONPRequest(url, data) {
-        this.url = url;
-        this.data = data;
-    }
-    JSONPRequest.prototype.send = function (receiver) {
-        if (this.request) {
-            return;
-        }
-        var query = buildQueryString(this.data);
-        var url = this.url + '/' + receiver.number + '?' + query;
-        this.request = runtime.createScriptRequest(url);
-        this.request.send(receiver);
-    };
-    JSONPRequest.prototype.cleanup = function () {
-        if (this.request) {
-            this.request.cleanup();
-        }
-    };
-    return JSONPRequest;
-}());
-/* harmony default export */ var jsonp_request = (jsonp_request_JSONPRequest);
-
-// CONCATENATED MODULE: ./src/runtimes/web/timeline/jsonp_timeline.ts
-
-
-var getAgent = function (sender, useTLS) {
-    return function (data, callback) {
-        var scheme = 'http' + (useTLS ? 's' : '') + '://';
-        var url = scheme + (sender.host || sender.options.host) + sender.options.path;
-        var request = runtime.createJSONPRequest(url, data);
-        var receiver = runtime.ScriptReceivers.create(function (error, result) {
-            ScriptReceivers.remove(receiver);
-            request.cleanup();
-            if (result && result.host) {
-                sender.host = result.host;
-            }
-            if (callback) {
-                callback(error, result);
-            }
-        });
-        request.send(receiver);
-    };
-};
-var jsonp_timeline_jsonp = {
-    name: 'jsonp',
-    getAgent: getAgent
-};
-/* harmony default export */ var jsonp_timeline = (jsonp_timeline_jsonp);
-
-// CONCATENATED MODULE: ./src/core/transports/url_schemes.ts
-
-function getGenericURL(baseScheme, params, path) {
-    var scheme = baseScheme + (params.useTLS ? 's' : '');
-    var host = params.useTLS ? params.hostTLS : params.hostNonTLS;
-    return scheme + '://' + host + path;
-}
-function getGenericPath(key, queryString) {
-    var path = '/app/' + key;
-    var query = '?protocol=' +
-        defaults.PROTOCOL +
-        '&client=js' +
-        '&version=' +
-        defaults.VERSION +
-        (queryString ? '&' + queryString : '');
-    return path + query;
-}
-var ws = {
-    getInitial: function (key, params) {
-        var path = (params.httpPath || '') + getGenericPath(key, 'flash=false');
-        return getGenericURL('ws', params, path);
-    }
-};
-var http = {
-    getInitial: function (key, params) {
-        var path = (params.httpPath || '/pusher') + getGenericPath(key);
-        return getGenericURL('http', params, path);
-    }
-};
-var sockjs = {
-    getInitial: function (key, params) {
-        return getGenericURL('http', params, params.httpPath || '/pusher');
-    },
-    getPath: function (key, params) {
-        return getGenericPath(key);
-    }
-};
-
-// CONCATENATED MODULE: ./src/core/events/callback_registry.ts
-
-var callback_registry_CallbackRegistry = (function () {
-    function CallbackRegistry() {
-        this._callbacks = {};
-    }
-    CallbackRegistry.prototype.get = function (name) {
-        return this._callbacks[prefix(name)];
-    };
-    CallbackRegistry.prototype.add = function (name, callback, context) {
-        var prefixedEventName = prefix(name);
-        this._callbacks[prefixedEventName] =
-            this._callbacks[prefixedEventName] || [];
-        this._callbacks[prefixedEventName].push({
-            fn: callback,
-            context: context
-        });
-    };
-    CallbackRegistry.prototype.remove = function (name, callback, context) {
-        if (!name && !callback && !context) {
-            this._callbacks = {};
-            return;
-        }
-        var names = name ? [prefix(name)] : keys(this._callbacks);
-        if (callback || context) {
-            this.removeCallback(names, callback, context);
-        }
-        else {
-            this.removeAllCallbacks(names);
-        }
-    };
-    CallbackRegistry.prototype.removeCallback = function (names, callback, context) {
-        apply(names, function (name) {
-            this._callbacks[name] = filter(this._callbacks[name] || [], function (binding) {
-                return ((callback && callback !== binding.fn) ||
-                    (context && context !== binding.context));
-            });
-            if (this._callbacks[name].length === 0) {
-                delete this._callbacks[name];
-            }
-        }, this);
-    };
-    CallbackRegistry.prototype.removeAllCallbacks = function (names) {
-        apply(names, function (name) {
-            delete this._callbacks[name];
-        }, this);
-    };
-    return CallbackRegistry;
-}());
-/* harmony default export */ var callback_registry = (callback_registry_CallbackRegistry);
-function prefix(name) {
-    return '_' + name;
-}
-
-// CONCATENATED MODULE: ./src/core/events/dispatcher.ts
-
-
-var dispatcher_Dispatcher = (function () {
-    function Dispatcher(failThrough) {
-        this.callbacks = new callback_registry();
-        this.global_callbacks = [];
-        this.failThrough = failThrough;
-    }
-    Dispatcher.prototype.bind = function (eventName, callback, context) {
-        this.callbacks.add(eventName, callback, context);
-        return this;
-    };
-    Dispatcher.prototype.bind_global = function (callback) {
-        this.global_callbacks.push(callback);
-        return this;
-    };
-    Dispatcher.prototype.unbind = function (eventName, callback, context) {
-        this.callbacks.remove(eventName, callback, context);
-        return this;
-    };
-    Dispatcher.prototype.unbind_global = function (callback) {
-        if (!callback) {
-            this.global_callbacks = [];
-            return this;
-        }
-        this.global_callbacks = filter(this.global_callbacks || [], function (c) { return c !== callback; });
-        return this;
-    };
-    Dispatcher.prototype.unbind_all = function () {
-        this.unbind();
-        this.unbind_global();
-        return this;
-    };
-    Dispatcher.prototype.emit = function (eventName, data, metadata) {
-        for (var i = 0; i < this.global_callbacks.length; i++) {
-            this.global_callbacks[i](eventName, data);
-        }
-        var callbacks = this.callbacks.get(eventName);
-        var args = [];
-        if (metadata) {
-            args.push(data, metadata);
-        }
-        else if (data) {
-            args.push(data);
-        }
-        if (callbacks && callbacks.length > 0) {
-            for (var i = 0; i < callbacks.length; i++) {
-                callbacks[i].fn.apply(callbacks[i].context || window, args);
-            }
-        }
-        else if (this.failThrough) {
-            this.failThrough(eventName, data);
-        }
-        return this;
-    };
-    return Dispatcher;
-}());
-/* harmony default export */ var dispatcher = (dispatcher_Dispatcher);
-
-// CONCATENATED MODULE: ./src/core/transports/transport_connection.ts
-var transport_connection_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-
-var transport_connection_TransportConnection = (function (_super) {
-    transport_connection_extends(TransportConnection, _super);
-    function TransportConnection(hooks, name, priority, key, options) {
-        var _this = _super.call(this) || this;
-        _this.initialize = runtime.transportConnectionInitializer;
-        _this.hooks = hooks;
-        _this.name = name;
-        _this.priority = priority;
-        _this.key = key;
-        _this.options = options;
-        _this.state = 'new';
-        _this.timeline = options.timeline;
-        _this.activityTimeout = options.activityTimeout;
-        _this.id = _this.timeline.generateUniqueID();
-        return _this;
-    }
-    TransportConnection.prototype.handlesActivityChecks = function () {
-        return Boolean(this.hooks.handlesActivityChecks);
-    };
-    TransportConnection.prototype.supportsPing = function () {
-        return Boolean(this.hooks.supportsPing);
-    };
-    TransportConnection.prototype.connect = function () {
-        var _this = this;
-        if (this.socket || this.state !== 'initialized') {
-            return false;
-        }
-        var url = this.hooks.urls.getInitial(this.key, this.options);
-        try {
-            this.socket = this.hooks.getSocket(url, this.options);
-        }
-        catch (e) {
-            util.defer(function () {
-                _this.onError(e);
-                _this.changeState('closed');
-            });
-            return false;
-        }
-        this.bindListeners();
-        logger.debug('Connecting', { transport: this.name, url: url });
-        this.changeState('connecting');
-        return true;
-    };
-    TransportConnection.prototype.close = function () {
-        if (this.socket) {
-            this.socket.close();
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
-    TransportConnection.prototype.send = function (data) {
-        var _this = this;
-        if (this.state === 'open') {
-            util.defer(function () {
-                if (_this.socket) {
-                    _this.socket.send(data);
-                }
-            });
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
-    TransportConnection.prototype.ping = function () {
-        if (this.state === 'open' && this.supportsPing()) {
-            this.socket.ping();
-        }
-    };
-    TransportConnection.prototype.onOpen = function () {
-        if (this.hooks.beforeOpen) {
-            this.hooks.beforeOpen(this.socket, this.hooks.urls.getPath(this.key, this.options));
-        }
-        this.changeState('open');
-        this.socket.onopen = undefined;
-    };
-    TransportConnection.prototype.onError = function (error) {
-        this.emit('error', { type: 'WebSocketError', error: error });
-        this.timeline.error(this.buildTimelineMessage({ error: error.toString() }));
-    };
-    TransportConnection.prototype.onClose = function (closeEvent) {
-        if (closeEvent) {
-            this.changeState('closed', {
-                code: closeEvent.code,
-                reason: closeEvent.reason,
-                wasClean: closeEvent.wasClean
-            });
-        }
-        else {
-            this.changeState('closed');
-        }
-        this.unbindListeners();
-        this.socket = undefined;
-    };
-    TransportConnection.prototype.onMessage = function (message) {
-        this.emit('message', message);
-    };
-    TransportConnection.prototype.onActivity = function () {
-        this.emit('activity');
-    };
-    TransportConnection.prototype.bindListeners = function () {
-        var _this = this;
-        this.socket.onopen = function () {
-            _this.onOpen();
-        };
-        this.socket.onerror = function (error) {
-            _this.onError(error);
-        };
-        this.socket.onclose = function (closeEvent) {
-            _this.onClose(closeEvent);
-        };
-        this.socket.onmessage = function (message) {
-            _this.onMessage(message);
-        };
-        if (this.supportsPing()) {
-            this.socket.onactivity = function () {
-                _this.onActivity();
-            };
-        }
-    };
-    TransportConnection.prototype.unbindListeners = function () {
-        if (this.socket) {
-            this.socket.onopen = undefined;
-            this.socket.onerror = undefined;
-            this.socket.onclose = undefined;
-            this.socket.onmessage = undefined;
-            if (this.supportsPing()) {
-                this.socket.onactivity = undefined;
-            }
-        }
-    };
-    TransportConnection.prototype.changeState = function (state, params) {
-        this.state = state;
-        this.timeline.info(this.buildTimelineMessage({
-            state: state,
-            params: params
-        }));
-        this.emit(state, params);
-    };
-    TransportConnection.prototype.buildTimelineMessage = function (message) {
-        return extend({ cid: this.id }, message);
-    };
-    return TransportConnection;
-}(dispatcher));
-/* harmony default export */ var transport_connection = (transport_connection_TransportConnection);
-
-// CONCATENATED MODULE: ./src/core/transports/transport.ts
-
-var transport_Transport = (function () {
-    function Transport(hooks) {
-        this.hooks = hooks;
-    }
-    Transport.prototype.isSupported = function (environment) {
-        return this.hooks.isSupported(environment);
-    };
-    Transport.prototype.createConnection = function (name, priority, key, options) {
-        return new transport_connection(this.hooks, name, priority, key, options);
-    };
-    return Transport;
-}());
-/* harmony default export */ var transports_transport = (transport_Transport);
-
-// CONCATENATED MODULE: ./src/runtimes/isomorphic/transports/transports.ts
-
-
-
-
-var WSTransport = new transports_transport({
-    urls: ws,
-    handlesActivityChecks: false,
-    supportsPing: false,
-    isInitialized: function () {
-        return Boolean(runtime.getWebSocketAPI());
-    },
-    isSupported: function () {
-        return Boolean(runtime.getWebSocketAPI());
-    },
-    getSocket: function (url) {
-        return runtime.createWebSocket(url);
-    }
-});
-var httpConfiguration = {
-    urls: http,
-    handlesActivityChecks: false,
-    supportsPing: true,
-    isInitialized: function () {
-        return true;
-    }
-};
-var streamingConfiguration = extend({
-    getSocket: function (url) {
-        return runtime.HTTPFactory.createStreamingSocket(url);
-    }
-}, httpConfiguration);
-var pollingConfiguration = extend({
-    getSocket: function (url) {
-        return runtime.HTTPFactory.createPollingSocket(url);
-    }
-}, httpConfiguration);
-var xhrConfiguration = {
-    isSupported: function () {
-        return runtime.isXHRSupported();
-    }
-};
-var XHRStreamingTransport = new transports_transport((extend({}, streamingConfiguration, xhrConfiguration)));
-var XHRPollingTransport = new transports_transport(extend({}, pollingConfiguration, xhrConfiguration));
-var Transports = {
-    ws: WSTransport,
-    xhr_streaming: XHRStreamingTransport,
-    xhr_polling: XHRPollingTransport
-};
-/* harmony default export */ var transports = (Transports);
-
-// CONCATENATED MODULE: ./src/runtimes/web/transports/transports.ts
-
-
-
-
-
-
-var SockJSTransport = new transports_transport({
-    file: 'sockjs',
-    urls: sockjs,
-    handlesActivityChecks: true,
-    supportsPing: false,
-    isSupported: function () {
-        return true;
-    },
-    isInitialized: function () {
-        return window.SockJS !== undefined;
-    },
-    getSocket: function (url, options) {
-        return new window.SockJS(url, null, {
-            js_path: Dependencies.getPath('sockjs', {
-                useTLS: options.useTLS
-            }),
-            ignore_null_origin: options.ignoreNullOrigin
-        });
-    },
-    beforeOpen: function (socket, path) {
-        socket.send(JSON.stringify({
-            path: path
-        }));
-    }
-});
-var xdrConfiguration = {
-    isSupported: function (environment) {
-        var yes = runtime.isXDRSupported(environment.useTLS);
-        return yes;
-    }
-};
-var XDRStreamingTransport = new transports_transport((extend({}, streamingConfiguration, xdrConfiguration)));
-var XDRPollingTransport = new transports_transport(extend({}, pollingConfiguration, xdrConfiguration));
-transports.xdr_streaming = XDRStreamingTransport;
-transports.xdr_polling = XDRPollingTransport;
-transports.sockjs = SockJSTransport;
-/* harmony default export */ var transports_transports = (transports);
-
-// CONCATENATED MODULE: ./src/runtimes/web/net_info.ts
-var net_info_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-var NetInfo = (function (_super) {
-    net_info_extends(NetInfo, _super);
-    function NetInfo() {
-        var _this = _super.call(this) || this;
-        var self = _this;
-        if (window.addEventListener !== undefined) {
-            window.addEventListener('online', function () {
-                self.emit('online');
-            }, false);
-            window.addEventListener('offline', function () {
-                self.emit('offline');
-            }, false);
-        }
-        return _this;
-    }
-    NetInfo.prototype.isOnline = function () {
-        if (window.navigator.onLine === undefined) {
-            return true;
-        }
-        else {
-            return window.navigator.onLine;
-        }
-    };
-    return NetInfo;
-}(dispatcher));
-
-var net_info_Network = new NetInfo();
-
-// CONCATENATED MODULE: ./src/core/transports/assistant_to_the_transport_manager.ts
-
-
-var assistant_to_the_transport_manager_AssistantToTheTransportManager = (function () {
-    function AssistantToTheTransportManager(manager, transport, options) {
-        this.manager = manager;
-        this.transport = transport;
-        this.minPingDelay = options.minPingDelay;
-        this.maxPingDelay = options.maxPingDelay;
-        this.pingDelay = undefined;
-    }
-    AssistantToTheTransportManager.prototype.createConnection = function (name, priority, key, options) {
-        var _this = this;
-        options = extend({}, options, {
-            activityTimeout: this.pingDelay
-        });
-        var connection = this.transport.createConnection(name, priority, key, options);
-        var openTimestamp = null;
-        var onOpen = function () {
-            connection.unbind('open', onOpen);
-            connection.bind('closed', onClosed);
-            openTimestamp = util.now();
-        };
-        var onClosed = function (closeEvent) {
-            connection.unbind('closed', onClosed);
-            if (closeEvent.code === 1002 || closeEvent.code === 1003) {
-                _this.manager.reportDeath();
-            }
-            else if (!closeEvent.wasClean && openTimestamp) {
-                var lifespan = util.now() - openTimestamp;
-                if (lifespan < 2 * _this.maxPingDelay) {
-                    _this.manager.reportDeath();
-                    _this.pingDelay = Math.max(lifespan / 2, _this.minPingDelay);
-                }
-            }
-        };
-        connection.bind('open', onOpen);
-        return connection;
-    };
-    AssistantToTheTransportManager.prototype.isSupported = function (environment) {
-        return this.manager.isAlive() && this.transport.isSupported(environment);
-    };
-    return AssistantToTheTransportManager;
-}());
-/* harmony default export */ var assistant_to_the_transport_manager = (assistant_to_the_transport_manager_AssistantToTheTransportManager);
-
-// CONCATENATED MODULE: ./src/core/connection/protocol/protocol.ts
-var Protocol = {
-    decodeMessage: function (messageEvent) {
-        try {
-            var messageData = JSON.parse(messageEvent.data);
-            var pusherEventData = messageData.data;
-            if (typeof pusherEventData === 'string') {
-                try {
-                    pusherEventData = JSON.parse(messageData.data);
-                }
-                catch (e) { }
-            }
-            var pusherEvent = {
-                event: messageData.event,
-                channel: messageData.channel,
-                data: pusherEventData
-            };
-            if (messageData.user_id) {
-                pusherEvent.user_id = messageData.user_id;
-            }
-            return pusherEvent;
-        }
-        catch (e) {
-            throw { type: 'MessageParseError', error: e, data: messageEvent.data };
-        }
-    },
-    encodeMessage: function (event) {
-        return JSON.stringify(event);
-    },
-    processHandshake: function (messageEvent) {
-        var message = Protocol.decodeMessage(messageEvent);
-        if (message.event === 'pusher:connection_established') {
-            if (!message.data.activity_timeout) {
-                throw 'No activity timeout specified in handshake';
-            }
-            return {
-                action: 'connected',
-                id: message.data.socket_id,
-                activityTimeout: message.data.activity_timeout * 1000
-            };
-        }
-        else if (message.event === 'pusher:error') {
-            return {
-                action: this.getCloseAction(message.data),
-                error: this.getCloseError(message.data)
-            };
-        }
-        else {
-            throw 'Invalid handshake';
-        }
-    },
-    getCloseAction: function (closeEvent) {
-        if (closeEvent.code < 4000) {
-            if (closeEvent.code >= 1002 && closeEvent.code <= 1004) {
-                return 'backoff';
-            }
-            else {
-                return null;
-            }
-        }
-        else if (closeEvent.code === 4000) {
-            return 'tls_only';
-        }
-        else if (closeEvent.code < 4100) {
-            return 'refused';
-        }
-        else if (closeEvent.code < 4200) {
-            return 'backoff';
-        }
-        else if (closeEvent.code < 4300) {
-            return 'retry';
-        }
-        else {
-            return 'refused';
-        }
-    },
-    getCloseError: function (closeEvent) {
-        if (closeEvent.code !== 1000 && closeEvent.code !== 1001) {
-            return {
-                type: 'PusherError',
-                data: {
-                    code: closeEvent.code,
-                    message: closeEvent.reason || closeEvent.message
-                }
-            };
-        }
-        else {
-            return null;
-        }
-    }
-};
-/* harmony default export */ var protocol_protocol = (Protocol);
-
-// CONCATENATED MODULE: ./src/core/connection/connection.ts
-var connection_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-var connection_Connection = (function (_super) {
-    connection_extends(Connection, _super);
-    function Connection(id, transport) {
-        var _this = _super.call(this) || this;
-        _this.id = id;
-        _this.transport = transport;
-        _this.activityTimeout = transport.activityTimeout;
-        _this.bindListeners();
-        return _this;
-    }
-    Connection.prototype.handlesActivityChecks = function () {
-        return this.transport.handlesActivityChecks();
-    };
-    Connection.prototype.send = function (data) {
-        return this.transport.send(data);
-    };
-    Connection.prototype.send_event = function (name, data, channel) {
-        var event = { event: name, data: data };
-        if (channel) {
-            event.channel = channel;
-        }
-        logger.debug('Event sent', event);
-        return this.send(protocol_protocol.encodeMessage(event));
-    };
-    Connection.prototype.ping = function () {
-        if (this.transport.supportsPing()) {
-            this.transport.ping();
-        }
-        else {
-            this.send_event('pusher:ping', {});
-        }
-    };
-    Connection.prototype.close = function () {
-        this.transport.close();
-    };
-    Connection.prototype.bindListeners = function () {
-        var _this = this;
-        var listeners = {
-            message: function (messageEvent) {
-                var pusherEvent;
-                try {
-                    pusherEvent = protocol_protocol.decodeMessage(messageEvent);
-                }
-                catch (e) {
-                    _this.emit('error', {
-                        type: 'MessageParseError',
-                        error: e,
-                        data: messageEvent.data
-                    });
-                }
-                if (pusherEvent !== undefined) {
-                    logger.debug('Event recd', pusherEvent);
-                    switch (pusherEvent.event) {
-                        case 'pusher:error':
-                            _this.emit('error', {
-                                type: 'PusherError',
-                                data: pusherEvent.data
-                            });
-                            break;
-                        case 'pusher:ping':
-                            _this.emit('ping');
-                            break;
-                        case 'pusher:pong':
-                            _this.emit('pong');
-                            break;
-                    }
-                    _this.emit('message', pusherEvent);
-                }
-            },
-            activity: function () {
-                _this.emit('activity');
-            },
-            error: function (error) {
-                _this.emit('error', { type: 'WebSocketError', error: error });
-            },
-            closed: function (closeEvent) {
-                unbindListeners();
-                if (closeEvent && closeEvent.code) {
-                    _this.handleCloseEvent(closeEvent);
-                }
-                _this.transport = null;
-                _this.emit('closed');
-            }
-        };
-        var unbindListeners = function () {
-            objectApply(listeners, function (listener, event) {
-                _this.transport.unbind(event, listener);
-            });
-        };
-        objectApply(listeners, function (listener, event) {
-            _this.transport.bind(event, listener);
-        });
-    };
-    Connection.prototype.handleCloseEvent = function (closeEvent) {
-        var action = protocol_protocol.getCloseAction(closeEvent);
-        var error = protocol_protocol.getCloseError(closeEvent);
-        if (error) {
-            this.emit('error', error);
-        }
-        if (action) {
-            this.emit(action, { action: action, error: error });
-        }
-    };
-    return Connection;
-}(dispatcher));
-/* harmony default export */ var connection_connection = (connection_Connection);
-
-// CONCATENATED MODULE: ./src/core/connection/handshake/index.ts
-
-
-
-var handshake_Handshake = (function () {
-    function Handshake(transport, callback) {
-        this.transport = transport;
-        this.callback = callback;
-        this.bindListeners();
-    }
-    Handshake.prototype.close = function () {
-        this.unbindListeners();
-        this.transport.close();
-    };
-    Handshake.prototype.bindListeners = function () {
-        var _this = this;
-        this.onMessage = function (m) {
-            _this.unbindListeners();
-            var result;
-            try {
-                result = protocol_protocol.processHandshake(m);
-            }
-            catch (e) {
-                _this.finish('error', { error: e });
-                _this.transport.close();
-                return;
-            }
-            if (result.action === 'connected') {
-                _this.finish('connected', {
-                    connection: new connection_connection(result.id, _this.transport),
-                    activityTimeout: result.activityTimeout
-                });
-            }
-            else {
-                _this.finish(result.action, { error: result.error });
-                _this.transport.close();
-            }
-        };
-        this.onClosed = function (closeEvent) {
-            _this.unbindListeners();
-            var action = protocol_protocol.getCloseAction(closeEvent) || 'backoff';
-            var error = protocol_protocol.getCloseError(closeEvent);
-            _this.finish(action, { error: error });
-        };
-        this.transport.bind('message', this.onMessage);
-        this.transport.bind('closed', this.onClosed);
-    };
-    Handshake.prototype.unbindListeners = function () {
-        this.transport.unbind('message', this.onMessage);
-        this.transport.unbind('closed', this.onClosed);
-    };
-    Handshake.prototype.finish = function (action, params) {
-        this.callback(extend({ transport: this.transport, action: action }, params));
-    };
-    return Handshake;
-}());
-/* harmony default export */ var connection_handshake = (handshake_Handshake);
-
-// CONCATENATED MODULE: ./src/core/auth/pusher_authorizer.ts
-
-var pusher_authorizer_PusherAuthorizer = (function () {
-    function PusherAuthorizer(channel, options) {
-        this.channel = channel;
-        var authTransport = options.authTransport;
-        if (typeof runtime.getAuthorizers()[authTransport] === 'undefined') {
-            throw "'" + authTransport + "' is not a recognized auth transport";
-        }
-        this.type = authTransport;
-        this.options = options;
-        this.authOptions = options.auth || {};
-    }
-    PusherAuthorizer.prototype.composeQuery = function (socketId) {
-        var query = 'socket_id=' +
-            encodeURIComponent(socketId) +
-            '&channel_name=' +
-            encodeURIComponent(this.channel.name);
-        for (var i in this.authOptions.params) {
-            query +=
-                '&' +
-                    encodeURIComponent(i) +
-                    '=' +
-                    encodeURIComponent(this.authOptions.params[i]);
-        }
-        return query;
-    };
-    PusherAuthorizer.prototype.authorize = function (socketId, callback) {
-        PusherAuthorizer.authorizers =
-            PusherAuthorizer.authorizers || runtime.getAuthorizers();
-        PusherAuthorizer.authorizers[this.type].call(this, runtime, socketId, callback);
-    };
-    return PusherAuthorizer;
-}());
-/* harmony default export */ var pusher_authorizer = (pusher_authorizer_PusherAuthorizer);
-
-// CONCATENATED MODULE: ./src/core/timeline/timeline_sender.ts
-
-var timeline_sender_TimelineSender = (function () {
-    function TimelineSender(timeline, options) {
-        this.timeline = timeline;
-        this.options = options || {};
-    }
-    TimelineSender.prototype.send = function (useTLS, callback) {
-        if (this.timeline.isEmpty()) {
-            return;
-        }
-        this.timeline.send(runtime.TimelineTransport.getAgent(this, useTLS), callback);
-    };
-    return TimelineSender;
-}());
-/* harmony default export */ var timeline_sender = (timeline_sender_TimelineSender);
-
-// CONCATENATED MODULE: ./src/core/errors.ts
-var errors_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var BadEventName = (function (_super) {
-    errors_extends(BadEventName, _super);
-    function BadEventName(msg) {
-        var _newTarget = this.constructor;
-        var _this = _super.call(this, msg) || this;
-        Object.setPrototypeOf(_this, _newTarget.prototype);
-        return _this;
-    }
-    return BadEventName;
-}(Error));
-
-var RequestTimedOut = (function (_super) {
-    errors_extends(RequestTimedOut, _super);
-    function RequestTimedOut(msg) {
-        var _newTarget = this.constructor;
-        var _this = _super.call(this, msg) || this;
-        Object.setPrototypeOf(_this, _newTarget.prototype);
-        return _this;
-    }
-    return RequestTimedOut;
-}(Error));
-
-var TransportPriorityTooLow = (function (_super) {
-    errors_extends(TransportPriorityTooLow, _super);
-    function TransportPriorityTooLow(msg) {
-        var _newTarget = this.constructor;
-        var _this = _super.call(this, msg) || this;
-        Object.setPrototypeOf(_this, _newTarget.prototype);
-        return _this;
-    }
-    return TransportPriorityTooLow;
-}(Error));
-
-var TransportClosed = (function (_super) {
-    errors_extends(TransportClosed, _super);
-    function TransportClosed(msg) {
-        var _newTarget = this.constructor;
-        var _this = _super.call(this, msg) || this;
-        Object.setPrototypeOf(_this, _newTarget.prototype);
-        return _this;
-    }
-    return TransportClosed;
-}(Error));
-
-var UnsupportedFeature = (function (_super) {
-    errors_extends(UnsupportedFeature, _super);
-    function UnsupportedFeature(msg) {
-        var _newTarget = this.constructor;
-        var _this = _super.call(this, msg) || this;
-        Object.setPrototypeOf(_this, _newTarget.prototype);
-        return _this;
-    }
-    return UnsupportedFeature;
-}(Error));
-
-var UnsupportedTransport = (function (_super) {
-    errors_extends(UnsupportedTransport, _super);
-    function UnsupportedTransport(msg) {
-        var _newTarget = this.constructor;
-        var _this = _super.call(this, msg) || this;
-        Object.setPrototypeOf(_this, _newTarget.prototype);
-        return _this;
-    }
-    return UnsupportedTransport;
-}(Error));
-
-var UnsupportedStrategy = (function (_super) {
-    errors_extends(UnsupportedStrategy, _super);
-    function UnsupportedStrategy(msg) {
-        var _newTarget = this.constructor;
-        var _this = _super.call(this, msg) || this;
-        Object.setPrototypeOf(_this, _newTarget.prototype);
-        return _this;
-    }
-    return UnsupportedStrategy;
-}(Error));
-
-
-// CONCATENATED MODULE: ./src/core/channels/channel.ts
-var channel_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-var channel_Channel = (function (_super) {
-    channel_extends(Channel, _super);
-    function Channel(name, pusher) {
-        var _this = _super.call(this, function (event, data) {
-            logger.debug('No callbacks on ' + name + ' for ' + event);
-        }) || this;
-        _this.name = name;
-        _this.pusher = pusher;
-        _this.subscribed = false;
-        _this.subscriptionPending = false;
-        _this.subscriptionCancelled = false;
-        return _this;
-    }
-    Channel.prototype.authorize = function (socketId, callback) {
-        return callback(false, { auth: '' });
-    };
-    Channel.prototype.trigger = function (event, data) {
-        if (event.indexOf('client-') !== 0) {
-            throw new BadEventName("Event '" + event + "' does not start with 'client-'");
-        }
-        if (!this.subscribed) {
-            var suffix = url_store.buildLogSuffix('triggeringClientEvents');
-            logger.warn("Client event triggered before channel 'subscription_succeeded' event . " + suffix);
-        }
-        return this.pusher.send_event(event, data, this.name);
-    };
-    Channel.prototype.disconnect = function () {
-        this.subscribed = false;
-        this.subscriptionPending = false;
-    };
-    Channel.prototype.handleEvent = function (event) {
-        var eventName = event.event;
-        var data = event.data;
-        if (eventName === 'pusher_internal:subscription_succeeded') {
-            this.handleSubscriptionSucceededEvent(event);
-        }
-        else if (eventName.indexOf('pusher_internal:') !== 0) {
-            var metadata = {};
-            this.emit(eventName, data, metadata);
-        }
-    };
-    Channel.prototype.handleSubscriptionSucceededEvent = function (event) {
-        this.subscriptionPending = false;
-        this.subscribed = true;
-        if (this.subscriptionCancelled) {
-            this.pusher.unsubscribe(this.name);
-        }
-        else {
-            this.emit('pusher:subscription_succeeded', event.data);
-        }
-    };
-    Channel.prototype.subscribe = function () {
-        var _this = this;
-        if (this.subscribed) {
-            return;
-        }
-        this.subscriptionPending = true;
-        this.subscriptionCancelled = false;
-        this.authorize(this.pusher.connection.socket_id, function (error, data) {
-            if (error) {
-                logger.error(data);
-                _this.emit('pusher:subscription_error', data);
-            }
-            else {
-                data = data;
-                _this.pusher.send_event('pusher:subscribe', {
-                    auth: data.auth,
-                    channel_data: data.channel_data,
-                    channel: _this.name
-                });
-            }
-        });
-    };
-    Channel.prototype.unsubscribe = function () {
-        this.subscribed = false;
-        this.pusher.send_event('pusher:unsubscribe', {
-            channel: this.name
-        });
-    };
-    Channel.prototype.cancelSubscription = function () {
-        this.subscriptionCancelled = true;
-    };
-    Channel.prototype.reinstateSubscription = function () {
-        this.subscriptionCancelled = false;
-    };
-    return Channel;
-}(dispatcher));
-/* harmony default export */ var channels_channel = (channel_Channel);
-
-// CONCATENATED MODULE: ./src/core/channels/private_channel.ts
-var private_channel_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-var private_channel_PrivateChannel = (function (_super) {
-    private_channel_extends(PrivateChannel, _super);
-    function PrivateChannel() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    PrivateChannel.prototype.authorize = function (socketId, callback) {
-        var authorizer = factory.createAuthorizer(this, this.pusher.config);
-        return authorizer.authorize(socketId, callback);
-    };
-    return PrivateChannel;
-}(channels_channel));
-/* harmony default export */ var private_channel = (private_channel_PrivateChannel);
-
-// CONCATENATED MODULE: ./src/core/channels/members.ts
-
-var members_Members = (function () {
-    function Members() {
-        this.reset();
-    }
-    Members.prototype.get = function (id) {
-        if (Object.prototype.hasOwnProperty.call(this.members, id)) {
-            return {
-                id: id,
-                info: this.members[id]
-            };
-        }
-        else {
-            return null;
-        }
-    };
-    Members.prototype.each = function (callback) {
-        var _this = this;
-        objectApply(this.members, function (member, id) {
-            callback(_this.get(id));
-        });
-    };
-    Members.prototype.setMyID = function (id) {
-        this.myID = id;
-    };
-    Members.prototype.onSubscription = function (subscriptionData) {
-        this.members = subscriptionData.presence.hash;
-        this.count = subscriptionData.presence.count;
-        this.me = this.get(this.myID);
-    };
-    Members.prototype.addMember = function (memberData) {
-        if (this.get(memberData.user_id) === null) {
-            this.count++;
-        }
-        this.members[memberData.user_id] = memberData.user_info;
-        return this.get(memberData.user_id);
-    };
-    Members.prototype.removeMember = function (memberData) {
-        var member = this.get(memberData.user_id);
-        if (member) {
-            delete this.members[memberData.user_id];
-            this.count--;
-        }
-        return member;
-    };
-    Members.prototype.reset = function () {
-        this.members = {};
-        this.count = 0;
-        this.myID = null;
-        this.me = null;
-    };
-    return Members;
-}());
-/* harmony default export */ var members = (members_Members);
-
-// CONCATENATED MODULE: ./src/core/channels/presence_channel.ts
-var presence_channel_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-var presence_channel_PresenceChannel = (function (_super) {
-    presence_channel_extends(PresenceChannel, _super);
-    function PresenceChannel(name, pusher) {
-        var _this = _super.call(this, name, pusher) || this;
-        _this.members = new members();
-        return _this;
-    }
-    PresenceChannel.prototype.authorize = function (socketId, callback) {
-        var _this = this;
-        _super.prototype.authorize.call(this, socketId, function (error, authData) {
-            if (!error) {
-                authData = authData;
-                if (authData.channel_data === undefined) {
-                    var suffix = url_store.buildLogSuffix('authenticationEndpoint');
-                    logger.error("Invalid auth response for channel '" + _this.name + "'," +
-                        ("expected 'channel_data' field. " + suffix));
-                    callback('Invalid auth response');
-                    return;
-                }
-                var channelData = JSON.parse(authData.channel_data);
-                _this.members.setMyID(channelData.user_id);
-            }
-            callback(error, authData);
-        });
-    };
-    PresenceChannel.prototype.handleEvent = function (event) {
-        var eventName = event.event;
-        if (eventName.indexOf('pusher_internal:') === 0) {
-            this.handleInternalEvent(event);
-        }
-        else {
-            var data = event.data;
-            var metadata = {};
-            if (event.user_id) {
-                metadata.user_id = event.user_id;
-            }
-            this.emit(eventName, data, metadata);
-        }
-    };
-    PresenceChannel.prototype.handleInternalEvent = function (event) {
-        var eventName = event.event;
-        var data = event.data;
-        switch (eventName) {
-            case 'pusher_internal:subscription_succeeded':
-                this.handleSubscriptionSucceededEvent(event);
-                break;
-            case 'pusher_internal:member_added':
-                var addedMember = this.members.addMember(data);
-                this.emit('pusher:member_added', addedMember);
-                break;
-            case 'pusher_internal:member_removed':
-                var removedMember = this.members.removeMember(data);
-                if (removedMember) {
-                    this.emit('pusher:member_removed', removedMember);
-                }
-                break;
-        }
-    };
-    PresenceChannel.prototype.handleSubscriptionSucceededEvent = function (event) {
-        this.subscriptionPending = false;
-        this.subscribed = true;
-        if (this.subscriptionCancelled) {
-            this.pusher.unsubscribe(this.name);
-        }
-        else {
-            this.members.onSubscription(event.data);
-            this.emit('pusher:subscription_succeeded', this.members);
-        }
-    };
-    PresenceChannel.prototype.disconnect = function () {
-        this.members.reset();
-        _super.prototype.disconnect.call(this);
-    };
-    return PresenceChannel;
-}(private_channel));
-/* harmony default export */ var presence_channel = (presence_channel_PresenceChannel);
-
-// EXTERNAL MODULE: ./node_modules/@stablelib/utf8/lib/utf8.js
-var utf8 = __webpack_require__(1);
-
-// EXTERNAL MODULE: ./node_modules/@stablelib/base64/lib/base64.js
-var base64 = __webpack_require__(0);
-
-// CONCATENATED MODULE: ./src/core/channels/encrypted_channel.ts
-var encrypted_channel_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-
-var encrypted_channel_EncryptedChannel = (function (_super) {
-    encrypted_channel_extends(EncryptedChannel, _super);
-    function EncryptedChannel(name, pusher, nacl) {
-        var _this = _super.call(this, name, pusher) || this;
-        _this.key = null;
-        _this.nacl = nacl;
-        return _this;
-    }
-    EncryptedChannel.prototype.authorize = function (socketId, callback) {
-        var _this = this;
-        _super.prototype.authorize.call(this, socketId, function (error, authData) {
-            if (error) {
-                callback(true, authData);
-                return;
-            }
-            var sharedSecret = authData['shared_secret'];
-            if (!sharedSecret) {
-                var errorMsg = "No shared_secret key in auth payload for encrypted channel: " + _this.name;
-                callback(true, errorMsg);
-                return;
-            }
-            _this.key = Object(base64["decode"])(sharedSecret);
-            delete authData['shared_secret'];
-            callback(false, authData);
-        });
-    };
-    EncryptedChannel.prototype.trigger = function (event, data) {
-        throw new UnsupportedFeature('Client events are not currently supported for encrypted channels');
-    };
-    EncryptedChannel.prototype.handleEvent = function (event) {
-        var eventName = event.event;
-        var data = event.data;
-        if (eventName.indexOf('pusher_internal:') === 0 ||
-            eventName.indexOf('pusher:') === 0) {
-            _super.prototype.handleEvent.call(this, event);
-            return;
-        }
-        this.handleEncryptedEvent(eventName, data);
-    };
-    EncryptedChannel.prototype.handleEncryptedEvent = function (event, data) {
-        var _this = this;
-        if (!this.key) {
-            logger.debug('Received encrypted event before key has been retrieved from the authEndpoint');
-            return;
-        }
-        if (!data.ciphertext || !data.nonce) {
-            logger.error('Unexpected format for encrypted event, expected object with `ciphertext` and `nonce` fields, got: ' +
-                data);
-            return;
-        }
-        var cipherText = Object(base64["decode"])(data.ciphertext);
-        if (cipherText.length < this.nacl.secretbox.overheadLength) {
-            logger.error("Expected encrypted event ciphertext length to be " + this.nacl.secretbox.overheadLength + ", got: " + cipherText.length);
-            return;
-        }
-        var nonce = Object(base64["decode"])(data.nonce);
-        if (nonce.length < this.nacl.secretbox.nonceLength) {
-            logger.error("Expected encrypted event nonce length to be " + this.nacl.secretbox.nonceLength + ", got: " + nonce.length);
-            return;
-        }
-        var bytes = this.nacl.secretbox.open(cipherText, nonce, this.key);
-        if (bytes === null) {
-            logger.debug('Failed to decrypt an event, probably because it was encrypted with a different key. Fetching a new key from the authEndpoint...');
-            this.authorize(this.pusher.connection.socket_id, function (error, authData) {
-                if (error) {
-                    logger.error("Failed to make a request to the authEndpoint: " + authData + ". Unable to fetch new key, so dropping encrypted event");
-                    return;
-                }
-                bytes = _this.nacl.secretbox.open(cipherText, nonce, _this.key);
-                if (bytes === null) {
-                    logger.error("Failed to decrypt event with new key. Dropping encrypted event");
-                    return;
-                }
-                _this.emitJSON(event, Object(utf8["decode"])(bytes));
-                return;
-            });
-            return;
-        }
-        this.emitJSON(event, Object(utf8["decode"])(bytes));
-    };
-    EncryptedChannel.prototype.emitJSON = function (eventName, data) {
-        try {
-            this.emit(eventName, JSON.parse(data));
-        }
-        catch (e) {
-            this.emit(eventName, data);
-        }
-        return this;
-    };
-    return EncryptedChannel;
-}(private_channel));
-/* harmony default export */ var encrypted_channel = (encrypted_channel_EncryptedChannel);
-
-// CONCATENATED MODULE: ./src/core/connection/connection_manager.ts
-var connection_manager_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-
-
-
-var connection_manager_ConnectionManager = (function (_super) {
-    connection_manager_extends(ConnectionManager, _super);
-    function ConnectionManager(key, options) {
-        var _this = _super.call(this) || this;
-        _this.state = 'initialized';
-        _this.connection = null;
-        _this.key = key;
-        _this.options = options;
-        _this.timeline = _this.options.timeline;
-        _this.usingTLS = _this.options.useTLS;
-        _this.errorCallbacks = _this.buildErrorCallbacks();
-        _this.connectionCallbacks = _this.buildConnectionCallbacks(_this.errorCallbacks);
-        _this.handshakeCallbacks = _this.buildHandshakeCallbacks(_this.errorCallbacks);
-        var Network = runtime.getNetwork();
-        Network.bind('online', function () {
-            _this.timeline.info({ netinfo: 'online' });
-            if (_this.state === 'connecting' || _this.state === 'unavailable') {
-                _this.retryIn(0);
-            }
-        });
-        Network.bind('offline', function () {
-            _this.timeline.info({ netinfo: 'offline' });
-            if (_this.connection) {
-                _this.sendActivityCheck();
-            }
-        });
-        _this.updateStrategy();
-        return _this;
-    }
-    ConnectionManager.prototype.connect = function () {
-        if (this.connection || this.runner) {
-            return;
-        }
-        if (!this.strategy.isSupported()) {
-            this.updateState('failed');
-            return;
-        }
-        this.updateState('connecting');
-        this.startConnecting();
-        this.setUnavailableTimer();
-    };
-    ConnectionManager.prototype.send = function (data) {
-        if (this.connection) {
-            return this.connection.send(data);
-        }
-        else {
-            return false;
-        }
-    };
-    ConnectionManager.prototype.send_event = function (name, data, channel) {
-        if (this.connection) {
-            return this.connection.send_event(name, data, channel);
-        }
-        else {
-            return false;
-        }
-    };
-    ConnectionManager.prototype.disconnect = function () {
-        this.disconnectInternally();
-        this.updateState('disconnected');
-    };
-    ConnectionManager.prototype.isUsingTLS = function () {
-        return this.usingTLS;
-    };
-    ConnectionManager.prototype.startConnecting = function () {
-        var _this = this;
-        var callback = function (error, handshake) {
-            if (error) {
-                _this.runner = _this.strategy.connect(0, callback);
-            }
-            else {
-                if (handshake.action === 'error') {
-                    _this.emit('error', {
-                        type: 'HandshakeError',
-                        error: handshake.error
-                    });
-                    _this.timeline.error({ handshakeError: handshake.error });
-                }
-                else {
-                    _this.abortConnecting();
-                    _this.handshakeCallbacks[handshake.action](handshake);
-                }
-            }
-        };
-        this.runner = this.strategy.connect(0, callback);
-    };
-    ConnectionManager.prototype.abortConnecting = function () {
-        if (this.runner) {
-            this.runner.abort();
-            this.runner = null;
-        }
-    };
-    ConnectionManager.prototype.disconnectInternally = function () {
-        this.abortConnecting();
-        this.clearRetryTimer();
-        this.clearUnavailableTimer();
-        if (this.connection) {
-            var connection = this.abandonConnection();
-            connection.close();
-        }
-    };
-    ConnectionManager.prototype.updateStrategy = function () {
-        this.strategy = this.options.getStrategy({
-            key: this.key,
-            timeline: this.timeline,
-            useTLS: this.usingTLS
-        });
-    };
-    ConnectionManager.prototype.retryIn = function (delay) {
-        var _this = this;
-        this.timeline.info({ action: 'retry', delay: delay });
-        if (delay > 0) {
-            this.emit('connecting_in', Math.round(delay / 1000));
-        }
-        this.retryTimer = new OneOffTimer(delay || 0, function () {
-            _this.disconnectInternally();
-            _this.connect();
-        });
-    };
-    ConnectionManager.prototype.clearRetryTimer = function () {
-        if (this.retryTimer) {
-            this.retryTimer.ensureAborted();
-            this.retryTimer = null;
-        }
-    };
-    ConnectionManager.prototype.setUnavailableTimer = function () {
-        var _this = this;
-        this.unavailableTimer = new OneOffTimer(this.options.unavailableTimeout, function () {
-            _this.updateState('unavailable');
-        });
-    };
-    ConnectionManager.prototype.clearUnavailableTimer = function () {
-        if (this.unavailableTimer) {
-            this.unavailableTimer.ensureAborted();
-        }
-    };
-    ConnectionManager.prototype.sendActivityCheck = function () {
-        var _this = this;
-        this.stopActivityCheck();
-        this.connection.ping();
-        this.activityTimer = new OneOffTimer(this.options.pongTimeout, function () {
-            _this.timeline.error({ pong_timed_out: _this.options.pongTimeout });
-            _this.retryIn(0);
-        });
-    };
-    ConnectionManager.prototype.resetActivityCheck = function () {
-        var _this = this;
-        this.stopActivityCheck();
-        if (this.connection && !this.connection.handlesActivityChecks()) {
-            this.activityTimer = new OneOffTimer(this.activityTimeout, function () {
-                _this.sendActivityCheck();
-            });
-        }
-    };
-    ConnectionManager.prototype.stopActivityCheck = function () {
-        if (this.activityTimer) {
-            this.activityTimer.ensureAborted();
-        }
-    };
-    ConnectionManager.prototype.buildConnectionCallbacks = function (errorCallbacks) {
-        var _this = this;
-        return extend({}, errorCallbacks, {
-            message: function (message) {
-                _this.resetActivityCheck();
-                _this.emit('message', message);
-            },
-            ping: function () {
-                _this.send_event('pusher:pong', {});
-            },
-            activity: function () {
-                _this.resetActivityCheck();
-            },
-            error: function (error) {
-                _this.emit('error', { type: 'WebSocketError', error: error });
-            },
-            closed: function () {
-                _this.abandonConnection();
-                if (_this.shouldRetry()) {
-                    _this.retryIn(1000);
-                }
-            }
-        });
-    };
-    ConnectionManager.prototype.buildHandshakeCallbacks = function (errorCallbacks) {
-        var _this = this;
-        return extend({}, errorCallbacks, {
-            connected: function (handshake) {
-                _this.activityTimeout = Math.min(_this.options.activityTimeout, handshake.activityTimeout, handshake.connection.activityTimeout || Infinity);
-                _this.clearUnavailableTimer();
-                _this.setConnection(handshake.connection);
-                _this.socket_id = _this.connection.id;
-                _this.updateState('connected', { socket_id: _this.socket_id });
-            }
-        });
-    };
-    ConnectionManager.prototype.buildErrorCallbacks = function () {
-        var _this = this;
-        var withErrorEmitted = function (callback) {
-            return function (result) {
-                if (result.error) {
-                    _this.emit('error', { type: 'WebSocketError', error: result.error });
-                }
-                callback(result);
-            };
-        };
-        return {
-            tls_only: withErrorEmitted(function () {
-                _this.usingTLS = true;
-                _this.updateStrategy();
-                _this.retryIn(0);
-            }),
-            refused: withErrorEmitted(function () {
-                _this.disconnect();
-            }),
-            backoff: withErrorEmitted(function () {
-                _this.retryIn(1000);
-            }),
-            retry: withErrorEmitted(function () {
-                _this.retryIn(0);
-            })
-        };
-    };
-    ConnectionManager.prototype.setConnection = function (connection) {
-        this.connection = connection;
-        for (var event in this.connectionCallbacks) {
-            this.connection.bind(event, this.connectionCallbacks[event]);
-        }
-        this.resetActivityCheck();
-    };
-    ConnectionManager.prototype.abandonConnection = function () {
-        if (!this.connection) {
-            return;
-        }
-        this.stopActivityCheck();
-        for (var event in this.connectionCallbacks) {
-            this.connection.unbind(event, this.connectionCallbacks[event]);
-        }
-        var connection = this.connection;
-        this.connection = null;
-        return connection;
-    };
-    ConnectionManager.prototype.updateState = function (newState, data) {
-        var previousState = this.state;
-        this.state = newState;
-        if (previousState !== newState) {
-            var newStateDescription = newState;
-            if (newStateDescription === 'connected') {
-                newStateDescription += ' with new socket ID ' + data.socket_id;
-            }
-            logger.debug('State changed', previousState + ' -> ' + newStateDescription);
-            this.timeline.info({ state: newState, params: data });
-            this.emit('state_change', { previous: previousState, current: newState });
-            this.emit(newState, data);
-        }
-    };
-    ConnectionManager.prototype.shouldRetry = function () {
-        return this.state === 'connecting' || this.state === 'connected';
-    };
-    return ConnectionManager;
-}(dispatcher));
-/* harmony default export */ var connection_manager = (connection_manager_ConnectionManager);
-
-// CONCATENATED MODULE: ./src/core/channels/channels.ts
-
-
-
-
-var channels_Channels = (function () {
-    function Channels() {
-        this.channels = {};
-    }
-    Channels.prototype.add = function (name, pusher) {
-        if (!this.channels[name]) {
-            this.channels[name] = createChannel(name, pusher);
-        }
-        return this.channels[name];
-    };
-    Channels.prototype.all = function () {
-        return values(this.channels);
-    };
-    Channels.prototype.find = function (name) {
-        return this.channels[name];
-    };
-    Channels.prototype.remove = function (name) {
-        var channel = this.channels[name];
-        delete this.channels[name];
-        return channel;
-    };
-    Channels.prototype.disconnect = function () {
-        objectApply(this.channels, function (channel) {
-            channel.disconnect();
-        });
-    };
-    return Channels;
-}());
-/* harmony default export */ var channels = (channels_Channels);
-function createChannel(name, pusher) {
-    if (name.indexOf('private-encrypted-') === 0) {
-        if (pusher.config.nacl) {
-            return factory.createEncryptedChannel(name, pusher, pusher.config.nacl);
-        }
-        var errMsg = 'Tried to subscribe to a private-encrypted- channel but no nacl implementation available';
-        var suffix = url_store.buildLogSuffix('encryptedChannelSupport');
-        throw new UnsupportedFeature(errMsg + ". " + suffix);
-    }
-    else if (name.indexOf('private-') === 0) {
-        return factory.createPrivateChannel(name, pusher);
-    }
-    else if (name.indexOf('presence-') === 0) {
-        return factory.createPresenceChannel(name, pusher);
-    }
-    else {
-        return factory.createChannel(name, pusher);
-    }
-}
-
-// CONCATENATED MODULE: ./src/core/utils/factory.ts
-
-
-
-
-
-
-
-
-
-
-var Factory = {
-    createChannels: function () {
-        return new channels();
-    },
-    createConnectionManager: function (key, options) {
-        return new connection_manager(key, options);
-    },
-    createChannel: function (name, pusher) {
-        return new channels_channel(name, pusher);
-    },
-    createPrivateChannel: function (name, pusher) {
-        return new private_channel(name, pusher);
-    },
-    createPresenceChannel: function (name, pusher) {
-        return new presence_channel(name, pusher);
-    },
-    createEncryptedChannel: function (name, pusher, nacl) {
-        return new encrypted_channel(name, pusher, nacl);
-    },
-    createTimelineSender: function (timeline, options) {
-        return new timeline_sender(timeline, options);
-    },
-    createAuthorizer: function (channel, options) {
-        if (options.authorizer) {
-            return options.authorizer(channel, options);
-        }
-        return new pusher_authorizer(channel, options);
-    },
-    createHandshake: function (transport, callback) {
-        return new connection_handshake(transport, callback);
-    },
-    createAssistantToTheTransportManager: function (manager, transport, options) {
-        return new assistant_to_the_transport_manager(manager, transport, options);
-    }
-};
-/* harmony default export */ var factory = (Factory);
-
-// CONCATENATED MODULE: ./src/core/transports/transport_manager.ts
-
-var transport_manager_TransportManager = (function () {
-    function TransportManager(options) {
-        this.options = options || {};
-        this.livesLeft = this.options.lives || Infinity;
-    }
-    TransportManager.prototype.getAssistant = function (transport) {
-        return factory.createAssistantToTheTransportManager(this, transport, {
-            minPingDelay: this.options.minPingDelay,
-            maxPingDelay: this.options.maxPingDelay
-        });
-    };
-    TransportManager.prototype.isAlive = function () {
-        return this.livesLeft > 0;
-    };
-    TransportManager.prototype.reportDeath = function () {
-        this.livesLeft -= 1;
-    };
-    return TransportManager;
-}());
-/* harmony default export */ var transport_manager = (transport_manager_TransportManager);
-
-// CONCATENATED MODULE: ./src/core/strategies/sequential_strategy.ts
-
-
-
-var sequential_strategy_SequentialStrategy = (function () {
-    function SequentialStrategy(strategies, options) {
-        this.strategies = strategies;
-        this.loop = Boolean(options.loop);
-        this.failFast = Boolean(options.failFast);
-        this.timeout = options.timeout;
-        this.timeoutLimit = options.timeoutLimit;
-    }
-    SequentialStrategy.prototype.isSupported = function () {
-        return any(this.strategies, util.method('isSupported'));
-    };
-    SequentialStrategy.prototype.connect = function (minPriority, callback) {
-        var _this = this;
-        var strategies = this.strategies;
-        var current = 0;
-        var timeout = this.timeout;
-        var runner = null;
-        var tryNextStrategy = function (error, handshake) {
-            if (handshake) {
-                callback(null, handshake);
-            }
-            else {
-                current = current + 1;
-                if (_this.loop) {
-                    current = current % strategies.length;
-                }
-                if (current < strategies.length) {
-                    if (timeout) {
-                        timeout = timeout * 2;
-                        if (_this.timeoutLimit) {
-                            timeout = Math.min(timeout, _this.timeoutLimit);
-                        }
-                    }
-                    runner = _this.tryStrategy(strategies[current], minPriority, { timeout: timeout, failFast: _this.failFast }, tryNextStrategy);
-                }
-                else {
-                    callback(true);
-                }
-            }
-        };
-        runner = this.tryStrategy(strategies[current], minPriority, { timeout: timeout, failFast: this.failFast }, tryNextStrategy);
-        return {
-            abort: function () {
-                runner.abort();
-            },
-            forceMinPriority: function (p) {
-                minPriority = p;
-                if (runner) {
-                    runner.forceMinPriority(p);
-                }
-            }
-        };
-    };
-    SequentialStrategy.prototype.tryStrategy = function (strategy, minPriority, options, callback) {
-        var timer = null;
-        var runner = null;
-        if (options.timeout > 0) {
-            timer = new OneOffTimer(options.timeout, function () {
-                runner.abort();
-                callback(true);
-            });
-        }
-        runner = strategy.connect(minPriority, function (error, handshake) {
-            if (error && timer && timer.isRunning() && !options.failFast) {
-                return;
-            }
-            if (timer) {
-                timer.ensureAborted();
-            }
-            callback(error, handshake);
-        });
-        return {
-            abort: function () {
-                if (timer) {
-                    timer.ensureAborted();
-                }
-                runner.abort();
-            },
-            forceMinPriority: function (p) {
-                runner.forceMinPriority(p);
-            }
-        };
-    };
-    return SequentialStrategy;
-}());
-/* harmony default export */ var sequential_strategy = (sequential_strategy_SequentialStrategy);
-
-// CONCATENATED MODULE: ./src/core/strategies/best_connected_ever_strategy.ts
-
-
-var best_connected_ever_strategy_BestConnectedEverStrategy = (function () {
-    function BestConnectedEverStrategy(strategies) {
-        this.strategies = strategies;
-    }
-    BestConnectedEverStrategy.prototype.isSupported = function () {
-        return any(this.strategies, util.method('isSupported'));
-    };
-    BestConnectedEverStrategy.prototype.connect = function (minPriority, callback) {
-        return connect(this.strategies, minPriority, function (i, runners) {
-            return function (error, handshake) {
-                runners[i].error = error;
-                if (error) {
-                    if (allRunnersFailed(runners)) {
-                        callback(true);
-                    }
-                    return;
-                }
-                apply(runners, function (runner) {
-                    runner.forceMinPriority(handshake.transport.priority);
-                });
-                callback(null, handshake);
-            };
-        });
-    };
-    return BestConnectedEverStrategy;
-}());
-/* harmony default export */ var best_connected_ever_strategy = (best_connected_ever_strategy_BestConnectedEverStrategy);
-function connect(strategies, minPriority, callbackBuilder) {
-    var runners = map(strategies, function (strategy, i, _, rs) {
-        return strategy.connect(minPriority, callbackBuilder(i, rs));
-    });
-    return {
-        abort: function () {
-            apply(runners, abortRunner);
-        },
-        forceMinPriority: function (p) {
-            apply(runners, function (runner) {
-                runner.forceMinPriority(p);
-            });
-        }
-    };
-}
-function allRunnersFailed(runners) {
-    return collections_all(runners, function (runner) {
-        return Boolean(runner.error);
-    });
-}
-function abortRunner(runner) {
-    if (!runner.error && !runner.aborted) {
-        runner.abort();
-        runner.aborted = true;
-    }
-}
-
-// CONCATENATED MODULE: ./src/core/strategies/cached_strategy.ts
-
-
-
-
-var cached_strategy_CachedStrategy = (function () {
-    function CachedStrategy(strategy, transports, options) {
-        this.strategy = strategy;
-        this.transports = transports;
-        this.ttl = options.ttl || 1800 * 1000;
-        this.usingTLS = options.useTLS;
-        this.timeline = options.timeline;
-    }
-    CachedStrategy.prototype.isSupported = function () {
-        return this.strategy.isSupported();
-    };
-    CachedStrategy.prototype.connect = function (minPriority, callback) {
-        var usingTLS = this.usingTLS;
-        var info = fetchTransportCache(usingTLS);
-        var strategies = [this.strategy];
-        if (info && info.timestamp + this.ttl >= util.now()) {
-            var transport = this.transports[info.transport];
-            if (transport) {
-                this.timeline.info({
-                    cached: true,
-                    transport: info.transport,
-                    latency: info.latency
-                });
-                strategies.push(new sequential_strategy([transport], {
-                    timeout: info.latency * 2 + 1000,
-                    failFast: true
-                }));
-            }
-        }
-        var startTimestamp = util.now();
-        var runner = strategies
-            .pop()
-            .connect(minPriority, function cb(error, handshake) {
-            if (error) {
-                flushTransportCache(usingTLS);
-                if (strategies.length > 0) {
-                    startTimestamp = util.now();
-                    runner = strategies.pop().connect(minPriority, cb);
-                }
-                else {
-                    callback(error);
-                }
-            }
-            else {
-                storeTransportCache(usingTLS, handshake.transport.name, util.now() - startTimestamp);
-                callback(null, handshake);
-            }
-        });
-        return {
-            abort: function () {
-                runner.abort();
-            },
-            forceMinPriority: function (p) {
-                minPriority = p;
-                if (runner) {
-                    runner.forceMinPriority(p);
-                }
-            }
-        };
-    };
-    return CachedStrategy;
-}());
-/* harmony default export */ var cached_strategy = (cached_strategy_CachedStrategy);
-function getTransportCacheKey(usingTLS) {
-    return 'pusherTransport' + (usingTLS ? 'TLS' : 'NonTLS');
-}
-function fetchTransportCache(usingTLS) {
-    var storage = runtime.getLocalStorage();
-    if (storage) {
-        try {
-            var serializedCache = storage[getTransportCacheKey(usingTLS)];
-            if (serializedCache) {
-                return JSON.parse(serializedCache);
-            }
-        }
-        catch (e) {
-            flushTransportCache(usingTLS);
-        }
-    }
-    return null;
-}
-function storeTransportCache(usingTLS, transport, latency) {
-    var storage = runtime.getLocalStorage();
-    if (storage) {
-        try {
-            storage[getTransportCacheKey(usingTLS)] = safeJSONStringify({
-                timestamp: util.now(),
-                transport: transport,
-                latency: latency
-            });
-        }
-        catch (e) {
-        }
-    }
-}
-function flushTransportCache(usingTLS) {
-    var storage = runtime.getLocalStorage();
-    if (storage) {
-        try {
-            delete storage[getTransportCacheKey(usingTLS)];
-        }
-        catch (e) {
-        }
-    }
-}
-
-// CONCATENATED MODULE: ./src/core/strategies/delayed_strategy.ts
-
-var delayed_strategy_DelayedStrategy = (function () {
-    function DelayedStrategy(strategy, _a) {
-        var number = _a.delay;
-        this.strategy = strategy;
-        this.options = { delay: number };
-    }
-    DelayedStrategy.prototype.isSupported = function () {
-        return this.strategy.isSupported();
-    };
-    DelayedStrategy.prototype.connect = function (minPriority, callback) {
-        var strategy = this.strategy;
-        var runner;
-        var timer = new OneOffTimer(this.options.delay, function () {
-            runner = strategy.connect(minPriority, callback);
-        });
-        return {
-            abort: function () {
-                timer.ensureAborted();
-                if (runner) {
-                    runner.abort();
-                }
-            },
-            forceMinPriority: function (p) {
-                minPriority = p;
-                if (runner) {
-                    runner.forceMinPriority(p);
-                }
-            }
-        };
-    };
-    return DelayedStrategy;
-}());
-/* harmony default export */ var delayed_strategy = (delayed_strategy_DelayedStrategy);
-
-// CONCATENATED MODULE: ./src/core/strategies/if_strategy.ts
-var IfStrategy = (function () {
-    function IfStrategy(test, trueBranch, falseBranch) {
-        this.test = test;
-        this.trueBranch = trueBranch;
-        this.falseBranch = falseBranch;
-    }
-    IfStrategy.prototype.isSupported = function () {
-        var branch = this.test() ? this.trueBranch : this.falseBranch;
-        return branch.isSupported();
-    };
-    IfStrategy.prototype.connect = function (minPriority, callback) {
-        var branch = this.test() ? this.trueBranch : this.falseBranch;
-        return branch.connect(minPriority, callback);
-    };
-    return IfStrategy;
-}());
-/* harmony default export */ var if_strategy = (IfStrategy);
-
-// CONCATENATED MODULE: ./src/core/strategies/first_connected_strategy.ts
-var FirstConnectedStrategy = (function () {
-    function FirstConnectedStrategy(strategy) {
-        this.strategy = strategy;
-    }
-    FirstConnectedStrategy.prototype.isSupported = function () {
-        return this.strategy.isSupported();
-    };
-    FirstConnectedStrategy.prototype.connect = function (minPriority, callback) {
-        var runner = this.strategy.connect(minPriority, function (error, handshake) {
-            if (handshake) {
-                runner.abort();
-            }
-            callback(error, handshake);
-        });
-        return runner;
-    };
-    return FirstConnectedStrategy;
-}());
-/* harmony default export */ var first_connected_strategy = (FirstConnectedStrategy);
-
-// CONCATENATED MODULE: ./src/runtimes/web/default_strategy.ts
-
-
-
-
-
-
-
-function testSupportsStrategy(strategy) {
-    return function () {
-        return strategy.isSupported();
-    };
-}
-var getDefaultStrategy = function (config, baseOptions, defineTransport) {
-    var definedTransports = {};
-    function defineTransportStrategy(name, type, priority, options, manager) {
-        var transport = defineTransport(config, name, type, priority, options, manager);
-        definedTransports[name] = transport;
-        return transport;
-    }
-    var ws_options = Object.assign({}, baseOptions, {
-        hostNonTLS: config.wsHost + ':' + config.wsPort,
-        hostTLS: config.wsHost + ':' + config.wssPort,
-        httpPath: config.wsPath
-    });
-    var wss_options = Object.assign({}, ws_options, {
-        useTLS: true
-    });
-    var sockjs_options = Object.assign({}, baseOptions, {
-        hostNonTLS: config.httpHost + ':' + config.httpPort,
-        hostTLS: config.httpHost + ':' + config.httpsPort,
-        httpPath: config.httpPath
-    });
-    var timeouts = {
-        loop: true,
-        timeout: 15000,
-        timeoutLimit: 60000
-    };
-    var ws_manager = new transport_manager({
-        lives: 2,
-        minPingDelay: 10000,
-        maxPingDelay: config.activityTimeout
-    });
-    var streaming_manager = new transport_manager({
-        lives: 2,
-        minPingDelay: 10000,
-        maxPingDelay: config.activityTimeout
-    });
-    var ws_transport = defineTransportStrategy('ws', 'ws', 3, ws_options, ws_manager);
-    var wss_transport = defineTransportStrategy('wss', 'ws', 3, wss_options, ws_manager);
-    var sockjs_transport = defineTransportStrategy('sockjs', 'sockjs', 1, sockjs_options);
-    var xhr_streaming_transport = defineTransportStrategy('xhr_streaming', 'xhr_streaming', 1, sockjs_options, streaming_manager);
-    var xdr_streaming_transport = defineTransportStrategy('xdr_streaming', 'xdr_streaming', 1, sockjs_options, streaming_manager);
-    var xhr_polling_transport = defineTransportStrategy('xhr_polling', 'xhr_polling', 1, sockjs_options);
-    var xdr_polling_transport = defineTransportStrategy('xdr_polling', 'xdr_polling', 1, sockjs_options);
-    var ws_loop = new sequential_strategy([ws_transport], timeouts);
-    var wss_loop = new sequential_strategy([wss_transport], timeouts);
-    var sockjs_loop = new sequential_strategy([sockjs_transport], timeouts);
-    var streaming_loop = new sequential_strategy([
-        new if_strategy(testSupportsStrategy(xhr_streaming_transport), xhr_streaming_transport, xdr_streaming_transport)
-    ], timeouts);
-    var polling_loop = new sequential_strategy([
-        new if_strategy(testSupportsStrategy(xhr_polling_transport), xhr_polling_transport, xdr_polling_transport)
-    ], timeouts);
-    var http_loop = new sequential_strategy([
-        new if_strategy(testSupportsStrategy(streaming_loop), new best_connected_ever_strategy([
-            streaming_loop,
-            new delayed_strategy(polling_loop, { delay: 4000 })
-        ]), polling_loop)
-    ], timeouts);
-    var http_fallback_loop = new if_strategy(testSupportsStrategy(http_loop), http_loop, sockjs_loop);
-    var wsStrategy;
-    if (baseOptions.useTLS) {
-        wsStrategy = new best_connected_ever_strategy([
-            ws_loop,
-            new delayed_strategy(http_fallback_loop, { delay: 2000 })
-        ]);
-    }
-    else {
-        wsStrategy = new best_connected_ever_strategy([
-            ws_loop,
-            new delayed_strategy(wss_loop, { delay: 2000 }),
-            new delayed_strategy(http_fallback_loop, { delay: 5000 })
-        ]);
-    }
-    return new cached_strategy(new first_connected_strategy(new if_strategy(testSupportsStrategy(ws_transport), wsStrategy, http_fallback_loop)), definedTransports, {
-        ttl: 1800000,
-        timeline: baseOptions.timeline,
-        useTLS: baseOptions.useTLS
-    });
-};
-/* harmony default export */ var default_strategy = (getDefaultStrategy);
-
-// CONCATENATED MODULE: ./src/runtimes/web/transports/transport_connection_initializer.ts
-
-/* harmony default export */ var transport_connection_initializer = (function () {
-    var self = this;
-    self.timeline.info(self.buildTimelineMessage({
-        transport: self.name + (self.options.useTLS ? 's' : '')
-    }));
-    if (self.hooks.isInitialized()) {
-        self.changeState('initialized');
-    }
-    else if (self.hooks.file) {
-        self.changeState('initializing');
-        Dependencies.load(self.hooks.file, { useTLS: self.options.useTLS }, function (error, callback) {
-            if (self.hooks.isInitialized()) {
-                self.changeState('initialized');
-                callback(true);
-            }
-            else {
-                if (error) {
-                    self.onError(error);
-                }
-                self.onClose();
-                callback(false);
-            }
-        });
-    }
-    else {
-        self.onClose();
-    }
-});
-
-// CONCATENATED MODULE: ./src/runtimes/web/http/http_xdomain_request.ts
-
-var http_xdomain_request_hooks = {
-    getRequest: function (socket) {
-        var xdr = new window.XDomainRequest();
-        xdr.ontimeout = function () {
-            socket.emit('error', new RequestTimedOut());
-            socket.close();
-        };
-        xdr.onerror = function (e) {
-            socket.emit('error', e);
-            socket.close();
-        };
-        xdr.onprogress = function () {
-            if (xdr.responseText && xdr.responseText.length > 0) {
-                socket.onChunk(200, xdr.responseText);
-            }
-        };
-        xdr.onload = function () {
-            if (xdr.responseText && xdr.responseText.length > 0) {
-                socket.onChunk(200, xdr.responseText);
-            }
-            socket.emit('finished', 200);
-            socket.close();
-        };
-        return xdr;
-    },
-    abortRequest: function (xdr) {
-        xdr.ontimeout = xdr.onerror = xdr.onprogress = xdr.onload = null;
-        xdr.abort();
-    }
-};
-/* harmony default export */ var http_xdomain_request = (http_xdomain_request_hooks);
-
-// CONCATENATED MODULE: ./src/core/http/http_request.ts
-var http_request_extends = (undefined && undefined.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-
-
-var MAX_BUFFER_LENGTH = 256 * 1024;
-var http_request_HTTPRequest = (function (_super) {
-    http_request_extends(HTTPRequest, _super);
-    function HTTPRequest(hooks, method, url) {
-        var _this = _super.call(this) || this;
-        _this.hooks = hooks;
-        _this.method = method;
-        _this.url = url;
-        return _this;
-    }
-    HTTPRequest.prototype.start = function (payload) {
-        var _this = this;
-        this.position = 0;
-        this.xhr = this.hooks.getRequest(this);
-        this.unloader = function () {
-            _this.close();
-        };
-        runtime.addUnloadListener(this.unloader);
-        this.xhr.open(this.method, this.url, true);
-        if (this.xhr.setRequestHeader) {
-            this.xhr.setRequestHeader('Content-Type', 'application/json');
-        }
-        this.xhr.send(payload);
-    };
-    HTTPRequest.prototype.close = function () {
-        if (this.unloader) {
-            runtime.removeUnloadListener(this.unloader);
-            this.unloader = null;
-        }
-        if (this.xhr) {
-            this.hooks.abortRequest(this.xhr);
-            this.xhr = null;
-        }
-    };
-    HTTPRequest.prototype.onChunk = function (status, data) {
-        while (true) {
-            var chunk = this.advanceBuffer(data);
-            if (chunk) {
-                this.emit('chunk', { status: status, data: chunk });
-            }
-            else {
-                break;
-            }
-        }
-        if (this.isBufferTooLong(data)) {
-            this.emit('buffer_too_long');
-        }
-    };
-    HTTPRequest.prototype.advanceBuffer = function (buffer) {
-        var unreadData = buffer.slice(this.position);
-        var endOfLinePosition = unreadData.indexOf('\n');
-        if (endOfLinePosition !== -1) {
-            this.position += endOfLinePosition + 1;
-            return unreadData.slice(0, endOfLinePosition);
-        }
-        else {
-            return null;
-        }
-    };
-    HTTPRequest.prototype.isBufferTooLong = function (buffer) {
-        return this.position === buffer.length && buffer.length > MAX_BUFFER_LENGTH;
-    };
-    return HTTPRequest;
-}(dispatcher));
-/* harmony default export */ var http_request = (http_request_HTTPRequest);
-
-// CONCATENATED MODULE: ./src/core/http/state.ts
-var State;
-(function (State) {
-    State[State["CONNECTING"] = 0] = "CONNECTING";
-    State[State["OPEN"] = 1] = "OPEN";
-    State[State["CLOSED"] = 3] = "CLOSED";
-})(State || (State = {}));
-/* harmony default export */ var state = (State);
-
-// CONCATENATED MODULE: ./src/core/http/http_socket.ts
-
-
-
-var autoIncrement = 1;
-var http_socket_HTTPSocket = (function () {
-    function HTTPSocket(hooks, url) {
-        this.hooks = hooks;
-        this.session = randomNumber(1000) + '/' + randomString(8);
-        this.location = getLocation(url);
-        this.readyState = state.CONNECTING;
-        this.openStream();
-    }
-    HTTPSocket.prototype.send = function (payload) {
-        return this.sendRaw(JSON.stringify([payload]));
-    };
-    HTTPSocket.prototype.ping = function () {
-        this.hooks.sendHeartbeat(this);
-    };
-    HTTPSocket.prototype.close = function (code, reason) {
-        this.onClose(code, reason, true);
-    };
-    HTTPSocket.prototype.sendRaw = function (payload) {
-        if (this.readyState === state.OPEN) {
-            try {
-                runtime.createSocketRequest('POST', getUniqueURL(getSendURL(this.location, this.session))).start(payload);
-                return true;
-            }
-            catch (e) {
-                return false;
-            }
-        }
-        else {
-            return false;
-        }
-    };
-    HTTPSocket.prototype.reconnect = function () {
-        this.closeStream();
-        this.openStream();
-    };
-    HTTPSocket.prototype.onClose = function (code, reason, wasClean) {
-        this.closeStream();
-        this.readyState = state.CLOSED;
-        if (this.onclose) {
-            this.onclose({
-                code: code,
-                reason: reason,
-                wasClean: wasClean
-            });
-        }
-    };
-    HTTPSocket.prototype.onChunk = function (chunk) {
-        if (chunk.status !== 200) {
-            return;
-        }
-        if (this.readyState === state.OPEN) {
-            this.onActivity();
-        }
-        var payload;
-        var type = chunk.data.slice(0, 1);
-        switch (type) {
-            case 'o':
-                payload = JSON.parse(chunk.data.slice(1) || '{}');
-                this.onOpen(payload);
-                break;
-            case 'a':
-                payload = JSON.parse(chunk.data.slice(1) || '[]');
-                for (var i = 0; i < payload.length; i++) {
-                    this.onEvent(payload[i]);
-                }
-                break;
-            case 'm':
-                payload = JSON.parse(chunk.data.slice(1) || 'null');
-                this.onEvent(payload);
-                break;
-            case 'h':
-                this.hooks.onHeartbeat(this);
-                break;
-            case 'c':
-                payload = JSON.parse(chunk.data.slice(1) || '[]');
-                this.onClose(payload[0], payload[1], true);
-                break;
-        }
-    };
-    HTTPSocket.prototype.onOpen = function (options) {
-        if (this.readyState === state.CONNECTING) {
-            if (options && options.hostname) {
-                this.location.base = replaceHost(this.location.base, options.hostname);
-            }
-            this.readyState = state.OPEN;
-            if (this.onopen) {
-                this.onopen();
-            }
-        }
-        else {
-            this.onClose(1006, 'Server lost session', true);
-        }
-    };
-    HTTPSocket.prototype.onEvent = function (event) {
-        if (this.readyState === state.OPEN && this.onmessage) {
-            this.onmessage({ data: event });
-        }
-    };
-    HTTPSocket.prototype.onActivity = function () {
-        if (this.onactivity) {
-            this.onactivity();
-        }
-    };
-    HTTPSocket.prototype.onError = function (error) {
-        if (this.onerror) {
-            this.onerror(error);
-        }
-    };
-    HTTPSocket.prototype.openStream = function () {
-        var _this = this;
-        this.stream = runtime.createSocketRequest('POST', getUniqueURL(this.hooks.getReceiveURL(this.location, this.session)));
-        this.stream.bind('chunk', function (chunk) {
-            _this.onChunk(chunk);
-        });
-        this.stream.bind('finished', function (status) {
-            _this.hooks.onFinished(_this, status);
-        });
-        this.stream.bind('buffer_too_long', function () {
-            _this.reconnect();
-        });
-        try {
-            this.stream.start();
-        }
-        catch (error) {
-            util.defer(function () {
-                _this.onError(error);
-                _this.onClose(1006, 'Could not start streaming', false);
-            });
-        }
-    };
-    HTTPSocket.prototype.closeStream = function () {
-        if (this.stream) {
-            this.stream.unbind_all();
-            this.stream.close();
-            this.stream = null;
-        }
-    };
-    return HTTPSocket;
-}());
-function getLocation(url) {
-    var parts = /([^\?]*)\/*(\??.*)/.exec(url);
-    return {
-        base: parts[1],
-        queryString: parts[2]
-    };
-}
-function getSendURL(url, session) {
-    return url.base + '/' + session + '/xhr_send';
-}
-function getUniqueURL(url) {
-    var separator = url.indexOf('?') === -1 ? '?' : '&';
-    return url + separator + 't=' + +new Date() + '&n=' + autoIncrement++;
-}
-function replaceHost(url, hostname) {
-    var urlParts = /(https?:\/\/)([^\/:]+)((\/|:)?.*)/.exec(url);
-    return urlParts[1] + hostname + urlParts[3];
-}
-function randomNumber(max) {
-    return Math.floor(Math.random() * max);
-}
-function randomString(length) {
-    var result = [];
-    for (var i = 0; i < length; i++) {
-        result.push(randomNumber(32).toString(32));
-    }
-    return result.join('');
-}
-/* harmony default export */ var http_socket = (http_socket_HTTPSocket);
-
-// CONCATENATED MODULE: ./src/core/http/http_streaming_socket.ts
-var http_streaming_socket_hooks = {
-    getReceiveURL: function (url, session) {
-        return url.base + '/' + session + '/xhr_streaming' + url.queryString;
-    },
-    onHeartbeat: function (socket) {
-        socket.sendRaw('[]');
-    },
-    sendHeartbeat: function (socket) {
-        socket.sendRaw('[]');
-    },
-    onFinished: function (socket, status) {
-        socket.onClose(1006, 'Connection interrupted (' + status + ')', false);
-    }
-};
-/* harmony default export */ var http_streaming_socket = (http_streaming_socket_hooks);
-
-// CONCATENATED MODULE: ./src/core/http/http_polling_socket.ts
-var http_polling_socket_hooks = {
-    getReceiveURL: function (url, session) {
-        return url.base + '/' + session + '/xhr' + url.queryString;
-    },
-    onHeartbeat: function () {
-    },
-    sendHeartbeat: function (socket) {
-        socket.sendRaw('[]');
-    },
-    onFinished: function (socket, status) {
-        if (status === 200) {
-            socket.reconnect();
-        }
-        else {
-            socket.onClose(1006, 'Connection interrupted (' + status + ')', false);
-        }
-    }
-};
-/* harmony default export */ var http_polling_socket = (http_polling_socket_hooks);
-
-// CONCATENATED MODULE: ./src/runtimes/isomorphic/http/http_xhr_request.ts
-
-var http_xhr_request_hooks = {
-    getRequest: function (socket) {
-        var Constructor = runtime.getXHRAPI();
-        var xhr = new Constructor();
-        xhr.onreadystatechange = xhr.onprogress = function () {
-            switch (xhr.readyState) {
-                case 3:
-                    if (xhr.responseText && xhr.responseText.length > 0) {
-                        socket.onChunk(xhr.status, xhr.responseText);
-                    }
-                    break;
-                case 4:
-                    if (xhr.responseText && xhr.responseText.length > 0) {
-                        socket.onChunk(xhr.status, xhr.responseText);
-                    }
-                    socket.emit('finished', xhr.status);
-                    socket.close();
-                    break;
-            }
-        };
-        return xhr;
-    },
-    abortRequest: function (xhr) {
-        xhr.onreadystatechange = null;
-        xhr.abort();
-    }
-};
-/* harmony default export */ var http_xhr_request = (http_xhr_request_hooks);
-
-// CONCATENATED MODULE: ./src/runtimes/isomorphic/http/http.ts
-
-
-
-
-
-var HTTP = {
-    createStreamingSocket: function (url) {
-        return this.createSocket(http_streaming_socket, url);
-    },
-    createPollingSocket: function (url) {
-        return this.createSocket(http_polling_socket, url);
-    },
-    createSocket: function (hooks, url) {
-        return new http_socket(hooks, url);
-    },
-    createXHR: function (method, url) {
-        return this.createRequest(http_xhr_request, method, url);
-    },
-    createRequest: function (hooks, method, url) {
-        return new http_request(hooks, method, url);
-    }
-};
-/* harmony default export */ var http_http = (HTTP);
-
-// CONCATENATED MODULE: ./src/runtimes/web/http/http.ts
-
-
-http_http.createXDR = function (method, url) {
-    return this.createRequest(http_xdomain_request, method, url);
-};
-/* harmony default export */ var web_http_http = (http_http);
-
-// CONCATENATED MODULE: ./src/runtimes/web/runtime.ts
-
-
-
-
-
-
-
-
-
-
-
-
-var Runtime = {
-    nextAuthCallbackID: 1,
-    auth_callbacks: {},
-    ScriptReceivers: ScriptReceivers,
-    DependenciesReceivers: DependenciesReceivers,
-    getDefaultStrategy: default_strategy,
-    Transports: transports_transports,
-    transportConnectionInitializer: transport_connection_initializer,
-    HTTPFactory: web_http_http,
-    TimelineTransport: jsonp_timeline,
-    getXHRAPI: function () {
-        return window.XMLHttpRequest;
-    },
-    getWebSocketAPI: function () {
-        return window.WebSocket || window.MozWebSocket;
-    },
-    setup: function (PusherClass) {
-        var _this = this;
-        window.Pusher = PusherClass;
-        var initializeOnDocumentBody = function () {
-            _this.onDocumentBody(PusherClass.ready);
-        };
-        if (!window.JSON) {
-            Dependencies.load('json2', {}, initializeOnDocumentBody);
-        }
-        else {
-            initializeOnDocumentBody();
-        }
-    },
-    getDocument: function () {
-        return document;
-    },
-    getProtocol: function () {
-        return this.getDocument().location.protocol;
-    },
-    getAuthorizers: function () {
-        return { ajax: xhr_auth, jsonp: jsonp_auth };
-    },
-    onDocumentBody: function (callback) {
-        var _this = this;
-        if (document.body) {
-            callback();
-        }
-        else {
-            setTimeout(function () {
-                _this.onDocumentBody(callback);
-            }, 0);
-        }
-    },
-    createJSONPRequest: function (url, data) {
-        return new jsonp_request(url, data);
-    },
-    createScriptRequest: function (src) {
-        return new script_request(src);
-    },
-    getLocalStorage: function () {
-        try {
-            return window.localStorage;
-        }
-        catch (e) {
-            return undefined;
-        }
-    },
-    createXHR: function () {
-        if (this.getXHRAPI()) {
-            return this.createXMLHttpRequest();
-        }
-        else {
-            return this.createMicrosoftXHR();
-        }
-    },
-    createXMLHttpRequest: function () {
-        var Constructor = this.getXHRAPI();
-        return new Constructor();
-    },
-    createMicrosoftXHR: function () {
-        return new ActiveXObject('Microsoft.XMLHTTP');
-    },
-    getNetwork: function () {
-        return net_info_Network;
-    },
-    createWebSocket: function (url) {
-        var Constructor = this.getWebSocketAPI();
-        return new Constructor(url);
-    },
-    createSocketRequest: function (method, url) {
-        if (this.isXHRSupported()) {
-            return this.HTTPFactory.createXHR(method, url);
-        }
-        else if (this.isXDRSupported(url.indexOf('https:') === 0)) {
-            return this.HTTPFactory.createXDR(method, url);
-        }
-        else {
-            throw 'Cross-origin HTTP requests are not supported';
-        }
-    },
-    isXHRSupported: function () {
-        var Constructor = this.getXHRAPI();
-        return (Boolean(Constructor) && new Constructor().withCredentials !== undefined);
-    },
-    isXDRSupported: function (useTLS) {
-        var protocol = useTLS ? 'https:' : 'http:';
-        var documentProtocol = this.getProtocol();
-        return (Boolean(window['XDomainRequest']) && documentProtocol === protocol);
-    },
-    addUnloadListener: function (listener) {
-        if (window.addEventListener !== undefined) {
-            window.addEventListener('unload', listener, false);
-        }
-        else if (window.attachEvent !== undefined) {
-            window.attachEvent('onunload', listener);
-        }
-    },
-    removeUnloadListener: function (listener) {
-        if (window.addEventListener !== undefined) {
-            window.removeEventListener('unload', listener, false);
-        }
-        else if (window.detachEvent !== undefined) {
-            window.detachEvent('onunload', listener);
-        }
-    }
-};
-/* harmony default export */ var runtime = (Runtime);
-
-// CONCATENATED MODULE: ./src/core/timeline/level.ts
-var TimelineLevel;
-(function (TimelineLevel) {
-    TimelineLevel[TimelineLevel["ERROR"] = 3] = "ERROR";
-    TimelineLevel[TimelineLevel["INFO"] = 6] = "INFO";
-    TimelineLevel[TimelineLevel["DEBUG"] = 7] = "DEBUG";
-})(TimelineLevel || (TimelineLevel = {}));
-/* harmony default export */ var timeline_level = (TimelineLevel);
-
-// CONCATENATED MODULE: ./src/core/timeline/timeline.ts
-
-
-
-var timeline_Timeline = (function () {
-    function Timeline(key, session, options) {
-        this.key = key;
-        this.session = session;
-        this.events = [];
-        this.options = options || {};
-        this.sent = 0;
-        this.uniqueID = 0;
-    }
-    Timeline.prototype.log = function (level, event) {
-        if (level <= this.options.level) {
-            this.events.push(extend({}, event, { timestamp: util.now() }));
-            if (this.options.limit && this.events.length > this.options.limit) {
-                this.events.shift();
-            }
-        }
-    };
-    Timeline.prototype.error = function (event) {
-        this.log(timeline_level.ERROR, event);
-    };
-    Timeline.prototype.info = function (event) {
-        this.log(timeline_level.INFO, event);
-    };
-    Timeline.prototype.debug = function (event) {
-        this.log(timeline_level.DEBUG, event);
-    };
-    Timeline.prototype.isEmpty = function () {
-        return this.events.length === 0;
-    };
-    Timeline.prototype.send = function (sendfn, callback) {
-        var _this = this;
-        var data = extend({
-            session: this.session,
-            bundle: this.sent + 1,
-            key: this.key,
-            lib: 'js',
-            version: this.options.version,
-            cluster: this.options.cluster,
-            features: this.options.features,
-            timeline: this.events
-        }, this.options.params);
-        this.events = [];
-        sendfn(data, function (error, result) {
-            if (!error) {
-                _this.sent++;
-            }
-            if (callback) {
-                callback(error, result);
-            }
-        });
-        return true;
-    };
-    Timeline.prototype.generateUniqueID = function () {
-        this.uniqueID++;
-        return this.uniqueID;
-    };
-    return Timeline;
-}());
-/* harmony default export */ var timeline_timeline = (timeline_Timeline);
-
-// CONCATENATED MODULE: ./src/core/strategies/transport_strategy.ts
-
-
-
-
-var transport_strategy_TransportStrategy = (function () {
-    function TransportStrategy(name, priority, transport, options) {
-        this.name = name;
-        this.priority = priority;
-        this.transport = transport;
-        this.options = options || {};
-    }
-    TransportStrategy.prototype.isSupported = function () {
-        return this.transport.isSupported({
-            useTLS: this.options.useTLS
-        });
-    };
-    TransportStrategy.prototype.connect = function (minPriority, callback) {
-        var _this = this;
-        if (!this.isSupported()) {
-            return failAttempt(new UnsupportedStrategy(), callback);
-        }
-        else if (this.priority < minPriority) {
-            return failAttempt(new TransportPriorityTooLow(), callback);
-        }
-        var connected = false;
-        var transport = this.transport.createConnection(this.name, this.priority, this.options.key, this.options);
-        var handshake = null;
-        var onInitialized = function () {
-            transport.unbind('initialized', onInitialized);
-            transport.connect();
-        };
-        var onOpen = function () {
-            handshake = factory.createHandshake(transport, function (result) {
-                connected = true;
-                unbindListeners();
-                callback(null, result);
-            });
-        };
-        var onError = function (error) {
-            unbindListeners();
-            callback(error);
-        };
-        var onClosed = function () {
-            unbindListeners();
-            var serializedTransport;
-            serializedTransport = safeJSONStringify(transport);
-            callback(new TransportClosed(serializedTransport));
-        };
-        var unbindListeners = function () {
-            transport.unbind('initialized', onInitialized);
-            transport.unbind('open', onOpen);
-            transport.unbind('error', onError);
-            transport.unbind('closed', onClosed);
-        };
-        transport.bind('initialized', onInitialized);
-        transport.bind('open', onOpen);
-        transport.bind('error', onError);
-        transport.bind('closed', onClosed);
-        transport.initialize();
-        return {
-            abort: function () {
-                if (connected) {
-                    return;
-                }
-                unbindListeners();
-                if (handshake) {
-                    handshake.close();
-                }
-                else {
-                    transport.close();
-                }
-            },
-            forceMinPriority: function (p) {
-                if (connected) {
-                    return;
-                }
-                if (_this.priority < p) {
-                    if (handshake) {
-                        handshake.close();
-                    }
-                    else {
-                        transport.close();
-                    }
-                }
-            }
-        };
-    };
-    return TransportStrategy;
-}());
-/* harmony default export */ var transport_strategy = (transport_strategy_TransportStrategy);
-function failAttempt(error, callback) {
-    util.defer(function () {
-        callback(error);
-    });
-    return {
-        abort: function () { },
-        forceMinPriority: function () { }
-    };
-}
-
-// CONCATENATED MODULE: ./src/core/strategies/strategy_builder.ts
-
-
-
-
-
-var strategy_builder_Transports = runtime.Transports;
-var strategy_builder_defineTransport = function (config, name, type, priority, options, manager) {
-    var transportClass = strategy_builder_Transports[type];
-    if (!transportClass) {
-        throw new UnsupportedTransport(type);
-    }
-    var enabled = (!config.enabledTransports ||
-        arrayIndexOf(config.enabledTransports, name) !== -1) &&
-        (!config.disabledTransports ||
-            arrayIndexOf(config.disabledTransports, name) === -1);
-    var transport;
-    if (enabled) {
-        options = Object.assign({ ignoreNullOrigin: config.ignoreNullOrigin }, options);
-        transport = new transport_strategy(name, priority, manager ? manager.getAssistant(transportClass) : transportClass, options);
-    }
-    else {
-        transport = strategy_builder_UnsupportedStrategy;
-    }
-    return transport;
-};
-var strategy_builder_UnsupportedStrategy = {
-    isSupported: function () {
-        return false;
-    },
-    connect: function (_, callback) {
-        var deferred = util.defer(function () {
-            callback(new UnsupportedStrategy());
-        });
-        return {
-            abort: function () {
-                deferred.ensureAborted();
-            },
-            forceMinPriority: function () { }
-        };
-    }
-};
-
-// CONCATENATED MODULE: ./src/core/config.ts
-
-
-function getConfig(opts) {
-    var config = {
-        activityTimeout: opts.activityTimeout || defaults.activityTimeout,
-        authEndpoint: opts.authEndpoint || defaults.authEndpoint,
-        authTransport: opts.authTransport || defaults.authTransport,
-        cluster: opts.cluster || defaults.cluster,
-        httpPath: opts.httpPath || defaults.httpPath,
-        httpPort: opts.httpPort || defaults.httpPort,
-        httpsPort: opts.httpsPort || defaults.httpsPort,
-        pongTimeout: opts.pongTimeout || defaults.pongTimeout,
-        statsHost: opts.statsHost || defaults.stats_host,
-        unavailableTimeout: opts.unavailableTimeout || defaults.unavailableTimeout,
-        wsPath: opts.wsPath || defaults.wsPath,
-        wsPort: opts.wsPort || defaults.wsPort,
-        wssPort: opts.wssPort || defaults.wssPort,
-        enableStats: getEnableStatsConfig(opts),
-        httpHost: getHttpHost(opts),
-        useTLS: shouldUseTLS(opts),
-        wsHost: getWebsocketHost(opts)
-    };
-    if ('auth' in opts)
-        config.auth = opts.auth;
-    if ('authorizer' in opts)
-        config.authorizer = opts.authorizer;
-    if ('disabledTransports' in opts)
-        config.disabledTransports = opts.disabledTransports;
-    if ('enabledTransports' in opts)
-        config.enabledTransports = opts.enabledTransports;
-    if ('ignoreNullOrigin' in opts)
-        config.ignoreNullOrigin = opts.ignoreNullOrigin;
-    if ('timelineParams' in opts)
-        config.timelineParams = opts.timelineParams;
-    if ('nacl' in opts) {
-        config.nacl = opts.nacl;
-    }
-    return config;
-}
-function getHttpHost(opts) {
-    if (opts.httpHost) {
-        return opts.httpHost;
-    }
-    if (opts.cluster) {
-        return "sockjs-" + opts.cluster + ".pusher.com";
-    }
-    return defaults.httpHost;
-}
-function getWebsocketHost(opts) {
-    if (opts.wsHost) {
-        return opts.wsHost;
-    }
-    if (opts.cluster) {
-        return getWebsocketHostFromCluster(opts.cluster);
-    }
-    return getWebsocketHostFromCluster(defaults.cluster);
-}
-function getWebsocketHostFromCluster(cluster) {
-    return "ws-" + cluster + ".pusher.com";
-}
-function shouldUseTLS(opts) {
-    if (runtime.getProtocol() === 'https:') {
-        return true;
-    }
-    else if (opts.forceTLS === false) {
-        return false;
-    }
-    return true;
-}
-function getEnableStatsConfig(opts) {
-    if ('enableStats' in opts) {
-        return opts.enableStats;
-    }
-    if ('disableStats' in opts) {
-        return !opts.disableStats;
-    }
-    return false;
-}
-
-// CONCATENATED MODULE: ./src/core/pusher.ts
-
-
-
-
-
-
-
-
-
-
-
-
-var pusher_Pusher = (function () {
-    function Pusher(app_key, options) {
-        var _this = this;
-        checkAppKey(app_key);
-        options = options || {};
-        if (!options.cluster && !(options.wsHost || options.httpHost)) {
-            var suffix = url_store.buildLogSuffix('javascriptQuickStart');
-            logger.warn("You should always specify a cluster when connecting. " + suffix);
-        }
-        if ('disableStats' in options) {
-            logger.warn('The disableStats option is deprecated in favor of enableStats');
-        }
-        this.key = app_key;
-        this.config = getConfig(options);
-        this.channels = factory.createChannels();
-        this.global_emitter = new dispatcher();
-        this.sessionID = Math.floor(Math.random() * 1000000000);
-        this.timeline = new timeline_timeline(this.key, this.sessionID, {
-            cluster: this.config.cluster,
-            features: Pusher.getClientFeatures(),
-            params: this.config.timelineParams || {},
-            limit: 50,
-            level: timeline_level.INFO,
-            version: defaults.VERSION
-        });
-        if (this.config.enableStats) {
-            this.timelineSender = factory.createTimelineSender(this.timeline, {
-                host: this.config.statsHost,
-                path: '/timeline/v2/' + runtime.TimelineTransport.name
-            });
-        }
-        var getStrategy = function (options) {
-            return runtime.getDefaultStrategy(_this.config, options, strategy_builder_defineTransport);
-        };
-        this.connection = factory.createConnectionManager(this.key, {
-            getStrategy: getStrategy,
-            timeline: this.timeline,
-            activityTimeout: this.config.activityTimeout,
-            pongTimeout: this.config.pongTimeout,
-            unavailableTimeout: this.config.unavailableTimeout,
-            useTLS: Boolean(this.config.useTLS)
-        });
-        this.connection.bind('connected', function () {
-            _this.subscribeAll();
-            if (_this.timelineSender) {
-                _this.timelineSender.send(_this.connection.isUsingTLS());
-            }
-        });
-        this.connection.bind('message', function (event) {
-            var eventName = event.event;
-            var internal = eventName.indexOf('pusher_internal:') === 0;
-            if (event.channel) {
-                var channel = _this.channel(event.channel);
-                if (channel) {
-                    channel.handleEvent(event);
-                }
-            }
-            if (!internal) {
-                _this.global_emitter.emit(event.event, event.data);
-            }
-        });
-        this.connection.bind('connecting', function () {
-            _this.channels.disconnect();
-        });
-        this.connection.bind('disconnected', function () {
-            _this.channels.disconnect();
-        });
-        this.connection.bind('error', function (err) {
-            logger.warn(err);
-        });
-        Pusher.instances.push(this);
-        this.timeline.info({ instances: Pusher.instances.length });
-        if (Pusher.isReady) {
-            this.connect();
-        }
-    }
-    Pusher.ready = function () {
-        Pusher.isReady = true;
-        for (var i = 0, l = Pusher.instances.length; i < l; i++) {
-            Pusher.instances[i].connect();
-        }
-    };
-    Pusher.getClientFeatures = function () {
-        return keys(filterObject({ ws: runtime.Transports.ws }, function (t) {
-            return t.isSupported({});
-        }));
-    };
-    Pusher.prototype.channel = function (name) {
-        return this.channels.find(name);
-    };
-    Pusher.prototype.allChannels = function () {
-        return this.channels.all();
-    };
-    Pusher.prototype.connect = function () {
-        this.connection.connect();
-        if (this.timelineSender) {
-            if (!this.timelineSenderTimer) {
-                var usingTLS = this.connection.isUsingTLS();
-                var timelineSender = this.timelineSender;
-                this.timelineSenderTimer = new PeriodicTimer(60000, function () {
-                    timelineSender.send(usingTLS);
-                });
-            }
-        }
-    };
-    Pusher.prototype.disconnect = function () {
-        this.connection.disconnect();
-        if (this.timelineSenderTimer) {
-            this.timelineSenderTimer.ensureAborted();
-            this.timelineSenderTimer = null;
-        }
-    };
-    Pusher.prototype.bind = function (event_name, callback, context) {
-        this.global_emitter.bind(event_name, callback, context);
-        return this;
-    };
-    Pusher.prototype.unbind = function (event_name, callback, context) {
-        this.global_emitter.unbind(event_name, callback, context);
-        return this;
-    };
-    Pusher.prototype.bind_global = function (callback) {
-        this.global_emitter.bind_global(callback);
-        return this;
-    };
-    Pusher.prototype.unbind_global = function (callback) {
-        this.global_emitter.unbind_global(callback);
-        return this;
-    };
-    Pusher.prototype.unbind_all = function (callback) {
-        this.global_emitter.unbind_all();
-        return this;
-    };
-    Pusher.prototype.subscribeAll = function () {
-        var channelName;
-        for (channelName in this.channels.channels) {
-            if (this.channels.channels.hasOwnProperty(channelName)) {
-                this.subscribe(channelName);
-            }
-        }
-    };
-    Pusher.prototype.subscribe = function (channel_name) {
-        var channel = this.channels.add(channel_name, this);
-        if (channel.subscriptionPending && channel.subscriptionCancelled) {
-            channel.reinstateSubscription();
-        }
-        else if (!channel.subscriptionPending &&
-            this.connection.state === 'connected') {
-            channel.subscribe();
-        }
-        return channel;
-    };
-    Pusher.prototype.unsubscribe = function (channel_name) {
-        var channel = this.channels.find(channel_name);
-        if (channel && channel.subscriptionPending) {
-            channel.cancelSubscription();
-        }
-        else {
-            channel = this.channels.remove(channel_name);
-            if (channel && this.connection.state === 'connected') {
-                channel.unsubscribe();
-            }
-        }
-    };
-    Pusher.prototype.send_event = function (event_name, data, channel) {
-        return this.connection.send_event(event_name, data, channel);
-    };
-    Pusher.prototype.shouldUseTLS = function () {
-        return this.config.useTLS;
-    };
-    Pusher.instances = [];
-    Pusher.isReady = false;
-    Pusher.logToConsole = false;
-    Pusher.Runtime = runtime;
-    Pusher.ScriptReceivers = runtime.ScriptReceivers;
-    Pusher.DependenciesReceivers = runtime.DependenciesReceivers;
-    Pusher.auth_callbacks = runtime.auth_callbacks;
-    return Pusher;
-}());
-/* harmony default export */ var core_pusher = __webpack_exports__["default"] = (pusher_Pusher);
-function checkAppKey(key) {
-    if (key === null || key === undefined) {
-        throw 'You must pass your app key when you instantiate Pusher.';
-    }
-}
-runtime.setup(pusher_Pusher);
-
-
-/***/ })
-/******/ ]);
-});
-
-/***/ }),
-
-/***/ "./node_modules/react-block-ui/dist/reactblockui.es.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-block-ui/dist/reactblockui.es.js ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function Loader() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-    "div",
-    { className: "loading-indicator" },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-      "span",
-      { className: "loading-bullet" },
-      "\u2022"
-    ),
-    ' ',
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-      "span",
-      { className: "loading-bullet" },
-      "\u2022"
-    ),
-    ' ',
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-      "span",
-      { className: "loading-bullet" },
-      "\u2022"
-    )
-  );
-}
-
-// https://gist.github.com/Alex1990/046a6553dc83e22dd6f4
-/**
- * Get the current active element safely.
- * Ref: https://github.com/jquery/jquery-ui/blob/2b84531ae9331f60e4d739fabca6d78abde89ae1/ui/safe-active-element.js
- */
-function safeActiveElement(doc) {
-  doc = doc || document;
-  var activeElement = void 0;
-
-  try {
-    activeElement = document.activeElement;
-    if (!activeElement || !activeElement.nodeName) {
-      activeElement = doc.body;
-    }
-  } catch (error) {
-    activeElement = doc.body;
-  }
-
-  return activeElement;
-}
-
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-
-
-
-
-
-
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-
-
-var inherits = function (subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-};
-
-
-
-
-
-
-
-
-
-var objectWithoutProperties = function (obj, keys) {
-  var target = {};
-
-  for (var i in obj) {
-    if (keys.indexOf(i) >= 0) continue;
-    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-    target[i] = obj[i];
-  }
-
-  return target;
-};
-
-var possibleConstructorReturn = function (self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return call && (typeof call === "object" || typeof call === "function") ? call : self;
-};
-
-var defaultProps = {
-  tag: 'div',
-  renderChildren: true,
-  loader: Loader
-};
-
-var BlockUi$1 = function (_Component) {
-  inherits(BlockUi, _Component);
-
-  function BlockUi(props) {
-    classCallCheck(this, BlockUi);
-
-    var _this = possibleConstructorReturn(this, (BlockUi.__proto__ || Object.getPrototypeOf(BlockUi)).call(this, props));
-
-    _this.tabbedUpTop = _this.tabbedUpTop.bind(_this);
-    _this.tabbedDownTop = _this.tabbedDownTop.bind(_this);
-    _this.tabbedUpBottom = _this.tabbedUpBottom.bind(_this);
-    _this.tabbedDownBottom = _this.tabbedDownBottom.bind(_this);
-    _this.setHelper = _this.setRef.bind(_this, 'helper');
-    _this.setBlocker = _this.setRef.bind(_this, 'blocker');
-    _this.setTopFocus = _this.setRef.bind(_this, 'topFocus');
-    _this.setContainer = _this.setRef.bind(_this, 'container');
-    _this.setMessageContainer = _this.setRef.bind(_this, 'messageContainer');
-    _this.handleScroll = _this.handleScroll.bind(_this);
-
-    _this.state = { top: '50%' };
-    return _this;
-  }
-
-  createClass(BlockUi, [{
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      var _this2 = this;
-
-      if (nextProps.blocking !== this.props.blocking) {
-        if (nextProps.blocking) {
-          // blocking started
-          if (this.helper && this.helper.parentNode && this.helper.parentNode.contains && this.helper.parentNode.contains(safeActiveElement())) {
-            this.focused = safeActiveElement();
-            // https://www.tjvantoll.com/2013/08/30/bugs-with-document-activeelement-in-internet-explorer/#blurring-the-body-switches-windows-in-ie9-and-ie10
-            if (this.focused && this.focused !== document.body) {
-              (window.setImmediate || setTimeout)(function () {
-                return _this2.focused && typeof _this2.focused.blur === 'function' && _this2.focused.blur();
-              });
-            }
-          }
-        } else {
-          this.detachListeners();
-          var ae = safeActiveElement();
-          if (this.focused && (!ae || ae === document.body || ae === this.topFocus)) {
-            if (typeof this.focused.focus === 'function') {
-              this.focused.focus();
-            }
-            this.focused = null;
-          }
-        }
-      }
-      if (nextProps.keepInView && (nextProps.keepInView !== this.props.keepInView || nextProps.blocking && nextProps.blocking !== this.props.blocking)) {
-        this.attachListeners();
-        this.keepInView(nextProps);
-      }
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      this.detachListeners();
-    }
-  }, {
-    key: 'setRef',
-    value: function setRef(name, ref) {
-      this[name] = ref;
-    }
-  }, {
-    key: 'attachListeners',
-    value: function attachListeners() {
-      window.addEventListener('scroll', this.handleScroll);
-    }
-  }, {
-    key: 'detachListeners',
-    value: function detachListeners() {
-      window.removeEventListener('scroll', this.handleScroll);
-    }
-  }, {
-    key: 'blockingTab',
-    value: function blockingTab(e) {
-      var withShift = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-      // eslint-disable-next-line eqeqeq
-      return this.props.blocking && (e.key === 'Tab' || e.keyCode === 9) && e.shiftKey == withShift;
-    }
-  }, {
-    key: 'tabbedUpTop',
-    value: function tabbedUpTop(e) {
-      if (this.blockingTab(e)) {
-        this.blocker.focus();
-      }
-    }
-  }, {
-    key: 'tabbedDownTop',
-    value: function tabbedDownTop(e) {
-      if (this.blockingTab(e)) {
-        e.preventDefault();
-        this.blocker.focus();
-      }
-    }
-  }, {
-    key: 'tabbedUpBottom',
-    value: function tabbedUpBottom(e) {
-      if (this.blockingTab(e, true)) {
-        this.topFocus.focus();
-      }
-    }
-  }, {
-    key: 'tabbedDownBottom',
-    value: function tabbedDownBottom(e) {
-      if (this.blockingTab(e, true)) {
-        e.preventDefault();
-        this.topFocus.focus();
-      }
-    }
-  }, {
-    key: 'keepInView',
-    value: function keepInView() {
-      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.props;
-
-      if (props.blocking && props.keepInView && this.container) {
-        var containerBounds = this.container.getBoundingClientRect();
-        var windowHeight = window.innerHeight;
-        if (containerBounds.top > windowHeight || containerBounds.bottom < 0) return;
-        if (containerBounds.top >= 0 && containerBounds.bottom <= windowHeight) {
-          if (this.state.top !== '50%') {
-            this.setState({ top: '50%' });
-          }
-          return;
-        }
-
-        var messageBoundsHeight = this.messageContainer ? this.messageContainer.getBoundingClientRect().height : 0;
-        var top = Math.max(Math.min(windowHeight, containerBounds.bottom) - Math.max(containerBounds.top, 0), messageBoundsHeight) / 2;
-        if (containerBounds.top < 0) {
-          top = Math.min(top - containerBounds.top, containerBounds.height - messageBoundsHeight / 2);
-        }
-        if (this.state.top !== top) {
-          this.setState({ top: top });
-        }
-      }
-    }
-  }, {
-    key: 'handleScroll',
-    value: function handleScroll() {
-      this.keepInView();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          Tag = _props.tag,
-          blocking = _props.blocking,
-          className = _props.className,
-          children = _props.children,
-          message = _props.message,
-          Loader$$1 = _props.loader,
-          renderChildren = _props.renderChildren,
-          keepInView = _props.keepInView,
-          attributes = objectWithoutProperties(_props, ['tag', 'blocking', 'className', 'children', 'message', 'loader', 'renderChildren', 'keepInView']);
-
-
-      var classes = blocking ? 'block-ui ' + className : className;
-      var renderChilds = !blocking || renderChildren;
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-        Tag,
-        _extends({}, attributes, { className: classes, 'aria-busy': blocking }),
-        blocking && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { tabIndex: '0', onKeyUp: this.tabbedUpTop, onKeyDown: this.tabbedDownTop, ref: this.setTopFocus }),
-        renderChilds && children,
-        blocking && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-          'div',
-          { className: 'block-ui-container',
-            tabIndex: '0',
-            ref: this.setBlocker,
-            onKeyUp: this.tabbedUpBottom,
-            onKeyDown: this.tabbedDownBottom
-          },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { className: 'block-ui-overlay', ref: this.setContainer }),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-            'div',
-            { className: 'block-ui-message-container',
-              ref: this.setMessageContainer,
-              style: { top: keepInView ? this.state.top : undefined }
-            },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-              'div',
-              { className: 'block-ui-message' },
-              message,
-              react__WEBPACK_IMPORTED_MODULE_0___default.a.isValidElement(Loader$$1) ? Loader$$1 : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Loader$$1, null)
-            )
-          )
-        ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('span', { ref: this.setHelper })
-      );
-    }
-  }]);
-  return BlockUi;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-BlockUi$1.defaultProps = defaultProps;
-
-/* harmony default export */ __webpack_exports__["default"] = (BlockUi$1);
-//# sourceMappingURL=reactblockui.es.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/react-block-ui/style.css":
-/*!***********************************************!*\
-  !*** ./node_modules/react-block-ui/style.css ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../css-loader??ref--6-1!../postcss-loader/src??ref--6-2!./style.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/react-block-ui/style.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
 
 /***/ }),
 
@@ -73476,6 +68463,746 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var runtime = (function (exports) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  exports.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  exports.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  exports.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  exports.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  exports.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
+    );
+
+    return exports.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  exports.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  exports.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : undefined
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  Function("r", "regeneratorRuntime = r")(runtime);
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/resolve-pathname/esm/resolve-pathname.js":
 /*!***************************************************************!*\
   !*** ./node_modules/resolve-pathname/esm/resolve-pathname.js ***!
@@ -75338,3175 +71065,6 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ "./node_modules/sweetalert2/dist/sweetalert2.all.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/sweetalert2/dist/sweetalert2.all.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*!
-* sweetalert2 v9.14.0
-* Released under the MIT License.
-*/
-(function (global, factory) {
-   true ? module.exports = factory() :
-  undefined;
-}(this, function () { 'use strict';
-
-  function _typeof(obj) {
-    "@babel/helpers - typeof";
-
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      _typeof = function (obj) {
-        return typeof obj;
-      };
-    } else {
-      _typeof = function (obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return _typeof(obj);
-  }
-
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  function _defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  function _createClass(Constructor, protoProps, staticProps) {
-    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) _defineProperties(Constructor, staticProps);
-    return Constructor;
-  }
-
-  function _extends() {
-    _extends = Object.assign || function (target) {
-      for (var i = 1; i < arguments.length; i++) {
-        var source = arguments[i];
-
-        for (var key in source) {
-          if (Object.prototype.hasOwnProperty.call(source, key)) {
-            target[key] = source[key];
-          }
-        }
-      }
-
-      return target;
-    };
-
-    return _extends.apply(this, arguments);
-  }
-
-  function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-      throw new TypeError("Super expression must either be null or a function");
-    }
-
-    subClass.prototype = Object.create(superClass && superClass.prototype, {
-      constructor: {
-        value: subClass,
-        writable: true,
-        configurable: true
-      }
-    });
-    if (superClass) _setPrototypeOf(subClass, superClass);
-  }
-
-  function _getPrototypeOf(o) {
-    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-      return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return _getPrototypeOf(o);
-  }
-
-  function _setPrototypeOf(o, p) {
-    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-      o.__proto__ = p;
-      return o;
-    };
-
-    return _setPrototypeOf(o, p);
-  }
-
-  function _isNativeReflectConstruct() {
-    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
-    if (Reflect.construct.sham) return false;
-    if (typeof Proxy === "function") return true;
-
-    try {
-      Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
-      return true;
-    } catch (e) {
-      return false;
-    }
-  }
-
-  function _construct(Parent, args, Class) {
-    if (_isNativeReflectConstruct()) {
-      _construct = Reflect.construct;
-    } else {
-      _construct = function _construct(Parent, args, Class) {
-        var a = [null];
-        a.push.apply(a, args);
-        var Constructor = Function.bind.apply(Parent, a);
-        var instance = new Constructor();
-        if (Class) _setPrototypeOf(instance, Class.prototype);
-        return instance;
-      };
-    }
-
-    return _construct.apply(null, arguments);
-  }
-
-  function _assertThisInitialized(self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  }
-
-  function _possibleConstructorReturn(self, call) {
-    if (call && (typeof call === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _assertThisInitialized(self);
-  }
-
-  function _createSuper(Derived) {
-    var hasNativeReflectConstruct = _isNativeReflectConstruct();
-
-    return function () {
-      var Super = _getPrototypeOf(Derived),
-          result;
-
-      if (hasNativeReflectConstruct) {
-        var NewTarget = _getPrototypeOf(this).constructor;
-
-        result = Reflect.construct(Super, arguments, NewTarget);
-      } else {
-        result = Super.apply(this, arguments);
-      }
-
-      return _possibleConstructorReturn(this, result);
-    };
-  }
-
-  function _superPropBase(object, property) {
-    while (!Object.prototype.hasOwnProperty.call(object, property)) {
-      object = _getPrototypeOf(object);
-      if (object === null) break;
-    }
-
-    return object;
-  }
-
-  function _get(target, property, receiver) {
-    if (typeof Reflect !== "undefined" && Reflect.get) {
-      _get = Reflect.get;
-    } else {
-      _get = function _get(target, property, receiver) {
-        var base = _superPropBase(target, property);
-
-        if (!base) return;
-        var desc = Object.getOwnPropertyDescriptor(base, property);
-
-        if (desc.get) {
-          return desc.get.call(receiver);
-        }
-
-        return desc.value;
-      };
-    }
-
-    return _get(target, property, receiver || target);
-  }
-
-  var consolePrefix = 'SweetAlert2:';
-  /**
-   * Filter the unique values into a new array
-   * @param arr
-   */
-
-  var uniqueArray = function uniqueArray(arr) {
-    var result = [];
-
-    for (var i = 0; i < arr.length; i++) {
-      if (result.indexOf(arr[i]) === -1) {
-        result.push(arr[i]);
-      }
-    }
-
-    return result;
-  };
-  /**
-   * Capitalize the first letter of a string
-   * @param str
-   */
-
-  var capitalizeFirstLetter = function capitalizeFirstLetter(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  };
-  /**
-   * Returns the array ob object values (Object.values isn't supported in IE11)
-   * @param obj
-   */
-
-  var objectValues = function objectValues(obj) {
-    return Object.keys(obj).map(function (key) {
-      return obj[key];
-    });
-  };
-  /**
-   * Convert NodeList to Array
-   * @param nodeList
-   */
-
-  var toArray = function toArray(nodeList) {
-    return Array.prototype.slice.call(nodeList);
-  };
-  /**
-   * Standardise console warnings
-   * @param message
-   */
-
-  var warn = function warn(message) {
-    console.warn("".concat(consolePrefix, " ").concat(message));
-  };
-  /**
-   * Standardise console errors
-   * @param message
-   */
-
-  var error = function error(message) {
-    console.error("".concat(consolePrefix, " ").concat(message));
-  };
-  /**
-   * Private global state for `warnOnce`
-   * @type {Array}
-   * @private
-   */
-
-  var previousWarnOnceMessages = [];
-  /**
-   * Show a console warning, but only if it hasn't already been shown
-   * @param message
-   */
-
-  var warnOnce = function warnOnce(message) {
-    if (!(previousWarnOnceMessages.indexOf(message) !== -1)) {
-      previousWarnOnceMessages.push(message);
-      warn(message);
-    }
-  };
-  /**
-   * Show a one-time console warning about deprecated params/methods
-   */
-
-  var warnAboutDepreation = function warnAboutDepreation(deprecatedParam, useInstead) {
-    warnOnce("\"".concat(deprecatedParam, "\" is deprecated and will be removed in the next major release. Please use \"").concat(useInstead, "\" instead."));
-  };
-  /**
-   * If `arg` is a function, call it (with no arguments or context) and return the result.
-   * Otherwise, just pass the value through
-   * @param arg
-   */
-
-  var callIfFunction = function callIfFunction(arg) {
-    return typeof arg === 'function' ? arg() : arg;
-  };
-  var isPromise = function isPromise(arg) {
-    return arg && Promise.resolve(arg) === arg;
-  };
-
-  var DismissReason = Object.freeze({
-    cancel: 'cancel',
-    backdrop: 'backdrop',
-    close: 'close',
-    esc: 'esc',
-    timer: 'timer'
-  });
-
-  var isJqueryElement = function isJqueryElement(elem) {
-    return _typeof(elem) === 'object' && elem.jquery;
-  };
-
-  var isElement = function isElement(elem) {
-    return elem instanceof Element || isJqueryElement(elem);
-  };
-
-  var argsToParams = function argsToParams(args) {
-    var params = {};
-
-    if (_typeof(args[0]) === 'object' && !isElement(args[0])) {
-      _extends(params, args[0]);
-    } else {
-      ['title', 'html', 'icon'].forEach(function (name, index) {
-        var arg = args[index];
-
-        if (typeof arg === 'string' || isElement(arg)) {
-          params[name] = arg;
-        } else if (arg !== undefined) {
-          error("Unexpected type of ".concat(name, "! Expected \"string\" or \"Element\", got ").concat(_typeof(arg)));
-        }
-      });
-    }
-
-    return params;
-  };
-
-  var swalPrefix = 'swal2-';
-  var prefix = function prefix(items) {
-    var result = {};
-
-    for (var i in items) {
-      result[items[i]] = swalPrefix + items[i];
-    }
-
-    return result;
-  };
-  var swalClasses = prefix(['container', 'shown', 'height-auto', 'iosfix', 'popup', 'modal', 'no-backdrop', 'no-transition', 'toast', 'toast-shown', 'toast-column', 'show', 'hide', 'close', 'title', 'header', 'content', 'html-container', 'actions', 'confirm', 'cancel', 'footer', 'icon', 'icon-content', 'image', 'input', 'file', 'range', 'select', 'radio', 'checkbox', 'label', 'textarea', 'inputerror', 'validation-message', 'progress-steps', 'active-progress-step', 'progress-step', 'progress-step-line', 'loading', 'styled', 'top', 'top-start', 'top-end', 'top-left', 'top-right', 'center', 'center-start', 'center-end', 'center-left', 'center-right', 'bottom', 'bottom-start', 'bottom-end', 'bottom-left', 'bottom-right', 'grow-row', 'grow-column', 'grow-fullscreen', 'rtl', 'timer-progress-bar', 'timer-progress-bar-container', 'scrollbar-measure', 'icon-success', 'icon-warning', 'icon-info', 'icon-question', 'icon-error']);
-  var iconTypes = prefix(['success', 'warning', 'info', 'question', 'error']);
-
-  var getContainer = function getContainer() {
-    return document.body.querySelector(".".concat(swalClasses.container));
-  };
-  var elementBySelector = function elementBySelector(selectorString) {
-    var container = getContainer();
-    return container ? container.querySelector(selectorString) : null;
-  };
-
-  var elementByClass = function elementByClass(className) {
-    return elementBySelector(".".concat(className));
-  };
-
-  var getPopup = function getPopup() {
-    return elementByClass(swalClasses.popup);
-  };
-  var getIcons = function getIcons() {
-    var popup = getPopup();
-    return toArray(popup.querySelectorAll(".".concat(swalClasses.icon)));
-  };
-  var getIcon = function getIcon() {
-    var visibleIcon = getIcons().filter(function (icon) {
-      return isVisible(icon);
-    });
-    return visibleIcon.length ? visibleIcon[0] : null;
-  };
-  var getTitle = function getTitle() {
-    return elementByClass(swalClasses.title);
-  };
-  var getContent = function getContent() {
-    return elementByClass(swalClasses.content);
-  };
-  var getHtmlContainer = function getHtmlContainer() {
-    return elementByClass(swalClasses['html-container']);
-  };
-  var getImage = function getImage() {
-    return elementByClass(swalClasses.image);
-  };
-  var getProgressSteps = function getProgressSteps() {
-    return elementByClass(swalClasses['progress-steps']);
-  };
-  var getValidationMessage = function getValidationMessage() {
-    return elementByClass(swalClasses['validation-message']);
-  };
-  var getConfirmButton = function getConfirmButton() {
-    return elementBySelector(".".concat(swalClasses.actions, " .").concat(swalClasses.confirm));
-  };
-  var getCancelButton = function getCancelButton() {
-    return elementBySelector(".".concat(swalClasses.actions, " .").concat(swalClasses.cancel));
-  };
-  var getActions = function getActions() {
-    return elementByClass(swalClasses.actions);
-  };
-  var getHeader = function getHeader() {
-    return elementByClass(swalClasses.header);
-  };
-  var getFooter = function getFooter() {
-    return elementByClass(swalClasses.footer);
-  };
-  var getTimerProgressBar = function getTimerProgressBar() {
-    return elementByClass(swalClasses['timer-progress-bar']);
-  };
-  var getCloseButton = function getCloseButton() {
-    return elementByClass(swalClasses.close);
-  }; // https://github.com/jkup/focusable/blob/master/index.js
-
-  var focusable = "\n  a[href],\n  area[href],\n  input:not([disabled]),\n  select:not([disabled]),\n  textarea:not([disabled]),\n  button:not([disabled]),\n  iframe,\n  object,\n  embed,\n  [tabindex=\"0\"],\n  [contenteditable],\n  audio[controls],\n  video[controls],\n  summary\n";
-  var getFocusableElements = function getFocusableElements() {
-    var focusableElementsWithTabindex = toArray(getPopup().querySelectorAll('[tabindex]:not([tabindex="-1"]):not([tabindex="0"])')) // sort according to tabindex
-    .sort(function (a, b) {
-      a = parseInt(a.getAttribute('tabindex'));
-      b = parseInt(b.getAttribute('tabindex'));
-
-      if (a > b) {
-        return 1;
-      } else if (a < b) {
-        return -1;
-      }
-
-      return 0;
-    });
-    var otherFocusableElements = toArray(getPopup().querySelectorAll(focusable)).filter(function (el) {
-      return el.getAttribute('tabindex') !== '-1';
-    });
-    return uniqueArray(focusableElementsWithTabindex.concat(otherFocusableElements)).filter(function (el) {
-      return isVisible(el);
-    });
-  };
-  var isModal = function isModal() {
-    return !isToast() && !document.body.classList.contains(swalClasses['no-backdrop']);
-  };
-  var isToast = function isToast() {
-    return document.body.classList.contains(swalClasses['toast-shown']);
-  };
-  var isLoading = function isLoading() {
-    return getPopup().hasAttribute('data-loading');
-  };
-
-  var states = {
-    previousBodyPadding: null
-  };
-  var setInnerHtml = function setInnerHtml(elem, html) {
-    // #1926
-    elem.textContent = '';
-
-    if (html) {
-      var parser = new DOMParser();
-      var parsed = parser.parseFromString(html, "text/html");
-      toArray(parsed.querySelector('head').childNodes).forEach(function (child) {
-        elem.appendChild(child);
-      });
-      toArray(parsed.querySelector('body').childNodes).forEach(function (child) {
-        elem.appendChild(child);
-      });
-    }
-  };
-  var hasClass = function hasClass(elem, className) {
-    if (!className) {
-      return false;
-    }
-
-    var classList = className.split(/\s+/);
-
-    for (var i = 0; i < classList.length; i++) {
-      if (!elem.classList.contains(classList[i])) {
-        return false;
-      }
-    }
-
-    return true;
-  };
-
-  var removeCustomClasses = function removeCustomClasses(elem, params) {
-    toArray(elem.classList).forEach(function (className) {
-      if (!(objectValues(swalClasses).indexOf(className) !== -1) && !(objectValues(iconTypes).indexOf(className) !== -1) && !(objectValues(params.showClass).indexOf(className) !== -1)) {
-        elem.classList.remove(className);
-      }
-    });
-  };
-
-  var applyCustomClass = function applyCustomClass(elem, params, className) {
-    removeCustomClasses(elem, params);
-
-    if (params.customClass && params.customClass[className]) {
-      if (typeof params.customClass[className] !== 'string' && !params.customClass[className].forEach) {
-        return warn("Invalid type of customClass.".concat(className, "! Expected string or iterable object, got \"").concat(_typeof(params.customClass[className]), "\""));
-      }
-
-      addClass(elem, params.customClass[className]);
-    }
-  };
-  function getInput(content, inputType) {
-    if (!inputType) {
-      return null;
-    }
-
-    switch (inputType) {
-      case 'select':
-      case 'textarea':
-      case 'file':
-        return getChildByClass(content, swalClasses[inputType]);
-
-      case 'checkbox':
-        return content.querySelector(".".concat(swalClasses.checkbox, " input"));
-
-      case 'radio':
-        return content.querySelector(".".concat(swalClasses.radio, " input:checked")) || content.querySelector(".".concat(swalClasses.radio, " input:first-child"));
-
-      case 'range':
-        return content.querySelector(".".concat(swalClasses.range, " input"));
-
-      default:
-        return getChildByClass(content, swalClasses.input);
-    }
-  }
-  var focusInput = function focusInput(input) {
-    input.focus(); // place cursor at end of text in text input
-
-    if (input.type !== 'file') {
-      // http://stackoverflow.com/a/2345915
-      var val = input.value;
-      input.value = '';
-      input.value = val;
-    }
-  };
-  var toggleClass = function toggleClass(target, classList, condition) {
-    if (!target || !classList) {
-      return;
-    }
-
-    if (typeof classList === 'string') {
-      classList = classList.split(/\s+/).filter(Boolean);
-    }
-
-    classList.forEach(function (className) {
-      if (target.forEach) {
-        target.forEach(function (elem) {
-          condition ? elem.classList.add(className) : elem.classList.remove(className);
-        });
-      } else {
-        condition ? target.classList.add(className) : target.classList.remove(className);
-      }
-    });
-  };
-  var addClass = function addClass(target, classList) {
-    toggleClass(target, classList, true);
-  };
-  var removeClass = function removeClass(target, classList) {
-    toggleClass(target, classList, false);
-  };
-  var getChildByClass = function getChildByClass(elem, className) {
-    for (var i = 0; i < elem.childNodes.length; i++) {
-      if (hasClass(elem.childNodes[i], className)) {
-        return elem.childNodes[i];
-      }
-    }
-  };
-  var applyNumericalStyle = function applyNumericalStyle(elem, property, value) {
-    if (value || parseInt(value) === 0) {
-      elem.style[property] = typeof value === 'number' ? "".concat(value, "px") : value;
-    } else {
-      elem.style.removeProperty(property);
-    }
-  };
-  var show = function show(elem) {
-    var display = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'flex';
-    elem.style.opacity = '';
-    elem.style.display = display;
-  };
-  var hide = function hide(elem) {
-    elem.style.opacity = '';
-    elem.style.display = 'none';
-  };
-  var toggle = function toggle(elem, condition, display) {
-    condition ? show(elem, display) : hide(elem);
-  }; // borrowed from jquery $(elem).is(':visible') implementation
-
-  var isVisible = function isVisible(elem) {
-    return !!(elem && (elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length));
-  };
-  /* istanbul ignore next */
-
-  var isScrollable = function isScrollable(elem) {
-    return !!(elem.scrollHeight > elem.clientHeight);
-  }; // borrowed from https://stackoverflow.com/a/46352119
-
-  var hasCssAnimation = function hasCssAnimation(elem) {
-    var style = window.getComputedStyle(elem);
-    var animDuration = parseFloat(style.getPropertyValue('animation-duration') || '0');
-    var transDuration = parseFloat(style.getPropertyValue('transition-duration') || '0');
-    return animDuration > 0 || transDuration > 0;
-  };
-  var contains = function contains(haystack, needle) {
-    if (typeof haystack.contains === 'function') {
-      return haystack.contains(needle);
-    }
-  };
-  var animateTimerProgressBar = function animateTimerProgressBar(timer) {
-    var reset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    var timerProgressBar = getTimerProgressBar();
-
-    if (isVisible(timerProgressBar)) {
-      if (reset) {
-        timerProgressBar.style.transition = 'none';
-        timerProgressBar.style.width = '100%';
-      }
-
-      setTimeout(function () {
-        timerProgressBar.style.transition = "width ".concat(timer / 1000, "s linear");
-        timerProgressBar.style.width = '0%';
-      }, 10);
-    }
-  };
-  var stopTimerProgressBar = function stopTimerProgressBar() {
-    var timerProgressBar = getTimerProgressBar();
-    var timerProgressBarWidth = parseInt(window.getComputedStyle(timerProgressBar).width);
-    timerProgressBar.style.removeProperty('transition');
-    timerProgressBar.style.width = '100%';
-    var timerProgressBarFullWidth = parseInt(window.getComputedStyle(timerProgressBar).width);
-    var timerProgressBarPercent = parseInt(timerProgressBarWidth / timerProgressBarFullWidth * 100);
-    timerProgressBar.style.removeProperty('transition');
-    timerProgressBar.style.width = "".concat(timerProgressBarPercent, "%");
-  };
-
-  // Detect Node env
-  var isNodeEnv = function isNodeEnv() {
-    return typeof window === 'undefined' || typeof document === 'undefined';
-  };
-
-  var sweetHTML = "\n <div aria-labelledby=\"".concat(swalClasses.title, "\" aria-describedby=\"").concat(swalClasses.content, "\" class=\"").concat(swalClasses.popup, "\" tabindex=\"-1\">\n   <div class=\"").concat(swalClasses.header, "\">\n     <ul class=\"").concat(swalClasses['progress-steps'], "\"></ul>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.error, "\"></div>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.question, "\"></div>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.warning, "\"></div>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.info, "\"></div>\n     <div class=\"").concat(swalClasses.icon, " ").concat(iconTypes.success, "\"></div>\n     <img class=\"").concat(swalClasses.image, "\" />\n     <h2 class=\"").concat(swalClasses.title, "\" id=\"").concat(swalClasses.title, "\"></h2>\n     <button type=\"button\" class=\"").concat(swalClasses.close, "\"></button>\n   </div>\n   <div class=\"").concat(swalClasses.content, "\">\n     <div id=\"").concat(swalClasses.content, "\" class=\"").concat(swalClasses['html-container'], "\"></div>\n     <input class=\"").concat(swalClasses.input, "\" />\n     <input type=\"file\" class=\"").concat(swalClasses.file, "\" />\n     <div class=\"").concat(swalClasses.range, "\">\n       <input type=\"range\" />\n       <output></output>\n     </div>\n     <select class=\"").concat(swalClasses.select, "\"></select>\n     <div class=\"").concat(swalClasses.radio, "\"></div>\n     <label for=\"").concat(swalClasses.checkbox, "\" class=\"").concat(swalClasses.checkbox, "\">\n       <input type=\"checkbox\" />\n       <span class=\"").concat(swalClasses.label, "\"></span>\n     </label>\n     <textarea class=\"").concat(swalClasses.textarea, "\"></textarea>\n     <div class=\"").concat(swalClasses['validation-message'], "\" id=\"").concat(swalClasses['validation-message'], "\"></div>\n   </div>\n   <div class=\"").concat(swalClasses.actions, "\">\n     <button type=\"button\" class=\"").concat(swalClasses.confirm, "\">OK</button>\n     <button type=\"button\" class=\"").concat(swalClasses.cancel, "\">Cancel</button>\n   </div>\n   <div class=\"").concat(swalClasses.footer, "\"></div>\n   <div class=\"").concat(swalClasses['timer-progress-bar-container'], "\">\n     <div class=\"").concat(swalClasses['timer-progress-bar'], "\"></div>\n   </div>\n </div>\n").replace(/(^|\n)\s*/g, '');
-
-  var resetOldContainer = function resetOldContainer() {
-    var oldContainer = getContainer();
-
-    if (!oldContainer) {
-      return false;
-    }
-
-    oldContainer.parentNode.removeChild(oldContainer);
-    removeClass([document.documentElement, document.body], [swalClasses['no-backdrop'], swalClasses['toast-shown'], swalClasses['has-column']]);
-    return true;
-  };
-
-  var oldInputVal; // IE11 workaround, see #1109 for details
-
-  var resetValidationMessage = function resetValidationMessage(e) {
-    if (Swal.isVisible() && oldInputVal !== e.target.value) {
-      Swal.resetValidationMessage();
-    }
-
-    oldInputVal = e.target.value;
-  };
-
-  var addInputChangeListeners = function addInputChangeListeners() {
-    var content = getContent();
-    var input = getChildByClass(content, swalClasses.input);
-    var file = getChildByClass(content, swalClasses.file);
-    var range = content.querySelector(".".concat(swalClasses.range, " input"));
-    var rangeOutput = content.querySelector(".".concat(swalClasses.range, " output"));
-    var select = getChildByClass(content, swalClasses.select);
-    var checkbox = content.querySelector(".".concat(swalClasses.checkbox, " input"));
-    var textarea = getChildByClass(content, swalClasses.textarea);
-    input.oninput = resetValidationMessage;
-    file.onchange = resetValidationMessage;
-    select.onchange = resetValidationMessage;
-    checkbox.onchange = resetValidationMessage;
-    textarea.oninput = resetValidationMessage;
-
-    range.oninput = function (e) {
-      resetValidationMessage(e);
-      rangeOutput.value = range.value;
-    };
-
-    range.onchange = function (e) {
-      resetValidationMessage(e);
-      range.nextSibling.value = range.value;
-    };
-  };
-
-  var getTarget = function getTarget(target) {
-    return typeof target === 'string' ? document.querySelector(target) : target;
-  };
-
-  var setupAccessibility = function setupAccessibility(params) {
-    var popup = getPopup();
-    popup.setAttribute('role', params.toast ? 'alert' : 'dialog');
-    popup.setAttribute('aria-live', params.toast ? 'polite' : 'assertive');
-
-    if (!params.toast) {
-      popup.setAttribute('aria-modal', 'true');
-    }
-  };
-
-  var setupRTL = function setupRTL(targetElement) {
-    if (window.getComputedStyle(targetElement).direction === 'rtl') {
-      addClass(getContainer(), swalClasses.rtl);
-    }
-  };
-  /*
-   * Add modal + backdrop to DOM
-   */
-
-
-  var init = function init(params) {
-    // Clean up the old popup container if it exists
-    var oldContainerExisted = resetOldContainer();
-    /* istanbul ignore if */
-
-    if (isNodeEnv()) {
-      error('SweetAlert2 requires document to initialize');
-      return;
-    }
-
-    var container = document.createElement('div');
-    container.className = swalClasses.container;
-
-    if (oldContainerExisted) {
-      addClass(container, swalClasses['no-transition']);
-    }
-
-    setInnerHtml(container, sweetHTML);
-    var targetElement = getTarget(params.target);
-    targetElement.appendChild(container);
-    setupAccessibility(params);
-    setupRTL(targetElement);
-    addInputChangeListeners();
-  };
-
-  var parseHtmlToContainer = function parseHtmlToContainer(param, target) {
-    // DOM element
-    if (param instanceof HTMLElement) {
-      target.appendChild(param); // Object
-    } else if (_typeof(param) === 'object') {
-      handleObject(param, target); // Plain string
-    } else if (param) {
-      setInnerHtml(target, param);
-    }
-  };
-
-  var handleObject = function handleObject(param, target) {
-    // JQuery element(s)
-    if (param.jquery) {
-      handleJqueryElem(target, param); // For other objects use their string representation
-    } else {
-      setInnerHtml(target, param.toString());
-    }
-  };
-
-  var handleJqueryElem = function handleJqueryElem(target, elem) {
-    target.textContent = '';
-
-    if (0 in elem) {
-      for (var i = 0; (i in elem); i++) {
-        target.appendChild(elem[i].cloneNode(true));
-      }
-    } else {
-      target.appendChild(elem.cloneNode(true));
-    }
-  };
-
-  var animationEndEvent = function () {
-    // Prevent run in Node env
-
-    /* istanbul ignore if */
-    if (isNodeEnv()) {
-      return false;
-    }
-
-    var testEl = document.createElement('div');
-    var transEndEventNames = {
-      WebkitAnimation: 'webkitAnimationEnd',
-      OAnimation: 'oAnimationEnd oanimationend',
-      animation: 'animationend'
-    };
-
-    for (var i in transEndEventNames) {
-      if (Object.prototype.hasOwnProperty.call(transEndEventNames, i) && typeof testEl.style[i] !== 'undefined') {
-        return transEndEventNames[i];
-      }
-    }
-
-    return false;
-  }();
-
-  // https://github.com/twbs/bootstrap/blob/master/js/src/modal.js
-
-  var measureScrollbar = function measureScrollbar() {
-    var scrollDiv = document.createElement('div');
-    scrollDiv.className = swalClasses['scrollbar-measure'];
-    document.body.appendChild(scrollDiv);
-    var scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth;
-    document.body.removeChild(scrollDiv);
-    return scrollbarWidth;
-  };
-
-  var renderActions = function renderActions(instance, params) {
-    var actions = getActions();
-    var confirmButton = getConfirmButton();
-    var cancelButton = getCancelButton(); // Actions (buttons) wrapper
-
-    if (!params.showConfirmButton && !params.showCancelButton) {
-      hide(actions);
-    } // Custom class
-
-
-    applyCustomClass(actions, params, 'actions'); // Render confirm button
-
-    renderButton(confirmButton, 'confirm', params); // render Cancel Button
-
-    renderButton(cancelButton, 'cancel', params);
-
-    if (params.buttonsStyling) {
-      handleButtonsStyling(confirmButton, cancelButton, params);
-    } else {
-      removeClass([confirmButton, cancelButton], swalClasses.styled);
-      confirmButton.style.backgroundColor = confirmButton.style.borderLeftColor = confirmButton.style.borderRightColor = '';
-      cancelButton.style.backgroundColor = cancelButton.style.borderLeftColor = cancelButton.style.borderRightColor = '';
-    }
-
-    if (params.reverseButtons) {
-      confirmButton.parentNode.insertBefore(cancelButton, confirmButton);
-    }
-  };
-
-  function handleButtonsStyling(confirmButton, cancelButton, params) {
-    addClass([confirmButton, cancelButton], swalClasses.styled); // Buttons background colors
-
-    if (params.confirmButtonColor) {
-      confirmButton.style.backgroundColor = params.confirmButtonColor;
-    }
-
-    if (params.cancelButtonColor) {
-      cancelButton.style.backgroundColor = params.cancelButtonColor;
-    } // Loading state
-
-
-    if (!isLoading()) {
-      var confirmButtonBackgroundColor = window.getComputedStyle(confirmButton).getPropertyValue('background-color');
-      confirmButton.style.borderLeftColor = confirmButtonBackgroundColor;
-      confirmButton.style.borderRightColor = confirmButtonBackgroundColor;
-    }
-  }
-
-  function renderButton(button, buttonType, params) {
-    toggle(button, params["show".concat(capitalizeFirstLetter(buttonType), "Button")], 'inline-block');
-    setInnerHtml(button, params["".concat(buttonType, "ButtonText")]); // Set caption text
-
-    button.setAttribute('aria-label', params["".concat(buttonType, "ButtonAriaLabel")]); // ARIA label
-    // Add buttons custom classes
-
-    button.className = swalClasses[buttonType];
-    applyCustomClass(button, params, "".concat(buttonType, "Button"));
-    addClass(button, params["".concat(buttonType, "ButtonClass")]);
-  }
-
-  function handleBackdropParam(container, backdrop) {
-    if (typeof backdrop === 'string') {
-      container.style.background = backdrop;
-    } else if (!backdrop) {
-      addClass([document.documentElement, document.body], swalClasses['no-backdrop']);
-    }
-  }
-
-  function handlePositionParam(container, position) {
-    if (position in swalClasses) {
-      addClass(container, swalClasses[position]);
-    } else {
-      warn('The "position" parameter is not valid, defaulting to "center"');
-      addClass(container, swalClasses.center);
-    }
-  }
-
-  function handleGrowParam(container, grow) {
-    if (grow && typeof grow === 'string') {
-      var growClass = "grow-".concat(grow);
-
-      if (growClass in swalClasses) {
-        addClass(container, swalClasses[growClass]);
-      }
-    }
-  }
-
-  var renderContainer = function renderContainer(instance, params) {
-    var container = getContainer();
-
-    if (!container) {
-      return;
-    }
-
-    handleBackdropParam(container, params.backdrop);
-
-    if (!params.backdrop && params.allowOutsideClick) {
-      warn('"allowOutsideClick" parameter requires `backdrop` parameter to be set to `true`');
-    }
-
-    handlePositionParam(container, params.position);
-    handleGrowParam(container, params.grow); // Custom class
-
-    applyCustomClass(container, params, 'container'); // Set queue step attribute for getQueueStep() method
-
-    var queueStep = document.body.getAttribute('data-swal2-queue-step');
-
-    if (queueStep) {
-      container.setAttribute('data-queue-step', queueStep);
-      document.body.removeAttribute('data-swal2-queue-step');
-    }
-  };
-
-  /**
-   * This module containts `WeakMap`s for each effectively-"private  property" that a `Swal` has.
-   * For example, to set the private property "foo" of `this` to "bar", you can `privateProps.foo.set(this, 'bar')`
-   * This is the approach that Babel will probably take to implement private methods/fields
-   *   https://github.com/tc39/proposal-private-methods
-   *   https://github.com/babel/babel/pull/7555
-   * Once we have the changes from that PR in Babel, and our core class fits reasonable in *one module*
-   *   then we can use that language feature.
-   */
-  var privateProps = {
-    promise: new WeakMap(),
-    innerParams: new WeakMap(),
-    domCache: new WeakMap()
-  };
-
-  var inputTypes = ['input', 'file', 'range', 'select', 'radio', 'checkbox', 'textarea'];
-  var renderInput = function renderInput(instance, params) {
-    var content = getContent();
-    var innerParams = privateProps.innerParams.get(instance);
-    var rerender = !innerParams || params.input !== innerParams.input;
-    inputTypes.forEach(function (inputType) {
-      var inputClass = swalClasses[inputType];
-      var inputContainer = getChildByClass(content, inputClass); // set attributes
-
-      setAttributes(inputType, params.inputAttributes); // set class
-
-      inputContainer.className = inputClass;
-
-      if (rerender) {
-        hide(inputContainer);
-      }
-    });
-
-    if (params.input) {
-      if (rerender) {
-        showInput(params);
-      } // set custom class
-
-
-      setCustomClass(params);
-    }
-  };
-
-  var showInput = function showInput(params) {
-    if (!renderInputType[params.input]) {
-      return error("Unexpected type of input! Expected \"text\", \"email\", \"password\", \"number\", \"tel\", \"select\", \"radio\", \"checkbox\", \"textarea\", \"file\" or \"url\", got \"".concat(params.input, "\""));
-    }
-
-    var inputContainer = getInputContainer(params.input);
-    var input = renderInputType[params.input](inputContainer, params);
-    show(input); // input autofocus
-
-    setTimeout(function () {
-      focusInput(input);
-    });
-  };
-
-  var removeAttributes = function removeAttributes(input) {
-    for (var i = 0; i < input.attributes.length; i++) {
-      var attrName = input.attributes[i].name;
-
-      if (!(['type', 'value', 'style'].indexOf(attrName) !== -1)) {
-        input.removeAttribute(attrName);
-      }
-    }
-  };
-
-  var setAttributes = function setAttributes(inputType, inputAttributes) {
-    var input = getInput(getContent(), inputType);
-
-    if (!input) {
-      return;
-    }
-
-    removeAttributes(input);
-
-    for (var attr in inputAttributes) {
-      // Do not set a placeholder for <input type="range">
-      // it'll crash Edge, #1298
-      if (inputType === 'range' && attr === 'placeholder') {
-        continue;
-      }
-
-      input.setAttribute(attr, inputAttributes[attr]);
-    }
-  };
-
-  var setCustomClass = function setCustomClass(params) {
-    var inputContainer = getInputContainer(params.input);
-
-    if (params.customClass) {
-      addClass(inputContainer, params.customClass.input);
-    }
-  };
-
-  var setInputPlaceholder = function setInputPlaceholder(input, params) {
-    if (!input.placeholder || params.inputPlaceholder) {
-      input.placeholder = params.inputPlaceholder;
-    }
-  };
-
-  var getInputContainer = function getInputContainer(inputType) {
-    var inputClass = swalClasses[inputType] ? swalClasses[inputType] : swalClasses.input;
-    return getChildByClass(getContent(), inputClass);
-  };
-
-  var renderInputType = {};
-
-  renderInputType.text = renderInputType.email = renderInputType.password = renderInputType.number = renderInputType.tel = renderInputType.url = function (input, params) {
-    if (typeof params.inputValue === 'string' || typeof params.inputValue === 'number') {
-      input.value = params.inputValue;
-    } else if (!isPromise(params.inputValue)) {
-      warn("Unexpected type of inputValue! Expected \"string\", \"number\" or \"Promise\", got \"".concat(_typeof(params.inputValue), "\""));
-    }
-
-    setInputPlaceholder(input, params);
-    input.type = params.input;
-    return input;
-  };
-
-  renderInputType.file = function (input, params) {
-    setInputPlaceholder(input, params);
-    return input;
-  };
-
-  renderInputType.range = function (range, params) {
-    var rangeInput = range.querySelector('input');
-    var rangeOutput = range.querySelector('output');
-    rangeInput.value = params.inputValue;
-    rangeInput.type = params.input;
-    rangeOutput.value = params.inputValue;
-    return range;
-  };
-
-  renderInputType.select = function (select, params) {
-    select.textContent = '';
-
-    if (params.inputPlaceholder) {
-      var placeholder = document.createElement('option');
-      setInnerHtml(placeholder, params.inputPlaceholder);
-      placeholder.value = '';
-      placeholder.disabled = true;
-      placeholder.selected = true;
-      select.appendChild(placeholder);
-    }
-
-    return select;
-  };
-
-  renderInputType.radio = function (radio) {
-    radio.textContent = '';
-    return radio;
-  };
-
-  renderInputType.checkbox = function (checkboxContainer, params) {
-    var checkbox = getInput(getContent(), 'checkbox');
-    checkbox.value = 1;
-    checkbox.id = swalClasses.checkbox;
-    checkbox.checked = Boolean(params.inputValue);
-    var label = checkboxContainer.querySelector('span');
-    setInnerHtml(label, params.inputPlaceholder);
-    return checkboxContainer;
-  };
-
-  renderInputType.textarea = function (textarea, params) {
-    textarea.value = params.inputValue;
-    setInputPlaceholder(textarea, params);
-
-    if ('MutationObserver' in window) {
-      // #1699
-      var initialPopupWidth = parseInt(window.getComputedStyle(getPopup()).width);
-      var popupPadding = parseInt(window.getComputedStyle(getPopup()).paddingLeft) + parseInt(window.getComputedStyle(getPopup()).paddingRight);
-
-      var outputsize = function outputsize() {
-        var contentWidth = textarea.offsetWidth + popupPadding;
-
-        if (contentWidth > initialPopupWidth) {
-          getPopup().style.width = "".concat(contentWidth, "px");
-        } else {
-          getPopup().style.width = null;
-        }
-      };
-
-      new MutationObserver(outputsize).observe(textarea, {
-        attributes: true,
-        attributeFilter: ['style']
-      });
-    }
-
-    return textarea;
-  };
-
-  var renderContent = function renderContent(instance, params) {
-    var content = getContent().querySelector("#".concat(swalClasses.content)); // Content as HTML
-
-    if (params.html) {
-      parseHtmlToContainer(params.html, content);
-      show(content, 'block'); // Content as plain text
-    } else if (params.text) {
-      content.textContent = params.text;
-      show(content, 'block'); // No content
-    } else {
-      hide(content);
-    }
-
-    renderInput(instance, params); // Custom class
-
-    applyCustomClass(getContent(), params, 'content');
-  };
-
-  var renderFooter = function renderFooter(instance, params) {
-    var footer = getFooter();
-    toggle(footer, params.footer);
-
-    if (params.footer) {
-      parseHtmlToContainer(params.footer, footer);
-    } // Custom class
-
-
-    applyCustomClass(footer, params, 'footer');
-  };
-
-  var renderCloseButton = function renderCloseButton(instance, params) {
-    var closeButton = getCloseButton();
-    setInnerHtml(closeButton, params.closeButtonHtml); // Custom class
-
-    applyCustomClass(closeButton, params, 'closeButton');
-    toggle(closeButton, params.showCloseButton);
-    closeButton.setAttribute('aria-label', params.closeButtonAriaLabel);
-  };
-
-  var renderIcon = function renderIcon(instance, params) {
-    var innerParams = privateProps.innerParams.get(instance); // if the give icon already rendered, apply the custom class without re-rendering the icon
-
-    if (innerParams && params.icon === innerParams.icon && getIcon()) {
-      applyCustomClass(getIcon(), params, 'icon');
-      return;
-    }
-
-    hideAllIcons();
-
-    if (!params.icon) {
-      return;
-    }
-
-    if (Object.keys(iconTypes).indexOf(params.icon) !== -1) {
-      var icon = elementBySelector(".".concat(swalClasses.icon, ".").concat(iconTypes[params.icon]));
-      show(icon); // Custom or default content
-
-      setContent(icon, params);
-      adjustSuccessIconBackgoundColor(); // Custom class
-
-      applyCustomClass(icon, params, 'icon'); // Animate icon
-
-      addClass(icon, params.showClass.icon);
-    } else {
-      error("Unknown icon! Expected \"success\", \"error\", \"warning\", \"info\" or \"question\", got \"".concat(params.icon, "\""));
-    }
-  };
-
-  var hideAllIcons = function hideAllIcons() {
-    var icons = getIcons();
-
-    for (var i = 0; i < icons.length; i++) {
-      hide(icons[i]);
-    }
-  }; // Adjust success icon background color to match the popup background color
-
-
-  var adjustSuccessIconBackgoundColor = function adjustSuccessIconBackgoundColor() {
-    var popup = getPopup();
-    var popupBackgroundColor = window.getComputedStyle(popup).getPropertyValue('background-color');
-    var successIconParts = popup.querySelectorAll('[class^=swal2-success-circular-line], .swal2-success-fix');
-
-    for (var i = 0; i < successIconParts.length; i++) {
-      successIconParts[i].style.backgroundColor = popupBackgroundColor;
-    }
-  };
-
-  var setContent = function setContent(icon, params) {
-    icon.textContent = '';
-
-    if (params.iconHtml) {
-      setInnerHtml(icon, iconContent(params.iconHtml));
-    } else if (params.icon === 'success') {
-      setInnerHtml(icon, "\n      <div class=\"swal2-success-circular-line-left\"></div>\n      <span class=\"swal2-success-line-tip\"></span> <span class=\"swal2-success-line-long\"></span>\n      <div class=\"swal2-success-ring\"></div> <div class=\"swal2-success-fix\"></div>\n      <div class=\"swal2-success-circular-line-right\"></div>\n    ");
-    } else if (params.icon === 'error') {
-      setInnerHtml(icon, "\n      <span class=\"swal2-x-mark\">\n        <span class=\"swal2-x-mark-line-left\"></span>\n        <span class=\"swal2-x-mark-line-right\"></span>\n      </span>\n    ");
-    } else {
-      var defaultIconHtml = {
-        question: '?',
-        warning: '!',
-        info: 'i'
-      };
-      setInnerHtml(icon, iconContent(defaultIconHtml[params.icon]));
-    }
-  };
-
-  var iconContent = function iconContent(content) {
-    return "<div class=\"".concat(swalClasses['icon-content'], "\">").concat(content, "</div>");
-  };
-
-  var renderImage = function renderImage(instance, params) {
-    var image = getImage();
-
-    if (!params.imageUrl) {
-      return hide(image);
-    }
-
-    show(image, ''); // Src, alt
-
-    image.setAttribute('src', params.imageUrl);
-    image.setAttribute('alt', params.imageAlt); // Width, height
-
-    applyNumericalStyle(image, 'width', params.imageWidth);
-    applyNumericalStyle(image, 'height', params.imageHeight); // Class
-
-    image.className = swalClasses.image;
-    applyCustomClass(image, params, 'image');
-  };
-
-  var currentSteps = [];
-  /*
-   * Global function for chaining sweetAlert popups
-   */
-
-  var queue = function queue(steps) {
-    var Swal = this;
-    currentSteps = steps;
-
-    var resetAndResolve = function resetAndResolve(resolve, value) {
-      currentSteps = [];
-      resolve(value);
-    };
-
-    var queueResult = [];
-    return new Promise(function (resolve) {
-      (function step(i, callback) {
-        if (i < currentSteps.length) {
-          document.body.setAttribute('data-swal2-queue-step', i);
-          Swal.fire(currentSteps[i]).then(function (result) {
-            if (typeof result.value !== 'undefined') {
-              queueResult.push(result.value);
-              step(i + 1, callback);
-            } else {
-              resetAndResolve(resolve, {
-                dismiss: result.dismiss
-              });
-            }
-          });
-        } else {
-          resetAndResolve(resolve, {
-            value: queueResult
-          });
-        }
-      })(0);
-    });
-  };
-  /*
-   * Global function for getting the index of current popup in queue
-   */
-
-  var getQueueStep = function getQueueStep() {
-    return getContainer() && getContainer().getAttribute('data-queue-step');
-  };
-  /*
-   * Global function for inserting a popup to the queue
-   */
-
-  var insertQueueStep = function insertQueueStep(step, index) {
-    if (index && index < currentSteps.length) {
-      return currentSteps.splice(index, 0, step);
-    }
-
-    return currentSteps.push(step);
-  };
-  /*
-   * Global function for deleting a popup from the queue
-   */
-
-  var deleteQueueStep = function deleteQueueStep(index) {
-    if (typeof currentSteps[index] !== 'undefined') {
-      currentSteps.splice(index, 1);
-    }
-  };
-
-  var createStepElement = function createStepElement(step) {
-    var stepEl = document.createElement('li');
-    addClass(stepEl, swalClasses['progress-step']);
-    setInnerHtml(stepEl, step);
-    return stepEl;
-  };
-
-  var createLineElement = function createLineElement(params) {
-    var lineEl = document.createElement('li');
-    addClass(lineEl, swalClasses['progress-step-line']);
-
-    if (params.progressStepsDistance) {
-      lineEl.style.width = params.progressStepsDistance;
-    }
-
-    return lineEl;
-  };
-
-  var renderProgressSteps = function renderProgressSteps(instance, params) {
-    var progressStepsContainer = getProgressSteps();
-
-    if (!params.progressSteps || params.progressSteps.length === 0) {
-      return hide(progressStepsContainer);
-    }
-
-    show(progressStepsContainer);
-    progressStepsContainer.textContent = '';
-    var currentProgressStep = parseInt(params.currentProgressStep === undefined ? getQueueStep() : params.currentProgressStep);
-
-    if (currentProgressStep >= params.progressSteps.length) {
-      warn('Invalid currentProgressStep parameter, it should be less than progressSteps.length ' + '(currentProgressStep like JS arrays starts from 0)');
-    }
-
-    params.progressSteps.forEach(function (step, index) {
-      var stepEl = createStepElement(step);
-      progressStepsContainer.appendChild(stepEl);
-
-      if (index === currentProgressStep) {
-        addClass(stepEl, swalClasses['active-progress-step']);
-      }
-
-      if (index !== params.progressSteps.length - 1) {
-        var lineEl = createLineElement(step);
-        progressStepsContainer.appendChild(lineEl);
-      }
-    });
-  };
-
-  var renderTitle = function renderTitle(instance, params) {
-    var title = getTitle();
-    toggle(title, params.title || params.titleText);
-
-    if (params.title) {
-      parseHtmlToContainer(params.title, title);
-    }
-
-    if (params.titleText) {
-      title.innerText = params.titleText;
-    } // Custom class
-
-
-    applyCustomClass(title, params, 'title');
-  };
-
-  var renderHeader = function renderHeader(instance, params) {
-    var header = getHeader(); // Custom class
-
-    applyCustomClass(header, params, 'header'); // Progress steps
-
-    renderProgressSteps(instance, params); // Icon
-
-    renderIcon(instance, params); // Image
-
-    renderImage(instance, params); // Title
-
-    renderTitle(instance, params); // Close button
-
-    renderCloseButton(instance, params);
-  };
-
-  var renderPopup = function renderPopup(instance, params) {
-    var popup = getPopup(); // Width
-
-    applyNumericalStyle(popup, 'width', params.width); // Padding
-
-    applyNumericalStyle(popup, 'padding', params.padding); // Background
-
-    if (params.background) {
-      popup.style.background = params.background;
-    } // Classes
-
-
-    addClasses(popup, params);
-  };
-
-  var addClasses = function addClasses(popup, params) {
-    // Default Class + showClass when updating Swal.update({})
-    popup.className = "".concat(swalClasses.popup, " ").concat(isVisible(popup) ? params.showClass.popup : '');
-
-    if (params.toast) {
-      addClass([document.documentElement, document.body], swalClasses['toast-shown']);
-      addClass(popup, swalClasses.toast);
-    } else {
-      addClass(popup, swalClasses.modal);
-    } // Custom class
-
-
-    applyCustomClass(popup, params, 'popup');
-
-    if (typeof params.customClass === 'string') {
-      addClass(popup, params.customClass);
-    } // Icon class (#1842)
-
-
-    if (params.icon) {
-      addClass(popup, swalClasses["icon-".concat(params.icon)]);
-    }
-  };
-
-  var render = function render(instance, params) {
-    renderPopup(instance, params);
-    renderContainer(instance, params);
-    renderHeader(instance, params);
-    renderContent(instance, params);
-    renderActions(instance, params);
-    renderFooter(instance, params);
-
-    if (typeof params.onRender === 'function') {
-      params.onRender(getPopup());
-    }
-  };
-
-  /*
-   * Global function to determine if SweetAlert2 popup is shown
-   */
-
-  var isVisible$1 = function isVisible$$1() {
-    return isVisible(getPopup());
-  };
-  /*
-   * Global function to click 'Confirm' button
-   */
-
-  var clickConfirm = function clickConfirm() {
-    return getConfirmButton() && getConfirmButton().click();
-  };
-  /*
-   * Global function to click 'Cancel' button
-   */
-
-  var clickCancel = function clickCancel() {
-    return getCancelButton() && getCancelButton().click();
-  };
-
-  function fire() {
-    var Swal = this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _construct(Swal, args);
-  }
-
-  /**
-   * Returns an extended version of `Swal` containing `params` as defaults.
-   * Useful for reusing Swal configuration.
-   *
-   * For example:
-   *
-   * Before:
-   * const textPromptOptions = { input: 'text', showCancelButton: true }
-   * const {value: firstName} = await Swal.fire({ ...textPromptOptions, title: 'What is your first name?' })
-   * const {value: lastName} = await Swal.fire({ ...textPromptOptions, title: 'What is your last name?' })
-   *
-   * After:
-   * const TextPrompt = Swal.mixin({ input: 'text', showCancelButton: true })
-   * const {value: firstName} = await TextPrompt('What is your first name?')
-   * const {value: lastName} = await TextPrompt('What is your last name?')
-   *
-   * @param mixinParams
-   */
-  function mixin(mixinParams) {
-    var MixinSwal = /*#__PURE__*/function (_this) {
-      _inherits(MixinSwal, _this);
-
-      var _super = _createSuper(MixinSwal);
-
-      function MixinSwal() {
-        _classCallCheck(this, MixinSwal);
-
-        return _super.apply(this, arguments);
-      }
-
-      _createClass(MixinSwal, [{
-        key: "_main",
-        value: function _main(params) {
-          return _get(_getPrototypeOf(MixinSwal.prototype), "_main", this).call(this, _extends({}, mixinParams, params));
-        }
-      }]);
-
-      return MixinSwal;
-    }(this);
-
-    return MixinSwal;
-  }
-
-  /**
-   * Show spinner instead of Confirm button
-   */
-
-  var showLoading = function showLoading() {
-    var popup = getPopup();
-
-    if (!popup) {
-      Swal.fire();
-    }
-
-    popup = getPopup();
-    var actions = getActions();
-    var confirmButton = getConfirmButton();
-    show(actions);
-    show(confirmButton, 'inline-block');
-    addClass([popup, actions], swalClasses.loading);
-    confirmButton.disabled = true;
-    popup.setAttribute('data-loading', true);
-    popup.setAttribute('aria-busy', true);
-    popup.focus();
-  };
-
-  var RESTORE_FOCUS_TIMEOUT = 100;
-
-  var globalState = {};
-
-  var focusPreviousActiveElement = function focusPreviousActiveElement() {
-    if (globalState.previousActiveElement && globalState.previousActiveElement.focus) {
-      globalState.previousActiveElement.focus();
-      globalState.previousActiveElement = null;
-    } else if (document.body) {
-      document.body.focus();
-    }
-  }; // Restore previous active (focused) element
-
-
-  var restoreActiveElement = function restoreActiveElement() {
-    return new Promise(function (resolve) {
-      var x = window.scrollX;
-      var y = window.scrollY;
-      globalState.restoreFocusTimeout = setTimeout(function () {
-        focusPreviousActiveElement();
-        resolve();
-      }, RESTORE_FOCUS_TIMEOUT); // issues/900
-
-      /* istanbul ignore if */
-
-      if (typeof x !== 'undefined' && typeof y !== 'undefined') {
-        // IE doesn't have scrollX/scrollY support
-        window.scrollTo(x, y);
-      }
-    });
-  };
-
-  /**
-   * If `timer` parameter is set, returns number of milliseconds of timer remained.
-   * Otherwise, returns undefined.
-   */
-
-  var getTimerLeft = function getTimerLeft() {
-    return globalState.timeout && globalState.timeout.getTimerLeft();
-  };
-  /**
-   * Stop timer. Returns number of milliseconds of timer remained.
-   * If `timer` parameter isn't set, returns undefined.
-   */
-
-  var stopTimer = function stopTimer() {
-    if (globalState.timeout) {
-      stopTimerProgressBar();
-      return globalState.timeout.stop();
-    }
-  };
-  /**
-   * Resume timer. Returns number of milliseconds of timer remained.
-   * If `timer` parameter isn't set, returns undefined.
-   */
-
-  var resumeTimer = function resumeTimer() {
-    if (globalState.timeout) {
-      var remaining = globalState.timeout.start();
-      animateTimerProgressBar(remaining);
-      return remaining;
-    }
-  };
-  /**
-   * Resume timer. Returns number of milliseconds of timer remained.
-   * If `timer` parameter isn't set, returns undefined.
-   */
-
-  var toggleTimer = function toggleTimer() {
-    var timer = globalState.timeout;
-    return timer && (timer.running ? stopTimer() : resumeTimer());
-  };
-  /**
-   * Increase timer. Returns number of milliseconds of an updated timer.
-   * If `timer` parameter isn't set, returns undefined.
-   */
-
-  var increaseTimer = function increaseTimer(n) {
-    if (globalState.timeout) {
-      var remaining = globalState.timeout.increase(n);
-      animateTimerProgressBar(remaining, true);
-      return remaining;
-    }
-  };
-  /**
-   * Check if timer is running. Returns true if timer is running
-   * or false if timer is paused or stopped.
-   * If `timer` parameter isn't set, returns undefined
-   */
-
-  var isTimerRunning = function isTimerRunning() {
-    return globalState.timeout && globalState.timeout.isRunning();
-  };
-
-  var defaultParams = {
-    title: '',
-    titleText: '',
-    text: '',
-    html: '',
-    footer: '',
-    icon: undefined,
-    iconHtml: undefined,
-    toast: false,
-    animation: true,
-    showClass: {
-      popup: 'swal2-show',
-      backdrop: 'swal2-backdrop-show',
-      icon: 'swal2-icon-show'
-    },
-    hideClass: {
-      popup: 'swal2-hide',
-      backdrop: 'swal2-backdrop-hide',
-      icon: 'swal2-icon-hide'
-    },
-    customClass: undefined,
-    target: 'body',
-    backdrop: true,
-    heightAuto: true,
-    allowOutsideClick: true,
-    allowEscapeKey: true,
-    allowEnterKey: true,
-    stopKeydownPropagation: true,
-    keydownListenerCapture: false,
-    showConfirmButton: true,
-    showCancelButton: false,
-    preConfirm: undefined,
-    confirmButtonText: 'OK',
-    confirmButtonAriaLabel: '',
-    confirmButtonColor: undefined,
-    cancelButtonText: 'Cancel',
-    cancelButtonAriaLabel: '',
-    cancelButtonColor: undefined,
-    buttonsStyling: true,
-    reverseButtons: false,
-    focusConfirm: true,
-    focusCancel: false,
-    showCloseButton: false,
-    closeButtonHtml: '&times;',
-    closeButtonAriaLabel: 'Close this dialog',
-    showLoaderOnConfirm: false,
-    imageUrl: undefined,
-    imageWidth: undefined,
-    imageHeight: undefined,
-    imageAlt: '',
-    timer: undefined,
-    timerProgressBar: false,
-    width: undefined,
-    padding: undefined,
-    background: undefined,
-    input: undefined,
-    inputPlaceholder: '',
-    inputValue: '',
-    inputOptions: {},
-    inputAutoTrim: true,
-    inputAttributes: {},
-    inputValidator: undefined,
-    validationMessage: undefined,
-    grow: false,
-    position: 'center',
-    progressSteps: [],
-    currentProgressStep: undefined,
-    progressStepsDistance: undefined,
-    onBeforeOpen: undefined,
-    onOpen: undefined,
-    onRender: undefined,
-    onClose: undefined,
-    onAfterClose: undefined,
-    onDestroy: undefined,
-    scrollbarPadding: true
-  };
-  var updatableParams = ['title', 'titleText', 'text', 'html', 'footer', 'icon', 'hideClass', 'customClass', 'allowOutsideClick', 'allowEscapeKey', 'showConfirmButton', 'showCancelButton', 'confirmButtonText', 'confirmButtonAriaLabel', 'confirmButtonColor', 'cancelButtonText', 'cancelButtonAriaLabel', 'cancelButtonColor', 'buttonsStyling', 'reverseButtons', 'imageUrl', 'imageWidth', 'imageHeight', 'imageAlt', 'progressSteps', 'currentProgressStep', 'onClose', 'onAfterClose', 'onDestroy'];
-  var deprecatedParams = {
-    animation: 'showClass" and "hideClass'
-  };
-  var toastIncompatibleParams = ['allowOutsideClick', 'allowEnterKey', 'backdrop', 'focusConfirm', 'focusCancel', 'heightAuto', 'keydownListenerCapture'];
-  /**
-   * Is valid parameter
-   * @param {String} paramName
-   */
-
-  var isValidParameter = function isValidParameter(paramName) {
-    return Object.prototype.hasOwnProperty.call(defaultParams, paramName);
-  };
-  /**
-   * Is valid parameter for Swal.update() method
-   * @param {String} paramName
-   */
-
-  var isUpdatableParameter = function isUpdatableParameter(paramName) {
-    return updatableParams.indexOf(paramName) !== -1;
-  };
-  /**
-   * Is deprecated parameter
-   * @param {String} paramName
-   */
-
-  var isDeprecatedParameter = function isDeprecatedParameter(paramName) {
-    return deprecatedParams[paramName];
-  };
-
-  var checkIfParamIsValid = function checkIfParamIsValid(param) {
-    if (!isValidParameter(param)) {
-      warn("Unknown parameter \"".concat(param, "\""));
-    }
-  };
-
-  var checkIfToastParamIsValid = function checkIfToastParamIsValid(param) {
-    if (toastIncompatibleParams.indexOf(param) !== -1) {
-      warn("The parameter \"".concat(param, "\" is incompatible with toasts"));
-    }
-  };
-
-  var checkIfParamIsDeprecated = function checkIfParamIsDeprecated(param) {
-    if (isDeprecatedParameter(param)) {
-      warnAboutDepreation(param, isDeprecatedParameter(param));
-    }
-  };
-  /**
-   * Show relevant warnings for given params
-   *
-   * @param params
-   */
-
-
-  var showWarningsForParams = function showWarningsForParams(params) {
-    for (var param in params) {
-      checkIfParamIsValid(param);
-
-      if (params.toast) {
-        checkIfToastParamIsValid(param);
-      }
-
-      checkIfParamIsDeprecated(param);
-    }
-  };
-
-
-
-  var staticMethods = /*#__PURE__*/Object.freeze({
-    isValidParameter: isValidParameter,
-    isUpdatableParameter: isUpdatableParameter,
-    isDeprecatedParameter: isDeprecatedParameter,
-    argsToParams: argsToParams,
-    isVisible: isVisible$1,
-    clickConfirm: clickConfirm,
-    clickCancel: clickCancel,
-    getContainer: getContainer,
-    getPopup: getPopup,
-    getTitle: getTitle,
-    getContent: getContent,
-    getHtmlContainer: getHtmlContainer,
-    getImage: getImage,
-    getIcon: getIcon,
-    getIcons: getIcons,
-    getCloseButton: getCloseButton,
-    getActions: getActions,
-    getConfirmButton: getConfirmButton,
-    getCancelButton: getCancelButton,
-    getHeader: getHeader,
-    getFooter: getFooter,
-    getTimerProgressBar: getTimerProgressBar,
-    getFocusableElements: getFocusableElements,
-    getValidationMessage: getValidationMessage,
-    isLoading: isLoading,
-    fire: fire,
-    mixin: mixin,
-    queue: queue,
-    getQueueStep: getQueueStep,
-    insertQueueStep: insertQueueStep,
-    deleteQueueStep: deleteQueueStep,
-    showLoading: showLoading,
-    enableLoading: showLoading,
-    getTimerLeft: getTimerLeft,
-    stopTimer: stopTimer,
-    resumeTimer: resumeTimer,
-    toggleTimer: toggleTimer,
-    increaseTimer: increaseTimer,
-    isTimerRunning: isTimerRunning
-  });
-
-  /**
-   * Enables buttons and hide loader.
-   */
-
-  function hideLoading() {
-    // do nothing if popup is closed
-    var innerParams = privateProps.innerParams.get(this);
-
-    if (!innerParams) {
-      return;
-    }
-
-    var domCache = privateProps.domCache.get(this);
-
-    if (!innerParams.showConfirmButton) {
-      hide(domCache.confirmButton);
-
-      if (!innerParams.showCancelButton) {
-        hide(domCache.actions);
-      }
-    }
-
-    removeClass([domCache.popup, domCache.actions], swalClasses.loading);
-    domCache.popup.removeAttribute('aria-busy');
-    domCache.popup.removeAttribute('data-loading');
-    domCache.confirmButton.disabled = false;
-    domCache.cancelButton.disabled = false;
-  }
-
-  function getInput$1(instance) {
-    var innerParams = privateProps.innerParams.get(instance || this);
-    var domCache = privateProps.domCache.get(instance || this);
-
-    if (!domCache) {
-      return null;
-    }
-
-    return getInput(domCache.content, innerParams.input);
-  }
-
-  var fixScrollbar = function fixScrollbar() {
-    // for queues, do not do this more than once
-    if (states.previousBodyPadding !== null) {
-      return;
-    } // if the body has overflow
-
-
-    if (document.body.scrollHeight > window.innerHeight) {
-      // add padding so the content doesn't shift after removal of scrollbar
-      states.previousBodyPadding = parseInt(window.getComputedStyle(document.body).getPropertyValue('padding-right'));
-      document.body.style.paddingRight = "".concat(states.previousBodyPadding + measureScrollbar(), "px");
-    }
-  };
-  var undoScrollbar = function undoScrollbar() {
-    if (states.previousBodyPadding !== null) {
-      document.body.style.paddingRight = "".concat(states.previousBodyPadding, "px");
-      states.previousBodyPadding = null;
-    }
-  };
-
-  /* istanbul ignore file */
-
-  var iOSfix = function iOSfix() {
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream || navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
-
-    if (iOS && !hasClass(document.body, swalClasses.iosfix)) {
-      var offset = document.body.scrollTop;
-      document.body.style.top = "".concat(offset * -1, "px");
-      addClass(document.body, swalClasses.iosfix);
-      lockBodyScroll();
-    }
-  };
-
-  var lockBodyScroll = function lockBodyScroll() {
-    // #1246
-    var container = getContainer();
-    var preventTouchMove;
-
-    container.ontouchstart = function (e) {
-      preventTouchMove = shouldPreventTouchMove(e.target);
-    };
-
-    container.ontouchmove = function (e) {
-      if (preventTouchMove) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    };
-  };
-
-  var shouldPreventTouchMove = function shouldPreventTouchMove(target) {
-    var container = getContainer();
-
-    if (target === container) {
-      return true;
-    }
-
-    if (!isScrollable(container) && target.tagName !== 'INPUT' && // #1603
-    !(isScrollable(getContent()) && // #1944
-    getContent().contains(target))) {
-      return true;
-    }
-
-    return false;
-  };
-
-  var undoIOSfix = function undoIOSfix() {
-    if (hasClass(document.body, swalClasses.iosfix)) {
-      var offset = parseInt(document.body.style.top, 10);
-      removeClass(document.body, swalClasses.iosfix);
-      document.body.style.top = '';
-      document.body.scrollTop = offset * -1;
-    }
-  };
-
-  /* istanbul ignore file */
-
-  var isIE11 = function isIE11() {
-    return !!window.MSInputMethodContext && !!document.documentMode;
-  }; // Fix IE11 centering sweetalert2/issues/933
-
-
-  var fixVerticalPositionIE = function fixVerticalPositionIE() {
-    var container = getContainer();
-    var popup = getPopup();
-    container.style.removeProperty('align-items');
-
-    if (popup.offsetTop < 0) {
-      container.style.alignItems = 'flex-start';
-    }
-  };
-
-  var IEfix = function IEfix() {
-    if (typeof window !== 'undefined' && isIE11()) {
-      fixVerticalPositionIE();
-      window.addEventListener('resize', fixVerticalPositionIE);
-    }
-  };
-  var undoIEfix = function undoIEfix() {
-    if (typeof window !== 'undefined' && isIE11()) {
-      window.removeEventListener('resize', fixVerticalPositionIE);
-    }
-  };
-
-  // Adding aria-hidden="true" to elements outside of the active modal dialog ensures that
-  // elements not within the active modal dialog will not be surfaced if a user opens a screen
-  // reader’s list of elements (headings, form controls, landmarks, etc.) in the document.
-
-  var setAriaHidden = function setAriaHidden() {
-    var bodyChildren = toArray(document.body.children);
-    bodyChildren.forEach(function (el) {
-      if (el === getContainer() || contains(el, getContainer())) {
-        return;
-      }
-
-      if (el.hasAttribute('aria-hidden')) {
-        el.setAttribute('data-previous-aria-hidden', el.getAttribute('aria-hidden'));
-      }
-
-      el.setAttribute('aria-hidden', 'true');
-    });
-  };
-  var unsetAriaHidden = function unsetAriaHidden() {
-    var bodyChildren = toArray(document.body.children);
-    bodyChildren.forEach(function (el) {
-      if (el.hasAttribute('data-previous-aria-hidden')) {
-        el.setAttribute('aria-hidden', el.getAttribute('data-previous-aria-hidden'));
-        el.removeAttribute('data-previous-aria-hidden');
-      } else {
-        el.removeAttribute('aria-hidden');
-      }
-    });
-  };
-
-  /**
-   * This module containts `WeakMap`s for each effectively-"private  property" that a `Swal` has.
-   * For example, to set the private property "foo" of `this` to "bar", you can `privateProps.foo.set(this, 'bar')`
-   * This is the approach that Babel will probably take to implement private methods/fields
-   *   https://github.com/tc39/proposal-private-methods
-   *   https://github.com/babel/babel/pull/7555
-   * Once we have the changes from that PR in Babel, and our core class fits reasonable in *one module*
-   *   then we can use that language feature.
-   */
-  var privateMethods = {
-    swalPromiseResolve: new WeakMap()
-  };
-
-  /*
-   * Instance method to close sweetAlert
-   */
-
-  function removePopupAndResetState(instance, container, isToast$$1, onAfterClose) {
-    if (isToast$$1) {
-      triggerOnAfterCloseAndDispose(instance, onAfterClose);
-    } else {
-      restoreActiveElement().then(function () {
-        return triggerOnAfterCloseAndDispose(instance, onAfterClose);
-      });
-      globalState.keydownTarget.removeEventListener('keydown', globalState.keydownHandler, {
-        capture: globalState.keydownListenerCapture
-      });
-      globalState.keydownHandlerAdded = false;
-    }
-
-    if (container.parentNode && !document.body.getAttribute('data-swal2-queue-step')) {
-      container.parentNode.removeChild(container);
-    }
-
-    if (isModal()) {
-      undoScrollbar();
-      undoIOSfix();
-      undoIEfix();
-      unsetAriaHidden();
-    }
-
-    removeBodyClasses();
-  }
-
-  function removeBodyClasses() {
-    removeClass([document.documentElement, document.body], [swalClasses.shown, swalClasses['height-auto'], swalClasses['no-backdrop'], swalClasses['toast-shown'], swalClasses['toast-column']]);
-  }
-
-  function close(resolveValue) {
-    var popup = getPopup();
-
-    if (!popup) {
-      return;
-    }
-
-    var innerParams = privateProps.innerParams.get(this);
-
-    if (!innerParams || hasClass(popup, innerParams.hideClass.popup)) {
-      return;
-    }
-
-    var swalPromiseResolve = privateMethods.swalPromiseResolve.get(this);
-    removeClass(popup, innerParams.showClass.popup);
-    addClass(popup, innerParams.hideClass.popup);
-    var backdrop = getContainer();
-    removeClass(backdrop, innerParams.showClass.backdrop);
-    addClass(backdrop, innerParams.hideClass.backdrop);
-    handlePopupAnimation(this, popup, innerParams);
-
-    if (typeof resolveValue !== 'undefined') {
-      resolveValue.isDismissed = typeof resolveValue.dismiss !== 'undefined';
-      resolveValue.isConfirmed = typeof resolveValue.dismiss === 'undefined';
-    } else {
-      resolveValue = {
-        isDismissed: true,
-        isConfirmed: false
-      };
-    } // Resolve Swal promise
-
-
-    swalPromiseResolve(resolveValue || {});
-  }
-
-  var handlePopupAnimation = function handlePopupAnimation(instance, popup, innerParams) {
-    var container = getContainer(); // If animation is supported, animate
-
-    var animationIsSupported = animationEndEvent && hasCssAnimation(popup);
-    var onClose = innerParams.onClose,
-        onAfterClose = innerParams.onAfterClose;
-
-    if (onClose !== null && typeof onClose === 'function') {
-      onClose(popup);
-    }
-
-    if (animationIsSupported) {
-      animatePopup(instance, popup, container, onAfterClose);
-    } else {
-      // Otherwise, remove immediately
-      removePopupAndResetState(instance, container, isToast(), onAfterClose);
-    }
-  };
-
-  var animatePopup = function animatePopup(instance, popup, container, onAfterClose) {
-    globalState.swalCloseEventFinishedCallback = removePopupAndResetState.bind(null, instance, container, isToast(), onAfterClose);
-    popup.addEventListener(animationEndEvent, function (e) {
-      if (e.target === popup) {
-        globalState.swalCloseEventFinishedCallback();
-        delete globalState.swalCloseEventFinishedCallback;
-      }
-    });
-  };
-
-  var triggerOnAfterCloseAndDispose = function triggerOnAfterCloseAndDispose(instance, onAfterClose) {
-    setTimeout(function () {
-      if (typeof onAfterClose === 'function') {
-        onAfterClose();
-      }
-
-      instance._destroy();
-    });
-  };
-
-  function setButtonsDisabled(instance, buttons, disabled) {
-    var domCache = privateProps.domCache.get(instance);
-    buttons.forEach(function (button) {
-      domCache[button].disabled = disabled;
-    });
-  }
-
-  function setInputDisabled(input, disabled) {
-    if (!input) {
-      return false;
-    }
-
-    if (input.type === 'radio') {
-      var radiosContainer = input.parentNode.parentNode;
-      var radios = radiosContainer.querySelectorAll('input');
-
-      for (var i = 0; i < radios.length; i++) {
-        radios[i].disabled = disabled;
-      }
-    } else {
-      input.disabled = disabled;
-    }
-  }
-
-  function enableButtons() {
-    setButtonsDisabled(this, ['confirmButton', 'cancelButton'], false);
-  }
-  function disableButtons() {
-    setButtonsDisabled(this, ['confirmButton', 'cancelButton'], true);
-  }
-  function enableInput() {
-    return setInputDisabled(this.getInput(), false);
-  }
-  function disableInput() {
-    return setInputDisabled(this.getInput(), true);
-  }
-
-  function showValidationMessage(error) {
-    var domCache = privateProps.domCache.get(this);
-    setInnerHtml(domCache.validationMessage, error);
-    var popupComputedStyle = window.getComputedStyle(domCache.popup);
-    domCache.validationMessage.style.marginLeft = "-".concat(popupComputedStyle.getPropertyValue('padding-left'));
-    domCache.validationMessage.style.marginRight = "-".concat(popupComputedStyle.getPropertyValue('padding-right'));
-    show(domCache.validationMessage);
-    var input = this.getInput();
-
-    if (input) {
-      input.setAttribute('aria-invalid', true);
-      input.setAttribute('aria-describedBy', swalClasses['validation-message']);
-      focusInput(input);
-      addClass(input, swalClasses.inputerror);
-    }
-  } // Hide block with validation message
-
-  function resetValidationMessage$1() {
-    var domCache = privateProps.domCache.get(this);
-
-    if (domCache.validationMessage) {
-      hide(domCache.validationMessage);
-    }
-
-    var input = this.getInput();
-
-    if (input) {
-      input.removeAttribute('aria-invalid');
-      input.removeAttribute('aria-describedBy');
-      removeClass(input, swalClasses.inputerror);
-    }
-  }
-
-  function getProgressSteps$1() {
-    var domCache = privateProps.domCache.get(this);
-    return domCache.progressSteps;
-  }
-
-  var Timer = /*#__PURE__*/function () {
-    function Timer(callback, delay) {
-      _classCallCheck(this, Timer);
-
-      this.callback = callback;
-      this.remaining = delay;
-      this.running = false;
-      this.start();
-    }
-
-    _createClass(Timer, [{
-      key: "start",
-      value: function start() {
-        if (!this.running) {
-          this.running = true;
-          this.started = new Date();
-          this.id = setTimeout(this.callback, this.remaining);
-        }
-
-        return this.remaining;
-      }
-    }, {
-      key: "stop",
-      value: function stop() {
-        if (this.running) {
-          this.running = false;
-          clearTimeout(this.id);
-          this.remaining -= new Date() - this.started;
-        }
-
-        return this.remaining;
-      }
-    }, {
-      key: "increase",
-      value: function increase(n) {
-        var running = this.running;
-
-        if (running) {
-          this.stop();
-        }
-
-        this.remaining += n;
-
-        if (running) {
-          this.start();
-        }
-
-        return this.remaining;
-      }
-    }, {
-      key: "getTimerLeft",
-      value: function getTimerLeft() {
-        if (this.running) {
-          this.stop();
-          this.start();
-        }
-
-        return this.remaining;
-      }
-    }, {
-      key: "isRunning",
-      value: function isRunning() {
-        return this.running;
-      }
-    }]);
-
-    return Timer;
-  }();
-
-  var defaultInputValidators = {
-    email: function email(string, validationMessage) {
-      return /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(string) ? Promise.resolve() : Promise.resolve(validationMessage || 'Invalid email address');
-    },
-    url: function url(string, validationMessage) {
-      // taken from https://stackoverflow.com/a/3809435 with a small change from #1306
-      return /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(string) ? Promise.resolve() : Promise.resolve(validationMessage || 'Invalid URL');
-    }
-  };
-
-  function setDefaultInputValidators(params) {
-    // Use default `inputValidator` for supported input types if not provided
-    if (!params.inputValidator) {
-      Object.keys(defaultInputValidators).forEach(function (key) {
-        if (params.input === key) {
-          params.inputValidator = defaultInputValidators[key];
-        }
-      });
-    }
-  }
-
-  function validateCustomTargetElement(params) {
-    // Determine if the custom target element is valid
-    if (!params.target || typeof params.target === 'string' && !document.querySelector(params.target) || typeof params.target !== 'string' && !params.target.appendChild) {
-      warn('Target parameter is not valid, defaulting to "body"');
-      params.target = 'body';
-    }
-  }
-  /**
-   * Set type, text and actions on popup
-   *
-   * @param params
-   * @returns {boolean}
-   */
-
-
-  function setParameters(params) {
-    setDefaultInputValidators(params); // showLoaderOnConfirm && preConfirm
-
-    if (params.showLoaderOnConfirm && !params.preConfirm) {
-      warn('showLoaderOnConfirm is set to true, but preConfirm is not defined.\n' + 'showLoaderOnConfirm should be used together with preConfirm, see usage example:\n' + 'https://sweetalert2.github.io/#ajax-request');
-    } // params.animation will be actually used in renderPopup.js
-    // but in case when params.animation is a function, we need to call that function
-    // before popup (re)initialization, so it'll be possible to check Swal.isVisible()
-    // inside the params.animation function
-
-
-    params.animation = callIfFunction(params.animation);
-    validateCustomTargetElement(params); // Replace newlines with <br> in title
-
-    if (typeof params.title === 'string') {
-      params.title = params.title.split('\n').join('<br />');
-    }
-
-    init(params);
-  }
-
-  /**
-   * Open popup, add necessary classes and styles, fix scrollbar
-   *
-   * @param {Array} params
-   */
-
-  var openPopup = function openPopup(params) {
-    var container = getContainer();
-    var popup = getPopup();
-
-    if (typeof params.onBeforeOpen === 'function') {
-      params.onBeforeOpen(popup);
-    }
-
-    addClasses$1(container, popup, params); // scrolling is 'hidden' until animation is done, after that 'auto'
-
-    setScrollingVisibility(container, popup);
-
-    if (isModal()) {
-      fixScrollContainer(container, params.scrollbarPadding);
-    }
-
-    if (!isToast() && !globalState.previousActiveElement) {
-      globalState.previousActiveElement = document.activeElement;
-    }
-
-    if (typeof params.onOpen === 'function') {
-      setTimeout(function () {
-        return params.onOpen(popup);
-      });
-    }
-
-    removeClass(container, swalClasses['no-transition']);
-  };
-
-  function swalOpenAnimationFinished(event) {
-    var popup = getPopup();
-
-    if (event.target !== popup) {
-      return;
-    }
-
-    var container = getContainer();
-    popup.removeEventListener(animationEndEvent, swalOpenAnimationFinished);
-    container.style.overflowY = 'auto';
-  }
-
-  var setScrollingVisibility = function setScrollingVisibility(container, popup) {
-    if (animationEndEvent && hasCssAnimation(popup)) {
-      container.style.overflowY = 'hidden';
-      popup.addEventListener(animationEndEvent, swalOpenAnimationFinished);
-    } else {
-      container.style.overflowY = 'auto';
-    }
-  };
-
-  var fixScrollContainer = function fixScrollContainer(container, scrollbarPadding) {
-    iOSfix();
-    IEfix();
-    setAriaHidden();
-
-    if (scrollbarPadding) {
-      fixScrollbar();
-    } // sweetalert2/issues/1247
-
-
-    setTimeout(function () {
-      container.scrollTop = 0;
-    });
-  };
-
-  var addClasses$1 = function addClasses(container, popup, params) {
-    addClass(container, params.showClass.backdrop);
-    show(popup); // Animate popup right after showing it
-
-    addClass(popup, params.showClass.popup);
-    addClass([document.documentElement, document.body], swalClasses.shown);
-
-    if (params.heightAuto && params.backdrop && !params.toast) {
-      addClass([document.documentElement, document.body], swalClasses['height-auto']);
-    }
-  };
-
-  var handleInputOptionsAndValue = function handleInputOptionsAndValue(instance, params) {
-    if (params.input === 'select' || params.input === 'radio') {
-      handleInputOptions(instance, params);
-    } else if (['text', 'email', 'number', 'tel', 'textarea'].indexOf(params.input) !== -1 && isPromise(params.inputValue)) {
-      handleInputValue(instance, params);
-    }
-  };
-  var getInputValue = function getInputValue(instance, innerParams) {
-    var input = instance.getInput();
-
-    if (!input) {
-      return null;
-    }
-
-    switch (innerParams.input) {
-      case 'checkbox':
-        return getCheckboxValue(input);
-
-      case 'radio':
-        return getRadioValue(input);
-
-      case 'file':
-        return getFileValue(input);
-
-      default:
-        return innerParams.inputAutoTrim ? input.value.trim() : input.value;
-    }
-  };
-
-  var getCheckboxValue = function getCheckboxValue(input) {
-    return input.checked ? 1 : 0;
-  };
-
-  var getRadioValue = function getRadioValue(input) {
-    return input.checked ? input.value : null;
-  };
-
-  var getFileValue = function getFileValue(input) {
-    return input.files.length ? input.getAttribute('multiple') !== null ? input.files : input.files[0] : null;
-  };
-
-  var handleInputOptions = function handleInputOptions(instance, params) {
-    var content = getContent();
-
-    var processInputOptions = function processInputOptions(inputOptions) {
-      return populateInputOptions[params.input](content, formatInputOptions(inputOptions), params);
-    };
-
-    if (isPromise(params.inputOptions)) {
-      showLoading();
-      params.inputOptions.then(function (inputOptions) {
-        instance.hideLoading();
-        processInputOptions(inputOptions);
-      });
-    } else if (_typeof(params.inputOptions) === 'object') {
-      processInputOptions(params.inputOptions);
-    } else {
-      error("Unexpected type of inputOptions! Expected object, Map or Promise, got ".concat(_typeof(params.inputOptions)));
-    }
-  };
-
-  var handleInputValue = function handleInputValue(instance, params) {
-    var input = instance.getInput();
-    hide(input);
-    params.inputValue.then(function (inputValue) {
-      input.value = params.input === 'number' ? parseFloat(inputValue) || 0 : "".concat(inputValue);
-      show(input);
-      input.focus();
-      instance.hideLoading();
-    })["catch"](function (err) {
-      error("Error in inputValue promise: ".concat(err));
-      input.value = '';
-      show(input);
-      input.focus();
-      instance.hideLoading();
-    });
-  };
-
-  var populateInputOptions = {
-    select: function select(content, inputOptions, params) {
-      var select = getChildByClass(content, swalClasses.select);
-
-      var renderOption = function renderOption(parent, optionLabel, optionValue) {
-        var option = document.createElement('option');
-        option.value = optionValue;
-        setInnerHtml(option, optionLabel);
-
-        if (params.inputValue.toString() === optionValue.toString()) {
-          option.selected = true;
-        }
-
-        parent.appendChild(option);
-      };
-
-      inputOptions.forEach(function (inputOption) {
-        var optionValue = inputOption[0];
-        var optionLabel = inputOption[1]; // <optgroup> spec:
-        // https://www.w3.org/TR/html401/interact/forms.html#h-17.6
-        // "...all OPTGROUP elements must be specified directly within a SELECT element (i.e., groups may not be nested)..."
-        // check whether this is a <optgroup>
-
-        if (Array.isArray(optionLabel)) {
-          // if it is an array, then it is an <optgroup>
-          var optgroup = document.createElement('optgroup');
-          optgroup.label = optionValue;
-          optgroup.disabled = false; // not configurable for now
-
-          select.appendChild(optgroup);
-          optionLabel.forEach(function (o) {
-            return renderOption(optgroup, o[1], o[0]);
-          });
-        } else {
-          // case of <option>
-          renderOption(select, optionLabel, optionValue);
-        }
-      });
-      select.focus();
-    },
-    radio: function radio(content, inputOptions, params) {
-      var radio = getChildByClass(content, swalClasses.radio);
-      inputOptions.forEach(function (inputOption) {
-        var radioValue = inputOption[0];
-        var radioLabel = inputOption[1];
-        var radioInput = document.createElement('input');
-        var radioLabelElement = document.createElement('label');
-        radioInput.type = 'radio';
-        radioInput.name = swalClasses.radio;
-        radioInput.value = radioValue;
-
-        if (params.inputValue.toString() === radioValue.toString()) {
-          radioInput.checked = true;
-        }
-
-        var label = document.createElement('span');
-        setInnerHtml(label, radioLabel);
-        label.className = swalClasses.label;
-        radioLabelElement.appendChild(radioInput);
-        radioLabelElement.appendChild(label);
-        radio.appendChild(radioLabelElement);
-      });
-      var radios = radio.querySelectorAll('input');
-
-      if (radios.length) {
-        radios[0].focus();
-      }
-    }
-  };
-  /**
-   * Converts `inputOptions` into an array of `[value, label]`s
-   * @param inputOptions
-   */
-
-  var formatInputOptions = function formatInputOptions(inputOptions) {
-    var result = [];
-
-    if (typeof Map !== 'undefined' && inputOptions instanceof Map) {
-      inputOptions.forEach(function (value, key) {
-        var valueFormatted = value;
-
-        if (_typeof(valueFormatted) === 'object') {
-          // case of <optgroup>
-          valueFormatted = formatInputOptions(valueFormatted);
-        }
-
-        result.push([key, valueFormatted]);
-      });
-    } else {
-      Object.keys(inputOptions).forEach(function (key) {
-        var valueFormatted = inputOptions[key];
-
-        if (_typeof(valueFormatted) === 'object') {
-          // case of <optgroup>
-          valueFormatted = formatInputOptions(valueFormatted);
-        }
-
-        result.push([key, valueFormatted]);
-      });
-    }
-
-    return result;
-  };
-
-  var handleConfirmButtonClick = function handleConfirmButtonClick(instance, innerParams) {
-    instance.disableButtons();
-
-    if (innerParams.input) {
-      handleConfirmWithInput(instance, innerParams);
-    } else {
-      confirm(instance, innerParams, true);
-    }
-  };
-  var handleCancelButtonClick = function handleCancelButtonClick(instance, dismissWith) {
-    instance.disableButtons();
-    dismissWith(DismissReason.cancel);
-  };
-
-  var handleConfirmWithInput = function handleConfirmWithInput(instance, innerParams) {
-    var inputValue = getInputValue(instance, innerParams);
-
-    if (innerParams.inputValidator) {
-      instance.disableInput();
-      var validationPromise = Promise.resolve().then(function () {
-        return innerParams.inputValidator(inputValue, innerParams.validationMessage);
-      });
-      validationPromise.then(function (validationMessage) {
-        instance.enableButtons();
-        instance.enableInput();
-
-        if (validationMessage) {
-          instance.showValidationMessage(validationMessage);
-        } else {
-          confirm(instance, innerParams, inputValue);
-        }
-      });
-    } else if (!instance.getInput().checkValidity()) {
-      instance.enableButtons();
-      instance.showValidationMessage(innerParams.validationMessage);
-    } else {
-      confirm(instance, innerParams, inputValue);
-    }
-  };
-
-  var succeedWith = function succeedWith(instance, value) {
-    instance.closePopup({
-      value: value
-    });
-  };
-
-  var confirm = function confirm(instance, innerParams, value) {
-    if (innerParams.showLoaderOnConfirm) {
-      showLoading(); // TODO: make showLoading an *instance* method
-    }
-
-    if (innerParams.preConfirm) {
-      instance.resetValidationMessage();
-      var preConfirmPromise = Promise.resolve().then(function () {
-        return innerParams.preConfirm(value, innerParams.validationMessage);
-      });
-      preConfirmPromise.then(function (preConfirmValue) {
-        if (isVisible(getValidationMessage()) || preConfirmValue === false) {
-          instance.hideLoading();
-        } else {
-          succeedWith(instance, typeof preConfirmValue === 'undefined' ? value : preConfirmValue);
-        }
-      });
-    } else {
-      succeedWith(instance, value);
-    }
-  };
-
-  var addKeydownHandler = function addKeydownHandler(instance, globalState, innerParams, dismissWith) {
-    if (globalState.keydownTarget && globalState.keydownHandlerAdded) {
-      globalState.keydownTarget.removeEventListener('keydown', globalState.keydownHandler, {
-        capture: globalState.keydownListenerCapture
-      });
-      globalState.keydownHandlerAdded = false;
-    }
-
-    if (!innerParams.toast) {
-      globalState.keydownHandler = function (e) {
-        return keydownHandler(instance, e, dismissWith);
-      };
-
-      globalState.keydownTarget = innerParams.keydownListenerCapture ? window : getPopup();
-      globalState.keydownListenerCapture = innerParams.keydownListenerCapture;
-      globalState.keydownTarget.addEventListener('keydown', globalState.keydownHandler, {
-        capture: globalState.keydownListenerCapture
-      });
-      globalState.keydownHandlerAdded = true;
-    }
-  }; // Focus handling
-
-  var setFocus = function setFocus(innerParams, index, increment) {
-    var focusableElements = getFocusableElements(); // search for visible elements and select the next possible match
-
-    for (var i = 0; i < focusableElements.length; i++) {
-      index = index + increment; // rollover to first item
-
-      if (index === focusableElements.length) {
-        index = 0; // go to last item
-      } else if (index === -1) {
-        index = focusableElements.length - 1;
-      }
-
-      return focusableElements[index].focus();
-    } // no visible focusable elements, focus the popup
-
-
-    getPopup().focus();
-  };
-  var arrowKeys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Left', 'Right', 'Up', 'Down' // IE11
-  ];
-  var escKeys = ['Escape', 'Esc' // IE11
-  ];
-
-  var keydownHandler = function keydownHandler(instance, e, dismissWith) {
-    var innerParams = privateProps.innerParams.get(instance);
-
-    if (innerParams.stopKeydownPropagation) {
-      e.stopPropagation();
-    } // ENTER
-
-
-    if (e.key === 'Enter') {
-      handleEnter(instance, e, innerParams); // TAB
-    } else if (e.key === 'Tab') {
-      handleTab(e, innerParams); // ARROWS - switch focus between buttons
-    } else if (arrowKeys.indexOf(e.key) !== -1) {
-      handleArrows(); // ESC
-    } else if (escKeys.indexOf(e.key) !== -1) {
-      handleEsc(e, innerParams, dismissWith);
-    }
-  };
-
-  var handleEnter = function handleEnter(instance, e, innerParams) {
-    // #720 #721
-    if (e.isComposing) {
-      return;
-    }
-
-    if (e.target && instance.getInput() && e.target.outerHTML === instance.getInput().outerHTML) {
-      if (['textarea', 'file'].indexOf(innerParams.input) !== -1) {
-        return; // do not submit
-      }
-
-      clickConfirm();
-      e.preventDefault();
-    }
-  };
-
-  var handleTab = function handleTab(e, innerParams) {
-    var targetElement = e.target;
-    var focusableElements = getFocusableElements();
-    var btnIndex = -1;
-
-    for (var i = 0; i < focusableElements.length; i++) {
-      if (targetElement === focusableElements[i]) {
-        btnIndex = i;
-        break;
-      }
-    }
-
-    if (!e.shiftKey) {
-      // Cycle to the next button
-      setFocus(innerParams, btnIndex, 1);
-    } else {
-      // Cycle to the prev button
-      setFocus(innerParams, btnIndex, -1);
-    }
-
-    e.stopPropagation();
-    e.preventDefault();
-  };
-
-  var handleArrows = function handleArrows() {
-    var confirmButton = getConfirmButton();
-    var cancelButton = getCancelButton(); // focus Cancel button if Confirm button is currently focused
-
-    if (document.activeElement === confirmButton && isVisible(cancelButton)) {
-      cancelButton.focus(); // and vice versa
-    } else if (document.activeElement === cancelButton && isVisible(confirmButton)) {
-      confirmButton.focus();
-    }
-  };
-
-  var handleEsc = function handleEsc(e, innerParams, dismissWith) {
-    if (callIfFunction(innerParams.allowEscapeKey)) {
-      e.preventDefault();
-      dismissWith(DismissReason.esc);
-    }
-  };
-
-  var handlePopupClick = function handlePopupClick(instance, domCache, dismissWith) {
-    var innerParams = privateProps.innerParams.get(instance);
-
-    if (innerParams.toast) {
-      handleToastClick(instance, domCache, dismissWith);
-    } else {
-      // Ignore click events that had mousedown on the popup but mouseup on the container
-      // This can happen when the user drags a slider
-      handleModalMousedown(domCache); // Ignore click events that had mousedown on the container but mouseup on the popup
-
-      handleContainerMousedown(domCache);
-      handleModalClick(instance, domCache, dismissWith);
-    }
-  };
-
-  var handleToastClick = function handleToastClick(instance, domCache, dismissWith) {
-    // Closing toast by internal click
-    domCache.popup.onclick = function () {
-      var innerParams = privateProps.innerParams.get(instance);
-
-      if (innerParams.showConfirmButton || innerParams.showCancelButton || innerParams.showCloseButton || innerParams.input) {
-        return;
-      }
-
-      dismissWith(DismissReason.close);
-    };
-  };
-
-  var ignoreOutsideClick = false;
-
-  var handleModalMousedown = function handleModalMousedown(domCache) {
-    domCache.popup.onmousedown = function () {
-      domCache.container.onmouseup = function (e) {
-        domCache.container.onmouseup = undefined; // We only check if the mouseup target is the container because usually it doesn't
-        // have any other direct children aside of the popup
-
-        if (e.target === domCache.container) {
-          ignoreOutsideClick = true;
-        }
-      };
-    };
-  };
-
-  var handleContainerMousedown = function handleContainerMousedown(domCache) {
-    domCache.container.onmousedown = function () {
-      domCache.popup.onmouseup = function (e) {
-        domCache.popup.onmouseup = undefined; // We also need to check if the mouseup target is a child of the popup
-
-        if (e.target === domCache.popup || domCache.popup.contains(e.target)) {
-          ignoreOutsideClick = true;
-        }
-      };
-    };
-  };
-
-  var handleModalClick = function handleModalClick(instance, domCache, dismissWith) {
-    domCache.container.onclick = function (e) {
-      var innerParams = privateProps.innerParams.get(instance);
-
-      if (ignoreOutsideClick) {
-        ignoreOutsideClick = false;
-        return;
-      }
-
-      if (e.target === domCache.container && callIfFunction(innerParams.allowOutsideClick)) {
-        dismissWith(DismissReason.backdrop);
-      }
-    };
-  };
-
-  function _main(userParams) {
-    showWarningsForParams(userParams);
-
-    if (globalState.currentInstance) {
-      globalState.currentInstance._destroy();
-    }
-
-    globalState.currentInstance = this;
-    var innerParams = prepareParams(userParams);
-    setParameters(innerParams);
-    Object.freeze(innerParams); // clear the previous timer
-
-    if (globalState.timeout) {
-      globalState.timeout.stop();
-      delete globalState.timeout;
-    } // clear the restore focus timeout
-
-
-    clearTimeout(globalState.restoreFocusTimeout);
-    var domCache = populateDomCache(this);
-    render(this, innerParams);
-    privateProps.innerParams.set(this, innerParams);
-    return swalPromise(this, domCache, innerParams);
-  }
-
-  var prepareParams = function prepareParams(userParams) {
-    var showClass = _extends({}, defaultParams.showClass, userParams.showClass);
-
-    var hideClass = _extends({}, defaultParams.hideClass, userParams.hideClass);
-
-    var params = _extends({}, defaultParams, userParams);
-
-    params.showClass = showClass;
-    params.hideClass = hideClass; // @deprecated
-
-    if (userParams.animation === false) {
-      params.showClass = {
-        popup: 'swal2-noanimation',
-        backdrop: 'swal2-noanimation'
-      };
-      params.hideClass = {};
-    }
-
-    return params;
-  };
-
-  var swalPromise = function swalPromise(instance, domCache, innerParams) {
-    return new Promise(function (resolve) {
-      // functions to handle all closings/dismissals
-      var dismissWith = function dismissWith(dismiss) {
-        instance.closePopup({
-          dismiss: dismiss
-        });
-      };
-
-      privateMethods.swalPromiseResolve.set(instance, resolve);
-
-      domCache.confirmButton.onclick = function () {
-        return handleConfirmButtonClick(instance, innerParams);
-      };
-
-      domCache.cancelButton.onclick = function () {
-        return handleCancelButtonClick(instance, dismissWith);
-      };
-
-      domCache.closeButton.onclick = function () {
-        return dismissWith(DismissReason.close);
-      };
-
-      handlePopupClick(instance, domCache, dismissWith);
-      addKeydownHandler(instance, globalState, innerParams, dismissWith);
-
-      if (innerParams.toast && (innerParams.input || innerParams.footer || innerParams.showCloseButton)) {
-        addClass(document.body, swalClasses['toast-column']);
-      } else {
-        removeClass(document.body, swalClasses['toast-column']);
-      }
-
-      handleInputOptionsAndValue(instance, innerParams);
-      openPopup(innerParams);
-      setupTimer(globalState, innerParams, dismissWith);
-      initFocus(domCache, innerParams); // Scroll container to top on open (#1247, #1946)
-
-      setTimeout(function () {
-        domCache.container.scrollTop = 0;
-      });
-    });
-  };
-
-  var populateDomCache = function populateDomCache(instance) {
-    var domCache = {
-      popup: getPopup(),
-      container: getContainer(),
-      content: getContent(),
-      actions: getActions(),
-      confirmButton: getConfirmButton(),
-      cancelButton: getCancelButton(),
-      closeButton: getCloseButton(),
-      validationMessage: getValidationMessage(),
-      progressSteps: getProgressSteps()
-    };
-    privateProps.domCache.set(instance, domCache);
-    return domCache;
-  };
-
-  var setupTimer = function setupTimer(globalState$$1, innerParams, dismissWith) {
-    var timerProgressBar = getTimerProgressBar();
-    hide(timerProgressBar);
-
-    if (innerParams.timer) {
-      globalState$$1.timeout = new Timer(function () {
-        dismissWith('timer');
-        delete globalState$$1.timeout;
-      }, innerParams.timer);
-
-      if (innerParams.timerProgressBar) {
-        show(timerProgressBar);
-        setTimeout(function () {
-          if (globalState$$1.timeout.running) {
-            // timer can be already stopped at this point
-            animateTimerProgressBar(innerParams.timer);
-          }
-        });
-      }
-    }
-  };
-
-  var initFocus = function initFocus(domCache, innerParams) {
-    if (innerParams.toast) {
-      return;
-    }
-
-    if (!callIfFunction(innerParams.allowEnterKey)) {
-      return blurActiveElement();
-    }
-
-    if (innerParams.focusCancel && isVisible(domCache.cancelButton)) {
-      return domCache.cancelButton.focus();
-    }
-
-    if (innerParams.focusConfirm && isVisible(domCache.confirmButton)) {
-      return domCache.confirmButton.focus();
-    }
-
-    setFocus(innerParams, -1, 1);
-  };
-
-  var blurActiveElement = function blurActiveElement() {
-    if (document.activeElement && typeof document.activeElement.blur === 'function') {
-      document.activeElement.blur();
-    }
-  };
-
-  /**
-   * Updates popup parameters.
-   */
-
-  function update(params) {
-    var popup = getPopup();
-    var innerParams = privateProps.innerParams.get(this);
-
-    if (!popup || hasClass(popup, innerParams.hideClass.popup)) {
-      return warn("You're trying to update the closed or closing popup, that won't work. Use the update() method in preConfirm parameter or show a new popup.");
-    }
-
-    var validUpdatableParams = {}; // assign valid params from `params` to `defaults`
-
-    Object.keys(params).forEach(function (param) {
-      if (Swal.isUpdatableParameter(param)) {
-        validUpdatableParams[param] = params[param];
-      } else {
-        warn("Invalid parameter to update: \"".concat(param, "\". Updatable params are listed here: https://github.com/sweetalert2/sweetalert2/blob/master/src/utils/params.js"));
-      }
-    });
-
-    var updatedParams = _extends({}, innerParams, validUpdatableParams);
-
-    render(this, updatedParams);
-    privateProps.innerParams.set(this, updatedParams);
-    Object.defineProperties(this, {
-      params: {
-        value: _extends({}, this.params, params),
-        writable: false,
-        enumerable: true
-      }
-    });
-  }
-
-  function _destroy() {
-    var domCache = privateProps.domCache.get(this);
-    var innerParams = privateProps.innerParams.get(this);
-
-    if (!innerParams) {
-      return; // This instance has already been destroyed
-    } // Check if there is another Swal closing
-
-
-    if (domCache.popup && globalState.swalCloseEventFinishedCallback) {
-      globalState.swalCloseEventFinishedCallback();
-      delete globalState.swalCloseEventFinishedCallback;
-    } // Check if there is a swal disposal defer timer
-
-
-    if (globalState.deferDisposalTimer) {
-      clearTimeout(globalState.deferDisposalTimer);
-      delete globalState.deferDisposalTimer;
-    }
-
-    if (typeof innerParams.onDestroy === 'function') {
-      innerParams.onDestroy();
-    }
-
-    disposeSwal(this);
-  }
-
-  var disposeSwal = function disposeSwal(instance) {
-    // Unset this.params so GC will dispose it (#1569)
-    delete instance.params; // Unset globalState props so GC will dispose globalState (#1569)
-
-    delete globalState.keydownHandler;
-    delete globalState.keydownTarget; // Unset WeakMaps so GC will be able to dispose them (#1569)
-
-    unsetWeakMaps(privateProps);
-    unsetWeakMaps(privateMethods);
-  };
-
-  var unsetWeakMaps = function unsetWeakMaps(obj) {
-    for (var i in obj) {
-      obj[i] = new WeakMap();
-    }
-  };
-
-
-
-  var instanceMethods = /*#__PURE__*/Object.freeze({
-    hideLoading: hideLoading,
-    disableLoading: hideLoading,
-    getInput: getInput$1,
-    close: close,
-    closePopup: close,
-    closeModal: close,
-    closeToast: close,
-    enableButtons: enableButtons,
-    disableButtons: disableButtons,
-    enableInput: enableInput,
-    disableInput: disableInput,
-    showValidationMessage: showValidationMessage,
-    resetValidationMessage: resetValidationMessage$1,
-    getProgressSteps: getProgressSteps$1,
-    _main: _main,
-    update: update,
-    _destroy: _destroy
-  });
-
-  var currentInstance;
-
-  var SweetAlert = /*#__PURE__*/function () {
-    function SweetAlert() {
-      _classCallCheck(this, SweetAlert);
-
-      // Prevent run in Node env
-      if (typeof window === 'undefined') {
-        return;
-      } // Check for the existence of Promise
-
-
-      if (typeof Promise === 'undefined') {
-        error('This package requires a Promise library, please include a shim to enable it in this browser (See: https://github.com/sweetalert2/sweetalert2/wiki/Migration-from-SweetAlert-to-SweetAlert2#1-ie-support)');
-      }
-
-      currentInstance = this;
-
-      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-
-      var outerParams = Object.freeze(this.constructor.argsToParams(args));
-      Object.defineProperties(this, {
-        params: {
-          value: outerParams,
-          writable: false,
-          enumerable: true,
-          configurable: true
-        }
-      });
-
-      var promise = this._main(this.params);
-
-      privateProps.promise.set(this, promise);
-    } // `catch` cannot be the name of a module export, so we define our thenable methods here instead
-
-
-    _createClass(SweetAlert, [{
-      key: "then",
-      value: function then(onFulfilled) {
-        var promise = privateProps.promise.get(this);
-        return promise.then(onFulfilled);
-      }
-    }, {
-      key: "finally",
-      value: function _finally(onFinally) {
-        var promise = privateProps.promise.get(this);
-        return promise["finally"](onFinally);
-      }
-    }]);
-
-    return SweetAlert;
-  }(); // Assign instance methods from src/instanceMethods/*.js to prototype
-
-
-  _extends(SweetAlert.prototype, instanceMethods); // Assign static methods from src/staticMethods/*.js to constructor
-
-
-  _extends(SweetAlert, staticMethods); // Proxy to instance methods to constructor, for now, for backwards compatibility
-
-
-  Object.keys(instanceMethods).forEach(function (key) {
-    SweetAlert[key] = function () {
-      if (currentInstance) {
-        var _currentInstance;
-
-        return (_currentInstance = currentInstance)[key].apply(_currentInstance, arguments);
-      }
-    };
-  });
-  SweetAlert.DismissReason = DismissReason;
-  SweetAlert.version = '9.14.0';
-
-  var Swal = SweetAlert;
-  Swal["default"] = Swal;
-
-  return Swal;
-
-}));
-if (typeof this !== 'undefined' && this.Sweetalert2){  this.swal = this.sweetAlert = this.Swal = this.SweetAlert = this.Sweetalert2}
-
-"undefined"!=typeof document&&function(e,t){var n=e.createElement("style");if(e.getElementsByTagName("head")[0].appendChild(n),n.styleSheet)n.styleSheet.disabled||(n.styleSheet.cssText=t);else try{n.innerHTML=t}catch(e){n.innerText=t}}(document,".swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;width:auto;height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-no-transition{transition:none!important}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-popup{display:none;position:relative;box-sizing:border-box;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border:none;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;margin:1.25em auto 0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-actions.swal2-loading .swal2-styled.swal2-confirm{box-sizing:border-box;width:2.5em;height:2.5em;margin:.46875em;padding:0;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent!important;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{content:\"\";display:inline-block;width:15px;height:15px;margin-left:5px;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff}.swal2-styled{margin:.3125em;padding:.625em 2em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;height:.25em;overflow:hidden;border-bottom-right-radius:.3125em;border-bottom-left-radius:.3125em}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;align-items:center;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;transition:color .1s ease-out;border:none;border-radius:0;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close::-moz-focus-inner{border:0}.swal2-content{z-index:1;justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-file::-webkit-input-placeholder,.swal2-input::-webkit-input-placeholder,.swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::-ms-input-placeholder,.swal2-input::-ms-input-placeholder,.swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:\"!\";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{align-items:center;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#3085d6}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;width:2.5em;height:.4em;margin:0 -1px;background:#3085d6}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent!important}body.swal2-no-backdrop .swal2-container>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-container.swal2-top{top:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-top-left,body.swal2-no-backdrop .swal2-container.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-top-end,body.swal2-no-backdrop .swal2-container.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-container.swal2-center{top:50%;left:50%;transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-left,body.swal2-no-backdrop .swal2-container.swal2-center-start{top:50%;left:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-end,body.swal2-no-backdrop .swal2-container.swal2-center-right{top:50%;right:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom{bottom:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom-left,body.swal2-no-backdrop .swal2-container.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-bottom-end,body.swal2-no-backdrop .swal2-container.swal2-bottom-right{right:0;bottom:0}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}");
-
-/***/ }),
-
 /***/ "./node_modules/tiny-invariant/dist/tiny-invariant.esm.js":
 /*!****************************************************************!*\
   !*** ./node_modules/tiny-invariant/dist/tiny-invariant.esm.js ***!
@@ -78760,10 +71318,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Doctor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Doctor */ "./resources/js/components/Doctor.js");
-/* harmony import */ var _Patient__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Patient */ "./resources/js/components/Patient.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _VideoCall__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./VideoCall */ "./resources/js/components/VideoCall.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -78785,7 +71342,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 
 
 
@@ -78809,11 +71365,23 @@ var App = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
         path: "/doctor/video/home",
-        component: _Doctor__WEBPACK_IMPORTED_MODULE_2__["default"]
+        render: function render() {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_VideoCall__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            account_type: 1
+          });
+        }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
         path: "/patient/video/home",
-        component: _Patient__WEBPACK_IMPORTED_MODULE_3__["default"]
+        render: function render() {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_VideoCall__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            account_type: 2
+          });
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/video/call/home",
+        component: _VideoCall__WEBPACK_IMPORTED_MODULE_2__["default"]
       }))));
     }
   }]);
@@ -78824,44 +71392,43 @@ var App = /*#__PURE__*/function (_Component) {
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
 if (document.getElementById('conference')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_4___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('conference'));
+  react_dom__WEBPACK_IMPORTED_MODULE_3___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(App, null), document.getElementById('conference'));
 }
 
 /***/ }),
 
-/***/ "./resources/js/components/Doctor.js":
-/*!*******************************************!*\
-  !*** ./resources/js/components/Doctor.js ***!
-  \*******************************************/
+/***/ "./resources/js/components/VideoCall.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/VideoCall.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
-/* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(pusher_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_block_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-block-ui */ "./node_modules/react-block-ui/dist/reactblockui.es.js");
-/* harmony import */ var react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-block-ui/style.css */ "./node_modules/react-block-ui/style.css");
-/* harmony import */ var react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_block_ui_style_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _style2_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style2.css */ "./resources/js/components/style2.css");
+/* harmony import */ var _style2_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style2_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _VideoComponents_SideUser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./VideoComponents/SideUser */ "./resources/js/components/VideoComponents/SideUser.js");
+/* harmony import */ var _VideoComponents_VideoElements__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./VideoComponents/VideoElements */ "./resources/js/components/VideoComponents/VideoElements.js");
+/* harmony import */ var _mdi_font_css_materialdesignicons_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mdi/font/css/materialdesignicons.css */ "./node_modules/@mdi/font/css/materialdesignicons.css");
+/* harmony import */ var _mdi_font_css_materialdesignicons_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_mdi_font_css_materialdesignicons_css__WEBPACK_IMPORTED_MODULE_5__);
+
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -78888,417 +71455,892 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+var webrtc = new RTCPeerConnection({
+  iceServers: [{
+    urls: ["stun:stun.stunprotocol.org", "stun:relay.backups.cz"]
+  }, {
+    urls: "turn:relay.backups.cz",
+    credential: "webrtc",
+    username: "webrtc"
+  }, {
+    urls: "turn:relay.backups.cz?transport=tcp",
+    credential: "webrtc",
+    username: "webrtc"
+  }]
+}); // const socketUrl = `wss://${location.host}/ws`;
 
-var freeice = __webpack_require__(/*! freeice */ "./node_modules/freeice/index.js");
+var socketUrl = "ws://localhost:3000/ws";
+var socket = new WebSocket(socketUrl);
+var ringer = new Audio("/videocall/Assets/audio/ringtone.mp3");
+ringer.loop = true;
+var interval;
+var activeuser = window.user;
 
-var APP_KEY = '52b6df945610aa082478';
+var VideoCall = /*#__PURE__*/function (_Component) {
+  _inherits(VideoCall, _Component);
 
-var Doctor = /*#__PURE__*/function (_Component) {
-  _inherits(Doctor, _Component);
+  var _super = _createSuper(VideoCall);
 
-  var _super = _createSuper(Doctor);
-
-  function Doctor() {
+  function VideoCall(props) {
     var _this;
 
-    _classCallCheck(this, Doctor);
+    _classCallCheck(this, VideoCall);
 
-    _this = _super.call(this);
+    _this = _super.call(this, props);
+    var id = Math.floor(Math.random() * 1000);
     _this.state = {
+      localvideo: {
+        endcall: false,
+        pause: false,
+        muted: true
+      },
       users: [],
-      button: "none",
-      blocking: false,
-      room: undefined,
-      awaiting: true
+      mydetails: activeuser || {
+        name: "User - " + id,
+        id: id,
+        image: null,
+        status: 0,
+        room: "conference-room"
+      },
+      call: {
+        isRinging: false,
+        caller: {}
+      },
+      currentuser: null,
+      otherPerson: null,
+      muteremote: true
     };
-    _this.user = window.user;
-    _this.usersOnline;
-    _this.caller;
-    _this.localUserMedia = null;
-    _this.sessionDesc;
-    _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
-
-    _this.GetRTCPeerConnection();
-
-    _this.GetRTCSessionDescription();
-
-    _this.GetRTCIceCandidate(); //prepare the caller to use peerconnection
-
-
-    _this.prepareCaller();
-
-    _this.setupPusher();
-
-    _this.setupPusher = _this.setupPusher.bind(_assertThisInitialized(_this));
-    _this.GetRTCPeerConnection = _this.GetRTCPeerConnection.bind(_assertThisInitialized(_this));
-    _this.GetRTCSessionDescription = _this.GetRTCSessionDescription.bind(_assertThisInitialized(_this));
-    _this.GetRTCIceCandidate = _this.GetRTCIceCandidate.bind(_assertThisInitialized(_this));
-    _this.prepareCaller = _this.prepareCaller.bind(_assertThisInitialized(_this));
+    _this.localVideo = null;
+    _this.remoteVideo = null;
     return _this;
   }
 
-  _createClass(Doctor, [{
-    key: "setupPusher",
-    value: function setupPusher() {
-      var _this2 = this;
+  _createClass(VideoCall, [{
+    key: "stopStream",
+    value: function stopStream() {
+      // if (!this.localVideo)
+      this.localVideo.pause(); // if (!this.remoteVideo)
 
-      pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a.logToConsole = true;
-      this.pusher = new pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a(APP_KEY, {
-        authEndpoint: '/pusher/auth',
-        cluster: 'ap2',
-        auth: {
-          params: this.user.id,
-          headers: {
-            'X-CSRF-Token': window.csrfToken
-          }
-        }
-      });
-      this.channel = this.pusher.subscribe('presence-' + this.user.channel);
-      this.channel.bind("pusher:subscription_succeeded", function (members) {
-        //set the member count
-        _this2.usersOnline = members.count;
-        members.each(function (member) {
-          if (member.id != _this2.user.id) {
-            var index = _this2.state.users.indexOf(member.id);
-
-            if (index === -1) {
-              var joined = _this2.state.users.concat(member.id);
-
-              _this2.setState({
-                users: joined,
-                awaiting: false
-              });
-            }
-          }
-        });
-      });
-      this.channel.bind("pusher:member_added", function (member) {
-        var index = _this2.state.users.indexOf(member.id);
-
-        if (index == -1) {
-          var joined = _this2.state.users.concat(member.id);
-
-          _this2.setState({
-            users: joined,
-            awaiting: false
-          });
-        }
-      });
-      this.channel.bind("pusher:member_removed", function (member) {
-        // for remove member from list:
-        var array = _toConsumableArray(_this2.state.users); // make a separate copy of the array
-
-
-        var index = array.indexOf(member.id);
-
-        if (index !== -1) {
-          array.splice(index, 1);
-
-          _this2.setState({
-            users: array
-          });
-        }
-
-        if (member.id == _this2.state.room) {
-          _this2.endCall();
-        }
-      });
-      this.channel.bind("client-candidate", function (msg) {
-        if (msg.room == _this2.state.room) {
-          console.log("candidate received");
-
-          _this2.caller.addIceCandidate(new RTCIceCandidate(msg.candidate));
-        }
-      });
-      this.channel.bind("client-answer", function (answer) {
-        if (answer.room == _this2.state.room) {
-          console.log("answer received");
-
-          _this2.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
-
-          console.log("Patient SDP: " + new RTCSessionDescription(answer.sdp));
-
-          _this2.setState({
-            blocking: false
-          });
-        }
-      });
-      this.channel.bind("client-reject", function (answer) {
-        if (answer.room == _this2.state.room) {
-          console.log("Call declined");
-          sweetalert2__WEBPACK_IMPORTED_MODULE_4___default.a.fire({
-            title: 'Feedback!',
-            text: "Call to " + answer.rejected + " was politely declined",
-            icon: 'info',
-            confirmButtonText: 'Ok'
-          });
-
-          _this2.setState({
-            blocking: false
-          });
-
-          _this2.endCall();
-        }
-      });
-      this.channel.bind("client-endcall", function (answer) {
-        if (answer.room == _this2.state.room) {
-          console.log("Call Ended");
-
-          _this2.endCall();
-        }
-      });
+      this.remoteVideo.pause();
     }
   }, {
-    key: "GetRTCIceCandidate",
-    value: function GetRTCIceCandidate() {
-      window.RTCIceCandidate = window.RTCIceCandidate || window.webkitRTCIceCandidate || window.mozRTCIceCandidate || window.msRTCIceCandidate;
-      return window.RTCIceCandidate;
-    }
-  }, {
-    key: "GetRTCPeerConnection",
-    value: function GetRTCPeerConnection() {
-      window.RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection || window.msRTCPeerConnection;
-      return window.RTCPeerConnection;
-    }
-  }, {
-    key: "GetRTCSessionDescription",
-    value: function GetRTCSessionDescription() {
-      window.RTCSessionDescription = window.RTCSessionDescription || window.webkitRTCSessionDescription || window.mozRTCSessionDescription || window.msRTCSessionDescription;
-      return window.RTCSessionDescription;
-    }
-  }, {
-    key: "prepareCaller",
-    value: function prepareCaller() {
-      var _this3 = this;
-
-      //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection({
-        'iceServers': [{
-          'url': 'turn:turn.technigence.in:5349',
-          'credential': 'metispass',
-          'username': 'metis'
-        }, {
-          'url': 'stun:turn.technigence.in:5349?transport=tcp'
-        }]
-      });
-      console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
-
-      this.caller.onicecandidate = function (evt) {
-        if (!evt.candidate) return;
-        console.log("onicecandidate called");
-
-        _this3.onIceCandidate(_this3.caller, evt);
-      }; //onaddstream handler to receive remote feed and show in remoteview video element
-
-
-      this.caller.onaddstream = function (evt) {
-        console.log("STREAM: " + evt.stream);
-
-        try {
-          _this3.userVideo.src = URL.createObjectURL(evt.stream);
-        } catch (e) {
-          _this3.userVideo.srcObject = evt.stream;
-        }
-      };
-    }
-  }, {
-    key: "getCam",
-    value: function getCam() {
-      //Get local audio/video feed and show it in selfview video element
-      return navigator.mediaDevices.getUserMedia({
-        video: true,
-        audio: true
-      });
-    } //Send the ICE Candidate to the remote peer
-
-  }, {
-    key: "onIceCandidate",
-    value: function onIceCandidate(peer, evt) {
-      if (evt.candidate) {
-        this.channel.trigger("client-candidate", {
-          "candidate": evt.candidate,
-          "room": this.state.room
-        });
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      try {
+        this.startLocalStream();
+      } catch (e) {
+        console.log("ERROR IN LOCALVIDEO STREAM");
       }
-    } //Create and send offer to remote peer on button click
-
-  }, {
-    key: "callUser",
-    value: function callUser(user_id) {
-      var _this4 = this;
-
-      this.setState({
-        blocking: true
-      });
-      this.getCam().then(function (stream) {
-        _this4.localUserMedia = stream;
-
-        _this4.toggleEndCallButton();
-
-        try {
-          _this4.myVideo.srcObject = stream;
-        } catch (e) {
-          _this4.myVideo.src = URL.createObjectURL(stream);
-        }
-
-        stream.getTracks().forEach(function (track) {
-          _this4.caller.addTrack(track, stream);
-        });
-
-        _this4.caller.createOffer().then(function (desc) {
-          console.log(desc);
-          return _this4.caller.setLocalDescription(new RTCSessionDescription(desc));
-        }).then(function () {
-          _this4.channel.trigger("client-signal-".concat(user_id), {
-            sdp: _this4.caller.localDescription,
-            room: user_id,
-            from: _this4.user.name
-          });
-
-          _this4.setState({
-            room: user_id
-          });
-        })["catch"](function (error) {
-          console.log("an error occured", error);
-        });
-      })["catch"](function (error) {
-        console.log("an error occured", error);
-      });
-    }
-  }, {
-    key: "toggleEndCallButton",
-    value: function toggleEndCallButton() {
-      if (this.state.button == "none") {
-        this.setState({
-          button: "flex"
-        });
-      } else {
-        this.setState({
-          button: "none"
-        });
-      }
-    }
-  }, {
-    key: "endCall",
-    value: function endCall() {
-      this.setState({
-        room: undefined
-      });
-      this.caller.close();
-
-      var _iterator = _createForOfIteratorHelper(this.localUserMedia.getTracks()),
-          _step;
 
       try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var track = _step.value;
-          track.stop();
-        }
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
+        this.initWebrtc();
+      } catch (e) {
+        console.log("ERROR IN WEBRTC");
       }
 
-      this.prepareCaller();
-      this.toggleEndCallButton();
+      try {
+        this.initSocket();
+      } catch (e) {
+        console.log("ERROR IN SOCKET");
+      }
     }
   }, {
-    key: "endCurrentCall",
-    value: function endCurrentCall() {
-      this.channel.trigger("client-endcall", {
-        room: this.state.room
+    key: "handControlBtn",
+    value: function () {
+      var _handControlBtn = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(state) {
+        var _this2 = this;
+
+        var local;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                local = this.state.localvideo;
+                local[state] = !local[state];
+                this.setState({
+                  localvideo: local
+                }, /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+                  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                      switch (_context.prev = _context.next) {
+                        case 0:
+                          if (!(state == "pause")) {
+                            _context.next = 12;
+                            break;
+                          }
+
+                          local["muted"] = true;
+
+                          _this2.setState({
+                            localvideo: local
+                          });
+
+                          if (!_this2.state.localvideo.pause) {
+                            _context.next = 9;
+                            break;
+                          }
+
+                          _this2.localVideo.pause(); // REMOVE STREAM & SEND SIGNAL FOR PAUSE
+
+
+                          _context.next = 7;
+                          return _this2.pauseRemoteVideo(true, _this2.state.localvideo.muted);
+
+                        case 7:
+                          _context.next = 12;
+                          break;
+
+                        case 9:
+                          _this2.localVideo.play();
+
+                          _context.next = 12;
+                          return _this2.pauseRemoteVideo(false, _this2.state.localvideo.muted, false);
+
+                        case 12:
+                          if (!(state == "muted")) {
+                            _context.next = 15;
+                            break;
+                          }
+
+                          _context.next = 15;
+                          return _this2.pauseRemoteVideo(_this2.state.localvideo.pause, _this2.state.localvideo.muted, false);
+
+                        case 15:
+                          if (!(state == "endcall")) {
+                            _context.next = 19;
+                            break;
+                          }
+
+                          _this2.stopStream();
+
+                          _context.next = 19;
+                          return _this2.pauseRemoteVideo(true, true, true);
+
+                        case 19:
+                        case "end":
+                          return _context.stop();
+                      }
+                    }
+                  }, _callee);
+                })));
+
+              case 3:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function handControlBtn(_x) {
+        return _handControlBtn.apply(this, arguments);
+      }
+
+      return handControlBtn;
+    }()
+  }, {
+    key: "pauseRemoteVideo",
+    value: function () {
+      var _pauseRemoteVideo = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(video, audio, ended) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                if (this.state.otherPerson != null) {
+                  this.sendMessageToSignallingServer({
+                    channel: "pause_play",
+                    video: video,
+                    audio: audio,
+                    ended: ended,
+                    otherPerson: this.state.otherPerson
+                  });
+                }
+
+              case 1:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3, this);
+      }));
+
+      function pauseRemoteVideo(_x2, _x3, _x4) {
+        return _pauseRemoteVideo.apply(this, arguments);
+      }
+
+      return pauseRemoteVideo;
+    }()
+  }, {
+    key: "startCall",
+    value: function startCall(index, user) {
+      var _this3 = this;
+
+      var users = this.state.users;
+      users[index].status = 1;
+      this.setState({
+        users: users,
+        currentuser: index
+      }, function () {
+        _this3.sendMessageToSignallingServer({
+          channel: "start_call",
+          otherPerson: user.id
+        });
       });
-      this.endCall();
     }
+  }, {
+    key: "getCurrentUser",
+    value: function getCurrentUser(index) {
+      return index !== null && this.state.users[index] || {};
+    }
+  }, {
+    key: "getUserWithID",
+    value: function getUserWithID(id) {
+      var users = this.state.users;
+      var search = {};
+      users.forEach(function (user) {
+        if (user.id == id) {
+          search = user;
+        }
+      });
+      return search;
+    }
+  }, {
+    key: "endcall",
+    value: function endcall(index) {
+      var users = this.state.users;
+      users[index].status = 0;
+      this.setState({
+        users: users
+      });
+    }
+  }, {
+    key: "updateActiveUsers",
+    value: function updateActiveUsers(users, member) {
+      var _this4 = this;
+
+      var members = [];
+      users.forEach(function (user) {
+        if (user.data.id !== _this4.state.mydetails.id) members.push(user.data);
+
+        if (user.data.id == member.id) {
+          user.data.status = 3;
+        }
+      });
+      this.setState({
+        users: members
+      });
+    }
+  }, {
+    key: "updateUserAccepted",
+    value: function updateUserAccepted(member) {
+      var users = this.state.users;
+      var localvideo = this.state.localvideo;
+      var members = [];
+      users.forEach(function (user) {
+        if (user.id == member.otherPerson) {
+          user.status = 2;
+          localvideo.endcall = false;
+        }
+
+        members.push(user);
+      });
+      this.setState({
+        users: members,
+        localvideo: localvideo
+      });
+    }
+  }, {
+    key: "removeUserIfNotRemoved",
+    value: function removeUserIfNotRemoved(users, memberdata) {
+      var data = [];
+      users.forEach(function (user) {
+        if (!user.data.id == memberdata.id) {
+          data.push(user.data);
+        }
+      });
+      return data;
+    }
+  }, {
+    key: "processCustomSocket",
+    value: function processCustomSocket(message) {
+      switch (message.action) {
+        case "joined":
+          this.updateActiveUsers(message.users, message.memberdata);
+          break;
+
+        case "left":
+          this.updateActiveUsers(this.removeUserIfNotRemoved(message.users, message.memberdata), message.memberdata);
+          break;
+
+        case "endcall":
+          this.updateEndCall(this.removeUserIfNotRemoved(message.users, message.memberdata), message.memberdata);
+          break;
+
+        default:
+          break;
+      }
+    }
+  }, {
+    key: "updateEndCall",
+    value: function updateEndCall(newusers, member) {
+      var users = [];
+      newusers.forEach(function (user) {
+        if (user.data.id == member.id) {
+          user.data.status = 3;
+        }
+
+        users.push(user.data);
+      });
+      var localvideo = this.state.localvideo;
+      localvideo.endcall = true;
+      this.setState({
+        users: users,
+        localvideo: localvideo
+      });
+    }
+  }, {
+    key: "initWebrtc",
+    value: function initWebrtc() {
+      var _this5 = this;
+
+      webrtc.addEventListener("icecandidate", function (event) {
+        if (!event.candidate) {
+          return;
+        }
+
+        _this5.sendMessageToSignallingServer({
+          channel: "webrtc_ice_candidate",
+          candidate: event.candidate,
+          otherPerson: _this5.state.otherPerson
+        });
+      });
+      webrtc.addEventListener("track", function (event) {
+        /** @type {HTMLVideoElement} */
+        var remoteVideo = document.getElementById("remote-video");
+        _this5.remoteVideo = remoteVideo;
+        remoteVideo.srcObject = event.streams[0];
+      });
+    }
+  }, {
+    key: "startLocalStream",
+    value: function startLocalStream() {
+      var _this6 = this;
+
+      this.localVideo = document.getElementById("local-video");
+      window.navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: true
+      }).then(function (localStream) {
+        /** @type {HTMLVideoElement} */
+        _this6.localVideo.srcObject = localStream;
+
+        var _iterator = _createForOfIteratorHelper(localStream.getTracks()),
+            _step;
+
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var track = _step.value;
+            webrtc.addTrack(track, localStream);
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+      });
+    }
+  }, {
+    key: "initSocket",
+    value: function initSocket() {
+      var _this7 = this;
+
+      // log in directly after the socket was opened
+      socket.addEventListener("open", function () {
+        console.log("websocket connected");
+
+        _this7.sendMessageToSignallingServer({
+          channel: "login",
+          name: _this7.state.mydetails.id,
+          data: _this7.state.mydetails,
+          room: _this7.state.mydetails.room
+        });
+      });
+      socket.addEventListener("message", function (event) {
+        var message = JSON.parse(event.data.toString());
+
+        _this7.handleMessage(message);
+      });
+      socket.addEventListener("disconnected", function (event) {
+        alert("Disconnected");
+      });
+    }
+    /**
+     * Sends the message over the socket.
+     * @param {WebSocketMessage} message The message to send
+     */
+
+  }, {
+    key: "sendMessageToSignallingServer",
+    value: function sendMessageToSignallingServer(message) {
+      var json = JSON.stringify(message);
+      socket.send(json);
+    }
+    /**
+     * Processes the incoming message.
+     * @param {WebSocketMessage} message The incoming message
+     */
+
+  }, {
+    key: "handleMessage",
+    value: function () {
+      var _handleMessage = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(message) {
+        var _this8 = this;
+
+        var otherPerson, members, answer;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                otherPerson = message.otherPerson;
+                members = [];
+
+                if (otherPerson == null) {
+                  otherPerson = this.state.otherPerson;
+                } else {
+                  this.setState({
+                    otherPerson: message.otherPerson
+                  });
+                }
+
+                _context4.t0 = message.channel;
+                _context4.next = _context4.t0 === "start_call" ? 6 : _context4.t0 === "webrtc_ice_candidate" ? 9 : _context4.t0 === "call_accepted" ? 14 : _context4.t0 === "webrtc_offer" ? 18 : _context4.t0 === "webrtc_answer" ? 28 : _context4.t0 === "pause_play" ? 33 : _context4.t0 === "rejected" ? 37 : _context4.t0 === "noanswer" ? 40 : 43;
+                break;
+
+              case 6:
+                console.log("receiving call from ".concat(message));
+                this.setState({
+                  call: {
+                    isRinging: true,
+                    caller: message.otherPerson,
+                    message: message
+                  }
+                }, function () {
+                  ringer.play();
+                  var timer = 0;
+                  interval = setInterval(function () {
+                    if (timer >= 30) {
+                      ringer.pause();
+
+                      _this8.setState({
+                        call: {
+                          isRinging: false,
+                          caller: null,
+                          message: {}
+                        }
+                      }, function () {
+                        // receiver did not answer
+                        _this8.sendMessageToSignallingServer({
+                          channel: "noanswer",
+                          otherPerson: _this8.state.otherPerson
+                        });
+
+                        clearInterval(interval);
+                      });
+                    }
+
+                    timer++;
+                  }, 1000);
+                });
+                return _context4.abrupt("break", 46);
+
+              case 9:
+                console.log("received ice candidate");
+                console.log(message);
+                _context4.next = 13;
+                return webrtc.addIceCandidate(message.candidate);
+
+              case 13:
+                return _context4.abrupt("break", 46);
+
+              case 14:
+                console.log("Call accepted");
+                console.log(message);
+                this.updateUserAccepted(message);
+                return _context4.abrupt("break", 46);
+
+              case 18:
+                console.log("received webrtc offer");
+                _context4.next = 21;
+                return webrtc.setRemoteDescription(message.offer);
+
+              case 21:
+                _context4.next = 23;
+                return webrtc.createAnswer();
+
+              case 23:
+                answer = _context4.sent;
+                _context4.next = 26;
+                return webrtc.setLocalDescription(answer);
+
+              case 26:
+                this.sendMessageToSignallingServer({
+                  channel: "webrtc_answer",
+                  answer: answer,
+                  otherPerson: otherPerson
+                });
+                return _context4.abrupt("break", 46);
+
+              case 28:
+                console.log("received webrtc answer: -- " + message.otherPerson);
+                webrtc.setRemoteDescription(message.answer);
+                this.sendMessageToSignallingServer({
+                  channel: "call_accepted",
+                  otherPerson: otherPerson
+                });
+                this.updateUserAccepted(message);
+                return _context4.abrupt("break", 46);
+
+              case 33:
+                if (message.video) {
+                  this.remoteVideo.pause();
+                } else {
+                  this.remoteVideo.play();
+                }
+
+                this.setState({
+                  muteremote: message.audio
+                });
+                console.log(message);
+                return _context4.abrupt("break", 46);
+
+              case 37:
+                this.state.users.forEach(function (user) {
+                  if (user.id == otherPerson) {
+                    user.status = 4;
+                  }
+
+                  members.push(user);
+                });
+                this.setState({
+                  users: members
+                });
+                return _context4.abrupt("break", 46);
+
+              case 40:
+                this.state.users.forEach(function (user) {
+                  if (user.id == otherPerson) {
+                    user.status = 5;
+                  }
+
+                  members.push(user);
+                });
+                this.setState({
+                  users: members
+                });
+                return _context4.abrupt("break", 46);
+
+              case 43:
+                console.log("unknown message", message);
+                this.processCustomSocket(message);
+                return _context4.abrupt("break", 46);
+
+              case 46:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4, this);
+      }));
+
+      function handleMessage(_x5) {
+        return _handleMessage.apply(this, arguments);
+      }
+
+      return handleMessage;
+    }()
+  }, {
+    key: "handleAcceptIncommingCall",
+    value: function () {
+      var _handleAcceptIncommingCall = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6() {
+        var _this9 = this;
+
+        var call;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                call = this.state.call;
+                call.isRinging = false;
+                ringer.pause();
+                this.setState({
+                  call: call
+                }, /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5() {
+                  var offer;
+                  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
+                    while (1) {
+                      switch (_context5.prev = _context5.next) {
+                        case 0:
+                          clearInterval(interval);
+                          _context5.next = 3;
+                          return webrtc.createOffer();
+
+                        case 3:
+                          offer = _context5.sent;
+                          _context5.next = 6;
+                          return webrtc.setLocalDescription(offer);
+
+                        case 6:
+                          _this9.sendMessageToSignallingServer({
+                            channel: "webrtc_offer",
+                            offer: offer,
+                            otherPerson: _this9.state.otherPerson
+                          });
+
+                        case 7:
+                        case "end":
+                          return _context5.stop();
+                      }
+                    }
+                  }, _callee5);
+                })));
+
+              case 4:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6, this);
+      }));
+
+      function handleAcceptIncommingCall() {
+        return _handleAcceptIncommingCall.apply(this, arguments);
+      }
+
+      return handleAcceptIncommingCall;
+    }()
+  }, {
+    key: "handleEndCall",
+    value: function () {
+      var _handleEndCall = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee8() {
+        var _this10 = this;
+
+        var localvideo;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee8$(_context8) {
+          while (1) {
+            switch (_context8.prev = _context8.next) {
+              case 0:
+                // await webrtc.removeStream(this.localVideo.srcObject);
+                // await webrtc.removeStream(this.remoteVideo.srcObject);
+                localvideo = this.state.localvideo;
+                localvideo.endcall = true;
+                this.setState({
+                  localvideo: localvideo
+                }, /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7() {
+                  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee7$(_context7) {
+                    while (1) {
+                      switch (_context7.prev = _context7.next) {
+                        case 0:
+                          _this10.sendMessageToSignallingServer({
+                            channel: "end_call",
+                            otherPerson: _this10.state.otherPerson
+                          });
+
+                          window.location = "/video/call/home";
+
+                        case 2:
+                        case "end":
+                          return _context7.stop();
+                      }
+                    }
+                  }, _callee7);
+                })));
+
+              case 3:
+              case "end":
+                return _context8.stop();
+            }
+          }
+        }, _callee8, this);
+      }));
+
+      function handleEndCall() {
+        return _handleEndCall.apply(this, arguments);
+      }
+
+      return handleEndCall;
+    }()
+  }, {
+    key: "handleRejectCall",
+    value: function () {
+      var _handleRejectCall = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee9() {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee9$(_context9) {
+          while (1) {
+            switch (_context9.prev = _context9.next) {
+              case 0:
+                ringer.pause();
+                clearInterval(interval);
+                this.sendMessageToSignallingServer({
+                  channel: "rejected",
+                  otherPerson: this.state.otherPerson
+                });
+                this.setState({
+                  call: {
+                    isRinging: false,
+                    caller: null,
+                    message: {}
+                  }
+                });
+
+              case 4:
+              case "end":
+                return _context9.stop();
+            }
+          }
+        }, _callee9, this);
+      }));
+
+      function handleRejectCall() {
+        return _handleRejectCall.apply(this, arguments);
+      }
+
+      return handleRejectCall;
+    }()
   }, {
     key: "render",
     value: function render() {
-      var _this5 = this;
+      var _this11 = this;
 
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_block_ui__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        tag: "div",
-        blocking: this.state.awaiting,
-        message: "Awaiting Patient, Please wait.."
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container",
-        style: {
-          marginTop: '10%'
-        }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_block_ui__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        tag: "div",
-        blocking: this.state.blocking,
-        message: "Awaiting Patient Pickup"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      var _this$state = this.state,
+          localvideo = _this$state.localvideo,
+          users = _this$state.users;
+      var account_type = this.props.account_type;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "loader-wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "loader"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "wrapper"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "col-md-10 title"
+      }, "Metis Technologies Video Conference"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-md-10 main-box remote-video-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "row"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-xl-7"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "video-container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-        className: "my-video",
-        ref: function ref(_ref) {
-          _this5.myVideo = _ref;
-        },
-        autoPlay: true,
-        muted: true
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-        className: "user-video",
-        ref: function ref(_ref2) {
-          _this5.userVideo = _ref2;
-        },
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-md-3 left-side"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_VideoComponents_SideUser__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        users: users,
+        parent: this,
+        role: account_type
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-md-9",
+        style: {
+          padding: 0
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "local-video-box"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
+        className: "caller-info"
+      }, this.state.mydetails.name, " (You)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("video", {
+        className: "video-play",
+        id: "local-video",
+        muted: localvideo.muted,
         autoPlay: true
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        title: "End Call",
-        style: {
-          display: this.state.button
-        },
-        onClick: function onClick() {
-          return _this5.endCurrentCall();
-        },
-        className: "end-button fa fa-phone flex",
-        "aria-hidden": "true"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-xl-5 call_button"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        style: {
-          textAlign: "center"
+      }), localvideo.endcall && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_VideoComponents_VideoElements__WEBPACK_IMPORTED_MODULE_4__["EndCall"], {
+        ended: localvideo.endcall,
+        type: 2,
+        role: account_type
+      }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_VideoComponents_VideoElements__WEBPACK_IMPORTED_MODULE_4__["OffVideo"], {
+        pause: localvideo.pause,
+        muted: localvideo.muted
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
+        className: "caller-info"
+      }, this.getCurrentUser(this.state.currentuser).name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("video", {
+        className: "video-play",
+        id: "remote-video",
+        autoPlay: true,
+        muted: this.state.muteremote
+      }), localvideo.endcall && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_VideoComponents_VideoElements__WEBPACK_IMPORTED_MODULE_4__["EndCall"], {
+        ended: localvideo.endcall,
+        type: 1,
+        role: account_type
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_VideoComponents_VideoElements__WEBPACK_IMPORTED_MODULE_4__["ReceiveCall"], {
+        isRinging: this.state.call.isRinging,
+        caller: this.state.call.caller,
+        parent: this
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "overlay"
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "controls"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        "class": "button ".concat(localvideo.pause ? "primaryactive" : "primary"),
+        onClick: function onClick(e) {
+          e.preventDefault();
+
+          _this11.handControlBtn("pause");
         }
-      }, "Welcome To Metis Conference"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          textAlign: "center"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "mdi mdi-camera-off"
+      }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        "class": "button ".concat(localvideo.endcall ? "dangeractive" : "danger"),
+        onClick: function onClick(e) {
+          e.preventDefault();
+
+          _this11.handleEndCall();
         }
-      }, this.state.users.map(function (user_id) {
-        if (_this5.state.room == undefined) {
-          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-            key: user_id,
-            className: "btn btn-success btn-lg button",
-            style: {
-              marginRight: "20px"
-            },
-            onClick: function onClick() {
-              return _this5.callUser(user_id);
-            }
-          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-            className: "fa fa-phone",
-            "aria-hidden": "true"
-          }), " Call ", _this5.user.patient_name);
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "mdi mdi-phone-hangup"
+      }), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        "class": "button ".concat(localvideo.muted ? "primaryactive" : "primary"),
+        onClick: function onClick(e) {
+          e.preventDefault();
+
+          _this11.handControlBtn("muted");
         }
-      })))))));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "mdi mdi-microphone-off"
+      }), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "overlay"
+      }))))));
     }
   }]);
 
-  return Doctor;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+  return VideoCall;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Doctor);
+/* harmony default export */ __webpack_exports__["default"] = (VideoCall);
 
 /***/ }),
 
-/***/ "./resources/js/components/Patient.js":
-/*!********************************************!*\
-  !*** ./resources/js/components/Patient.js ***!
-  \********************************************/
+/***/ "./resources/js/components/VideoComponents/Assets/profile.png":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/VideoComponents/Assets/profile.png ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/profile.png?782adc2b6062ab00461359da5b02b753";
+
+/***/ }),
+
+/***/ "./resources/js/components/VideoComponents/Assets/telephone-service.gif":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/VideoComponents/Assets/telephone-service.gif ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/telephone-service.gif?6498bb45def0e0b5e22f7fdedc581732";
+
+/***/ }),
+
+/***/ "./resources/js/components/VideoComponents/SideUser.js":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/VideoComponents/SideUser.js ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -79306,26 +72348,7 @@ var Doctor = /*#__PURE__*/function (_Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
-/* harmony import */ var pusher_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(pusher_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! sweetalert2 */ "./node_modules/sweetalert2/dist/sweetalert2.all.js");
-/* harmony import */ var sweetalert2__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(sweetalert2__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_block_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-block-ui */ "./node_modules/react-block-ui/dist/reactblockui.es.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -79349,395 +72372,282 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+var SideUser = /*#__PURE__*/function (_Component) {
+  _inherits(SideUser, _Component);
 
+  var _super = _createSuper(SideUser);
 
+  function SideUser() {
+    _classCallCheck(this, SideUser);
 
-var freeice = __webpack_require__(/*! freeice */ "./node_modules/freeice/index.js"); //APP_Key for pusher configuration
+    return _super.apply(this, arguments);
+  }
 
-
-var APP_KEY = '52b6df945610aa082478';
-
-var Patient = /*#__PURE__*/function (_Component) {
-  _inherits(Patient, _Component);
-
-  var _super = _createSuper(Patient);
-
-  function Patient() {
-    var _this;
-
-    _classCallCheck(this, Patient);
-
-    _this = _super.call(this);
-    _this.state = {
-      users: [],
-      button: "none",
-      room: undefined,
-      blocking: true
-    };
-    _this.user = window.user;
-    _this.usersOnline;
-    _this.caller;
-    _this.localUserMedia = null;
-    _this.sessionDesc;
-    _this.mediaHandler; //To iron over browser implementation anomalies like prefixes
-
-    _this.GetRTCPeerConnection();
-
-    _this.GetRTCSessionDescription();
-
-    _this.GetRTCIceCandidate(); //prepare the caller to use peerconnection to anable live conferencing
-
-
-    _this.prepareCaller(); //setup pusher for webRTC signaling
-
-
-    _this.setupPusher(); //bind all methods to this instace of class
-
-
-    _this.setupPusher = _this.setupPusher.bind(_assertThisInitialized(_this));
-    _this.GetRTCPeerConnection = _this.GetRTCPeerConnection.bind(_assertThisInitialized(_this));
-    _this.GetRTCSessionDescription = _this.GetRTCSessionDescription.bind(_assertThisInitialized(_this));
-    _this.GetRTCIceCandidate = _this.GetRTCIceCandidate.bind(_assertThisInitialized(_this));
-    _this.prepareCaller = _this.prepareCaller.bind(_assertThisInitialized(_this));
-    return _this;
-  } //pusher setup method
-
-
-  _createClass(Patient, [{
-    key: "setupPusher",
-    value: function setupPusher() {
-      var _this2 = this;
-
-      pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a.logToConsole = true; //Instantiate Pusher Object
-
-      this.pusher = new pusher_js__WEBPACK_IMPORTED_MODULE_1___default.a(APP_KEY, {
-        authEndpoint: '/pusher/auth',
-        cluster: 'ap2',
-        auth: {
-          params: this.user.id,
-          headers: {
-            'X-CSRF-Token': window.csrfToken
-          }
-        }
-      }); //Subscribe the user to a channel making sure the 'presence-' is used to anable signaling
-
-      this.channel = this.pusher.subscribe('presence-' + this.user.channel); //binding channel to various pusher events emitted
-
-      this.channel.bind("pusher:subscription_succeeded", function (members) {
-        //set the member count
-        _this2.usersOnline = members.count;
-        members.each(function (member) {
-          if (member.id != _this2.user.id) {
-            var joined = _this2.state.users.concat(member.id);
-
-            _this2.setState({
-              users: joined
-            });
-          }
-        });
-      }); //callback function to fire when member is removed from the channel
-
-      this.channel.bind("pusher:member_added", function (member) {
-        var joined = _this2.state.users.concat(member.id);
-
-        _this2.setState({
-          users: joined
-        });
-      }); //callback fired when member is removed from the channel
-
-      this.channel.bind("pusher:member_removed", function (member) {
-        // for remove member from list:
-        var array = _toConsumableArray(_this2.state.users); // make a separate copy of the array
-
-
-        var index = array.indexOf(member.id);
-
-        if (index !== -1) {
-          array.splice(index, 1);
-
-          _this2.setState({
-            users: array
-          });
-        }
-
-        if (member.id == _this2.state.room) {
-          _this2.endCall();
-        }
-      }); //callback fired when candidate is recieved and added to ICE candidate for peer communication
-
-      this.channel.bind("client-candidate", function (msg) {
-        if (msg.room == _this2.state.room) {
-          console.log("candidate received");
-
-          _this2.caller.addIceCandidate(new RTCIceCandidate(msg.candidate));
-        }
-      }); //callback fired when communication signal is received for video call
-      //get cam permissions, then add stream to localUsermedia and toggle end call button,
-      //after which the present user stream is added to his video element and to the peer stream, then
-      //an answer is sent to the remote peer, and trigering the signal.
-
-      this.channel.bind("client-signal-".concat(this.user.id), function (msg) {
-        if (msg.room == _this2.user.id) {
-          sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire({
-            title: 'Hello',
-            text: 'You have a call from: Dr. ' + msg.from + ' Would you like to answer?"',
-            icon: 'info',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            cancelButtonText: 'Decline',
-            confirmButtonText: 'Accept!'
-          }).then(function (result) {
-            if (result.value) {
-              _this2.state.room = msg.room;
-
-              _this2.getCam().then(function (stream) {
-                _this2.localUserMedia = stream;
-
-                _this2.toggleEndCallButton();
-
-                _this2.setState({
-                  blocking: false
-                });
-
-                try {
-                  _this2.myVideo.srcObject = stream;
-                } catch (e) {
-                  _this2.myVideo.src = URL.createObjectURL(stream);
-                }
-
-                stream.getTracks().forEach(function (track) {
-                  _this2.caller.addTrack(track, stream);
-                });
-                var sessionDesc = new RTCSessionDescription(msg.sdp);
-                console.log("Patient SDP: " + sessionDesc);
-
-                _this2.caller.setRemoteDescription(sessionDesc);
-
-                _this2.caller.createAnswer().then(function (sdp) {
-                  _this2.caller.setLocalDescription(new RTCSessionDescription(sdp));
-
-                  _this2.channel.trigger("client-answer", {
-                    "sdp": sdp,
-                    "room": _this2.state.room
-                  });
-                });
-              })["catch"](function (error) {
-                console.log('an error occured', error);
-              });
-            }
-
-            if (!result.value) {
-              return _this2.channel.trigger("client-reject", {
-                "room": msg.room,
-                "rejected": _this2.user.name
-              });
-            }
-          });
-        }
-      }); //callback for when remote user answers call signal, Remote Descrption is set
-
-      this.channel.bind("client-answer", function (answer) {
-        if (answer.room == _this2.state.room) {
-          console.log("answer received");
-
-          _this2.caller.setRemoteDescription(new RTCSessionDescription(answer.sdp));
-        }
-      }); //callback to fire when remote endcall is fired
-
-      this.channel.bind("client-endcall", function (answer) {
-        if (answer.room == _this2.state.room) {
-          console.log("Call Ended");
-
-          _this2.endCall();
-        }
-      });
-    } //method for camera permission
-
-  }, {
-    key: "getCam",
-    value: function getCam() {
-      //Get local audio/video feed and show it in selfview video element
-      return navigator.mediaDevices.getUserMedia({
-        video: true,
-        audio: true
-      });
-    }
-    /*
-     Different required Methods for peer connections
-    */
-
-  }, {
-    key: "GetRTCIceCandidate",
-    value: function GetRTCIceCandidate() {
-      window.RTCIceCandidate = window.RTCIceCandidate || window.webkitRTCIceCandidate || window.mozRTCIceCandidate || window.msRTCIceCandidate;
-      return window.RTCIceCandidate;
-    }
-  }, {
-    key: "GetRTCPeerConnection",
-    value: function GetRTCPeerConnection() {
-      window.RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection || window.msRTCPeerConnection;
-      return window.RTCPeerConnection;
-    }
-  }, {
-    key: "GetRTCSessionDescription",
-    value: function GetRTCSessionDescription() {
-      window.RTCSessionDescription = window.RTCSessionDescription || window.webkitRTCSessionDescription || window.mozRTCSessionDescription || window.msRTCSessionDescription;
-      return window.RTCSessionDescription;
-    }
-    /* End of required methods
-    */
-    //method to prepare peer caller(both clients)
-
-  }, {
-    key: "prepareCaller",
-    value: function prepareCaller() {
-      var _this3 = this;
-
-      //Initializing a peer connection
-      this.caller = new window.RTCPeerConnection({
-        'iceServers': [{
-          'url': 'turn:turn.technigence.in:5349',
-          'credential': 'metispass',
-          'username': 'metis'
-        }, {
-          'url': 'stun:turn.technigence.in:5349'
-        }]
-      });
-      console.log(this.caller); //Listen for ICE Candidates and send them to remote peers
-
-      this.caller.onicecandidate = function (evt) {
-        if (!evt.candidate) return;
-        console.log("onicecandidate called");
-
-        _this3.onIceCandidate(_this3.caller, evt);
-      }; //onaddstream handler to receive remote feed and show in remoteview video element
-
-
-      this.caller.onaddstream = function (evt) {
-        console.log("STREAM: " + JSON.stringify(evt.stream));
-
-        try {
-          _this3.userVideo.src = URL.createObjectURL(evt.stream);
-        } catch (e) {
-          _this3.userVideo.srcObject = evt.stream;
-        }
-      };
-    } //Send the ICE Candidate to the remote peer
-
-  }, {
-    key: "onIceCandidate",
-    value: function onIceCandidate(peer, evt) {
-      if (evt.candidate) {
-        this.channel.trigger("client-candidate", {
-          "candidate": evt.candidate,
-          "room": this.state.room
-        });
-      }
-    } //toggle endcall button method
-
-  }, {
-    key: "toggleEndCallButton",
-    value: function toggleEndCallButton() {
-      if (this.state.button == "none") {
-        this.setState({
-          button: "flex"
-        });
-      } else {
-        this.setState({
-          button: "none"
-        });
-      }
-    } //method for end call definition
-
-  }, {
-    key: "endCall",
-    value: function endCall() {
-      this.setState({
-        room: undefined
-      });
-      this.caller.close();
-
-      var _iterator = _createForOfIteratorHelper(this.localUserMedia.getTracks()),
-          _step;
-
-      try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var track = _step.value;
-          track.stop();
-        }
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
-      }
-
-      this.prepareCaller();
-      this.toggleEndCallButton();
-    } //method for end current call
-
-  }, {
-    key: "endCurrentCall",
-    value: function endCurrentCall() {
-      this.channel.trigger("client-endcall", {
-        room: this.state.room
-      });
-      this.endCall();
-    }
-  }, {
+  _createClass(SideUser, [{
     key: "render",
     value: function render() {
-      var _this4 = this;
-
+      var _this$props = this.props,
+          users = _this$props.users,
+          parent = _this$props.parent,
+          role = _this$props.role;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_block_ui__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        tag: "div",
-        blocking: this.state.blocking,
-        message: "Awaiting Doctor's Call, Please wait"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-xl-7"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "video-container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-        className: "my-video",
-        ref: function ref(_ref) {
-          _this4.myVideo = _ref;
-        },
-        autoPlay: true,
-        muted: true
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("video", {
-        className: "user-video",
-        ref: function ref(_ref2) {
-          _this4.userVideo = _ref2;
-        },
-        autoPlay: true
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        title: "End Call",
-        style: {
-          display: this.state.button
-        },
-        onClick: function onClick() {
-          return _this4.endCurrentCall();
-        },
-        className: "end-button fa fa-phone flex",
-        "aria-hidden": "true"
-      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-xl-5 call_button"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Welcome To Metis Conference")))));
+        className: "widget "
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+        className: "margin-top-20"
+      }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "online-users-tile"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "online-dot"
+      }), " Patients Online")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "widget-tabs shop"
+      }, users.length > 0 && users.map(function (user, i) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          key: "ahxbsbshhee_" + i
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "widget-content"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "widget-thumb"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: user.image || __webpack_require__(/*! ./Assets/profile.png */ "./resources/js/components/VideoComponents/Assets/profile.png"),
+          alt: ""
+        }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "widget-text"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#"
+        }, user.name)), role == 1 && (user.status == 0 || user.status == 3 || user.status == 4 || user.status == 5) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#",
+          className: "button margin-top-5 primary",
+          onClick: function onClick(e) {
+            e.preventDefault();
+            parent.startCall(i, user);
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "mdi mdi-phone"
+        }), " ", user.status == 0 && "Call" || user.status == 3 && "Call again" || user.status == 4 && "Rejected! Try again" || user.status == 5 && "User Busy! Try again") || user.status == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#",
+          className: "button margin-top-5",
+          onClick: function onClick(e) {
+            return e.preventDefault();
+          }
+        }, "Calling...") || user.status == 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          href: "#",
+          onClick: function onClick(e) {
+            e.preventDefault(); // parent.endCall(i);
+          },
+          className: "button margin-top-5"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+          className: "mdi mdi-phone-handup"
+        }), " ", "Connected")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "clearfix"
+        })));
+      })));
     }
   }]);
 
-  return Patient;
+  return SideUser;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Patient);
+/* harmony default export */ __webpack_exports__["default"] = (SideUser);
+
+/***/ }),
+
+/***/ "./resources/js/components/VideoComponents/VideoElements.js":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/VideoComponents/VideoElements.js ***!
+  \******************************************************************/
+/*! exports provided: OffVideo, EndCall, ReceiveCall */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OffVideo", function() { return OffVideo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EndCall", function() { return EndCall; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReceiveCall", function() { return ReceiveCall; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+var OffVideo = /*#__PURE__*/function (_Component) {
+  _inherits(OffVideo, _Component);
+
+  var _super = _createSuper(OffVideo);
+
+  function OffVideo() {
+    _classCallCheck(this, OffVideo);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(OffVideo, [{
+    key: "render",
+    value: function render() {
+      var _this$props = this.props,
+          pause = _this$props.pause,
+          muted = _this$props.muted;
+      if (pause || muted) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "off-video ".concat(muted && !pause && "mute-video")
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "off-video-inner"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "mdi mdi-".concat(pause ? "camera" : "microphone", "-off")
+      })));else return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
+    }
+  }]);
+
+  return OffVideo;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+var EndCall = /*#__PURE__*/function (_Component2) {
+  _inherits(EndCall, _Component2);
+
+  var _super2 = _createSuper(EndCall);
+
+  function EndCall() {
+    _classCallCheck(this, EndCall);
+
+    return _super2.apply(this, arguments);
+  }
+
+  _createClass(EndCall, [{
+    key: "render",
+    value: function render() {
+      var _this$props2 = this.props,
+          ended = _this$props2.ended,
+          type = _this$props2.type,
+          text = _this$props2.text,
+          role = _this$props2.role;
+      if (ended) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "off-video ".concat(type == 1 ? "call-ended" : "call-ended-2")
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "off-video-inner"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "mdi mdi-phone-hangup"
+      }), type == 1 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, text || "".concat(role == 1 ? "Call ended, call a patient from the side panel!" : "Call ended, doctor will call soon!"))));else return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
+    }
+  }]);
+
+  return EndCall;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+var ReceiveCall = /*#__PURE__*/function (_Component3) {
+  _inherits(ReceiveCall, _Component3);
+
+  var _super3 = _createSuper(ReceiveCall);
+
+  function ReceiveCall() {
+    _classCallCheck(this, ReceiveCall);
+
+    return _super3.apply(this, arguments);
+  }
+
+  _createClass(ReceiveCall, [{
+    key: "render",
+    value: function render() {
+      var _this$props3 = this.props,
+          isRinging = _this$props3.isRinging,
+          caller = _this$props3.caller,
+          parent = _this$props3.parent;
+      if (isRinging) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "off-video call-ended",
+        style: {
+          background: "#eeeeef"
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "off-video-inner",
+        style: {
+          marginTop: 0
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "telephone"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: __webpack_require__(/*! ./Assets/telephone-service.gif */ "./resources/js/components/VideoComponents/Assets/telephone-service.gif")
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "margin-top-15 margin-bottom-15"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        style: {
+          fontWeight: 100
+        }
+      }, "You have an incoming call from"), " ", parent.getUserWithID(caller).name + " (" + caller + ")", "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "controls",
+        style: {
+          bottom: "auto",
+          width: 150
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#",
+        className: "button danger",
+        onClick: function onClick(e) {
+          e.preventDefault();
+          parent.handleRejectCall();
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "mdi mdi-phone-hangup"
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "#",
+        className: "button success",
+        onClick: function onClick(e) {
+          e.preventDefault();
+          parent.handleAcceptIncommingCall();
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "mdi mdi-phone"
+      })))));else return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
+    }
+  }]);
+
+  return ReceiveCall;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+/***/ }),
+
+/***/ "./resources/js/components/style2.css":
+/*!********************************************!*\
+  !*** ./resources/js/components/style2.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./style2.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/style2.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 

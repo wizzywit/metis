@@ -193,10 +193,11 @@ class DoctorController extends Controller
         $channel = strtolower($string);
         $appointment = [
             "meeting" => $channel,
-            "patient_id" => $appointment->patient->id,
-            "patient_name" => $appointment->patient->name
+            "user_role"=> 1, //1 indicates a doctor status
+            "doctor_id" => $appointment->doctor->id,
+            "doctor_name" => $appointment->doctor->name
         ];
-        return view('doctor.video')->with(compact('appointment'));
+        return view('videocall')->with(compact('appointment'));
     }
 
 
